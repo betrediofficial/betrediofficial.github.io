@@ -7,3 +7,7 @@ if (typeof jQuery === 'undefined') {
 } else {
     console.log('jQuery zaten mevcut.');
 }
+
+$( document ).ready(function() {
+    alert('ready')
+});
