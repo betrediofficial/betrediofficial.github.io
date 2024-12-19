@@ -1,1 +1,1 @@
-console.log("This is custom js codes")
+alert('test')
