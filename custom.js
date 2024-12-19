@@ -2,12 +2,12 @@ if (typeof jQuery === 'undefined') {
     var script = document.createElement('script');
     script.src = 'https://code.jquery.com/jquery-3.6.0.min.js';
     script.onload = function() {
+        $( document ).ready(function() {
+            alert('ready')
+        });
     };
     document.head.appendChild(script);
 } else {
     console.log('jQuery zaten mevcut.');
 }
 
-$( document ).ready(function() {
-    alert('ready')
-});
