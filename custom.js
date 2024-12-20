@@ -151,7 +151,7 @@ function slotGames(){
                     <div class="carousel-container" style="transform: translate3d(0%, 0px, 0px);">
                       <div class="carousel-slide active-slide" style="width: 100%;">
                         <div class="sdr-item-holder-bc">
-                          <a target="/${language}/casino/games" class"sdr-item-bc" href="#">
+                          <a target="/${language}/casino/group/lobby" class"sdr-item-bc" href="#">
                             <img src="https://betrediofficial.github.io/images/casino-games/Frame-67.png" loading="lazy" class="sdr-image-bc">
                           </a>
                         </div>
