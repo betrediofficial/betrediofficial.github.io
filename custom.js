@@ -1,3 +1,4 @@
+var language = window.location.pathname.split("/")[1];
 try{ 
   
 
@@ -41,11 +42,11 @@ try{
 function initialize(){
 
   const path = window.location.pathname
-  const language = path.split("/")[1]
+  language = path.split("/")[1]
   const splitPath = path.split("/")
   const isHomePage = !splitPath[2] || splitPath[2] === ""
 
-  
+
   if(!isHomePage){
     alert('removed')
     $(".manually-added").remove();
@@ -257,7 +258,7 @@ function slotGames(){
                        
                         <img src="https://betrediofficial.github.io/images/casino-games/zeus_vs_hades_gods_of_war.jpg" class="casino-game-image-bc" loading="lazy">
                       <div class="overlay">
-                            <a href="/${language}/casino/games/american-roulette" class="">Zeus Vs Hades</a>
+                            <a href="/${language}  /casino/games/pragmaticplay-zeus-vs-hades-gods-of-war" class="">Zeus Vs Hades</a>
                         </div>
                       </div>
                     </div>
@@ -274,7 +275,7 @@ function slotGames(){
                       
                         <img src="https://betrediofficial.github.io/images/casino-games/starlight_princess_1000.jpg" class="casino-game-image-bc" loading="lazy">
                        <div class="overlay">
-                            <a href="/${language}/casino/games/american-roulette" class="">StarLight Princess 1000</a>
+                            <a href="/${language}/casino/games/pragmaticplay-starlight-princess-1000" class="">StarLight Princess 1000</a>
                         </div>
                       </div>
                     </div>
