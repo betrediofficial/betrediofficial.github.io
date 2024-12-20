@@ -238,7 +238,8 @@ function slotGames(){
 `;
 
   $('.section--first').eq(0).before(newSection)
-  $('.section--first').eq(0).remove()
+  const removed = $('.section--first').eq(0)
+  if(removed.length) removed.remove()
 
 }
 
