@@ -1,53 +1,20 @@
 try{ 
 
-  (function() {
-    // Load the script
-    const script = document.createElement("script");
-    script.src = 'https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js';
-    script.type = 'text/javascript';
-    script.addEventListener('load', () => {
-    //  initialize() 
-      // use jQuery below
-    });
+
+
+  if (typeof jQuery === 'undefined') {
+    var script = document.createElement('script');
+    script.src = 'https://code.jquery.com/jquery-3.6.0.min.js';
+    script.onload = function() {
+        $( document ).ready(function() {
+          // initialize()
+        });
+    };
     document.head.appendChild(script);
-  })();
+} else {
+    console.log('jQuery zaten mevcut.');
+}
 
-
-
-//   if (typeof jQuery === 'undefined') {
-//     var script = document.createElement('script');
-//     script.src = 'https://code.jquery.com/jquery-3.6.0.min.js';
-//     script.onload = function() {
-//         $( document ).ready(function() {
-//           initialize()
-//         });
-//     };
-//     document.head.appendChild(script);
-// } else {
-//     console.log('jQuery zaten mevcut.');
-// }
-
-
-// $('a').on('click', function(e){
-
-
-
-
-// function waitForJQuery(callback) {
-//   if (typeof jQuery !== 'undefined') {
-//       callback();
-//   } else {
-//       setTimeout(function() {
-//           waitForJQuery(callback);
-//       }, 100);
-//   }
-// }
-
-// waitForJQuery(function() {
-//   $(document).ready(function() {
-//      alert('triggered')
-//   });
-// });
 
 const PAGES = ["/tr/", "/en/"]
 
