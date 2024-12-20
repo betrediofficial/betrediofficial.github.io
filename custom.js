@@ -14,14 +14,13 @@ if (typeof jQuery === 'undefined') {
 function initialize(){
     bottomMenuWidget();
     otherGames();
+    slotGames();
 }
 
 function otherGames(){
-
-
         var newSection = `
            
-<div class="section" id="casinooyunlari">
+<div class="section" id="digeroyunlari">
   <div class="container otherGames">
     <div class="row">
       <div class="col-12">
@@ -104,4 +103,118 @@ function bottomMenuWidget(){
   </div>
 </div>
     `);
+}
+
+
+function slotGames(){
+  var newSection = `
+     <div class="section" id="casinooyunlari">
+  <div class="container otherGames">
+    <div class="row">
+      <div class="col-12">
+        <div class="section__title-wrap">
+          <h2 class="section__title">
+            <svg class="svg-icon">
+              <use
+                href="/static/media/sprite.33143bc5180d8cec7f771b3eedc5187c.svg#top-games"
+              ></use>
+            </svg>
+            SLOT OYUNLARI
+          </h2>
+          
+        </div>
+      </div>
+      <div class="col-12">
+
+
+        <div class="hm-row-bc has-game has-slider" style="grid-template-columns: 2fr 10fr;">
+            <div class="pb-component-wrapper">
+              <div class="slider-bc">
+                <div class="carousel">
+                  <div class="carousel-viewport">
+                    <div class="carousel-container" style="transform: translate3d(0%, 0px, 0px);">
+                      <div class="carousel-slide active-slide" style="width: 100%;">
+                        <div class="sdr-item-holder-bc">
+                          <a target="_self" class"sdr-item-bc" href="#">
+                            <img src="https://i.ibb.co/842yQXX/Frame-67.png" loading="lazy" class="sdr-image-bc">
+                          </a>
+                        </div>
+                      </div>
+                    </div>
+                  </div> 
+                </div>
+              </div>
+            </div>
+            <div class="pb-component-wrapper">
+              <div class="games-content">
+                <div class="games-horiz">
+                  <div class="games-horiz-scroll" style="grid-template-rows: auto auto;">
+                    <div class="casino-game-item-content">
+                      <div class="casino-game-item">
+                        <img src="https://betrediofficial.github.io/images/casino-games/big_bass_christmas_bash.jpg" class="casino-game-image-bc" loading="lazy">
+                      </div>
+                    </div>
+                     <div class="casino-game-item-content">
+                      <div class="casino-game-item">
+                        <img src="https://betrediofficial.github.io/images/casino-games/gates_of_olympus.jpg" class="casino-game-image-bc" loading="lazy">
+                      </div>
+                    </div>
+                     <div class="casino-game-item-content">
+                      <div class="casino-game-item">
+                        <img src="https://betrediofficial.github.io/images/casino-games/big_bass_secrets_of_the_golden_lake.jpg" class="casino-game-image-bc" loading="lazy">
+                      </div>
+                    </div>
+                     <div class="casino-game-item-content">
+                      <div class="casino-game-item">
+                        <img src="https://betrediofficial.github.io/images/casino-games/sweet_bonanza_1000.jpg" class="casino-game-image-bc" loading="lazy">
+                      </div>
+                    </div>
+                     <div class="casino-game-item-content">
+                      <div class="casino-game-item">
+                        <img src="https://betrediofficial.github.io/images/casino-games/devils_deal_soul_for_sale.jpg" class="casino-game-image-bc" loading="lazy">
+                      </div>
+                    </div>
+                     <div class="casino-game-item-content">
+                      <div class="casino-game-item">
+                        <img src="https://betrediofficial.github.io/images/casino-games/shining_crown.jpg" class="casino-game-image-bc" loading="lazy">
+                      </div>
+                    </div>
+                     <div class="casino-game-item-content">
+                      <div class="casino-game-item">
+                        <img src="https://betrediofficial.github.io/images/casino-games/zeus_vs_hades_gods_of_war.jpg" class="casino-game-image-bc" loading="lazy">
+                      </div>
+                    </div>
+                     <div class="casino-game-item-content">
+                      <div class="casino-game-item">
+                        <img src="https://betrediofficial.github.io/images/casino-games/wisdom_of_athena.jpg" class="casino-game-image-bc" loading="lazy">
+                      </div>
+                    </div>
+                     <div class="casino-game-item-content">
+                      <div class="casino-game-item">
+                        <img src="https://betrediofficial.github.io/images/casino-games/starlight_princess_1000.jpg" class="casino-game-image-bc" loading="lazy">
+                      </div>
+                    </div>
+                     <div class="casino-game-item-content">
+                      <div class="casino-game-item">
+                        <img src="https://betrediofficial.github.io/images/casino-games/sugar_rush_1000.jpg" class="casino-game-image-bc" loading="lazy">
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+
+
+
+
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+  $('.section--first').eq(1).before(newSection)
+
 }
