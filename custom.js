@@ -151,7 +151,7 @@ function slotGames(){
                     <div class="carousel-container" style="transform: translate3d(0%, 0px, 0px);">
                       <div class="carousel-slide active-slide" style="width: 100%;">
                         <div class="sdr-item-holder-bc">
-                          <a target="_self" class"sdr-item-bc" href="#">
+                          <a target="/${language}/casino/games" class"sdr-item-bc" href="#">
                             <img src="https://betrediofficial.github.io/images/casino-games/Frame-67.png" loading="lazy" class="sdr-image-bc">
                           </a>
                         </div>
@@ -167,7 +167,9 @@ function slotGames(){
                   <div class="games-horiz-scroll" style="grid-template-rows: auto auto;">
                     <div class="casino-game-item-content">
                       <div class="casino-game-item">
+                      <a href="/${language}/casino/games/pragmaticlive-big-bass-crash">
                         <img src="https://betrediofficial.github.io/images/casino-games/big_bass_christmas_bash.jpg" class="casino-game-image-bc" loading="lazy">
+                        </a>
                       </div>
                     </div>
                      <div class="casino-game-item-content">
