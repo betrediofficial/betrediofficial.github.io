@@ -48,11 +48,9 @@ function initialize(){
 
 
   if(!isHomePage){
-    alert('removed')
     $(".manually-added").remove();
   }  
   else{
-    alert(window.location.pathname)
     bottomMenuWidget();
     otherGames();
     slotGames();
@@ -266,7 +264,7 @@ function slotGames(){
                       <div class="casino-game-item">
                         <img src="https://betrediofficial.github.io/images/casino-games/wisdom_of_athena.jpg" class="casino-game-image-bc" loading="lazy">
                         <div class="overlay">
-                            <a href="/${language}/casino/games/american-roulette" class="">Wisdom Of Athena</a>
+                            <a href="/${language}/casino/games/pragmaticplay-wisdom-of-athena" class="">Wisdom Of Athena</a>
                         </div>
                       </div>
                     </div>
@@ -284,7 +282,7 @@ function slotGames(){
                         
                         <img src="https://betrediofficial.github.io/images/casino-games/sugar_rush_1000.jpg" class="casino-game-image-bc" loading="lazy">
                       <div class="overlay">
-                            <a href="/${language}/casino/games/american-roulette" class="">Sugar Rush 1000</a>
+                            <a href="/${language}/casino/games/pragmaticplay-sugar-rush-1000" class="">Sugar Rush 1000</a>
                         </div>
                       </div>
                     </div>
