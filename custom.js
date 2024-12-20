@@ -3,6 +3,12 @@ if (typeof jQuery === 'undefined') {
     script.src = 'https://code.jquery.com/jquery-3.6.0.min.js';
     script.onload = function() {
         $( document ).ready(function() {
+
+          $(window).on('popstate', function() {
+            alert('2'+window.location.pathname)
+        });
+
+
           initialize()
         });
     };
