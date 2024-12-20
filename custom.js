@@ -6,8 +6,7 @@ try{
     script.src = 'https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js';
     script.type = 'text/javascript';
     script.addEventListener('load', () => {
-      alert('loaded')
-      console.log(`jQuery ${$.fn.jquery} has been loaded successfully!`);
+    //  initialize() 
       // use jQuery below
     });
     document.head.appendChild(script);
@@ -56,10 +55,10 @@ function initialize(){
   alert(window.location.pathname)
   if(!PAGES.includes(window.location.pathname)) return;
 
-    bottomMenuWidget();
-    otherGames();
-    slotGames();
-    casinoGames();
+    // bottomMenuWidget();
+    // otherGames();
+    // slotGames();
+    // casinoGames();
     // delete
     // Safe removal of elements
     const popOyunlar = $("div:contains('Popüler Oyunlar')").eq(3);
