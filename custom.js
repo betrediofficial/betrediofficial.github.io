@@ -1,10 +1,7 @@
 try{ 
   
 
-  const path = window.location.pathname
-  const language = path.split("/")[1]
-  const splitPath = path.split("/")
-  const isHomePage = !splitPath[2] || splitPath[2] === ""
+
 
   if (typeof jQuery === 'undefined') {
     var script = document.createElement('script');
@@ -42,6 +39,11 @@ try{
 
 
 function initialize(){
+
+  const path = window.location.pathname
+  const language = path.split("/")[1]
+  const splitPath = path.split("/")
+  const isHomePage = !splitPath[2] || splitPath[2] === ""
 
   
   if(!isHomePage){
