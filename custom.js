@@ -19,8 +19,6 @@ $(window).on('popstate', function() {
   alert('2'+window.location.pathname)
 });
 
-initialize();
-
 const PAGES = ["/tr/", "/en/"]
 
 function initialize(){
