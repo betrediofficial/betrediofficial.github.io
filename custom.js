@@ -43,8 +43,9 @@ try{
 
 function initialize(){
 
-
+  
   if(!isHomePage) return;
+  alert('combi')
 
     bottomMenuWidget();
     otherGames();
