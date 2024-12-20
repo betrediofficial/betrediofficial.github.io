@@ -14,8 +14,9 @@ if (typeof jQuery === 'undefined') {
 const PAGES = ["/tr/", "/en/"]
 
 function initialize(){
+  alert('1')
   if(!PAGES.includes(window.location.pathname)) return;
-  
+
     bottomMenuWidget();
     otherGames();
     slotGames();
