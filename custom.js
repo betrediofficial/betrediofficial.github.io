@@ -280,7 +280,7 @@ function casinoGames(){
                     <div class="carousel-container" style="transform: translate3d(0%, 0px, 0px);">
                       <div class="carousel-slide active-slide" style="width: 100%;">
                         <div class="sdr-item-holder-bc">
-                          <a target="_self" class"sdr-item-bc" href="#">
+                          <a target="/${language}/casino/group/lobby" class"sdr-item-bc" href="#">
                             <img src="https://betrediofficial.github.io/images/casino-games/Frame-67.png" loading="lazy" class="sdr-image-bc">
                           </a>
                         </div>
@@ -296,39 +296,51 @@ function casinoGames(){
                   <div class="games-horiz-scroll" style="grid-template-rows: auto auto;">
                     <div class="casino-game-item-content">
                       <div class="casino-game-item">
-                      <a href="casino/games/pragmaticplay-gates-of-olympus">
+                      <a href="/${language}/casino/games/pragmaticlive-big-bass-crash">
                         <img src="https://betrediofficial.github.io/images/casino-games/big_bass_christmas_bash.jpg" class="casino-game-image-bc" loading="lazy">
                         </a>
                       </div>
                     </div>
                      <div class="casino-game-item-content">
                       <div class="casino-game-item">
+                        <a href="/${language}/casino/games/pragmaticlive-big-bass-crash">
                         <img src="https://betrediofficial.github.io/images/casino-games/gates_of_olympus.jpg" class="casino-game-image-bc" loading="lazy">
+                        </a>
                       </div>
                     </div>
                      <div class="casino-game-item-content">
                       <div class="casino-game-item">
+                        <a href="/${language}/casino/games/pragmaticlive-big-bass-crash">
                         <img src="https://betrediofficial.github.io/images/casino-games/big_bass_secrets_of_the_golden_lake.jpg" class="casino-game-image-bc" loading="lazy">
+                        </a>
                       </div>
                     </div>
                      <div class="casino-game-item-content">
                       <div class="casino-game-item">
+                        <a href="/${language}/casino/games/pragmaticlive-big-bass-crash">
                         <img src="https://betrediofficial.github.io/images/casino-games/sweet_bonanza_1000.jpg" class="casino-game-image-bc" loading="lazy">
+                        </a>
                       </div>
                     </div>
                      <div class="casino-game-item-content">
                       <div class="casino-game-item">
+                        <a href="/${language}/casino/games/pragmaticlive-big-bass-crash">
                         <img src="https://betrediofficial.github.io/images/casino-games/devils_deal_soul_for_sale.jpg" class="casino-game-image-bc" loading="lazy">
+                        </a>
                       </div>
                     </div>
                      <div class="casino-game-item-content">
                       <div class="casino-game-item">
+                        <a href="/${language}/casino/games/pragmaticlive-big-bass-crash">
                         <img src="https://betrediofficial.github.io/images/casino-games/shining_crown.jpg" class="casino-game-image-bc" loading="lazy">
+                        </a>
                       </div>
                     </div>
                      <div class="casino-game-item-content">
                       <div class="casino-game-item">
+                        <a href="/${language}/casino/games/pragmaticlive-big-bass-crash">
                         <img src="https://betrediofficial.github.io/images/casino-games/zeus_vs_hades_gods_of_war.jpg" class="casino-game-image-bc" loading="lazy">
+                        </a>
                       </div>
                     </div>
                      <div class="casino-game-item-content">
@@ -338,12 +350,16 @@ function casinoGames(){
                     </div>
                      <div class="casino-game-item-content">
                       <div class="casino-game-item">
+                        <a href="/${language}/casino/games/pragmaticlive-big-bass-crash">
                         <img src="https://betrediofficial.github.io/images/casino-games/starlight_princess_1000.jpg" class="casino-game-image-bc" loading="lazy">
+                        </a>
                       </div>
                     </div>
                      <div class="casino-game-item-content">
                       <div class="casino-game-item">
+                        <a href="/${language}/casino/games/pragmaticlive-big-bass-crash">
                         <img src="https://betrediofficial.github.io/images/casino-games/sugar_rush_1000.jpg" class="casino-game-image-bc" loading="lazy">
+                        </a>
                       </div>
                     </div>
                   </div>
@@ -351,7 +367,6 @@ function casinoGames(){
               </div>
             </div>
           </div>
-
 
 
 
