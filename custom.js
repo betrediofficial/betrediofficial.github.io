@@ -18,7 +18,7 @@ function initialize(){
 
 function otherGames(){
 
-  $('.main__content .section:last').after(`
+  $(".section--first").before(`
   <div class="otherGames">
         <h1 class="otherGamesHeader">CANLI CASINO OYUNLARI</h1>
 
