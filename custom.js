@@ -3,21 +3,13 @@ if (typeof jQuery === 'undefined') {
     script.src = 'https://code.jquery.com/jquery-3.6.0.min.js';
     script.onload = function() {
         $( document ).ready(function() {
-
-         
-
-
           initialize()
         });
     };
     document.head.appendChild(script);
 } else {
-    alert('burası aq')
+    console.log('jQuery zaten mevcut.');
 }
-
-$(window).on('popstate', function() {
-  alert('2'+window.location.pathname)
-});
 
 const PAGES = ["/tr/", "/en/"]
 
@@ -30,8 +22,8 @@ function initialize(){
     slotGames();
     casinoGames();
     // delete
-    // $("div:contains('Popüler Oyunlar')").eq(3)[0].remove()
-    // $("div:contains('Canlı Casino')").eq(7)[0].remove()
+    $("div:contains('Popüler Oyunlar')").eq(3)[0].remove()
+    $("div:contains('Canlı Casino')").eq(7)[0].remove()
 }
 
 function otherGames(){
