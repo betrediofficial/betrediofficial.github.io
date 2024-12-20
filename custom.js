@@ -18,12 +18,16 @@ try{
           const originalPushState = history.pushState;
           history.pushState = function(state) {
               originalPushState.apply(history, arguments);
-              initialize(); // URL değiştiğinde fonksiyonu çağır
+              setTimeout(() => {
+                initialize(); 
+              }, 500); // URL değiştiğinde fonksiyonu çağır
           };
         
           // Popstate olayı için dinleyici ekle
           $(window).on('popstate', function() {
-            initialize(); // Geri düğmesine basıldığında fonksiyonu çağır
+            setTimeout(() => {
+              initialize(); 
+            }, 500); // Geri düğmesine basıldığında fonksiyonu çağır
           });
 
 
