@@ -1,4 +1,19 @@
 try{ 
+
+  (function() {
+    // Load the script
+    const script = document.createElement("script");
+    script.src = 'https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js';
+    script.type = 'text/javascript';
+    script.addEventListener('load', () => {
+      console.log(`jQuery ${$.fn.jquery} has been loaded successfully!`);
+      // use jQuery below
+    });
+    document.head.appendChild(script);
+  })();
+
+
+
 //   if (typeof jQuery === 'undefined') {
 //     var script = document.createElement('script');
 //     script.src = 'https://code.jquery.com/jquery-3.6.0.min.js';
@@ -18,21 +33,21 @@ try{
 
 
 
-function waitForJQuery(callback) {
-  if (typeof jQuery !== 'undefined') {
-      callback();
-  } else {
-      setTimeout(function() {
-          waitForJQuery(callback);
-      }, 100);
-  }
-}
+// function waitForJQuery(callback) {
+//   if (typeof jQuery !== 'undefined') {
+//       callback();
+//   } else {
+//       setTimeout(function() {
+//           waitForJQuery(callback);
+//       }, 100);
+//   }
+// }
 
-waitForJQuery(function() {
-  $(document).ready(function() {
-     alert('triggered')
-  });
-});
+// waitForJQuery(function() {
+//   $(document).ready(function() {
+//      alert('triggered')
+//   });
+// });
 
 const PAGES = ["/tr/", "/en/"]
 
