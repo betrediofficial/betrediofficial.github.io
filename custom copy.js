@@ -11,28 +11,7 @@ try{
     script.src = 'https://code.jquery.com/jquery-3.6.0.min.js';
     script.onload = function() {
         $( document ).ready(function() {
-        
-          
-
-          initialize();
-
-          // History API kullanarak URL değişikliklerini izleyin
-          const originalPushState = history.pushState;
-          history.pushState = function(state) {
-              originalPushState.apply(history, arguments);
-              initialize(); // URL değiştiğinde fonksiyonu çağır
-          };
-        
-          // Popstate olayı için dinleyici ekle
-          $(window).on('popstate', function() {
-            initialize(); // Geri düğmesine basıldığında fonksiyonu çağır
-          });
-
-
-
-
-
-
+          initialize()
         });
     };
     document.head.appendChild(script);
@@ -42,6 +21,34 @@ try{
 
 
 function initialize(){
+
+
+// URL değişimlerini dinlemek için bir fonksiyon oluştur
+function onRouteChange() {
+  // Buraya istediğin jQuery kodlarını yaz
+alert('modified')
+}
+
+// Sayfa yüklendiğinde ilk kez çalıştır
+$(document).ready(function() {
+  alert('girdi 1')
+  onRouteChange();
+
+  // History API kullanarak URL değişikliklerini izleyin
+  const originalPushState = history.pushState;
+  history.pushState = function(state) {
+      originalPushState.apply(history, arguments);
+      onRouteChange(); // URL değiştiğinde fonksiyonu çağır
+  };
+
+  // Popstate olayı için dinleyici ekle
+  $(window).on('popstate', function() {
+      onRouteChange(); // Geri düğmesine basıldığında fonksiyonu çağır
+  });
+});
+
+
+
 
 
   if(!isHomePage) return;
