@@ -28,8 +28,8 @@ function initialize(){
     slotGames();
     casinoGames();
     // delete
-    $("div:contains('Popüler Oyunlar')").eq(3)[0].remove()
-    $("div:contains('Canlı Casino')").eq(7)[0].remove()
+    // $("div:contains('Popüler Oyunlar')").eq(3)[0].remove()
+    // $("div:contains('Canlı Casino')").eq(7)[0].remove()
 }
 
 function otherGames(){
