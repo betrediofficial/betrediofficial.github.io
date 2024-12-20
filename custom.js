@@ -197,9 +197,11 @@ function slotGames(){
                   <div class="games-horiz-scroll" style="grid-template-rows: auto auto;">
                     <div class="casino-game-item-content">
                       <div class="casino-game-item">
-                      <a href="/${language}/casino/games/pragmaticlive-big-bass-crash">
                         <img src="https://betrediofficial.github.io/images/casino-games/big_bass_christmas_bash.jpg" class="casino-game-image-bc" loading="lazy">
-                        </a>
+                         <div class="overlay">
+                      <a href="/${language}/casino/games/american-roulette" class="">American Roulette</a>
+                  </div>
+                   
                       </div>
                     </div>
                      <div class="casino-game-item-content">
