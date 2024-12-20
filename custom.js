@@ -22,7 +22,7 @@ function initialize(){
   alert(window.location.pathname)
   if(!PAGES.includes(window.location.pathname)) return;
 
-    // bottomMenuWidget();
+    bottomMenuWidget();
     // otherGames();
     // slotGames();
     // casinoGames();
