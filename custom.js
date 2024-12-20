@@ -1,6 +1,7 @@
 try{ 
 
-
+  const path = window.location.pathname
+  const language = path.split("/")[1]
 
   if (typeof jQuery === 'undefined') {
     var script = document.createElement('script');
