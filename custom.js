@@ -14,7 +14,7 @@ if (typeof jQuery === 'undefined') {
     };
     document.head.appendChild(script);
 } else {
-    console.log('jQuery zaten mevcut.');
+    alert('burası aq')
 }
 
 const PAGES = ["/tr/", "/en/"]
