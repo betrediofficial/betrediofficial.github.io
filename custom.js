@@ -28,15 +28,15 @@ function initialize(){
     // casinoGames();
     // delete
     // Safe removal of elements
-    const popOyunlar = $("div:contains('Popüler Oyunlar')").eq(3);
-    if (popOyunlar.length) {
-        popOyunlar[0].remove();
-    }
+    // const popOyunlar = $("div:contains('Popüler Oyunlar')").eq(3);
+    // if (popOyunlar.length) {
+    //     popOyunlar[0].remove();
+    // }
 
-    const canliCasino = $("div:contains('Canlı Casino')").eq(7);
-    if (canliCasino.length) {
-        canliCasino[0].remove();
-    }
+    // const canliCasino = $("div:contains('Canlı Casino')").eq(7);
+    // if (canliCasino.length) {
+    //     canliCasino[0].remove();
+    // }
 }
 
 function otherGames(){
