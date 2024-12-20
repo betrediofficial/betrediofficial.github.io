@@ -215,6 +215,6 @@ function slotGames(){
 </div>
 `;
 
-  $('.section--first').eq(1).before(newSection)
+  $('.section--first').eq(0).before(newSection)
 
 }
