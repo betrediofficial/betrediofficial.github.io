@@ -45,10 +45,11 @@ function initialize(){
 
   
   if(!isHomePage){
+    alert('removed')
     $(".manually-added").remove();
   }  
   else{
-
+    alert('home')
     bottomMenuWidget();
     otherGames();
     slotGames();
