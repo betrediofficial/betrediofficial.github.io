@@ -16,7 +16,7 @@ try{
 }
 
 
-const PAGES = ["/tr/", "/en/"]
+const PAGES = ["/tr/", "/en/", "/tr", "/en"]
 
 function initialize(){
   alert(window.location.pathname)
