@@ -44,8 +44,10 @@ try{
 function initialize(){
 
   
-  if(!isHomePage) return $(".manually-added").remove();
-
+  if(!isHomePage){
+    $(".manually-added").remove();
+  }  
+  else{
 
     bottomMenuWidget();
     otherGames();
@@ -55,6 +57,9 @@ function initialize(){
     //hide default games
     $("div:contains('Popüler Oyunlar')").eq(8).hide()
     $("div:contains('Canlı Casino')").eq(7).hide()
+  }
+
+
     
 }
 
