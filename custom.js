@@ -61,7 +61,7 @@ function initialize(){
 function otherGames(){
         var newSection = `
            
-<div class="section" id="digeroyunlari">
+<div class="manually-added section" id="digeroyunlari">
   <div class="container otherGames">
     <div class="row">
       <div class="col-12">
@@ -121,7 +121,7 @@ function otherGames(){
 
 function bottomMenuWidget(){
     $(".section:first").append(`
-<div class="bottomMenuWidgedContainer">
+<div class="manually-added bottomMenuWidgedContainer">
   <div style="flex: 1 1 calc(25% - 10px); text-align: center;">
     <a href="https://imgbb.com/">
       <img src="https://betrediofficial.github.io/images/games.png" alt="games" class="bottomMenuWidgetImage" >
@@ -149,7 +149,7 @@ function bottomMenuWidget(){
 
 function slotGames(){
   var newSection = `
-     <div class="section" id="slotoyunlari">
+     <div class="manually-added section" id="slotoyunlari">
   <div class="container otherGames">
     <div class="row">
       <div class="col-12">
@@ -282,7 +282,7 @@ function slotGames(){
 
 function casinoGames(){
   var newSection = `
-     <div class="section" id="casinooyunlari">
+     <div class="manually-added section" id="casinooyunlari">
   <div class="container otherGames">
     <div class="row">
       <div class="col-12">
