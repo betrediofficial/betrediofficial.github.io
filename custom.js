@@ -19,7 +19,6 @@ try{
 const PAGES = ["/tr/", "/en/", "/tr", "/en"]
 
 function initialize(){
-  alert(window.location.pathname)
   if(!PAGES.includes(window.location.pathname)) return;
 
     bottomMenuWidget();
