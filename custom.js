@@ -18,9 +18,9 @@ try{
 
 // })
 
-$( document ).ready(function() {
-alert('asdasd')
-});
+// $( document ).ready(function() {
+// alert('asdasd')
+// });
 
 const PAGES = ["/tr/", "/en/"]
 
