@@ -15,6 +15,7 @@ function initialize(){
     bottomMenuWidget();
     otherGames();
     slotGames();
+    casinoGames();
 }
 
 function otherGames(){
