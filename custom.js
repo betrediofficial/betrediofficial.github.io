@@ -176,7 +176,7 @@ function slotGames(){
                     <div class="carousel-container" style="transform: translate3d(0%, 0px, 0px);">
                       <div class="carousel-slide active-slide" style="width: 100%;">
                         <div class="sdr-item-holder-bc">
-                          <a target="/${language}/casino/group/lobby" class"sdr-item-bc" href="#">
+                          <a href="/${language}/casino/group/lobby" class"sdr-item-bc" href="#">
                             <img src="https://betrediofficial.github.io/images/casino-games/Frame-67.png" loading="lazy" class="sdr-image-bc">
                           </a>
                         </div>
@@ -305,7 +305,7 @@ function casinoGames(){
               <div class="carousel-container" style="transform: translate3d(0%, 0px, 0px);">
                 <div class="carousel-slide active-slide" style="width: 100%;">
                   <div class="sdr-item-holder-bc">
-                    <a target="_self" class"sdr-item-bc" href="#">
+                    <a href="_self" class"sdr-item-bc" href="#">
                       <img src="https://betrediofficial.github.io/images/livecasino.png" loading="lazy" class="sdr-image-bc">
                     </a>
                   </div>
@@ -323,7 +323,7 @@ function casinoGames(){
                 <div class="casino-game-item">
                   <img src="https://betrediofficial.github.io/images/live-casino/american-roulette.png" class="casino-game-image-bc img-fluid">
                   <div class="overlay">
-                      <a target="/${language}/casino/games/american-roulette" class="">American Roulette</a>
+                      <a href="/${language}/casino/games/american-roulette" class="">American Roulette</a>
                   </div>
                 </div>
               </div>
@@ -332,7 +332,7 @@ function casinoGames(){
                 <div class="casino-game-item">
                   <img src="https://betrediofficial.github.io/images/live-casino/roulette_1_azure_drops_and_wins.jpg" class="casino-game-image-bc img-fluid">
                   <div class="overlay">
-                      <a target="/${language}/casino/games/pragmaticlive-roulette-azure" class="">Roulette Azure</a>
+                      <a href="/${language}/casino/games/pragmaticlive-roulette-azure" class="">Roulette Azure</a>
                   </div>
                 </div>
               </div>
@@ -340,7 +340,7 @@ function casinoGames(){
                 <div class="casino-game-item">
                   <img src="https://betrediofficial.github.io/images/live-casino/auto_roulette.jpg" class="casino-game-image-bc img-fluid">
                   <div class="overlay">
-                     <a target="/${language}/casino/games/ezugi-auto-roulette" class="">Auto Roulette</a>
+                     <a href="/${language}/casino/games/ezugi-auto-roulette" class="">Auto Roulette</a>
                   </div>
                 </div>
               </div>
@@ -348,7 +348,7 @@ function casinoGames(){
                 <div class="casino-game-item">
                   <img src="https://betrediofficial.github.io/images/live-casino/roulette.jpg" class="casino-game-image-bc img-fluid">
                   <div class="overlay">
-                      <a target="/${language}/casino/games/evolution-auto-roulette-vip" class="">Auto Roulette VIP</a>
+                      <a href="/${language}/casino/games/evolution-auto-roulette-vip" class="">Auto Roulette VIP</a>
                   </div>
                 </div>
               </div>
@@ -356,7 +356,7 @@ function casinoGames(){
                 <div class="casino-game-item">
                   <img src="https://betrediofficial.github.io/images/live-casino/blackjack.jpg" class="casino-game-image-bc img-fluid">
                   <div class="overlay">
-                      <a target="/${language}/casino/games/evolution-speed-blackjack-e" class="">Speed Blackjack E</a>
+                      <a href="/${language}/casino/games/evolution-speed-blackjack-e" class="">Speed Blackjack E</a>
                   </div>
                 </div>
               </div>
@@ -364,7 +364,7 @@ function casinoGames(){
                 <div class="casino-game-item">
                   <img src="https://betrediofficial.github.io/images/live-casino/blackjackvip.png" class="casino-game-image-bc img-fluid">
                   <div class="overlay">
-                    <a target="/${language}/casino/games/blackjack-vip" class="">Blackjack VIP</a>
+                    <a href="/${language}/casino/games/blackjack-vip" class="">Blackjack VIP</a>
                   </div>
                 </div>
               </div>
@@ -372,7 +372,7 @@ function casinoGames(){
                 <div class="casino-game-item">
                   <img src="https://betrediofficial.github.io/images/live-casino/las-vegas-roulette.png" class="casino-game-image-bc img-fluid">
                   <div class="overlay">
-                      <a target="/${language}/casino/games/las-vegas-roulette" class="">Lasvegas Roulette</a>
+                      <a href="/${language}/casino/games/las-vegas-roulette" class="">Lasvegas Roulette</a>
                   </div>
                 </div>
               </div>
@@ -380,7 +380,7 @@ function casinoGames(){
                 <div class="casino-game-item">
                   <img src="https://betrediofficial.github.io/images/live-casino/lucky-fruits-and-diamonds.png" class="casino-game-image-bc img-fluid">
                   <div class="overlay">
-                      <a target="/${language}/casino/games/lucky-fruits-diamonds" class="">Lucky Fruits & Diamonds</a>
+                      <a href="/${language}/casino/games/lucky-fruits-diamonds" class="">Lucky Fruits & Diamonds</a>
                   </div>
                 </div>
               </div>
@@ -388,7 +388,7 @@ function casinoGames(){
                 <div class="casino-game-item">
                   <img src="https://betrediofficial.github.io/images/live-casino/speed-blackjack.jpg" class="casino-game-image-bc img-fluid">
                   <div class="overlay">
-                     <a target="/${language}/casino/games/evolution-speed-blackjack-h" class="">Speed Blackjack H</a>
+                     <a href="/${language}/casino/games/evolution-speed-blackjack-h" class="">Speed Blackjack H</a>
                   </div>
                 </div>
               </div>
@@ -396,7 +396,7 @@ function casinoGames(){
                 <div class="casino-game-item">
                   <img src="https://betrediofficial.github.io/images/live-casino/turkish_roulette.jpg" class="casino-game-image-bc img-fluid">
                   <div class="overlay">
-                      <a target="/${language}/casino/games/ezugi-turkish-roulette" class="">Turkish Roulette</a>
+                      <a href="/${language}/casino/games/ezugi-turkish-roulette" class="">Turkish Roulette</a>
                   </div>
                 </div>
               </div>
