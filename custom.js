@@ -200,70 +200,89 @@ function slotGames(){
                       <div class="casino-game-item">
                         <img src="https://betrediofficial.github.io/images/casino-games/big_bass_christmas_bash.jpg" class="casino-game-image-bc" loading="lazy">
                          <div class="overlay">
-                      <a href="/${language}/casino/games/american-roulette" class="">American Roulette</a>
-                  </div>
+                            <a href="/${language}/casino/games/pragmaticlive-big-bass-crash" class="">Big bass Cristmas</a>
+                        </div>
                    
                       </div>
                     </div>
                      <div class="casino-game-item-content">
                       <div class="casino-game-item">
-                        <a href="/${language}/casino/games/pragmaticlive-big-bass-crash">
+                        
                         <img src="https://betrediofficial.github.io/images/casino-games/gates_of_olympus.jpg" class="casino-game-image-bc" loading="lazy">
-                        </a>
+                           <div class="overlay">
+                            <a href="/${language}/casino/games/pragmaticplay-gates-of-olympus" class="">Gates of Olympus</a>
+                        </div>
                       </div>
                     </div>
                      <div class="casino-game-item-content">
                       <div class="casino-game-item">
-                        <a href="/${language}/casino/games/pragmaticlive-big-bass-crash">
+                        
                         <img src="https://betrediofficial.github.io/images/casino-games/big_bass_secrets_of_the_golden_lake.jpg" class="casino-game-image-bc" loading="lazy">
-                        </a>
+                           <div class="overlay">
+                            <a href="/${language} /casino/games/pragmaticplay-big-bass-secrets-of-the-golden-lake" class="">Big Bass Secrets Of The Golden Lake</a>
+                        </div>
                       </div>
                     </div>
                      <div class="casino-game-item-content">
                       <div class="casino-game-item">
-                        <a href="/${language}/casino/games/pragmaticlive-big-bass-crash">
+                       
                         <img src="https://betrediofficial.github.io/images/casino-games/sweet_bonanza_1000.jpg" class="casino-game-image-bc" loading="lazy">
-                        </a>
+                          <div class="overlay">
+                            <a href="/${language}/casino/games/american-roulette" class="">Sweet Bonanza 1000</a>
+                        </div>
                       </div>
                     </div>
                      <div class="casino-game-item-content">
                       <div class="casino-game-item">
-                        <a href="/${language}/casino/games/pragmaticlive-big-bass-crash">
+                        
                         <img src="https://betrediofficial.github.io/images/casino-games/devils_deal_soul_for_sale.jpg" class="casino-game-image-bc" loading="lazy">
-                        </a>
+                          <div class="overlay">
+                            <a href="/${language}/casino/games/gaming7777-devils-deal-soul-for-sale" class="">Devil's Deal Soul For Sale</a>
+                        </div>
                       </div>
                     </div>
                      <div class="casino-game-item-content">
                       <div class="casino-game-item">
-                        <a href="/${language}/casino/games/pragmaticlive-big-bass-crash">
+                        
                         <img src="https://betrediofficial.github.io/images/casino-games/shining_crown.jpg" class="casino-game-image-bc" loading="lazy">
-                        </a>
+                     <div class="overlay">
+                            <a href="/${language}/casino/games/american-roulette" class="">Shining Crown</a>
+                        </div>
                       </div>
                     </div>
                      <div class="casino-game-item-content">
                       <div class="casino-game-item">
-                        <a href="/${language}/casino/games/pragmaticlive-big-bass-crash">
+                       
                         <img src="https://betrediofficial.github.io/images/casino-games/zeus_vs_hades_gods_of_war.jpg" class="casino-game-image-bc" loading="lazy">
-                        </a>
+                      <div class="overlay">
+                            <a href="/${language}/casino/games/american-roulette" class="">Zeus Vs Hades</a>
+                        </div>
                       </div>
                     </div>
                      <div class="casino-game-item-content">
                       <div class="casino-game-item">
                         <img src="https://betrediofficial.github.io/images/casino-games/wisdom_of_athena.jpg" class="casino-game-image-bc" loading="lazy">
+                        <div class="overlay">
+                            <a href="/${language}/casino/games/american-roulette" class="">Wisdom Of Athena</a>
+                        </div>
                       </div>
                     </div>
                      <div class="casino-game-item-content">
                       <div class="casino-game-item">
-                        <a href="/${language}/casino/games/pragmaticlive-big-bass-crash">
+                      
                         <img src="https://betrediofficial.github.io/images/casino-games/starlight_princess_1000.jpg" class="casino-game-image-bc" loading="lazy">
-                        </a>
+                       <div class="overlay">
+                            <a href="/${language}/casino/games/american-roulette" class="">StarLight Princess 1000</a>
+                        </div>
                       </div>
                     </div>
                      <div class="casino-game-item-content">
                       <div class="casino-game-item">
-                        <a href="/${language}/casino/games/pragmaticlive-big-bass-crash">
+                        
                         <img src="https://betrediofficial.github.io/images/casino-games/sugar_rush_1000.jpg" class="casino-game-image-bc" loading="lazy">
-                        </a>
+                      <div class="overlay">
+                            <a href="/${language}/casino/games/american-roulette" class="">Sugar Rush 1000</a>
+                        </div>
                       </div>
                     </div>
                   </div>
