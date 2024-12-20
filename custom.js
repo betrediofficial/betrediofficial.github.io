@@ -16,11 +16,23 @@ try{
 // $('a').on('click', function(e){
 
 
-// })
 
-// $( document ).ready(function() {
-// alert('asdasd')
-// });
+
+function waitForJQuery(callback) {
+  if (typeof jQuery !== 'undefined') {
+      callback();
+  } else {
+      setTimeout(function() {
+          waitForJQuery(callback);
+      }, 100);
+  }
+}
+
+waitForJQuery(function() {
+  $(document).ready(function() {
+     alert('triggered')
+  });
+});
 
 const PAGES = ["/tr/", "/en/"]
 
