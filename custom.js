@@ -28,7 +28,9 @@ function initialize(){
     // casinoGames();
     // delete
 
-    const popOyunlar = $("div:contains('Popüler Oyunlar')").eq(3);
+    
+    try{
+      const popOyunlar = $("div:contains('Popüler Oyunlar')").eq(3);
     if (popOyunlar.length) {
         popOyunlar[0].remove();
     }
@@ -37,6 +39,10 @@ function initialize(){
     if (canliCasino.length) {
         canliCasino[0].remove();
     }
+  }
+  catch(e){
+    
+  }
 }
 
 function otherGames(){
