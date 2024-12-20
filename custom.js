@@ -11,7 +11,11 @@ if (typeof jQuery === 'undefined') {
     console.log('jQuery zaten mevcut.');
 }
 
+const PAGES = ["/tr/", "/en/"]
+
 function initialize(){
+  if(!PAGES.includes(window.location.pathname)) return;
+  
     bottomMenuWidget();
     otherGames();
     slotGames();
