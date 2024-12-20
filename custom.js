@@ -231,7 +231,7 @@ function slotGames(){
                        
                         <img src="https://betrediofficial.github.io/images/casino-games/sweet_bonanza_1000.jpg" class="casino-game-image-bc" loading="lazy">
                           <div class="overlay">
-                            <a href="/${language}/casino/games/american-roulette" class="">Sweet Bonanza 1000</a>
+                            <a href="/${language}/casino/games/pragmaticplay-sweet-bonanza-1000" class="">Sweet Bonanza 1000</a>
                         </div>
                       </div>
                     </div>
@@ -249,7 +249,7 @@ function slotGames(){
                         
                         <img src="https://betrediofficial.github.io/images/casino-games/shining_crown.jpg" class="casino-game-image-bc" loading="lazy">
                      <div class="overlay">
-                            <a href="/${language}/casino/games/american-roulette" class="">Shining Crown</a>
+                            <a href="/${language}/casino/games/egt-interactive-shining-crown" class="">Shining Crown</a>
                         </div>
                       </div>
                     </div>
