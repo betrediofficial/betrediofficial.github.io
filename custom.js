@@ -41,7 +41,7 @@ function initialize(){
     }
   }
   catch(e){
-    
+    alert('asdas')
   }
 }
 
