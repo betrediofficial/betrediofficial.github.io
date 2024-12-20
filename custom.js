@@ -49,7 +49,7 @@ function initialize(){
     $(".manually-added").remove();
   }  
   else{
-    alert('home')
+    alert(window.location.pathname)
     bottomMenuWidget();
     otherGames();
     slotGames();
