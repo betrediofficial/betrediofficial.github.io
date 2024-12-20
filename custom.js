@@ -44,8 +44,8 @@ try{
 function initialize(){
 
   
-  if(!isHomePage) return;
-  alert('combi')
+  if(!isHomePage) return $(".manually-added").remove();
+
 
     bottomMenuWidget();
     otherGames();
