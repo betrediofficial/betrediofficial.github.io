@@ -216,5 +216,6 @@ function slotGames(){
 `;
 
   $('.section--first').eq(0).before(newSection)
+  $('.section--first').eq(0).remove()
 
 }
