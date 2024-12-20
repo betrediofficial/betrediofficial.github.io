@@ -20,14 +20,14 @@ try{
               originalPushState.apply(history, arguments);
               setTimeout(() => {
                 initialize(); 
-              }, 200); // URL değiştiğinde fonksiyonu çağır
+              }, 500); // URL değiştiğinde fonksiyonu çağır
           };
         
           // Popstate olayı için dinleyici ekle
           $(window).on('popstate', function() {
             setTimeout(() => {
               initialize(); 
-            }, 200); // Geri düğmesine basıldığında fonksiyonu çağır
+            }, 500); // Geri düğmesine basıldığında fonksiyonu çağır
           });
 
 
