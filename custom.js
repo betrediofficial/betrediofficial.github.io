@@ -30,12 +30,12 @@ function initialize(){
 
     // const popOyunlar = $("div:contains('Popüler Oyunlar')").eq(3);
     // if (popOyunlar.length) {
-    //     popOyunlar[0].remove();
+    //     popOyunlar[0].hide();
     // }
 
     // const canliCasino = $("div:contains('Canlı Casino')").eq(7);
     // if (canliCasino.length) {
-    //     canliCasino[0].remove();
+    //     canliCasino[0].hide();
     // }
 }
 
@@ -239,7 +239,7 @@ function slotGames(){
 
   $('.section--first').eq(0).before(newSection)
   const removed = $('.section--first').eq(0)
-  if(removed.length) removed.remove()
+  if(removed.length) removed.hide()
 
 }
 
