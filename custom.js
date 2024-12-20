@@ -277,7 +277,7 @@ function casinoGames(){
                   <div class="games-horiz-scroll" style="grid-template-rows: auto auto;">
                     <div class="casino-game-item-content">
                       <div class="casino-game-item">
-                      <a href="/tr/casino/games/pragmaticplay-gates-of-olympus">
+                      <a href="casino/games/pragmaticplay-gates-of-olympus">
                         <img src="https://betrediofficial.github.io/images/casino-games/big_bass_christmas_bash.jpg" class="casino-game-image-bc" loading="lazy">
                         </a>
                       </div>
