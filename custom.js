@@ -14,7 +14,7 @@ if (typeof jQuery === 'undefined') {
 const PAGES = ["/tr/", "/en/"]
 
 function initialize(){
-  alert('1')
+  alert(window.location.pathname)
   if(!PAGES.includes(window.location.pathname)) return;
 
     bottomMenuWidget();
