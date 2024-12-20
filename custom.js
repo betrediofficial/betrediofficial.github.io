@@ -18,7 +18,11 @@ function initialize(){
 
 function otherGames(){
 
-  $(".section--first").before(`
+  var $lastSection = $('.section--first');
+
+        // Yeni section içeriği
+        var newSection = `
+           
     <div class="section id="casinooyunlari">
   <div class="otherGames">
         <h1 class="otherGamesHeader">CANLI CASINO OYUNLARI</h1>
@@ -46,7 +50,14 @@ function otherGames(){
   </div>
 </div>
 </div>
-</div>`) 
+</div>
+        `;
+
+        // Eğer yeni section daha önce eklenmemişse ekle
+        if ($lastSection.next().length === 0) {
+            $lastSection.before(newSection);
+        }
+
 }
 
 function bottomMenuWidget(){
