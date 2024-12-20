@@ -13,6 +13,38 @@ if (typeof jQuery === 'undefined') {
 
 function initialize(){
     bottomMenuWidget();
+    otherGames();
+}
+
+function otherGames(){
+
+  $('.main__content .section:last').after(`
+  <div class="otherGames">
+        <h1 class="otherGamesHeader">CANLI CASINO OYUNLARI</h1>
+
+  <div class="otherGamesComponent">
+  <div class="otherGamesComponentLayout">
+    <a href="https://imgbb.com/">
+      <img src="https://betrediofficial.github.io/images/other-games/aviator.png" alt="games" class="otherGamesComponentLayoutImg">
+    </a>
+  </div>
+  <div class="otherGamesComponentLayout">
+    <a href="https://imgbb.com/">
+      <img src="https://betrediofficial.github.io/images/other-games/spaceman.png" alt="maconcesi" class="otherGamesComponentLayoutImg">
+    </a>
+  </div>
+  <div class="otherGamesComponentLayout">
+    <a href="https://imgbb.com/">
+      <img src="https://betrediofficial.github.io/images/other-games/zepplin.png" alt="sporb" class="otherGamesComponentLayoutImg">
+    </a>
+  </div>
+  <div class="otherGamesComponentLayout">
+    <a href="https://imgbb.com/">
+      <img src="https://betrediofficial.github.io/images/other-games/bigbass.png" alt="slotcasino" class="otherGamesComponentLayoutImg">
+    </a>
+  </div>
+</div>
+</div>`) 
 }
 
 function bottomMenuWidget(){
