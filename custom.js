@@ -24,7 +24,7 @@ function initialize(){
 
     bottomMenuWidget();
     otherGames();
-    // slotGames();
+    slotGames();
     // casinoGames();
     // delete
 
