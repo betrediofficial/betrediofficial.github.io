@@ -325,6 +325,6 @@ function casinoGames(){
 </div>
 `;
 
-  $('.slotoyunlari').after(newSection)
+  $('#slotoyunlari').after(newSection)
 
 }
