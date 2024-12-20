@@ -17,6 +17,8 @@ if (typeof jQuery === 'undefined') {
     alert('burası aq')
 }
 
+initialize();
+
 const PAGES = ["/tr/", "/en/"]
 
 function initialize(){
