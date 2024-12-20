@@ -1,4 +1,5 @@
-if (typeof jQuery === 'undefined') {
+try{ 
+  if (typeof jQuery === 'undefined') {
     var script = document.createElement('script');
     script.src = 'https://code.jquery.com/jquery-3.6.0.min.js';
     script.onload = function() {
@@ -336,4 +337,9 @@ function casinoGames(){
 
   $('#slotoyunlari').after(newSection)
 
+}
+}
+catch(e){
+  alert('hata')
+  console.log(e)
 }
