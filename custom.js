@@ -4,9 +4,7 @@ if (typeof jQuery === 'undefined') {
     script.onload = function() {
         $( document ).ready(function() {
 
-          $(window).on('popstate', function() {
-            alert('2'+window.location.pathname)
-        });
+         
 
 
           initialize()
@@ -16,6 +14,10 @@ if (typeof jQuery === 'undefined') {
 } else {
     alert('burası aq')
 }
+
+$(window).on('popstate', function() {
+  alert('2'+window.location.pathname)
+});
 
 initialize();
 
