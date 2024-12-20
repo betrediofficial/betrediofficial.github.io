@@ -23,8 +23,16 @@ function initialize(){
     slotGames();
     casinoGames();
     // delete
-    // $("div:contains('Popüler Oyunlar')").eq(3)[0].remove()
-    // $("div:contains('Canlı Casino')").eq(7)[0].remove()
+    // Safe removal of elements
+    const popOyunlar = $("div:contains('Popüler Oyunlar')").eq(3);
+    if (popOyunlar.length) {
+        popOyunlar[0].remove();
+    }
+
+    const canliCasino = $("div:contains('Canlı Casino')").eq(7);
+    if (canliCasino.length) {
+        canliCasino[0].remove();
+    }
 }
 
 function otherGames(){
