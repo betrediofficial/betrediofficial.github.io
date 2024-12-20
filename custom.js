@@ -19,6 +19,7 @@ function initialize(){
 function otherGames(){
 
   $(".section--first").before(`
+    <div class="section id="casinooyunlari">
   <div class="otherGames">
         <h1 class="otherGamesHeader">CANLI CASINO OYUNLARI</h1>
 
@@ -43,6 +44,7 @@ function otherGames(){
       <img src="https://betrediofficial.github.io/images/other-games/bigbass.png" alt="slotcasino" class="otherGamesComponentLayoutImg">
     </a>
   </div>
+</div>
 </div>
 </div>`) 
 }
