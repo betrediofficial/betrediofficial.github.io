@@ -25,7 +25,9 @@ function otherGames(){
   <div class="container otherGames">
     <div class="row">
       <div class="col-12">
-        <div class="section__title-wrap"><h2 class="section__title"><svg class="svg-icon"><use href="/static/media/sprite.33143bc5180d8cec7f771b3eedc5187c.svg#top-games"></use></svg>En Popüler Oyunlar</h2><a class="section__view section__view--carousel" href="/tr/casino/group/top-games">Tümünü Görüntüle</a></div>
+        <div class="section__title-wrap"><h2 class="section__title"><svg class="svg-icon"><use href="/static/media/sprite.33143bc5180d8cec7f771b3eedc5187c.svg#top-games"></use></svg>
+        EKSTRA OYUNLAR
+        </h2><a class="section__view section__view--carousel" href="/tr/casino/group/top-games">Tümünü Görüntüle</a></div>
       </div>
       <div class="col-12">
         <div class="otherGamesComponent">
