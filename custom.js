@@ -13,7 +13,9 @@ try{
         
           
 
-          initialize();
+          setTimeout(() => {
+            initialize(); 
+          }, 500); // URL değiştiğinde fonksiyonu çağır
 
           // History API kullanarak URL değişikliklerini izleyin
           const originalPushState = history.pushState;
