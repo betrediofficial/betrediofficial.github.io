@@ -53,7 +53,7 @@ try {
 
   function removeHomePageWidgets() {
     if (!isHomePageCheck()) {
-      $(".manually-added").remove();
+      $(".manually-added-home-widgets").remove();
     }
   }
 
@@ -87,7 +87,7 @@ try {
   function otherGames() {
     var newSection = `
            
-<div class="manually-added section" id="digeroyunlari">
+<div class="manually-added-home-widgets section" id="digeroyunlari">
   <div class="container otherGames">
     <div class="row">
       <div class="col-12">
@@ -147,7 +147,7 @@ try {
 
   function bottomMenuWidget() {
     $(".section:first").append(`
-<div class="manually-added bottomMenuWidgedContainer">
+<div class="manually-added-home-widgets bottomMenuWidgedContainer">
   <div style="flex: 1 1 calc(25% - 10px); text-align: center;">
     <a href="https://imgbb.com/">
       <img src="https://betrediofficial.github.io/images/games.png" alt="games" class="bottomMenuWidgetImage" >
@@ -175,7 +175,7 @@ try {
 
   function slotGames() {
     var newSection = `
-     <div class="manually-added section" id="slotoyunlari">
+     <div class="manually-added-home-widgets section" id="slotoyunlari">
   <div class="container otherGames">
     <div class="row">
       <div class="col-12">
@@ -329,7 +329,7 @@ try {
 
   function casinoGames() {
     var newSection = `
-     <div class="manually-added section" id="casinooyunlari">
+     <div class="manually-added-home-widgets section" id="casinooyunlari">
   <div class="container otherGames">
     <div class="row">
       <div class="col-12">
