@@ -547,7 +547,7 @@ function headerButtons() {
   </defs>
 </svg>
   </a>
-  <a href="" class="telegram">
+  <a href="" class="btn-telegram">
     <svg width="90" height="90" viewBox="0 0 90 90" fill="none" xmlns="http://www.w3.org/2000/svg">
   <g filter="url(#filter0_d_92_57)">
     <rect x="30" y="25" width="40" height="40" rx="8" fill="url(#paint0_linear_92_57)"/>
@@ -578,7 +578,7 @@ function headerButtons() {
   </defs>
 </svg>
   </a>
-  <a href="" class="whatsapp">
+  <a href="" class="btn-whatsapp">
     <img src="https://betrediofficial.github.io/images/buttons/t6yf1mw.png"/>
   </a>
   
