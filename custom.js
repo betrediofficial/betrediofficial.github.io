@@ -18,9 +18,11 @@ try {
         const originalPushState = history.pushState;
         history.pushState = function (state) {
           originalPushState.apply(history, arguments);
+          
           setTimeout(() => {
             initialize();
           }, 500); // URL değiştiğinde fonksiyonu çağır
+          removeHomePageWidgets();
         };
 
         // Popstate olayı için dinleyici ekle
@@ -28,6 +30,7 @@ try {
           setTimeout(() => {
             initialize();
           }, 500); // Geri düğmesine basıldığında fonksiyonu çağır
+          removeHomePageWidgets();
         });
 
 
@@ -42,18 +45,27 @@ try {
     console.log('jQuery zaten mevcut.');
   }
 
+  function isHomePageCheck(){
+    const path = window.location.pathname
+    const splitPath = path.split("/")
+    return !splitPath[2] || splitPath[2] === ""
+  }
+
+  function removeHomePageWidgets() {
+    if (!isHomePageCheck()) {
+      $(".manually-added").remove();
+    }
+  }
 
   function initialize() {
 
-    const path = window.location.pathname
-    language = path.split("/")[1]
-    const splitPath = path.split("/")
-    const isHomePage = !splitPath[2] || splitPath[2] === ""
+    language = window.location.pathname.split("/")[1]
+    const isHomePage = isHomePageCheck()
     if (language !== "tr") return;
 
 
     if (!isHomePage) {
-      $(".manually-added").remove();
+      removeHomePageWidgets()
     }
     else {
       bottomMenuWidget();
