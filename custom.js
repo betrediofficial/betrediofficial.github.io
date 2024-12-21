@@ -1,79 +1,79 @@
 var language = window.location.pathname.split("/")[1];
-try{ 
-  
-  
+try {
+
+
 
 
 
   if (typeof jQuery === 'undefined') {
     var script = document.createElement('script');
     script.src = 'https://code.jquery.com/jquery-3.6.0.min.js';
-    script.onload = function() {
-        $( document ).ready(function() {
-        
-
-            initialize(); 
-
-          // History API kullanarak URL değişikliklerini izleyin
-          const originalPushState = history.pushState;
-          history.pushState = function(state) {
-              originalPushState.apply(history, arguments);
-              setTimeout(() => {
-                initialize(); 
-              }, 500); // URL değiştiğinde fonksiyonu çağır
-          };
-        
-          // Popstate olayı için dinleyici ekle
-          $(window).on('popstate', function() {
-            setTimeout(() => {
-              initialize(); 
-            }, 500); // Geri düğmesine basıldığında fonksiyonu çağır
-          });
+    script.onload = function () {
+      $(document).ready(function () {
 
 
+        initialize();
 
+        // History API kullanarak URL değişikliklerini izleyin
+        const originalPushState = history.pushState;
+        history.pushState = function (state) {
+          originalPushState.apply(history, arguments);
+          setTimeout(() => {
+            initialize();
+          }, 500); // URL değiştiğinde fonksiyonu çağır
+        };
 
-
-
+        // Popstate olayı için dinleyici ekle
+        $(window).on('popstate', function () {
+          setTimeout(() => {
+            initialize();
+          }, 500); // Geri düğmesine basıldığında fonksiyonu çağır
         });
+
+
+
+
+
+
+      });
     };
     document.head.appendChild(script);
-} else {
+  } else {
     console.log('jQuery zaten mevcut.');
-}
-
-
-function initialize(){
-
-  const path = window.location.pathname
-  language = path.split("/")[1]
-  const splitPath = path.split("/")
-  const isHomePage = !splitPath[2] || splitPath[2] === ""
-  if(language !== "tr") return;
-
-
-  if(!isHomePage){
-    $(".manually-added").remove();
-  }  
-  else{
-    bottomMenuWidget();
-    otherGames();
-    slotGames();
-    casinoGames();
-
-    //hide default games
-    hideDefaultGames(50);
-    hideDefaultGames(1500);
   }
 
-  headerButtons();
+
+  function initialize() {
+
+    const path = window.location.pathname
+    language = path.split("/")[1]
+    const splitPath = path.split("/")
+    const isHomePage = !splitPath[2] || splitPath[2] === ""
+    if (language !== "tr") return;
 
 
-    
-}
+    if (!isHomePage) {
+      $(".manually-added").remove();
+    }
+    else {
+      bottomMenuWidget();
+      otherGames();
+      slotGames();
+      casinoGames();
 
-function otherGames(){
-        var newSection = `
+      //hide default games
+      hideDefaultGames(50);
+      hideDefaultGames(1500);
+    }
+
+    headerButtons();
+
+
+
+  }
+
+  function otherGames() {
+    var newSection = `
            
 <div class="manually-added section" id="digeroyunlari">
   <div class="container otherGames">
@@ -129,11 +129,11 @@ function otherGames(){
 
         `;
 
-        $('.section--first').eq(1).before(newSection)
+    $('.section--first').eq(1).before(newSection)
 
-}
+  }
 
-function bottomMenuWidget(){
+  function bottomMenuWidget() {
     $(".section:first").append(`
 <div class="manually-added bottomMenuWidgedContainer">
   <div style="flex: 1 1 calc(25% - 10px); text-align: center;">
@@ -158,11 +158,11 @@ function bottomMenuWidget(){
   </div>
 </div>
     `);
-}
+  }
 
 
-function slotGames(){
-  var newSection = `
+  function slotGames() {
+    var newSection = `
      <div class="manually-added section" id="slotoyunlari">
   <div class="container otherGames">
     <div class="row">
@@ -309,14 +309,14 @@ function slotGames(){
 </div>
 `;
 
-  $('.section--first').eq(0).before(newSection)
-  const removed = $('.section--first').eq(0)
-  if(removed.length) removed.hide()
+    $('.section--first').eq(0).before(newSection)
+    const removed = $('.section--first').eq(0)
+    if (removed.length) removed.hide()
 
-}
+  }
 
-function casinoGames(){
-  var newSection = `
+  function casinoGames() {
+    var newSection = `
      <div class="manually-added section" id="casinooyunlari">
   <div class="container otherGames">
     <div class="row">
@@ -450,28 +450,32 @@ function casinoGames(){
 </div>
 `;
 
-  $('#slotoyunlari').after(newSection)
+    $('#slotoyunlari').after(newSection)
 
+  }
 }
-}
-catch(e){
+catch (e) {
   alert('hata')
   console.log(e)
 }
 
-function hideDefaultGames(ms){
+function hideDefaultGames(ms) {
   let popularGames = language === "tr" ? "Popüler Oyunlar" : "Popular Games"
   let liveCasino = language === "tr" ? "Canlı Casino" : "Live Casino"
-  setTimeout(()=>{
+  setTimeout(() => {
     $(`div:contains('${popularGames}')`).eq(8).hide()
     $(`div:contains('${liveCasino}')`).eq(7).hide()
-  },ms)
+  }, ms)
 
 }
 
-function headerButtons(){
-  $(".header__actions").prepend(`
-    <button class="header__signup redi_live_button" type="button">REDI LIVE</button>
-    <button class="header__signup deposit_money_button" type="button">Para Yatırma</button>
+function headerButtons() {
+  if ($(".manual-buttons").length === 0) {
+    $(".header__actions").prepend(`
+    <span class="manual-buttons">
+      <button class="header__signup redi_live_button" type="button">REDI LIVE</button>
+      <button class="header__signup deposit_money_button" type="button">Para Yatırma</button>
+    </span>
     `)
+  }
 }
