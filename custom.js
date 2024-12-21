@@ -1,6 +1,7 @@
 var language = window.location.pathname.split("/")[1];
 try{ 
   
+  
 
 
 
@@ -61,8 +62,7 @@ function initialize(){
     casinoGames();
 
     //hide default games
-    $("div:contains('Popüler Oyunlar')").eq(8).hide()
-    $("div:contains('Canlı Casino')").eq(7).hide()
+    hideDefaultGames();
   }
 
 
@@ -454,4 +454,12 @@ function casinoGames(){
 catch(e){
   alert('hata')
   console.log(e)
+}
+
+function hideDefaultGames(){
+  setTimeout(()=>{
+    $("div:contains('Popüler Oyunlar')").eq(8).hide()
+    $("div:contains('Canlı Casino')").eq(7).hide()
+  },200)
+
 }
