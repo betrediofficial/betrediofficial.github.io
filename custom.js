@@ -477,12 +477,8 @@ function hideDefaultGames(ms) {
 
   if($(`h2:contains("${popularGames}")`).length === 0){
     $('.section').eq(7).hide()
-  }
-
-  if($(`h2:contains("${liveCasino}")`).length === 0){
     $('.section').eq(8).hide()
   }
-
 
   setTimeout(() => {
     $(`div:contains('${popularGames}')`).eq(8).hide()
