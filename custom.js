@@ -464,6 +464,6 @@ function hideDefaultGames(){
   setTimeout(()=>{
     $(`div:contains('${popularGames}')`).eq(8).hide()
     $(`div:contains('${liveCasino}')`).eq(7).hide()
-  },200)
+  },500)
 
 }
