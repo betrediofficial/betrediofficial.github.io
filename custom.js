@@ -49,6 +49,7 @@ function initialize(){
   language = path.split("/")[1]
   const splitPath = path.split("/")
   const isHomePage = !splitPath[2] || splitPath[2] === ""
+  if(language !== "tr") return;
 
 
   if(!isHomePage){
@@ -224,7 +225,7 @@ function slotGames(){
                         
                         <img src="https://betrediofficial.github.io/images/casino-games/big_bass_secrets_of_the_golden_lake.jpg" class="casino-game-image-bc" loading="lazy">
                            <div class="overlay">
-                            <a href="/${language} /casino/games/pragmaticplay-big-bass-secrets-of-the-golden-lake" class="">Big Bass Secrets Of The Golden Lake</a>
+                            <a href="/${language}/casino/games/pragmaticplay-big-bass-secrets-of-the-golden-lake" class="">Big Bass Secrets Of The Golden Lake</a>
                         </div>
                       </div>
                     </div>
