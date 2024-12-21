@@ -474,10 +474,10 @@ function headerButtons() {
     $(".header__actions").prepend(`
     <span class="manual-buttons">
      <div class="buttonsContainer">
-  <a href="" class="redilive">
+  <a href="" class="btn-redilive">
     <img src="https://betrediofficial.github.io/images/buttons/tvykxfb.png"/>
   </a>
-   <a href="" class="deposit">
+   <a href="" class="btn-deposit">
     <img src="https://betrediofficial.github.io/images/buttons/io68nmg.png"/>
   </a>
   <a href="" class="call">
@@ -511,7 +511,7 @@ function headerButtons() {
   </defs>
 </svg>
   </a>
-  <a href="" class="twitter">
+  <a href="" class="btn-twitter">
     <svg width="90" height="90" viewBox="0 0 90 90" fill="none" xmlns="http://www.w3.org/2000/svg">
   <g filter="url(#filter0_d_92_59)">
     <rect x="30" y="25" width="40" height="40" rx="8" fill="url(#paint0_linear_92_59)"/>
