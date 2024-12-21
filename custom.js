@@ -475,10 +475,12 @@ function hideDefaultGames(ms) {
   let popularGames = language === "tr" ? "Popüler Oyunlar" : "Popular Games"
   let liveCasino = language === "tr" ? "Canlı Casino" : "Live Casino"
 
+  setTimeout(() => {
   if($(`h2:contains("${popularGames}")`).length === 0){
     $('.section').eq(7).hide()
     $('.section').eq(8).hide()
   }
+}, ms- 100);
 
   setTimeout(() => {
     $(`div:contains('${popularGames}')`).eq(8).hide()
