@@ -62,7 +62,7 @@ function initialize(){
     casinoGames();
 
     //hide default games
-    hideDefaultGames();
+    // hideDefaultGames();
   }
 
 
@@ -457,6 +457,7 @@ catch(e){
 }
 
 function hideDefaultGames(){
+  let popularGames = language === "tr" ? "Popüler Oyunlar" : "Popular"
   setTimeout(()=>{
     $("div:contains('Popüler Oyunlar')").eq(8).hide()
     $("div:contains('Canlı Casino')").eq(7).hide()
