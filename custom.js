@@ -56,6 +56,7 @@ function initialize(){
     $(".manually-added").remove();
   }  
   else{
+    headerButtons();
     bottomMenuWidget();
     otherGames();
     slotGames();
@@ -465,4 +466,11 @@ function hideDefaultGames(ms){
     $(`div:contains('${liveCasino}')`).eq(7).hide()
   },ms)
 
+}
+
+function headerButtons(){
+  $(".header__actions").append(`
+    <button class="header__signup redi_live_button" type="button">REDI LIVE</button>
+    <button class="header__signup deposit_money_button" type="button">Para Yatırma</button>
+    `)
 }
