@@ -11,11 +11,8 @@ try{
     script.onload = function() {
         $( document ).ready(function() {
         
-          
 
-          setTimeout(() => {
             initialize(); 
-          }, 500); // URL değiştiğinde fonksiyonu çağır
 
           // History API kullanarak URL değişikliklerini izleyin
           const originalPushState = history.pushState;
@@ -64,7 +61,8 @@ function initialize(){
     casinoGames();
 
     //hide default games
-    hideDefaultGames();
+    hideDefaultGames(50);
+    hideDefaultGames(1500);
   }
 
 
@@ -458,12 +456,12 @@ catch(e){
   console.log(e)
 }
 
-function hideDefaultGames(){
+function hideDefaultGames(ms){
   let popularGames = language === "tr" ? "Popüler Oyunlar" : "Popular Games"
   let liveCasino = language === "tr" ? "Canlı Casino" : "Live Casino"
   setTimeout(()=>{
     $(`div:contains('${popularGames}')`).eq(8).hide()
     $(`div:contains('${liveCasino}')`).eq(7).hide()
-  },1500)
+  },ms)
 
 }
