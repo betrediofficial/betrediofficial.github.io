@@ -73,7 +73,7 @@ try {
     }
     else {
       is_mobile && mobileBoxes();
-      bottomMenuWidget();
+      bottomMenuWidget(is_mobile);
        otherGames();
       !is_mobile && slotGames();
       !is_mobile && casinoGames();
@@ -236,7 +236,7 @@ try {
     `);
   }
 
-  function bottomMenuWidget() {
+  function bottomMenuWidget(isMobile) {
     $(".section:first").append(`
 <div class="manually-added-home-widgets bottomMenuWidgedContainer">
   <div style="flex: 1 1 calc(25% - 10px); text-align: center;">
@@ -244,12 +244,12 @@ try {
       <img src="https://betrediofficial.github.io/images/games.png" alt="games" class="bottomMenuWidgetImage" >
     </a>
   </div>
-  
-  <!-- <div style="flex: 1 1 calc(25% - 10px); text-align: center;">
+
+  ${!isMobile && `<div style="flex: 1 1 calc(25% - 10px); text-align: center;">
     <a href="https://imgbb.com/">
       <img src="https://betrediofficial.github.io/images/maconcesi.png" alt="maconcesi" class="bottomMenuWidgetImage" >
     </a>
-  </div> -->
+  </div>`}
 
   <div style="flex: 1 1 calc(25% - 10px); text-align: center;">
     <a href="https://imgbb.com/">
