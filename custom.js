@@ -545,10 +545,35 @@ function headerButtons() {
   $("header .container").append(`
     <div class="row" id="mobile-header-buttons">
 
-      <div class="col-4">
+      <div class="col-2">
           <a href="" class="manual-redi-button">
             <span>
             ${SVGS.callIcon}
+            </span>
+         </a>
+      </div>
+
+        <div class="col-2">
+          <a href="" class="manual-redi-button">
+            <span>
+            ${SVGS.twitterIcon}
+            </span>
+         </a>
+      </div>
+
+
+        <div class="col-2">
+          <a href="" class="manual-redi-button">
+            <span>
+            ${SVGS.telegramIcon}
+            </span>
+         </a>
+      </div>
+
+       <div class="col-2">
+          <a href="" class="manual-redi-button">
+            <span>
+            ${SVGS.whatsappIconer}
             </span>
          </a>
       </div>
