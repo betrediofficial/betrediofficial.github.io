@@ -544,17 +544,15 @@ function headerButtons() {
   if ($("#mobile-header-buttons").length === 0) {
   $("header .container").append(`
     <div class="row" id="mobile-header-buttons">
+
       <div class="col-4">
-         <a href="" class="manual-redi-button">
-          REDI LIVE
-        </a>
+          <a href="" class="manual-redi-button">
+            <span>
+            ${SVGS.callIcon}
+            </span>
+         </a>
       </div>
 
-       <div class="col-4">
-         <a href="" class="manual-redi-button">
-          Para Yatırma
-        </a>
-      </div>
     </div>
     `)
   }
