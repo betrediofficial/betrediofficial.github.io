@@ -541,6 +541,7 @@ function headerButtons() {
     `)
   }
 
+  if ($("#mobile-header-buttons").length === 0) {
   $("header .container").append(`
     <div class="row" id="mobile-header-buttons">
       <div class="col-sm-2">
@@ -553,6 +554,7 @@ function headerButtons() {
       </div>
     </div>
     `)
+  }
 }
 
 
