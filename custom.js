@@ -72,6 +72,7 @@ try {
       removeHomePageWidgets()
     }
     else {
+      is_mobile && mobileBoxes();
       bottomMenuWidget();
        otherGames();
       !is_mobile && slotGames();
@@ -147,6 +148,103 @@ try {
 
     $('.section--first').eq(1).before(newSection)
 
+  }
+
+  function bottomMenuWidget() {
+    $(".section:first").append(`
+<div class="manually-added-home-widgets container mt-4 mobile-boxes">
+  <div class="row row-cols-2 row-cols-md-3 row-cols-lg-4 g-1">
+        <div class="col-4">
+          <div class="box-icon-item">
+            <img
+              src="https://betrediofficial.github.io/images/mobile-view//live_casino.png"
+              width="48"
+              height="48"
+              class="d-block mx-auto"
+            />
+            <span>Live Casino</span>
+          </div>
+        </div>
+        <div class="col-4">
+          <div class="box-icon-item">
+            <img
+              src="https://betrediofficial.github.io/images/mobile-view//casino.png"
+              width="48"
+              height="48"
+              class="d-block mx-auto"
+            />
+            <span>Casino</span>
+          </div>
+        </div>
+        <div class="col-4">
+          <div class="box-icon-item">
+            <img
+              src="https://betrediofficial.github.io/images/mobile-view//deposit.png"
+              width="48"
+              height="48"
+              class="d-block mx-auto"
+            />
+            <span>Para Yatır</span>
+          </div>
+        </div>
+        <div class="col-4">
+          <div class="box-icon-item">
+            <img
+              src="https://betrediofficial.github.io/images/mobile-view//withdraw.png"
+              width="48"
+              height="48"
+              class="d-block mx-auto"
+            />
+            <span>Para Çekme</span>
+          </div>
+        </div>
+        <div class="col-4">
+          <div class="box-icon-item">
+            <img
+              src="https://betrediofficial.github.io/images/mobile-view//bonus.png"
+              width="48"
+              height="48"
+              class="d-block mx-auto"
+            />
+            <span>Bonus Talep</span>
+          </div>
+        </div>
+        <div class="col-4">
+          <div class="box-icon-item">
+            <img
+              src="https://betrediofficial.github.io/images/mobile-view//promotion.png"
+              width="48"
+              height="48"
+              class="d-block mx-auto"
+            />
+            <span>Promosyonlar</span>
+          </div>
+        </div>
+        <div class="col-4">
+          <div class="box-icon-item">
+            <img
+              src="https://betrediofficial.github.io/images/mobile-view//withdraw.png"
+              width="48"
+              height="48"
+              class="d-block mx-auto"
+            />
+            <span>Canlı Destek</span>
+          </div>
+        </div>
+        <div class="col-4">
+          <div class="box-icon-item">
+            <img
+              src="https://betrediofficial.github.io/images/mobile-view//telegram.png"
+              width="48"
+              height="48"
+              class="d-block mx-auto"
+            />
+            <span>Telegram</span>
+          </div>
+        </div>
+      </div>
+</div>
+    `);
   }
 
   function bottomMenuWidget() {
