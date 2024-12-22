@@ -497,125 +497,48 @@ function headerButtons() {
   if ($(".manual-buttons").length === 0) {
     $(".header__actions").prepend(`
     <span class="manual-buttons">
-     <div class="buttonsContainer">
-        <a href="" class="manual-redi-button">
-          <span style="margin-right: 6px;margin-top: -4px;">
-          ${SVGS.tvIcon}
-          </span>
-          REDI LIVE
-        </a>
-
-        <a href="" class="manual-redi-button">
-          <span style="margin-right: 6px;margin-top: 0px;">
-          ${SVGS.moneyIcon}
-          </span>
-          Para Yatırma
-        </a>
-        
-  <a href="" class="call">
-     <svg width="90" height="90" viewBox="0 0 90 90" fill="none" xmlns="http://www.w3.org/2000/svg">
-  <g filter="url(#filter0_d_92_65)">
-    <rect x="30" y="25" width="40" height="40" rx="8" fill="url(#paint0_linear_92_65)"/>
-    <rect x="30.5" y="25.5" width="39" height="39" rx="7.5" stroke="#EC2026"/>
-    <path d="M48.8827 33C47.3849 33 45.9485 33.595 44.8895 34.654C43.8304 35.7131 43.2354 37.1495 43.2354 38.6472C43.2354 40.145 43.8304 41.5814 44.8895 42.6404C45.9485 43.6995 47.3849 44.2945 48.8827 44.2945C50.3804 44.2945 51.8168 43.6995 52.8759 42.6404C53.9349 41.5814 54.5299 40.145 54.5299 38.6472C54.5299 37.1495 53.9349 35.7131 52.8759 34.654C51.8168 33.595 50.3804 33 48.8827 33ZM41.8363 45.7063C41.4645 45.7046 41.0959 45.7764 40.7519 45.9176C40.4078 46.0587 40.0951 46.2664 39.8315 46.5288C39.568 46.7912 39.3588 47.103 39.2161 47.4464C39.0735 47.7898 39 48.158 39 48.5299C39 50.9173 40.176 52.7173 42.0142 53.8906C43.8242 55.044 46.2638 55.589 48.8827 55.589C49.3872 55.589 49.8841 55.5687 50.3735 55.5283C50.2606 55.0392 50.268 54.5301 50.3948 54.0445C50.5217 53.5589 50.7644 53.1113 51.102 52.7399L51.8715 51.883C52.2216 51.4948 52.6695 51.2077 53.1683 51.0515C53.6672 50.8953 54.1988 50.8758 54.7078 50.9949L55.8161 51.2575C56.3497 50.817 56.673 50.2975 56.8213 49.6749L56.09 48.9605C55.7086 48.5877 55.4444 48.1115 55.3298 47.5906C55.2151 47.0697 55.2551 46.5267 55.4448 46.0282L55.5662 45.7063H41.8363ZM56.7662 46.528L57.1658 45.4691C57.53 44.5077 58.6651 44.0333 59.6223 44.4413L60.1701 44.6757C60.8379 44.9609 61.3899 45.4776 61.5071 46.1722C62.1523 50.0194 58.8133 55.4916 54.9704 56.8878C54.2758 57.1391 53.5261 56.9443 52.9303 56.5405L52.4418 56.2087C52.2413 56.0737 52.0724 55.8967 51.9469 55.69C51.8214 55.4833 51.7422 55.2519 51.7149 55.0116C51.6875 54.7714 51.7125 54.528 51.7883 54.2984C51.8641 54.0688 51.9888 53.8584 52.1538 53.6816L52.9233 52.8246C53.104 52.6256 53.3346 52.4784 53.5912 52.3982C53.8478 52.3181 54.1212 52.3079 54.3831 52.3686L56.1126 52.7781C57.4839 51.9216 58.219 50.7168 58.3178 49.1638L57.0782 47.9511C56.8931 47.7701 56.7649 47.539 56.7095 47.2862C56.654 47.0333 56.6738 46.7698 56.7662 46.528Z" fill="url(#paint1_linear_92_65)"/>
-  </g>
-  <defs>
-    <filter id="filter0_d_92_65" x="0" y="0" width="90" height="90" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
-      <feFlood flood-opacity="0" result="BackgroundImageFix"/>
-      <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
-      <feMorphology radius="1" operator="dilate" in="SourceAlpha" result="effect1_dropShadow_92_65"/>
-      <feOffset dx="-5"/>
-      <feGaussianBlur stdDeviation="12"/>
-      <feComposite in2="hardAlpha" operator="out"/>
-      <feColorMatrix type="matrix" values="0 0 0 0 0.890196 0 0 0 0 0.121569 0 0 0 0 0.145098 0 0 0 0.6 0"/>
-      <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_92_65"/>
-      <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_92_65" result="shape"/>
-    </filter>
-    <linearGradient id="paint0_linear_92_65" x1="30" y1="45" x2="70" y2="45" gradientUnits="userSpaceOnUse">
-      <stop stop-color="#2D0607"/>
-      <stop offset="0.9999" stop-color="#B5181D"/>
-      <stop offset="1" stop-color="#F92228"/>
-    </linearGradient>
-    <linearGradient id="paint1_linear_92_65" x1="50.2937" y1="33" x2="50.2937" y2="57" gradientUnits="userSpaceOnUse">
-      <stop stop-color="white"/>
-      <stop offset="1" stop-color="#999999"/>
-    </linearGradient>
-  </defs>
-</svg>
-  </a>
-  <a href="" class="btn-twitter">
-    <svg width="90" height="90" viewBox="0 0 90 90" fill="none" xmlns="http://www.w3.org/2000/svg">
-  <g filter="url(#filter0_d_92_59)">
-    <rect x="30" y="25" width="40" height="40" rx="8" fill="url(#paint0_linear_92_59)"/>
-    <rect x="30.5" y="25.5" width="39" height="39" rx="7.5" stroke="#EC2026"/>
-    <mask id="mask0_92_59" style="mask-type:luminance" maskUnits="userSpaceOnUse" x="38" y="33" width="24" height="24">
-      <path d="M38 33H62V57H38V33Z" fill="white"/>
-    </mask>
-    <g mask="url(#mask0_92_59)">
-      <path d="M56.9 34.125H60.5806L52.5406 43.3376L62 55.8759H54.5943L48.7897 48.273L42.1554 55.8759H38.4714L47.0703 46.0187L38 34.1267H45.5943L50.8331 41.0747L56.9 34.125ZM55.6057 53.6679H57.6457L44.48 36.2181H42.2926L55.6057 53.6679Z" fill="url(#paint1_linear_92_59)"/>
-    </g>
-  </g>
-  <defs>
-    <filter id="filter0_d_92_59" x="0" y="0" width="90" height="90" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
-      <feFlood flood-opacity="0" result="BackgroundImageFix"/>
-      <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
-      <feMorphology radius="1" operator="dilate" in="SourceAlpha" result="effect1_dropShadow_92_59"/>
-      <feOffset dx="-5"/>
-      <feGaussianBlur stdDeviation="12"/>
-      <feComposite in2="hardAlpha" operator="out"/>
-      <feColorMatrix type="matrix" values="0 0 0 0 0.890196 0 0 0 0 0.121569 0 0 0 0 0.145098 0 0 0 0.6 0"/>
-      <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_92_59"/>
-      <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_92_59" result="shape"/>
-    </filter>
-    <linearGradient id="paint0_linear_92_59" x1="30" y1="45" x2="70" y2="45" gradientUnits="userSpaceOnUse">
-      <stop stop-color="#2D0607"/>
-      <stop offset="0.9999" stop-color="#B5181D"/>
-      <stop offset="1" stop-color="#F92228"/>
-    </linearGradient>
-    <linearGradient id="paint1_linear_92_59" x1="50" y1="34.125" x2="50" y2="55.8759" gradientUnits="userSpaceOnUse">
-      <stop stop-color="white"/>
-      <stop offset="1" stop-color="#999999"/>
-    </linearGradient>
-  </defs>
-</svg>
-  </a>
-  <a href="" class="btn-telegram">
-    <svg width="90" height="90" viewBox="0 0 90 90" fill="none" xmlns="http://www.w3.org/2000/svg">
-  <g filter="url(#filter0_d_92_57)">
-    <rect x="30" y="25" width="40" height="40" rx="8" fill="url(#paint0_linear_92_57)"/>
-    <rect x="30.5" y="25.5" width="39" height="39" rx="7.5" stroke="#EC2026"/>
-    <path d="M50 33C43.376 33 38 38.376 38 45C38 51.624 43.376 57 50 57C56.624 57 62 51.624 62 45C62 38.376 56.624 33 50 33ZM55.568 41.16C55.388 43.056 54.608 47.664 54.212 49.788C54.044 50.688 53.708 50.988 53.396 51.024C52.7 51.084 52.172 50.568 51.5 50.124C50.444 49.428 49.844 48.996 48.824 48.324C47.636 47.544 48.404 47.112 49.088 46.416C49.268 46.236 52.34 43.44 52.4 43.188C52.4083 43.1498 52.4072 43.1102 52.3968 43.0726C52.3863 43.0349 52.3668 43.0004 52.34 42.972C52.268 42.912 52.172 42.936 52.088 42.948C51.98 42.972 50.3 44.088 47.024 46.296C46.544 46.62 46.112 46.788 45.728 46.776C45.296 46.764 44.48 46.536 43.868 46.332C43.112 46.092 42.524 45.96 42.572 45.54C42.596 45.324 42.896 45.108 43.46 44.88C46.964 43.356 49.292 42.348 50.456 41.868C53.792 40.476 54.476 40.236 54.932 40.236C55.028 40.236 55.256 40.26 55.4 40.38C55.52 40.476 55.556 40.608 55.568 40.704C55.556 40.776 55.58 40.992 55.568 41.16Z" fill="url(#paint1_linear_92_57)"/>
-  </g>
-  <defs>
-    <filter id="filter0_d_92_57" x="0" y="0" width="90" height="90" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
-      <feFlood flood-opacity="0" result="BackgroundImageFix"/>
-      <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
-      <feMorphology radius="1" operator="dilate" in="SourceAlpha" result="effect1_dropShadow_92_57"/>
-      <feOffset dx="-5"/>
-      <feGaussianBlur stdDeviation="12"/>
-      <feComposite in2="hardAlpha" operator="out"/>
-      <feColorMatrix type="matrix" values="0 0 0 0 0.890196 0 0 0 0 0.121569 0 0 0 0 0.145098 0 0 0 0.6 0"/>
-      <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_92_57"/>
-      <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_92_57" result="shape"/>
-    </filter>
-    <linearGradient id="paint0_linear_92_57" x1="30" y1="45" x2="70" y2="45" gradientUnits="userSpaceOnUse">
-      <stop stop-color="#2D0607"/>
-      <stop offset="0.9999" stop-color="#B5181D"/>
-      <stop offset="1" stop-color="#F92228"/>
-    </linearGradient>
-    <linearGradient id="paint1_linear_92_57" x1="50" y1="33" x2="50" y2="57" gradientUnits="userSpaceOnUse">
-      <stop stop-color="white"/>
-      <stop offset="1" stop-color="#999999"/>
-    </linearGradient>
-  </defs>
-</svg>
-  </a>
-  <a href="" class="btn-whatsapp">
-    <img src="https://betrediofficial.github.io/images/buttons/t6yf1mw.png"/>
-  </a>
-  
-</div>
-    </span>
+   <div class="buttonsContainer">
+   <div class="button-section">
+      <a href="" class="manual-redi-button">
+      <span style="margin-right: 6px;margin-top: -4px;">
+      ${SVGS.tvIcon}
+      </span>
+      REDI LIVE
+      </a>
+      <a href="" class="manual-redi-button">
+      <span style="margin-right: 6px;margin-top: 0px;">
+      ${SVGS.moneyIcon}
+      </span>
+      Para Yatırma
+      </a>
+   </div>
+   <div>
+      <div class="button-section">
+         <a href="" class="manual-redi-button">
+         <span style="margin-right: 6px;margin-top: 0px;">
+         ${SVGS.callIcon}
+         </span>
+         </a>
+      </div>
+      <div class="button-section">
+         <a href="" class="manual-redi-button">
+         <span style="margin-right: 6px;margin-top: 0px;">
+         ${SVGS.twitterIcon}
+         </span>
+         </a>
+         <a href="" class="manual-redi-button">
+         <span style="margin-right: 6px;margin-top: 0px;">
+         ${SVGS.telegramIcon}
+         </span>
+         </a>
+         <a href="" class="manual-redi-button">
+         <span style="margin-right: 6px;margin-top: 0px;">
+         ${SVGS.whatsappIcon}
+         </span>
+         </a>
+      </div>
+   </div>
+</span>
     `)
   }
 }
@@ -654,5 +577,55 @@ moneyIcon: `
 </linearGradient>
 </defs>
 </svg>
+`,
+callIcon: `
+<svg width="23" height="24" viewBox="0 0 23 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M9.88267 0C8.38493 0 6.94853 0.594976 5.88947 1.65404C4.83041 2.7131 4.23543 4.1495 4.23543 5.64724C4.23543 7.14498 4.83041 8.58138 5.88947 9.64044C6.94853 10.6995 8.38493 11.2945 9.88267 11.2945C11.3804 11.2945 12.8168 10.6995 13.8759 9.64044C14.9349 8.58138 15.5299 7.14498 15.5299 5.64724C15.5299 4.1495 14.9349 2.7131 13.8759 1.65404C12.8168 0.594976 11.3804 0 9.88267 0ZM2.83633 12.7063C2.46446 12.7046 2.09592 12.7764 1.75187 12.9176C1.40783 13.0587 1.09505 13.2664 0.831507 13.5288C0.567962 13.7912 0.358839 14.103 0.216144 14.4464C0.0734504 14.7898 -3.76511e-06 15.158 1.44748e-10 15.5299C1.44748e-10 17.9173 1.17604 19.7173 3.01422 20.8906C4.82416 22.044 7.26376 22.589 9.88267 22.589C10.3872 22.589 10.8841 22.5687 11.3735 22.5283C11.2606 22.0392 11.268 21.5301 11.3948 21.0445C11.5217 20.5589 11.7644 20.1113 12.102 19.7399L12.8715 18.883C13.2216 18.4948 13.6695 18.2077 14.1683 18.0515C14.6672 17.8953 15.1988 17.8758 15.7078 17.9949L16.8161 18.2575C17.3497 17.817 17.673 17.2975 17.8213 16.6749L17.09 15.9605C16.7086 15.5877 16.4444 15.1115 16.3298 14.5906C16.2151 14.0697 16.2551 13.5267 16.4448 13.0282L16.5662 12.7063H2.83633ZM17.7662 13.528L18.1658 12.4691C18.53 11.5077 19.6651 11.0333 20.6223 11.4413L21.1701 11.6757C21.8379 11.9609 22.3899 12.4776 22.5071 13.1722C23.1523 17.0194 19.8133 22.4916 15.9704 23.8878C15.2758 24.1391 14.5261 23.9443 13.9303 23.5405L13.4418 23.2087C13.2413 23.0737 13.0724 22.8967 12.9469 22.69C12.8214 22.4833 12.7422 22.2519 12.7149 22.0116C12.6875 21.7714 12.7125 21.528 12.7883 21.2984C12.8641 21.0688 12.9888 20.8584 13.1538 20.6816L13.9233 19.8246C14.104 19.6256 14.3346 19.4784 14.5912 19.3982C14.8478 19.3181 15.1212 19.3079 15.3831 19.3686L17.1126 19.7781C18.4839 18.9216 19.219 17.7168 19.3178 16.1638L18.0782 14.9511C17.8931 14.7701 17.7649 14.539 17.7095 14.2862C17.654 14.0333 17.6738 13.7698 17.7662 13.528Z" fill="url(#paint0_linear_92_66)"/>
+<defs>
+<linearGradient id="paint0_linear_92_66" x1="11.2937" y1="0" x2="11.2937" y2="24" gradientUnits="userSpaceOnUse">
+<stop stop-color="white"/>
+<stop offset="1" stop-color="#999999"/>
+</linearGradient>
+</defs>
+</svg>
+`,
+twitterIcon: `
+<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<mask id="mask0_92_60" style="mask-type:luminance" maskUnits="userSpaceOnUse" x="0" y="0" width="24" height="24">
+<path d="M0 0H24V24H0V0Z" fill="white"/>
+</mask>
+<g mask="url(#mask0_92_60)">
+<path d="M18.9 1.125H22.5806L14.5406 10.3376L24 22.8759H16.5943L10.7897 15.273L4.15543 22.8759H0.471429L9.07029 13.0187L0 1.12671H7.59429L12.8331 8.07471L18.9 1.125ZM17.6057 20.6679H19.6457L6.48 3.21814H4.29257L17.6057 20.6679Z" fill="url(#paint0_linear_92_60)"/>
+</g>
+<defs>
+<linearGradient id="paint0_linear_92_60" x1="12" y1="1.125" x2="12" y2="22.8759" gradientUnits="userSpaceOnUse">
+<stop stop-color="white"/>
+<stop offset="1" stop-color="#999999"/>
+</linearGradient>
+</defs>
+</svg>
+`,
+telegramIcon: `
+<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M12 0C5.376 0 0 5.376 0 12C0 18.624 5.376 24 12 24C18.624 24 24 18.624 24 12C24 5.376 18.624 0 12 0ZM17.568 8.16C17.388 10.056 16.608 14.664 16.212 16.788C16.044 17.688 15.708 17.988 15.396 18.024C14.7 18.084 14.172 17.568 13.5 17.124C12.444 16.428 11.844 15.996 10.824 15.324C9.636 14.544 10.404 14.112 11.088 13.416C11.268 13.236 14.34 10.44 14.4 10.188C14.4083 10.1498 14.4072 10.1102 14.3968 10.0726C14.3863 10.0349 14.3668 10.0004 14.34 9.972C14.268 9.912 14.172 9.936 14.088 9.948C13.98 9.972 12.3 11.088 9.024 13.296C8.544 13.62 8.112 13.788 7.728 13.776C7.296 13.764 6.48 13.536 5.868 13.332C5.112 13.092 4.524 12.96 4.572 12.54C4.596 12.324 4.896 12.108 5.46 11.88C8.964 10.356 11.292 9.348 12.456 8.868C15.792 7.476 16.476 7.236 16.932 7.236C17.028 7.236 17.256 7.26 17.4 7.38C17.52 7.476 17.556 7.608 17.568 7.704C17.556 7.776 17.58 7.992 17.568 8.16Z" fill="url(#paint0_linear_92_58)"/>
+<defs>
+<linearGradient id="paint0_linear_92_58" x1="12" y1="0" x2="12" y2="24" gradientUnits="userSpaceOnUse">
+<stop stop-color="white"/>
+<stop offset="1" stop-color="#999999"/>
+</linearGradient>
+</defs>
+</svg>
+`,
+whatsappIcon: `
+<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M19.0498 4.90999C18.1329 3.9841 17.0408 3.24996 15.8373 2.75036C14.6338 2.25075 13.3429 1.99568 12.0398 1.99999C6.5798 1.99999 2.1298 6.44999 2.1298 11.91C2.1298 13.66 2.5898 15.36 3.4498 16.86L2.0498 22L7.2998 20.62C8.7498 21.41 10.3798 21.83 12.0398 21.83C17.4998 21.83 21.9498 17.38 21.9498 11.92C21.9498 9.26999 20.9198 6.77999 19.0498 4.90999ZM12.0398 20.15C10.5598 20.15 9.1098 19.75 7.8398 19L7.5398 18.82L4.4198 19.64L5.2498 16.6L5.0498 16.29C4.22735 14.9771 3.79073 13.4593 3.7898 11.91C3.7898 7.36999 7.4898 3.66999 12.0298 3.66999C14.2298 3.66999 16.2998 4.52999 17.8498 6.08999C18.6174 6.85386 19.2257 7.76254 19.6394 8.76332C20.0531 9.76411 20.264 10.8371 20.2598 11.92C20.2798 16.46 16.5798 20.15 12.0398 20.15ZM16.5598 13.99C16.3098 13.87 15.0898 13.27 14.8698 13.18C14.6398 13.1 14.4798 13.06 14.3098 13.3C14.1398 13.55 13.6698 14.11 13.5298 14.27C13.3898 14.44 13.2398 14.46 12.9898 14.33C12.7398 14.21 11.9398 13.94 10.9998 13.1C10.2598 12.44 9.7698 11.63 9.6198 11.38C9.4798 11.13 9.5998 11 9.7298 10.87C9.8398 10.76 9.9798 10.58 10.0998 10.44C10.2198 10.3 10.2698 10.19 10.3498 10.03C10.4298 9.85999 10.3898 9.71999 10.3298 9.59999C10.2698 9.47999 9.7698 8.25999 9.5698 7.75999C9.3698 7.27999 9.1598 7.33999 9.0098 7.32999H8.5298C8.3598 7.32999 8.0998 7.38999 7.8698 7.63999C7.6498 7.88999 7.0098 8.48999 7.0098 9.70999C7.0098 10.93 7.89981 12.11 8.0198 12.27C8.1398 12.44 9.7698 14.94 12.2498 16.01C12.8398 16.27 13.2998 16.42 13.6598 16.53C14.2498 16.72 14.7898 16.69 15.2198 16.63C15.6998 16.56 16.6898 16.03 16.8898 15.45C17.0998 14.87 17.0998 14.38 17.0298 14.27C16.9598 14.16 16.8098 14.11 16.5598 13.99Z" fill="url(#paint0_linear_92_55)"/>
+<defs>
+<linearGradient id="paint0_linear_92_55" x1="11.9998" y1="1.99994" x2="11.9998" y2="22" gradientUnits="userSpaceOnUse">
+<stop stop-color="white"/>
+<stop offset="1" stop-color="#999999"/>
+</linearGradient>
+</defs>
+</svg>
 `
+
 }
