@@ -545,7 +545,7 @@ function headerButtons() {
   $("header .container").append(`
     <div class="row" id="mobile-header-buttons">
 
-      <div class="col-2">
+      <div class="col-1">
           <a href="" class="manual-redi-button">
             <span>
             ${SVGS.tvIcon}
@@ -553,7 +553,7 @@ function headerButtons() {
          </a>
       </div>
 
-        <div class="col-2">
+        <div class="col-1">
           <a href="" class="manual-redi-button">
             <span>
             ${SVGS.moneyIcon}
@@ -561,7 +561,7 @@ function headerButtons() {
          </a>
       </div>
 
-      <div class="col-2">
+      <div class="col-1">
           <a href="" class="manual-redi-button">
             <span>
             ${SVGS.callIcon}
@@ -569,7 +569,7 @@ function headerButtons() {
          </a>
       </div>
 
-        <div class="col-2">
+        <div class="col-1">
           <a href="https://x.com/betrediofficial" class="manual-redi-button">
             <span>
             ${SVGS.twitterIcon}
@@ -578,7 +578,7 @@ function headerButtons() {
       </div>
 
 
-        <div class="col-2">
+        <div class="col-1">
           <a href="" class="manual-redi-button">
             <span>
             ${SVGS.telegramIcon}
@@ -586,7 +586,7 @@ function headerButtons() {
          </a>
       </div>
 
-       <div class="col-2">
+       <div class="col-1">
           <a href="" class="manual-redi-button">
             <span>
             ${SVGS.whatsappIcon}
