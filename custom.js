@@ -496,7 +496,7 @@ function hideDefaultGames(ms) {
 function headerButtons() {
   if ($(".manual-buttons").length === 0) {
     $(".header__actions").prepend(`
-    <span class="manual-buttons">
+    <span class="manual-buttons" id="web-header-buttons">
    <div class="buttonsContainer">
    <div class="button-section">
       <a href="" class="manual-redi-button">
