@@ -173,7 +173,7 @@ try {
               height="48"
               class="d-block mx-auto"
             />
-            <span>Casino</span>
+            <span>Slot Casino</span>
           </div>
         </div>
         <div class="col-4">
@@ -229,17 +229,6 @@ try {
               class="d-block mx-auto"
             />
             <span>Canlı Destek</span>
-          </div>
-        </div>
-        <div class="col-4">
-          <div class="box-icon-item">
-            <img
-              src="https://betrediofficial.github.io/images/mobile-view//telegram.png"
-              width="48"
-              height="48"
-              class="d-block mx-auto"
-            />
-            <span>Telegram</span>
           </div>
         </div>
       </div>
