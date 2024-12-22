@@ -505,13 +505,17 @@ function headerButtons() {
       </span>
       REDI LIVE
       </a>
+   </div>
+
+    <div class="button-section">
       <a href="" class="manual-redi-button">
-      <span style="margin-right: 6px;margin-top: 0px;">
-      ${SVGS.moneyIcon}
+      <span style="margin-right: 6px;margin-top: -4px;">
+      ${SVGS.tvIcon}
       </span>
-      Para Yatırma
+      REDI LIVE
       </a>
    </div>
+
       <div class="button-section">
          <a href="" class="manual-redi-button">
          <span>
