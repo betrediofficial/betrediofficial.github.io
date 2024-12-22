@@ -544,12 +544,15 @@ function headerButtons() {
   if ($("#mobile-header-buttons").length === 0) {
   $("header .container").append(`
     <div class="row" id="mobile-header-buttons">
-      <div class="col-sm-2">
+      <div class="col-4">
          <a href="" class="manual-redi-button">
-          <span style="margin-right: 6px;margin-top: -4px;">
-          ${SVGS.tvIcon}
-          </span>
           REDI LIVE
+        </a>
+      </div>
+
+       <div class="col-4">
+         <a href="" class="manual-redi-button">
+          Para Yatırma
         </a>
       </div>
     </div>
