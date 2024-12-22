@@ -515,24 +515,24 @@ function headerButtons() {
    <div>
       <div class="button-section">
          <a href="" class="manual-redi-button">
-         <span style="margin-right: 6px;margin-top: 0px;">
+         <span>
          ${SVGS.callIcon}
          </span>
          </a>
       </div>
       <div class="button-section">
          <a href="" class="manual-redi-button">
-         <span style="margin-right: 6px;margin-top: 0px;">
+         <span>
          ${SVGS.twitterIcon}
          </span>
          </a>
          <a href="" class="manual-redi-button">
-         <span style="margin-right: 6px;margin-top: 0px;">
+         <span>
          ${SVGS.telegramIcon}
          </span>
          </a>
          <a href="" class="manual-redi-button">
-         <span style="margin-right: 6px;margin-top: 0px;">
+         <span>
          ${SVGS.whatsappIcon}
          </span>
          </a>
