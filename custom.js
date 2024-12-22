@@ -150,7 +150,7 @@ try {
 
   }
 
-  function bottomMenuWidget() {
+  function mobileBoxes() {
     $(".section:first").append(`
 <div class="manually-added-home-widgets container mt-4 mobile-boxes">
   <div class="row row-cols-2 row-cols-md-3 row-cols-lg-4 g-1">
