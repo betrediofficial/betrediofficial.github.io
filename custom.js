@@ -589,7 +589,7 @@ function headerButtons() {
        <div class="col-2">
           <a href="" class="manual-redi-button">
             <span>
-            ${SVGS.whatsappIconer}
+            ${SVGS.whatsappIcon}
             </span>
          </a>
       </div>
