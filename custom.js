@@ -507,7 +507,7 @@ function headerButtons() {
 
         <a href="" class="manual-redi-button">
           <span style="margin-right: 6px;margin-top: -4px;">
-          ${SVGS.tvIcon}
+          ${SVGS.moneyIcon}
           </span>
           Para Yatırma
         </a>
@@ -637,6 +637,22 @@ const SVGS = {
 <stop offset="1" stop-color="#999999"/>
 </linearGradient>
 <linearGradient id="paint1_linear_92_74" x1="10.0007" y1="2.08331" x2="10.0007" y2="4.99998" gradientUnits="userSpaceOnUse">
+<stop stop-color="white"/>
+<stop offset="1" stop-color="#999999"/>
+</linearGradient>
+</defs>
+</svg>
+`,
+moneyIcon: `
+<svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M12.375 4.5V1.875C12.375 1.64294 12.2828 1.42038 12.1187 1.25628C11.9546 1.09219 11.7321 1 11.5 1H2.75C2.28587 1 1.84075 1.18437 1.51256 1.51256C1.18437 1.84075 1 2.28587 1 2.75M1 2.75C1 3.21413 1.18437 3.65925 1.51256 3.98744C1.84075 4.31563 2.28587 4.5 2.75 4.5H13.25C13.4821 4.5 13.7046 4.59219 13.8687 4.75628C14.0328 4.92038 14.125 5.14294 14.125 5.375V8M1 2.75V13.25C1 13.7141 1.18437 14.1592 1.51256 14.4874C1.84075 14.8156 2.28587 15 2.75 15H13.25C13.4821 15 13.7046 14.9078 13.8687 14.7437C14.0328 14.5796 14.125 14.3571 14.125 14.125V11.5" stroke="url(#paint0_linear_92_69)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M15 8V11.5H11.5C11.0359 11.5 10.5908 11.3156 10.2626 10.9874C9.93437 10.6592 9.75 10.2141 9.75 9.75C9.75 9.28587 9.93437 8.84075 10.2626 8.51256C10.5908 8.18437 11.0359 8 11.5 8H15Z" stroke="url(#paint1_linear_92_69)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<defs>
+<linearGradient id="paint0_linear_92_69" x1="7.5625" y1="1" x2="7.5625" y2="15" gradientUnits="userSpaceOnUse">
+<stop stop-color="white"/>
+<stop offset="1" stop-color="#999999"/>
+</linearGradient>
+<linearGradient id="paint1_linear_92_69" x1="12.375" y1="8" x2="12.375" y2="11.5" gradientUnits="userSpaceOnUse">
 <stop stop-color="white"/>
 <stop offset="1" stop-color="#999999"/>
 </linearGradient>
