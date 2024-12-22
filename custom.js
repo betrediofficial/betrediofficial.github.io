@@ -499,7 +499,7 @@ function headerButtons() {
     <span class="manual-buttons">
      <div class="buttonsContainer">
     <a href="" class="manual-redi-button">
-    <span>
+    <span style="margin-right: 6px;margin-top: -4px;">
     ${SVGS.tvIcon}
     </span>
     REDI LIVE
