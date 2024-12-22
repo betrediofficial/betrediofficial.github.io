@@ -652,22 +652,6 @@ function headerButtons() {
       </div>
 
         <div class="col-1">
-          <a href="" class="manual-redi-button">
-            <span>
-            ${SVGS.moneyIcon}
-            </span>
-         </a>
-      </div>
-
-      <div class="col-1">
-          <a href="" class="manual-redi-button">
-            <span>
-            ${SVGS.callIcon}
-            </span>
-         </a>
-      </div>
-
-        <div class="col-1">
           <a href="https://x.com/betrediofficial" class="manual-redi-button">
             <span>
             ${SVGS.twitterIcon}
