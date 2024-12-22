@@ -223,7 +223,7 @@ try {
         <div class="col-4">
           <div class="box-icon-item">
             <img
-              src="https://betrediofficial.github.io/images/mobile-view//withdraw.png"
+              src="https://betrediofficial.github.io/images/mobile-view//support.png"
               width="48"
               height="48"
               class="d-block mx-auto"
