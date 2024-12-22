@@ -254,11 +254,6 @@ try {
       <img src="https://betrediofficial.github.io/images/sporb.png" alt="sporb" class="bottomMenuWidgetImage" >
     </a>
   </div>
-  <div style="flex: 1 1 calc(25% - 10px); text-align: center;">
-    <a href="https://imgbb.com/">
-      <img src="https://betrediofficial.github.io/images/slotcasino.png" alt="slotcasino" class="bottomMenuWidgetImage" >
-    </a>
-  </div>
 </div>
     `);
   }
