@@ -506,16 +506,12 @@ function headerButtons() {
         </a>
 
         <a href="" class="manual-redi-button">
-          <span style="margin-right: 6px;margin-top: -4px;">
+          <span style="margin-right: 6px;margin-top: 0px;">
           ${SVGS.moneyIcon}
           </span>
           Para Yatırma
         </a>
-
-
-   <a href="" class="btn-deposit">
-    <img src="https://betrediofficial.github.io/images/buttons/io68nmg.png"/>
-  </a>
+        
   <a href="" class="call">
      <svg width="90" height="90" viewBox="0 0 90 90" fill="none" xmlns="http://www.w3.org/2000/svg">
   <g filter="url(#filter0_d_92_65)">
