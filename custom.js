@@ -498,9 +498,9 @@ function headerButtons() {
     $(".header__actions").prepend(`
     <span class="manual-buttons">
      <div class="buttonsContainer">
-  <a href="" class="btn-redilive">
-    <img src="https://betrediofficial.github.io/images/buttons/tvykxfb.png"/>
-  </a>
+    <a href="" class="manual-redi-button">REDI LIVE</a>
+
+
    <a href="" class="btn-deposit">
     <img src="https://betrediofficial.github.io/images/buttons/io68nmg.png"/>
   </a>
