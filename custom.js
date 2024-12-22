@@ -542,7 +542,7 @@ function headerButtons() {
   }
 
   $("header .container").append(`
-    <div class="row">
+    <div class="row" id="mobile-header-buttons">
       <div class="col-sm-2">
          <a href="" class="manual-redi-button">
           <span style="margin-right: 6px;margin-top: -4px;">
