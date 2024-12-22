@@ -498,7 +498,12 @@ function headerButtons() {
     $(".header__actions").prepend(`
     <span class="manual-buttons">
      <div class="buttonsContainer">
-    <a href="" class="manual-redi-button">REDI LIVE</a>
+    <a href="" class="manual-redi-button">
+    <span>
+    ${SVGS.tvIcon}
+    </span>
+    REDI LIVE
+    </a>
 
 
    <a href="" class="btn-deposit">
@@ -610,4 +615,25 @@ function headerButtons() {
     </span>
     `)
   }
+}
+
+
+
+const SVGS = {
+  tvIcon: `
+  <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M1.66699 16.6666V7.49998C1.66699 7.05795 1.84259 6.63403 2.15515 6.32147C2.46771 6.00891 2.89163 5.83331 3.33366 5.83331H16.667C17.109 5.83331 17.5329 6.00891 17.8455 6.32147C18.1581 6.63403 18.3337 7.05795 18.3337 7.49998V16.6666C18.3337 17.1087 18.1581 17.5326 17.8455 17.8452C17.5329 18.1577 17.109 18.3333 16.667 18.3333H3.33366C2.89163 18.3333 2.46771 18.1577 2.15515 17.8452C1.84259 17.5326 1.66699 17.1087 1.66699 16.6666Z" stroke="url(#paint0_linear_92_74)" stroke-width="1.5"/>
+<path d="M7.08398 2.08331L10.0007 4.99998L12.9173 2.08331" stroke="url(#paint1_linear_92_74)" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+<defs>
+<linearGradient id="paint0_linear_92_74" x1="10.0003" y1="5.83331" x2="10.0003" y2="18.3333" gradientUnits="userSpaceOnUse">
+<stop stop-color="white"/>
+<stop offset="1" stop-color="#999999"/>
+</linearGradient>
+<linearGradient id="paint1_linear_92_74" x1="10.0007" y1="2.08331" x2="10.0007" y2="4.99998" gradientUnits="userSpaceOnUse">
+<stop stop-color="white"/>
+<stop offset="1" stop-color="#999999"/>
+</linearGradient>
+</defs>
+</svg>
+`
 }
