@@ -512,7 +512,6 @@ function headerButtons() {
       Para Yatırma
       </a>
    </div>
-   <div>
       <div class="button-section">
          <a href="" class="manual-redi-button">
          <span>
@@ -537,7 +536,6 @@ function headerButtons() {
          </span>
          </a>
       </div>
-   </div>
 </span>
     `)
   }
