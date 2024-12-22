@@ -1,4 +1,5 @@
 var language = window.location.pathname.split("/")[1];
+const isMobile = () => window.innerWidth < 770;
 try {
 
 
@@ -63,19 +64,22 @@ try {
     const isHomePage = isHomePageCheck()
     if (language !== "tr") return;
 
+    const is_mobile = isMobile();
+
+
 
     if (!isHomePage) {
       removeHomePageWidgets()
     }
     else {
       bottomMenuWidget();
-      otherGames();
-      slotGames();
-      casinoGames();
+       otherGames();
+      !is_mobile && slotGames();
+      !is_mobile && casinoGames();
 
       //hide default games
-      hideDefaultGames(50);
-      hideDefaultGames(1500);
+      !is_mobile && hideDefaultGames(50);
+      !is_mobile && hideDefaultGames(1500);
     }
 
     headerButtons();
