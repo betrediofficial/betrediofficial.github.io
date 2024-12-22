@@ -59,7 +59,7 @@ try {
   }
 
   function initialize() {
-    return;
+
     language = window.location.pathname.split("/")[1]
     const isHomePage = isHomePageCheck()
     if (language !== "tr") return;
