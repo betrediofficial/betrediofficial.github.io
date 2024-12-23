@@ -154,7 +154,7 @@ try {
     $(".section:first").append(`
 <div class="manually-added-home-widgets container mt-4 mobile-boxes">
   <div class="row row-cols-2 row-cols-md-3 row-cols-lg-4 g-1">
-        <div class="col-4">
+        <a class="col-4">
           <div class="box-icon-item">
             <img
               src="https://betrediofficial.github.io/images/mobile-view//live_casino.png"
@@ -164,8 +164,8 @@ try {
             />
             <span>Live Casino</span>
           </div>
-        </div>
-        <div class="col-4">
+        </a>
+        <a class="col-4">
           <div class="box-icon-item">
             <img
               src="https://betrediofficial.github.io/images/mobile-view//casino.png"
@@ -175,8 +175,8 @@ try {
             />
             <span>Slot Casino</span>
           </div>
-        </div>
-        <div class="col-4">
+        </a>
+        <a class="col-4">
           <div class="box-icon-item">
             <img
               src="https://betrediofficial.github.io/images/mobile-view//deposit.png"
@@ -186,8 +186,8 @@ try {
             />
             <span>Para Yatır</span>
           </div>
-        </div>
-        <div class="col-4">
+        </a>
+        <a class="col-4">
           <div class="box-icon-item">
             <img
               src="https://betrediofficial.github.io/images/mobile-view//withdraw.png"
@@ -197,8 +197,8 @@ try {
             />
             <span>Para Çekme</span>
           </div>
-        </div>
-        <div class="col-4">
+        </a>
+        <a class="col-4">
           <div class="box-icon-item">
             <img
               src="https://betrediofficial.github.io/images/mobile-view//bonus.png"
@@ -208,8 +208,8 @@ try {
             />
             <span>Bonus Talep</span>
           </div>
-        </div>
-        <div class="col-4">
+        </a>
+        <a class="col-4">
           <div class="box-icon-item">
             <img
               src="https://betrediofficial.github.io/images/mobile-view//promotion.png"
@@ -219,8 +219,8 @@ try {
             />
             <span>Promosyonlar</span>
           </div>
-        </div>
-        <div class="col-4">
+        </a>
+        <a class="col-4">
           <div class="box-icon-item">
             <img
               src="https://betrediofficial.github.io/images/mobile-view//support.png"
@@ -230,7 +230,7 @@ try {
             />
             <span>Canlı Destek</span>
           </div>
-        </div>
+        </a>
       </div>
 </div>
     `);
