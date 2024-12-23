@@ -246,7 +246,7 @@ try {
   </div>
 
   ${!isMobile ? `<div style="flex: 1 1 calc(25% - 10px); text-align: center;">
-    <a href="https://imgbb.com/">
+    <a href="sportsbook/live-betting">
       <img src="https://betrediofficial.github.io/images/maconcesi.png" alt="maconcesi" class="bottomMenuWidgetImage" >
     </a>
   </div>` : ``}
