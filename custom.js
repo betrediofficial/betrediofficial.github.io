@@ -84,6 +84,7 @@ try {
     }
 
     headerButtons();
+    hideBlogSection();
 
 
 
@@ -757,4 +758,8 @@ whatsappIcon: `
 </svg>
 `
 
+}
+
+function hideBlogSection(){
+  $("li:contains('Blog')").hide()
 }
