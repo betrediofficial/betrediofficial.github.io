@@ -240,7 +240,7 @@ try {
     $(".section:first").append(`
 <div class="manually-added-home-widgets bottomMenuWidgedContainer">
   <div style="flex: 1 1 calc(25% - 10px); text-align: center;">
-    <a href="https://imgbb.com/">
+    <a href="casino/slots">
       <img src="https://betrediofficial.github.io/images/games.png" alt="games" class="bottomMenuWidgetImage" >
     </a>
   </div>
@@ -257,7 +257,7 @@ try {
     </a>
   </div>
   <div style="flex: 1 1 calc(25% - 10px); text-align: center;">
-    <a href="https://imgbb.com/">
+    <a href="casino/slots">
       <img src="https://betrediofficial.github.io/images/slotcasino.png" alt="slotcasino" class="bottomMenuWidgetImage" >
     </a>
   </div>
