@@ -241,7 +241,7 @@ try {
     $(".section:first").append(`
 <div class="manually-added-home-widgets bottomMenuWidgedContainer">
   <div style="flex: 1 1 calc(25% - 10px); text-align: center;">
-    <a href="casino/slots">
+    <a href="casino/category/exclusive">
       <img src="https://betrediofficial.github.io/images/games.png" alt="games" class="bottomMenuWidgetImage" >
     </a>
   </div>
@@ -253,7 +253,7 @@ try {
   </div>` : ``}
 
   <div style="flex: 1 1 calc(25% - 10px); text-align: center;">
-    <a href="https://imgbb.com/">
+    <a href="sportsbook">
       <img src="https://betrediofficial.github.io/images/sporb.png" alt="sporb" class="bottomMenuWidgetImage" >
     </a>
   </div>
