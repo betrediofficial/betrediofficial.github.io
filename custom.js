@@ -162,7 +162,7 @@ try {
               height="48"
               class="d-block mx-auto"
             />
-            <span>Live Casino</span>
+            <span>Canlı Casino</span>
           </div>
         </a>
         <a class="col-4">
@@ -173,7 +173,7 @@ try {
               height="48"
               class="d-block mx-auto"
             />
-            <span>Slot Casino</span>
+            <span>Slot</span>
           </div>
         </a>
         <a class="col-4">
@@ -195,7 +195,7 @@ try {
               height="48"
               class="d-block mx-auto"
             />
-            <span>Para Çekme</span>
+            <span>Para Çek</span>
           </div>
         </a>
         <a class="col-4">
