@@ -1,7 +1,7 @@
 var language = window.location.pathname.split("/")[1];
 var isLoggedIn = false;
 
-const loggedInLink = ()=> isLoggedIn ? "?modal=login" : "?modal=wallet&tab=deposit";
+const loggedInLink = ()=> !isLoggedIn ? "?modal=login" : "?modal=wallet&tab=deposit";
 
 const isMobile = () => window.innerWidth < 770;
 try {
