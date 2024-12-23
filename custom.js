@@ -1,5 +1,8 @@
 var language = window.location.pathname.split("/")[1];
 var isLoggedIn = false;
+
+const loggedInLink = ()=> isLoggedIn ? "?modal=login" : "?modal=wallet&tab=deposit";
+
 const isMobile = () => window.innerWidth < 770;
 try {
 
@@ -178,7 +181,7 @@ try {
             <span>Slot</span>
           </div>
         </a>
-        <a href="?modal=wallet&tab=deposit" class="col-4">
+        <a href="${loggedInLink()}" class="col-4">
           <div class="box-icon-item">
             <img
               src="https://betrediofficial.github.io/images/mobile-view//deposit.png"
@@ -596,11 +599,11 @@ function headerButtons() {
       </span>
       REDI LIVE
       </a>
-      <a href="" class="manual-redi-button">
+      <a href="${loggedInLink()}" class="manual-redi-button">
       <span style="margin-right: 6px;margin-top: 0px;">
       ${SVGS.moneyIcon}
       </span>
-      Para Yatırma
+      Para Yatır
       </a>
    </div>
    
