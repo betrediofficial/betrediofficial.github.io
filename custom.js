@@ -60,7 +60,7 @@ try {
   }
 
   function initialize() {
-    isLoggedIn = $(".header__signin").length > 0 ? true : false
+    isLoggedIn = $(".header__signin").length > 0 ? false : true
     language = window.location.pathname.split("/")[1]
     const isHomePage = isHomePageCheck()
     if (language !== "tr") return;
