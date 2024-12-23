@@ -1,4 +1,5 @@
 var language = window.location.pathname.split("/")[1];
+var isLoggedIn = false;
 const isMobile = () => window.innerWidth < 770;
 try {
 
@@ -59,7 +60,7 @@ try {
   }
 
   function initialize() {
-
+    isLoggedIn = $(".header__signin").length > 0 ? true : false
     language = window.location.pathname.split("/")[1]
     const isHomePage = isHomePageCheck()
     if (language !== "tr") return;
