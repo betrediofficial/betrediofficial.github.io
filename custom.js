@@ -154,7 +154,7 @@ try {
     $(".section:first").append(`
 <div class="manually-added-home-widgets container mt-4 mobile-boxes">
   <div class="row row-cols-2 row-cols-md-3 row-cols-lg-4 g-1">
-        <a class="col-4">
+        <a href="live-casino" class="col-4">
           <div class="box-icon-item">
             <img
               src="https://betrediofficial.github.io/images/mobile-view//live_casino.png"
@@ -165,7 +165,7 @@ try {
             <span>Canlı Casino</span>
           </div>
         </a>
-        <a class="col-4">
+        <a href="casino/slots" class="col-4">
           <div class="box-icon-item">
             <img
               src="https://betrediofficial.github.io/images/mobile-view//casino.png"
@@ -176,7 +176,7 @@ try {
             <span>Slot</span>
           </div>
         </a>
-        <a class="col-4">
+        <a href="?modal=wallet&tab=deposit" class="col-4">
           <div class="box-icon-item">
             <img
               src="https://betrediofficial.github.io/images/mobile-view//deposit.png"
@@ -187,7 +187,7 @@ try {
             <span>Para Yatır</span>
           </div>
         </a>
-        <a class="col-4">
+        <a href="?modal=wallet&tab=withdraw" class="col-4">
           <div class="box-icon-item">
             <img
               src="https://betrediofficial.github.io/images/mobile-view//withdraw.png"
@@ -209,7 +209,7 @@ try {
             <span>Bonus Talep</span>
           </div>
         </a>
-        <a class="col-4">
+        <a href="promotions" class="col-4">
           <div class="box-icon-item">
             <img
               src="https://betrediofficial.github.io/images/mobile-view//promotion.png"
@@ -220,7 +220,7 @@ try {
             <span>Promosyonlar</span>
           </div>
         </a>
-        <a class="col-4">
+        <a href="?modal=vip&tab=bonus-code" class="col-4">
           <div class="box-icon-item">
             <img
               src="https://betrediofficial.github.io/images/mobile-view//support.png"
