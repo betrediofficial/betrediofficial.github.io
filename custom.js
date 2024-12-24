@@ -594,7 +594,7 @@ function headerButtons() {
     <span class="manual-buttons" id="web-header-buttons">
    <div class="buttonsContainer">
    <div class="button-section">
-      <a href="" class="manual-redi-button" style="${isLoggedIn ? "margin-left: 22px;":""}">
+      <a href="https://redisportv.com/" class="manual-redi-button" style="${isLoggedIn ? "margin-left: 22px;":""}">
       <span style="margin-right: 6px;margin-top: -4px;">
       ${SVGS.tvIcon}
       </span>
@@ -641,7 +641,7 @@ function headerButtons() {
     <div class="row" id="mobile-header-buttons">
 
       <div class="col-1">
-          <a href="" class="manual-redi-button">
+          <a href="https://redisportv.com/" class="manual-redi-button">
             <span>
             ${SVGS.tvIcon}
             </span>
