@@ -174,7 +174,7 @@ try {
         <a href="casino/slots" class="col-4">
           <div class="box-icon-item">
             <img
-              src="https://betrediofficial.github.io/images/mobile-view//slot-icon.png"
+              src="https://betrediofficial.github.io/images/mobile-view/sloticon.png"
               width="48"
               height="48"
               class="d-block mx-auto"
