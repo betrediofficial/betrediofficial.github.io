@@ -111,7 +111,7 @@ try {
           <div class="otherGamesComponentLayout">
             <a href="${language}/casino/games/aviator">
               <img
-                src="https://betrediofficial.github.io/images/other-games/f63.png"
+                src="https://betrediofficial.github.io/images/f63.png"
                 alt="games"
                 class="otherGamesComponentLayoutImg"
               />
