@@ -247,7 +247,7 @@ try {
 <div class="manually-added-home-widgets bottomMenuWidgedContainer">
   <div style="flex: 1 1 calc(25% - 10px); text-align: center;">
     <a href="casino/category/exclusive">
-      <img src="https://betrediofficial.github.io/images/games.png" alt="games" class="bottomMenuWidgetImage" >
+      <img src="https://betrediofficial.github.io/images/f63.png" alt="games" class="bottomMenuWidgetImage" >
     </a>
   </div>
 
