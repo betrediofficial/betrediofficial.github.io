@@ -621,7 +621,7 @@ function headerButtons() {
          ${SVGS.twitterIcon}
          </span>
          </a>
-         <a href="" class="manual-redi-button">
+         <a href="https://t.me/betredi" class="manual-redi-button">
          <span>
          ${SVGS.telegramIcon}
          </span>
@@ -658,7 +658,7 @@ function headerButtons() {
 
 
         <div class="col-1">
-          <a href="" class="manual-redi-button">
+          <a href="https://t.me/betredi" class="manual-redi-button">
             <span>
             ${SVGS.telegramIcon}
             </span>
