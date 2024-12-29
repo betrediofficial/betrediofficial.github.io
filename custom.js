@@ -111,7 +111,7 @@ try {
           <div class="otherGamesComponentLayout">
             <a href="${language}/casino/games/aviator">
               <img
-                src="https://betrediofficial.github.io/images/other-games/aviator.png"
+                src="https://betrediofficial.github.io/images/other-games/f63.png"
                 alt="games"
                 class="otherGamesComponentLayoutImg"
               />
@@ -264,7 +264,7 @@ try {
   </div>
   <div style="flex: 1 1 calc(25% - 10px); text-align: center;">
     <a href="casino/slots">
-      <img src="https://betrediofficial.github.io/images/slotcasino.png" alt="slotcasino" class="bottomMenuWidgetImage" >
+      <img src="https://betrediofficial.github.io/images/f2.png" alt="slotcasino" class="bottomMenuWidgetImage" >
     </a>
   </div>
 </div>
@@ -302,7 +302,7 @@ try {
                       <div class="carousel-slide active-slide" style="width: 100%;">
                         <div class="sdr-item-holder-bc">
                           <a href="/${language}/casino" class"sdr-item-bc" href="#">
-                            <img src="https://betrediofficial.github.io/images/casino-games/Frame-67.png" loading="lazy" class="sdr-image-bc">
+                            <img src="https://betrediofficial.github.io/images/f23.png" loading="lazy" class="sdr-image-bc">
                           </a>
                         </div>
                       </div>
