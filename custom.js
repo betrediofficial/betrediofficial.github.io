@@ -109,7 +109,7 @@ try {
       <div class="col-12">
         <div class="otherGamesComponent">
           <div class="otherGamesComponentLayout">
-            <a href="${language}/casino/games/aviator">
+            <a href="casino/games/aviator">
               <img
                 src="https://betrediofficial.github.io/images/other-games/aviator.png"
                 alt="games"
@@ -118,7 +118,7 @@ try {
             </a>
           </div>
           <div class="otherGamesComponentLayout">
-            <a href="${language}/casino/games/pragmaticlive-spaceman">
+            <a href="casino/games/pragmaticlive-spaceman">
               <img
                 src="https://betrediofficial.github.io/images/other-games/spaceman.png"
                 alt="maconcesi"
@@ -127,7 +127,7 @@ try {
             </a>
           </div>
           <div class="otherGamesComponentLayout">
-            <a href="${language}/casino/games/betsolutions-zeppelin?modal=register">
+            <a href="casino/games/betsolutions-zeppelin?modal=register">
               <img
                 src="https://betrediofficial.github.io/images/other-games/zepplin.png"
                 alt="sporb"
@@ -136,7 +136,7 @@ try {
             </a>
           </div>
           <div class="otherGamesComponentLayout">
-            <a href="${language}/casino/games/pragmaticlive-big-bass-crash">
+            <a href="casino/games/pragmaticlive-big-bass-crash">
               <img
                 src="https://betrediofficial.github.io/images/other-games/bigbass.png"
                 alt="slotcasino"
