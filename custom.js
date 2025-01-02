@@ -301,7 +301,7 @@ try {
                     <div class="carousel-container" style="transform: translate3d(0%, 0px, 0px);">
                       <div class="carousel-slide active-slide" style="width: 100%;">
                         <div class="sdr-item-holder-bc">
-                          <a href="/${language}/casino" class"sdr-item-bc" href="#">
+                          <a href="casino" class"sdr-item-bc" href="#">
                             <img src="https://betrediofficial.github.io/images/f23.png" loading="lazy" class="sdr-image-bc">
                           </a>
                         </div>
@@ -319,7 +319,7 @@ try {
                       <div class="casino-game-item">
                         <img src="https://betrediofficial.github.io/images/casino-games/big_bass_christmas_bash.jpg" class="casino-game-image-bc" loading="lazy">
                          <div class="overlay">
-                            <a href="/${language}/casino/games/pragmaticlive-big-bass-crash" class="">Big bass Cristmas</a>
+                            <a href="casino/games/pragmaticlive-big-bass-crash" class="">Big bass Cristmas</a>
                         </div>
                    
                       </div>
@@ -329,7 +329,7 @@ try {
                         
                         <img src="https://betrediofficial.github.io/images/casino-games/gates_of_olympus.jpg" class="casino-game-image-bc" loading="lazy">
                            <div class="overlay">
-                            <a href="/${language}/casino/games/pragmaticplay-gates-of-olympus" class="">Gates of Olympus</a>
+                            <a href="casino/games/pragmaticplay-gates-of-olympus" class="">Gates of Olympus</a>
                         </div>
                       </div>
                     </div>
@@ -338,7 +338,7 @@ try {
                         
                         <img src="https://betrediofficial.github.io/images/casino-games/big_bass_secrets_of_the_golden_lake.jpg" class="casino-game-image-bc" loading="lazy">
                            <div class="overlay">
-                            <a href="/${language}/casino/games/pragmaticplay-big-bass-secrets-of-the-golden-lake" class="">Big Bass Secrets Of The Golden Lake</a>
+                            <a href="casino/games/pragmaticplay-big-bass-secrets-of-the-golden-lake" class="">Big Bass Secrets Of The Golden Lake</a>
                         </div>
                       </div>
                     </div>
@@ -347,7 +347,7 @@ try {
                        
                         <img src="https://betrediofficial.github.io/images/casino-games/sweet_bonanza_1000.jpg" class="casino-game-image-bc" loading="lazy">
                           <div class="overlay">
-                            <a href="/${language}/casino/games/pragmaticplay-sweet-bonanza-1000" class="">Sweet Bonanza 1000</a>
+                            <a href="casino/games/pragmaticplay-sweet-bonanza-1000" class="">Sweet Bonanza 1000</a>
                         </div>
                       </div>
                     </div>
@@ -356,7 +356,7 @@ try {
                         
                         <img src="https://betrediofficial.github.io/images/casino-games/devils_deal_soul_for_sale.jpg" class="casino-game-image-bc" loading="lazy">
                           <div class="overlay">
-                            <a href="/${language}/casino/games/gaming7777-devils-deal-soul-for-sale" class="">Devil's Deal Soul For Sale</a>
+                            <a href="casino/games/gaming7777-devils-deal-soul-for-sale" class="">Devil's Deal Soul For Sale</a>
                         </div>
                       </div>
                     </div>
@@ -365,7 +365,7 @@ try {
                         
                         <img src="https://betrediofficial.github.io/images/casino-games/shining_crown.jpg" class="casino-game-image-bc" loading="lazy">
                      <div class="overlay">
-                            <a href="/${language}/casino/games/egt-interactive-shining-crown" class="">Shining Crown</a>
+                            <a href="casino/games/egt-interactive-shining-crown" class="">Shining Crown</a>
                         </div>
                       </div>
                     </div>
@@ -382,7 +382,7 @@ try {
                       <div class="casino-game-item">
                         <img src="https://betrediofficial.github.io/images/casino-games/wisdom_of_athena.jpg" class="casino-game-image-bc" loading="lazy">
                         <div class="overlay">
-                            <a href="/${language}/casino/games/pragmaticplay-wisdom-of-athena" class="">Wisdom Of Athena</a>
+                            <a href="casino/games/pragmaticplay-wisdom-of-athena" class="">Wisdom Of Athena</a>
                         </div>
                       </div>
                     </div>
@@ -391,7 +391,7 @@ try {
                       
                         <img src="https://betrediofficial.github.io/images/casino-games/starlight_princess_1000.jpg" class="casino-game-image-bc" loading="lazy">
                        <div class="overlay">
-                            <a href="/${language}/casino/games/pragmaticplay-starlight-princess-1000" class="">StarLight Princess 1000</a>
+                            <a href="casino/games/pragmaticplay-starlight-princess-1000" class="">StarLight Princess 1000</a>
                         </div>
                       </div>
                     </div>
@@ -400,7 +400,7 @@ try {
                         
                         <img src="https://betrediofficial.github.io/images/casino-games/sugar_rush_1000.jpg" class="casino-game-image-bc" loading="lazy">
                       <div class="overlay">
-                            <a href="/${language}/casino/games/pragmaticplay-sugar-rush-1000" class="">Sugar Rush 1000</a>
+                            <a href="casino/games/pragmaticplay-sugar-rush-1000" class="">Sugar Rush 1000</a>
                         </div>
                       </div>
                     </div>
@@ -451,7 +451,7 @@ try {
               <div class="carousel-container" style="transform: translate3d(0%, 0px, 0px);">
                 <div class="carousel-slide active-slide" style="width: 100%;">
                   <div class="sdr-item-holder-bc">
-                    <a href="${language}/casino/group/live-lobby" class"sdr-item-bc" href="#">
+                    <a href="casino/group/live-lobby" class"sdr-item-bc" href="#">
                       <img src="https://betrediofficial.github.io/images/livecasino.png" loading="lazy" class="sdr-image-bc">
                     </a>
                   </div>
@@ -469,7 +469,7 @@ try {
                 <div class="casino-game-item">
                   <img src="https://betrediofficial.github.io/images/live-casino/american-roulette.png" class="casino-game-image-bc img-fluid">
                   <div class="overlay">
-                      <a href="/${language}/casino/games/american-roulette" class="">American Roulette</a>
+                      <a href="casino/games/american-roulette" class="">American Roulette</a>
                   </div>
                 </div>
               </div>
@@ -478,7 +478,7 @@ try {
                 <div class="casino-game-item">
                   <img src="https://betrediofficial.github.io/images/live-casino/roulette_1_azure_drops_and_wins.jpg" class="casino-game-image-bc img-fluid">
                   <div class="overlay">
-                      <a href="/${language}/casino/games/pragmaticlive-roulette-azure" class="">Roulette Azure</a>
+                      <a href="casino/games/pragmaticlive-roulette-azure" class="">Roulette Azure</a>
                   </div>
                 </div>
               </div>
@@ -486,7 +486,7 @@ try {
                 <div class="casino-game-item">
                   <img src="https://betrediofficial.github.io/images/live-casino/auto_roulette.jpg" class="casino-game-image-bc img-fluid">
                   <div class="overlay">
-                     <a href="/${language}/casino/games/ezugi-auto-roulette" class="">Auto Roulette</a>
+                     <a href="casino/games/ezugi-auto-roulette" class="">Auto Roulette</a>
                   </div>
                 </div>
               </div>
@@ -494,7 +494,7 @@ try {
                 <div class="casino-game-item">
                   <img src="https://betrediofficial.github.io/images/live-casino/roulette.jpg" class="casino-game-image-bc img-fluid">
                   <div class="overlay">
-                      <a href="/${language}/casino/games/evolution-auto-roulette-vip" class="">Auto Roulette VIP</a>
+                      <a href="casino/games/evolution-auto-roulette-vip" class="">Auto Roulette VIP</a>
                   </div>
                 </div>
               </div>
@@ -502,7 +502,7 @@ try {
                 <div class="casino-game-item">
                   <img src="https://betrediofficial.github.io/images/live-casino/blackjack.jpg" class="casino-game-image-bc img-fluid">
                   <div class="overlay">
-                      <a href="/${language}/casino/games/evolution-speed-blackjack-e" class="">Speed Blackjack E</a>
+                      <a href="casino/games/evolution-speed-blackjack-e" class="">Speed Blackjack E</a>
                   </div>
                 </div>
               </div>
@@ -510,7 +510,7 @@ try {
                 <div class="casino-game-item">
                   <img src="https://betrediofficial.github.io/images/live-casino/blackjackvip.png" class="casino-game-image-bc img-fluid">
                   <div class="overlay">
-                    <a href="/${language}/casino/games/blackjack-vip" class="">Blackjack VIP</a>
+                    <a href="casino/games/blackjack-vip" class="">Blackjack VIP</a>
                   </div>
                 </div>
               </div>
@@ -518,7 +518,7 @@ try {
                 <div class="casino-game-item">
                   <img src="https://betrediofficial.github.io/images/live-casino/las-vegas-roulette.png" class="casino-game-image-bc img-fluid">
                   <div class="overlay">
-                      <a href="/${language}/casino/games/las-vegas-roulette" class="">Lasvegas Roulette</a>
+                      <a href="casino/games/las-vegas-roulette" class="">Lasvegas Roulette</a>
                   </div>
                 </div>
               </div>
@@ -526,7 +526,7 @@ try {
                 <div class="casino-game-item">
                   <img src="https://betrediofficial.github.io/images/live-casino/lucky-fruits-and-diamonds.png" class="casino-game-image-bc img-fluid">
                   <div class="overlay">
-                      <a href="/${language}/casino/games/lucky-fruits-diamonds" class="">Lucky Fruits & Diamonds</a>
+                      <a href="casino/games/lucky-fruits-diamonds" class="">Lucky Fruits & Diamonds</a>
                   </div>
                 </div>
               </div>
@@ -534,7 +534,7 @@ try {
                 <div class="casino-game-item">
                   <img src="https://betrediofficial.github.io/images/live-casino/speed-blackjack.jpg" class="casino-game-image-bc img-fluid">
                   <div class="overlay">
-                     <a href="/${language}/casino/games/evolution-speed-blackjack-h" class="">Speed Blackjack H</a>
+                     <a href="casino/games/evolution-speed-blackjack-h" class="">Speed Blackjack H</a>
                   </div>
                 </div>
               </div>
@@ -542,7 +542,7 @@ try {
                 <div class="casino-game-item">
                   <img src="https://betrediofficial.github.io/images/live-casino/turkish_roulette.jpg" class="casino-game-image-bc img-fluid">
                   <div class="overlay">
-                      <a href="/${language}/casino/games/ezugi-turkish-roulette" class="">Turkish Roulette</a>
+                      <a href="casino/games/ezugi-turkish-roulette" class="">Turkish Roulette</a>
                   </div>
                 </div>
               </div>
