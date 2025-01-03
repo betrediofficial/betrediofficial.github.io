@@ -264,7 +264,7 @@ try {
   </div>
   <div style="flex: 1 1 calc(25% - 10px); text-align: center;">
     <a href="casino/slots">
-      <img src="https://betrediofficial.github.io/images/f2.png" alt="slotcasino" class="bottomMenuWidgetImage" >
+      <img src="https://betrediofficial.github.io/images/slotfixx.png" alt="slotcasino" class="bottomMenuWidgetImage" >
     </a>
   </div>
 </div>
