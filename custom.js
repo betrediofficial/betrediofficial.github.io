@@ -252,7 +252,7 @@ try {
   </div>
 
   ${!isMobile ? `<div style="flex: 1 1 calc(25% - 10px); text-align: center;">
-    <a href="sportsbook/upcoming">
+    <a href="live-casino">
       <img src="https://betrediofficial.github.io/images/canlicasinorevize.png" alt="maconcesi" class="bottomMenuWidgetImage" >
     </a>
   </div>` : ``}
@@ -451,7 +451,7 @@ try {
               <div class="carousel-container" style="transform: translate3d(0%, 0px, 0px);">
                 <div class="carousel-slide active-slide" style="width: 100%;">
                   <div class="sdr-item-holder-bc">
-                    <a href="casino/group/live-lobby" class"sdr-item-bc" href="#">
+                    <a href="live-casino" class"sdr-item-bc" href="#">
                       <img src="https://betrediofficial.github.io/images/livecasino.png" loading="lazy" class="sdr-image-bc">
                     </a>
                   </div>
