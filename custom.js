@@ -160,7 +160,7 @@ try {
     $(".section:first").append(`
 <div class="manually-added-home-widgets container mt-4 mobile-boxes">
   <div class="row row-cols-2 row-cols-md-3 row-cols-lg-4 g-1">
-        <a href="live-casino" class="col-4">
+        <a href="casino/group/live-lobby" class="col-4">
           <div class="box-icon-item">
             <img
               src="https://betrediofficial.github.io/images/mobile-view//live_casino.png"
