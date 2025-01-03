@@ -253,13 +253,13 @@ try {
 
   ${!isMobile ? `<div style="flex: 1 1 calc(25% - 10px); text-align: center;">
     <a href="sportsbook/upcoming">
-      <img src="https://betrediofficial.github.io/images/maconcesi.png" alt="maconcesi" class="bottomMenuWidgetImage" >
+      <img src="https://betrediofficial.github.io/images/canlicasinorevize.png" alt="maconcesi" class="bottomMenuWidgetImage" >
     </a>
   </div>` : ``}
 
   <div style="flex: 1 1 calc(25% - 10px); text-align: center;">
     <a href="sportsbook">
-      <img src="https://betrediofficial.github.io/images/sporb.png" alt="sporb" class="bottomMenuWidgetImage" >
+      <img src="https://betrediofficial.github.io/images/sporbahislerirevize.png" alt="sporb" class="bottomMenuWidgetImage" >
     </a>
   </div>
   <div style="flex: 1 1 calc(25% - 10px); text-align: center;">
