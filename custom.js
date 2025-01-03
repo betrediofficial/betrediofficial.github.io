@@ -374,7 +374,7 @@ try {
                        
                         <img src="https://betrediofficial.github.io/images/casino-games/zeus_vs_hades_gods_of_war.jpg" class="casino-game-image-bc" loading="lazy">
                       <div class="overlay">
-                            <a href="/${language}  /casino/games/pragmaticplay-zeus-vs-hades-gods-of-war" class="">Zeus Vs Hades</a>
+                            <a href="casino/games/pragmaticplay-zeus-vs-hades-gods-of-war" class="">Zeus Vs Hades</a>
                         </div>
                       </div>
                     </div>
