@@ -96,6 +96,9 @@ try {
   }
 
   function otherGames() {
+
+    if($("#digeroyunlari").length > 0) return;
+    
     var newSection = `
            
 <div class="manually-added-home-widgets section" id="digeroyunlari">
@@ -157,8 +160,9 @@ try {
   }
 
   function mobileBoxes() {
+    if($("#mobileboxes").length > 0) return;
     $(".section:first").append(`
-<div class="manually-added-home-widgets container mt-4 mobile-boxes">
+<div class="manually-added-home-widgets container mt-4 mobile-boxes" id="mobileboxes">
   <div class="row row-cols-2 row-cols-md-3 row-cols-lg-4 g-1">
         <a href="casino/group/live-lobby" class="col-4">
           <div class="box-icon-item">
@@ -243,9 +247,9 @@ try {
   }
 
   function bottomMenuWidget(isMobile) {
-    if($(".bottomMenuWidgedContainer").length > 0) return;
+    if($("#bottomMenuWidgedContainer").length > 0) return;
     $(".section:first").append(`
-<div class="manually-added-home-widgets bottomMenuWidgedContainer">
+<div class="manually-added-home-widgets bottomMenuWidgedContainer" id="bottomMenuWidgedContainer">
   <div style="flex: 1 1 calc(25% - 10px); text-align: center;">
     <a href="casino/category/exclusive">
       <img src="https://betrediofficial.github.io/images/f63.png" alt="games" class="bottomMenuWidgetImage" >
@@ -274,6 +278,7 @@ try {
 
 
   function slotGames() {
+    if($("#slotoyunlari").length > 0) return;
     var newSection = `
      <div class="manually-added-home-widgets section" id="slotoyunlari">
   <div class="container otherGames">
@@ -428,6 +433,7 @@ try {
   }
 
   function casinoGames() {
+    if($("#casinooyunlari").length > 0) return;
     var newSection = `
      <div class="manually-added-home-widgets section" id="casinooyunlari">
   <div class="container otherGames">
