@@ -243,6 +243,7 @@ try {
   }
 
   function bottomMenuWidget(isMobile) {
+    if($(".bottomMenuWidgedContainer").length > 0) return;
     $(".section:first").append(`
 <div class="manually-added-home-widgets bottomMenuWidgedContainer">
   <div style="flex: 1 1 calc(25% - 10px); text-align: center;">
