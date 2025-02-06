@@ -208,7 +208,7 @@ try {
             <span>Para Çek</span>
           </div>
         </a>
-        <a class="col-4" href="/promotions?modal=vip&tab=bonus-code">
+        <a class="col-4" href="promotions?modal=vip&tab=bonus-code">
           <div class="box-icon-item">
             <img
               src="https://betrediofficial.github.io/images/mobile-view//bonus.png"
