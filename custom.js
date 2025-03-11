@@ -783,6 +783,15 @@ function hideBlogSection(){
 
 function languageSelect () {
   return `
-  <div class="sidebar__lang"><a class="sidebar__lang-btn" role="button" data-bs-toggle="dropdown" aria-expanded="false"><div class="svg-icon"><img src="https://vendor-provider.fra1.cdn.digitaloceanspaces.com/ebetlab/languages/svg/turkey.svg" alt="."></div><svg class="svg-icon"><use href="/static/media/sprite.5d309cb8eb7e2edb1a15e40f2ff0f1cb.svg#right-down"></use></svg></a><ul class="dropdown-menu sidebar__lang-menu"><li><a><div class="svg-icon"><img src="https://vendor-provider.fra1.cdn.digitaloceanspaces.com/ebetlab/languages/svg/united-kingdom.svg" alt="."></div><span>EN</span></a></li><li><a><div class="svg-icon"><img src="https://vendor-provider.fra1.cdn.digitaloceanspaces.com/ebetlab/languages/svg/turkey.svg" alt="."></div><span>TR</span></a></li></ul></div>
+ <div class="sidebar__lang">
+      <a class="sidebar__lang-btn" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+      <div class="svg-icon" onClick="window.location='/tr'">
+         <img src="https://vendor-provider.fra1.cdn.digitaloceanspaces.com/ebetlab/languages/svg/turkey.svg" alt=".">
+      </div>
+       <div class="svg-icon" onClick="window.location='/tr'">
+         <img src="https://vendor-provider.fra1.cdn.digitaloceanspaces.com/ebetlab/languages/svg/united-kingdom.svg" alt=".">
+      </div>
+   </a>
+</div>
   `
 }
