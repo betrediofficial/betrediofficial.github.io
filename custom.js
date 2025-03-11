@@ -641,9 +641,9 @@ function headerButtons() {
          </span>
          </a>
       </div>
-         <div class="button-section">
+         <div>
        ${languageSelect()}
-       </div>s
+       </div>
 </span>
     `)
   }
