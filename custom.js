@@ -801,8 +801,8 @@ function languageSelectWeb () {
 function languageSelectMobile () {
   return `
  <div class="col-1">
-   <a href="" class="manual-redi-button" style="
-      width: 83px;
+   <div href="" class="manual-redi-button" style="
+      width: 79px;
       justify-content: space-between;
       ">
       <div class="svg-icon" onClick="window.location='/tr'" style="
@@ -812,7 +812,7 @@ function languageSelectMobile () {
       <div onClick="window.location='/en'" class="svg-icon">
          <img src="https://vendor-provider.fra1.cdn.digitaloceanspaces.com/ebetlab/languages/svg/united-kingdom.svg" alt=".">
       </div>
-   </a>
+   </div>
 </div>
   `
 }
