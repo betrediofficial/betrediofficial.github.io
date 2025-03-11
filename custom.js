@@ -600,7 +600,7 @@ function headerButtons() {
     $(".header__actions").prepend(`
     <span class="manual-buttons" id="web-header-buttons">
    <div class="buttonsContainer">
-      ${languageSelect()}
+     
 
    <div class="button-section">
       <a href="https://redisportv.com/" target="_blank" class="manual-redi-button" style="${isLoggedIn ? "margin-left: 22px;":""}">
@@ -641,6 +641,9 @@ function headerButtons() {
          </span>
          </a>
       </div>
+         <div class="button-section">
+       ${languageSelect()}
+       </div>s
 </span>
     `)
   }
