@@ -618,7 +618,7 @@ function headerButtons() {
    </div>
    
       <div class="button-section">
-         <a href="" class="manual-redi-button">
+         <a href="https://betredicontact.com/" target="_blank" class="manual-redi-button">
          <span>
          ${SVGS.callIcon}
          </span>
