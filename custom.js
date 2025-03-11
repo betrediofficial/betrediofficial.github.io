@@ -642,7 +642,7 @@ function headerButtons() {
          </a>
       </div>
          <div>
-       ${languageSelect()}
+       ${languageSelectWeb()}
        </div>
 </span>
     `)
@@ -684,6 +684,8 @@ function headerButtons() {
             </span>
          </a>
       </div>
+
+      ${languageSelectMobile()}
 
     </div>
     `)
@@ -781,14 +783,33 @@ function hideBlogSection(){
   $("li:contains('Blog')").hide()
 }
 
-function languageSelect () {
+function languageSelectWeb () {
   return `
  <div class="sidebar__lang">
       <a class="sidebar__lang-btn" role="button" data-bs-toggle="dropdown" aria-expanded="false">
       <div class="svg-icon" onClick="window.location='/tr'">
          <img src="https://vendor-provider.fra1.cdn.digitaloceanspaces.com/ebetlab/languages/svg/turkey.svg" alt=".">
       </div>
-       <div class="svg-icon" onClick="window.location='/tr'">
+       <div class="svg-icon" onClick="window.location='/en'">
+         <img src="https://vendor-provider.fra1.cdn.digitaloceanspaces.com/ebetlab/languages/svg/united-kingdom.svg" alt=".">
+      </div>
+   </a>
+</div>
+  `
+}
+
+function languageSelectMobile () {
+  return `
+ <div class="col-1">
+   <a href="" class="manual-redi-button" style="
+      width: 83px;
+      justify-content: space-between;
+      ">
+      <div class="svg-icon" onClick="window.location='/tr'" style="
+         ">
+         <img src="https://vendor-provider.fra1.cdn.digitaloceanspaces.com/ebetlab/languages/svg/turkey.svg" alt=".">
+      </div>
+      <div onClick="window.location='/en'" class="svg-icon">
          <img src="https://vendor-provider.fra1.cdn.digitaloceanspaces.com/ebetlab/languages/svg/united-kingdom.svg" alt=".">
       </div>
    </a>
