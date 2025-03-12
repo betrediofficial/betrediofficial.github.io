@@ -1,11 +1,15 @@
 var language = window.location.pathname.split("/")[1];
 var isLoggedIn = false;
-var isHomePageGlobal = false;
+
 const depositMoneyLink = ()=> !isLoggedIn ? "?modal=login" : "?modal=wallet&tab=deposit";
 const withdrawMoneyLink = ()=> !isLoggedIn ? "?modal=login" : "?modal=wallet&tab=withdraw";
 
 const isMobile = () => window.innerWidth < 770;
 try {
+
+
+
+
 
   if (typeof jQuery === 'undefined') {
     var script = document.createElement('script');
@@ -63,8 +67,6 @@ try {
     isLoggedIn = $(".header__signin").length > 0 ? false : true
     language = window.location.pathname.split("/")[1]
     const isHomePage = isHomePageCheck()
-    isHomePageGlobal = isHomePage;
-
     // if (language !== "tr") return;
 
     const is_mobile = isMobile();
@@ -647,7 +649,7 @@ function headerButtons() {
     `)
   }
 
-  if ($("#mobile-header-buttons").length === 0 && isHomePageGlobal) {
+  if ($("#mobile-header-buttons").length === 0) {
   $("header .container").append(`
     <div class="row" id="mobile-header-buttons">
 
