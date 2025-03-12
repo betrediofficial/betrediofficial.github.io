@@ -820,5 +820,5 @@ function languageSelectMobile () {
 
 function mobileSignInText(){
   $(".header__signin").html(`
-    <svg class="svg-icon"><use href="/static/media/sprite.5d309cb8eb7e2edb1a15e40f2ff0f1cb.svg#login"></use></svg><span>Login</span>`)
+    <button class="header__signin" type="button"><svg class="svg-icon"><use href="/static/media/sprite.5d309cb8eb7e2edb1a15e40f2ff0f1cb.svg#login"></use></svg><span>Giriş</span></button>`)
 }
