@@ -78,6 +78,7 @@ try {
     }
     else {
       is_mobile && mobileBoxes();
+      is_mobile && mobileSignInText();
       bottomMenuWidget(is_mobile);
        otherGames();
       !is_mobile && slotGames();
@@ -815,4 +816,9 @@ function languageSelectMobile () {
    </div>
 </div>
   `
+}
+
+function mobileSignInText(){
+  $(".header__signin").html(`
+    <svg class="svg-icon"><use href="/static/media/sprite.5d309cb8eb7e2edb1a15e40f2ff0f1cb.svg#login"></use></svg><span>Login</span>`)
 }
