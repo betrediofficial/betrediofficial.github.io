@@ -1,6 +1,6 @@
 var language = window.location.pathname.split("/")[1];
 var isLoggedIn = false;
-var isHomePageGlobal = false;
+
 const depositMoneyLink = ()=> !isLoggedIn ? "?modal=login" : "?modal=wallet&tab=deposit";
 const withdrawMoneyLink = ()=> !isLoggedIn ? "?modal=login" : "?modal=wallet&tab=withdraw";
 
@@ -63,7 +63,6 @@ try {
     isLoggedIn = $(".header__signin").length > 0 ? false : true
     language = window.location.pathname.split("/")[1]
     const isHomePage = isHomePageCheck()
-    isHomePageGlobal = isHomePage;
 
     // if (language !== "tr") return;
 
@@ -87,7 +86,7 @@ try {
       !is_mobile && hideDefaultGames(1500);
     }
 
-    headerButtons();
+    headerButtons(isHomePage);
     hideBlogSection();
 
 
@@ -594,7 +593,7 @@ function hideDefaultGames(ms) {
 
 }
 
-function headerButtons() {
+function headerButtons(isHomePage) {
   if ($(".manual-buttons").length === 0) {
     $(".header__actions").prepend(`
     <span class="manual-buttons" id="web-header-buttons">
@@ -647,7 +646,7 @@ function headerButtons() {
     `)
   }
 
-  if ($("#mobile-header-buttons").length === 0 && isHomePageGlobal) {
+  if ($("#mobile-header-buttons").length === 0 && isHomePage) {
   $("header .container").append(`
     <div class="row" id="mobile-header-buttons">
 
