@@ -78,7 +78,7 @@ try {
     }
     else {
       is_mobile && mobileBoxes();
-      is_mobile && mobileSignInText();
+      mobileSignInText();
       bottomMenuWidget(is_mobile);
        otherGames();
       !is_mobile && slotGames();
@@ -822,7 +822,7 @@ function mobileSignInText(){
   $(".header__signin").html(`
     <h1 style="
     color: #FFF;
-    font-size: 17px;
+    font-size: 16px;
     margin-top: 10px;
 ">GİRİŞ</h1>`)
 }
