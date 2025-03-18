@@ -173,7 +173,7 @@ try {
             <span>Canlı Casino</span>
           </div>
         </a>
-        <a href="casino/slots" class="col-4">
+        <a href="casino/group/lobby" class="col-4">
           <div class="box-icon-item">
             <img
               src="https://betrediofficial.github.io/images/mobile-view/sloticon.png"
