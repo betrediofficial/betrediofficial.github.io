@@ -228,7 +228,7 @@ try {
             <span>Promosyonlar</span>
           </div>
         </a>
-        <a href="?modal=vip&tab=bonus-code" class="col-4">
+        <a onClick="$('.lowbar__btn')[3].click()" class="col-4">
           <div class="box-icon-item">
             <img
               src="https://betrediofficial.github.io/images/mobile-view//support.png"
