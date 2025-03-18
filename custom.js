@@ -228,7 +228,7 @@ try {
             <span>Promosyonlar</span>
           </div>
         </a>
-        <a onClick="$('.lowbar__btn')[3].click()" class="col-4">
+        <a onClick="$('.lowbar__btn')[$('.lowbar__btn').length -1].click()" class="col-4">
           <div class="box-icon-item">
             <img
               src="https://betrediofficial.github.io/images/mobile-view//support.png"
