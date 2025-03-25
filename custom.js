@@ -15,6 +15,24 @@ try {
       $(document).ready(function () {
         initialize();
 
+        // ***
+
+        $(document).ready(function () {
+          $("body").append(`
+    <div class="modal fade show modal-fade" id="starter-modal" tabindex="-1" aria-labelledby="starter-modal" aria-hidden="false" style="display: block; background-color: rgba(0, 0, 0, 0.7);">
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content flex">
+          <div class="modal__content">
+            
+          </div>
+        </div>
+      </div>
+    </div>
+  `);
+        });
+
+        // ***
+
         // History API kullanarak URL değişikliklerini izleyin
         const originalPushState = history.pushState;
         history.pushState = function (state) {
