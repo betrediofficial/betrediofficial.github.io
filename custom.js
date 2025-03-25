@@ -13,6 +13,27 @@ try {
     script.src = "https://code.jquery.com/jquery-3.6.0.min.js";
     script.onload = function () {
       $(document).ready(function () {
+        if (!localStorage.getItem("starterModalShown")) {
+          $("body").append(`
+        <div id="starter-modal" style="position: fixed; z-index: 9999; top: 0; left: 0; width: 100%; height: 100%; background: rgba(0,0,0,0.7); display: flex; align-items: center; justify-content: center;">
+          <div style="position: relative; max-width: 90%; border-radius: 10px; overflow: hidden;">
+            <button id="close-starter-modal-btn" class="close-modal-btn" style="position: absolute; top: 10px; right: 10px; font-size: 24px; color: white; background: none; border: none;">&times;</button>
+            <img src="https://betrediofficial.github.io/images/popup.jpeg" style="max-width: 100%; height: auto;" />
+          </div>
+        </div>
+      `);
+
+          setTimeout(() => {
+            $("#starter-modal").remove();
+          }, 3000);
+
+          $(document).on("click", "#close-starter-modal-btn", function () {
+            $("#starter-modal").remove();
+          });
+
+          localStorage.setItem("starterModalShown", "true");
+        }
+
         initialize();
 
         // History API kullanarak URL değişikliklerini izleyin
