@@ -98,15 +98,13 @@ try {
           modal.classList.add("show");
           modal.setAttribute("aria-hidden", "false");
 
-          // Auto-close after 3 seconds
+          $(document).on("click", ".close-modal-btn", function () {
+            closeStarterModal();
+          });
+
           setTimeout(() => {
             closeStarterModal();
           }, 3000);
-
-          // Close when X is clicked
-          $(".close-modal-btn").on("click", function () {
-            closeStarterModal();
-          });
 
           localStorage.setItem("starterModalShown", "true");
         }
@@ -115,6 +113,7 @@ try {
 
     function closeStarterModal() {
       const modal = document.getElementById("starter-modal");
+
       if (modal) {
         modal.style.display = "none";
         modal.classList.remove("show");
