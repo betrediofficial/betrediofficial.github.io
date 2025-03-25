@@ -15,13 +15,17 @@ try {
       $(document).ready(function () {
         if (!localStorage.getItem("starterModalShown")) {
           $("body").append(`
-        <div id="starter-modal" style="position: fixed; z-index: 9999; top: 0; left: 0; width: 100%; height: 100%; background: rgba(0,0,0,0.7); display: flex; align-items: center; justify-content: center;">
-          <div style="position: relative; max-width: 90%; border-radius: 10px; overflow: hidden;">
-            <button id="close-starter-modal-btn" class="close-modal-btn" style="position: absolute; top: 10px; right: 10px; font-size: 24px; color: white; background: none; border: none;">&times;</button>
-            <img src="https://betrediofficial.github.io/images/popup.jpeg" style="max-width: 100%; height: auto;" />
+      <div class="modal fade show modal-fade" id="starter-modal" tabindex="-1" aria-labelledby="starter-modal" aria-hidden="false" style="display: block; background-color: rgba(0, 0, 0, 0.7);">
+        <div class="modal-dialog modal-dialog-centered">
+          <div class="modal-content flex" style="position: relative;">
+            <button type="button" id="close-starter-modal-btn" class="close-modal-btn" style="position: absolute; top: 10px; right: 15px; font-size: 24px; background: none; border: none; color: white; z-index: 999;">&times;</button>
+            <div class="modal__content">
+              <img src="https://betrediofficial.github.io/images/popup.jpeg" alt="Popup Image" style="width: 100%; height: auto; border-radius: 8px;" />
+            </div>
           </div>
         </div>
-      `);
+      </div>
+    `);
 
           setTimeout(() => {
             $("#starter-modal").remove();
