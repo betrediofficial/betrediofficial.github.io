@@ -112,14 +112,18 @@ try {
     }
 
     function closeStarterModal() {
-      const modal = document.getElementById("starter-modal");
-
-      if (modal) {
-        modal.style.display = "none";
-        modal.classList.remove("show");
-        modal.setAttribute("aria-hidden", "true");
-      }
+      $("#starter-modal").remove(); // Tamamen DOM'dan kaldır
     }
+
+    // function closeStarterModal() {
+    //   const modal = document.getElementById("starter-modal");
+
+    //   if (modal) {
+    //     modal.style.display = "none";
+    //     modal.classList.remove("show");
+    //     modal.setAttribute("aria-hidden", "true");
+    //   }
+    // }
 
     showStarterModalOnce();
 
