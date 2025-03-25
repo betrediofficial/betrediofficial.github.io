@@ -13,8 +13,9 @@ try {
     script.src = "https://code.jquery.com/jquery-3.6.0.min.js";
     script.onload = function () {
       $(document).ready(function () {
-        if (!localStorage.getItem("starterModalShown")) {
-          $("body").append(`
+        if (sessionStorage.getItem("starterModalShown")) return;
+
+        $("body").append(`
       <div class="modal fade show modal-fade" id="starter-modal" tabindex="-1" aria-labelledby="starter-modal" aria-hidden="false" style="display: block; background-color: rgba(0, 0, 0, 0.7);">
         <div class="modal-dialog modal-dialog-centered">
           <div class="modal-content flex" style="position: relative;">
@@ -27,17 +28,21 @@ try {
       </div>
     `);
 
-          setTimeout(() => {
+        setTimeout(() => {
+          $("#starter-modal").remove();
+        }, 3000);
+
+        $(document).on("click", "#close-starter-modal-btn", function () {
+          $("#starter-modal").remove();
+        });
+
+        $(document).on("click", "#starter-modal", function (e) {
+          if (e.target.id === "starter-modal") {
             $("#starter-modal").remove();
-          }, 3000);
+          }
+        });
 
-          $(document).on("click", "#close-starter-modal-btn", function () {
-            $("#starter-modal").remove();
-          });
-
-          localStorage.setItem("starterModalShown", "true");
-        }
-
+        sessionStorage.setItem("starterModalShown", "true");
         initialize();
 
         // History API kullanarak URL değişikliklerini izleyin
