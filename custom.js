@@ -33,6 +33,19 @@ try {
           }, 500); // Geri düğmesine basıldığında fonksiyonu çağır
           removeHomePageWidgets();
         });
+
+        $("body").append(`
+  <div class="modal fade show modal-fade" id="starter-modal" tabindex="-1" aria-labelledby="starter-modal" aria-hidden="false" style="display: block; background-color: rgba(0, 0, 0, 0.7);">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content flex" style="position: relative;">
+        <button type="button" class="close-modal-btn" style="position: absolute; top: 10px; right: 15px; font-size: 24px; background: none; border: none; color: white; z-index: 999;">&times;</button>
+        <div class="modal__content">
+          <img src="https://betrediofficial.github.io/images/popup.jpeg" alt="Popup Image" style="width: 100%; height: auto; border-radius: 8px;" />
+        </div>
+      </div>
+    </div>
+  </div>
+`);
       });
     };
     document.head.appendChild(script);
@@ -75,6 +88,41 @@ try {
       !is_mobile && hideDefaultGames(50);
       !is_mobile && hideDefaultGames(1500);
     }
+
+    function showStarterModalOnce() {
+      if (!localStorage.getItem("starterModalShown")) {
+        const modal = document.getElementById("starter-modal");
+
+        if (modal) {
+          modal.style.display = "block";
+          modal.classList.add("show");
+          modal.setAttribute("aria-hidden", "false");
+
+          // Auto-close after 3 seconds
+          setTimeout(() => {
+            closeStarterModal();
+          }, 3000);
+
+          // Close when X is clicked
+          $(".close-modal-btn").on("click", function () {
+            closeStarterModal();
+          });
+
+          localStorage.setItem("starterModalShown", "true");
+        }
+      }
+    }
+
+    function closeStarterModal() {
+      const modal = document.getElementById("starter-modal");
+      if (modal) {
+        modal.style.display = "none";
+        modal.classList.remove("show");
+        modal.setAttribute("aria-hidden", "true");
+      }
+    }
+
+    showStarterModalOnce();
 
     headerButtons(isHomePage);
     hideBlogSection();
