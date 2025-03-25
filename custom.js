@@ -13,6 +13,19 @@ try {
     script.src = "https://code.jquery.com/jquery-3.6.0.min.js";
     script.onload = function () {
       $(document).ready(function () {
+        $("body").append(`
+  <div class="modal fade show modal-fade" id="starter-modal" tabindex="-1" aria-labelledby="starter-modal" aria-hidden="false" style="display: block; background-color: rgba(0, 0, 0, 0.7);">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content flex" style="position: relative;">
+        <button type="button" class="close-modal-btn" style="position: absolute; top: 10px; right: 15px; font-size: 24px; background: none; border: none; color: white; z-index: 999;">&times;</button>
+        <div class="modal__content">
+          <img src="https://betrediofficial.github.io/images/popup.jpeg" alt="Popup Image" style="width: 100%; height: auto; border-radius: 8px;" />
+        </div>
+      </div>
+    </div>
+  </div>
+`);
+
         initialize();
 
         // History API kullanarak URL değişikliklerini izleyin
@@ -33,19 +46,6 @@ try {
           }, 500); // Geri düğmesine basıldığında fonksiyonu çağır
           removeHomePageWidgets();
         });
-
-        $("body").append(`
-  <div class="modal fade show modal-fade" id="starter-modal" tabindex="-1" aria-labelledby="starter-modal" aria-hidden="false" style="display: block; background-color: rgba(0, 0, 0, 0.7);">
-    <div class="modal-dialog modal-dialog-centered">
-      <div class="modal-content flex" style="position: relative;">
-        <button type="button" class="close-modal-btn" style="position: absolute; top: 10px; right: 15px; font-size: 24px; background: none; border: none; color: white; z-index: 999;">&times;</button>
-        <div class="modal__content">
-          <img src="https://betrediofficial.github.io/images/popup.jpeg" alt="Popup Image" style="width: 100%; height: auto; border-radius: 8px;" />
-        </div>
-      </div>
-    </div>
-  </div>
-`);
       });
     };
     document.head.appendChild(script);
