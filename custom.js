@@ -13,36 +13,37 @@ try {
     script.src = "https://code.jquery.com/jquery-3.6.0.min.js";
     script.onload = function () {
       $(document).ready(function () {
-        if (sessionStorage.getItem("starterModalShown")) return;
+        //     if (sessionStorage.getItem("starterModalShown")) return;
 
-        $("body").append(`
-      <div class="modal fade show modal-fade" id="starter-modal" tabindex="-1" aria-labelledby="starter-modal" aria-hidden="false" style="display: block; background-color: rgba(0, 0, 0, 0.7);">
-        <div class="modal-dialog modal-dialog-centered">
-          <div class="modal-content flex" style="position: relative;">
-            <button type="button" id="close-starter-modal-btn" class="close-modal-btn" style="position: absolute; top: 10px; right: 15px; font-size: 24px; background: none; border: none; color: white; z-index: 999;">&times;</button>
-            <div class="modal__content">
-              <img src="https://betrediofficial.github.io/images/popup.jpeg" alt="Popup Image" style="width: 100%; height: auto; border-radius: 8px;" />
-            </div>
-          </div>
-        </div>
-      </div>
-    `);
+        //     $("body").append(`
+        //   <div class="modal fade show modal-fade" id="starter-modal" tabindex="-1" aria-labelledby="starter-modal" aria-hidden="false" style="display: block; background-color: rgba(0, 0, 0, 0.7);">
+        //     <div class="modal-dialog modal-dialog-centered">
+        //       <div class="modal-content flex" style="position: relative;">
+        //         <button type="button" id="close-starter-modal-btn" class="close-modal-btn" style="position: absolute; top: 10px; right: 15px; font-size: 24px; background: none; border: none; color: white; z-index: 999;">&times;</button>
+        //         <div class="modal__content">
+        //           <img src="https://betrediofficial.github.io/images/popup.jpeg" alt="Popup Image" style="width: 100%; height: auto; border-radius: 8px;" />
+        //         </div>
+        //       </div>
+        //     </div>
+        //   </div>
+        // `);
 
-        setTimeout(() => {
-          $("#starter-modal").remove();
-        }, 8500);
+        //     setTimeout(() => {
+        //       $("#starter-modal").remove();
+        //     }, 8500);
 
-        $(document).on("click", "#close-starter-modal-btn", function () {
-          $("#starter-modal").remove();
-        });
+        //     $(document).on("click", "#close-starter-modal-btn", function () {
+        //       $("#starter-modal").remove();
+        //     });
 
-        $(document).on("click", "#starter-modal", function (e) {
-          if (e.target.id === "starter-modal") {
-            $("#starter-modal").remove();
-          }
-        });
+        //     $(document).on("click", "#starter-modal", function (e) {
+        //       if (e.target.id === "starter-modal") {
+        //         $("#starter-modal").remove();
+        //       }
+        //     });
 
-        sessionStorage.setItem("starterModalShown", "true");
+        //     sessionStorage.setItem("starterModalShown", "true");
+
         initialize();
 
         // History API kullanarak URL değişikliklerini izleyin
