@@ -30,7 +30,7 @@ try {
 
         setTimeout(() => {
           $("#starter-modal").remove();
-        }, 3000);
+        }, 8500);
 
         $(document).on("click", "#close-starter-modal-btn", function () {
           $("#starter-modal").remove();
