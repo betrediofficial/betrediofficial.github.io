@@ -354,32 +354,30 @@
                      <div class="casino-game-item-content">
                       <div class="casino-game-item">
                        
-                        <img src="https://betrediofficial.github.io/images/casino-games/zeus_vs_hades_gods_of_war.jpg" class="casino-game-image-bc" loading="lazy">
+                        <img src="https://betrediofficial.github.io/images/casino-games-new/shining_crown.png" class="casino-game-image-bc" loading="lazy">
                       <div class="overlay">
-                            <a href="casino/games/pragmaticplay-zeus-vs-hades-gods-of-war" class="">Zeus Vs Hades</a>
+                            <a href="casino/games/egt-interactive-shining-crown" class="">Shining Crown</a>
                         </div>
                       </div>
                     </div>
                      <div class="casino-game-item-content">
                       <div class="casino-game-item">
-                        <img src="https://betrediofficial.github.io/images/casino-games/wisdom_of_athena.jpg" class="casino-game-image-bc" loading="lazy">
+                        <img src="https://betrediofficial.github.io/images/casino-games-new/flaming_hot.png" class="casino-game-image-bc" loading="lazy">
                         <div class="overlay">
-                            <a href="casino/games/pragmaticplay-wisdom-of-athena" class="">Wisdom Of Athena</a>
+                            <a href="casino/games/egt-flaming-hot" class="">Flaming Hot</a>
                         </div>
                       </div>
                     </div>
                      <div class="casino-game-item-content">
                       <div class="casino-game-item">
-                      
-                        <img src="https://betrediofficial.github.io/images/casino-games/starlight_princess_1000.jpg" class="casino-game-image-bc" loading="lazy">
+                        <img src="https://betrediofficial.github.io/images/casino-games-new/gates_of_olympus.png" class="casino-game-image-bc" loading="lazy">
                        <div class="overlay">
-                            <a href="casino/games/pragmaticplay-starlight-princess-1000" class="">StarLight Princess 1000</a>
+                            <a href="casino/games/pragmaticplay-gates-of-olympus" class="">Gates of Olympus</a>
                         </div>
                       </div>
                     </div>
                      <div class="casino-game-item-content">
                       <div class="casino-game-item">
-                        
                         <img src="https://betrediofficial.github.io/images/casino-games/sugar_rush_1000.jpg" class="casino-game-image-bc" loading="lazy">
                       <div class="overlay">
                             <a href="casino/games/pragmaticplay-sugar-rush-1000" class="">Sugar Rush 1000</a>
