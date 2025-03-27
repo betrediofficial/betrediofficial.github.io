@@ -270,7 +270,7 @@
     function slotGames() {
       if ($("#slotoyunlari").length > 0) return;
       var newSection = `
-     <div class="manually-added-home-widgets section" id="slotoyunlari">
+     <div class="manually-added-home-widgets section mb-16" id="slotoyunlari">
   <div class="container otherGames">
     <div class="row">
       <div class="col-12">
