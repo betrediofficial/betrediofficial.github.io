@@ -304,9 +304,9 @@ try {
                   <div class="games-horiz-scroll" style="grid-template-rows: auto auto;">
                     <div class="casino-game-item-content">
                       <div class="casino-game-item">
-                        <img src="https://betrediofficial.github.io/images/casino-games/big_bass_christmas_bash.jpg" class="casino-game-image-bc" loading="lazy">
+                        <img src="https://betrediofficial.github.io/images/casino-games-new/starlight_princess_1000.png" class="casino-game-image-bc" loading="lazy">
                          <div class="overlay">
-                            <a href="casino/games/pragmaticlive-big-bass-crash" class="">Big bass Cristmas</a>
+                            <a href="casino/games/pragmaticplay-starlight-princess-1000" class="">Big bass Cristmas</a>
                         </div>
                    
                       </div>
