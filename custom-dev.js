@@ -275,7 +275,7 @@
     <div class="row">
       <div class="col-12">
         <div class="section__title-wrap">
-          <h2 class="section__title" style="font-size: 24px;">
+          <h2 class="section__title" style="font-size: 30px;">
             SLOT CASINO
           </h2>
         </div>
