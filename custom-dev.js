@@ -68,8 +68,8 @@ try {
       mobileSignInText();
       bottomMenuWidget(is_mobile);
       //   otherGames();
-      !is_mobile && slotGames();
-      !is_mobile && casinoGames();
+      //   !is_mobile && slotGames();
+      //   !is_mobile && casinoGames();
 
       //hide default games
       !is_mobile && hideDefaultGames(50);
