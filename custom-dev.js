@@ -1,13 +1,15 @@
 var language = window.location.pathname.split("/")[1];
+
 var isLoggedIn = false;
 
-const depositMoneyLink = () =>
+const depositMoneyLinkDev = () =>
   !isLoggedIn ? "?modal=login" : "?modal=wallet&tab=deposit";
 
-const withdrawMoneyLink = () =>
+const withdrawMoneyLinkDev = () =>
   !isLoggedIn ? "?modal=login" : "?modal=wallet&tab=withdraw";
 
-const isMobile = () => window.innerWidth < 770;
+const isMobileDev = () => window.innerWidth < 770;
+
 try {
   if (typeof jQuery === "undefined") {
     var script = document.createElement("script");
@@ -60,7 +62,7 @@ try {
 
     // if (language !== "tr") return;
 
-    const is_mobile = isMobile();
+    const is_mobile = isMobileDev();
 
     if (!isHomePage) {
       removeHomePageWidgets();
@@ -170,7 +172,7 @@ try {
             <span>Slot</span>
           </div>
         </a>
-        <a href="${depositMoneyLink()}" class="col-4">
+        <a href="${depositMoneyLinkDev()}" class="col-4">
           <div class="box-icon-item">
             <img
               src="https://betrediofficial.github.io/images/mobile-view//deposit.png"
@@ -181,7 +183,7 @@ try {
             <span>Para Yatır</span>
           </div>
         </a>
-        <a href="${withdrawMoneyLink()}" class="col-4">
+        <a href="${withdrawMoneyLinkDev()}" class="col-4">
           <div class="box-icon-item">
             <img
               src="https://betrediofficial.github.io/images/mobile-view//withdraw.png"
@@ -230,7 +232,7 @@ try {
     `);
   }
 
-  function bottomMenuWidget(isMobile) {
+  function bottomMenuWidget(isMobileDev) {
     if ($("#bottomMenuWidgedContainer").length > 0) return;
     $(".section:first").append(`
 <div class="manually-added-home-widgets bottomMenuWidgedContainer" id="bottomMenuWidgedContainer">
@@ -241,7 +243,7 @@ try {
   </div>
 
   ${
-    !isMobile
+    !isMobileDev
       ? `<div style="flex: 1 1 calc(25% - 10px); text-align: center;">
     <a href="casino/group/live-casino">
       <img src="https://betrediofficial.github.io/images/canlicasinorevize.png" alt="maconcesi" class="bottomMenuWidgetImage" >
