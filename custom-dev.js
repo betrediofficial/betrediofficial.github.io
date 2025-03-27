@@ -315,7 +315,7 @@
                       <div class="casino-game-item">
                         <img src="https://betrediofficial.github.io/images/casino-games-new/wisdom-of-athena.png" class="casino-game-image-bc" loading="lazy">
                            <div class="overlay">
-                            <a href="casino/games/pragmaticplay-gates-of-olympus" class="">Wisdom Of Athena</a>
+                            <a href="casino/games/pragmaticplay-wisdom-of-athena" class="">Wisdom Of Athena</a>
                         </div>
                       </div>
                     </div>
