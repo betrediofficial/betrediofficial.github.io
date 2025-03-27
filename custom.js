@@ -7,79 +7,12 @@ const withdrawMoneyLink = () =>
   !isLoggedIn ? "?modal=login" : "?modal=wallet&tab=withdraw";
 
 const isMobile = () => window.innerWidth < 770;
-
-const sportsCards = [
-  {
-    title: "FUTBOL",
-    img: "https://betrediofficial.github.io/images/sports/futbol.png",
-  },
-  {
-    title: "BASKETBOL",
-    img: "https://betrediofficial.github.io/images/sports/basketbol.png",
-  },
-  {
-    title: "VOLEYBOL",
-    img: "https://betrediofficial.github.io/images/sports/voleybol.png",
-  },
-  {
-    title: "TENİS",
-    img: "https://betrediofficial.github.io/images/sports/tennis.png",
-  },
-  {
-    title: "MMA",
-    img: "https://betrediofficial.github.io/images/sports/mma.png",
-  },
-  {
-    title: "CYCLING",
-    img: "https://betrediofficial.github.io/images/sports/cycling.png",
-  },
-  {
-    title: "MASA TENİSİ",
-    img: "https://betrediofficial.github.io/images/sports/table_tennis.png",
-  },
-  {
-    title: "BUZ HOKEYİ",
-    img: "https://betrediofficial.github.io/images/sports/ice.png",
-  },
-];
-
 try {
   if (typeof jQuery === "undefined") {
     var script = document.createElement("script");
     script.src = "https://code.jquery.com/jquery-3.6.0.min.js";
     script.onload = function () {
       $(document).ready(function () {
-        //     if (sessionStorage.getItem("starterModalShown")) return;
-
-        //     $("body").append(`
-        //   <div class="modal fade show modal-fade" id="starter-modal" tabindex="-1" aria-labelledby="starter-modal" aria-hidden="false" style="display: block; background-color: rgba(0, 0, 0, 0.7);">
-        //     <div class="modal-dialog modal-dialog-centered">
-        //       <div class="modal-content flex" style="position: relative;">
-        //         <button type="button" id="close-starter-modal-btn" class="close-modal-btn" style="position: absolute; top: 10px; right: 15px; font-size: 24px; background: none; border: none; color: white; z-index: 999;">&times;</button>
-        //         <div class="modal__content">
-        //           <img src="https://betrediofficial.github.io/images/popup.jpeg" alt="Popup Image" style="width: 100%; height: auto; border-radius: 8px;" />
-        //         </div>
-        //       </div>
-        //     </div>
-        //   </div>
-        // `);
-
-        //     setTimeout(() => {
-        //       $("#starter-modal").remove();
-        //     }, 8500);
-
-        //     $(document).on("click", "#close-starter-modal-btn", function () {
-        //       $("#starter-modal").remove();
-        //     });
-
-        //     $(document).on("click", "#starter-modal", function (e) {
-        //       if (e.target.id === "starter-modal") {
-        //         $("#starter-modal").remove();
-        //       }
-        //     });
-
-        //     sessionStorage.setItem("starterModalShown", "true");
-
         initialize();
 
         // History API kullanarak URL değişikliklerini izleyin
@@ -468,11 +401,6 @@ try {
               </div>
             </div>
           </div>
-
-
-
-
-
       </div>
     </div>
   </div>
@@ -621,42 +549,6 @@ try {
 `;
 
     $("#slotoyunlari").after(newSection);
-  }
-
-  function addSportsCardsSection() {
-    if ($("#sportsCardsSection").length > 0) return;
-
-    const wrapper = $(`
-    <div class="manually-added-home-widgets section" id="sportsCardsSection">
-      <div class="container">
-        <div class="row" id="sportsCardsRow" style="display: flex; flex-wrap: wrap; gap: 16px; justify-content: center;"></div>
-      </div>
-    </div>
-  `);
-
-    $("#slotoyunlari").after(wrapper); // SLOT bölümünden sonra ekle
-
-    const sportsCards = [
-      { img: "https://betrediofficial.github.io/images/sports/futbol.jpg" },
-      { img: "https://betrediofficial.github.io/images/sports/basketbol.jpg" },
-      { img: "https://betrediofficial.github.io/images/sports/voleybol.jpg" },
-      { img: "https://betrediofficial.github.io/images/sports/tenis.jpg" },
-      { img: "https://betrediofficial.github.io/images/sports/mma.jpg" },
-      { img: "https://betrediofficial.github.io/images/sports/cycling.jpg" },
-      {
-        img: "https://betrediofficial.github.io/images/sports/masa-tenisi.jpg",
-      },
-      { img: "https://betrediofficial.github.io/images/sports/buz-hokeyi.jpg" },
-    ];
-
-    sportsCards.forEach((card) => {
-      const cardHtml = `
-      <div class="card" style="width: 140px; border-radius: 10px; overflow: hidden;">
-        <img src="${card.img}" alt="" style="width: 100%; height: 180px; object-fit: cover; border-radius: 10px;" />
-      </div>
-    `;
-      $("#sportsCardsRow").append(cardHtml);
-    });
   }
 } catch (e) {
   alert("hata");
