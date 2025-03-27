@@ -311,28 +311,27 @@
                         </div>
                       </div>
                     </div>
-                     <div class="casino-game-item-content">
+                    <div class="casino-game-item-content">
                       <div class="casino-game-item">
-                        <img src="https://betrediofficial.github.io/images/casino-games-new/wisdom-of-athena.png" class="casino-game-image-bc" loading="lazy">
+                        <img src="https://betrediofficial.github.io/images/casino-games-new/sweet_bonanza_1000.png" class="casino-game-image-bc" loading="lazy">
+                           <div class="overlay">
+                            <a href="casino/games/pragmaticplay-sweet-bonanza-1000" class="">Sweet Bonanza 1000</a>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="casino-game-item-content">
+                      <div class="casino-game-item">
+                        <img src="https://betrediofficial.github.io/images/casino-games-new/wisdom_of_athena.png" class="casino-game-image-bc" loading="lazy">
                            <div class="overlay">
                             <a href="casino/games/pragmaticplay-wisdom-of-athena" class="">Wisdom Of Athena</a>
                         </div>
                       </div>
                     </div>
-                     <div class="casino-game-item-content">
+                    <div class="casino-game-item-content">
                       <div class="casino-game-item">
-                        <img src="https://betrediofficial.github.io/images/casino-games/big_bass_secrets_of_the_golden_lake.jpg" class="casino-game-image-bc" loading="lazy">
-                           <div class="overlay">
-                            <a href="casino/games/pragmaticplay-big-bass-secrets-of-the-golden-lake" class="">Big Bass Secrets Of The Golden Lake</a>
-                        </div>
-                      </div>
-                    </div>
-                     <div class="casino-game-item-content">
-                      <div class="casino-game-item">
-                       
-                        <img src="https://betrediofficial.github.io/images/casino-games/sweet_bonanza_1000.jpg" class="casino-game-image-bc" loading="lazy">
+                        <img src="https://betrediofficial.github.io/images/casino-games-new/big_bass_christmas_bash.png" class="casino-game-image-bc" loading="lazy">
                           <div class="overlay">
-                            <a href="casino/games/pragmaticplay-sweet-bonanza-1000" class="">Sweet Bonanza 1000</a>
+                            <a href="casino/games/pragmaticplay-big-bass-secrets-of-the-golden-lake" class="">Big Bass Christmas</a>
                         </div>
                       </div>
                     </div>
