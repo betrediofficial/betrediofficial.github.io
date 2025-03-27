@@ -424,7 +424,7 @@
       <div class="col-12">
 
 
-        <div class="hm-row-bc has-game has-slider" style="grid-template-columns: 2fr 10fr;">
+        <div class="hm-row-bc has-game has-slider" style="grid-template-columns: 4fr 11fr;">
       <div class="pb-component-wrapper">
         <div class="slider-bc">
           <div class="carousel">
