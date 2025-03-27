@@ -335,21 +335,19 @@
                         </div>
                       </div>
                     </div>
-                     <div class="casino-game-item-content">
+                    <div class="casino-game-item-content">
                       <div class="casino-game-item">
-                        
-                        <img src="https://betrediofficial.github.io/images/casino-games/devils_deal_soul_for_sale.jpg" class="casino-game-image-bc" loading="lazy">
+                        <img src="https://betrediofficial.github.io/images/casino-games-new/wanted_dead_or_a_wild.png" class="casino-game-image-bc" loading="lazy">
                           <div class="overlay">
-                            <a href="casino/games/gaming7777-devils-deal-soul-for-sale" class="">Devil's Deal Soul For Sale</a>
+                            <a href="casino/games/hacksaw-wanted-dead-or-a-wild" class="">Wanted Dead or a Wild</a>
                         </div>
                       </div>
                     </div>
                      <div class="casino-game-item-content">
                       <div class="casino-game-item">
-                        
-                        <img src="https://betrediofficial.github.io/images/casino-games/shining_crown.jpg" class="casino-game-image-bc" loading="lazy">
+                        <img src="https://betrediofficial.github.io/images/casino-games-new/big_bass_secrets_of_the_golden_lake.png" class="casino-game-image-bc" loading="lazy">
                      <div class="overlay">
-                            <a href="casino/games/egt-interactive-shining-crown" class="">Shining Crown</a>
+                            <a href="casino/games/pragmaticplay-big-bass-secrets-of-the-golden-lake" class="">Big Bass Screts</a>
                         </div>
                       </div>
                     </div>
