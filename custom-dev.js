@@ -72,8 +72,14 @@
         mobileSignInText();
         bottomMenuWidget(is_mobile);
         otherGames();
-        !is_mobile && slotGames();
-        !is_mobile && casinoGames();
+
+        if (!is_mobile) {
+          slotGames();
+          casinoGames();
+        }
+
+        // !is_mobile && slotGames();
+        // !is_mobile && casinoGames();
 
         //hide default games
         !is_mobile && hideDefaultGames(50);
@@ -282,12 +288,12 @@
       </div>
       <div class="col-12">
         <div class="hm-row-bc has-game has-slider section__carousel" style="grid-template-columns: 2fr 10fr;">
-            <div class="pb-component-wrapper">
-              <div class="slider-bc">
+          <div class="pb-component-wrapper">
+            <div class="slider-bc">
                 <div class="carousel">
                   <div class="carousel-viewport">
                     <div class="carousel-container" style="transform: translate3d(0%, 0px, 0px);">
-                      <div class="carousel-slide active-slide" style="width: 100%;">
+                      <div class="carousel-slide active-slide" style="width: 100%; height: 100%;">
                         <div class="sdr-item-holder-bc">
                           <a href="casino" class"sdr-item-bc" href="#">
                             <img src="https://betrediofficial.github.io/images/f23.png" loading="lazy" class="sdr-image-bc">
