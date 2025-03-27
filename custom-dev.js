@@ -67,9 +67,9 @@ try {
       is_mobile && mobileBoxes();
       mobileSignInText();
       bottomMenuWidget(is_mobile);
-      //   otherGames();
-      //   !is_mobile && slotGames();
-      //   !is_mobile && casinoGames();
+      otherGames();
+      !is_mobile && slotGames();
+      !is_mobile && casinoGames();
 
       //hide default games
       !is_mobile && hideDefaultGames(50);
