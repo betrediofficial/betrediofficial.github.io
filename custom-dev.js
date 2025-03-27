@@ -270,7 +270,7 @@
     function slotGames() {
       if ($("#slotoyunlari").length > 0) return;
       var newSection = `
-     <div class="manually-added-home-widgets section mb-16" id="slotoyunlari">
+     <div class="manually-added-home-widgets section" id="slotoyunlari">
   <div class="container otherGames">
     <div class="row">
       <div class="col-12">
@@ -307,23 +307,20 @@
                       <div class="casino-game-item">
                         <img src="https://betrediofficial.github.io/images/casino-games-new/starlight_princess_1000.png" class="casino-game-image-bc" loading="lazy">
                          <div class="overlay">
-                            <a href="casino/games/pragmaticplay-starlight-princess-1000" class="">Big bass Cristmas</a>
+                            <a href="casino/games/pragmaticplay-starlight-princess-1000" class="">Starlight Princess 1000</a>
                         </div>
-                   
                       </div>
                     </div>
                      <div class="casino-game-item-content">
                       <div class="casino-game-item">
-                        
-                        <img src="https://betrediofficial.github.io/images/casino-games/gates_of_olympus.jpg" class="casino-game-image-bc" loading="lazy">
+                        <img src="https://betrediofficial.github.io/images/casino-games-new/wisdom-of-athena.png" class="casino-game-image-bc" loading="lazy">
                            <div class="overlay">
-                            <a href="casino/games/pragmaticplay-gates-of-olympus" class="">Gates of Olympus</a>
+                            <a href="casino/games/pragmaticplay-gates-of-olympus" class="">Wisdom Of Athena</a>
                         </div>
                       </div>
                     </div>
                      <div class="casino-game-item-content">
                       <div class="casino-game-item">
-                        
                         <img src="https://betrediofficial.github.io/images/casino-games/big_bass_secrets_of_the_golden_lake.jpg" class="casino-game-image-bc" loading="lazy">
                            <div class="overlay">
                             <a href="casino/games/pragmaticplay-big-bass-secrets-of-the-golden-lake" class="">Big Bass Secrets Of The Golden Lake</a>
