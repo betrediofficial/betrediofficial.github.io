@@ -137,7 +137,6 @@ try {
       otherGames();
       !is_mobile && slotGames();
       !is_mobile && casinoGames();
-      !is_mobile && addSportsCardsSection();
 
       //hide default games
       !is_mobile && hideDefaultGames(50);
