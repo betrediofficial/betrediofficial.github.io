@@ -273,14 +273,8 @@ try {
       <div class="col-12">
         <div class="section__title-wrap">
           <h2 class="section__title">
-            // <svg class="svg-icon">
-            //   <use
-            //     href="/static/media/sprite.33143bc5180d8cec7f771b3eedc5187c.svg#top-games"
-            //   ></use>
-            // </svg>
             SLOT CASINO
           </h2>
-          
         </div>
       </div>
       <div class="col-12">
