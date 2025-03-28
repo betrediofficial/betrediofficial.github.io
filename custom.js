@@ -79,9 +79,9 @@
 
         if (!is_mobile) {
           casinoGames();
-          sportsCard();
         }
 
+        sportsCard();
         //hide default games
         !is_mobile && hideDefaultGames(50);
         !is_mobile && hideDefaultGames(1500);
