@@ -457,25 +457,27 @@
               
               <div class="casino-game-item-content position-relative">
                 <div class="casino-game-item">
-                  <img src="https://betrediofficial.github.io/images/live-casino/roulette_1_azure_drops_and_wins.jpg" class="casino-game-image-bc img-fluid">
+                  <img src="https://betrediofficial.github.io/images/live-casino-new/speed_blackjack_1.png" class="casino-game-image-bc img-fluid">
                   <div class="overlay">
-                      <a href="casino/games/pragmaticlive-roulette-azure" class="">Roulette Azure</a>
+                     <a href="casino/games/pragmaticlive-speed-blackjack-1" class="">Speed Blackjack 1</a>
                   </div>
                 </div>
               </div>
+
               <div class="casino-game-item-content position-relative">
                 <div class="casino-game-item">
-                  <img src="https://betrediofficial.github.io/images/live-casino/auto_roulette.jpg" class="casino-game-image-bc img-fluid">
+                  <img src="https://betrediofficial.github.io/images/live-casino-new/mega_roulette.png" class="casino-game-image-bc img-fluid">
                   <div class="overlay">
-                     <a href="casino/games/ezugi-auto-roulette" class="">Auto Roulette</a>
+                      <a href="casino/games/pragmaticlive-mega-roulette" class="">Mega Roulette</a>
                   </div>
                 </div>
               </div>
+
               <div class="casino-game-item-content position-relative">
                 <div class="casino-game-item">
-                  <img src="https://betrediofficial.github.io/images/live-casino/roulette.jpg" class="casino-game-image-bc img-fluid">
+                  <img src="https://betrediofficial.github.io/images/live-casino-new/baccarat_lobby.png" class="casino-game-image-bc img-fluid">
                   <div class="overlay">
-                      <a href="casino/games/evolution-auto-roulette-vip" class="">Auto Roulette VIP</a>
+                      <a href="casino/games/pragmaticlive-baccarat-lobby" class="">Baccarat Lobby</a>
                   </div>
                 </div>
               </div>
