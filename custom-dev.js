@@ -413,9 +413,9 @@
       var newSection = `
       <div class="manually-added-home-widgets section" id="casinooyunlari">
         <div class="container otherGames">
-          <img src="https://betrediofficial.github.io/images/tg_promo.png" alt="Telegram Promo" style="display: block; width: 100%; margin-bottom: 10px;" />
-          <img src="https://betrediofficial.github.io/images/tg_promo_200_freespin.png" alt="200 Freespin Bonus" style="display: block; width: 100%; margin-bottom: 10px;" />
-          <img src="https://betrediofficial.github.io/images/tg_promo_desc.png" alt="Kripto Bilgilendirme" style="display: block; width: 100%;" />
+          <img src="https://betrediofficial.github.io/images/tg-promo/tg_promo.png" alt="Telegram Promo" style="display: block; width: 100%; margin-bottom: 10px;" />
+          <img src="https://betrediofficial.github.io/images/tg-promo/tg_promo_200_freespin.png" alt="200 Freespin Bonus" style="display: block; width: 100%; margin-bottom: 10px;" />
+          <img src="https://betrediofficial.github.io/images/tg-promo/tg_promo_desc.png" alt="Kripto Bilgilendirme" style="display: block; width: 100%;" />
         </div>
       </div>
 `;
