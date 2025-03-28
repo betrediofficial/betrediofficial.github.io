@@ -75,6 +75,7 @@
 
         if (!is_mobile) {
           slotGames();
+          tgPromo();
           casinoGames();
         }
 
@@ -404,6 +405,22 @@
       $(".section--first").eq(0).before(newSection);
       const removed = $(".section--first").eq(0);
       if (removed.length) removed.hide();
+    }
+
+    function tgPromo() {
+      if ($("#tg-promo").length > 0) return;
+
+      var newSection = `
+      <div class="manually-added-home-widgets section" id="casinooyunlari">
+        <div class="container otherGames">
+          <img src="https://betrediofficial.github.io/images/tg_promo.png" alt="Telegram Promo" style="display: block; width: 100%; margin-bottom: 10px;" />
+          <img src="https://betrediofficial.github.io/images/tg_promo_200_freespin.png" alt="200 Freespin Bonus" style="display: block; width: 100%; margin-bottom: 10px;" />
+          <img src="https://betrediofficial.github.io/images/tg_promo_desc.png" alt="Kripto Bilgilendirme" style="display: block; width: 100%;" />
+        </div>
+      </div>
+`;
+
+      $("#slotoyunlari").after(newSection);
     }
 
     function casinoGames() {
