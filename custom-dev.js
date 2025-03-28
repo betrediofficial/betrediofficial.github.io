@@ -448,9 +448,9 @@
             <div class="games-horiz-scroll" style="grid-template-rows: auto auto;">
               <div class="casino-game-item-content position-relative">
                 <div class="casino-game-item">
-                  <img src="https://betrediofficial.github.io/images/live-casino/american-roulette.png" class="casino-game-image-bc img-fluid">
+                  <img src="https://betrediofficial.github.io/images/live-casino/black_jack_3.png" class="casino-game-image-bc img-fluid">
                   <div class="overlay">
-                      <a href="casino/games/american-roulette" class="">American Roulette</a>
+                      <a href="casino/games/pragmaticlive-blackjack-3" class="">Blackjack 3</a>
                   </div>
                 </div>
               </div>
