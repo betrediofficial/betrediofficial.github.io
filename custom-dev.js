@@ -77,9 +77,7 @@
 
         tgPromo();
 
-        if (!is_mobile) {
-          casinoGames();
-        }
+        if (!is_mobile) casinoGames();
 
         sportsCard();
         //hide default games
@@ -426,7 +424,7 @@
 `;
 
       if ($("#slotoyunlari").length > 0) $("#slotoyunlari").after(newSection);
-      else $("#bottomMenuWidgedContainer").eq(0).after(newSection); // Mobilde fallback yer
+      else $("#bottomMenuWidgedContainer").eq(0).after(newSection);
     }
 
     function casinoGames() {
@@ -573,54 +571,54 @@
       if ($("#sportscard").length > 0) return;
 
       var newSection = `
-<div class="container">
-  <div class="manually-added-home-widgets section" id="sportscard" style="margin-bottom: 48px;">
-    <div class="container otherGames">
-      <div class="row row-cols-2 row-cols-md-3 g-3 justify-content-center text-center">
+<div class="manually-added-home-widgets section" id="sportscard" style="margin-bottom: 48px;">
+  <div class="container otherGames">
+    <div class="row row-cols-3 row-cols-xl-auto g-3 justify-content-center text-center">
 
-        <div class="col">
+      <div class="col">
         <a href="/sportsbook">
           <img src="https://betrediofficial.github.io/images/sports/futbol.png" alt="Futbol" style="width: 100%;">
         </a>
-        </div>
+      </div>
 
-        <div class="col">
+      <div class="col">
         <a href="/sportsbook">
           <img src="https://betrediofficial.github.io/images/sports/basketbol.png" alt="Basketbol" style="width: 100%;">
         </a>
-        </div>
+      </div>
 
-        <div class="col">
+      <div class="col">
         <a href="/sportsbook">
           <img src="https://betrediofficial.github.io/images/sports/voleybol.png" alt="Voleybol" style="width: 100%;">
         </a>
-        </div>
+      </div>
 
-        <div class="col">
+      <div class="col">
         <a href="/sportsbook">
           <img src="https://betrediofficial.github.io/images/sports/mma.png" alt="MMA" style="width: 100%;">
         </a>
-        </div>
+      </div>
 
-        <div class="col">
+      <div class="col">
         <a href="/sportsbook">
           <img src="https://betrediofficial.github.io/images/sports/tennis.png" alt="Tenis" style="width: 100%;">
         </a>
-        </div>
+      </div>
 
-        <div class="col">
+      <div class="col">
         <a href="/sportsbook">
           <img src="https://betrediofficial.github.io/images/sports/cycling.png" alt="Cycling" style="width: 100%;">
         </a>
-        </div>
-
       </div>
+
     </div>
   </div>
 </div>
   `;
 
-      $("#casinooyunlari").after(newSection);
+      if ($("#casinooyunlari").length > 0)
+        $("#casinooyunlari").after(newSection);
+      else $("#tgpromo").eq(0).after(newSection);
     }
   } catch (e) {
     alert("hata");
