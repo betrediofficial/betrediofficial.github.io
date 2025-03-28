@@ -576,7 +576,7 @@
 <div class="container">
   <div class="manually-added-home-widgets section" id="sportscard" style="margin-bottom: 48px;">
     <div class="container otherGames">
-      <div class="row row-cols-2 row-cols-md-3 row-cols-lg-6 g-3 justify-content-center text-center">
+      <div class="row row-cols-2 row-cols-md-3 g-3 justify-content-center text-center">
 
         <div class="col">
         <a href="/sportsbook">
