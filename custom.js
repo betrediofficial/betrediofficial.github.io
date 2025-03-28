@@ -77,7 +77,10 @@
 
         tgPromo();
 
-        if (!is_mobile) casinoGames();
+        if (!is_mobile) {
+          casinoGames();
+          sportsCard();
+        }
 
         //hide default games
         !is_mobile && hideDefaultGames(50);
@@ -273,6 +276,9 @@
 
     function slotGames() {
       if ($("#slotoyunlari").length > 0) return;
+
+      let title = language === "tr" ? "SLOT CASİNO" : "SLOT CASINO";
+
       var newSection = `
      <div class="manually-added-home-widgets section" id="slotoyunlari" style="margin-bottom: 48px;">
   <div class="container otherGames">
@@ -280,7 +286,7 @@
       <div class="col-12">
         <div class="section__title-wrap">
           <h2 class="section__title" style="font-size: 30px;">
-            SLOT CASINO
+            ${title}
           </h2>
         </div>
       </div>
@@ -425,14 +431,17 @@
 
     function casinoGames() {
       if ($("#casinooyunlari").length > 0) return;
+
+      let title = language === "tr" ? "CANLI CASİNO" : "LIVE CASINO";
+
       var newSection = `
-     <div class="manually-added-home-widgets section" id="casinooyunlari">
+     <div class="manually-added-home-widgets section" id="casinooyunlari" style="margin-bottom: 48px;">
   <div class="container otherGames">
     <div class="row">
       <div class="col-12">
         <div class="section__title-wrap">
           <h2 class="section__title" style="font-size: 30px; margin-bottom: 24px;">
-            CANLI CASİNO
+            ${title}
           </h2>
         </div>
       </div>
@@ -558,6 +567,60 @@
 `;
 
       $("#tgpromo").after(newSection);
+    }
+
+    function sportsCard() {
+      if ($("#sportscard").length > 0) return;
+
+      var newSection = `
+<div class="container">
+  <div class="manually-added-home-widgets section" id="sportscard" style="margin-bottom: 48px;">
+    <div class="container otherGames">
+      <div class="row row-cols-2 row-cols-md-3 row-cols-lg-6 g-3 justify-content-center text-center">
+
+        <div class="col">
+        <a href="/sportsbook">
+          <img src="https://betrediofficial.github.io/images/sports/futbol.png" alt="Futbol" style="width: 100%;">
+        </a>
+        </div>
+
+        <div class="col">
+        <a href="/sportsbook">
+          <img src="https://betrediofficial.github.io/images/sports/basketbol.png" alt="Basketbol" style="width: 100%;">
+        </a>
+        </div>
+
+        <div class="col">
+        <a href="/sportsbook">
+          <img src="https://betrediofficial.github.io/images/sports/voleybol.png" alt="Voleybol" style="width: 100%;">
+        </a>
+        </div>
+
+        <div class="col">
+        <a href="/sportsbook">
+          <img src="https://betrediofficial.github.io/images/sports/mma.png" alt="MMA" style="width: 100%;">
+        </a>
+        </div>
+
+        <div class="col">
+        <a href="/sportsbook">
+          <img src="https://betrediofficial.github.io/images/sports/tennis.png" alt="Tenis" style="width: 100%;">
+        </a>
+        </div>
+
+        <div class="col">
+        <a href="/sportsbook">
+          <img src="https://betrediofficial.github.io/images/sports/cycling.png" alt="Cycling" style="width: 100%;">
+        </a>
+        </div>
+
+      </div>
+    </div>
+  </div>
+</div>
+  `;
+
+      $("#casinooyunlari").after(newSection);
     }
   } catch (e) {
     alert("hata");
