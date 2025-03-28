@@ -91,11 +91,15 @@
         const imgUrl =
           "https://betrediofficial.github.io/images/signup-banner/betredi_banner.png";
 
-        $("#signup-modal").on("shown.bs.modal", function () {
-          const $content = $(this).find(".modal__content").last();
+        const observer = new MutationObserver(() => {
+          const $modal = $("#signup-modal");
+          const $content = $modal.find(".modal__content").last();
 
-          // Daha önce eklenmişse tekrar ekleme
-          if ($content.find(".modal__sign-img").length === 0) {
+          if (
+            $modal.is(":visible") &&
+            $content.length &&
+            $content.find(".modal__sign-img").length === 0
+          ) {
             const $signImg = $(`
         <div class="modal__sign-img">
           <img src="${imgUrl}" alt="Betredi Banner" />
@@ -106,9 +110,9 @@
           }
         });
 
-        // Modal kapanınca temizle
-        $("#signup-modal").on("hidden.bs.modal", function () {
-          $(this).find(".modal__sign-img").remove();
+        observer.observe(document.body, {
+          childList: true,
+          subtree: true,
         });
       }
 
