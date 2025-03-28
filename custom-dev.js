@@ -92,27 +92,36 @@
           "https://betrediofficial.github.io/images/signup-banner/betredi_banner.png";
 
         $("#signup-modal").on("shown.bs.modal", function () {
-          const $modal = $(this);
+          const $modalRoot = $(this);
+          const $innerContent = $modalRoot.find(".modal__head").parent(); // modal__content (içteki)
 
-          setTimeout(() => {
-            const $modalContent = $modal.find(".modal__content");
+          // Zaten eklenmişse tekrar ekleme
+          if ($innerContent.find(".modal__sign-img").length === 0) {
+            const $form = $innerContent.find(".modal__form");
 
-            if ($modalContent.find(".modal__sign-img").length === 0) {
-              const signImgHtml = `
-          <div class="modal__sign-img">
-            <div class="betredi-signup-banner">
-              <img src="${imgUrl}" alt="Betredi Banner" />
-            </div>
+            // Hem formu hem head'i sağ tarafa sar
+            $form
+              .add($innerContent.find(".modal__head"))
+              .wrapAll('<div class="right-col"></div>');
+
+            // Görseli sola yerleştir
+            const bannerHtml = `
+        <div class="modal__sign-img left-col">
+          <div class="betredi-signup-banner">
+            <img src="${imgUrl}" alt="Betredi Banner" />
           </div>
-        `;
-
-              $modalContent.find(".modal__form").before(signImgHtml);
-            }
-          }, 50);
+        </div>
+      `;
+            $innerContent.prepend(bannerHtml);
+            $innerContent.css("display", "flex");
+          }
         });
 
         $("#signup-modal").on("hidden.bs.modal", function () {
-          $(this).find(".modal__sign-img").remove();
+          const $innerContent = $(this).find(".modal__head").parent();
+          $innerContent.find(".modal__sign-img").remove();
+          $innerContent.find(".right-col").children().unwrap();
+          $innerContent.removeAttr("style"); // display: flex kaldır
         });
       }
 
