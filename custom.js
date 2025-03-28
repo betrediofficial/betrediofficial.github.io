@@ -426,7 +426,7 @@
 `;
 
       if ($("#slotoyunlari").length > 0) $("#slotoyunlari").after(newSection);
-      else $("#bottomMenuWidgedContainer").eq(0).after(newSection); // Mobilde fallback yer
+      else $("#bottomMenuWidgedContainer").eq(0).after(newSection);
     }
 
     function casinoGames() {
@@ -620,7 +620,9 @@
 </div>
   `;
 
-      $("#casinooyunlari").after(newSection);
+      if ($("#casinooyunlari").length > 0)
+        $("#casinooyunlari").after(newSection);
+      else $("#tgpromo").eq(0).after(newSection);
     }
   } catch (e) {
     alert("hata");
