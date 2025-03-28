@@ -578,7 +578,9 @@
         </div>
 
         <div class="col">
+        <a href="/sportsbook">
           <img src="https://betrediofficial.github.io/images/sports/basketbol.png" alt="Basketbol" style="width: 100%;">
+        </a>
         </div>
 
         <div class="col">
@@ -588,15 +590,21 @@
         </div>
 
         <div class="col">
+        <a href="/sportsbook">
           <img src="https://betrediofficial.github.io/images/sports/mma.png" alt="MMA" style="width: 100%;">
+        </a>
         </div>
 
         <div class="col">
+        <a href="/sportsbook">
           <img src="https://betrediofficial.github.io/images/sports/tennis.png" alt="Tenis" style="width: 100%;">
+        </a>
         </div>
 
         <div class="col">
+        <a href="/sportsbook">
           <img src="https://betrediofficial.github.io/images/sports/cycling.png" alt="Cycling" style="width: 100%;">
+        </a>
         </div>
 
       </div>
