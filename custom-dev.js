@@ -92,36 +92,34 @@
           "https://betrediofficial.github.io/images/signup-banner/betredi_banner.png";
 
         $("#signup-modal").on("shown.bs.modal", function () {
-          const $modalRoot = $(this);
-          const $innerContent = $modalRoot.find(".modal__head").parent(); // modal__content (içteki)
+          const $modalContent = $(this).find(".modal__content").first(); // SADECE İLK .modal__content
 
-          // Zaten eklenmişse tekrar ekleme
-          if ($innerContent.find(".modal__sign-img").length === 0) {
-            const $form = $innerContent.find(".modal__form");
+          // Eğer resim zaten eklenmişse tekrarlama
+          if ($modalContent.find(".modal__sign-img").length === 0) {
+            const $head = $modalContent.find(".modal__head");
+            const $form = $modalContent.find(".modal__form");
 
-            // Hem formu hem head'i sağ tarafa sar
-            $form
-              .add($innerContent.find(".modal__head"))
-              .wrapAll('<div class="right-col"></div>');
+            // .modal__head + .modal__form birleşip sağ kolonu oluşturacak
+            const $rightCol = $('<div class="modal__right-col"></div>');
+            $rightCol.append($head).append($form);
 
-            // Görseli sola yerleştir
-            const bannerHtml = `
-        <div class="modal__sign-img left-col">
+            // Sol görseli oluştur
+            const $leftCol = $(`
+        <div class="modal__sign-img">
           <div class="betredi-signup-banner">
             <img src="${imgUrl}" alt="Betredi Banner" />
           </div>
         </div>
-      `;
-            $innerContent.prepend(bannerHtml);
-            $innerContent.css("display", "flex");
+      `);
+
+            // Tüm yapıyı güncelle
+            $modalContent.empty().append($leftCol).append($rightCol);
           }
         });
 
         $("#signup-modal").on("hidden.bs.modal", function () {
-          const $innerContent = $(this).find(".modal__head").parent();
-          $innerContent.find(".modal__sign-img").remove();
-          $innerContent.find(".right-col").children().unwrap();
-          $innerContent.removeAttr("style"); // display: flex kaldır
+          const $modalContent = $(this).find(".modal__content").first();
+          $modalContent.empty(); // Modal kapanınca sıfırla
         });
       }
 
