@@ -420,7 +420,8 @@
       </div>
 `;
 
-      $("#slotoyunlari").after(newSection);
+      // $("#slotoyunlari").after(newSection);
+      $("#casinooyunlari").before(newSection);
     }
 
     function casinoGames() {
