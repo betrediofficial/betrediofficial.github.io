@@ -28,7 +28,7 @@
               $modalBody.prepend(`
       <div class="left-col">
         <div class="left-content">
-          <img src="https://betrediofficial.github.io/images/banner/betredi_banner.png" alt="Betredi Hoşgeldin" />
+          <img src="https://betrediofficial.github.io/images/signup-banner/betredi_banner.png" alt="Betredi Hoşgeldin" />
           <h2>HOŞGELDİN</h2>
           <p>Betredi dünyasına katılmak için hemen kaydol!</p>
         </div>
