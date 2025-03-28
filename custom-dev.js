@@ -573,8 +573,7 @@
       var newSection = `
 <div class="manually-added-home-widgets section" id="sportscard" style="margin-bottom: 48px;">
   <div class="container otherGames">
-    <div class="row row-cols-3 row-cols-xl-auto g-3 justify-content-center text-center">
-
+<div class="row row-cols-3 row-cols-xl-6 g-3 justify-content-center text-center">
       <div class="col">
         <a href="/sportsbook">
           <img src="https://betrediofficial.github.io/images/sports/futbol.png" alt="Futbol" style="width: 100%;">
