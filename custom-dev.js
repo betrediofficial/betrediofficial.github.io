@@ -19,6 +19,24 @@
         $(document).ready(function () {
           initialize();
 
+          $("#signup-modal").on("shown.bs.modal", function () {
+            var $modalBody = $(this).find(".modal-body");
+
+            if ($modalBody.find(".left-col").length === 0) {
+              $modalBody.children().wrapAll('<div class="right-col"></div>');
+
+              $modalBody.prepend(`
+      <div class="left-col">
+        <div class="left-content">
+          <img src="https://betrediofficial.github.io/images/banner/betredi_banner.png" alt="Betredi Hoşgeldin" />
+          <h2>HOŞGELDİN</h2>
+          <p>Betredi dünyasına katılmak için hemen kaydol!</p>
+        </div>
+      </div>
+    `);
+            }
+          });
+
           $("#signup-modal").on("hidden.bs.modal", function () {
             var $modalBody = $(this).find(".modal-body");
             $modalBody.find(".left-col").remove();
