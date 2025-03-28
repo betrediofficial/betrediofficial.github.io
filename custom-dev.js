@@ -92,34 +92,40 @@
           "https://betrediofficial.github.io/images/signup-banner/betredi_banner.png";
 
         $("#signup-modal").on("shown.bs.modal", function () {
-          const $modalContent = $(this).find(".modal__content").first(); // SADECE İLK .modal__content
+          const $modal = $(this);
 
-          // Eğer resim zaten eklenmişse tekrarlama
-          if ($modalContent.find(".modal__sign-img").length === 0) {
-            const $head = $modalContent.find(".modal__head");
-            const $form = $modalContent.find(".modal__form");
+          // En içteki modal__content'i seç
+          const $content = $modal.find(".modal__content").last();
 
-            // .modal__head + .modal__form birleşip sağ kolonu oluşturacak
-            const $rightCol = $('<div class="modal__right-col"></div>');
-            $rightCol.append($head).append($form);
+          // Zaten ekliyse bir daha ekleme
+          if ($content.find(".modal__sign-img").length === 0) {
+            const $head = $content.find(".modal__head");
+            const $form = $content.find(".modal__form");
 
-            // Sol görseli oluştur
-            const $leftCol = $(`
+            // Sol taraf için HTML
+            const signImgHtml = `
         <div class="modal__sign-img">
           <div class="betredi-signup-banner">
             <img src="${imgUrl}" alt="Betredi Banner" />
           </div>
         </div>
-      `);
+      `;
 
-            // Tüm yapıyı güncelle
-            $modalContent.empty().append($leftCol).append($rightCol);
+            // Form ve head'i sarmala
+            const $rightCol = $("<div class='modal__right-col'></div>");
+            $rightCol.append($head).append($form);
+
+            // Orijinal içerikleri temizle ve yeni düzeni kur
+            $content.empty().append(signImgHtml).append($rightCol);
           }
         });
 
         $("#signup-modal").on("hidden.bs.modal", function () {
-          const $modalContent = $(this).find(".modal__content").first();
-          $modalContent.empty(); // Modal kapanınca sıfırla
+          const $content = $(this).find(".modal__content").last();
+          const $head = $content.find(".modal__right-col .modal__head");
+          const $form = $content.find(".modal__right-col .modal__form");
+
+          $content.empty().append($head).append($form); // geri al
         });
       }
 
