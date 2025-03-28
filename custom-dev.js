@@ -421,7 +421,9 @@
 `;
 
       // $("#slotoyunlari").after(newSection);
-      $("#casinooyunlari").before(newSection);
+      // $("#casinooyunlari").before(newSection);
+
+      $(newSection).insertAfter("#slotoyunlari");
     }
 
     function casinoGames() {
