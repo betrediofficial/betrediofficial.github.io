@@ -405,21 +405,22 @@
     }
 
     function tgPromo() {
-      if ($("#tg-promo").length > 0) return;
+      if ($("#tgpromo").length > 0) return;
 
       var newSection = `
-      <div class="manually-added-home-widgets section" id="tgpromo" style="margin-bottom: 48px;">
-        <div class="container otherGames">
-          <a href="https://t.me/betredi" target="_blank">
-            <img src="https://betrediofficial.github.io/images/tg-promo/tg_promo.png" alt="Telegram Promo" style="display: block; width: 100%; margin-bottom: 10px;" />
-          </a>
-          <img src="https://betrediofficial.github.io/images/tg-promo/tg_promo_200_freespin.png" alt="200 Freespin Bonus" style="display: block; width: 100%; margin-bottom: 10px;" />
-          <img src="https://betrediofficial.github.io/images/tg-promo/tg_promo_desc.png" alt="Kripto Bilgilendirme" style="display: block; width: 100%;" />
-        </div>
-      </div>
+  <div class="manually-added-home-widgets section" id="tgpromo" style="margin-bottom: 48px;">
+    <div class="container otherGames">
+      <a href="https://t.me/betredi" target="_blank">
+        <img src="https://betrediofficial.github.io/images/tg-promo/tg_promo.png" alt="Telegram Promo" style="display: block; width: 100%; margin-bottom: 10px;" />
+      </a>
+      <img src="https://betrediofficial.github.io/images/tg-promo/tg_promo_200_freespin.png" alt="200 Freespin Bonus" style="display: block; width: 100%; margin-bottom: 10px;" />
+      <img src="https://betrediofficial.github.io/images/tg-promo/tg_promo_desc.png" alt="Kripto Bilgilendirme" style="display: block; width: 100%;" />
+    </div>
+  </div>
 `;
 
-      $("#slotoyunlari").after(newSection);
+      if ($("#slotoyunlari").length > 0) $("#slotoyunlari").after(newSection);
+      else $("#bottomMenuWidgedContainer").eq(0).after(newSection); // Mobilde fallback yer
     }
 
     function casinoGames() {
