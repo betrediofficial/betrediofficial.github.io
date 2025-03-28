@@ -92,20 +92,25 @@
           "https://betrediofficial.github.io/images/signup-banner/betredi_banner.png";
 
         $("#signup-modal").on("shown.bs.modal", function () {
-          const $modal = $(this);
-          const $signImg = $modal.find(".modal__sign-img");
+          const $modalContent = $(this).find(".modal__content");
 
-          if ($signImg.find("img").length === 0) {
-            $signImg.html(`
-        <div class="betredi-signup-banner">
-          <img src="${imgUrl}" alt="Betredi Banner" />
+          // Eğer görsel daha önce eklenmemişse, ekle
+          if ($modalContent.find(".modal__sign-img").length === 0) {
+            const signImgHtml = `
+        <div class="modal__sign-img">
+          <div class="betredi-signup-banner">
+            <img src="${imgUrl}" alt="Betredi Banner" />
+          </div>
         </div>
-      `);
+      `;
+
+            // modal__head'in hemen üstüne ekle
+            $modalContent.prepend(signImgHtml);
           }
         });
 
         $("#signup-modal").on("hidden.bs.modal", function () {
-          $(this).find(".modal__sign-img").empty();
+          $(this).find(".modal__sign-img").remove();
         });
       }
 
