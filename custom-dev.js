@@ -92,40 +92,23 @@
           "https://betrediofficial.github.io/images/signup-banner/betredi_banner.png";
 
         $("#signup-modal").on("shown.bs.modal", function () {
-          const $modal = $(this);
+          const $content = $(this).find(".modal__content").last();
 
-          // En içteki modal__content'i seç
-          const $content = $modal.find(".modal__content").last();
-
-          // Zaten ekliyse bir daha ekleme
+          // Daha önce eklenmişse tekrar ekleme
           if ($content.find(".modal__sign-img").length === 0) {
-            const $head = $content.find(".modal__head");
-            const $form = $content.find(".modal__form");
-
-            // Sol taraf için HTML
-            const signImgHtml = `
+            const $signImg = $(`
         <div class="modal__sign-img">
-          <div class="betredi-signup-banner">
-            <img src="${imgUrl}" alt="Betredi Banner" />
-          </div>
+          <img src="${imgUrl}" alt="Betredi Banner" />
         </div>
-      `;
+      `);
 
-            // Form ve head'i sarmala
-            const $rightCol = $("<div class='modal__right-col'></div>");
-            $rightCol.append($head).append($form);
-
-            // Orijinal içerikleri temizle ve yeni düzeni kur
-            $content.empty().append(signImgHtml).append($rightCol);
+            $content.prepend($signImg);
           }
         });
 
+        // Modal kapanınca temizle
         $("#signup-modal").on("hidden.bs.modal", function () {
-          const $content = $(this).find(".modal__content").last();
-          const $head = $content.find(".modal__right-col .modal__head");
-          const $form = $content.find(".modal__right-col .modal__form");
-
-          $content.empty().append($head).append($form); // geri al
+          $(this).find(".modal__sign-img").remove();
         });
       }
 
