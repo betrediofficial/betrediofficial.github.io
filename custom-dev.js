@@ -19,6 +19,12 @@
         $(document).ready(function () {
           initialize();
 
+          $("#signup-modal").on("hidden.bs.modal", function () {
+            var $modalBody = $(this).find(".modal-body");
+            $modalBody.find(".left-col").remove();
+            $modalBody.find(".right-col").contents().unwrap();
+          });
+
           // History API kullanarak URL değişikliklerini izleyin
           const originalPushState = history.pushState;
           history.pushState = function (state) {
