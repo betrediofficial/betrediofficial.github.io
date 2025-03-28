@@ -73,12 +73,11 @@
         bottomMenuWidget(is_mobile);
         otherGames();
 
-        if (!is_mobile) {
-          slotGames();
-          casinoGames();
-        }
+        if (!is_mobile) slotGames();
 
         tgPromo();
+
+        if (!is_mobile) casinoGames();
 
         //hide default games
         !is_mobile && hideDefaultGames(50);
