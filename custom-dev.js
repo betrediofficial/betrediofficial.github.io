@@ -75,12 +75,10 @@
 
         if (!is_mobile) {
           slotGames();
-          tgPromo();
           casinoGames();
         }
 
-        // !is_mobile && slotGames();
-        // !is_mobile && casinoGames();
+        tgPromo();
 
         //hide default games
         !is_mobile && hideDefaultGames(50);
