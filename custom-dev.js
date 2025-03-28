@@ -19,29 +19,29 @@
         $(document).ready(function () {
           initialize();
 
-          $("#signup-modal").on("shown.bs.modal", function () {
-            var $modalBody = $(this).find(".modal-body");
+          //       $("#signup-modal").on("shown.bs.modal", function () {
+          //         var $modalBody = $(this).find(".modal-body");
 
-            if ($modalBody.find(".left-col").length === 0) {
-              $modalBody.children().wrapAll('<div class="right-col"></div>');
+          //         if ($modalBody.find(".left-col").length === 0) {
+          //           $modalBody.children().wrapAll('<div class="right-col"></div>');
 
-              $modalBody.prepend(`
-      <div class="left-col">
-        <div class="left-content">
-          <img src="https://betrediofficial.github.io/images/signup-banner/betredi_banner.png" alt="Betredi Hoşgeldin" />
-          <h2>HOŞGELDİN</h2>
-          <p>Betredi dünyasına katılmak için hemen kaydol!</p>
-        </div>
-      </div>
-    `);
-            }
-          });
+          //           $modalBody.prepend(`
+          //   <div class="left-col">
+          //     <div class="left-content">
+          //       <img src="https://betrediofficial.github.io/images/signup-banner/betredi_banner.png" alt="Betredi Hoşgeldin" />
+          //       <h2>HOŞGELDİN</h2>
+          //       <p>Betredi dünyasına katılmak için hemen kaydol!</p>
+          //     </div>
+          //   </div>
+          // `);
+          //         }
+          //       });
 
-          $("#signup-modal").on("hidden.bs.modal", function () {
-            var $modalBody = $(this).find(".modal-body");
-            $modalBody.find(".left-col").remove();
-            $modalBody.find(".right-col").contents().unwrap();
-          });
+          //       $("#signup-modal").on("hidden.bs.modal", function () {
+          //         var $modalBody = $(this).find(".modal-body");
+          //         $modalBody.find(".left-col").remove();
+          //         $modalBody.find(".right-col").contents().unwrap();
+          //       });
 
           // History API kullanarak URL değişikliklerini izleyin
           const originalPushState = history.pushState;
@@ -87,6 +87,28 @@
 
       // if (language !== "tr") return;
 
+      function customizeSignupModal() {
+        const imgUrl =
+          "https://betrediofficial.github.io/images/signup-banner/betredi_banner.png";
+
+        $("#signup-modal").on("shown.bs.modal", function () {
+          const $modal = $(this);
+          const $signImg = $modal.find(".modal__sign-img");
+
+          if ($signImg.find("img").length === 0) {
+            $signImg.html(`
+        <div class="betredi-signup-banner">
+          <img src="${imgUrl}" alt="Betredi Banner" />
+        </div>
+      `);
+          }
+        });
+
+        $("#signup-modal").on("hidden.bs.modal", function () {
+          $(this).find(".modal__sign-img").empty();
+        });
+      }
+
       const is_mobile = isMobile();
 
       if (!isHomePage) {
@@ -111,6 +133,8 @@
 
       headerButtons(isHomePage);
       hideBlogSection();
+
+      customizeSignupModal();
     }
 
     function otherGames() {
