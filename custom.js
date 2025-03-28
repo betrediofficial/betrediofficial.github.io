@@ -154,7 +154,7 @@
     function mobileBoxes() {
       if ($("#mobileboxes").length > 0) return;
       $(".section:first").append(`
-<div class="manually-added-home-widgets container mt-4 mobile-boxes" id="mobileboxes">
+<div class="manually-added-home-widgets container mt-4 mobile-boxes" id="mobileboxes" style="margin-bottom: 48px;">
   <div class="row row-cols-2 row-cols-md-3 row-cols-lg-4 g-1">
         <a href="casino/group/live-lobby" class="col-4">
           <div class="box-icon-item">
@@ -241,7 +241,7 @@
     function bottomMenuWidget(isMobile) {
       if ($("#bottomMenuWidgedContainer").length > 0) return;
       $(".section:first").append(`
-<div class="manually-added-home-widgets bottomMenuWidgedContainer" id="bottomMenuWidgedContainer">
+<div class="manually-added-home-widgets bottomMenuWidgedContainer" id="bottomMenuWidgedContainer" style="margin-bottom: 48px;">
   <div style="flex: 1 1 calc(25% - 10px); text-align: center;">
     <a href="casino/category/exclusive">
       <img src="https://betrediofficial.github.io/images/f63.png" alt="games" class="bottomMenuWidgetImage" >
