@@ -276,6 +276,9 @@
 
     function slotGames() {
       if ($("#slotoyunlari").length > 0) return;
+
+      let title = language === "tr" ? "SLOT CASİNO" : "SLOT CASINO";
+
       var newSection = `
      <div class="manually-added-home-widgets section" id="slotoyunlari" style="margin-bottom: 48px;">
   <div class="container otherGames">
@@ -283,7 +286,7 @@
       <div class="col-12">
         <div class="section__title-wrap">
           <h2 class="section__title" style="font-size: 30px;">
-            SLOT CASINO
+            ${title}
           </h2>
         </div>
       </div>
@@ -428,6 +431,9 @@
 
     function casinoGames() {
       if ($("#casinooyunlari").length > 0) return;
+
+      let title = language === "tr" ? "CANLI CASİNO" : "LIVE CASINO";
+
       var newSection = `
      <div class="manually-added-home-widgets section" id="casinooyunlari" style="margin-bottom: 48px;">
   <div class="container otherGames">
@@ -435,7 +441,7 @@
       <div class="col-12">
         <div class="section__title-wrap">
           <h2 class="section__title" style="font-size: 30px; margin-bottom: 24px;">
-            CANLI CASİNO
+            ${title}
           </h2>
         </div>
       </div>
