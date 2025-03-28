@@ -94,7 +94,6 @@
         $("#signup-modal").on("shown.bs.modal", function () {
           const $modalContent = $(this).find(".modal__content");
 
-          // Eğer görsel daha önce eklenmemişse, ekle
           if ($modalContent.find(".modal__sign-img").length === 0) {
             const signImgHtml = `
         <div class="modal__sign-img">
@@ -104,8 +103,7 @@
         </div>
       `;
 
-            // modal__head'in hemen üstüne ekle
-            $modalContent.prepend(signImgHtml);
+            $modalContent.find(".modal__form").before(signImgHtml);
           }
         });
 
