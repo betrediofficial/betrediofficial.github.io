@@ -121,20 +121,27 @@
           "https://betrediofficial.github.io/images/signup-banner/betredi_banner.png";
 
         $("#signup-modal").on("shown.bs.modal", function () {
-          const $modal = $(this);
+          setTimeout(() => {
+            const $modal = $(this);
+            const $content = $modal.find(".modal__content").first();
 
-          // ✅ Target the only modal__content
-          const $content = $modal.find(".modal__content").first();
-
-          if ($content.find(".modal__sign-img").length === 0) {
-            const signImgHtml = `
-        <div class="modal__sign-img">
-          <img src="${imgUrl}" alt="Betredi Banner" />
-        </div>
-      `;
-            // ✅ Add image before the modal__form or modal__head
-            $content.prepend(signImgHtml);
-          }
+            if (
+              $content.length &&
+              $content.find(".modal__sign-img").length === 0
+            ) {
+              const signImgHtml = `
+          <div class="modal__sign-img">
+            <img src="${imgUrl}" alt="Betredi Banner" />
+          </div>
+        `;
+              $content.prepend(signImgHtml);
+              console.log("✅ .modal__sign-img injected!");
+            } else {
+              console.log(
+                "⚠️ .modal__content not ready or already has banner."
+              );
+            }
+          }, 100); // Delay to let modal content render
         });
 
         $("#signup-modal").on("hidden.bs.modal", function () {
