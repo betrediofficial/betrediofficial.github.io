@@ -141,7 +141,7 @@
                 "⚠️ .modal__content not ready or already has banner."
               );
             }
-          }, 100); // Delay to let modal content render
+          }, 1000); // Delay to let modal content render
         });
 
         $("#signup-modal").on("hidden.bs.modal", function () {
