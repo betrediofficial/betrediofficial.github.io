@@ -116,19 +116,34 @@
       //   });
       // }
 
+      function waitForElement(
+        selector,
+        callback,
+        interval = 50,
+        timeout = 2000
+      ) {
+        const start = Date.now();
+        const timer = setInterval(() => {
+          const $el = $(selector);
+          if ($el.length) {
+            clearInterval(timer);
+            callback($el);
+          } else if (Date.now() - start > timeout) {
+            clearInterval(timer);
+            console.warn(`Element ${selector} not found in time.`);
+          }
+        }, interval);
+      }
+
       function customizeSignupModal() {
         const imgUrl =
           "https://betrediofficial.github.io/images/signup-banner/betredi_banner.png";
 
         $("#signup-modal").on("shown.bs.modal", function () {
-          setTimeout(() => {
-            const $modal = $(this);
-            const $content = $modal.find(".modal__content").first();
+          const $modal = $(this);
 
-            if (
-              $content.length &&
-              $content.find(".modal__sign-img").length === 0
-            ) {
+          waitForElement("#signup-modal .modal__content", ($content) => {
+            if ($content.find(".modal__sign-img").length === 0) {
               const signImgHtml = `
           <div class="modal__sign-img">
             <img src="${imgUrl}" alt="Betredi Banner" />
@@ -136,12 +151,8 @@
         `;
               $content.prepend(signImgHtml);
               console.log("✅ .modal__sign-img injected!");
-            } else {
-              console.log(
-                "⚠️ .modal__content not ready or already has banner."
-              );
             }
-          }, 1000); // Delay to let modal content render
+          });
         });
 
         $("#signup-modal").on("hidden.bs.modal", function () {
