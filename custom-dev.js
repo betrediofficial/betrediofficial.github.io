@@ -123,23 +123,17 @@
         $("#signup-modal").on("shown.bs.modal", function () {
           const $modal = $(this);
 
-          // 🔍 Find the `.modal__content` that's inside another `.modal__content`
-          const $innerContent = $modal
-            .find(".modal__content .modal__content")
-            .first();
+          // ✅ Target the only modal__content
+          const $content = $modal.find(".modal__content").first();
 
-          console.log("Inner content: ", $innerContent);
-
-          if (
-            $innerContent.length &&
-            $innerContent.find(".modal__sign-img").length === 0
-          ) {
+          if ($content.find(".modal__sign-img").length === 0) {
             const signImgHtml = `
         <div class="modal__sign-img">
           <img src="${imgUrl}" alt="Betredi Banner" />
         </div>
       `;
-            $innerContent.prepend(signImgHtml);
+            // ✅ Add image before the modal__form or modal__head
+            $content.prepend(signImgHtml);
           }
         });
 
