@@ -122,17 +122,24 @@
 
         $("#signup-modal").on("shown.bs.modal", function () {
           const $modal = $(this);
-          const $content = $modal.find(".modal__content").last();
 
-          console.log("Content: ", $content);
+          // 🔍 Find the `.modal__content` that's inside another `.modal__content`
+          const $innerContent = $modal
+            .find(".modal__content .modal__content")
+            .first();
 
-          if ($content.find(".modal__sign-img").length === 0) {
+          console.log("Inner content: ", $innerContent);
+
+          if (
+            $innerContent.length &&
+            $innerContent.find(".modal__sign-img").length === 0
+          ) {
             const signImgHtml = `
         <div class="modal__sign-img">
           <img src="${imgUrl}" alt="Betredi Banner" />
         </div>
       `;
-            $content.prepend(signImgHtml);
+            $innerContent.prepend(signImgHtml);
           }
         });
 
