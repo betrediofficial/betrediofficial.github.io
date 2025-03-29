@@ -124,6 +124,8 @@
           const $modal = $(this);
           const $content = $modal.find(".modal__content").last();
 
+          console.log("Content: ", $content);
+
           if ($content.find(".modal__sign-img").length === 0) {
             const signImgHtml = `
         <div class="modal__sign-img">
