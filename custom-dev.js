@@ -93,7 +93,7 @@
 
         const observer = new MutationObserver(() => {
           const $modal = $("#signup-modal");
-          const $content = $modal.find(".modal__content").last();
+          const $content = $modal.find(".modal__content").first();
 
           if (
             $modal.is(":visible") &&
