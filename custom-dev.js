@@ -551,7 +551,7 @@
       if ($("#tgpromo").length > 0) return;
 
       var newSection = `
-  <div class="manually-added-home-widgets section" id="tgpromo" style="margin-bottom: 10px;">
+  <div class="manually-added-home-widgets section" id="tgpromo" style="margin-bottom: 14px; margin-top: 14px;">
     <div class="container otherGames">
       <a href="https://t.me/betredi" target="_blank">
         <img src="https://betrediofficial.github.io/images/tg-promo/tg_promo.png" alt="Telegram Promo" style="display: block; width: 100%; margin-bottom: 10px;" />
