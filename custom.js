@@ -19,6 +19,30 @@
         $(document).ready(function () {
           initialize();
 
+          //       $("#signup-modal").on("shown.bs.modal", function () {
+          //         var $modalBody = $(this).find(".modal-body");
+
+          //         if ($modalBody.find(".left-col").length === 0) {
+          //           $modalBody.children().wrapAll('<div class="right-col"></div>');
+
+          //           $modalBody.prepend(`
+          //   <div class="left-col">
+          //     <div class="left-content">
+          //       <img src="https://betrediofficial.github.io/images/signup-banner/betredi_banner.png" alt="Betredi Hoşgeldin" />
+          //       <h2>HOŞGELDİN</h2>
+          //       <p>Betredi dünyasına katılmak için hemen kaydol!</p>
+          //     </div>
+          //   </div>
+          // `);
+          //         }
+          //       });
+
+          //       $("#signup-modal").on("hidden.bs.modal", function () {
+          //         var $modalBody = $(this).find(".modal-body");
+          //         $modalBody.find(".left-col").remove();
+          //         $modalBody.find(".right-col").contents().unwrap();
+          //       });
+
           // History API kullanarak URL değişikliklerini izleyin
           const originalPushState = history.pushState;
           history.pushState = function (state) {
@@ -63,6 +87,119 @@
 
       // if (language !== "tr") return;
 
+      function customizeSignupModal() {
+        const imgUrl =
+          "https://betrediofficial.github.io/images/signup-banner/betredi_banner.png";
+
+        const observer = new MutationObserver(() => {
+          const $modal = $("#signup-modal");
+          const $content = $modal.find(".modal__content").first();
+
+          if (
+            $modal.is(":visible") &&
+            $content.length &&
+            $content.find(".modal__sign-img").length === 0
+          ) {
+            // Inject the image on the left
+            const $signImg = $(`
+        <div class="modal__sign-img">
+          <img src="${imgUrl}" style="width: 100%; height: 100%;" alt="Betredi Banner" />
+        </div>
+      `);
+
+            // Grab modal__head and modal__form
+            const $head = $content.find(".modal__head");
+            const $form = $content.find(".modal__form");
+
+            // Wrap them in a right__col div
+            const $rightCol = $('<div class="right__col"></div>');
+            $rightCol.append($head).append($form);
+
+            // Clear content and insert both sides
+            $content.prepend($signImg);
+            $signImg.after($rightCol); // add right_col after image
+          }
+        });
+
+        observer.observe(document.body, {
+          childList: true,
+          subtree: true,
+        });
+      }
+
+      // function customizeSignupModal() {
+      //   const imgUrl =
+      //     "https://betrediofficial.github.io/images/signup-banner/betredi_banner.png";
+
+      //   const observer = new MutationObserver(() => {
+      //     const $modal = $("#signup-modal");
+      //     const $content = $modal.find(".modal__content").first();
+
+      //     if (
+      //       $modal.is(":visible") &&
+      //       $content.length &&
+      //       $content.find(".modal__sign-img").length === 0
+      //     ) {
+      //       const $signImg = $(`
+      //   <div class="modal__sign-img">
+      //     <img src="${imgUrl}" style="width: 100%; height: 100%;" alt="Betredi Banner" />
+      //   </div>
+      // `);
+
+      //       $content.prepend($signImg);
+      //     }
+      //   });
+
+      //   observer.observe(document.body, {
+      //     childList: true,
+      //     subtree: true,
+      //   });
+      // }
+
+      // function waitForElement(
+      //   selector,
+      //   callback,
+      //   interval = 50,
+      //   timeout = 2000
+      // ) {
+      //   const start = Date.now();
+      //   const timer = setInterval(() => {
+      //     const $el = $(selector);
+      //     if ($el.length) {
+      //       clearInterval(timer);
+      //       callback($el);
+      //     } else if (Date.now() - start > timeout) {
+      //       clearInterval(timer);
+      //       console.warn(`Element ${selector} not found in time.`);
+      //     }
+      //   }, interval);
+      // }
+
+      // function customizeSignupModal() {
+      //   const imgUrl =
+      //     "https://betrediofficial.github.io/images/signup-banner/betredi_banner.png";
+
+      //   $("#signup-modal").on("shown.bs.modal", function () {
+      //     const $modal = $(this);
+
+      //     waitForElement("#signup-modal .modal__content", ($content) => {
+      //       if ($content.find(".modal__sign-img").length === 0) {
+      //         const signImgHtml = `
+      //     <div class="modal__sign-img">
+      //       <img src="${imgUrl}" alt="Betredi Banner" />
+      //     </div>
+      //   `;
+      //         $content.prepend(signImgHtml);
+      //         console.log("✅ .modal__sign-img injected!");
+      //       }
+      //     });
+      //   });
+
+      //   $("#signup-modal").on("hidden.bs.modal", function () {
+      //     $(this).find(".modal__sign-img").remove();
+      //   });
+      // }
+
       const is_mobile = isMobile();
 
       if (!isHomePage) {
@@ -87,6 +224,8 @@
 
       headerButtons(isHomePage);
       hideBlogSection();
+
+      customizeSignupModal();
     }
 
     function otherGames() {
@@ -154,7 +293,7 @@
     function mobileBoxes() {
       if ($("#mobileboxes").length > 0) return;
       $(".section:first").append(`
-<div class="manually-added-home-widgets container mt-4 mobile-boxes" id="mobileboxes" style="margin-bottom: 48px;">
+<div class="manually-added-home-widgets container mt-4 mobile-boxes" id="mobileboxes" style="margin-bottom: 24px;">
   <div class="row row-cols-2 row-cols-md-3 row-cols-lg-4 g-1">
         <a href="casino/group/live-lobby" class="col-4">
           <div class="box-icon-item">
@@ -241,7 +380,7 @@
     function bottomMenuWidget(isMobile) {
       if ($("#bottomMenuWidgedContainer").length > 0) return;
       $(".section:first").append(`
-<div class="manually-added-home-widgets bottomMenuWidgedContainer" id="bottomMenuWidgedContainer" style="margin-bottom: 48px;">
+<div class="manually-added-home-widgets bottomMenuWidgedContainer" id="bottomMenuWidgedContainer" style="margin-bottom: 24px;">
   <div style="flex: 1 1 calc(25% - 10px); text-align: center;">
     <a href="casino/category/exclusive">
       <img src="https://betrediofficial.github.io/images/f63.png" alt="games" class="bottomMenuWidgetImage" >
@@ -278,7 +417,7 @@
       let title = language === "tr" ? "SLOT CASİNO" : "SLOT CASINO";
 
       var newSection = `
-     <div class="manually-added-home-widgets section" id="slotoyunlari" style="margin-bottom: 48px;">
+     <div class="manually-added-home-widgets section" id="slotoyunlari" style="margin-bottom: 24px;">
   <div class="container otherGames">
     <div class="row">
       <div class="col-12">
@@ -412,7 +551,7 @@
       if ($("#tgpromo").length > 0) return;
 
       var newSection = `
-  <div class="manually-added-home-widgets section" id="tgpromo" style="margin-bottom: 48px;">
+  <div class="manually-added-home-widgets section" id="tgpromo" style="margin-bottom: 24px;">
     <div class="container otherGames">
       <a href="https://t.me/betredi" target="_blank">
         <img src="https://betrediofficial.github.io/images/tg-promo/tg_promo.png" alt="Telegram Promo" style="display: block; width: 100%; margin-bottom: 10px;" />
@@ -433,7 +572,7 @@
       let title = language === "tr" ? "CANLI CASİNO" : "LIVE CASINO";
 
       var newSection = `
-     <div class="manually-added-home-widgets section" id="casinooyunlari" style="margin-bottom: 48px;">
+     <div class="manually-added-home-widgets section" id="casinooyunlari" style="margin-bottom: 24px;">
   <div class="container otherGames">
     <div class="row">
       <div class="col-12">
@@ -571,7 +710,7 @@
       if ($("#sportscard").length > 0) return;
 
       var newSection = `
-<div class="manually-added-home-widgets section" id="sportscard" style="margin-bottom: 48px;">
+<div class="manually-added-home-widgets section" id="sportscard" style="margin-bottom: 24px;">
   <div class="container otherGames">
 <div class="row row-cols-3 row-cols-xl-6 g-3 justify-content-center text-center">
       <div class="col">
