@@ -293,7 +293,7 @@
     function mobileBoxes() {
       if ($("#mobileboxes").length > 0) return;
       $(".section:first").append(`
-<div class="manually-added-home-widgets container mt-4 mobile-boxes" id="mobileboxes" style="margin-bottom: 16px;">
+<div class="manually-added-home-widgets container mt-4 mobile-boxes" id="mobileboxes" style="margin-bottom: 12px;">
   <div class="row row-cols-2 row-cols-md-3 row-cols-lg-4 g-1">
         <a href="casino/group/live-lobby" class="col-4">
           <div class="box-icon-item">
@@ -380,7 +380,7 @@
     function bottomMenuWidget(isMobile) {
       if ($("#bottomMenuWidgedContainer").length > 0) return;
       $(".section:first").append(`
-<div class="manually-added-home-widgets bottomMenuWidgedContainer" id="bottomMenuWidgedContainer" style="margin-bottom: 16px;">
+<div class="manually-added-home-widgets bottomMenuWidgedContainer" id="bottomMenuWidgedContainer" style="margin-bottom: 12px;">
   <div style="flex: 1 1 calc(25% - 10px); text-align: center;">
     <a href="casino/category/exclusive">
       <img src="https://betrediofficial.github.io/images/f63.png" alt="games" class="bottomMenuWidgetImage" >
@@ -417,7 +417,7 @@
       let title = language === "tr" ? "SLOT CASİNO" : "SLOT CASINO";
 
       var newSection = `
-     <div class="manually-added-home-widgets section" id="slotoyunlari" style="margin-bottom: 16px;">
+     <div class="manually-added-home-widgets section" id="slotoyunlari" style="margin-bottom: 12px;">
   <div class="container otherGames">
     <div class="row">
       <div class="col-12">
@@ -551,7 +551,7 @@
       if ($("#tgpromo").length > 0) return;
 
       var newSection = `
-  <div class="manually-added-home-widgets section" id="tgpromo" style="margin-bottom: 16px;">
+  <div class="manually-added-home-widgets section" id="tgpromo" style="margin-bottom: 12px;">
     <div class="container otherGames">
       <a href="https://t.me/betredi" target="_blank">
         <img src="https://betrediofficial.github.io/images/tg-promo/tg_promo.png" alt="Telegram Promo" style="display: block; width: 100%; margin-bottom: 10px;" />
@@ -572,12 +572,12 @@
       let title = language === "tr" ? "CANLI CASİNO" : "LIVE CASINO";
 
       var newSection = `
-     <div class="manually-added-home-widgets section" id="casinooyunlari" style="margin-bottom: 16px;">
+     <div class="manually-added-home-widgets section" id="casinooyunlari" style="margin-bottom: 12px;">
   <div class="container otherGames">
     <div class="row">
       <div class="col-12">
         <div class="section__title-wrap">
-          <h2 class="section__title" style="font-size: 30px; margin-bottom: 16px;">
+          <h2 class="section__title" style="font-size: 30px; margin-bottom: 12px;">
             ${title}
           </h2>
         </div>
@@ -710,7 +710,7 @@
       if ($("#sportscard").length > 0) return;
 
       var newSection = `
-<div class="manually-added-home-widgets section" id="sportscard" style="margin-bottom: 16px;">
+<div class="manually-added-home-widgets section" id="sportscard" style="margin-bottom: 12px;">
   <div class="container otherGames">
 <div class="row row-cols-3 row-cols-xl-6 g-3 justify-content-center text-center">
       <div class="col">
