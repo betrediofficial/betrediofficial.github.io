@@ -102,7 +102,7 @@
           ) {
             // Inject the image on the left
             const $signImg = $(`
-        <div class="modal__sign-img">
+        <div class="modal__sign-img" style="width: 40%;">
           <img src="${imgUrl}" style="width: 100%; height: 100%;" alt="Betredi Banner" />
         </div>
       `);
@@ -112,7 +112,9 @@
             const $form = $content.find(".modal__form");
 
             // Wrap them in a right__col div
-            const $rightCol = $('<div class="right__col"></div>');
+            const $rightCol = $(
+              '<div class="right__col" style="float: right; width: 58%;"></div>'
+            );
             $rightCol.append($head).append($form);
 
             // Clear content and insert both sides
