@@ -129,6 +129,48 @@
         });
       }
 
+      function customizeSigninModal() {
+        const imgUrl =
+          "https://betrediofficial.github.io/images/modal-banners/modal_story.png";
+
+        const observer = new MutationObserver(() => {
+          const $modal = $("#signin-modal");
+          const $content = $modal.find(".modal__content").first();
+
+          if (
+            $modal.is(":visible") &&
+            $content.length &&
+            $content.find(".modal__sign-img").length === 0
+          ) {
+            // Inject the image on the left
+            const $signImg = $(`
+        <div class="modal__sign-img" style="width: 40%;">
+          <img src="${imgUrl}" style="width: 100%; height: 100%;" alt="Betredi Banner" />
+        </div>
+      `);
+
+            // Grab modal__head and modal__form
+            const $head = $content.find(".modal__head");
+            const $form = $content.find(".modal__form");
+
+            // Wrap them in a right__col div
+            const $rightCol = $(
+              '<div class="right__col" style="float: right; width: 58%;"></div>'
+            );
+            $rightCol.append($head).append($form);
+
+            // Clear content and insert both sides
+            $content.prepend($signImg);
+            $signImg.after($rightCol); // add right_col after image
+          }
+        });
+
+        observer.observe(document.body, {
+          childList: true,
+          subtree: true,
+        });
+      }
+
       // function customizeSignupModal() {
       //   const imgUrl =
       //     "https://betrediofficial.github.io/images/signup-banner/betredi_banner.png";
@@ -228,6 +270,7 @@
       hideBlogSection();
 
       customizeSignupModal();
+      customizeSigninModal();
     }
 
     function otherGames() {
