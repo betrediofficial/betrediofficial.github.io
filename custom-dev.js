@@ -568,11 +568,11 @@
                         </div>
                       </div>
                     </div>
-                     <div class="casino-game-item-content">
+                    <div class="casino-game-item-content">
                       <div class="casino-game-item">
-                        <img src="https://betrediofficial.github.io/images/casino-games/sugar_rush_1000.jpg" class="casino-game-image-bc" loading="lazy">
-                      <div class="overlay">
-                            <a href="casino/games/pragmaticplay-sugar-rush-1000" class="">Sugar Rush 1000</a>
+                        <img src="https://betrediofficial.github.io/images/casino-games-new/wild_west_gold.jpeg" class="casino-game-image-bc" loading="lazy">
+                         <div class="overlay">
+                            <a href="casino/games/pragmaticplay-wild-west-gold" class="">Wild West Gold</a>
                         </div>
                       </div>
                     </div>
