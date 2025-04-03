@@ -576,22 +576,6 @@
                         </div>
                       </div>
                     </div>
-                    <div class="casino-game-item-content">
-                      <div class="casino-game-item">
-                        <img src="https://betrediofficial.github.io/images/casino-games-new/hand_of_midas_2.png" class="casino-game-image-bc" loading="lazy">
-                         <div class="overlay">
-                            <a href="casino/games/pragmaticplay-hand-of-midas-2" class="">Hand of Midas 2</a>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="casino-game-item-content">
-                      <div class="casino-game-item">
-                        <img src="https://betrediofficial.github.io/images/casino-games-new/ripe_rewards.png" class="casino-game-image-bc" loading="lazy">
-                         <div class="overlay">
-                            <a href="casino/games/pragmaticplay-ripe-rewards" class="">Ripe Rewards</a>
-                        </div>
-                      </div>
-                    </div>
                   </div>
                 </div>
               </div>
