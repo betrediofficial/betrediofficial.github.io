@@ -482,7 +482,7 @@
                       <div class="carousel-slide active-slide" style="width: 100%; height: 100%;">
                         <div class="sdr-item-holder-bc">
                           <a href="casino" class"sdr-item-bc" href="#">
-                            <img src="https://betrediofficial.github.io/images/f23.png" loading="lazy" class="sdr-image-bc">
+                            <img src="https://betrediofficial.github.io/images/slot-casino-banner/slot_casino.png" loading="lazy" class="sdr-image-bc">
                           </a>
                         </div>
                       </div>
@@ -653,7 +653,7 @@
                 <div class="carousel-slide active-slide" style="width: 100%; height: 100%;">
                   <div class="sdr-item-holder-bc">
                     <a href="casino/group/live-casino" class"sdr-item-bc" href="#">
-                      <img src="https://betrediofficial.github.io/images/livecasino.png" loading="lazy" class="sdr-image-bc">
+                      <img src="https://betrediofficial.github.io/images/live-casino-banner/live_casino.png" loading="lazy" class="sdr-image-bc">
                     </a>
                   </div>
                 </div>
