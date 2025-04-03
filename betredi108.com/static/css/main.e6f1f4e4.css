@@ -2797,8 +2797,8 @@ button:hover .svg-icon {
 }
 @media screen and (min-width: 991px) {
   .container {
-    padding-left: 24px;
-    padding-right: 24px;
+    /* padding-left: 24px; */
+    /* padding-right: 24px; */
   }
 }
 .swiper-pagination {

@@ -3205,7 +3205,7 @@ body::-webkit-scrollbar-track {
 }
 
 .section {
-    position: relative;
+    /* position: relative; */
     width: 100%;
     padding-top: 12px;
     /*overflow: hidden;*/
