@@ -644,13 +644,13 @@
         </div>
       </div>
       <div class="col-12">
-        <div class="hm-row-bc has-game has-slider" style="grid-template-columns: 4fr 11fr;">
+        <div class="hm-row-bc has-game has-slider" style="grid-template-columns: 3fr 12fr;">
       <div class="pb-component-wrapper">
         <div class="slider-bc">
           <div class="carousel">
             <div class="carousel-viewport">
               <div class="carousel-container" style="transform: translate3d(0%, 0px, 0px);">
-                <div class="carousel-slide active-slide">
+                <div class="carousel-slide active-slide" style="width: 100%">
                   <div class="sdr-item-holder-bc">
                     <a href="casino/group/live-casino" class"sdr-item-bc" href="#">
                       <img src="https://betrediofficial.github.io/images/livecasino.png" loading="lazy" class="sdr-image-bc">
