@@ -586,7 +586,7 @@
                     </div>
                     <div class="casino-game-item-content">
                       <div class="casino-game-item">
-                        <img src="https://betrediofficial.github.io/images/casino-games-new/ripe_rewards" class="casino-game-image-bc" loading="lazy">
+                        <img src="https://betrediofficial.github.io/images/casino-games-new/ripe_rewards.png" class="casino-game-image-bc" loading="lazy">
                          <div class="overlay">
                             <a href="casino/games/pragmaticplay-ripe-rewards" class="">Ripe Rewards</a>
                         </div>
