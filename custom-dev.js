@@ -650,7 +650,7 @@
           <div class="carousel">
             <div class="carousel-viewport">
               <div class="carousel-container" style="transform: translate3d(0%, 0px, 0px);">
-                <div class="carousel-slide active-slide" style="width: 100%">
+                <div class="carousel-slide active-slide" style="width: 100%; height: 100%;">
                   <div class="sdr-item-holder-bc">
                     <a href="casino/group/live-casino" class"sdr-item-bc" href="#">
                       <img src="https://betrediofficial.github.io/images/livecasino.png" loading="lazy" class="sdr-image-bc">
