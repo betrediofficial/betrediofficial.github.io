@@ -319,6 +319,7 @@
       //   }
       // `;
       style.innerHTML = `
+
   .games-horiz-scroll {
     display: grid !important;
     grid-template-columns: repeat(6, 1fr) !important;
@@ -333,7 +334,8 @@
 
   .casino-game-item {
     width: 100% !important;
-    aspect-ratio: 1 / 1 !important;
+    aspect-ratio: 1 / 1 !important; /* Kare olacak */
+    height: 100% !important;
     overflow: hidden !important;
     border-radius: 8px !important;
     background-color: #000 !important;
@@ -345,6 +347,7 @@
     object-fit: cover !important;
     display: block !important;
   }
+
 
 
       `;
