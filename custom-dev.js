@@ -87,7 +87,7 @@
 
       // if (language !== "tr") return;
 
-      customCSS();
+      // customCSS();
 
       function customizeSignupModal() {
         const imgUrl =
