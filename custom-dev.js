@@ -277,47 +277,48 @@
 
     function customCSS() {
       const style = document.createElement("style");
-      style.innerHTML = `
-    #main-slider {
-      width: 100vw !important;
-      max-width: 100vw !important;
-      padding: 0 !important;
-      margin: 0 auto !important;
-      overflow: hidden !important;
-    }
+      //     style.innerHTML = `
+      //   #main-slider {
+      //     width: 100vw !important;
+      //     max-width: 100vw !important;
+      //     padding: 0 !important;
+      //     margin: 0 auto !important;
+      //     overflow: hidden !important;
+      //   }
 
-    #main-slider .container {
-      width: 100% !important;
-      max-width: 100% !important;
-      padding: 0 !important;
-      margin: 0 !important;
-    }
+      //   #main-slider .container {
+      //     width: 100% !important;
+      //     max-width: 100% !important;
+      //     padding: 0 !important;
+      //     margin: 0 !important;
+      //   }
 
-    #main-slider-swiper {
-      width: 100% !important;
-    }
+      //   #main-slider-swiper {
+      //     width: 100% !important;
+      //   }
 
-    #main-slider-swiper .swiper-slide {
-      width: 100vw !important;
-      margin-right: 0px !important;
-    }
+      //   #main-slider-swiper .swiper-slide {
+      //     width: 100vw !important;
+      //     margin-right: 0px !important;
+      //   }
 
-    #main-slider-swiper .swiper-slide img {
-      width: 100% !important;
-      height: auto !important;
-      display: block;
-      object-fit: cover;
-    }
+      //   #main-slider-swiper .swiper-slide img {
+      //     width: 100% !important;
+      //     height: auto !important;
+      //     display: block;
+      //     object-fit: cover;
+      //   }
 
-    .swiper-button-prev,
-    .swiper-button-next {
-      z-index: 10;
-    }
+      //   .swiper-button-prev,
+      //   .swiper-button-next {
+      //     z-index: 10;
+      //   }
 
-    body {
-      overflow-x: hidden !important;
-    }
-  `;
+      //   body {
+      //     overflow-x: hidden !important;
+      //   }
+      // `;
+      style.innerHTML = ``;
       document.head.appendChild(style);
     }
 
@@ -521,7 +522,7 @@
         </div>
       </div>
       <div class="col-12">
-        <div class="hm-row-bc has-game has-slider section__carousel" style="grid-template-columns: 3fr 12fr;">
+        <div class="hm-row-bc has-game has-slider section__carousel" style="grid-template-columns: 3fr 11fr;">
           <div class="pb-component-wrapper">
             <div class="slider-bc">
                 <div class="carousel">
@@ -692,7 +693,7 @@
         </div>
       </div>
       <div class="col-12">
-        <div class="hm-row-bc has-game has-slider" style="grid-template-columns: 3fr 12fr;">
+        <div class="hm-row-bc has-game has-slider" style="grid-template-columns: 4fr 12fr;">
       <div class="pb-component-wrapper">
         <div class="slider-bc">
           <div class="carousel">
