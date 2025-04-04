@@ -725,7 +725,7 @@
         </div>
       </div>
       <div class="col-12">
-        <div class="hm-row-bc has-game has-slider" style="grid-template-columns: 4fr 12fr;">
+        <div class="hm-row-bc has-game has-slider" style="display: grid; grid-template-columns: 1fr 3fr;">
           <div class="pb-component-wrapper">
             <div class="slider-bc">
               <div class="carousel">
@@ -747,6 +747,7 @@
             <div class="games-content">
               <div class="games-horiz">
                 <div class="games-horiz-scroll">
+                  
                   <div class="casino-game-item-content position-relative">
                     <div class="casino-game-item">
                       <img src="https://betrediofficial.github.io/images/live-casino-new/black_jack_3.png" class="casino-game-image-bc img-fluid">
@@ -837,32 +838,33 @@
                     </div>
                   </div>
 
-                   <div class="casino-game-item-content position-relative">
+                  <div class="casino-game-item-content position-relative">
                     <div class="casino-game-item">
                       <img src="https://betrediofficial.github.io/images/live-casino-new/golden_wealth_baccarat.png" class="casino-game-image-bc img-fluid">
                       <div class="overlay">
                         <a href="casino/games/evolution-golden-wealth-baccarat">Golden Wealth Baccarat</a>
                       </div>
                     </div>
+                  </div>
 
-                    <div class="casino-game-item-content position-relative">
+                  <div class="casino-game-item-content position-relative">
                     <div class="casino-game-item">
                       <img src="https://betrediofficial.github.io/images/live-casino-new/speed_vi_blackjack.png" class="casino-game-image-bc img-fluid">
                       <div class="overlay">
                         <a href="casino/games/evolution-speed-vip-blackjack-h">Speed VI Blackjack</a>
                       </div>
                     </div>
-                    </div>
                   </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>  
-      </div>
-    </div>
-  </div>
-</div>
+
+                </div> <!-- games-horiz-scroll -->
+              </div> <!-- games-horiz -->
+            </div> <!-- games-content -->
+          </div> <!-- pb-component-wrapper -->
+        </div> <!-- hm-row-bc -->
+      </div> <!-- col-12 -->
+    </div> <!-- row -->
+  </div> <!-- container -->
+</div> <!-- manually-added-home-widgets -->
 `;
 
       $("#tgpromo").after(newSection);
