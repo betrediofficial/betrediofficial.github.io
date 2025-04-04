@@ -294,7 +294,7 @@
     }
 
     #main-slider-swiper {
-      width: 100vw !important;
+      width: 100svh !important;
     }
 
     #main-slider-swiper .swiper-slide {
