@@ -334,7 +334,7 @@
 
   .casino-game-item {
     width: 100% !important;
-    aspect-ratio: 1 / 1.5 !important; /* Kare olacak */
+    aspect-ratio: 1 / 1.5 !important;
     height: 100% !important;
     overflow: hidden !important;
     border-radius: 8px !important;
@@ -558,9 +558,9 @@
         <div class="hm-row-bc has-game has-slider section__carousel" style="grid-template-columns: 3fr 12fr;">
           <div class="pb-component-wrapper">
             <div class="slider-bc">
-                <div class="carousel">
-                  <div class="carousel-viewport">
-                    <div class="carousel-container" style="transform: translate3d(0%, 0px, 0px);">
+                <div class="carousel" style="height: 100% !important;">
+                  <div class="carousel-viewport" style="height: 100% !important;">
+                    <div class="carousel-container" style="transform: translate3d(0%, 0px, 0px); height: 100% !important;">
                       <div class="carousel-slide active-slide" style="width: 100%; height: 100%;">
                         <div class="sdr-item-holder-bc">
                           <a href="casino/slots" class"sdr-item-bc" href="#">
@@ -729,9 +729,9 @@
         <div class="hm-row-bc has-game has-slider" style="display: grid; grid-template-columns: 3fr 12fr;">
           <div class="pb-component-wrapper">
             <div class="slider-bc">
-              <div class="carousel">
-                <div class="carousel-viewport">
-                  <div class="carousel-container" style="transform: translate3d(0%, 0px, 0px);">
+              <div class="carousel" style="height: 100% !important;">
+                <div class="carousel-viewport" stlye="height: 100% !important;">
+                  <div class="carousel-container" style="transform: translate3d(0%, 0px, 0px); height: 100% !important;">
                     <div class="carousel-slide active-slide" style="width: 100%; height: 100%;">
                       <div class="sdr-item-holder-bc">
                         <a href="casino/group/live-casino" class="sdr-item-bc">
