@@ -554,7 +554,7 @@
         </div>
       </div>
       <div class="col-12">
-        <div class="hm-row-bc has-game has-slider section__carousel" style="grid-template-columns: 3fr 12fr;">
+        <div class="hm-row-bc has-game has-slider section__carousel" style="grid-template-columns: 4fr 12fr;">
           <div class="pb-component-wrapper">
             <div class="slider-bc">
                 <div class="carousel">
@@ -725,7 +725,7 @@
         </div>
       </div>
       <div class="col-12">
-        <div class="hm-row-bc has-game has-slider" style="display: grid; grid-template-columns: 3fr 12fr;">
+        <div class="hm-row-bc has-game has-slider" style="display: grid; grid-template-columns: 4fr 12fr;">
           <div class="pb-component-wrapper">
             <div class="slider-bc">
               <div class="carousel">
