@@ -716,7 +716,7 @@
           <div class="games-horiz">
             <div class="games-horiz-scroll" style="grid-template-rows: auto auto;">
               <div class="casino-game-item-content position-relative">
-                <div class="casino-game-item">
+                <div class="casino-game-item" style="border: 0px solid #000 !important">
                   <img src="https://betrediofficial.github.io/images/live-casino-new/black_jack_3.png" class="casino-game-image-bc img-fluid">
                   <div class="overlay">
                       <a href="casino/games/pragmaticlive-blackjack-3" class="">Blackjack 3</a>
@@ -725,7 +725,7 @@
               </div>
               
               <div class="casino-game-item-content position-relative">
-                <div class="casino-game-item">
+                <div class="casino-game-item" style="border: 0px solid #000 !important">
                   <img src="https://betrediofficial.github.io/images/live-casino-new/speed_blackjack_1.png" class="casino-game-image-bc img-fluid">
                   <div class="overlay">
                      <a href="casino/games/pragmaticlive-speed-blackjack-1" class="">Speed Blackjack 1</a>
@@ -734,7 +734,7 @@
               </div>
 
               <div class="casino-game-item-content position-relative">
-                <div class="casino-game-item">
+                <div class="casino-game-item" style="border: 0px solid #000 !important">
                   <img src="https://betrediofficial.github.io/images/live-casino-new/mega_roulette.png" class="casino-game-image-bc img-fluid">
                   <div class="overlay">
                       <a href="casino/games/pragmaticlive-mega-roulette" class="">Mega Roulette</a>
@@ -743,7 +743,7 @@
               </div>
 
               <div class="casino-game-item-content position-relative">
-                <div class="casino-game-item">
+                <div class="casino-game-item" style="border: 0px solid #000 !important">
                   <img src="https://betrediofficial.github.io/images/live-casino-new/baccarat_lobby.png" class="casino-game-image-bc img-fluid">
                   <div class="overlay">
                       <a href="casino/games/pragmaticlive-baccarat-lobby" class="">Baccarat Lobby</a>
@@ -751,7 +751,7 @@
                 </div>
               </div>
               <div class="casino-game-item-content position-relative">
-                <div class="casino-game-item">
+                <div class="casino-game-item" style="border: 0px solid #000 !important">
                   <img src="https://betrediofficial.github.io/images/live-casino-new/blackjack.png" class="casino-game-image-bc img-fluid">
                   <div class="overlay">
                       <a href="casino/games/evolution-blackjack-vip-20" class="">Blackjack</a>
@@ -759,7 +759,7 @@
                 </div>
               </div>
               <div class="casino-game-item-content position-relative">
-                <div class="casino-game-item">
+                <div class="casino-game-item" style="border: 0px solid #000 !important">
                   <img src="https://betrediofficial.github.io/images/live-casino-new/lightning_roulette.png" class="casino-game-image-bc img-fluid">
                   <div class="overlay">
                     <a href="casino/games/evolution-auto-lightning-roulette" class="">Lightning Roulette</a>
@@ -767,7 +767,7 @@
                 </div>
               </div>
               <div class="casino-game-item-content position-relative">
-                <div class="casino-game-item">
+                <div class="casino-game-item" style="border: 0px solid #000 !important">
                   <img src="https://betrediofficial.github.io/images/live-casino-new/roulette_lobby.png" class="casino-game-image-bc img-fluid">
                   <div class="overlay">
                       <a href="casino/games/pragmaticlive-roulette-lobby" class="">Roulette Lobby</a>
@@ -775,7 +775,7 @@
                 </div>
               </div>
               <div class="casino-game-item-content position-relative">
-                <div class="casino-game-item">
+                <div class="casino-game-item" style="border: 0px solid #000 !important">
                   <img src="https://betrediofficial.github.io/images/live-casino-new/texas_holdem_bonus_poker.png" class="casino-game-image-bc img-fluid">
                   <div class="overlay">
                       <a href="casino/games/evolution-texas-holdem-bonus-poker" class="">Texas Holdem Bonus</a>
@@ -783,7 +783,7 @@
                 </div>
               </div>
               <div class="casino-game-item-content position-relative">
-                <div class="casino-game-item">
+                <div class="casino-game-item" style="border: 0px solid #000 !important">
                   <img src="https://betrediofficial.github.io/images/live-casino-new/first_person_roulette.png" class="casino-game-image-bc img-fluid">
                   <div class="overlay">
                      <a href="casino/games/evolution-first-person-roulette" class="">First Person Roulette</a>
@@ -791,7 +791,7 @@
                 </div>
               </div>
               <div class="casino-game-item-content position-relative">
-                <div class="casino-game-item">
+                <div class="casino-game-item" style="border: 0px solid #000 !important">
                   <img src="https://betrediofficial.github.io/images/live-casino-new/blackjack_silver.png" class="casino-game-image-bc img-fluid">
                   <div class="overlay">
                       <a href="casino/games/evolution-blackjack-silver-f" class="">Blackjack Silver</a>
@@ -803,10 +803,6 @@
         </div>
       </div>
     </div>
-
-
-
-
       </div>
     </div>
   </div>
