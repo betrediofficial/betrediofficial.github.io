@@ -730,9 +730,9 @@
           <div class="pb-component-wrapper">
             <div class="slider-bc">
               <div class="carousel" style="height: 100% !important;">
-                <div class="carousel-viewport" stlye="height: 100% !important;">
+                <div class="carousel-viewport" style="height: 100% !important;">
                   <div class="carousel-container" style="transform: translate3d(0%, 0px, 0px); height: 100% !important;">
-                    <div class="carousel-slide active-slide" style="width: 100%; height: 100%;">
+                    <div class="carousel-slide active-slide" style="width: 100%; height: 100%; !important">
                       <div class="sdr-item-holder-bc">
                         <a href="casino/group/live-casino" class="sdr-item-bc">
                           <img src="https://betrediofficial.github.io/images/live-casino-banner/live_casino.png" loading="lazy" class="sdr-image-bc">
