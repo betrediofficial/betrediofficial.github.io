@@ -173,88 +173,6 @@
         });
       }
 
-      function customizeMiniSlider() {
-        const observer = new MutationObserver(() => {
-          const $miniSlider = $("#mini-slider-wrapper");
-
-          // Eğer orijinal slider görünürse ve henüz değiştirilmemişse
-          if (
-            $miniSlider.length &&
-            $miniSlider.find(".kush--carousel").length === 0
-          ) {
-            const $container = $miniSlider.find(".container");
-
-            // Orijinal içeriği kaldır
-            $container.empty();
-
-            // Yeni Swiper içeriği oluştur
-            const newSlider = $(`
-        <div class="swiper swiper-initialized swiper-horizontal mySwiper">
-          <div class="swiper-wrapper"></div>
-        </div>
-      `);
-
-            // Örnek oyun verileri – bunu istediğin kadar çoğaltabilirsin
-            const games = [
-              {
-                img: "https://vendor-provider.fra1.digitaloceanspaces.com/ebetlab/gXmqkthvbB1521K/games/n3vbESm3PgF7jw7Z7wlsEhJH3qTSlrZnOdFNsJRu.png",
-                prize: "$145.94",
-                link: "/casino/games/egt-flaming-hot-extreme-bell-link",
-              },
-              {
-                img: "https://vendor-provider.fra1.digitaloceanspaces.com/ebetlab/gXmqkthvbB1521K/games/AOXQx0ZKd1QIdR2jiMGbesntuOg75I8i7oTpAU2W.avif",
-                prize: "$48.93",
-                link: "/casino/games/pragmaticplay-big-bass-hold-spinner",
-              },
-              {
-                img: "https://vendor-provider.fra1.digitaloceanspaces.com/ebetlab/gXmqkthvbB1521K/games/oifSXm87KTWpofpXo3d6hsYA5CJx5XcAfHSG9AsZ.avif",
-                prize: "$30.33",
-                link: "/casino/games/pragmaticplay-the-dog-house",
-              },
-              // Diğer oyunlar buraya eklersin
-            ];
-
-            // Swiper slide’larını ekle
-            games.forEach((game) => {
-              const $slide = $(`
-          <div class="swiper-slide" style="width: 113.5px; margin-right: 12px;">
-            <a class="splide__slide" href="${game.link}">
-              <div class="kush kush--carousel">
-                <div class="kush__cover">
-                  <span class="kush__img">
-                    <img loading="lazy" src="${game.img}" alt="">
-                  </span>
-                </div>
-                <div class="kush__winner">
-                  <span class="chat__user d-flex align-items-center justify-content-center">
-                    <button class="chat__name username-win" type="button">
-                      <span class="d-flex align-items-center justify-content-center gap-1">
-                        <svg class="svg-icon">
-                          <use href="/static/media/sprite.svg#hidden"></use>
-                        </svg>Gizlenmiş
-                      </span>
-                    </button>
-                  </span>
-                  <div class="kush__prize">${game.prize}</div>
-                </div>
-              </div>
-            </a>
-          </div>
-        `);
-              newSlider.find(".swiper-wrapper").append($slide);
-            });
-
-            // Yeni içeriği DOM’a ekle
-            $container.append(newSlider);
-          }
-        });
-
-        observer.observe(document.body, {
-          childList: true,
-          subtree: true,
-        });
-      }
-
       // function customizeSignupModal() {
       //   const imgUrl =
       //     "https://betrediofficial.github.io/images/signup-banner/betredi_banner.png";
@@ -355,8 +273,6 @@
 
       customizeSignupModal();
       customizeSigninModal();
-
-      customizeMiniSlider();
     }
 
     function customCSS() {
@@ -403,7 +319,7 @@
       //   }
       // `;
       style.innerHTML = `
-
+<style>
   .games-horiz-scroll {
     display: grid !important;
     grid-template-columns: repeat(6, 1fr) !important;
@@ -431,6 +347,7 @@
     object-fit: cover !important;
     display: block !important;
   }
+
 
 
 
@@ -503,7 +420,7 @@
     function mobileBoxes() {
       if ($("#mobileboxes").length > 0) return;
       $(".section:first").append(`
-<div class="manually-added-home-widgets container mt-4 mobile-boxes" id="mobileboxes" style="margin-bottom: 8px;">
+<div class="manually-added-home-widgets container mt-4 mobile-boxes" id="mobileboxes" style="margin-bottom: 10px;">
   <div class="row row-cols-2 row-cols-md-3 row-cols-lg-4 g-1">
         <a href="casino/group/live-lobby" class="col-4">
           <div class="box-icon-item">
@@ -590,7 +507,7 @@
     function bottomMenuWidget(isMobile) {
       if ($("#bottomMenuWidgedContainer").length > 0) return;
       $(".section:first").append(`
-<div class="manually-added-home-widgets bottomMenuWidgedContainer" id="bottomMenuWidgedContainer" style="margin-bottom: 8px;">
+<div class="manually-added-home-widgets bottomMenuWidgedContainer" id="bottomMenuWidgedContainer" style="margin-bottom: 10px;">
   <div style="flex: 1 1 calc(25% - 10px); text-align: center;">
     <a href="casino/category/exclusive">
       <img src="https://betrediofficial.github.io/images/f63.png" alt="games" class="bottomMenuWidgetImage" >
@@ -627,7 +544,7 @@
       let title = language === "tr" ? "SLOT CASİNO" : "SLOT CASINO";
 
       var newSection = `
-     <div class="manually-added-home-widgets section" id="slotoyunlari" style="margin-bottom: 8px;">
+     <div class="manually-added-home-widgets section" id="slotoyunlari" style="margin-bottom: 10px;">
   <div class="container otherGames">
     <div class="row">
       <div class="col-12">
@@ -780,9 +697,9 @@
   <div class="manually-added-home-widgets section" id="tgpromo" style="margin-bottom: 14px; margin-top: 14px;">
     <div class="container otherGames">
       <a href="https://t.me/betredi" target="_blank">
-        <img src="https://betrediofficial.github.io/images/tg-promo/tg_promo.png" alt="Telegram Promo" style="display: block; width: 100%; margin-bottom: 8px;" />
+        <img src="https://betrediofficial.github.io/images/tg-promo/tg_promo.png" alt="Telegram Promo" style="display: block; width: 100%; margin-bottom: 10px;" />
       </a>
-      <img src="https://betrediofficial.github.io/images/tg-promo/tg_promo_200_freespin.png" alt="200 Freespin Bonus" style="display: block; width: 100%; margin-bottom: 8px;" />
+      <img src="https://betrediofficial.github.io/images/tg-promo/tg_promo_200_freespin.png" alt="200 Freespin Bonus" style="display: block; width: 100%; margin-bottom: 10px;" />
       <img src="https://betrediofficial.github.io/images/tg-promo/tg_promo_desc.png" alt="Kripto Bilgilendirme" style="display: block; width: 100%;" />
     </div>
   </div>
@@ -798,12 +715,12 @@
       let title = language === "tr" ? "CANLI CASİNO" : "LIVE CASINO";
 
       var newSection = `
-     <div class="manually-added-home-widgets section" id="casinooyunlari" style="margin-bottom: 8px;">
+     <div class="manually-added-home-widgets section" id="casinooyunlari" style="margin-bottom: 10px;">
   <div class="container otherGames">
     <div class="row">
       <div class="col-12">
         <div class="section__title-wrap">
-          <h2 class="section__title" style="font-size: 30px; margin-bottom: 8px;">
+          <h2 class="section__title" style="font-size: 30px; margin-bottom: 10px;">
             ${title}
           </h2>
         </div>
@@ -936,7 +853,7 @@
       if ($("#sportscard").length > 0) return;
 
       var newSection = `
-<div class="manually-added-home-widgets section" id="sportscard" style="margin-bottom: 8px;">
+<div class="manually-added-home-widgets section" id="sportscard" style="margin-bottom: 10px;">
   <div class="container otherGames">
 <div class="row row-cols-3 row-cols-xl-6 g-3 justify-content-center text-center">
       <div class="col">
