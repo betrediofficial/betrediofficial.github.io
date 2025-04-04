@@ -837,6 +837,22 @@
                     </div>
                   </div>
 
+                   <div class="casino-game-item-content position-relative">
+                    <div class="casino-game-item">
+                      <img src="https://betrediofficial.github.io/images/live-casino-new/golden_wealth_baccarat.png" class="casino-game-image-bc img-fluid">
+                      <div class="overlay">
+                        <a href="casino/games/evolution-golden-wealth-baccarat">Golden Wealth Baccarat</a>
+                      </div>
+                    </div>
+
+                    <div class="casino-game-item-content position-relative">
+                    <div class="casino-game-item">
+                      <img src="https://betrediofficial.github.io/images/live-casino-new/speed_vi_blackjack.png" class="casino-game-image-bc img-fluid">
+                      <div class="overlay">
+                        <a href="casino/games/evolution-speed-vip-blackjack-h">Speed VI Blackjack</a>
+                      </div>
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>
