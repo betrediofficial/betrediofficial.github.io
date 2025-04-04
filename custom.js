@@ -699,7 +699,7 @@
       <a href="https://t.me/betredi" target="_blank">
         <img src="https://betrediofficial.github.io/images/tg-promo/tg_promo_new.png" alt="Telegram Promo" style="display: block; width: 100%; margin-bottom: 10px;" />
       </a>
-      <img src="https://betrediofficial.github.io/images/tg-promo/tg_promo_200_freespin.png" alt="200 Freespin Bonus" style="display: block; width: 100%; margin-bottom: 10px;" />
+      <img src="https://betrediofficial.github.io/images/tg-promo/reditg.gif" style="border: 3px solid #9b000e; border-radius: 10px; margin-bottom: 10px" alt="Telegram Promo GIF" style="display: block; width: 100%; margin-bottom: 10px;" />
       <img src="https://betrediofficial.github.io/images/tg-promo/tg_promo_desc.png" alt="Kripto Bilgilendirme" style="display: block; width: 100%;" />
     </div>
   </div>
