@@ -329,11 +329,12 @@
 
   .casino-game-item-content {
     width: 100% !important;
+    align-items: center;
   }
 
   .casino-game-item {
     width: 100% !important;
-    aspect-ratio: 1 / 1 !important; /* Kare olacak */
+    aspect-ratio: 1 / 1.5 !important; /* Kare olacak */
     height: 100% !important;
     overflow: hidden !important;
     border-radius: 8px !important;
@@ -554,7 +555,7 @@
         </div>
       </div>
       <div class="col-12">
-        <div class="hm-row-bc has-game has-slider section__carousel" style="grid-template-columns: 4fr 12fr;">
+        <div class="hm-row-bc has-game has-slider section__carousel" style="grid-template-columns: 3fr 12fr;">
           <div class="pb-component-wrapper">
             <div class="slider-bc">
                 <div class="carousel">
@@ -725,7 +726,7 @@
         </div>
       </div>
       <div class="col-12">
-        <div class="hm-row-bc has-game has-slider" style="display: grid; grid-template-columns: 4fr 12fr;">
+        <div class="hm-row-bc has-game has-slider" style="display: grid; grid-template-columns: 3fr 12fr;">
           <div class="pb-component-wrapper">
             <div class="slider-bc">
               <div class="carousel">
