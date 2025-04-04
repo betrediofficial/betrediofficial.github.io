@@ -545,7 +545,7 @@
                 <div class="games-horiz">
                   <div class="games-horiz-scroll" style="grid-template-rows: auto auto;">
                     <div class="casino-game-item-content">
-                      <div class="casino-game-item">
+                      <div class="casino-game-item" style="border: 0px solid #000 !important">
                         <img src="https://betrediofficial.github.io/images/casino-games-new/starlight_princess_1000.png" class="casino-game-image-bc" loading="lazy">
                          <div class="overlay">
                             <a href="casino/games/pragmaticplay-starlight-princess-1000" class="">Starlight Princess 1000</a>
@@ -553,7 +553,7 @@
                       </div>
                     </div>
                     <div class="casino-game-item-content">
-                      <div class="casino-game-item">
+                      <div class="casino-game-item" style="border: 0px solid #000 !important">
                         <img src="https://betrediofficial.github.io/images/casino-games-new/sweet_bonanza_1000.png" class="casino-game-image-bc" loading="lazy">
                            <div class="overlay">
                             <a href="casino/games/pragmaticplay-sweet-bonanza-1000" class="">Sweet Bonanza 1000</a>
@@ -561,7 +561,7 @@
                       </div>
                     </div>
                     <div class="casino-game-item-content">
-                      <div class="casino-game-item">
+                      <div class="casino-game-item" style="border: 0px solid #000 !important">
                         <img src="https://betrediofficial.github.io/images/casino-games-new/wisdom_of_athena.png" class="casino-game-image-bc" loading="lazy">
                            <div class="overlay">
                             <a href="casino/games/pragmaticplay-wisdom-of-athena" class="">Wisdom Of Athena</a>
@@ -569,7 +569,7 @@
                       </div>
                     </div>
                     <div class="casino-game-item-content">
-                      <div class="casino-game-item">
+                      <div class="casino-game-item" style="border: 0px solid #000 !important">
                         <img src="https://betrediofficial.github.io/images/casino-games-new/big_bass_christmas_bash.png" class="casino-game-image-bc" loading="lazy">
                           <div class="overlay">
                             <a href="casino/games/pragmaticplay-big-bass-secrets-of-the-golden-lake" class="">Big Bass Christmas</a>
@@ -577,7 +577,7 @@
                       </div>
                     </div>
                     <div class="casino-game-item-content">
-                      <div class="casino-game-item">
+                      <div class="casino-game-item" style="border: 0px solid #000 !important">
                         <img src="https://betrediofficial.github.io/images/casino-games-new/wanted_dead_or_a_wild.png" class="casino-game-image-bc" loading="lazy">
                           <div class="overlay">
                             <a href="casino/games/hacksaw-wanted-dead-or-a-wild" class="">Wanted Dead or a Wild</a>
@@ -585,7 +585,7 @@
                       </div>
                     </div>
                      <div class="casino-game-item-content">
-                      <div class="casino-game-item">
+                      <div class="casino-game-item" style="border: 0px solid #000 !important">
                         <img src="https://betrediofficial.github.io/images/casino-games-new/big_bass_secrets_of_the_golden_lake.png" class="casino-game-image-bc" loading="lazy">
                      <div class="overlay">
                             <a href="casino/games/pragmaticplay-big-bass-secrets-of-the-golden-lake" class="">Big Bass Screts</a>
@@ -593,7 +593,7 @@
                       </div>
                     </div>
                      <div class="casino-game-item-content">
-                      <div class="casino-game-item">
+                      <div class="casino-game-item" style="border: 0px solid #000 !important">
                        
                         <img src="https://betrediofficial.github.io/images/casino-games-new/shining_crown.png" class="casino-game-image-bc" loading="lazy">
                       <div class="overlay">
@@ -602,7 +602,7 @@
                       </div>
                     </div>
                      <div class="casino-game-item-content">
-                      <div class="casino-game-item">
+                      <div class="casino-game-item" style="border: 0px solid #000 !important">
                         <img src="https://betrediofficial.github.io/images/casino-games-new/flaming_hot.png" class="casino-game-image-bc" loading="lazy">
                         <div class="overlay">
                             <a href="casino/games/egt-flaming-hot" class="">Flaming Hot</a>
@@ -610,7 +610,7 @@
                       </div>
                     </div>
                      <div class="casino-game-item-content">
-                      <div class="casino-game-item">
+                      <div class="casino-game-item" style="border: 0px solid #000 !important">
                         <img src="https://betrediofficial.github.io/images/casino-games-new/gates_of_olympus.png" class="casino-game-image-bc" loading="lazy">
                        <div class="overlay">
                             <a href="casino/games/pragmaticplay-gates-of-olympus" class="">Gates of Olympus</a>
@@ -618,7 +618,7 @@
                       </div>
                     </div>
                     <div class="casino-game-item-content">
-                      <div class="casino-game-item">
+                      <div class="casino-game-item" style="border: 0px solid #000 !important">
                         <img src="https://betrediofficial.github.io/images/casino-games-new/wild_west_gold.png" class="casino-game-image-bc" loading="lazy">
                          <div class="overlay">
                             <a href="casino/games/pragmaticplay-wild-west-gold" class="">Wild West Gold</a>
@@ -626,7 +626,7 @@
                       </div>
                     </div>
                     <div class="casino-game-item-content">
-                      <div class="casino-game-item">
+                      <div class="casino-game-item" style="border: 0px solid #000 !important">
                         <img src="https://betrediofficial.github.io/images/casino-games-new/hand_of_midas_2.png" class="casino-game-image-bc" loading="lazy">
                          <div class="overlay">
                             <a href="casino/games/pragmaticplay-hand-of-midas-2" class="">Hand Of Midas 2</a>
@@ -634,7 +634,7 @@
                       </div>
                     </div>
                     <div class="casino-game-item-content">
-                      <div class="casino-game-item">
+                      <div class="casino-game-item" style="border: 0px solid #000 !important">
                         <img src="https://betrediofficial.github.io/images/casino-games-new/ripe_rewards.png" class="casino-game-image-bc" loading="lazy">
                          <div class="overlay">
                             <a href="casino/games/pragmaticplay-ripe-rewards" class="">Ripe Rewards</a>
