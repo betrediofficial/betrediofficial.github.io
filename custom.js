@@ -87,6 +87,8 @@
 
       // if (language !== "tr") return;
 
+      // customCSS();
+
       function customizeSignupModal() {
         const imgUrl =
           "https://betrediofficial.github.io/images/modal-banners/modal_story.png";
@@ -271,6 +273,53 @@
 
       customizeSignupModal();
       customizeSigninModal();
+    }
+
+    function customCSS() {
+      const style = document.createElement("style");
+      //     style.innerHTML = `
+      //   #main-slider {
+      //     width: 100vw !important;
+      //     max-width: 100vw !important;
+      //     padding: 0 !important;
+      //     margin: 0 auto !important;
+      //     overflow: hidden !important;
+      //   }
+
+      //   #main-slider .container {
+      //     width: 100% !important;
+      //     max-width: 100% !important;
+      //     padding: 0 !important;
+      //     margin: 0 !important;
+      //   }
+
+      //   #main-slider-swiper {
+      //     width: 100% !important;
+      //   }
+
+      //   #main-slider-swiper .swiper-slide {
+      //     width: 100vw !important;
+      //     margin-right: 0px !important;
+      //   }
+
+      //   #main-slider-swiper .swiper-slide img {
+      //     width: 100% !important;
+      //     height: auto !important;
+      //     display: block;
+      //     object-fit: cover;
+      //   }
+
+      //   .swiper-button-prev,
+      //   .swiper-button-next {
+      //     z-index: 10;
+      //   }
+
+      //   body {
+      //     overflow-x: hidden !important;
+      //   }
+      // `;
+      style.innerHTML = ``;
+      document.head.appendChild(style);
     }
 
     function otherGames() {
@@ -473,7 +522,7 @@
         </div>
       </div>
       <div class="col-12">
-        <div class="hm-row-bc has-game has-slider section__carousel" style="grid-template-columns: 4fr 11fr;">
+        <div class="hm-row-bc has-game has-slider section__carousel" style="grid-template-columns: 3fr 11fr;">
           <div class="pb-component-wrapper">
             <div class="slider-bc">
                 <div class="carousel">
@@ -482,7 +531,7 @@
                       <div class="carousel-slide active-slide" style="width: 100%; height: 100%;">
                         <div class="sdr-item-holder-bc">
                           <a href="casino" class"sdr-item-bc" href="#">
-                            <img src="https://betrediofficial.github.io/images/f23.png" loading="lazy" class="sdr-image-bc">
+                            <img src="https://betrediofficial.github.io/images/slot-casino-banner/slot_casino.png" loading="lazy" class="sdr-image-bc">
                           </a>
                         </div>
                       </div>
@@ -568,11 +617,27 @@
                         </div>
                       </div>
                     </div>
-                     <div class="casino-game-item-content">
+                    <div class="casino-game-item-content">
                       <div class="casino-game-item">
-                        <img src="https://betrediofficial.github.io/images/casino-games/sugar_rush_1000.jpg" class="casino-game-image-bc" loading="lazy">
-                      <div class="overlay">
-                            <a href="casino/games/pragmaticplay-sugar-rush-1000" class="">Sugar Rush 1000</a>
+                        <img src="https://betrediofficial.github.io/images/casino-games-new/wild_west_gold.jpeg" class="casino-game-image-bc" loading="lazy">
+                         <div class="overlay">
+                            <a href="casino/games/pragmaticplay-wild-west-gold" class="">Wild West Gold</a>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="casino-game-item-content">
+                      <div class="casino-game-item">
+                        <img src="https://betrediofficial.github.io/images/casino-games-new/hand_of_midas_2.png" class="casino-game-image-bc" loading="lazy">
+                         <div class="overlay">
+                            <a href="casino/games/pragmaticplay-hand-of-midas-2" class="">Hand Of Midas 2</a>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="casino-game-item-content">
+                      <div class="casino-game-item">
+                        <img src="https://betrediofficial.github.io/images/casino-games-new/ripe_rewards.png" class="casino-game-image-bc" loading="lazy">
+                         <div class="overlay">
+                            <a href="casino/games/pragmaticplay-ripe-rewards" class="">Ripe Rewards</a>
                         </div>
                       </div>
                     </div>
@@ -628,16 +693,16 @@
         </div>
       </div>
       <div class="col-12">
-        <div class="hm-row-bc has-game has-slider" style="grid-template-columns: 4fr 11fr;">
+        <div class="hm-row-bc has-game has-slider" style="grid-template-columns: 4fr 12fr;">
       <div class="pb-component-wrapper">
         <div class="slider-bc">
           <div class="carousel">
             <div class="carousel-viewport">
               <div class="carousel-container" style="transform: translate3d(0%, 0px, 0px);">
-                <div class="carousel-slide active-slide" style="width: 100%;">
+                <div class="carousel-slide active-slide" style="width: 100%; height: 100%;">
                   <div class="sdr-item-holder-bc">
                     <a href="casino/group/live-casino" class"sdr-item-bc" href="#">
-                      <img src="https://betrediofficial.github.io/images/livecasino.png" loading="lazy" class="sdr-image-bc">
+                      <img src="https://betrediofficial.github.io/images/live-casino-banner/live_casino.png" loading="lazy" class="sdr-image-bc">
                     </a>
                   </div>
                 </div>
