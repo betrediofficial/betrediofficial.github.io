@@ -852,6 +852,7 @@
                         <a href="casino/games/evolution-speed-vip-blackjack-h">Speed VI Blackjack</a>
                       </div>
                     </div>
+                    </div>
                   </div>
                 </div>
               </div>
