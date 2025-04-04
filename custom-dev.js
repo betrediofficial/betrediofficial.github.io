@@ -173,6 +173,88 @@
         });
       }
 
+      function customizeMiniSlider() {
+        const observer = new MutationObserver(() => {
+          const $miniSlider = $("#mini-slider-wrapper");
+
+          // Eğer orijinal slider görünürse ve henüz değiştirilmemişse
+          if (
+            $miniSlider.length &&
+            $miniSlider.find(".kush--carousel").length === 0
+          ) {
+            const $container = $miniSlider.find(".container");
+
+            // Orijinal içeriği kaldır
+            $container.empty();
+
+            // Yeni Swiper içeriği oluştur
+            const newSlider = $(`
+        <div class="swiper swiper-initialized swiper-horizontal mySwiper">
+          <div class="swiper-wrapper"></div>
+        </div>
+      `);
+
+            // Örnek oyun verileri – bunu istediğin kadar çoğaltabilirsin
+            const games = [
+              {
+                img: "https://vendor-provider.fra1.digitaloceanspaces.com/ebetlab/gXmqkthvbB1521K/games/n3vbESm3PgF7jw7Z7wlsEhJH3qTSlrZnOdFNsJRu.png",
+                prize: "$145.94",
+                link: "/casino/games/egt-flaming-hot-extreme-bell-link",
+              },
+              {
+                img: "https://vendor-provider.fra1.digitaloceanspaces.com/ebetlab/gXmqkthvbB1521K/games/AOXQx0ZKd1QIdR2jiMGbesntuOg75I8i7oTpAU2W.avif",
+                prize: "$48.93",
+                link: "/casino/games/pragmaticplay-big-bass-hold-spinner",
+              },
+              {
+                img: "https://vendor-provider.fra1.digitaloceanspaces.com/ebetlab/gXmqkthvbB1521K/games/oifSXm87KTWpofpXo3d6hsYA5CJx5XcAfHSG9AsZ.avif",
+                prize: "$30.33",
+                link: "/casino/games/pragmaticplay-the-dog-house",
+              },
+              // Diğer oyunlar buraya eklersin
+            ];
+
+            // Swiper slide’larını ekle
+            games.forEach((game) => {
+              const $slide = $(`
+          <div class="swiper-slide" style="width: 113.5px; margin-right: 12px;">
+            <a class="splide__slide" href="${game.link}">
+              <div class="kush kush--carousel">
+                <div class="kush__cover">
+                  <span class="kush__img">
+                    <img loading="lazy" src="${game.img}" alt="">
+                  </span>
+                </div>
+                <div class="kush__winner">
+                  <span class="chat__user d-flex align-items-center justify-content-center">
+                    <button class="chat__name username-win" type="button">
+                      <span class="d-flex align-items-center justify-content-center gap-1">
+                        <svg class="svg-icon">
+                          <use href="/static/media/sprite.svg#hidden"></use>
+                        </svg>Gizlenmiş
+                      </span>
+                    </button>
+                  </span>
+                  <div class="kush__prize">${game.prize}</div>
+                </div>
+              </div>
+            </a>
+          </div>
+        `);
+              newSlider.find(".swiper-wrapper").append($slide);
+            });
+
+            // Yeni içeriği DOM’a ekle
+            $container.append(newSlider);
+          }
+        });
+
+        observer.observe(document.body, {
+          childList: true,
+          subtree: true,
+        });
+      }
+
       // function customizeSignupModal() {
       //   const imgUrl =
       //     "https://betrediofficial.github.io/images/signup-banner/betredi_banner.png";
@@ -273,6 +355,8 @@
 
       customizeSignupModal();
       customizeSigninModal();
+
+      customizeMiniSlider();
     }
 
     function customCSS() {
