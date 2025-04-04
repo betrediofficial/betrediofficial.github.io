@@ -530,7 +530,7 @@
                     <div class="carousel-container" style="transform: translate3d(0%, 0px, 0px);">
                       <div class="carousel-slide active-slide" style="width: 100%; height: 100%;">
                         <div class="sdr-item-holder-bc">
-                          <a href="casino" class"sdr-item-bc" href="#">
+                          <a href="casino/slots" class"sdr-item-bc" href="#">
                             <img src="https://betrediofficial.github.io/images/slot-casino-banner/slot_casino.png" loading="lazy" class="sdr-image-bc">
                           </a>
                         </div>
@@ -619,7 +619,7 @@
                     </div>
                     <div class="casino-game-item-content">
                       <div class="casino-game-item">
-                        <img src="https://betrediofficial.github.io/images/casino-games-new/wild_west_gold.jpeg" class="casino-game-image-bc" loading="lazy">
+                        <img src="https://betrediofficial.github.io/images/casino-games-new/wild_west_gold.png" class="casino-game-image-bc" loading="lazy">
                          <div class="overlay">
                             <a href="casino/games/pragmaticplay-wild-west-gold" class="">Wild West Gold</a>
                         </div>
