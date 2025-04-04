@@ -319,10 +319,10 @@
       //   }
       // `;
       style.innerHTML = `
-      <style>
   .games-horiz-scroll {
     display: grid !important;
-    grid-template-columns: repeat(auto-fit, minmax(140px, 1fr)) !important;
+    grid-template-columns: repeat(6, 1fr) !important;
+    grid-template-rows: repeat(2, auto) !important;
     gap: 12px !important;
     padding: 10px 0 !important;
   }
@@ -345,7 +345,7 @@
     object-fit: cover !important;
     display: block !important;
   }
-</style>
+
 
       `;
       document.head.appendChild(style);
