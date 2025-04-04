@@ -278,51 +278,54 @@
     function customCSS() {
       const style = document.createElement("style");
       style.innerHTML = `
-    /* Slider tam ekran */
-    #main-slider,
+    /* Slider container'ını tam ekran yap */
+    #main-slider {
+      width: 100vw !important;
+      margin: 0 !important;
+      padding: 0 !important;
+      max-width: 100vw !important;
+      position: relative;
+      left: 0;
+      right: 0;
+    }
+
+    /* iç container'ı kaldır veya sıfırla */
+    #main-slider .container {
+      width: 100% !important;
+      max-width: 100% !important;
+      padding: 0 !important;
+      margin: 0 !important;
+    }
+
+    /* Swiper slider tam ekran olacak */
     #main-slider-swiper,
     #main-slider-swiper .swiper-wrapper,
-    #main-slider-swiper .swiper-slide,
-    #main-slider-swiper .slide,
-    #main-slider-swiper .slide img {
+    #main-slider-swiper .swiper-slide {
       width: 100% !important;
       max-width: 100% !important;
       height: auto !important;
       margin: 0 !important;
       padding: 0 !important;
-      box-sizing: border-box;
     }
 
-    /* Slide'lar arası boşlukları sıfırla */
-    #main-slider-swiper .swiper-slide {
-      margin-right: 0 !important;
+    /* Slide içerisindeki görselin taşmadan görünmesi */
+    #main-slider-swiper .swiper-slide img {
+      width: 100% !important;
+      height: auto !important;
+      object-fit: cover !important;
+      display: block;
     }
 
-    /* Container padding varsa kaldır */
+    /* Sayfanın genelinde container boşlukları engelleniyor */
     .section.pt-24 {
       padding-top: 0 !important;
     }
 
-    .container {
-      padding: 0 !important;
-      max-width: 100% !important;
-    }
-
-    /* İsteğe bağlı: Görsel tam ekran görünüm istersek */
-    #main-slider-swiper .swiper-slide img {
-      height: 100vh !important;
-      object-fit: cover !important;
+    body {
+      overflow-x: hidden !important;
     }
   `;
       document.head.appendChild(style);
-
-      // Swiper container genişliğini de resetle
-      setTimeout(() => {
-        $("#main-slider-swiper .swiper-wrapper").css(
-          "transform",
-          "translate3d(0px, 0px, 0px)"
-        );
-      }, 100);
     }
 
     function otherGames() {
