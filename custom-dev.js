@@ -278,59 +278,42 @@
     function customCSS() {
       const style = document.createElement("style");
       style.innerHTML = `
-    /* Tam ekran genişlik */
     #main-slider {
       width: 100vw !important;
-      margin: 0 auto !important;
-      padding: 0 !important;
       max-width: 100vw !important;
-      overflow: hidden;
+      padding: 0 !important;
+      margin: 0 auto !important;
+      overflow: hidden !important;
     }
 
-    /* İç container'ı kaldır */
     #main-slider .container {
-      padding: 0 !important;
-      margin: 0 !important;
       width: 100% !important;
       max-width: 100% !important;
-    }
-
-    /* Swiper Slide Wrapper ve Slide ayarları */
-    #main-slider-swiper {
-      width: 100% !important;
-      height: auto !important;
-    }
-
-    #main-slider-swiper .swiper-wrapper {
-      margin: 0 !important;
       padding: 0 !important;
-      transform: none !important;
+      margin: 0 !important;
+    }
+
+    #main-slider-swiper {
+      width: 100vw !important;
     }
 
     #main-slider-swiper .swiper-slide {
       width: 100vw !important;
-      height: auto !important;
-      margin: 0 !important;
-      padding: 0 !important;
-      box-sizing: border-box;
+      margin-right: 0px !important;
     }
 
-    /* Slide içindeki img responsive */
     #main-slider-swiper .swiper-slide img {
       width: 100% !important;
-      max-width: 100% !important;
       height: auto !important;
-      object-fit: contain !important;
       display: block;
+      object-fit: cover;
     }
 
-    /* Kenar buton taşmasını önle */
     .swiper-button-prev,
     .swiper-button-next {
       z-index: 10;
     }
 
-    /* Sayfa taşmasını engelle */
     body {
       overflow-x: hidden !important;
     }
