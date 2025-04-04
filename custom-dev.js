@@ -319,7 +319,6 @@
       //   }
       // `;
       style.innerHTML = `
-<style>
   .games-horiz-scroll {
     display: grid !important;
     grid-template-columns: repeat(6, 1fr) !important;
