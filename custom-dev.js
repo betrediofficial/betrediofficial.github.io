@@ -87,6 +87,8 @@
 
       // if (language !== "tr") return;
 
+      customCSS();
+
       function customizeSignupModal() {
         const imgUrl =
           "https://betrediofficial.github.io/images/modal-banners/modal_story.png";
@@ -271,6 +273,56 @@
 
       customizeSignupModal();
       customizeSigninModal();
+    }
+
+    function customCSS() {
+      const style = document.createElement("style");
+      style.innerHTML = `
+    /* Slider tam ekran */
+    #main-slider,
+    #main-slider-swiper,
+    #main-slider-swiper .swiper-wrapper,
+    #main-slider-swiper .swiper-slide,
+    #main-slider-swiper .slide,
+    #main-slider-swiper .slide img {
+      width: 100% !important;
+      max-width: 100% !important;
+      height: auto !important;
+      margin: 0 !important;
+      padding: 0 !important;
+      box-sizing: border-box;
+    }
+
+    /* Slide'lar arası boşlukları sıfırla */
+    #main-slider-swiper .swiper-slide {
+      margin-right: 0 !important;
+    }
+
+    /* Container padding varsa kaldır */
+    .section.pt-24 {
+      padding-top: 0 !important;
+    }
+
+    .container {
+      padding: 0 !important;
+      max-width: 100% !important;
+    }
+
+    /* İsteğe bağlı: Görsel tam ekran görünüm istersek */
+    #main-slider-swiper .swiper-slide img {
+      height: 100vh !important;
+      object-fit: cover !important;
+    }
+  `;
+      document.head.appendChild(style);
+
+      // Swiper container genişliğini de resetle
+      setTimeout(() => {
+        $("#main-slider-swiper .swiper-wrapper").css(
+          "transform",
+          "translate3d(0px, 0px, 0px)"
+        );
+      }, 100);
     }
 
     function otherGames() {
