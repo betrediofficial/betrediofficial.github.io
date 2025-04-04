@@ -278,49 +278,59 @@
     function customCSS() {
       const style = document.createElement("style");
       style.innerHTML = `
-    /* Slider container'ını tam ekran yap */
+    /* Tam ekran genişlik */
     #main-slider {
       width: 100vw !important;
-      margin: 0 !important;
+      margin: 0 auto !important;
       padding: 0 !important;
       max-width: 100vw !important;
-      position: relative;
-      left: 0;
-      right: 0;
+      overflow: hidden;
     }
 
-    /* iç container'ı kaldır veya sıfırla */
+    /* İç container'ı kaldır */
     #main-slider .container {
-      width: 100% !important;
-      max-width: 100% !important;
       padding: 0 !important;
       margin: 0 !important;
-    }
-
-    /* Swiper slider tam ekran olacak */
-    #main-slider-swiper,
-    #main-slider-swiper .swiper-wrapper,
-    #main-slider-swiper .swiper-slide {
       width: 100% !important;
       max-width: 100% !important;
+    }
+
+    /* Swiper Slide Wrapper ve Slide ayarları */
+    #main-slider-swiper {
+      width: 100% !important;
+      height: auto !important;
+    }
+
+    #main-slider-swiper .swiper-wrapper {
+      margin: 0 !important;
+      padding: 0 !important;
+      transform: none !important;
+    }
+
+    #main-slider-swiper .swiper-slide {
+      width: 100vw !important;
       height: auto !important;
       margin: 0 !important;
       padding: 0 !important;
+      box-sizing: border-box;
     }
 
-    /* Slide içerisindeki görselin taşmadan görünmesi */
+    /* Slide içindeki img responsive */
     #main-slider-swiper .swiper-slide img {
       width: 100% !important;
+      max-width: 100% !important;
       height: auto !important;
-      object-fit: cover !important;
+      object-fit: contain !important;
       display: block;
     }
 
-    /* Sayfanın genelinde container boşlukları engelleniyor */
-    .section.pt-24 {
-      padding-top: 0 !important;
+    /* Kenar buton taşmasını önle */
+    .swiper-button-prev,
+    .swiper-button-next {
+      z-index: 10;
     }
 
+    /* Sayfa taşmasını engelle */
     body {
       overflow-x: hidden !important;
     }
