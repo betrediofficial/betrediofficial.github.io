@@ -87,7 +87,7 @@
 
       // if (language !== "tr") return;
 
-      // customCSS();
+      customCSS();
 
       function customizeSignupModal() {
         const imgUrl =
@@ -318,7 +318,39 @@
       //     overflow-x: hidden !important;
       //   }
       // `;
-      style.innerHTML = ``;
+      style.innerHTML = `
+
+  .games-horiz-scroll {
+    display: grid !important;
+    grid-template-columns: repeat(6, 1fr) !important;
+    grid-template-rows: repeat(2, auto) !important;
+    gap: 12px !important;
+    padding: 10px 0 !important;
+  }
+
+  .casino-game-item-content {
+    width: 100% !important;
+  }
+
+  .casino-game-item {
+    width: 100% !important;
+    aspect-ratio: 1 / 1 !important; /* Kare olacak */
+    height: 100% !important;
+    overflow: hidden !important;
+    border-radius: 8px !important;
+    background-color: #000 !important;
+  }
+
+  .casino-game-item img {
+    width: 100% !important;
+    height: 100% !important;
+    object-fit: cover !important;
+    display: block !important;
+  }
+
+
+
+      `;
       document.head.appendChild(style);
     }
 
@@ -803,6 +835,10 @@
         </div>
       </div>
     </div>
+
+
+
+
       </div>
     </div>
   </div>
