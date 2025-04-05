@@ -883,7 +883,7 @@
 <div class="row row-cols-3 row-cols-xl-6 g-3 justify-content-center text-center">
       <div class="col">
         <a href="/sportsbook">
-          <img src="https://betrediofficial.github.io/images/sports/futbol.png" alt="Futbol" style="width: 100%;">
+          <img src="https://betrediofficial.github.io/images/sports/futbol.png" style="hover: opacity: 0.7;" alt="Futbol" style="width: 100%;">
         </a>
       </div>
 
