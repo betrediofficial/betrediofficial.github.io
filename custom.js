@@ -701,7 +701,7 @@
     </a>
     <img src="https://betrediofficial.github.io/images/tg-promo/reditg.gif"
          alt="Telegram Promo GIF"
-         style="display: block; width: 100%; margin-bottom: 10px; border: 3px solid #9b000e; border-radius: 10px; max-width: 100% !important;" />
+         style="display: block; width: 100%; margin-bottom: 10px; border: 2px solid #9b000e; border-radius: 10px; max-width: 100% !important;" />
     <img src="https://betrediofficial.github.io/images/tg-promo/tg_promo_desc.png" alt="Kripto Bilgilendirme" style="display: block; width: 100%;" />
   </div>
 </div>
@@ -880,40 +880,46 @@
       var newSection = `
 <div class="manually-added-home-widgets section" id="sportscard" style="margin-bottom: 10px;">
   <div class="container otherGames">
-<div class="row row-cols-3 row-cols-xl-6 g-3 justify-content-center text-center">
-      <div class="col">
+<div class="row row-cols-3 row-cols-xl-6 flex-nowrap g-8">
+      <div class="sport-card col" style="position: relative; overflow: hidden !important; border: 2px solid #9B000E; border-top-right-radius: 32px; border-bottom-left-radius: 32px; padding: 0 !important; cursor: pointer;">
+      <div class="hovered-effect" style="opacity: 0; position: absolute; width: 100%; height: 100%; background: rgba(255, 255, 255, 0.1); z-index: 10;"></div>
         <a href="/sportsbook">
-          <img src="https://betrediofficial.github.io/images/sports/futbol.png" alt="Futbol" style="width: 100%;">
+          <img src="https://betrediofficial.github.io/images/sports/futbol_new.png" style="width: 100%; height: 100%; object-fit: contain;" alt="Futbol" style="width: 100%;">
         </a>
       </div>
 
-      <div class="col">
+      <div class="sport-card col" style="position: relative; overflow: hidden !important; border: 2px solid #9B000E; border-top-right-radius: 32px; border-bottom-left-radius: 32px; padding: 0 !important; cursor: pointer;">
+      <div class="hovered-effect" style="opacity: 0; position: absolute; width: 100%; height: 100%; background: rgba(255, 255, 255, 0.1); z-index: 10;"></div>
         <a href="/sportsbook">
-          <img src="https://betrediofficial.github.io/images/sports/basketbol.png" alt="Basketbol" style="width: 100%;">
+          <img src="https://betrediofficial.github.io/images/sports/basketbol_new.png" style="width: 100%; height: 100%; object-fit: contain;" alt="Basketbol" style="width: 100%;">
         </a>
       </div>
 
-      <div class="col">
+      <div class="sport-card col" style="position: relative; overflow: hidden !important; border: 2px solid #9B000E; border-top-right-radius: 32px; border-bottom-left-radius: 32px; padding: 0 !important; cursor: pointer;">
+      <div class="hovered-effect" style="opacity: 0; position: absolute; width: 100%; height: 100%; background: rgba(255, 255, 255, 0.1); z-index: 10;"></div>
         <a href="/sportsbook">
-          <img src="https://betrediofficial.github.io/images/sports/voleybol.png" alt="Voleybol" style="width: 100%;">
+          <img src="https://betrediofficial.github.io/images/sports/voleybol_new.png" style="width: 100%; height: 100%; object-fit: contain;" alt="Voleybol" style="width: 100%;">
         </a>
       </div>
 
-      <div class="col">
+      <div class="sport-card col" style="position: relative; overflow: hidden !important; border: 2px solid #9B000E; border-top-right-radius: 32px; border-bottom-left-radius: 32px; padding: 0 !important; cursor: pointer;">
+      <div class="hovered-effect" style="opacity: 0; position: absolute; width: 100%; height: 100%; background: rgba(255, 255, 255, 0.1); z-index: 10;"></div>
         <a href="/sportsbook">
-          <img src="https://betrediofficial.github.io/images/sports/mma.png" alt="MMA" style="width: 100%;">
+          <img src="https://betrediofficial.github.io/images/sports/mma_new.png" style="width: 100%; height: 100%; object-fit: contain;" alt="MMA" style="width: 100%;">
         </a>
       </div>
 
-      <div class="col">
+      <div class="sport-card col" style="position: relative; overflow: hidden !important; border: 2px solid #9B000E; border-top-right-radius: 32px; border-bottom-left-radius: 32px; padding: 0 !important; cursor: pointer;">
+      <div class="hovered-effect" style="opacity: 0; position: absolute; width: 100%; height: 100%; background: rgba(255, 255, 255, 0.1); z-index: 10;"></div>
         <a href="/sportsbook">
-          <img src="https://betrediofficial.github.io/images/sports/tennis.png" alt="Tenis" style="width: 100%;">
+          <img src="https://betrediofficial.github.io/images/sports/tennis_new.png" style="width: 100%; height: 100%; object-fit: contain;" alt="Tenis" style="width: 100%;">
         </a>
       </div>
 
-      <div class="col">
+      <div class="sport-card col" style="position: relative; overflow: hidden !important; border: 2px solid #9B000E; border-top-right-radius: 32px; border-bottom-left-radius: 32px; padding: 0 !important; cursor: pointer;">
+      <div class="hovered-effect" style="opacity: 0; position: absolute; width: 100%; height: 100%; background: rgba(255, 255, 255, 0.1); z-index: 10;"></div>
         <a href="/sportsbook">
-          <img src="https://betrediofficial.github.io/images/sports/cycling.png" alt="Cycling" style="width: 100%;">
+          <img src="https://betrediofficial.github.io/images/sports/cycling_new.png" style="width: 100%; height: 100%; object-fit: contain;" alt="Cycling" style="width: 100%;">
         </a>
       </div>
 
