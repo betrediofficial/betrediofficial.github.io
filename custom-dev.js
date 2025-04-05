@@ -881,39 +881,39 @@
 <div class="manually-added-home-widgets section" id="sportscard" style="margin-bottom: 10px;">
   <div class="container otherGames">
 <div class="row row-cols-3 row-cols-xl-6 g-3 justify-content-center text-center">
-      <div class="sport-card col" style="overflow: hidden !important;">
+      <div class="sport-card col" style="overflow: hidden !important; border-top-right-radius: 32px; border-bottom-left-radius: 32px;">
         <a href="/sportsbook">
-          <img src="https://betrediofficial.github.io/images/sports/futbol.png" alt="Futbol" style="width: 100%;">
+          <img src="https://betrediofficial.github.io/images/sports/futbol_new.png" alt="Futbol" style="width: 100%;">
         </a>
       </div>
 
-      <div class="sport-card col" style="overflow: hidden !important;">
+      <div class="sport-card col" style="overflow: hidden !important; border-top-right-radius: 32px; border-bottom-left-radius: 32px;">
         <a href="/sportsbook">
-          <img src="https://betrediofficial.github.io/images/sports/basketbol.png" alt="Basketbol" style="width: 100%;">
+          <img src="https://betrediofficial.github.io/images/sports/basketbol_new.png" alt="Basketbol" style="width: 100%;">
         </a>
       </div>
 
-      <div class="sport-card col" style="overflow: hidden !important;">
+      <div class="sport-card col" style="overflow: hidden !important; border-top-right-radius: 32px; border-bottom-left-radius: 32px;">
         <a href="/sportsbook">
-          <img src="https://betrediofficial.github.io/images/sports/voleybol.png" alt="Voleybol" style="width: 100%;">
+          <img src="https://betrediofficial.github.io/images/sports/voleybol_new.png" alt="Voleybol" style="width: 100%;">
         </a>
       </div>
 
-      <div class="sport-card col" style="overflow: hidden !important;">
+      <div class="sport-card col" style="overflow: hidden !important; border-top-right-radius: 32px; border-bottom-left-radius: 32px;">
         <a href="/sportsbook">
-          <img src="https://betrediofficial.github.io/images/sports/mma.png" alt="MMA" style="width: 100%;">
+          <img src="https://betrediofficial.github.io/images/sports/mma_new.png" alt="MMA" style="width: 100%;">
         </a>
       </div>
 
-      <div class="sport-card col" style="overflow: hidden !important;">
+      <div class="sport-card col" style="overflow: hidden !important; border-top-right-radius: 32px; border-bottom-left-radius: 32px;">
         <a href="/sportsbook">
-          <img src="https://betrediofficial.github.io/images/sports/tennis.png" alt="Tenis" style="width: 100%;">
+          <img src="https://betrediofficial.github.io/images/sports/tennis_new.png" alt="Tenis" style="width: 100%;">
         </a>
       </div>
 
-      <div class="sport-card col" style="overflow: hidden !important;">
+      <div class="sport-card col" style="overflow: hidden !important; border-top-right-radius: 32px; border-bottom-left-radius: 32px;">
         <a href="/sportsbook">
-          <img src="https://betrediofficial.github.io/images/sports/cycling.png" alt="Cycling" style="width: 100%;">
+          <img src="https://betrediofficial.github.io/images/sports/cycling_new.png" alt="Cycling" style="width: 100%;">
         </a>
       </div>
 
