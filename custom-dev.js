@@ -878,7 +878,7 @@
       if ($("#sportscard").length > 0) return;
 
       var newSection = `
-      <div class="container manually-added-home-widgets" style="margin-top: 10px !important; margin-bottom: 10px !important;">
+      <div class="container manually-added-home-widgets" style="margin-top: 14px !important; margin-bottom: 14px !important;">
   <div class="row row-cols-3 row-cols-xl-6 g-4 text-center">
     <div class="col">
       <div class="sport-card" style="position: relative; border: 2px solid #9B000E; border-top-right-radius: 24px; border-bottom-left-radius: 24px; overflow: hidden; cursor: pointer;">
