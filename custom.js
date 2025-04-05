@@ -880,7 +880,7 @@
       var newSection = `
 <div class="manually-added-home-widgets section" id="sportscard" style="margin-bottom: 10px;">
   <div class="container otherGames">
-<div class="row row-cols-3 row-cols-lg-3 row-cols-lg-6 flex-lg-nowrap g-4">
+<div class="row row-cols-3 row-cols-lg-3 row-cols-lg-6 flex-lg-nowrap g-lg-4">
       <div class="sport-card col" style="position: relative; overflow: hidden !important; border: 2px solid #9B000E; border-top-right-radius: 32px; border-bottom-left-radius: 32px; padding: 0 !important; cursor: pointer;">
       <div class="hovered-effect" style="opacity: 0; position: absolute; width: 100%; height: 100%; background: rgba(255, 255, 255, 0.1); z-index: 10;"></div>
         <a href="/sportsbook">
