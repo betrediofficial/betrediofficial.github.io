@@ -185,7 +185,7 @@
             const customDiv = document.createElement("div");
             customDiv.className = "sidebar__links custom_side";
             customDiv.innerHTML = `
-        <a class="sidebar__link sidebar__link--casino w-100" href="#"
+        <a class="sidebar__link sidebar__link--casino w-100" href="/promotions"
            style="height: 46px; background: url('https://betrediofficial.github.io/images/aside-links/promitions.png') center center / cover no-repeat;">
         </a>
       `;
