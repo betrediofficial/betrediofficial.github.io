@@ -378,6 +378,21 @@
     object-fit: cover !important;
     display: block !important;
   }
+
+
+
+#main-slider .slide-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+#main-slider .slide {
+  height: 100%;
+}
+
+
       `;
       document.head.appendChild(style);
     }
