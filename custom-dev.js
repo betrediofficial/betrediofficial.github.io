@@ -370,37 +370,41 @@
       </div>
       <div class="col-12">
         <div class="otherGamesComponent">
-          <div class="otherGamesComponentLayout">
+          <div class="otherGamesComponentLayout extra-game" style="position: relative;">
+            <div class="hovered-effect" style="opacity: 0; position: absolute; width: 100%; height: 100%; background: rgba(255,255,255,0.1); z-index: 10;"></div>
             <a href="casino/games/aviator">
               <img
-                src="https://betrediofficial.github.io/images/other-games/aviator.png"
+                src="https://betrediofficial.github.io/images/extra-games/aviator.png"
                 alt="games"
-                class="otherGamesComponentLayoutImg"
+                class="otherGamesComponentLayoutImg extra-games"
               />
             </a>
           </div>
-          <div class="otherGamesComponentLayout">
+          <div class="otherGamesComponentLayout extra-game" style="position: relative;">
+            <div class="hovered-effect" style="opacity: 0; position: absolute; width: 100%; height: 100%; background: rgba(255,255,255,0.1); z-index: 10;"></div>
             <a href="casino/games/pragmaticlive-spaceman">
               <img
-                src="https://betrediofficial.github.io/images/other-games/spaceman.png"
+                src="https://betrediofficial.github.io/images/extra-games/spaceman.png"
                 alt="maconcesi"
-                class="otherGamesComponentLayoutImg"
+                class="otherGamesComponentLayoutImg extra-games"
               />
             </a>
           </div>
-          <div class="otherGamesComponentLayout">
+          <div class="otherGamesComponentLayout extra-game" style="position: relative;">
+            <div class="hovered-effect" style="opacity: 0; position: absolute; width: 100%; height: 100%; background: rgba(255,255,255,0.1); z-index: 10;"></div>
             <a href="casino/games/betsolutions-zeppelin?modal=register">
               <img
-                src="https://betrediofficial.github.io/images/other-games/zepplin.png"
+                src="https://betrediofficial.github.io/images/extra-games/zeppelin.png"
                 alt="sporb"
                 class="otherGamesComponentLayoutImg"
               />
             </a>
           </div>
-          <div class="otherGamesComponentLayout">
+          <div class="otherGamesComponentLayout extra-game" style="position: relative;">
+            <div class="hovered-effect" style="opacity: 0; position: absolute; width: 100%; height: 100%; background: rgba(255,255,255,0.1); z-index: 10;"></div>
             <a href="casino/games/pragmaticlive-big-bass-crash">
               <img
-                src="https://betrediofficial.github.io/images/other-games/bigbass.png"
+                src="https://betrediofficial.github.io/images/extra-games/big_bass_crash.png"
                 alt="slotcasino"
                 class="otherGamesComponentLayoutImg"
               />
