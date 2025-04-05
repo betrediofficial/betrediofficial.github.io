@@ -173,6 +173,35 @@
         });
       }
 
+      function insertCustomSidebarLink() {
+        const observer = new MutationObserver(() => {
+          const $sidebarLinks = document.querySelector(
+            ".sidebar__big .sidebar__links"
+          );
+
+          const exists = document.querySelector(".sidebar__links.custom_side");
+
+          if ($sidebarLinks && !exists) {
+            const customDiv = document.createElement("div");
+            customDiv.className = "sidebar__links custom_side";
+            customDiv.innerHTML = `
+        <a class="sidebar__link sidebar__link--casino w-100" href="#"
+           style="height: 46px; background: url('https://vendor-provider.fra1.cdn.digitaloceanspaces.com/ebetlab/gXmqkthvbB1521K/how-to-invest/how-to-invest-btn.png') center center / cover no-repeat;">
+        </a>
+      `;
+            $sidebarLinks.parentNode.insertBefore(
+              customDiv,
+              $sidebarLinks.nextSibling
+            );
+          }
+        });
+
+        observer.observe(document.body, {
+          childList: true,
+          subtree: true,
+        });
+      }
+
       // function customizeSignupModal() {
       //   const imgUrl =
       //     "https://betrediofficial.github.io/images/signup-banner/betredi_banner.png";
@@ -267,6 +296,8 @@
         !is_mobile && hideDefaultGames(50);
         !is_mobile && hideDefaultGames(1500);
       }
+
+      insertCustomSidebarLink();
 
       headerButtons(isHomePage);
       hideBlogSection();
@@ -369,8 +400,8 @@
         </h2><a class="section__view section__view--carousel" href="/casino/group/top-games">Tümünü Görüntüle</a></div>
       </div>
       <div class="col-12">
-        <div class="otherGamesComponent">
-          <div class="otherGamesComponentLayout extra-game" style="position: relative; cursor: pointer;">
+        <div class="otherGamesComponent gap-4">
+          <div class="otherGamesComponentLayout extra-game" style="position: relative; cursor: pointer; border: 2px solid #9b000e;">
             <div class="hovered-effect" style="opacity: 0; position: absolute; width: 100%; height: 100%; background: rgba(255,255,255,0.1); z-index: 10;"></div>
             <a href="casino/games/aviator">
               <img
@@ -381,7 +412,7 @@
               />
             </a>
           </div>
-          <div class="otherGamesComponentLayout extra-game" style="position: relative; cursor: pointer;">
+          <div class="otherGamesComponentLayout extra-game" style="position: relative; cursor: pointer; border: 2px solid #9b000e;">
             <div class="hovered-effect" style="opacity: 0; position: absolute; width: 100%; height: 100%; background: rgba(255,255,255,0.1); z-index: 10;"></div>
             <a href="casino/games/pragmaticlive-spaceman">
               <img
@@ -392,7 +423,7 @@
               />
             </a>
           </div>
-          <div class="otherGamesComponentLayout extra-game" style="position: relative; cursor: pointer;">
+          <div class="otherGamesComponentLayout extra-game" style="position: relative; cursor: pointer; border: 2px solid #9b000e;">
             <div class="hovered-effect" style="opacity: 0; position: absolute; width: 100%; height: 100%; background: rgba(255,255,255,0.1); z-index: 10;"></div>
             <a href="casino/games/betsolutions-zeppelin?modal=register">
               <img
@@ -403,7 +434,7 @@
               />
             </a>
           </div>
-          <div class="otherGamesComponentLayout extra-game" style="position: relative; cursor: pointer;">
+          <div class="otherGamesComponentLayout extra-game" style="position: relative; cursor: pointer; border: 2px solid #9b000e;">
             <div class="hovered-effect" style="opacity: 0; position: absolute; width: 100%; height: 100%; background: rgba(255,255,255,0.1); z-index: 10;"></div>
             <a href="casino/games/pragmaticlive-big-bass-crash">
               <img
