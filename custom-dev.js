@@ -186,7 +186,7 @@
             customDiv.className = "sidebar__links custom_side";
             customDiv.innerHTML = `
         <a class="sidebar__link sidebar__link--casino w-100" href="#"
-           style="height: 46px; background: url('https://vendor-provider.fra1.cdn.digitaloceanspaces.com/ebetlab/gXmqkthvbB1521K/how-to-invest/how-to-invest-btn.png') center center / cover no-repeat;">
+           style="height: 46px; background: url('https://betrediofficial.github.io/images/aside-links/promitions.png') center center / cover no-repeat;">
         </a>
       `;
             $sidebarLinks.parentNode.insertBefore(
@@ -378,10 +378,6 @@
     object-fit: cover !important;
     display: block !important;
   }
-
-
-
-
       `;
       document.head.appendChild(style);
     }
@@ -390,7 +386,6 @@
       if ($("#digeroyunlari").length > 0) return;
 
       var newSection = `
-           
 <div class="manually-added-home-widgets section" id="digeroyunlari">
   <div class="container otherGames">
     <div class="row">
