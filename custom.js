@@ -529,7 +529,7 @@
       <img src="https://betrediofficial.github.io/images/bottom-menu-widget/sport.png" alt="sporb" class="bottomMenuWidgetImage" >
     </a>
   </div>
-  <div style="flex: 1 1 calc(25% - 10px); text-align: center;">
+  <div class="bottom-menu-widget" style="flex: 1 1 calc(25% - 10px); text-align: center;">
     <a href="casino/slots">
       <img src="https://betrediofficial.github.io/images/bottom-menu-widget/slot.png" alt="slotcasino" class="bottomMenuWidgetImage" >
     </a>

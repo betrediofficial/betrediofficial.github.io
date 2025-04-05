@@ -508,30 +508,30 @@
       if ($("#bottomMenuWidgedContainer").length > 0) return;
       $(".section:first").append(`
 <div class="manually-added-home-widgets bottomMenuWidgedContainer" id="bottomMenuWidgedContainer" style="margin-bottom: 10px;">
-  <div style="flex: 1 1 calc(25% - 10px); text-align: center;">
+  <div class="bottom-menu-widget" style="flex: 1 1 calc(25% - 10px); text-align: center;">
     <a href="casino/category/exclusive">
-      <img src="https://betrediofficial.github.io/images/f63.png" alt="games" class="bottomMenuWidgetImage" >
+      <img src="https://betrediofficial.github.io/images/bottom-menu-widget/games.png" alt="games" class="bottomMenuWidgetImage" >
     </a>
   </div>
 
   ${
     !isMobile
-      ? `<div style="flex: 1 1 calc(25% - 10px); text-align: center;">
+      ? `<div class="bottom-menu-widget" style="flex: 1 1 calc(25% - 10px); text-align: center;">
     <a href="casino/group/live-casino">
-      <img src="https://betrediofficial.github.io/images/canlicasinorevize.png" alt="maconcesi" class="bottomMenuWidgetImage" >
+      <img src="https://betrediofficial.github.io/images/bottom-menu-widget/live_casino.png" alt="livecasino" class="bottomMenuWidgetImage" >
     </a>
   </div>`
       : ``
   }
 
-  <div style="flex: 1 1 calc(25% - 10px); text-align: center;">
+  <div class="bottom-menu-widget" style="flex: 1 1 calc(25% - 10px); text-align: center;">
     <a href="sportsbook">
-      <img src="https://betrediofficial.github.io/images/sporbahislerirevize.png" alt="sporb" class="bottomMenuWidgetImage" >
+      <img src="https://betrediofficial.github.io/images/bottom-menu-widget/sport.png" alt="sporb" class="bottomMenuWidgetImage" >
     </a>
   </div>
-  <div style="flex: 1 1 calc(25% - 10px); text-align: center;">
+  <div class="bottom-menu-widget" style="flex: 1 1 calc(25% - 10px); text-align: center;">
     <a href="casino/slots">
-      <img src="https://betrediofficial.github.io/images/slotfixx.png" alt="slotcasino" class="bottomMenuWidgetImage" >
+      <img src="https://betrediofficial.github.io/images/bottom-menu-widget/slot.png" alt="slotcasino" class="bottomMenuWidgetImage" >
     </a>
   </div>
 </div>
@@ -881,7 +881,7 @@
       <div class="container" style="margin-bottom: 10px;">
   <div class="row row-cols-3 row-cols-xl-6 g-4 text-center">
     <div class="col">
-      <div class="sport-card" style="position: relative; border: 2px solid #9B000E; border-top-right-radius: 32px; border-bottom-left-radius: 32px; overflow: hidden; cursor: pointer;">
+      <div class="sport-card" style="position: relative; border: 2px solid #9B000E; border-top-right-radius: 24px; border-bottom-left-radius: 24px; overflow: hidden; cursor: pointer;">
         <div class="hovered-effect" style="opacity: 0; position: absolute; width: 100%; height: 100%; background: rgba(255,255,255,0.1); z-index: 10;"></div>
         <a href="/sportsbook">
           <img src="https://betrediofficial.github.io/images/sports/futbol_new.png" alt="Futbol" style="width: 100%; aspect-ratio: 3/4; object-fit: cover;">
@@ -889,7 +889,7 @@
       </div>
     </div>
     <div class="col">
-      <div class="sport-card" style="position: relative; border: 2px solid #9B000E; border-top-right-radius: 32px; border-bottom-left-radius: 32px; overflow: hidden; cursor: pointer;">
+      <div class="sport-card" style="position: relative; border: 2px solid #9B000E; border-top-right-radius: 24px; border-bottom-left-radius: 24px; overflow: hidden; cursor: pointer;">
         <div class="hovered-effect" style="opacity: 0; position: absolute; width: 100%; height: 100%; background: rgba(255,255,255,0.1); z-index: 10;"></div>
         <a href="/sportsbook">
           <img src="https://betrediofficial.github.io/images/sports/basketbol_new.png" alt="Basketbol" style="width: 100%; aspect-ratio: 3/4; object-fit: cover;">
@@ -897,7 +897,7 @@
       </div>
     </div>
     <div class="col">
-      <div class="sport-card" style="position: relative; border: 2px solid #9B000E; border-top-right-radius: 32px; border-bottom-left-radius: 32px; overflow: hidden; cursor: pointer;">
+      <div class="sport-card" style="position: relative; border: 2px solid #9B000E; border-top-right-radius: 24px; border-bottom-left-radius: 24px; overflow: hidden; cursor: pointer;">
         <div class="hovered-effect" style="opacity: 0; position: absolute; width: 100%; height: 100%; background: rgba(255,255,255,0.1); z-index: 10;"></div>
         <a href="/sportsbook">
           <img src="https://betrediofficial.github.io/images/sports/voleybol_new.png" alt="Voleybol" style="width: 100%; aspect-ratio: 3/4; object-fit: cover;">
@@ -905,7 +905,7 @@
       </div>
     </div>
     <div class="col">
-      <div class="sport-card" style="position: relative; border: 2px solid #9B000E; border-top-right-radius: 32px; border-bottom-left-radius: 32px; overflow: hidden; cursor: pointer;">
+      <div class="sport-card" style="position: relative; border: 2px solid #9B000E; border-top-right-radius: 24px; border-bottom-left-radius: 24px; overflow: hidden; cursor: pointer;">
         <div class="hovered-effect" style="opacity: 0; position: absolute; width: 100%; height: 100%; background: rgba(255,255,255,0.1); z-index: 10;"></div>
         <a href="/sportsbook">
           <img src="https://betrediofficial.github.io/images/sports/mma_new.png" alt="MMA" style="width: 100%; aspect-ratio: 3/4; object-fit: cover;">
@@ -913,7 +913,7 @@
       </div>
     </div>
     <div class="col">
-      <div class="sport-card" style="position: relative; border: 2px solid #9B000E; border-top-right-radius: 32px; border-bottom-left-radius: 32px; overflow: hidden; cursor: pointer;">
+      <div class="sport-card" style="position: relative; border: 2px solid #9B000E; border-top-right-radius: 24px; border-bottom-left-radius: 24px; overflow: hidden; cursor: pointer;">
         <div class="hovered-effect" style="opacity: 0; position: absolute; width: 100%; height: 100%; background: rgba(255,255,255,0.1); z-index: 10;"></div>
         <a href="/sportsbook">
           <img src="https://betrediofficial.github.io/images/sports/tennis_new.png" alt="Tenis" style="width: 100%; aspect-ratio: 3/4; object-fit: cover;">
@@ -921,7 +921,7 @@
       </div>
     </div>
     <div class="col">
-      <div class="sport-card" style="position: relative; border: 2px solid #9B000E; border-top-right-radius: 32px; border-bottom-left-radius: 32px; overflow: hidden; cursor: pointer;">
+      <div class="sport-card" style="position: relative; border: 2px solid #9B000E; border-top-right-radius: 24px; border-bottom-left-radius: 24px; overflow: hidden; cursor: pointer;">
         <div class="hovered-effect" style="opacity: 0; position: absolute; width: 100%; height: 100%; background: rgba(255,255,255,0.1); z-index: 10;"></div>
         <a href="/sportsbook">
           <img src="https://betrediofficial.github.io/images/sports/cycling_new.png" alt="Cycling" style="width: 100%; aspect-ratio: 3/4; object-fit: cover;">
