@@ -397,7 +397,7 @@
 <div class="col-12">
   <div class="otherGamesComponent" style="display: grid; grid-template-columns: repeat(4, 1fr); gap: 12px;">
     
-    <div class="otherGamesComponentLayout extra-game" style="position: relative; cursor: pointer; border: 2px solid #9b000e;">
+    <div class="otherGamesComponentLayout extra-game" style="position: relative; cursor: pointer; border: 2px solid #9b000e; overflow: hidden;">
       <div class="hovered-effect" style="opacity: 0; position: absolute; width: 100%; height: 100%; background: rgba(255,255,255,0.1); z-index: 10;"></div>
       <a href="casino/games/aviator">
         <img
@@ -409,7 +409,7 @@
       </a>
     </div>
 
-    <div class="otherGamesComponentLayout extra-game" style="position: relative; cursor: pointer; border: 2px solid #9b000e;">
+    <div class="otherGamesComponentLayout extra-game" style="position: relative; cursor: pointer; border: 2px solid #9b000e; overflow: hidden;">
       <div class="hovered-effect" style="opacity: 0; position: absolute; width: 100%; height: 100%; background: rgba(255,255,255,0.1); z-index: 10;"></div>
       <a href="casino/games/pragmaticlive-spaceman">
         <img
@@ -421,7 +421,7 @@
       </a>
     </div>
 
-    <div class="otherGamesComponentLayout extra-game" style="position: relative; cursor: pointer; border: 2px solid #9b000e;">
+    <div class="otherGamesComponentLayout extra-game" style="position: relative; cursor: pointer; border: 2px solid #9b000e; overflow: hidden;">
       <div class="hovered-effect" style="opacity: 0; position: absolute; width: 100%; height: 100%; background: rgba(255,255,255,0.1); z-index: 10;"></div>
       <a href="casino/games/betsolutions-zeppelin?modal=register">
         <img
@@ -433,7 +433,7 @@
       </a>
     </div>
 
-    <div class="otherGamesComponentLayout extra-game" style="position: relative; cursor: pointer; border: 2px solid #9b000e;">
+    <div class="otherGamesComponentLayout extra-game" style="position: relative; cursor: pointer; border: 2px solid #9b000e; overflow: hidden;">
       <div class="hovered-effect" style="opacity: 0; position: absolute; width: 100%; height: 100%; background: rgba(255,255,255,0.1); z-index: 10;"></div>
       <a href="casino/games/pragmaticlive-big-bass-crash">
         <img
