@@ -878,55 +878,54 @@
       if ($("#sportscard").length > 0) return;
 
       var newSection = `
-<div class="manually-added-home-widgets section" id="sportscard" style="margin-bottom: 10px;">
-  <div class="container otherGames">
-<div class="row row-cols-3 row-cols-lg-3 row-cols-lg-6 flex-lg-nowrap g-8">
-      <div class="sport-card sport-card-1 col" style="position: relative; overflow: hidden !important; border: 2px solid #9B000E; border-top-right-radius: 32px; border-bottom-left-radius: 32px; padding: 0 !important; cursor: pointer;">
-      <div class="hovered-effect" style="opacity: 0; position: absolute; width: 100%; height: 100%; background: rgba(255, 255, 255, 0.1); z-index: 10;"></div>
+      <div class="container" style="margin-bottom: 10px;">
+  <div class="row row-cols-3 row-cols-xl-6 g-4 text-center">
+    <div class="col">
+      <div class="sport-card" style="border: 2px solid #9B000E; border-top-right-radius: 32px; border-bottom-left-radius: 32px; overflow: hidden;">
         <a href="/sportsbook">
-          <img src="https://betrediofficial.github.io/images/sports/futbol_new.png" style="width: 100%; height: 100%; object-fit: contain;" alt="Futbol" style="width: 100%;">
+          <img src="https://betrediofficial.github.io/images/sports/futbol_new.png" alt="Futbol" style="width: 100%; aspect-ratio: 3/4; object-fit: cover;">
         </a>
       </div>
-
-      <div class="sport-card sport-card-2 col" style="position: relative; overflow: hidden !important; border: 2px solid #9B000E; border-top-right-radius: 32px; border-bottom-left-radius: 32px; padding: 0 !important; cursor: pointer;">
-      <div class="hovered-effect" style="opacity: 0; position: absolute; width: 100%; height: 100%; background: rgba(255, 255, 255, 0.1); z-index: 10;"></div>
+    </div>
+    <div class="col">
+      <div class="sport-card" style="border: 2px solid #9B000E; border-top-right-radius: 32px; border-bottom-left-radius: 32px; overflow: hidden;">
         <a href="/sportsbook">
-          <img src="https://betrediofficial.github.io/images/sports/basketbol_new.png" style="width: 100%; height: 100%; object-fit: contain;" alt="Basketbol" style="width: 100%;">
+          <img src="https://betrediofficial.github.io/images/sports/basketbol_new.png" alt="Basketbol" style="width: 100%; aspect-ratio: 3/4; object-fit: cover;">
         </a>
       </div>
-
-      <div class="sport-card sport-card-3 col" style="position: relative; overflow: hidden !important; border: 2px solid #9B000E; border-top-right-radius: 32px; border-bottom-left-radius: 32px; padding: 0 !important; cursor: pointer;">
-      <div class="hovered-effect" style="opacity: 0; position: absolute; width: 100%; height: 100%; background: rgba(255, 255, 255, 0.1); z-index: 10;"></div>
+    </div>
+    <div class="col">
+      <div class="sport-card" style="border: 2px solid #9B000E; border-top-right-radius: 32px; border-bottom-left-radius: 32px; overflow: hidden;">
         <a href="/sportsbook">
-          <img src="https://betrediofficial.github.io/images/sports/voleybol_new.png" style="width: 100%; height: 100%; object-fit: contain;" alt="Voleybol" style="width: 100%;">
+          <img src="https://betrediofficial.github.io/images/sports/voleybol_new.png" alt="Voleybol" style="width: 100%; aspect-ratio: 3/4; object-fit: cover;">
         </a>
       </div>
-
-      <div class="sport-card sport-card-4 col" style="position: relative; overflow: hidden !important; border: 2px solid #9B000E; border-top-right-radius: 32px; border-bottom-left-radius: 32px; padding: 0 !important; cursor: pointer;">
-      <div class="hovered-effect" style="opacity: 0; position: absolute; width: 100%; height: 100%; background: rgba(255, 255, 255, 0.1); z-index: 10;"></div>
+    </div>
+    <div class="col">
+      <div class="sport-card" style="border: 2px solid #9B000E; border-top-right-radius: 32px; border-bottom-left-radius: 32px; overflow: hidden;">
         <a href="/sportsbook">
-          <img src="https://betrediofficial.github.io/images/sports/mma_new.png" style="width: 100%; height: 100%; object-fit: contain;" alt="MMA" style="width: 100%;">
+          <img src="https://betrediofficial.github.io/images/sports/mma_new.png" alt="MMA" style="width: 100%; aspect-ratio: 3/4; object-fit: cover;">
         </a>
       </div>
-
-      <div class="sport-card sport-card-5 col" style="position: relative; overflow: hidden !important; border: 2px solid #9B000E; border-top-right-radius: 32px; border-bottom-left-radius: 32px; padding: 0 !important; cursor: pointer;">
-      <div class="hovered-effect" style="opacity: 0; position: absolute; width: 100%; height: 100%; background: rgba(255, 255, 255, 0.1); z-index: 10;"></div>
+    </div>
+    <div class="col">
+      <div class="sport-card" style="border: 2px solid #9B000E; border-top-right-radius: 32px; border-bottom-left-radius: 32px; overflow: hidden;">
         <a href="/sportsbook">
-          <img src="https://betrediofficial.github.io/images/sports/tennis_new.png" style="width: 100%; height: 100%; object-fit: contain;" alt="Tenis" style="width: 100%;">
+          <img src="https://betrediofficial.github.io/images/sports/tennis_new.png" alt="Tenis" style="width: 100%; aspect-ratio: 3/4; object-fit: cover;">
         </a>
       </div>
-
-      <div class="sport-card sport-card-6 col" style="position: relative; overflow: hidden !important; border: 2px solid #9B000E; border-top-right-radius: 32px; border-bottom-left-radius: 32px; padding: 0 !important; cursor: pointer;">
-      <div class="hovered-effect" style="opacity: 0; position: absolute; width: 100%; height: 100%; background: rgba(255, 255, 255, 0.1); z-index: 10;"></div>
+    </div>
+    <div class="col">
+      <div class="sport-card" style="border: 2px solid #9B000E; border-top-right-radius: 32px; border-bottom-left-radius: 32px; overflow: hidden;">
         <a href="/sportsbook">
-          <img src="https://betrediofficial.github.io/images/sports/cycling_new.png" style="width: 100%; height: 100%; object-fit: contain;" alt="Cycling" style="width: 100%;">
+          <img src="https://betrediofficial.github.io/images/sports/cycling_new.png" alt="Cycling" style="width: 100%; aspect-ratio: 3/4; object-fit: cover;">
         </a>
       </div>
-
     </div>
   </div>
 </div>
-  `;
+
+`;
 
       if ($("#casinooyunlari").length > 0)
         $("#casinooyunlari").after(newSection);
