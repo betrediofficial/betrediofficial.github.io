@@ -394,54 +394,64 @@
         EKSTRA OYUNLAR
         </h2><a class="section__view section__view--carousel" href="/casino/group/top-games">Tümünü Görüntüle</a></div>
       </div>
-      <div class="col-12">
-        <div class="otherGamesComponent gap-4">
-          <div class="otherGamesComponentLayout extra-game" style="position: relative; cursor: pointer; border: 2px solid #9b000e;">
-            <div class="hovered-effect" style="opacity: 0; position: absolute; width: 100%; height: 100%; background: rgba(255,255,255,0.1); z-index: 10;"></div>
-            <a href="casino/games/aviator">
-              <img
-                src="https://betrediofficial.github.io/images/extra-games/aviator.png"
-                alt="games"
-                class="otherGamesComponentLayoutImg extra-games"
-                style="width: 100% !important; height: 100% !important;"
-              />
-            </a>
-          </div>
-          <div class="otherGamesComponentLayout extra-game" style="position: relative; cursor: pointer; border: 2px solid #9b000e;">
-            <div class="hovered-effect" style="opacity: 0; position: absolute; width: 100%; height: 100%; background: rgba(255,255,255,0.1); z-index: 10;"></div>
-            <a href="casino/games/pragmaticlive-spaceman">
-              <img
-                src="https://betrediofficial.github.io/images/extra-games/spaceman.png"
-                alt="maconcesi"
-                class="otherGamesComponentLayoutImg extra-games"
-                style="width: 100% !important; height: 100% !important;"
-              />
-            </a>
-          </div>
-          <div class="otherGamesComponentLayout extra-game" style="position: relative; cursor: pointer; border: 2px solid #9b000e;">
-            <div class="hovered-effect" style="opacity: 0; position: absolute; width: 100%; height: 100%; background: rgba(255,255,255,0.1); z-index: 10;"></div>
-            <a href="casino/games/betsolutions-zeppelin?modal=register">
-              <img
-                src="https://betrediofficial.github.io/images/extra-games/zeppelin.png"
-                alt="sporb"
-                class="otherGamesComponentLayoutImg"
-                style="width: 100% !important; height: 100% !important;"
-              />
-            </a>
-          </div>
-          <div class="otherGamesComponentLayout extra-game" style="position: relative; cursor: pointer; border: 2px solid #9b000e;">
-            <div class="hovered-effect" style="opacity: 0; position: absolute; width: 100%; height: 100%; background: rgba(255,255,255,0.1); z-index: 10;"></div>
-            <a href="casino/games/pragmaticlive-big-bass-crash">
-              <img
-                src="https://betrediofficial.github.io/images/extra-games/big_bass_crash.png"
-                alt="slotcasino"
-                class="otherGamesComponentLayoutImg"
-                style="width: 100% !important; height: 100% !important;"
-              />
-            </a>
-          </div>
-        </div>
-      </div>
+<div class="col-12">
+  <div class="otherGamesComponent" style="display: grid; grid-template-columns: repeat(4, 1fr); gap: 12px;">
+    
+<div class="otherGamesComponentLayout extra-game" style="position: relative; cursor: pointer; border: 2px solid #9b000e; overflow: hidden;">
+  <div class="hovered-effect" style="opacity: 0; position: absolute; width: 100%; height: 100%; background: rgba(255,255,255,0.1); z-index: 10; pointer-events: none;"></div>
+  <a href="casino/games/spribe-aviator">
+    <img
+      src="https://betrediofficial.github.io/images/extra-games/aviator.png"
+      alt="games"
+      class="otherGamesComponentLayoutImg extra-games"
+      style="width: 100%; height: 100%; object-fit: cover; display: block;"
+    />
+  </a>
+</div>
+
+
+<div class="otherGamesComponentLayout extra-game" style="position: relative; cursor: pointer; border: 2px solid #9b000e; overflow: hidden;">
+  <div class="hovered-effect" style="opacity: 0; position: absolute; width: 100%; height: 100%; background: rgba(255,255,255,0.1); z-index: 10; pointer-events: none;"></div>
+  <a href="casino/games/pragmaticlive-spaceman">
+    <img
+      src="https://betrediofficial.github.io/images/extra-games/spaceman.png"
+      alt="maconcesi"
+      class="otherGamesComponentLayoutImg extra-games"
+      style="width: 100%; height: 100%; object-fit: cover; display: block;"
+    />
+  </a>
+</div>
+
+
+<div class="otherGamesComponentLayout extra-game" style="position: relative; cursor: pointer; border: 2px solid #9b000e; overflow: hidden;">
+  <div class="hovered-effect" style="opacity: 0; position: absolute; width: 100%; height: 100%; background: rgba(255,255,255,0.1); z-index: 10; pointer-events: none;"></div>
+  <a href="casino/games/betsolutions-zeppelin?modal=register">
+    <img
+      src="https://betrediofficial.github.io/images/extra-games/zeppelin.png"
+      alt="sporb"
+      class="otherGamesComponentLayoutImg"
+      style="width: 100%; height: 100%; object-fit: cover; display: block;"
+    />
+  </a>
+</div>
+
+
+<div class="otherGamesComponentLayout extra-game" style="position: relative; cursor: pointer; border: 2px solid #9b000e; overflow: hidden;">
+  <div class="hovered-effect" style="opacity: 0; position: absolute; width: 100%; height: 100%; background: rgba(255,255,255,0.1); z-index: 10; pointer-events: none;"></div>
+  <a href="casino/games/pragmaticlive-big-bass-crash">
+    <img
+      src="https://betrediofficial.github.io/images/extra-games/big_bass_crash.png"
+      alt="slotcasino"
+      class="otherGamesComponentLayoutImg"
+      style="width: 100%; height: 100%; object-fit: cover; display: block;"
+    />
+  </a>
+</div>
+
+
+  </div>
+</div>
+
     </div>
   </div>
 </div>
@@ -916,7 +926,7 @@
   <div class="row row-cols-3 row-cols-xl-6 g-4 text-center">
     <div class="col">
       <div class="sport-card" style="position: relative; border: 2px solid #9B000E; border-top-right-radius: 24px; border-bottom-left-radius: 24px; overflow: hidden; cursor: pointer;">
-        <div class="hovered-effect" style="opacity: 0; position: absolute; width: 100%; height: 100%; background: rgba(255,255,255,0.1); z-index: 10;"></div>
+        <div class="hovered-effect" style="opacity: 0; position: absolute; width: 100%; height: 100%; background: rgba(255,255,255,0.1); z-index: 10; pointer-events: none;"></div>
         <a href="/sportsbook">
           <img src="https://betrediofficial.github.io/images/sports/futbol_new.png" alt="Futbol" style="width: 100%; aspect-ratio: 3/4; object-fit: cover;">
         </a>
@@ -924,7 +934,7 @@
     </div>
     <div class="col">
       <div class="sport-card" style="position: relative; border: 2px solid #9B000E; border-top-right-radius: 24px; border-bottom-left-radius: 24px; overflow: hidden; cursor: pointer;">
-        <div class="hovered-effect" style="opacity: 0; position: absolute; width: 100%; height: 100%; background: rgba(255,255,255,0.1); z-index: 10;"></div>
+        <div class="hovered-effect" style="opacity: 0; position: absolute; width: 100%; height: 100%; background: rgba(255,255,255,0.1); z-index: 10; pointer-events: none;"></div>
         <a href="/sportsbook">
           <img src="https://betrediofficial.github.io/images/sports/basketbol_new.png" alt="Basketbol" style="width: 100%; aspect-ratio: 3/4; object-fit: cover;">
         </a>
@@ -932,7 +942,7 @@
     </div>
     <div class="col">
       <div class="sport-card" style="position: relative; border: 2px solid #9B000E; border-top-right-radius: 24px; border-bottom-left-radius: 24px; overflow: hidden; cursor: pointer;">
-        <div class="hovered-effect" style="opacity: 0; position: absolute; width: 100%; height: 100%; background: rgba(255,255,255,0.1); z-index: 10;"></div>
+        <div class="hovered-effect" style="opacity: 0; position: absolute; width: 100%; height: 100%; background: rgba(255,255,255,0.1); z-index: 10; pointer-events: none;"></div>
         <a href="/sportsbook">
           <img src="https://betrediofficial.github.io/images/sports/voleybol_new.png" alt="Voleybol" style="width: 100%; aspect-ratio: 3/4; object-fit: cover;">
         </a>
@@ -940,7 +950,7 @@
     </div>
     <div class="col">
       <div class="sport-card" style="position: relative; border: 2px solid #9B000E; border-top-right-radius: 24px; border-bottom-left-radius: 24px; overflow: hidden; cursor: pointer;">
-        <div class="hovered-effect" style="opacity: 0; position: absolute; width: 100%; height: 100%; background: rgba(255,255,255,0.1); z-index: 10;"></div>
+        <div class="hovered-effect" style="opacity: 0; position: absolute; width: 100%; height: 100%; background: rgba(255,255,255,0.1); z-index: 10; pointer-events: none;"></div>
         <a href="/sportsbook">
           <img src="https://betrediofficial.github.io/images/sports/mma_new.png" alt="MMA" style="width: 100%; aspect-ratio: 3/4; object-fit: cover;">
         </a>
@@ -948,7 +958,7 @@
     </div>
     <div class="col">
       <div class="sport-card" style="position: relative; border: 2px solid #9B000E; border-top-right-radius: 24px; border-bottom-left-radius: 24px; overflow: hidden; cursor: pointer;">
-        <div class="hovered-effect" style="opacity: 0; position: absolute; width: 100%; height: 100%; background: rgba(255,255,255,0.1); z-index: 10;"></div>
+        <div class="hovered-effect" style="opacity: 0; position: absolute; width: 100%; height: 100%; background: rgba(255,255,255,0.1); z-index: 10; pointer-events: none;"></div>
         <a href="/sportsbook">
           <img src="https://betrediofficial.github.io/images/sports/tennis_new.png" alt="Tenis" style="width: 100%; aspect-ratio: 3/4; object-fit: cover;">
         </a>
@@ -956,7 +966,7 @@
     </div>
     <div class="col">
       <div class="sport-card" style="position: relative; border: 2px solid #9B000E; border-top-right-radius: 24px; border-bottom-left-radius: 24px; overflow: hidden; cursor: pointer;">
-        <div class="hovered-effect" style="opacity: 0; position: absolute; width: 100%; height: 100%; background: rgba(255,255,255,0.1); z-index: 10;"></div>
+        <div class="hovered-effect" style="opacity: 0; position: absolute; width: 100%; height: 100%; background: rgba(255,255,255,0.1); z-index: 10; pointer-events: none;"></div>
         <a href="/sportsbook">
           <img src="https://betrediofficial.github.io/images/sports/cycling_new.png" alt="Cycling" style="width: 100%; aspect-ratio: 3/4; object-fit: cover;">
         </a>
