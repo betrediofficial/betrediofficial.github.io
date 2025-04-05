@@ -378,6 +378,7 @@
     object-fit: cover !important;
     display: block !important;
   }
+  
       `;
       document.head.appendChild(style);
     }
