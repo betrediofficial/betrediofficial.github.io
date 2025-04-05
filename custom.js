@@ -399,7 +399,7 @@
     
 <div class="otherGamesComponentLayout extra-game" style="position: relative; cursor: pointer; border: 2px solid #9b000e; overflow: hidden;">
   <div class="hovered-effect" style="opacity: 0; position: absolute; width: 100%; height: 100%; background: rgba(255,255,255,0.1); z-index: 10; pointer-events: none;"></div>
-  <a href="casino/games/aviator">
+  <a href="casino/games/spribe-aviator">
     <img
       src="https://betrediofficial.github.io/images/extra-games/aviator.png"
       alt="games"
