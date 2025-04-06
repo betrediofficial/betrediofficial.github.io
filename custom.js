@@ -86,44 +86,44 @@
       const isHomePage = isHomePageCheck();
 
       // Slider varsa önce destroy et
-      if (
-        window.mainSliderInstance &&
-        typeof window.mainSliderInstance.destroy === "function"
-      ) {
-        window.mainSliderInstance.destroy(true, true);
-      }
+      // if (
+      //   window.mainSliderInstance &&
+      //   typeof window.mainSliderInstance.destroy === "function"
+      // ) {
+      //   window.mainSliderInstance.destroy(true, true);
+      // }
 
-      // Swiper varsa başlat
-      if (
-        typeof Swiper !== "undefined" &&
-        document.querySelector("#main-slider-swiper")
-      ) {
-        console.log("✅ Swiper başlatılıyor...");
+      // // Swiper varsa başlat
+      // if (
+      //   typeof Swiper !== "undefined" &&
+      //   document.querySelector("#main-slider-swiper")
+      // ) {
+      //   console.log("✅ Swiper başlatılıyor...");
 
-        window.mainSliderInstance = new Swiper("#main-slider-swiper", {
-          loop: true,
-          autoplay: {
-            delay: 4000,
-            disableOnInteraction: false,
-          },
-          pagination: {
-            el: ".swiper-pagination",
-            clickable: true,
-          },
-          navigation: {
-            nextEl: ".swiper-button-next",
-            prevEl: ".swiper-button-prev",
-          },
-          effect: "slide",
-          speed: 600,
-        });
+      //   window.mainSliderInstance = new Swiper("#main-slider-swiper", {
+      //     loop: true,
+      //     autoplay: {
+      //       delay: 4000,
+      //       disableOnInteraction: false,
+      //     },
+      //     pagination: {
+      //       el: ".swiper-pagination",
+      //       clickable: true,
+      //     },
+      //     navigation: {
+      //       nextEl: ".swiper-button-next",
+      //       prevEl: ".swiper-button-prev",
+      //     },
+      //     effect: "slide",
+      //     speed: 600,
+      //   });
 
-        console.log("✅ Swiper başarıyla başlatıldı!");
-      } else {
-        console.warn(
-          "❌ Swiper tanımlı değil veya #main-slider-swiper bulunamadı."
-        );
-      }
+      //   console.log("✅ Swiper başarıyla başlatıldı!");
+      // } else {
+      //   console.warn(
+      //     "❌ Swiper tanımlı değil veya #main-slider-swiper bulunamadı."
+      //   );
+      // }
 
       // if (language !== "tr") return;
 
