@@ -217,7 +217,7 @@
 
         section.className = "section custom--section--2 custom--section";
         section.innerHTML = `
-    <div class="container" style="position: relative; margin-bottom: 32px; !important; margintop: 24px !important;">
+    <div class="container" style="position: relative; margin-bottom: 32px; !important; margintop: 24px !important; overflow: hidden !important;">
     <div class="providers--marquee--bg" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; background: linear-gradient(0deg, rgba(54,0,6,1) 0%, rgba(125,2,15,1) 100%);"></div>
 <div class="providers--marquee">	
 				          <a class="custom--providers--link" href="/providers/pragmaticplay">
