@@ -217,7 +217,8 @@
 
         section.className = "section custom--section--2 custom--section";
         section.innerHTML = `
-    <div class="container">
+    <div class="container" style="margin-bottom: 14px !important; margintop: 14px !important;">
+    <div class="providers--marquee--bg"></div>
 <div class="providers--marquee">	
 				          <a class="custom--providers--link" href="/providers/pragmaticplay">
 				            <img class="custom--providers--image" src="https://vendor-provider.fra1.cdn.digitaloceanspaces.com/ebetlab/game-providers/light/pragmaticplay.svg" alt="">
