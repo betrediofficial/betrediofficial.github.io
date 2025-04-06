@@ -214,7 +214,6 @@
         const section = document.createElement("div");
         section.className = "section custom--section--2 custom--section";
         section.innerHTML = `
-    <div class="container">
       <div class="providers--marquee--bg"></div>
 <div class="providers--marquee">	
 				          <a class="custom--providers--link" href="/providers/pragmaticplay">
@@ -612,7 +611,6 @@
 				          <a class="custom--providers--link" href="/providers/topspin">
 				            <img class="custom--providers--image" src="https://vendor-provider.fra1.cdn.digitaloceanspaces.com/ebetlab/game-providers/light/topspin.svg" alt="">
 				          </a>    
-			</div>
     </div>
   `;
 
