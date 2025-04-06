@@ -205,40 +205,47 @@
       function injectProvidersMarquee() {
         const container = document.querySelector("#main-slider > .container");
 
-        if (!container) return;
+        if (!container || container.querySelector(".custom--section--2"))
+          return;
 
         const swiperElement = container.querySelector("#main-slider-swiper");
         if (!swiperElement) return;
 
-        if (container.querySelector(".custom--section--2")) return;
-
-        const newSection = document.createElement("div");
-        newSection.className = "section custom--section--2 custom--section";
-        newSection.innerHTML = `
+        const section = document.createElement("div");
+        section.className = "section custom--section--2 custom--section";
+        section.innerHTML = `
     <div class="container">
       <div class="providers--marquee--bg"></div>
       <div class="providers--marquee">
-        <a class="custom--providers--link" href="/providers/pragmaticplay">
-          <img class="custom--providers--image" src="https://vendor-provider.fra1.cdn.digitaloceanspaces.com/ebetlab/game-providers/light/pragmaticplay.svg" alt="">
-        </a>
-        <a class="custom--providers--link" href="/providers/evolution">
-          <img class="custom--providers--image" src="https://vendor-provider.fra1.cdn.digitaloceanspaces.com/ebetlab/game-providers/light/Evolution%20Gaming.svg" alt="">
-        </a>
-        <a class="custom--providers--link" href="/providers/hacksaw">
-          <img class="custom--providers--image" src="https://vendor-provider.fra1.cdn.digitaloceanspaces.com/ebetlab/game-providers/light/hacksaw.svg" alt="">
-        </a>
-        <a class="custom--providers--link" href="/providers/egt">
-          <img class="custom--providers--image" src="https://vendor-provider.fra1.cdn.digitaloceanspaces.com/ebetlab/game-providers/light/egt.svg" alt="">
-        </a>
-        <a class="custom--providers--link" href="/providers/nolimitcity">
-          <img class="custom--providers--image" src="https://vendor-provider.fra1.cdn.digitaloceanspaces.com/ebetlab/game-providers/light/NoLimitCity.svg" alt="">
-        </a>
-        <!-- Diğer provider'ları buraya ekleyebilirsin -->
+        <div class="marquee-content">
+          <a class="custom--providers--link" href="/providers/pragmaticplay">
+            <img class="custom--providers--image" src="https://vendor-provider.fra1.cdn.digitaloceanspaces.com/ebetlab/game-providers/light/pragmaticplay.svg" alt="">
+          </a>
+          <a class="custom--providers--link" href="/providers/evolution">
+            <img class="custom--providers--image" src="https://vendor-provider.fra1.cdn.digitaloceanspaces.com/ebetlab/game-providers/light/Evolution%20Gaming.svg" alt="">
+          </a>
+          <a class="custom--providers--link" href="/providers/hacksaw">
+            <img class="custom--providers--image" src="https://vendor-provider.fra1.cdn.digitaloceanspaces.com/ebetlab/game-providers/light/hacksaw.svg" alt="">
+          </a>
+          <a class="custom--providers--link" href="/providers/egt">
+            <img class="custom--providers--image" src="https://vendor-provider.fra1.cdn.digitaloceanspaces.com/ebetlab/game-providers/light/egt.svg" alt="">
+          </a>
+          <a class="custom--providers--link" href="/providers/nolimitcity">
+            <img class="custom--providers--image" src="https://vendor-provider.fra1.cdn.digitaloceanspaces.com/ebetlab/game-providers/light/NoLimitCity.svg" alt="">
+          </a>
+        </div>
       </div>
     </div>
   `;
 
-        swiperElement.insertAdjacentElement("afterend", newSection);
+        swiperElement.insertAdjacentElement("afterend", section);
+
+        // 🔁 Marquee hareketi için JS ile içerik kopyalanıyor
+        const marquee = section.querySelector(
+          ".providers--marquee .marquee-content"
+        );
+        const clone = marquee.cloneNode(true);
+        marquee.parentElement.appendChild(clone);
       }
 
       // function customizeSignupModal() {
@@ -422,6 +429,39 @@
 
   #main-slider .swiper-wrapper {
   box-sizing: border-box !important;
+  }
+
+    .providers--marquee {
+    display: flex;
+    overflow: hidden;
+    position: relative;
+    padding: 20px 0;
+  }
+
+  .marquee-content {
+    display: flex;
+    animation: marqueeAnim 20s linear infinite;
+  }
+
+  .providers--marquee .marquee-content a {
+    display: inline-block;
+    margin-right: 40px;
+  }
+
+  .custom--providers--image {
+    height: 40px;
+    opacity: 0.9;
+    transition: transform 0.3s;
+  }
+
+  .custom--providers--image:hover {
+    transform: scale(1.1);
+    opacity: 1;
+  }
+
+  @keyframes marqueeAnim {
+    0%   { transform: translateX(0); }
+    100% { transform: translateX(-100%); }
   }
 
   
