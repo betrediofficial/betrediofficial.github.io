@@ -811,45 +811,6 @@
   box-sizing: border-box !important;
   }
 
-.providers--marquee {
-  display: flex;
-  overflow: hidden;
-  position: relative;
-  padding: 20px 0;
-}
-
-.marquee-content {
-  display: flex;
-  animation: marqueeAnim 20s linear infinite;
-}
-
-/* 🔽 Bu satırı EKLE: */
-.providers--marquee:hover .marquee-content {
-  animation-play-state: paused;
-}
-
-.providers--marquee .marquee-content a {
-  display: inline-block;
-  margin-right: 40px;
-}
-
-.custom--providers--image {
-  height: 40px;
-  opacity: 0.9;
-  transition: transform 0.3s;
-}
-
-.custom--providers--image:hover {
-  transform: scale(1.1);
-  opacity: 1;
-}
-
-@keyframes marqueeAnim {
-  0%   { transform: translateX(0); }
-  100% { transform: translateX(-100%); }
-}
-
-
   
       `;
       document.head.appendChild(style);
