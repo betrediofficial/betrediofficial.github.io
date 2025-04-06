@@ -872,6 +872,33 @@
   box-sizing: border-box !important;
   }
 
+  #main-slider {
+  position: relative;
+  overflow: hidden; /* taşmaları engelle */
+}
+
+#main-slider::before,
+#main-slider::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  width: 5vw;
+  height: 100%;
+  z-index: 2;
+  pointer-events: none;
+}
+
+#main-slider::before {
+  left: 0;
+  background: linear-gradient(to right, black, transparent);
+}
+
+#main-slider::after {
+  right: 0;
+  background: linear-gradient(to left, black, transparent);
+}
+
+
   
       `;
       document.head.appendChild(style);
