@@ -217,7 +217,7 @@
 
         section.className = "section custom--section--2 custom--section";
         section.innerHTML = `
-    <div class="container" style="margin-bottom: 18px !important; margintop: 18px !important;">
+    <div class="container" style="margin-bottom: 24px !important; margintop: 24px !important;">
     <div class="providers--marquee--bg"></div>
 <div class="providers--marquee">	
 				          <a class="custom--providers--link" href="/providers/pragmaticplay">
