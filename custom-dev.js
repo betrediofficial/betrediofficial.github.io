@@ -85,7 +85,67 @@
       language = window.location.pathname.split("/")[1];
       const isHomePage = isHomePageCheck();
 
+      // Slider varsa önce destroy et
+      // if (
+      //   window.mainSliderInstance &&
+      //   typeof window.mainSliderInstance.destroy === "function"
+      // ) {
+      //   window.mainSliderInstance.destroy(true, true);
+      // }
+
+      // // Swiper varsa başlat
+      // if (
+      //   typeof Swiper !== "undefined" &&
+      //   document.querySelector("#main-slider-swiper")
+      // ) {
+      //   console.log("✅ Swiper başlatılıyor...");
+
+      //   window.mainSliderInstance = new Swiper("#main-slider-swiper", {
+      //     loop: true,
+      //     autoplay: {
+      //       delay: 4000,
+      //       disableOnInteraction: false,
+      //     },
+      //     pagination: {
+      //       el: ".swiper-pagination",
+      //       clickable: true,
+      //     },
+      //     navigation: {
+      //       nextEl: ".swiper-button-next",
+      //       prevEl: ".swiper-button-prev",
+      //     },
+      //     effect: "slide",
+      //     speed: 600,
+      //   });
+
+      //   console.log("✅ Swiper başarıyla başlatıldı!");
+      // } else {
+      //   console.warn(
+      //     "❌ Swiper tanımlı değil veya #main-slider-swiper bulunamadı."
+      //   );
+      // }
+
       // if (language !== "tr") return;
+
+      // if (typeof Swiper !== "undefined") {
+      //   new Swiper("#main-slider-swiper", {
+      //     loop: true,
+      //     autoplay: {
+      //       delay: 4000,
+      //       disableOnInteraction: false,
+      //     },
+      //     pagination: {
+      //       el: ".swiper-pagination",
+      //       clickable: true,
+      //     },
+      //     navigation: {
+      //       nextEl: ".swiper-button-next",
+      //       prevEl: ".swiper-button-prev",
+      //     },
+      //     effect: "slide",
+      //     speed: 600,
+      //   });
+      // }
 
       customCSS();
 
@@ -217,7 +277,7 @@
 
         section.className = "section custom--section--2 custom--section";
         section.innerHTML = `
-    <div class="container" style="position: relative; max-width: 100% !important; margin-top: 0px !important; margin-bottom: 20px; !important; padding-left: 0px !important; padding-right: 0px !important; overflow: hidden !important;">
+    <div class="container" style="position: relative; max-width: 100% !important; margin-bottom: 20px; !important; padding-left: 0px !important; padding-right: 0px !important; padding-top: 0px !important; overflow: hidden !important;">
     <div class="providers--marquee--bg" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; background: linear-gradient(0deg, rgba(54,0,6,1) 0%, rgba(125,2,15,1) 100%);"></div>
 <div class="providers--marquee">	
 				          <a class="custom--providers--link" href="/providers/pragmaticplay">
