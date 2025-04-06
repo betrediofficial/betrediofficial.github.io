@@ -202,6 +202,45 @@
         });
       }
 
+      function injectProvidersMarquee() {
+        const container = document.querySelector("#main-slider > .container");
+
+        if (!container) return;
+
+        const swiperElement = container.querySelector("#main-slider-swiper");
+        if (!swiperElement) return;
+
+        if (container.querySelector(".custom--section--2")) return;
+
+        const newSection = document.createElement("div");
+        newSection.className = "section custom--section--2 custom--section";
+        newSection.innerHTML = `
+    <div class="container">
+      <div class="providers--marquee--bg"></div>
+      <div class="providers--marquee">
+        <a class="custom--providers--link" href="/providers/pragmaticplay">
+          <img class="custom--providers--image" src="https://vendor-provider.fra1.cdn.digitaloceanspaces.com/ebetlab/game-providers/light/pragmaticplay.svg" alt="">
+        </a>
+        <a class="custom--providers--link" href="/providers/evolution">
+          <img class="custom--providers--image" src="https://vendor-provider.fra1.cdn.digitaloceanspaces.com/ebetlab/game-providers/light/Evolution%20Gaming.svg" alt="">
+        </a>
+        <a class="custom--providers--link" href="/providers/hacksaw">
+          <img class="custom--providers--image" src="https://vendor-provider.fra1.cdn.digitaloceanspaces.com/ebetlab/game-providers/light/hacksaw.svg" alt="">
+        </a>
+        <a class="custom--providers--link" href="/providers/egt">
+          <img class="custom--providers--image" src="https://vendor-provider.fra1.cdn.digitaloceanspaces.com/ebetlab/game-providers/light/egt.svg" alt="">
+        </a>
+        <a class="custom--providers--link" href="/providers/nolimitcity">
+          <img class="custom--providers--image" src="https://vendor-provider.fra1.cdn.digitaloceanspaces.com/ebetlab/game-providers/light/NoLimitCity.svg" alt="">
+        </a>
+        <!-- Diğer provider'ları buraya ekleyebilirsin -->
+      </div>
+    </div>
+  `;
+
+        swiperElement.insertAdjacentElement("afterend", newSection);
+      }
+
       // function customizeSignupModal() {
       //   const imgUrl =
       //     "https://betrediofficial.github.io/images/signup-banner/betredi_banner.png";
@@ -298,6 +337,7 @@
       }
 
       insertCustomSidebarLink();
+      injectProvidersMarquee();
 
       headerButtons(isHomePage);
       hideBlogSection();
