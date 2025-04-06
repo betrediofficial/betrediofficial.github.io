@@ -378,6 +378,12 @@
     object-fit: cover !important;
     display: block !important;
   }
+
+
+  #main-slider .swiper-wrapper {
+  box-sizing: border-box !important;
+  }
+
   
       `;
       document.head.appendChild(style);
