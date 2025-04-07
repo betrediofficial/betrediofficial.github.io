@@ -952,10 +952,21 @@
     display: block !important;
   }
 
-
   #main-slider .swiper-wrapper {
+  transform: translate3d(0, 0, 0) !important;
+
+  width: 100% !important;
+  height: 100% !important;
   box-sizing: content-box !important;
-  }
+}
+
+
+  #main-slider .swiper-wrapper .swiper-slide {
+    width: 100% !important;
+    padding-left: 0 !important;
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+}
 
   
       `;
