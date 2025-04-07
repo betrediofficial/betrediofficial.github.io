@@ -848,6 +848,8 @@
 
       const is_mobile = isMobile();
 
+      headerButtons(isHomePage);
+
       if (!isHomePage) {
         removeHomePageWidgets();
       } else {
@@ -871,7 +873,6 @@
       insertCustomSidebarLink();
       injectProvidersMarquee();
 
-      headerButtons(isHomePage);
       hideBlogSection();
 
       customizeSignupModal();
