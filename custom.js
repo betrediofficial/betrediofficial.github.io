@@ -1,4 +1,6 @@
 (function () {
+  window.disableSwiperAutoInit = true;
+
   function overrideMainSlider() {
     const swiperEl = document.querySelector("#main-slider .swiper");
     if (!swiperEl || typeof Swiper !== "function") return;
