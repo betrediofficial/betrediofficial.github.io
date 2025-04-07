@@ -1,63 +1,4 @@
 (function () {
-  function overrideMainSlider() {
-    const swiperEl = document.querySelector("#main-slider .swiper");
-    if (!swiperEl || typeof Swiper !== "function") return;
-
-    if (swiperEl.swiper) {
-      swiperEl.swiper.destroy(true, true);
-    }
-
-    console.log("OVERRIDING MAIN SLIDER...");
-
-    window.myMainSlider = new Swiper(swiperEl, {
-      loop: true,
-      slidesPerView: 1,
-      autoplay: {
-        delay: 4000,
-        disableOnInteraction: false,
-      },
-      pagination: {
-        el: "#main-slider .swiper-pagination",
-        clickable: true,
-      },
-      navigation: {
-        nextEl: "#main-slider .swiper-button-next",
-        prevEl: "#main-slider .swiper-button-prev",
-      },
-      effect: "slide",
-      speed: 600,
-    });
-  }
-
-  const waitForSwiper = setInterval(() => {
-    const swiperEl = document.querySelector("#main-slider .swiper");
-    const swiperReady = typeof Swiper === "function";
-
-    if (swiperEl && swiperReady) {
-      clearInterval(waitForSwiper);
-      overrideMainSlider();
-    }
-  }, 100);
-
-  const observer = new MutationObserver(() => {
-    const swiperEl = document.querySelector("#main-slider .swiper");
-
-    if (
-      swiperEl &&
-      swiperEl.swiper &&
-      swiperEl.swiper !== window.myMainSlider
-    ) {
-      console.log("Detected auto-init Swiper. Destroying and overriding...");
-      swiperEl.swiper.destroy(true, true);
-      overrideMainSlider();
-    }
-  });
-
-  observer.observe(document.body, {
-    childList: true,
-    subtree: true,
-  });
-
   var language = window.location.pathname.split("/")[1];
 
   var isLoggedIn = false;
@@ -200,6 +141,68 @@
     }
 
     function initialize() {
+      function overrideMainSlider() {
+        const swiperEl = document.querySelector("#main-slider .swiper");
+        if (!swiperEl || typeof Swiper !== "function") return;
+
+        if (swiperEl.swiper) {
+          swiperEl.swiper.destroy(true, true);
+        }
+
+        console.log("OVERRIDING MAIN SLIDER...");
+
+        window.myMainSlider = new Swiper(swiperEl, {
+          loop: true,
+          slidesPerView: 1,
+          centeredSlides: false,
+          autoplay: {
+            delay: 4000,
+            disableOnInteraction: false,
+          },
+          pagination: {
+            el: "#main-slider .swiper-pagination",
+            clickable: true,
+          },
+          navigation: {
+            nextEl: "#main-slider .swiper-button-next",
+            prevEl: "#main-slider .swiper-button-prev",
+          },
+          effect: "slide",
+          speed: 600,
+        });
+      }
+
+      const waitForSwiper = setInterval(() => {
+        const swiperEl = document.querySelector("#main-slider .swiper");
+        const swiperReady = typeof Swiper === "function";
+
+        if (swiperEl && swiperReady) {
+          clearInterval(waitForSwiper);
+          overrideMainSlider();
+        }
+      }, 100);
+
+      const observer = new MutationObserver(() => {
+        const swiperEl = document.querySelector("#main-slider .swiper");
+
+        if (
+          swiperEl &&
+          swiperEl.swiper &&
+          swiperEl.swiper !== window.myMainSlider
+        ) {
+          console.log(
+            "Detected auto-init Swiper. Destroying and overriding..."
+          );
+          swiperEl.swiper.destroy(true, true);
+          overrideMainSlider();
+        }
+      });
+
+      observer.observe(document.body, {
+        childList: true,
+        subtree: true,
+      });
+
       isLoggedIn = $(".header__signin").length > 0 ? false : true;
       language = window.location.pathname.split("/")[1];
       const isHomePage = isHomePageCheck();
