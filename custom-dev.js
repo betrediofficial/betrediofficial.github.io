@@ -824,6 +824,10 @@
     margin-right: 0 !important;
 }
 
+.autoplay-progress {
+display: none !important;
+}
+
 
   
       `;
