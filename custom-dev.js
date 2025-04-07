@@ -229,45 +229,45 @@
       }
 
       function setupSwiper() {
-        const swiperInterval = setInterval(() => {
-          const target = document.querySelector(
-            "#main-slider-swiper .swiper-wrapper"
-          );
+        // const swiperInterval = setInterval(() => {}, 300);
 
-          if (target && typeof Swiper !== "undefined") {
-            clearInterval(swiperInterval);
+        const target = document.querySelector(
+          "#main-slider-swiper .swiper-wrapper"
+        );
 
-            destroyExistingSwiper();
+        if (target && typeof Swiper !== "undefined") {
+          clearInterval(swiperInterval);
 
-            window.mySwiper = new Swiper("#main-slider-swiper", {
-              loop: true,
-              centeredSlides: false,
-              slidesPerView: 1,
-              autoplay: {
-                delay: 4000,
-                disableOnInteraction: false,
+          destroyExistingSwiper();
+
+          window.mySwiper = new Swiper("#main-slider-swiper", {
+            loop: true,
+            centeredSlides: false,
+            slidesPerView: 1,
+            autoplay: {
+              delay: 4000,
+              disableOnInteraction: false,
+            },
+            pagination: {
+              el: ".swiper-pagination",
+              clickable: true,
+            },
+            navigation: {
+              nextEl: ".swiper-button-next",
+              prevEl: ".swiper-button-prev",
+            },
+            effect: "slide",
+            speed: 600,
+            on: {
+              init: function () {
+                setTimeout(() => {
+                  this.update();
+                  this.slideToLoop(0, 0);
+                }, 100);
               },
-              pagination: {
-                el: ".swiper-pagination",
-                clickable: true,
-              },
-              navigation: {
-                nextEl: ".swiper-button-next",
-                prevEl: ".swiper-button-prev",
-              },
-              effect: "slide",
-              speed: 600,
-              on: {
-                init: function () {
-                  setTimeout(() => {
-                    this.update();
-                    this.slideToLoop(0, 0);
-                  }, 100);
-                },
-              },
-            });
-          }
-        }, 300);
+            },
+          });
+        }
       }
 
       // *******
