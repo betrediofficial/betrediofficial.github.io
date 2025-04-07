@@ -1503,8 +1503,6 @@
       $(".header__actions").prepend(`
 <span class="manual-buttons" id="web-header-buttons">
 <div class="buttonsContainer">
-     
-
    <div class="button-section" style="align-items: center;">
       <a href="https://redisportv.com/" target="_blank" class="manual-redi-button" style="border-radius: 4px; border: none; font-size: 12px; height: 32px;">
       <span style="margin-right: 6px;margin-top: -4px; font-size: .4rem;">
