@@ -169,18 +169,14 @@
       });
     }
 
-    // DOM ve Swiper hazır mı? Kontrol et
     const waitForReady = setInterval(() => {
-      const ready =
-        document.querySelector("#main-slider .swiper") &&
-        typeof Swiper === "function";
+      const ready = document.querySelector("#main-slider .swiper");
       if (ready) {
         clearInterval(waitForReady);
         initialize();
       }
     }, 300);
 
-    // Swiper bozulursa yeniden yükle
     const observer = new MutationObserver(() => {
       const swiperEl = document.querySelector("#main-slider .swiper");
       if (
@@ -189,7 +185,7 @@
         swiperEl.swiper !== window.myMainSlider
       ) {
         swiperEl.swiper.destroy(true, true);
-        customizeSwiper(); // sadece slider'ı tekrar kur
+        customizeSwiper();
       }
     });
 
@@ -815,13 +811,6 @@
   width: 100% !important;
   height: 100% !important;
   box-sizing: content-box !important;
-}
-
-
-  #main-slider .swiper-wrapper .swiper-slide {
-    width: 100%;
-    margin-left: 0 !important;
-    margin-right: 0 !important;
 }
 
 

@@ -958,13 +958,6 @@
   box-sizing: content-box !important;
 }
 
-
-  #main-slider .swiper-wrapper .swiper-slide {
-    width: 100%;
-    margin-left: 0 !important;
-    margin-right: 0 !important;
-}
-
   
       `;
       document.head.appendChild(style);
