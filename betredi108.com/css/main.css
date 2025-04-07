@@ -369,7 +369,7 @@ body::-webkit-scrollbar-track {
     background-color: var(--tf-bg2);
     border-bottom: 1px solid var(--tf-border);
     height: 80px;
-    z-index: 1054
+    z-index: 0;
 }
 
 .header--logged .header__logo {

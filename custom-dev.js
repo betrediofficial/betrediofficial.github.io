@@ -362,331 +362,331 @@
     <div class="container" style="position: relative; max-width: 100% !important; margin-bottom: 20px; !important; padding-left: 0px !important; padding-right: 0px !important; padding-top: 0px !important; overflow: hidden !important;">
     <div class="providers--marquee--bg" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; background: linear-gradient(0deg, rgba(54,0,6,1) 0%, rgba(125,2,15,1) 100%);"></div>
 <div class="providers--marquee">	
-				          <a class="custom--providers--link" href="/providers/pragmaticplay">
+				          <a class="custom--providers--link" href="https://betredi108.com/tr/providers/pragmaticplay">
 				            <img class="custom--providers--image" src="https://vendor-provider.fra1.cdn.digitaloceanspaces.com/ebetlab/game-providers/light/pragmaticplay.svg" alt="">
 				          </a>
 				        
-				          <a class="custom--providers--link" href="/providers/evolution">
+				          <a class="custom--providers--link" href="https://betredi108.com/tr/providers/evolution">
 				            <img class="custom--providers--image" src="https://vendor-provider.fra1.cdn.digitaloceanspaces.com/ebetlab/game-providers/light/Evolution%20Gaming.svg" alt="">
 				          </a>
 				        
-				          <a class="custom--providers--link" href="/providers/hacksaw">
+				          <a class="custom--providers--link" href="https://betredi108.com/tr/providers/hacksaw">
 				            <img class="custom--providers--image" src="https://vendor-provider.fra1.cdn.digitaloceanspaces.com/ebetlab/game-providers/light/hacksaw.svg" alt="">
 				          </a>
 				        
-				          <a class="custom--providers--link" href="/providers/egt">
+				          <a class="custom--providers--link" href="https://betredi108.com/tr/providers/egt">
 				            <img class="custom--providers--image" src="https://vendor-provider.fra1.cdn.digitaloceanspaces.com/ebetlab/game-providers/light/egt.svg" alt="">
 				          </a>
 				        
-				          <a class="custom--providers--link" href="/providers/nolimitcity">
+				          <a class="custom--providers--link" href="https://betredi108.com/tr/providers/nolimitcity">
 				            <img class="custom--providers--image" src="https://vendor-provider.fra1.cdn.digitaloceanspaces.com/ebetlab/game-providers/light/NoLimitCity.svg" alt="">
 				          </a>
 				        
-				          <a class="custom--providers--link" href="/providers/egt-interactive">
+				          <a class="custom--providers--link" href="https://betredi108.com/tr/providers/egt-interactive">
 				            <img class="custom--providers--image" src="https://vendor-provider.fra1.cdn.digitaloceanspaces.com/ebetlab/game-providers/light/amusnet.svg" alt="">
 				          </a>
 				        
-				          <a class="custom--providers--link" href="/providers/playson">
+				          <a class="custom--providers--link" href="https://betredi108.com/tr/providers/playson">
 				            <img class="custom--providers--image" src="https://vendor-provider.fra1.cdn.digitaloceanspaces.com/ebetlab/game-providers/light/playson.svg" alt="">
 				          </a>
 				        
-				          <a class="custom--providers--link" href="/providers/netent">
+				          <a class="custom--providers--link" href="https://betredi108.com/tr/providers/netent">
 				            <img class="custom--providers--image" src="https://vendor-provider.fra1.cdn.digitaloceanspaces.com/ebetlab/game-providers/light/netent.svg" alt="">
 				          </a>
 				        
-				          <a class="custom--providers--link" href="/providers/popiplay">
+				          <a class="custom--providers--link" href="https://betredi108.com/tr/providers/popiplay">
 				            <img class="custom--providers--image" src="https://vendor-provider.fra1.cdn.digitaloceanspaces.com/ebetlab/game-providers/light/popiplay.svg" alt="">
 				          </a>
 				        
-				          <a class="custom--providers--link" href="/providers/thunderkick">
+				          <a class="custom--providers--link" href="https://betredi108.com/tr/providers/thunderkick">
 				            <img class="custom--providers--image" src="https://vendor-provider.fra1.cdn.digitaloceanspaces.com/ebetlab/game-providers/light/thunderkick.svg" alt="">
 				          </a>
 				        
-				          <a class="custom--providers--link" href="/providers/booming">
+				          <a class="custom--providers--link" href="https://betredi108.com/tr/providers/booming">
 				            <img class="custom--providers--image" src="https://vendor-provider.fra1.cdn.digitaloceanspaces.com/ebetlab/game-providers/light/booming.svg" alt="">
 				          </a>
 				        
-				          <a class="custom--providers--link" href="/providers/redtiger">
+				          <a class="custom--providers--link" href="https://betredi108.com/tr/providers/redtiger">
 				            <img class="custom--providers--image" src="https://vendor-provider.fra1.cdn.digitaloceanspaces.com/ebetlab/game-providers/light/Red%20Tiger%20Gaming.svg" alt="">
 				          </a>
 				        
-				          <a class="custom--providers--link" href="/providers/pragmaticlive">
+				          <a class="custom--providers--link" href="https://betredi108.com/tr/providers/pragmaticlive">
 				            <img class="custom--providers--image" src="https://vendor-provider.fra1.cdn.digitaloceanspaces.com/ebetlab/game-providers/light/pragmatic-live-light.svg" alt="">
 				          </a>
 				        
-				          <a class="custom--providers--link" href="/providers/bgaming">
+				          <a class="custom--providers--link" href="https://betredi108.com/tr/providers/bgaming">
 				            <img class="custom--providers--image" src="https://vendor-provider.fra1.cdn.digitaloceanspaces.com/ebetlab/game-providers/light/softswiss.svg" alt="">
 				          </a>
 				        
-				          <a class="custom--providers--link" href="/providers/gameart">
+				          <a class="custom--providers--link" href="https://betredi108.com/tr/providers/gameart">
 				            <img class="custom--providers--image" src="https://vendor-provider.fra1.cdn.digitaloceanspaces.com/ebetlab/game-providers/light/gameart.svg" alt="">
 				          </a>
 				        
-				          <a class="custom--providers--link" href="/providers/fantasma">
+				          <a class="custom--providers--link" href="https://betredi108.com/tr/providers/fantasma">
 				            <img class="custom--providers--image" src="https://vendor-provider.fra1.cdn.digitaloceanspaces.com/ebetlab/game-providers/light/fantasma.svg" alt="">
 				          </a>
 				        
-				          <a class="custom--providers--link" href="/providers/slotmill">
+				          <a class="custom--providers--link" href="https://betredi108.com/tr/providers/slotmill">
 				            <img class="custom--providers--image" src="https://vendor-provider.fra1.cdn.digitaloceanspaces.com/ebetlab/game-providers/light/slotmill.svg" alt="">
 				          </a>
 				        
-				          <a class="custom--providers--link" href="/providers/1spin4win">
+				          <a class="custom--providers--link" href="https://betredi108.com/tr/providers/1spin4win">
 				            <img class="custom--providers--image" src="https://vendor-provider.fra1.cdn.digitaloceanspaces.com/ebetlab/game-providers/light/1spin4win.svg" alt="">
 				          </a>
 				        
-				          <a class="custom--providers--link" href="/providers/aesexybaccarat">
+				          <a class="custom--providers--link" href="https://betredi108.com/tr/providers/aesexybaccarat">
 				            <img class="custom--providers--image" src="https://vendor-provider.fra1.cdn.digitaloceanspaces.com/ebetlab/game-providers/light/AE%20Sexy.svg" alt="">
 				          </a>
 				        
-				          <a class="custom--providers--link" href="/providers/5men">
+				          <a class="custom--providers--link" href="https://betredi108.com/tr/providers/5men">
 				            <img class="custom--providers--image" src="https://vendor-provider.fra1.cdn.digitaloceanspaces.com/ebetlab/game-providers/light/5men.svg" alt="">
 				          </a>
 				        
-				          <a class="custom--providers--link" href="/providers/novomatic">
+				          <a class="custom--providers--link" href="https://betredi108.com/tr/providers/novomatic">
 				            <img class="custom--providers--image" src="https://vendor-provider.fra1.cdn.digitaloceanspaces.com/ebetlab/game-providers/light/novomatic.svg" alt="">
 				          </a>
 				        
-				          <a class="custom--providers--link" href="/providers/7mojos">
+				          <a class="custom--providers--link" href="https://betredi108.com/tr/providers/7mojos">
 				            <img class="custom--providers--image" src="https://vendor-provider.fra1.cdn.digitaloceanspaces.com/ebetlab/game-providers/light/7%20mojos.svg" alt="">
 				          </a>
 				        
-				          <a class="custom--providers--link" href="/providers/alg">
+				          <a class="custom--providers--link" href="https://betredi108.com/tr/providers/alg">
 				            <img class="custom--providers--image" src="https://vendor-provider.fra1.cdn.digitaloceanspaces.com/ebetlab/game-providers/light/alg.svg" alt="">
 				          </a>
 				        
-				          <a class="custom--providers--link" href="/providers/amatic">
+				          <a class="custom--providers--link" href="https://betredi108.com/tr/providers/amatic">
 				            <img class="custom--providers--image" src="https://vendor-provider.fra1.cdn.digitaloceanspaces.com/ebetlab/game-providers/light/amatic.svg" alt="">
 				          </a>
 				        
-				          <a class="custom--providers--link" href="/providers/endorphina">
+				          <a class="custom--providers--link" href="https://betredi108.com/tr/providers/endorphina">
 				            <img class="custom--providers--image" src="https://vendor-provider.fra1.cdn.digitaloceanspaces.com/ebetlab/game-providers/light/endorphina.svg" alt="">
 				          </a>
 				        
-				          <a class="custom--providers--link" href="/providers/pgsoft">
+				          <a class="custom--providers--link" href="https://betredi108.com/tr/providers/pgsoft">
 				            <img class="custom--providers--image" src="https://vendor-provider.fra1.cdn.digitaloceanspaces.com/ebetlab/game-providers/light/Pocket%20Games%20Soft.svg" alt="">
 				          </a>
 				        
-				          <a class="custom--providers--link" href="/providers/apollo">
+				          <a class="custom--providers--link" href="https://betredi108.com/tr/providers/apollo">
 				            <img class="custom--providers--image" src="https://vendor-provider.fra1.cdn.digitaloceanspaces.com/ebetlab/game-providers/light/Apollo%20Games.svg" alt="">
 				          </a>
 				        
-				          <a class="custom--providers--link" href="/providers/asiagaming">
+				          <a class="custom--providers--link" href="https://betredi108.com/tr/providers/asiagaming">
 				            <img class="custom--providers--image" src="https://vendor-provider.fra1.cdn.digitaloceanspaces.com/ebetlab/game-providers/light/Asia%20Gaming.svg" alt="">
 				          </a>
 				        
-				          <a class="custom--providers--link" href="/providers/atomic">
+				          <a class="custom--providers--link" href="https://betredi108.com/tr/providers/atomic">
 				            <img class="custom--providers--image" src="https://vendor-provider.fra1.cdn.digitaloceanspaces.com/ebetlab/game-providers/light/atomic%20slot.svg" alt="">
 				          </a>
 				        
-				          <a class="custom--providers--link" href="/providers/beefee">
+				          <a class="custom--providers--link" href="https://betredi108.com/tr/providers/beefee">
 				            <img class="custom--providers--image" src="https://vendor-provider.fra1.cdn.digitaloceanspaces.com/ebetlab/game-providers/light/BeeFee%20Games.svg" alt="">
 				          </a>
 				        
-				          <a class="custom--providers--link" href="/providers/belatra">
+				          <a class="custom--providers--link" href="https://betredi108.com/tr/providers/belatra">
 				            <img class="custom--providers--image" src="https://vendor-provider.fra1.cdn.digitaloceanspaces.com/ebetlab/game-providers/light/belatra.svg" alt="">
 				          </a>
 				        
-				          <a class="custom--providers--link" href="/providers/betsolutions">
+				          <a class="custom--providers--link" href="https://betredi108.com/tr/providers/betsolutions">
 				            <img class="custom--providers--image" src="https://vendor-provider.fra1.cdn.digitaloceanspaces.com/ebetlab/game-providers/light/Betsolutions.svg" alt="">
 				          </a>
 				        
-				          <a class="custom--providers--link" href="/providers/bet2tech">
+				          <a class="custom--providers--link" href="https://betredi108.com/tr/providers/bet2tech">
 				            <img class="custom--providers--image" src="https://vendor-provider.fra1.cdn.digitaloceanspaces.com/ebetlab/game-providers/light/bet%202%20tech.svg" alt="">
 				          </a>
 				        
-				          <a class="custom--providers--link" href="/providers/beterlive">
+				          <a class="custom--providers--link" href="https://betredi108.com/tr/providers/beterlive">
 				            <img class="custom--providers--image" src="https://vendor-provider.fra1.cdn.digitaloceanspaces.com/ebetlab/game-providers/light/beterlive.svg" alt="">
 				          </a>
 				        
-				          <a class="custom--providers--link" href="/providers/betradarvs">
+				          <a class="custom--providers--link" href="https://betredi108.com/tr/providers/betradarvs">
 				            <img class="custom--providers--image" src="https://vendor-provider.fra1.cdn.digitaloceanspaces.com/ebetlab/game-providers/light/Betradar%20Virtual%20sports.svg" alt="">
 				          </a>
 				        
-				          <a class="custom--providers--link" href="/providers/betsoft">
+				          <a class="custom--providers--link" href="https://betredi108.com/tr/providers/betsoft">
 				            <img class="custom--providers--image" src="https://vendor-provider.fra1.cdn.digitaloceanspaces.com/ebetlab/game-providers/light/betsoft.svg" alt="">
 				          </a>
 				        
-				          <a class="custom--providers--link" href="/providers/eagaming">
+				          <a class="custom--providers--link" href="https://betredi108.com/tr/providers/eagaming">
 				            <img class="custom--providers--image" src="https://vendor-provider.fra1.cdn.digitaloceanspaces.com/ebetlab/game-providers/light/ea%20gaming.svg" alt="">
 				          </a>
 				        
-				          <a class="custom--providers--link" href="/providers/concept">
+				          <a class="custom--providers--link" href="https://betredi108.com/tr/providers/concept">
 				            <img class="custom--providers--image" src="https://vendor-provider.fra1.cdn.digitaloceanspaces.com/ebetlab/game-providers/light/Concept%20Gaming.svg" alt="">
 				          </a>
 				        
-				          <a class="custom--providers--link" href="/providers/cq9">
+				          <a class="custom--providers--link" href="https://betredi108.com/tr/providers/cq9">
 				            <img class="custom--providers--image" src="https://vendor-provider.fra1.cdn.digitaloceanspaces.com/ebetlab/game-providers/light/CQ9.svg" alt="">
 				          </a>
 				        
-				          <a class="custom--providers--link" href="/providers/ctgaming">
+				          <a class="custom--providers--link" href="https://betredi108.com/tr/providers/ctgaming">
 				            <img class="custom--providers--image" src="https://vendor-provider.fra1.cdn.digitaloceanspaces.com/ebetlab/game-providers/light/CT%20Gaming.svg" alt="">
 				          </a>
 				        
-				          <a class="custom--providers--link" href="/providers/everymatrix">
+				          <a class="custom--providers--link" href="https://betredi108.com/tr/providers/everymatrix">
 				            <img class="custom--providers--image" src="https://vendor-provider.fra1.cdn.digitaloceanspaces.com/ebetlab/game-providers/light/everymatrix.svg" alt="">
 				          </a>
 				        
-				          <a class="custom--providers--link" href="/providers/evoplay">
+				          <a class="custom--providers--link" href="https://betredi108.com/tr/providers/evoplay">
 				            <img class="custom--providers--image" src="https://vendor-provider.fra1.cdn.digitaloceanspaces.com/ebetlab/game-providers/light/evoplay.svg" alt="">
 				          </a>
 				        
-				          <a class="custom--providers--link" href="/providers/ezugi">
+				          <a class="custom--providers--link" href="https://betredi108.com/tr/providers/ezugi">
 				            <img class="custom--providers--image" src="https://vendor-provider.fra1.cdn.digitaloceanspaces.com/ebetlab/game-providers/light/ezugi.svg" alt="">
 				          </a>
 				        
-				          <a class="custom--providers--link" href="/providers/fazi">
+				          <a class="custom--providers--link" href="https://betredi108.com/tr/providers/fazi">
 				            <img class="custom--providers--image" src="https://vendor-provider.fra1.cdn.digitaloceanspaces.com/ebetlab/game-providers/light/fazi.svg" alt="">
 				          </a>
 				        
-				          <a class="custom--providers--link" href="/providers/fugaso">
+				          <a class="custom--providers--link" href="https://betredi108.com/tr/providers/fugaso">
 				            <img class="custom--providers--image" src="https://vendor-provider.fra1.cdn.digitaloceanspaces.com/ebetlab/game-providers/light/fugaso.svg" alt="">
 				          </a>
 				        
-				          <a class="custom--providers--link" href="/providers/gamebeat">
+				          <a class="custom--providers--link" href="https://betredi108.com/tr/providers/gamebeat">
 				            <img class="custom--providers--image" src="https://vendor-provider.fra1.cdn.digitaloceanspaces.com/ebetlab/game-providers/light/gamebeat.svg" alt="">
 				          </a>
 				        
-				          <a class="custom--providers--link" href="/providers/gaming7777">
+				          <a class="custom--providers--link" href="https://betredi108.com/tr/providers/gaming7777">
 				            <img class="custom--providers--image" src="https://vendor-provider.fra1.cdn.digitaloceanspaces.com/ebetlab/game-providers/light/Gaming%207777.svg" alt="">
 				          </a>
 				        
-				          <a class="custom--providers--link" href="/providers/genii">
+				          <a class="custom--providers--link" href="https://betredi108.com/tr/providers/genii">
 				            <img class="custom--providers--image" src="https://vendor-provider.fra1.cdn.digitaloceanspaces.com/ebetlab/game-providers/light/Genii.svg" alt="">
 				          </a>
 				        
-				          <a class="custom--providers--link" href="/providers/givme">
+				          <a class="custom--providers--link" href="https://betredi108.com/tr/providers/givme">
 				            <img class="custom--providers--image" src="https://vendor-provider.fra1.cdn.digitaloceanspaces.com/ebetlab/game-providers/light/givme%20games.svg" alt="">
 				          </a>
 				        
-				          <a class="custom--providers--link" href="/providers/goldenhero">
+				          <a class="custom--providers--link" href="https://betredi108.com/tr/providers/goldenhero">
 				            <img class="custom--providers--image" src="https://vendor-provider.fra1.cdn.digitaloceanspaces.com/ebetlab/game-providers/light/golden%20hero.svg" alt="">
 				          </a>
 				        
-				          <a class="custom--providers--link" href="/providers/habanero">
+				          <a class="custom--providers--link" href="https://betredi108.com/tr/providers/habanero">
 				            <img class="custom--providers--image" src="https://vendor-provider.fra1.cdn.digitaloceanspaces.com/ebetlab/game-providers/light/habanero.svg" alt="">
 				          </a>
 				        
-				          <a class="custom--providers--link" href="/providers/hogaming">
+				          <a class="custom--providers--link" href="https://betredi108.com/tr/providers/hogaming">
 				            <img class="custom--providers--image" src="https://vendor-provider.fra1.cdn.digitaloceanspaces.com/ebetlab/game-providers/light/HoGaming.svg" alt="">
 				          </a>
 				        
-				          <a class="custom--providers--link" href="/providers/hollegames">
+				          <a class="custom--providers--link" href="https://betredi108.com/tr/providers/hollegames">
 				            <img class="custom--providers--image" src="https://vendor-provider.fra1.cdn.digitaloceanspaces.com/ebetlab/game-providers/light/hollegames.svg" alt="">
 				          </a>
 				        
-				          <a class="custom--providers--link" href="/providers/igrosoft">
+				          <a class="custom--providers--link" href="https://betredi108.com/tr/providers/igrosoft">
 				            <img class="custom--providers--image" src="https://vendor-provider.fra1.cdn.digitaloceanspaces.com/ebetlab/game-providers/light/Igrosoft.svg" alt="">
 				          </a>
 				        
-				          <a class="custom--providers--link" href="/providers/irondog">
+				          <a class="custom--providers--link" href="https://betredi108.com/tr/providers/irondog">
 				            <img class="custom--providers--image" src="https://vendor-provider.fra1.cdn.digitaloceanspaces.com/ebetlab/game-providers/light/irondog.svg" alt="">
 				          </a>
 				        
-				          <a class="custom--providers--link" href="/providers/jaderabbit">
+				          <a class="custom--providers--link" href="https://betredi108.com/tr/providers/jaderabbit">
 				            <img class="custom--providers--image" src="https://vendor-provider.fra1.cdn.digitaloceanspaces.com/ebetlab/game-providers/light/jaderabbit.svg" alt="">
 				          </a>
 				        
-				          <a class="custom--providers--link" href="/providers/jdb">
+				          <a class="custom--providers--link" href="https://betredi108.com/tr/providers/jdb">
 				            <img class="custom--providers--image" src="https://vendor-provider.fra1.cdn.digitaloceanspaces.com/ebetlab/game-providers/light/JDB.svg" alt="">
 				          </a>
 				        
-				          <a class="custom--providers--link" href="/providers/kalamba">
+				          <a class="custom--providers--link" href="https://betredi108.com/tr/providers/kalamba">
 				            <img class="custom--providers--image" src="https://vendor-provider.fra1.cdn.digitaloceanspaces.com/ebetlab/game-providers/light/kalamba.svg" alt="">
 				          </a>
 				        
-				          <a class="custom--providers--link" href="/providers/kiron">
+				          <a class="custom--providers--link" href="https://betredi108.com/tr/providers/kiron">
 				            <img class="custom--providers--image" src="https://vendor-provider.fra1.cdn.digitaloceanspaces.com/ebetlab/game-providers/light/Kiron%20Interactive.svg" alt="">
 				          </a>
 				        
-				          <a class="custom--providers--link" href="/providers/leander">
+				          <a class="custom--providers--link" href="https://betredi108.com/tr/providers/leander">
 				            <img class="custom--providers--image" src="https://vendor-provider.fra1.cdn.digitaloceanspaces.com/ebetlab/game-providers/light/Leander.svg" alt="">
 				          </a>
 				        
-				          <a class="custom--providers--link" href="/providers/leap">
+				          <a class="custom--providers--link" href="https://betredi108.com/tr/providers/leap">
 				            <img class="custom--providers--image" src="https://vendor-provider.fra1.cdn.digitaloceanspaces.com/ebetlab/game-providers/light/Leap.svg" alt="">
 				          </a>
 				        
-				          <a class="custom--providers--link" href="/providers/livegames">
+				          <a class="custom--providers--link" href="https://betredi108.com/tr/providers/livegames">
 				            <img class="custom--providers--image" src="https://vendor-provider.fra1.cdn.digitaloceanspaces.com/ebetlab/game-providers/light/Live%20Games.svg" alt="">
 				          </a>
 				        
-				          <a class="custom--providers--link" href="/providers/lucky">
+				          <a class="custom--providers--link" href="https://betredi108.com/tr/providers/lucky">
 				            <img class="custom--providers--image" src="https://vendor-provider.fra1.cdn.digitaloceanspaces.com/ebetlab/game-providers/light/lucky.svg" alt="">
 				          </a>
 				        
-				          <a class="custom--providers--link" href="/providers/luckystreak">
+				          <a class="custom--providers--link" href="https://betredi108.com/tr/providers/luckystreak">
 				            <img class="custom--providers--image" src="https://vendor-provider.fra1.cdn.digitaloceanspaces.com/ebetlab/game-providers/light/luckystreak.svg" alt="">
 				          </a>
 				        
-				          <a class="custom--providers--link" href="/providers/mascotgaming">
+				          <a class="custom--providers--link" href="https://betredi108.com/tr/providers/mascotgaming">
 				            <img class="custom--providers--image" src="https://vendor-provider.fra1.cdn.digitaloceanspaces.com/ebetlab/game-providers/light/mascot.svg" alt="">
 				          </a>
 				        
-				          <a class="custom--providers--link" href="/providers/merkurgaming">
+				          <a class="custom--providers--link" href="https://betredi108.com/tr/providers/merkurgaming">
 				            <img class="custom--providers--image" src="https://vendor-provider.fra1.cdn.digitaloceanspaces.com/ebetlab/game-providers/light/merkur%20gaming.svg" alt="">
 				          </a>
 				        
-				          <a class="custom--providers--link" href="/providers/mplay">
+				          <a class="custom--providers--link" href="https://betredi108.com/tr/providers/mplay">
 				            <img class="custom--providers--image" src="https://vendor-provider.fra1.cdn.digitaloceanspaces.com/ebetlab/game-providers/light/m%20play.svg" alt="">
 				          </a>
 				        
-				          <a class="custom--providers--link" href="/providers/mrslotty">
+				          <a class="custom--providers--link" href="https://betredi108.com/tr/providers/mrslotty">
 				            <img class="custom--providers--image" src="https://vendor-provider.fra1.cdn.digitaloceanspaces.com/ebetlab/game-providers/light/mrslotty.svg" alt="">
 				          </a>
 				        
-				          <a class="custom--providers--link" href="/providers/netgame">
+				          <a class="custom--providers--link" href="https://betredi108.com/tr/providers/netgame">
 				            <img class="custom--providers--image" src="https://vendor-provider.fra1.cdn.digitaloceanspaces.com/ebetlab/game-providers/light/netgame.svg" alt="">
 				          </a>
 				        
-				          <a class="custom--providers--link" href="/providers/nucleus">
+				          <a class="custom--providers--link" href="https://betredi108.com/tr/providers/nucleus">
 				            <img class="custom--providers--image" src="https://vendor-provider.fra1.cdn.digitaloceanspaces.com/ebetlab/game-providers/light/nucleus.svg" alt="">
 				          </a>
 				        
-				          <a class="custom--providers--link" href="/providers/oryx">
+				          <a class="custom--providers--link" href="https://betredi108.com/tr/providers/oryx">
 				            <img class="custom--providers--image" src="https://vendor-provider.fra1.cdn.digitaloceanspaces.com/ebetlab/game-providers/light/oryx.svg" alt="">
 				          </a>
 				        
-				          <a class="custom--providers--link" href="/providers/playtech">
+				          <a class="custom--providers--link" href="https://betredi108.com/tr/providers/playtech">
 				            <img class="custom--providers--image" src="https://vendor-provider.fra1.cdn.digitaloceanspaces.com/ebetlab/game-providers/light/Playtech%20slots.svg" alt="">
 				          </a>
 				        
-				          <a class="custom--providers--link" href="/providers/quickspin">
+				          <a class="custom--providers--link" href="https://betredi108.com/tr/providers/quickspin">
 				            <img class="custom--providers--image" src="https://vendor-provider.fra1.cdn.digitaloceanspaces.com/ebetlab/game-providers/light/quickspin.svg" alt="">
 				          </a>
 				        
-				          <a class="custom--providers--link" href="/providers/redrake">
+				          <a class="custom--providers--link" href="https://betredi108.com/tr/providers/redrake">
 				            <img class="custom--providers--image" src="https://vendor-provider.fra1.cdn.digitaloceanspaces.com/ebetlab/game-providers/light/Red%20Rake%20Gaming.svg" alt="">
 				          </a>
 				        
-				          <a class="custom--providers--link" href="/providers/reevo">
+				          <a class="custom--providers--link" href="https://betredi108.com/tr/providers/reevo">
 				            <img class="custom--providers--image" src="https://vendor-provider.fra1.cdn.digitaloceanspaces.com/ebetlab/game-providers/light/reevo.svg" alt="">
 				          </a>
 				        
-				          <a class="custom--providers--link" href="/providers/sagaming">
+				          <a class="custom--providers--link" href="https://betredi108.com/tr/providers/sagaming">
 				            <img class="custom--providers--image" src="https://vendor-provider.fra1.cdn.digitaloceanspaces.com/ebetlab/game-providers/light/SA%20Gaming.svg" alt="">
 				          </a>
 				        
-				          <a class="custom--providers--link" href="/providers/salsa">
+				          <a class="custom--providers--link" href="https://betredi108.com/tr/providers/salsa">
 				            <img class="custom--providers--image" src="https://vendor-provider.fra1.cdn.digitaloceanspaces.com/ebetlab/game-providers/light/Salsa%20technology.svg" alt="">
 				          </a>
 				        
-				          <a class="custom--providers--link" href="/providers/spinomenal">
+				          <a class="custom--providers--link" href="https://betredi108.com/tr/providers/spinomenal">
 				            <img class="custom--providers--image" src="https://vendor-provider.fra1.cdn.digitaloceanspaces.com/ebetlab/game-providers/light/spinomenal.svg" alt="">
 				          </a>
 				        
-				          <a class="custom--providers--link" href="/providers/spinza">
+				          <a class="custom--providers--link" href="https://betredi108.com/tr/providers/spinza">
 				            <img class="custom--providers--image" src="https://vendor-provider.fra1.cdn.digitaloceanspaces.com/ebetlab/game-providers/light/spinza.svg" alt="">
 				          </a>
 				        
-				          <a class="custom--providers--link" href="/providers/spribe">
+				          <a class="custom--providers--link" href="https://betredi108.com/tr/providers/spribe">
 				            <img class="custom--providers--image" src="https://vendor-provider.fra1.cdn.digitaloceanspaces.com/ebetlab/game-providers/light/spribe.svg" alt="">
 				          </a>
 				        
-				          <a class="custom--providers--link" href="/providers/swintt">
+				          <a class="custom--providers--link" href="https://betredi108.com/tr/providers/swintt">
 				            <img class="custom--providers--image" src="https://vendor-provider.fra1.cdn.digitaloceanspaces.com/ebetlab/game-providers/light/swintt.svg" alt="">
 				          </a>
 				        
-				          <a class="custom--providers--link" href="/providers/tomhornnative">
+				          <a class="custom--providers--link" href="https://betredi108.com/tr/providers/tomhornnative">
 				            <img class="custom--providers--image" src="https://vendor-provider.fra1.cdn.digitaloceanspaces.com/ebetlab/game-providers/light/tomhorn.svg" alt="">
 				          </a>
 				        
@@ -694,67 +694,67 @@
 				            <img class="custom--providers--image" src="https://vendor-provider.fra1.cdn.digitaloceanspaces.com/ebetlab/game-providers/lightuelab.svg" alt="">
 				          </a>
 				        
-				          <a class="custom--providers--link" href="/providers/turbogames">
+				          <a class="custom--providers--link" href="https://betredi108.com/tr/providers/turbogames">
 				            <img class="custom--providers--image" src="https://vendor-provider.fra1.cdn.digitaloceanspaces.com/ebetlab/game-providers/light/turbogames.svg" alt="">
 				          </a>
 				        
-				          <a class="custom--providers--link" href="/providers/tvbet">
+				          <a class="custom--providers--link" href="https://betredi108.com/tr/providers/tvbet">
 				            <img class="custom--providers--image" src="https://vendor-provider.fra1.cdn.digitaloceanspaces.com/ebetlab/game-providers/light/tv%20bet.svg" alt="">
 				          </a>
 				        
-				          <a class="custom--providers--link" href="/providers/vivogaming">
+				          <a class="custom--providers--link" href="https://betredi108.com/tr/providers/vivogaming">
 				            <img class="custom--providers--image" src="https://vendor-provider.fra1.cdn.digitaloceanspaces.com/ebetlab/game-providers/light/Vivo%20Gaming.svg" alt="">
 				          </a>
 				        
-				          <a class="custom--providers--link" href="/providers/wizard">
+				          <a class="custom--providers--link" href="https://betredi108.com/tr/providers/wizard">
 				            <img class="custom--providers--image" src="https://vendor-provider.fra1.cdn.digitaloceanspaces.com/ebetlab/game-providers/light/wazdan.svg" alt="">
 				          </a>
 				        
-				          <a class="custom--providers--link" href="/providers/worldmatch">
+				          <a class="custom--providers--link" href="https://betredi108.com/tr/providers/worldmatch">
 				            <img class="custom--providers--image" src="https://vendor-provider.fra1.cdn.digitaloceanspaces.com/ebetlab/game-providers/light/World%20Match.svg" alt="">
 				          </a>
 				        
-				          <a class="custom--providers--link" href="/providers/xprogaming">
+				          <a class="custom--providers--link" href="https://betredi108.com/tr/providers/xprogaming">
 				            <img class="custom--providers--image" src="https://vendor-provider.fra1.cdn.digitaloceanspaces.com/ebetlab/game-providers/light/XPro%20Gaming.svg" alt="">
 				          </a>
 				        
-				          <a class="custom--providers--link" href="/providers/yggdrasil">
+				          <a class="custom--providers--link" href="https://betredi108.com/tr/providers/yggdrasil">
 				            <img class="custom--providers--image" src="https://vendor-provider.fra1.cdn.digitaloceanspaces.com/ebetlab/game-providers/light/yggdrasil.svg" alt="">
 				          </a>
 				        
-				          <a class="custom--providers--link" href="/providers/zillion">
+				          <a class="custom--providers--link" href="https://betredi108.com/tr/providers/zillion">
 				            <img class="custom--providers--image" src="https://vendor-provider.fra1.cdn.digitaloceanspaces.com/ebetlab/game-providers/light/zillion.svg" alt="">
 				          </a>
 				        
-				          <a class="custom--providers--link" href="/providers/ebetlab">
+				          <a class="custom--providers--link" href="https://betredi108.com/tr/providers/ebetlab">
 				            <img class="custom--providers--image" src="https://vendor-provider.fra1.cdn.digitaloceanspaces.com/ebetlab/game-providers/light/originals.svg" alt="">
 				          </a>
 				        
-				          <a class="custom--providers--link" href="/providers/imagine-live">
+				          <a class="custom--providers--link" href="https://betredi108.com/tr/providers/imagine-live">
 				            <img class="custom--providers--image" src="https://vendor-provider.fra1.cdn.digitaloceanspaces.com/ebetlab/game-providers/light/imageinelive.svg" alt="">
 				          </a>
 				        
-				          <a class="custom--providers--link" href="/providers/jiliasia">
+				          <a class="custom--providers--link" href="https://betredi108.com/tr/providers/jiliasia">
 				            <img class="custom--providers--image" src="https://vendor-provider.fra1.cdn.digitaloceanspaces.com/ebetlab/game-providers/light/Jiliasia.svg" alt="">
 				          </a>
 				        
-				          <a class="custom--providers--link" href="/providers/royal-gaming">
+				          <a class="custom--providers--link" href="https://betredi108.com/tr/providers/royal-gaming">
 				            <img class="custom--providers--image" src="https://vendor-provider.fra1.cdn.digitaloceanspaces.com/ebetlab/game-providers/light/Royal%20Gaming.svg" alt="">
 				          </a>
 				        
-				          <a class="custom--providers--link" href="/providers/tada-gaming">
+				          <a class="custom--providers--link" href="https://betredi108.com/tr/providers/tada-gaming">
 				            <img class="custom--providers--image" src="https://vendor-provider.fra1.cdn.digitaloceanspaces.com/ebetlab/game-providers/light/Tada%20Gaming.svg" alt="">
 				          </a>
 				        
-				          <a class="custom--providers--link" href="/providers/zeus-play">
+				          <a class="custom--providers--link" href="https://betredi108.com/tr/providers/zeus-play">
 				            <img class="custom--providers--image" src="https://vendor-provider.fra1.cdn.digitaloceanspaces.com/ebetlab/game-providers/light/Zeus%20Play.svg" alt="">
 				          </a>
 				        
-				          <a class="custom--providers--link" href="/providers/peter-and-sons">
+				          <a class="custom--providers--link" href="https://betredi108.com/tr/providers/peter-and-sons">
 				            <img class="custom--providers--image" src="https://vendor-provider.fra1.cdn.digitaloceanspaces.com/ebetlab/game-providers/light/Peter%20And%20Sons.svg" alt="">
 				          </a>
 				        
-				          <a class="custom--providers--link" href="/providers/topspin">
+				          <a class="custom--providers--link" href="https://betredi108.com/tr/providers/topspin">
 				            <img class="custom--providers--image" src="https://vendor-provider.fra1.cdn.digitaloceanspaces.com/ebetlab/game-providers/light/topspin.svg" alt="">
 				          </a>    
 			</div>
@@ -1131,6 +1131,15 @@
             <span>Canlı Destek</span>
           </div>
         </a>
+        <a onClick="$('.lowbar__btn')[$('.lowbar__btn').length -1].click()" class="col-4">
+          <div class="box-icon-item">
+                  <svg class="svg-icon"><use href="/static/media/sprite.1cea5f3c17045e69440504bcd887b333.svg#gamer" xlink:href="/static/media/sprite.1cea5f3c17045e69440504bcd887b333.svg#gamer"></use></svg>
+
+            <span>Canlı Destek</span>
+          </div>
+        </a>
+
+
       </div>
 </div>
     `);
