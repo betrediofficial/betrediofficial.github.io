@@ -222,55 +222,85 @@
         }
       }
 
-      function destroyExistingSwiper() {
-        if (window.mySwiper && typeof window.mySwiper.destroy === "function") {
-          window.mySwiper.destroy(true, true);
+      // function destroyExistingSwiper() {
+      //   if (window.mySwiper && typeof window.mySwiper.destroy === "function") {
+      //     window.mySwiper.destroy(true, true);
+      //   }
+      // }
+
+      // function setupSwiper() {
+      //   const swiperInterval = setInterval(() => {
+      //     const target = document.querySelector(
+      //       "#main-slider-swiper .swiper-wrapper"
+      //     );
+
+      //     if (target && typeof Swiper !== "undefined") {
+      //       clearInterval(swiperInterval);
+
+      //       destroyExistingSwiper(); // 💥 varsa eski swiper’ı patlat
+
+      //       window.mySwiper = new Swiper("#main-slider-swiper", {
+      //         loop: true,
+      //         centeredSlides: false,
+      //         slidesPerView: 1,
+      //         autoplay: {
+      //           delay: 4000,
+      //           disableOnInteraction: false,
+      //         },
+      //         pagination: {
+      //           el: ".swiper-pagination",
+      //           clickable: true,
+      //         },
+      //         navigation: {
+      //           nextEl: ".swiper-button-next",
+      //           prevEl: ".swiper-button-prev",
+      //         },
+      //         effect: "slide",
+      //         speed: 600,
+      //         on: {
+      //           init: function () {
+      //             setTimeout(() => {
+      //               this.update();
+      //               this.slideToLoop(0, 0);
+      //             }, 100);
+      //           },
+      //         },
+      //       });
+      //     }
+      //   }, 300);
+      // }
+
+      // *******
+
+      function updateCenteredSlidesOnly() {
+        const target = document.querySelector("#main-slider-swiper");
+
+        if (target && typeof Swiper !== "undefined" && target.swiper) {
+          const instance = target.swiper;
+
+          // Sadece centeredSlides parametresini değiştir
+          instance.params.centeredSlides = false;
+
+          // Swiper'ı güncelle ve ilk slide'a geç
+          instance.update();
+          instance.slideToLoop(0, 0);
         }
       }
 
-      function setupSwiper() {
+      function waitForSwiperAndUpdate() {
         const swiperInterval = setInterval(() => {
-          const target = document.querySelector(
-            "#main-slider-swiper .swiper-wrapper"
-          );
+          const target = document.querySelector("#main-slider-swiper");
 
-          if (target && typeof Swiper !== "undefined") {
+          if (target && target.swiper && typeof Swiper !== "undefined") {
             clearInterval(swiperInterval);
-
-            destroyExistingSwiper(); // 💥 varsa eski swiper’ı patlat
-
-            window.mySwiper = new Swiper("#main-slider-swiper", {
-              loop: true,
-              centeredSlides: false,
-              slidesPerView: 1,
-              autoplay: {
-                delay: 4000,
-                disableOnInteraction: false,
-              },
-              pagination: {
-                el: ".swiper-pagination",
-                clickable: true,
-              },
-              navigation: {
-                nextEl: ".swiper-button-next",
-                prevEl: ".swiper-button-prev",
-              },
-              effect: "slide",
-              speed: 600,
-              on: {
-                init: function () {
-                  setTimeout(() => {
-                    this.update();
-                    this.slideToLoop(0, 0);
-                  }, 100);
-                },
-              },
-            });
+            updateCenteredSlidesOnly();
           }
         }, 300);
       }
 
-      // Başlatıcı
+      ensureSwiperLoaded(waitForSwiperAndUpdate);
+
+      // ******
 
       // if (typeof Swiper === "undefined") {
       //   const swiperScript = document.createElement("script");
