@@ -141,29 +141,33 @@
     }
 
     function initialize() {
-      function overrideMainSlider() {
-        window.myMainSlider = new Swiper(".swiper", {
-          loop: true,
-          slidesPerView: 1,
-          centeredSlides: false,
-          autoplay: {
-            delay: 4000,
-            disableOnInteraction: false,
-          },
-          pagination: {
-            el: "#main-slider .swiper-pagination",
-            clickable: true,
-          },
-          navigation: {
-            nextEl: "#main-slider .swiper-button-next",
-            prevEl: "#main-slider .swiper-button-prev",
-          },
-          effect: "slide",
-          speed: 600,
-        });
+      const swiperEl = document.querySelector("#main-slider .swiper");
+      if (!swiperEl || typeof Swiper !== "function") return;
+
+      // Daha önce başlatılmışsa yok et
+      if (swiperEl.swiper) {
+        swiperEl.swiper.destroy(true, true);
       }
 
-      overrideMainSlider();
+      window.myMainSlider = new Swiper(swiperEl, {
+        loop: true,
+        slidesPerView: 1,
+        centeredSlides: false,
+        autoplay: {
+          delay: 4000,
+          disableOnInteraction: false,
+        },
+        pagination: {
+          el: "#main-slider .swiper-pagination",
+          clickable: true,
+        },
+        navigation: {
+          nextEl: "#main-slider .swiper-button-next",
+          prevEl: "#main-slider .swiper-button-prev",
+        },
+        effect: "slide",
+        speed: 600,
+      });
 
       isLoggedIn = $(".header__signin").length > 0 ? false : true;
       language = window.location.pathname.split("/")[1];
@@ -790,10 +794,6 @@
     width: 100%;
     margin-left: 0 !important;
     margin-right: 0 !important;
-}
-
-.autoplay-progress {
-display: none !important;
 }
 
 
