@@ -222,6 +222,12 @@
         }
       }
 
+      function destroyExistingSwiper() {
+        if (window.mySwiper && typeof window.mySwiper.destroy === "function") {
+          window.mySwiper.destroy(true, true);
+        }
+      }
+
       function setupSwiper() {
         const swiperInterval = setInterval(() => {
           const target = document.querySelector(
@@ -231,11 +237,7 @@
           if (target && typeof Swiper !== "undefined") {
             clearInterval(swiperInterval);
 
-            if (
-              window.mySwiper &&
-              typeof window.mySwiper.destroy === "function"
-            )
-              window.mySwiper.destroy(true, true);
+            destroyExistingSwiper(); // 💥 varsa eski swiper’ı patlat
 
             window.mySwiper = new Swiper("#main-slider-swiper", {
               loop: true,
@@ -267,6 +269,8 @@
           }
         }, 300);
       }
+
+      // Başlatıcı
 
       // if (typeof Swiper === "undefined") {
       //   const swiperScript = document.createElement("script");
