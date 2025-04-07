@@ -211,26 +211,22 @@
 
       // if (language !== "tr") return;
 
-      if (typeof Swiper !== "undefined") {
-        new Swiper("#main-slider-swiper", {
-          loop: true,
-          centeredSlides: false,
-          slidesPerView: 1,
-          autoplay: {
-            delay: 4000,
-            disableOnInteraction: false,
-          },
-          pagination: {
-            el: ".swiper-pagination",
-            clickable: true,
-          },
-          navigation: {
-            nextEl: ".swiper-button-next",
-            prevEl: ".swiper-button-prev",
-          },
-          effect: "slide",
-          speed: 600,
-        });
+      if (typeof Swiper === "undefined") {
+        const swiperScript = document.createElement("script");
+        swiperScript.src =
+          "https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js";
+        swiperScript.onload = function () {
+          setupSwiper(); // Swiper yüklendikten sonra başlat
+        };
+        document.head.appendChild(swiperScript);
+
+        const swiperCSS = document.createElement("link");
+        swiperCSS.rel = "stylesheet";
+        swiperCSS.href =
+          "https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css";
+        document.head.appendChild(swiperCSS);
+      } else {
+        setupSwiper(); // zaten yüklü ise direkt başlat
       }
 
       customCSS();
