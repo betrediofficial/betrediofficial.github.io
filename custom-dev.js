@@ -161,8 +161,66 @@
       }
     }
 
+    function insertCustomMainSlider() {
+      const sliderHTML = `
+    <div class="section pt-24" id="main-slider">
+      <div class="container">
+        <div class="swiper mySwiper">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <a href="#"><img src="https://betrediofficial.github.io/images/slides/slide1.png" class="slide-image" /></a>
+            </div>
+            <div class="swiper-slide">
+              <a href="#"><img src="https://betrediofficial.github.io/images/slides/slide2.png" class="slide-image" /></a>
+            </div>
+            <div class="swiper-slide">
+              <a href="#"><img src="https://betrediofficial.github.io/images/slides/slide3.png" class="slide-image" /></a>
+            </div>
+          </div>
+          <div class="swiper-button-next"></div>
+          <div class="swiper-button-prev"></div>
+          <div class="swiper-pagination"></div>
+        </div>
+      </div>
+    </div>
+  `;
+
+      const mainContent = document.querySelector("#main__content");
+      if (mainContent) {
+        mainContent.insertAdjacentHTML("afterbegin", sliderHTML);
+        console.log("Custom slider inserted.");
+      }
+    }
+
+    function initCustomSlider() {
+      const swiperEl = document.querySelector("#main-slider .swiper");
+      if (!swiperEl || typeof Swiper !== "function") return;
+
+      window.myMainSlider = new Swiper(swiperEl, {
+        loop: true,
+        slidesPerView: 1,
+        centeredSlides: false,
+        autoplay: {
+          delay: 4000,
+          disableOnInteraction: false,
+        },
+        pagination: {
+          el: "#main-slider .swiper-pagination",
+          clickable: true,
+        },
+        navigation: {
+          nextEl: "#main-slider .swiper-button-next",
+          prevEl: "#main-slider .swiper-button-prev",
+        },
+        effect: "slide",
+        speed: 600,
+      });
+    }
+
     function initialize() {
       removeOriginalMainSlider();
+      insertCustomMainSlider();
+      setTimeout(initCustomSlider, 500);
 
       isLoggedIn = $(".header__signin").length > 0 ? false : true;
       language = window.location.pathname.split("/")[1];
