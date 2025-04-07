@@ -194,139 +194,171 @@
     function initialize() {
       isLoggedIn = $(".header__signin").length > 0 ? false : true;
       language = window.location.pathname.split("/")[1];
+
       const isHomePage = isHomePageCheck();
+      const is_mobile = isMobile();
 
-      customCSS();
-      customizeSwiper();
+      headerButtons(isHomePage);
 
-      function customizeSignupModal() {
-        const imgUrl =
-          "https://betrediofficial.github.io/images/modal-banners/modal_story.png";
+      if (!isHomePage) {
+        removeHomePageWidgets();
+      } else {
+        is_mobile && mobileBoxes();
+        mobileSignInText();
+        bottomMenuWidget(is_mobile);
+        otherGames();
 
-        const observer = new MutationObserver(() => {
-          const $modal = $("#signup-modal");
-          const $content = $modal.find(".modal__content").first();
+        if (!is_mobile) slotGames();
 
-          if (
-            $modal.is(":visible") &&
-            $content.length &&
-            $content.find(".modal__sign-img").length === 0
-          ) {
-            // Inject the image on the left
-            const $signImg = $(`
+        tgPromo();
+
+        if (!is_mobile) casinoGames();
+
+        sportsCard();
+        //hide default games
+        !is_mobile && hideDefaultGames(50);
+        !is_mobile && hideDefaultGames(1500);
+      }
+
+      insertCustomSidebarLink();
+      injectProvidersMarquee();
+
+      hideBlogSection();
+
+      customizeSignupModal();
+      customizeSigninModal();
+    }
+
+    customCSS();
+    customizeSwiper();
+
+    function customizeSignupModal() {
+      const imgUrl =
+        "https://betrediofficial.github.io/images/modal-banners/modal_story.png";
+
+      const observer = new MutationObserver(() => {
+        const $modal = $("#signup-modal");
+        const $content = $modal.find(".modal__content").first();
+
+        if (
+          $modal.is(":visible") &&
+          $content.length &&
+          $content.find(".modal__sign-img").length === 0
+        ) {
+          // Inject the image on the left
+          const $signImg = $(`
         <div class="modal__sign-img" style="width: 40%;">
           <img src="${imgUrl}" style="width: 100%; height: 100%;" alt="Betredi Banner" />
         </div>
       `);
 
-            // Grab modal__head and modal__form
-            const $head = $content.find(".modal__head");
-            const $form = $content.find(".modal__form");
+          // Grab modal__head and modal__form
+          const $head = $content.find(".modal__head");
+          const $form = $content.find(".modal__form");
 
-            // Wrap them in a right__col div
-            const $rightCol = $(
-              '<div class="right__col" style="float: right; width: 58%;"></div>'
-            );
-            $rightCol.append($head).append($form);
-
-            // Clear content and insert both sides
-            $content.prepend($signImg);
-            $signImg.after($rightCol); // add right_col after image
-          }
-        });
-
-        observer.observe(document.body, {
-          childList: true,
-          subtree: true,
-        });
-      }
-
-      function customizeSigninModal() {
-        const imgUrl =
-          "https://betrediofficial.github.io/images/modal-banners/modal_story.png";
-
-        const observer = new MutationObserver(() => {
-          const $modal = $("#signin-modal");
-          const $content = $modal.find(".modal__content").first();
-
-          if (
-            $modal.is(":visible") &&
-            $content.length &&
-            $content.find(".modal__sign-img").length === 0
-          ) {
-            // Inject the image on the left
-            const $signImg = $(`
-        <div class="modal__sign-img" style="width: 40%;">
-          <img src="${imgUrl}" style="width: 100%; height: 100%;" alt="Betredi Banner" />
-        </div>
-      `);
-
-            // Grab modal__head and modal__form
-            const $head = $content.find(".modal__head");
-            const $form = $content.find(".modal__form");
-
-            // Wrap them in a right__col div
-            const $rightCol = $(
-              '<div class="right__col" style="float: right; width: 58%;"></div>'
-            );
-            $rightCol.append($head).append($form);
-
-            // Clear content and insert both sides
-            $content.prepend($signImg);
-            $signImg.after($rightCol); // add right_col after image
-          }
-        });
-
-        observer.observe(document.body, {
-          childList: true,
-          subtree: true,
-        });
-      }
-
-      function insertCustomSidebarLink() {
-        const observer = new MutationObserver(() => {
-          const $sidebarLinks = document.querySelector(
-            ".sidebar__big .sidebar__links"
+          // Wrap them in a right__col div
+          const $rightCol = $(
+            '<div class="right__col" style="float: right; width: 58%;"></div>'
           );
+          $rightCol.append($head).append($form);
 
-          const exists = document.querySelector(".sidebar__links.custom_side");
+          // Clear content and insert both sides
+          $content.prepend($signImg);
+          $signImg.after($rightCol); // add right_col after image
+        }
+      });
 
-          if ($sidebarLinks && !exists) {
-            const customDiv = document.createElement("div");
-            customDiv.className = "sidebar__links custom_side";
-            customDiv.innerHTML = `
+      observer.observe(document.body, {
+        childList: true,
+        subtree: true,
+      });
+    }
+
+    function customizeSigninModal() {
+      const imgUrl =
+        "https://betrediofficial.github.io/images/modal-banners/modal_story.png";
+
+      const observer = new MutationObserver(() => {
+        const $modal = $("#signin-modal");
+        const $content = $modal.find(".modal__content").first();
+
+        if (
+          $modal.is(":visible") &&
+          $content.length &&
+          $content.find(".modal__sign-img").length === 0
+        ) {
+          // Inject the image on the left
+          const $signImg = $(`
+        <div class="modal__sign-img" style="width: 40%;">
+          <img src="${imgUrl}" style="width: 100%; height: 100%;" alt="Betredi Banner" />
+        </div>
+      `);
+
+          // Grab modal__head and modal__form
+          const $head = $content.find(".modal__head");
+          const $form = $content.find(".modal__form");
+
+          // Wrap them in a right__col div
+          const $rightCol = $(
+            '<div class="right__col" style="float: right; width: 58%;"></div>'
+          );
+          $rightCol.append($head).append($form);
+
+          // Clear content and insert both sides
+          $content.prepend($signImg);
+          $signImg.after($rightCol); // add right_col after image
+        }
+      });
+
+      observer.observe(document.body, {
+        childList: true,
+        subtree: true,
+      });
+    }
+
+    function insertCustomSidebarLink() {
+      const observer = new MutationObserver(() => {
+        const $sidebarLinks = document.querySelector(
+          ".sidebar__big .sidebar__links"
+        );
+
+        const exists = document.querySelector(".sidebar__links.custom_side");
+
+        if ($sidebarLinks && !exists) {
+          const customDiv = document.createElement("div");
+          customDiv.className = "sidebar__links custom_side";
+          customDiv.innerHTML = `
         <a class="sidebar__link sidebar__link--casino w-100" href="https://betredi108.com/tr/promotions"
            style="height: 46px; background: url('https://betrediofficial.github.io/images/aside-links/promotions.png') center center / cover no-repeat;">
         </a>
       `;
-            $sidebarLinks.parentNode.insertBefore(
-              customDiv,
-              $sidebarLinks.nextSibling
-            );
-          }
-        });
+          $sidebarLinks.parentNode.insertBefore(
+            customDiv,
+            $sidebarLinks.nextSibling
+          );
+        }
+      });
 
-        observer.observe(document.body, {
-          childList: true,
-          subtree: true,
-        });
-      }
+      observer.observe(document.body, {
+        childList: true,
+        subtree: true,
+      });
+    }
 
-      function injectProvidersMarquee() {
-        const container = document.querySelector("#main-slider > .container");
+    function injectProvidersMarquee() {
+      const container = document.querySelector("#main-slider > .container");
 
-        if (!container || container.querySelector(".custom--section--2"))
-          return;
+      if (!container || container.querySelector(".custom--section--2")) return;
 
-        const swiperElement = container.querySelector("#main-slider-swiper");
-        if (!swiperElement) return;
+      const swiperElement = container.querySelector("#main-slider-swiper");
+      if (!swiperElement) return;
 
-        const section = document.createElement("div");
+      const section = document.createElement("div");
 
-        // <div class="providers--marquee--bg"></div>;
+      // <div class="providers--marquee--bg"></div>;
 
-        section.className = "section custom--section--2 custom--section";
-        section.innerHTML = `
+      section.className = "section custom--section--2 custom--section";
+      section.innerHTML = `
     <div class="container" style="position: relative; max-width: 100% !important; margin-bottom: 20px; !important; padding-left: 0px !important; padding-right: 0px !important; padding-top: 0px !important; overflow: hidden !important;">
     <div class="providers--marquee--bg" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; background: linear-gradient(0deg, rgba(54,0,6,1) 0%, rgba(125,2,15,1) 100%);"></div>
 <div class="providers--marquee">	
@@ -729,48 +761,14 @@
     </div>
   `;
 
-        swiperElement.insertAdjacentElement("afterend", section);
+      swiperElement.insertAdjacentElement("afterend", section);
 
-        // 🔁 Marquee hareketi için JS ile içerik kopyalanıyor
-        const marquee = section.querySelector(
-          ".providers--marquee .marquee-content"
-        );
-        const clone = marquee.cloneNode(true);
-        marquee.parentElement.appendChild(clone);
-      }
-
-      const is_mobile = isMobile();
-
-      headerButtons(isHomePage);
-
-      if (!isHomePage) {
-        removeHomePageWidgets();
-
-        if (!is_mobile) slotGames();
-
-        tgPromo();
-
-        if (!is_mobile) casinoGames();
-
-        sportsCard();
-      } else {
-        is_mobile && mobileBoxes();
-        mobileSignInText();
-        bottomMenuWidget(is_mobile);
-        otherGames();
-
-        //hide default games
-        !is_mobile && hideDefaultGames(50);
-        !is_mobile && hideDefaultGames(1500);
-      }
-
-      insertCustomSidebarLink();
-      injectProvidersMarquee();
-
-      hideBlogSection();
-
-      customizeSignupModal();
-      customizeSigninModal();
+      // 🔁 Marquee hareketi için JS ile içerik kopyalanıyor
+      const marquee = section.querySelector(
+        ".providers--marquee .marquee-content"
+      );
+      const clone = marquee.cloneNode(true);
+      marquee.parentElement.appendChild(clone);
     }
 
     function customCSS() {
