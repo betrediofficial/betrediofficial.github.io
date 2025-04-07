@@ -967,7 +967,7 @@
 }
 
 #main-slider .swiper-wrapper .swiper-slide > * {
-width: 100vw !important;
+width: 100% !important;
 }
 
   
