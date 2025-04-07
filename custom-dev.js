@@ -966,6 +966,10 @@
     margin-right: 0 !important;
 }
 
+#main-slider .swiper-wrapper .swiper-slide > * {
+width: 100vw !important;
+}
+
   
       `;
       document.head.appendChild(style);
