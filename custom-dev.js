@@ -215,9 +215,11 @@
         }, 300);
       }
 
-      document.addEventListener("DOMContentLoaded", () => {
-        waitForSwiperAndInit();
-      });
+      // document.addEventListener("DOMContentLoaded", () => {
+      //   waitForSwiperAndInit();
+      // });
+
+      waitForSwiperAndInit();
 
       function ensureSwiperLoaded(callback) {
         if (typeof Swiper === "undefined") {
