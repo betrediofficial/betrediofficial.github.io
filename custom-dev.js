@@ -223,55 +223,51 @@
       }
 
       function destroyExistingSwiper() {
-        const existing = document.querySelector("#main-slider-swiper")?.swiper;
-        if (existing && typeof existing.destroy === "function") {
-          existing.destroy(true, true);
-          console.log("🔥 Varsayılan Swiper devre dışı bırakıldı.");
+        if (window.mySwiper && typeof window.mySwiper.destroy === "function") {
+          window.mySwiper.destroy(true, true);
         }
       }
 
-      function setupCustomSwiper() {
-        // const swiperInterval = setInterval(() => {}, 300);
+      function setupSwiper() {
+        const swiperInterval = setInterval(() => {
+          const target = document.querySelector(
+            "#main-slider-swiper .swiper-wrapper"
+          );
 
-        const container = document.querySelector(
-          "#main-slider-swiper .swiper-wrapper"
-        );
+          if (target && typeof Swiper !== "undefined") {
+            clearInterval(swiperInterval);
 
-        if (container && typeof Swiper !== "undefined") {
-          clearInterval(swiperInterval);
+            destroyExistingSwiper();
 
-          destroyExistingSwiper();
-
-          window.mySwiper = new Swiper("#main-slider-swiper", {
-            loop: true,
-            centeredSlides: false,
-            slidesPerView: 1,
-            autoplay: {
-              delay: 4000,
-              disableOnInteraction: false,
-            },
-            pagination: {
-              el: ".swiper-pagination",
-              clickable: true,
-            },
-            navigation: {
-              nextEl: ".swiper-button-next",
-              prevEl: ".swiper-button-prev",
-            },
-            effect: "slide",
-            speed: 600,
-            on: {
-              init: function () {
-                setTimeout(() => {
-                  this.update();
-                  this.slideToLoop(0, 0);
-                }, 100);
+            window.mySwiper = new Swiper("#main-slider-swiper", {
+              loop: true,
+              centeredSlides: false,
+              slidesPerView: 1,
+              autoplay: {
+                delay: 4000,
+                disableOnInteraction: false,
               },
-            },
-          });
-
-          console.log("✅ Yeni Swiper başlatıldı.");
-        }
+              pagination: {
+                el: ".swiper-pagination",
+                clickable: true,
+              },
+              navigation: {
+                nextEl: ".swiper-button-next",
+                prevEl: ".swiper-button-prev",
+              },
+              effect: "slide",
+              speed: 600,
+              on: {
+                init: function () {
+                  setTimeout(() => {
+                    this.update();
+                    this.slideToLoop(0, 0);
+                  }, 100);
+                },
+              },
+            });
+          }
+        }, 300);
       }
 
       // *******
@@ -325,6 +321,8 @@
       // }
 
       customCSS();
+      ensureSwiperLoaded(setupSwiper);
+      // setupSwiper();
 
       function customizeSignupModal() {
         const imgUrl =
@@ -942,10 +940,6 @@
       const is_mobile = isMobile();
 
       headerButtons(isHomePage);
-
-      ensureSwiperLoaded(() => {
-        setupCustomSwiper();
-      });
 
       if (!isHomePage) {
         removeHomePageWidgets();
