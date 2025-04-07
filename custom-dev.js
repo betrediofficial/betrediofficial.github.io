@@ -153,20 +153,19 @@
         loop: true,
         slidesPerView: 1,
         centeredSlides: false,
-        autoplay: {
-          delay: 4000,
-          disableOnInteraction: false,
-        },
-        pagination: {
-          el: "#main-slider .swiper-pagination",
-          clickable: true,
-        },
-        navigation: {
-          nextEl: "#main-slider .swiper-button-next",
-          prevEl: "#main-slider .swiper-button-prev",
-        },
-        effect: "slide",
-        speed: 600,
+        // autoplay: {
+        //   delay: 5000,
+        // },
+        // pagination: {
+        //   el: "#main-slider .swiper-pagination",
+        //   clickable: true,
+        // },
+        // navigation: {
+        //   nextEl: "#main-slider .swiper-button-next",
+        //   prevEl: "#main-slider .swiper-button-prev",
+        // },
+        // effect: "slide",
+        // speed: 600,
       });
 
       isLoggedIn = $(".header__signin").length > 0 ? false : true;
