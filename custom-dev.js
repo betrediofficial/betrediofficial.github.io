@@ -140,56 +140,56 @@
       }
     }
 
-    function customizeSwiper() {
-      const swiperEl = document.querySelector("#main-slider .swiper");
-      // if (!swiperEl || typeof Swiper !== "function") return;
+    // function customizeSwiper() {
+    //   const swiperEl = document.querySelector("#main-slider .swiper");
+    //   // if (!swiperEl || typeof Swiper !== "function") return;
 
-      if (swiperEl.swiper) {
-        swiperEl.swiper.destroy(true, true);
-      }
+    //   if (swiperEl.swiper) {
+    //     swiperEl.swiper.destroy(true, true);
+    //   }
 
-      window.myMainSlider = new Swiper(swiperEl, {
-        loop: true,
-        slidesPerView: 1,
-        centeredSlides: false,
-        autoplay: {
-          delay: 4000,
-          disableOnInteraction: false,
-        },
-        pagination: {
-          el: "#main-slider .swiper-pagination",
-          clickable: true,
-        },
-        navigation: {
-          nextEl: "#main-slider .swiper-button-next",
-          prevEl: "#main-slider .swiper-button-prev",
-        },
-        effect: "slide",
-        speed: 500,
-      });
-    }
+    //   window.myMainSlider = new Swiper(swiperEl, {
+    //     loop: true,
+    //     slidesPerView: 1,
+    //     centeredSlides: false,
+    //     autoplay: {
+    //       delay: 4000,
+    //       disableOnInteraction: false,
+    //     },
+    //     pagination: {
+    //       el: "#main-slider .swiper-pagination",
+    //       clickable: true,
+    //     },
+    //     navigation: {
+    //       nextEl: "#main-slider .swiper-button-next",
+    //       prevEl: "#main-slider .swiper-button-prev",
+    //     },
+    //     effect: "slide",
+    //     speed: 500,
+    //   });
+    // }
 
-    const waitForReady = setInterval(() => {
-      const ready = document.querySelector("#main-slider .swiper");
-      if (ready) {
-        clearInterval(waitForReady);
-        initialize();
-      }
-    }, 300);
+    // const waitForReady = setInterval(() => {
+    //   const ready = document.querySelector("#main-slider .swiper");
+    //   if (ready) {
+    //     clearInterval(waitForReady);
+    //     initialize();
+    //   }
+    // }, 300);
 
-    const observer = new MutationObserver(() => {
-      const swiperEl = document.querySelector("#main-slider .swiper");
-      if (
-        swiperEl &&
-        swiperEl.swiper &&
-        swiperEl.swiper !== window.myMainSlider
-      ) {
-        swiperEl.swiper.destroy(true, true);
-        customizeSwiper();
-      }
-    });
+    // const observer = new MutationObserver(() => {
+    //   const swiperEl = document.querySelector("#main-slider .swiper");
+    //   if (
+    //     swiperEl &&
+    //     swiperEl.swiper &&
+    //     swiperEl.swiper !== window.myMainSlider
+    //   ) {
+    //     swiperEl.swiper.destroy(true, true);
+    //     customizeSwiper();
+    //   }
+    // });
 
-    observer.observe(document.body, { childList: true, subtree: true });
+    // observer.observe(document.body, { childList: true, subtree: true });
 
     function initialize() {
       isLoggedIn = $(".header__signin").length > 0 ? false : true;
@@ -230,7 +230,7 @@
     }
 
     customCSS();
-    customizeSwiper();
+    // customizeSwiper();
 
     function customizeSignupModal() {
       const imgUrl =
