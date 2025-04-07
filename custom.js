@@ -1217,11 +1217,11 @@
       swiperElement.insertAdjacentElement("afterend", section);
 
       // Eğer içinde .marquee-content varsa kopyala
-      const marquee = section.querySelector(".providers--marquee");
-      if (marquee) {
-        const clone = marquee.cloneNode(true);
-        marquee.parentElement.appendChild(clone);
-      }
+      // const marquee = section.querySelector(".providers--marquee");
+      // if (marquee) {
+      //   const clone = marquee.cloneNode(true);
+      //   marquee.parentElement.appendChild(clone);
+      // }
     }
 
     function customCSS() {
