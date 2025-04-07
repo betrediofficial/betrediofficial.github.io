@@ -1,4 +1,6 @@
 (function () {
+  window.disableSwiperAutoInit = true;
+
   var language = window.location.pathname.split("/")[1];
 
   var isLoggedIn = false;
@@ -210,6 +212,50 @@
       // }
 
       // if (language !== "tr") return;
+
+      // window.disableSwiperAutoInit = true;
+
+      function destroyExistingSwipers() {
+        const swipers = document.querySelectorAll(".swiper-container");
+        swipers.forEach((swiperContainer) => {
+          if (swiperContainer.swiper) {
+            swiperContainer.swiper.destroy(true, true);
+          }
+        });
+      }
+
+      function initializeCustomSwiper() {
+        destroyExistingSwipers();
+
+        var mySwiper = new Swiper("#main-slider-swiper", {
+          loop: true,
+          centeredSlides: false,
+          slidesPerView: 1,
+          autoplay: {
+            delay: 4000,
+            disableOnInteraction: false,
+          },
+          pagination: {
+            el: ".swiper-pagination",
+            clickable: true,
+          },
+          navigation: {
+            nextEl: ".swiper-button-next",
+            prevEl: ".swiper-button-prev",
+          },
+          effect: "slide",
+          speed: 600,
+          on: {
+            init: function () {
+              setTimeout(() => {
+                this.update();
+                this.slideToLoop(0, 0);
+              }, 100);
+            },
+          },
+        });
+      }
+
       function ensureSwiperLoaded(callback) {
         if (typeof Swiper === "undefined") {
           const script = document.createElement("script");
@@ -321,7 +367,8 @@
       // }
 
       customCSS();
-      ensureSwiperLoaded(setupSwiper);
+      // ensureSwiperLoaded(setupSwiper);
+      initializeCustomSwiper();
       // setupSwiper();
 
       function customizeSignupModal() {
