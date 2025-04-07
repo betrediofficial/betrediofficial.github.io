@@ -1,42 +1,57 @@
 (function () {
+  // 1. Swiper otomatik init'i devre dışı bırak (çalışıyorsa)
   window.disableSwiperAutoInit = true;
-  document.addEventListener("DOMContentLoaded", () => {
-    function overrideMainSlider() {
-      const swiperEl = document.querySelector("#main-slider .swiper");
-      if (!swiperEl) return;
 
-      if (swiperEl.swiper) {
-        swiperEl.swiper.destroy(true, true);
-      }
+  // 2. Ana override fonksiyonu
+  function overrideMainSlider() {
+    const swiperEl = document.querySelector("#main-slider .swiper");
+    if (!swiperEl || !window.Swiper) return;
 
-      window.mySwiper = new Swiper("#main-slider-swiper", {
-        loop: true,
-        centeredSlides: false,
-        slidesPerView: 1,
-        autoplay: {
-          delay: 4000,
-          disableOnInteraction: false,
-        },
-        pagination: {
-          el: ".swiper-pagination",
-          clickable: true,
-        },
-        navigation: {
-          nextEl: ".swiper-button-next",
-          prevEl: ".swiper-button-prev",
-        },
-        effect: "slide",
-        speed: 600,
-      });
+    // Swiper zaten varsa yok et
+    if (swiperEl.swiper) {
+      swiperEl.swiper.destroy(true, true);
     }
 
+    // Yeni Swiper başlat
+    window.myMainSlider = new Swiper(swiperEl, {
+      loop: true,
+      slidesPerView: 1,
+      centeredSlides: false,
+      autoplay: {
+        delay: 4000,
+        disableOnInteraction: false,
+      },
+      pagination: {
+        el: "#main-slider .swiper-pagination",
+        clickable: true,
+      },
+      navigation: {
+        nextEl: "#main-slider .swiper-button-next",
+        prevEl: "#main-slider .swiper-button-prev",
+      },
+      effect: "slide",
+      speed: 600,
+    });
+  }
+
+  // 3. DOM yüklendiğinde çalıştır
+  document.addEventListener("DOMContentLoaded", () => {
     overrideMainSlider();
 
-    const observer = new MutationObserver(() => {
-      overrideMainSlider();
+    // 4. Swiper tekrar kurulmaya çalışılırsa yakala ve yok et
+    const hardKill = new MutationObserver(() => {
+      const swiperEl = document.querySelector("#main-slider .swiper");
+      if (
+        swiperEl &&
+        swiperEl.swiper &&
+        swiperEl.swiper !== window.myMainSlider
+      ) {
+        swiperEl.swiper.destroy(true, true);
+        overrideMainSlider();
+      }
     });
 
-    observer.observe(document.body, {
+    hardKill.observe(document.body, {
       childList: true,
       subtree: true,
     });
