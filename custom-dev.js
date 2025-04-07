@@ -1,18 +1,12 @@
 (function () {
-  // 1. Swiper otomatik init'i devre dışı bırak (çalışıyorsa)
-  window.disableSwiperAutoInit = true;
-
-  // 2. Ana override fonksiyonu
   function overrideMainSlider() {
     const swiperEl = document.querySelector("#main-slider .swiper");
-    if (!swiperEl || !window.Swiper) return;
+    if (!swiperEl || typeof window.Swiper !== "function") return;
 
-    // Swiper zaten varsa yok et
     if (swiperEl.swiper) {
       swiperEl.swiper.destroy(true, true);
     }
 
-    // Yeni Swiper başlat
     window.myMainSlider = new Swiper(swiperEl, {
       loop: true,
       slidesPerView: 1,
@@ -34,28 +28,32 @@
     });
   }
 
-  // 3. DOM yüklendiğinde çalıştır
-  document.addEventListener("DOMContentLoaded", () => {
-    overrideMainSlider();
+  // DOM hazır değilse bekle, ama Swiper da yüklenene kadar retry et
+  const waitForSwiper = setInterval(() => {
+    const swiperEl = document.querySelector("#main-slider .swiper");
+    const swiperLoaded = typeof window.Swiper === "function";
 
-    // 4. Swiper tekrar kurulmaya çalışılırsa yakala ve yok et
-    const hardKill = new MutationObserver(() => {
-      const swiperEl = document.querySelector("#main-slider .swiper");
-      if (
-        swiperEl &&
-        swiperEl.swiper &&
-        swiperEl.swiper !== window.myMainSlider
-      ) {
-        swiperEl.swiper.destroy(true, true);
-        overrideMainSlider();
-      }
-    });
+    if (swiperEl && swiperLoaded) {
+      clearInterval(waitForSwiper);
+      overrideMainSlider();
+    }
+  }, 300);
 
-    hardKill.observe(document.body, {
-      childList: true,
-      subtree: true,
-    });
+  // Ek güvenlik için MutationObserver ile sürekli kontrol et
+  const observer = new MutationObserver(() => {
+    const swiperEl = document.querySelector("#main-slider .swiper");
+
+    if (
+      swiperEl &&
+      swiperEl.swiper &&
+      swiperEl.swiper !== window.myMainSlider
+    ) {
+      swiperEl.swiper.destroy(true, true);
+      overrideMainSlider();
+    }
   });
+
+  observer.observe(document.body, { childList: true, subtree: true });
 
   var language = window.location.pathname.split("/")[1];
 
