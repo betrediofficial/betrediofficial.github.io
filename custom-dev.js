@@ -168,13 +168,13 @@
         <div class="swiper mySwiper">
           <div class="swiper-wrapper">
             <div class="swiper-slide">
-              <a href="#"><img src="https://betrediofficial.github.io/images/slides/slide1.png" class="slide-image" /></a>
+              <a href="#"><img src="https://betrediofficial.github.io/images/slider/15Casino.png" class="slide-image" /></a>
             </div>
             <div class="swiper-slide">
-              <a href="#"><img src="https://betrediofficial.github.io/images/slides/slide2.png" class="slide-image" /></a>
+              <a href="#"><img src="https://betrediofficial.github.io/images/slider/15Spor.png" class="slide-image" /></a>
             </div>
             <div class="swiper-slide">
-              <a href="#"><img src="https://betrediofficial.github.io/images/slides/slide3.png" class="slide-image" /></a>
+              <a href="#"><img src="https://betrediofficial.github.io/images/slider/30Discount.png" class="slide-image" /></a>
             </div>
           </div>
           <div class="swiper-button-next"></div>
