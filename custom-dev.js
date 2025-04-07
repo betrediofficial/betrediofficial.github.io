@@ -103,19 +103,6 @@
       script.src = "https://code.jquery.com/jquery-3.6.0.min.js";
       script.onload = function () {
         $(document).ready(function () {
-          const ensureSwiperCSSLoaded = () => {
-            const existing = document.querySelector(
-              'link[href*="swiper-bundle.min.css"]'
-            );
-            if (!existing) {
-              const link = document.createElement("link");
-              link.rel = "stylesheet";
-              link.href =
-                "https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css";
-              document.head.appendChild(link);
-            }
-          };
-
           ensureSwiperCSSLoaded();
 
           initialize();
@@ -145,6 +132,19 @@
       console.log("jQuery zaten mevcut.");
     }
 
+    const ensureSwiperCSSLoaded = () => {
+      const existing = document.querySelector(
+        'link[href*="swiper-bundle.min.css"]'
+      );
+      if (!existing) {
+        const link = document.createElement("link");
+        link.rel = "stylesheet";
+        link.href =
+          "https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css";
+        document.head.appendChild(link);
+      }
+    };
+
     function isHomePageCheck() {
       const path = window.location.pathname;
       const splitPath = path.split("/");
@@ -162,179 +162,7 @@
       language = window.location.pathname.split("/")[1];
       const isHomePage = isHomePageCheck();
 
-      function destroyExistingSwipers() {
-        const swipers = document.querySelectorAll(".swiper-container");
-        swipers.forEach((swiperContainer) => {
-          if (swiperContainer.swiper) {
-            swiperContainer.swiper.destroy(true, true);
-          }
-        });
-      }
-
-      function initializeCustomSwiper() {
-        destroyExistingSwipers();
-
-        window.mySwiper = new Swiper("#main-slider-swiper", {
-          loop: true,
-          centeredSlides: false,
-          slidesPerView: 1,
-          autoplay: {
-            delay: 4000,
-            disableOnInteraction: false,
-          },
-          pagination: {
-            el: ".swiper-pagination",
-            clickable: true,
-          },
-          navigation: {
-            nextEl: ".swiper-button-next",
-            prevEl: ".swiper-button-prev",
-          },
-          effect: "slide",
-          speed: 600,
-          on: {
-            init: function () {
-              setTimeout(() => {
-                this.update();
-                this.slideToLoop(0, 0);
-              }, 100);
-            },
-          },
-        });
-      }
-
-      function waitForSwiperAndInit() {
-        const checkInterval = setInterval(() => {
-          if (
-            typeof Swiper !== "undefined" &&
-            document.querySelector("#main-slider-swiper")
-          ) {
-            clearInterval(checkInterval);
-            initializeCustomSwiper();
-          }
-        }, 300);
-      }
-
-      // document.addEventListener("DOMContentLoaded", () => {
-      //   waitForSwiperAndInit();
-      // });
-
-      waitForSwiperAndInit();
-
-      function ensureSwiperLoaded(callback) {
-        if (typeof Swiper === "undefined") {
-          const script = document.createElement("script");
-          script.src =
-            "https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js";
-          script.onload = callback;
-          document.head.appendChild(script);
-        } else {
-          callback();
-        }
-      }
-
-      function destroyExistingSwiper() {
-        if (window.mySwiper && typeof window.mySwiper.destroy === "function") {
-          window.mySwiper.destroy(true, true);
-        }
-      }
-
-      function setupSwiper() {
-        // const swiperInterval = setInterval(() => {}, 300);
-
-        const target = document.querySelector(
-          "#main-slider-swiper .swiper-wrapper"
-        );
-
-        if (target && typeof Swiper !== "undefined") {
-          clearInterval(swiperInterval);
-
-          destroyExistingSwiper();
-
-          window.mySwiper = new Swiper("#main-slider-swiper", {
-            loop: true,
-            centeredSlides: false,
-            slidesPerView: 1,
-            autoplay: {
-              delay: 4000,
-              disableOnInteraction: false,
-            },
-            pagination: {
-              el: ".swiper-pagination",
-              clickable: true,
-            },
-            navigation: {
-              nextEl: ".swiper-button-next",
-              prevEl: ".swiper-button-prev",
-            },
-            effect: "slide",
-            speed: 600,
-            on: {
-              init: function () {
-                setTimeout(() => {
-                  this.update();
-                  this.slideToLoop(0, 0);
-                }, 100);
-              },
-            },
-          });
-        }
-      }
-
-      // *******
-
-      // function updateCenteredSlidesOnly() {
-      //   const target = document.querySelector("#main-slider-swiper");
-
-      //   if (target && typeof Swiper !== "undefined" && target.swiper) {
-      //     const instance = target.swiper;
-
-      //     // Sadece centeredSlides parametresini değiştir
-      //     instance.params.centeredSlides = false;
-
-      //     // Swiper'ı güncelle ve ilk slide'a geç
-      //     instance.update();
-      //     instance.slideToLoop(0, 0);
-      //   }
-      // }
-
-      // function waitForSwiperAndUpdate() {
-      //   const swiperInterval = setInterval(() => {
-      //     const target = document.querySelector("#main-slider-swiper");
-
-      //     if (target && target.swiper && typeof Swiper !== "undefined") {
-      //       clearInterval(swiperInterval);
-      //       updateCenteredSlidesOnly();
-      //     }
-      //   }, 300);
-      // }
-
-      // ensureSwiperLoaded(waitForSwiperAndUpdate);
-
-      // ******
-
-      // if (typeof Swiper === "undefined") {
-      //   const swiperScript = document.createElement("script");
-      //   swiperScript.src =
-      //     "https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js";
-      //   swiperScript.onload = function () {
-      //     setupSwiper();
-      //   };
-      //   document.head.appendChild(swiperScript);
-
-      //   const swiperCSS = document.createElement("link");
-      //   swiperCSS.rel = "stylesheet";
-      //   swiperCSS.href =
-      //     "https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css";
-      //   document.head.appendChild(swiperCSS);
-      // } else {
-      //   setupSwiper();
-      // }
-
       customCSS();
-      // ensureSwiperLoaded(setupSwiper);
-      initializeCustomSwiper();
-      // setupSwiper();
 
       function customizeSignupModal() {
         const imgUrl =
@@ -876,79 +704,6 @@
         marquee.parentElement.appendChild(clone);
       }
 
-      // function customizeSignupModal() {
-      //   const imgUrl =
-      //     "https://betrediofficial.github.io/images/signup-banner/betredi_banner.png";
-
-      //   const observer = new MutationObserver(() => {
-      //     const $modal = $("#signup-modal");
-      //     const $content = $modal.find(".modal__content").first();
-
-      //     if (
-      //       $modal.is(":visible") &&
-      //       $content.length &&
-      //       $content.find(".modal__sign-img").length === 0
-      //     ) {
-      //       const $signImg = $(`
-      //   <div class="modal__sign-img">
-      //     <img src="${imgUrl}" style="width: 100%; height: 100%;" alt="Betredi Banner" />
-      //   </div>
-      // `);
-
-      //       $content.prepend($signImg);
-      //     }
-      //   });
-
-      //   observer.observe(document.body, {
-      //     childList: true,
-      //     subtree: true,
-      //   });
-      // }
-
-      // function waitForElement(
-      //   selector,
-      //   callback,
-      //   interval = 50,
-      //   timeout = 2000
-      // ) {
-      //   const start = Date.now();
-      //   const timer = setInterval(() => {
-      //     const $el = $(selector);
-      //     if ($el.length) {
-      //       clearInterval(timer);
-      //       callback($el);
-      //     } else if (Date.now() - start > timeout) {
-      //       clearInterval(timer);
-      //       console.warn(`Element ${selector} not found in time.`);
-      //     }
-      //   }, interval);
-      // }
-
-      // function customizeSignupModal() {
-      //   const imgUrl =
-      //     "https://betrediofficial.github.io/images/signup-banner/betredi_banner.png";
-
-      //   $("#signup-modal").on("shown.bs.modal", function () {
-      //     const $modal = $(this);
-
-      //     waitForElement("#signup-modal .modal__content", ($content) => {
-      //       if ($content.find(".modal__sign-img").length === 0) {
-      //         const signImgHtml = `
-      //     <div class="modal__sign-img">
-      //       <img src="${imgUrl}" alt="Betredi Banner" />
-      //     </div>
-      //   `;
-      //         $content.prepend(signImgHtml);
-      //         console.log("✅ .modal__sign-img injected!");
-      //       }
-      //     });
-      //   });
-
-      //   $("#signup-modal").on("hidden.bs.modal", function () {
-      //     $(this).find(".modal__sign-img").remove();
-      //   });
-      // }
-
       const is_mobile = isMobile();
 
       headerButtons(isHomePage);
@@ -984,47 +739,7 @@
 
     function customCSS() {
       const style = document.createElement("style");
-      //     style.innerHTML = `
-      //   #main-slider {
-      //     width: 100vw !important;
-      //     max-width: 100vw !important;
-      //     padding: 0 !important;
-      //     margin: 0 auto !important;
-      //     overflow: hidden !important;
-      //   }
 
-      //   #main-slider .container {
-      //     width: 100% !important;
-      //     max-width: 100% !important;
-      //     padding: 0 !important;
-      //     margin: 0 !important;
-      //   }
-
-      //   #main-slider-swiper {
-      //     width: 100% !important;
-      //   }
-
-      //   #main-slider-swiper .swiper-slide {
-      //     width: 100vw !important;
-      //     margin-right: 0px !important;
-      //   }
-
-      //   #main-slider-swiper .swiper-slide img {
-      //     width: 100% !important;
-      //     height: auto !important;
-      //     display: block;
-      //     object-fit: cover;
-      //   }
-
-      //   .swiper-button-prev,
-      //   .swiper-button-next {
-      //     z-index: 10;
-      //   }
-
-      //   body {
-      //     overflow-x: hidden !important;
-      //   }
-      // `;
       style.innerHTML = `
   .games-horiz-scroll {
     display: grid !important;
@@ -1936,3 +1651,45 @@
 ">GİRİŞ</h1>`);
   }
 })();
+
+document.addEventListener("DOMContentLoaded", () => {
+  function overrideMainSlider() {
+    const swiperEl = document.querySelector("#main-slider .swiper");
+    if (!swiperEl) return;
+
+    if (swiperEl.swiper) {
+      swiperEl.swiper.destroy(true, true);
+    }
+
+    new Swiper("#main-slider-swiper", {
+      loop: true,
+      centeredSlides: false,
+      slidesPerView: 1,
+      autoplay: {
+        delay: 4000,
+        disableOnInteraction: false,
+      },
+      pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+      },
+      navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+      },
+      effect: "slide",
+      speed: 600,
+    });
+  }
+
+  overrideMainSlider();
+
+  const observer = new MutationObserver(() => {
+    overrideMainSlider();
+  });
+
+  observer.observe(document.body, {
+    childList: true,
+    subtree: true,
+  });
+});
