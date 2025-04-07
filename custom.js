@@ -1,4 +1,60 @@
 (function () {
+  function overrideMainSlider() {
+    const swiperEl = document.querySelector("#main-slider .swiper");
+    if (!swiperEl || typeof window.Swiper !== "function") return;
+
+    if (swiperEl.swiper) {
+      swiperEl.swiper.destroy(true, true);
+    }
+
+    window.myMainSlider = new Swiper(swiperEl, {
+      loop: true,
+      slidesPerView: 1,
+      centeredSlides: false,
+      autoplay: {
+        delay: 4000,
+        disableOnInteraction: false,
+      },
+      pagination: {
+        el: "#main-slider .swiper-pagination",
+        clickable: true,
+      },
+      navigation: {
+        nextEl: "#main-slider .swiper-button-next",
+        prevEl: "#main-slider .swiper-button-prev",
+      },
+      effect: "slide",
+      speed: 600,
+    });
+  }
+
+  // DOM hazır değilse bekle, ama Swiper da yüklenene kadar retry et
+  const waitForSwiper = setInterval(() => {
+    const swiperEl = document.querySelector("#main-slider .swiper");
+    const swiperLoaded = typeof window.Swiper === "function";
+
+    if (swiperEl && swiperLoaded) {
+      clearInterval(waitForSwiper);
+      overrideMainSlider();
+    }
+  }, 300);
+
+  // Ek güvenlik için MutationObserver ile sürekli kontrol et
+  const observer = new MutationObserver(() => {
+    const swiperEl = document.querySelector("#main-slider .swiper");
+
+    if (
+      swiperEl &&
+      swiperEl.swiper &&
+      swiperEl.swiper !== window.myMainSlider
+    ) {
+      swiperEl.swiper.destroy(true, true);
+      overrideMainSlider();
+    }
+  });
+
+  observer.observe(document.body, { childList: true, subtree: true });
+
   var language = window.location.pathname.split("/")[1];
 
   var isLoggedIn = false;
@@ -103,30 +159,6 @@
         $(document).ready(function () {
           initialize();
 
-          //       $("#signup-modal").on("shown.bs.modal", function () {
-          //         var $modalBody = $(this).find(".modal-body");
-
-          //         if ($modalBody.find(".left-col").length === 0) {
-          //           $modalBody.children().wrapAll('<div class="right-col"></div>');
-
-          //           $modalBody.prepend(`
-          //   <div class="left-col">
-          //     <div class="left-content">
-          //       <img src="https://betrediofficial.github.io/images/signup-banner/betredi_banner.png" alt="Betredi Hoşgeldin" />
-          //       <h2>HOŞGELDİN</h2>
-          //       <p>Betredi dünyasına katılmak için hemen kaydol!</p>
-          //     </div>
-          //   </div>
-          // `);
-          //         }
-          //       });
-
-          //       $("#signup-modal").on("hidden.bs.modal", function () {
-          //         var $modalBody = $(this).find(".modal-body");
-          //         $modalBody.find(".left-col").remove();
-          //         $modalBody.find(".right-col").contents().unwrap();
-          //       });
-
           // History API kullanarak URL değişikliklerini izleyin
           const originalPushState = history.pushState;
           history.pushState = function (state) {
@@ -168,66 +200,6 @@
       isLoggedIn = $(".header__signin").length > 0 ? false : true;
       language = window.location.pathname.split("/")[1];
       const isHomePage = isHomePageCheck();
-
-      // Slider varsa önce destroy et
-      // if (
-      //   window.mainSliderInstance &&
-      //   typeof window.mainSliderInstance.destroy === "function"
-      // ) {
-      //   window.mainSliderInstance.destroy(true, true);
-      // }
-
-      // // Swiper varsa başlat
-      // if (
-      //   typeof Swiper !== "undefined" &&
-      //   document.querySelector("#main-slider-swiper")
-      // ) {
-      //   console.log("✅ Swiper başlatılıyor...");
-
-      //   window.mainSliderInstance = new Swiper("#main-slider-swiper", {
-      //     loop: true,
-      //     autoplay: {
-      //       delay: 4000,
-      //       disableOnInteraction: false,
-      //     },
-      //     pagination: {
-      //       el: ".swiper-pagination",
-      //       clickable: true,
-      //     },
-      //     navigation: {
-      //       nextEl: ".swiper-button-next",
-      //       prevEl: ".swiper-button-prev",
-      //     },
-      //     effect: "slide",
-      //     speed: 600,
-      //   });
-
-      //   console.log("✅ Swiper başarıyla başlatıldı!");
-      // } else {
-      //   console.warn(
-      //     "❌ Swiper tanımlı değil veya #main-slider-swiper bulunamadı."
-      //   );
-      // }
-
-      // if (language !== "tr") return;
-
-      if (typeof Swiper === "undefined") {
-        const swiperScript = document.createElement("script");
-        swiperScript.src =
-          "https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js";
-        swiperScript.onload = function () {
-          setupSwiper(); // Swiper yüklendikten sonra başlat
-        };
-        document.head.appendChild(swiperScript);
-
-        const swiperCSS = document.createElement("link");
-        swiperCSS.rel = "stylesheet";
-        swiperCSS.href =
-          "https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css";
-        document.head.appendChild(swiperCSS);
-      } else {
-        setupSwiper(); // zaten yüklü ise direkt başlat
-      }
 
       customCSS();
 
@@ -771,79 +743,6 @@
         marquee.parentElement.appendChild(clone);
       }
 
-      // function customizeSignupModal() {
-      //   const imgUrl =
-      //     "https://betrediofficial.github.io/images/signup-banner/betredi_banner.png";
-
-      //   const observer = new MutationObserver(() => {
-      //     const $modal = $("#signup-modal");
-      //     const $content = $modal.find(".modal__content").first();
-
-      //     if (
-      //       $modal.is(":visible") &&
-      //       $content.length &&
-      //       $content.find(".modal__sign-img").length === 0
-      //     ) {
-      //       const $signImg = $(`
-      //   <div class="modal__sign-img">
-      //     <img src="${imgUrl}" style="width: 100%; height: 100%;" alt="Betredi Banner" />
-      //   </div>
-      // `);
-
-      //       $content.prepend($signImg);
-      //     }
-      //   });
-
-      //   observer.observe(document.body, {
-      //     childList: true,
-      //     subtree: true,
-      //   });
-      // }
-
-      // function waitForElement(
-      //   selector,
-      //   callback,
-      //   interval = 50,
-      //   timeout = 2000
-      // ) {
-      //   const start = Date.now();
-      //   const timer = setInterval(() => {
-      //     const $el = $(selector);
-      //     if ($el.length) {
-      //       clearInterval(timer);
-      //       callback($el);
-      //     } else if (Date.now() - start > timeout) {
-      //       clearInterval(timer);
-      //       console.warn(`Element ${selector} not found in time.`);
-      //     }
-      //   }, interval);
-      // }
-
-      // function customizeSignupModal() {
-      //   const imgUrl =
-      //     "https://betrediofficial.github.io/images/signup-banner/betredi_banner.png";
-
-      //   $("#signup-modal").on("shown.bs.modal", function () {
-      //     const $modal = $(this);
-
-      //     waitForElement("#signup-modal .modal__content", ($content) => {
-      //       if ($content.find(".modal__sign-img").length === 0) {
-      //         const signImgHtml = `
-      //     <div class="modal__sign-img">
-      //       <img src="${imgUrl}" alt="Betredi Banner" />
-      //     </div>
-      //   `;
-      //         $content.prepend(signImgHtml);
-      //         console.log("✅ .modal__sign-img injected!");
-      //       }
-      //     });
-      //   });
-
-      //   $("#signup-modal").on("hidden.bs.modal", function () {
-      //     $(this).find(".modal__sign-img").remove();
-      //   });
-      // }
-
       const is_mobile = isMobile();
 
       headerButtons(isHomePage);
@@ -879,47 +778,7 @@
 
     function customCSS() {
       const style = document.createElement("style");
-      //     style.innerHTML = `
-      //   #main-slider {
-      //     width: 100vw !important;
-      //     max-width: 100vw !important;
-      //     padding: 0 !important;
-      //     margin: 0 auto !important;
-      //     overflow: hidden !important;
-      //   }
 
-      //   #main-slider .container {
-      //     width: 100% !important;
-      //     max-width: 100% !important;
-      //     padding: 0 !important;
-      //     margin: 0 !important;
-      //   }
-
-      //   #main-slider-swiper {
-      //     width: 100% !important;
-      //   }
-
-      //   #main-slider-swiper .swiper-slide {
-      //     width: 100vw !important;
-      //     margin-right: 0px !important;
-      //   }
-
-      //   #main-slider-swiper .swiper-slide img {
-      //     width: 100% !important;
-      //     height: auto !important;
-      //     display: block;
-      //     object-fit: cover;
-      //   }
-
-      //   .swiper-button-prev,
-      //   .swiper-button-next {
-      //     z-index: 10;
-      //   }
-
-      //   body {
-      //     overflow-x: hidden !important;
-      //   }
-      // `;
       style.innerHTML = `
   .games-horiz-scroll {
     display: grid !important;
@@ -964,6 +823,11 @@
     margin-left: 0 !important;
     margin-right: 0 !important;
 }
+
+.autoplay-progress {
+display: none !important;
+}
+
 
   
       `;
