@@ -954,7 +954,7 @@
 
 
   #main-slider .swiper-wrapper {
-  box-sizing: border-box !important;
+  box-sizing: content-box !important;
   }
 
   
