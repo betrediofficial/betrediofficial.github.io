@@ -210,6 +210,17 @@
       // }
 
       // if (language !== "tr") return;
+      function ensureSwiperLoaded(callback) {
+        if (typeof Swiper === "undefined") {
+          const script = document.createElement("script");
+          script.src =
+            "https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js";
+          script.onload = callback;
+          document.head.appendChild(script);
+        } else {
+          callback();
+        }
+      }
 
       function setupSwiper() {
         const swiperInterval = setInterval(() => {
@@ -217,10 +228,16 @@
             "#main-slider-swiper .swiper-wrapper"
           );
 
-          if (target) {
+          if (target && typeof Swiper !== "undefined") {
             clearInterval(swiperInterval);
 
-            const mySwiper = new Swiper("#main-slider-swiper", {
+            if (
+              window.mySwiper &&
+              typeof window.mySwiper.destroy === "function"
+            )
+              window.mySwiper.destroy(true, true);
+
+            window.mySwiper = new Swiper("#main-slider-swiper", {
               loop: true,
               centeredSlides: false,
               slidesPerView: 1,
@@ -270,7 +287,8 @@
       // }
 
       customCSS();
-      setupSwiper();
+      // setupSwiper();
+      ensureSwiperLoaded(setupSwiper);
 
       function customizeSignupModal() {
         const imgUrl =
