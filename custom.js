@@ -1441,13 +1441,6 @@
             <span>Canlı Destek</span>
           </div>
         </a>
-        <a onClick="$('.lowbar__btn')[$('.lowbar__btn').length -1].click()" class="col-4">
-          <div class="box-icon-item">
-                  <svg class="svg-icon" style="margin: 0 auto !important;"><use href="/static/media/sprite.1cea5f3c17045e69440504bcd887b333.svg#gamer" xlink:href="/static/media/sprite.1cea5f3c17045e69440504bcd887b333.svg#gamer"></use></svg>
-
-            <span>Canlı Destek</span>
-          </div>
-        </a>
 
 
       </div>
