@@ -211,25 +211,27 @@
 
       // if (language !== "tr") return;
 
-      // if (typeof Swiper !== "undefined") {
-      //   new Swiper("#main-slider-swiper", {
-      //     loop: true,
-      //     autoplay: {
-      //       delay: 4000,
-      //       disableOnInteraction: false,
-      //     },
-      //     pagination: {
-      //       el: ".swiper-pagination",
-      //       clickable: true,
-      //     },
-      //     navigation: {
-      //       nextEl: ".swiper-button-next",
-      //       prevEl: ".swiper-button-prev",
-      //     },
-      //     effect: "slide",
-      //     speed: 600,
-      //   });
-      // }
+      if (typeof Swiper !== "undefined") {
+        new Swiper("#main-slider-swiper", {
+          loop: true,
+          centeredSlides: false,
+          slidesPerView: 1,
+          autoplay: {
+            delay: 4000,
+            disableOnInteraction: false,
+          },
+          pagination: {
+            el: ".swiper-pagination",
+            clickable: true,
+          },
+          navigation: {
+            nextEl: ".swiper-button-next",
+            prevEl: ".swiper-button-prev",
+          },
+          effect: "slide",
+          speed: 600,
+        });
+      }
 
       customCSS();
 
