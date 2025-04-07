@@ -97,36 +97,48 @@
 
   try {
     if (typeof jQuery === "undefined") {
-      var script = document.createElement("script");
-      script.src = "https://code.jquery.com/jquery-3.6.0.min.js";
-      script.onload = function () {
+      var jqueryScript = document.createElement("script");
+      jqueryScript.src = "https://code.jquery.com/jquery-3.6.0.min.js";
+      document.head.appendChild(jqueryScript);
+    }
+
+    if (typeof Swiper === "undefined") {
+      var swiperScript = document.createElement("script");
+      swiperScript.src =
+        "https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js";
+      document.head.appendChild(swiperScript);
+    }
+
+    // Wait for DOM and both libraries to be ready
+    const wait = setInterval(() => {
+      if (
+        typeof jQuery !== "undefined" &&
+        typeof Swiper !== "undefined" &&
+        document.readyState === "complete"
+      ) {
+        clearInterval(wait);
+
         $(document).ready(function () {
           initialize();
-
-          // History API kullanarak URL değişikliklerini izleyin
           const originalPushState = history.pushState;
           history.pushState = function (state) {
             originalPushState.apply(history, arguments);
 
             setTimeout(() => {
               initialize();
-            }, 500); // URL değiştiğinde fonksiyonu çağır
+            }, 500);
             removeHomePageWidgets();
           };
 
-          // Popstate olayı için dinleyici ekle
           $(window).on("popstate", function () {
             setTimeout(() => {
               initialize();
-            }, 500); // Geri düğmesine basıldığında fonksiyonu çağır
+            }, 500);
             removeHomePageWidgets();
           });
         });
-      };
-      document.head.appendChild(script);
-    } else {
-      console.log("jQuery zaten mevcut.");
-    }
+      }
+    }, 300);
 
     function isHomePageCheck() {
       const path = window.location.pathname;
@@ -139,57 +151,6 @@
         $(".manually-added-home-widgets").remove();
       }
     }
-
-    // function customizeSwiper() {
-    //   const swiperEl = document.querySelector("#main-slider .swiper");
-    //   // if (!swiperEl || typeof Swiper !== "function") return;
-
-    //   if (swiperEl.swiper) {
-    //     swiperEl.swiper.destroy(true, true);
-    //   }
-
-    //   window.myMainSlider = new Swiper(swiperEl, {
-    //     loop: true,
-    //     slidesPerView: 1,
-    //     centeredSlides: false,
-    //     autoplay: {
-    //       delay: 4000,
-    //       disableOnInteraction: false,
-    //     },
-    //     pagination: {
-    //       el: "#main-slider .swiper-pagination",
-    //       clickable: true,
-    //     },
-    //     navigation: {
-    //       nextEl: "#main-slider .swiper-button-next",
-    //       prevEl: "#main-slider .swiper-button-prev",
-    //     },
-    //     effect: "slide",
-    //     speed: 500,
-    //   });
-    // }
-
-    // const waitForReady = setInterval(() => {
-    //   const ready = document.querySelector("#main-slider .swiper");
-    //   if (ready) {
-    //     clearInterval(waitForReady);
-    //     initialize();
-    //   }
-    // }, 300);
-
-    // const observer = new MutationObserver(() => {
-    //   const swiperEl = document.querySelector("#main-slider .swiper");
-    //   if (
-    //     swiperEl &&
-    //     swiperEl.swiper &&
-    //     swiperEl.swiper !== window.myMainSlider
-    //   ) {
-    //     swiperEl.swiper.destroy(true, true);
-    //     customizeSwiper();
-    //   }
-    // });
-
-    // observer.observe(document.body, { childList: true, subtree: true });
 
     function initialize() {
       isLoggedIn = $(".header__signin").length > 0 ? false : true;
