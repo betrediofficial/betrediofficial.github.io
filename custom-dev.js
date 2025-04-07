@@ -216,10 +216,11 @@
           const target = document.querySelector(
             "#main-slider-swiper .swiper-wrapper"
           );
+
           if (target) {
             clearInterval(swiperInterval);
 
-            new Swiper("#main-slider-swiper", {
+            const mySwiper = new Swiper("#main-slider-swiper", {
               loop: true,
               centeredSlides: false,
               slidesPerView: 1,
@@ -237,30 +238,39 @@
               },
               effect: "slide",
               speed: 600,
+              on: {
+                init: function () {
+                  setTimeout(() => {
+                    this.update();
+                    this.slideToLoop(0, 0);
+                  }, 100);
+                },
+              },
             });
           }
         }, 300);
       }
 
-      if (typeof Swiper === "undefined") {
-        const swiperScript = document.createElement("script");
-        swiperScript.src =
-          "https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js";
-        swiperScript.onload = function () {
-          setupSwiper();
-        };
-        document.head.appendChild(swiperScript);
+      // if (typeof Swiper === "undefined") {
+      //   const swiperScript = document.createElement("script");
+      //   swiperScript.src =
+      //     "https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js";
+      //   swiperScript.onload = function () {
+      //     setupSwiper();
+      //   };
+      //   document.head.appendChild(swiperScript);
 
-        const swiperCSS = document.createElement("link");
-        swiperCSS.rel = "stylesheet";
-        swiperCSS.href =
-          "https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css";
-        document.head.appendChild(swiperCSS);
-      } else {
-        setupSwiper();
-      }
+      //   const swiperCSS = document.createElement("link");
+      //   swiperCSS.rel = "stylesheet";
+      //   swiperCSS.href =
+      //     "https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css";
+      //   document.head.appendChild(swiperCSS);
+      // } else {
+      //   setupSwiper();
+      // }
 
       customCSS();
+      setupSwiper();
 
       function customizeSignupModal() {
         const imgUrl =
