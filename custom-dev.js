@@ -951,7 +951,7 @@
   }
 
   #main-slider .swiper-wrapper {
-  transform: translate3d(0, 0, 0) !important;
+  transform: translate3d(0, 0, 0);
 
   width: 100% !important;
   height: 100% !important;
@@ -960,13 +960,9 @@
 
 
   #main-slider .swiper-wrapper .swiper-slide {
-    width: 100% !important;
+    width: 100%;
     margin-left: 0 !important;
     margin-right: 0 !important;
-}
-
-#main-slider .swiper-wrapper .swiper-slide > * {
-width: 100% !important;
 }
 
   
