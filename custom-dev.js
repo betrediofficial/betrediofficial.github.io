@@ -951,7 +951,7 @@
   }
 
   #main-slider .swiper-wrapper {
-  transform: translate3d(0, 0, 0);
+  transform: translate3d(0, 0, 0) !important;
 
   width: 100% !important;
   height: 100% !important;
