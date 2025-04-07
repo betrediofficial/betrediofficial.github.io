@@ -231,47 +231,47 @@
       }
 
       function setupCustomSwiper() {
-        const swiperInterval = setInterval(() => {
-          const container = document.querySelector(
-            "#main-slider-swiper .swiper-wrapper"
-          );
+        // const swiperInterval = setInterval(() => {}, 300);
 
-          if (container && typeof Swiper !== "undefined") {
-            clearInterval(swiperInterval);
+        const container = document.querySelector(
+          "#main-slider-swiper .swiper-wrapper"
+        );
 
-            destroyExistingSwiper(); // önce patlat
+        if (container && typeof Swiper !== "undefined") {
+          clearInterval(swiperInterval);
 
-            window.mySwiper = new Swiper("#main-slider-swiper", {
-              loop: true,
-              centeredSlides: false,
-              slidesPerView: 1,
-              autoplay: {
-                delay: 4000,
-                disableOnInteraction: false,
-              },
-              pagination: {
-                el: ".swiper-pagination",
-                clickable: true,
-              },
-              navigation: {
-                nextEl: ".swiper-button-next",
-                prevEl: ".swiper-button-prev",
-              },
-              effect: "slide",
-              speed: 600,
-              on: {
-                init: function () {
-                  setTimeout(() => {
-                    this.update();
-                    this.slideToLoop(0, 0);
-                  }, 100);
-                },
-              },
-            });
+          destroyExistingSwiper();
 
-            console.log("✅ Yeni Swiper başlatıldı.");
-          }
-        }, 300);
+          window.mySwiper = new Swiper("#main-slider-swiper", {
+            loop: true,
+            centeredSlides: false,
+            slidesPerView: 1,
+            autoplay: {
+              delay: 4000,
+              disableOnInteraction: false,
+            },
+            pagination: {
+              el: ".swiper-pagination",
+              clickable: true,
+            },
+            navigation: {
+              nextEl: ".swiper-button-next",
+              prevEl: ".swiper-button-prev",
+            },
+            effect: "slide",
+            speed: 600,
+            on: {
+              init: function () {
+                setTimeout(() => {
+                  this.update();
+                  this.slideToLoop(0, 0);
+                }, 100);
+              },
+            },
+          });
+
+          console.log("✅ Yeni Swiper başlatıldı.");
+        }
       }
 
       // *******
