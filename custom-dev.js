@@ -960,9 +960,8 @@
 
 
   #main-slider .swiper-wrapper .swiper-slide {
-    width: 100vw !important;
+    width: 100% !important;
     max-width: 100vw !important;
-    padding-left: 0 !important;
     margin-left: 0 !important;
     margin-right: 0 !important;
 }
