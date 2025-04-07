@@ -103,31 +103,22 @@
       script.src = "https://code.jquery.com/jquery-3.6.0.min.js";
       script.onload = function () {
         $(document).ready(function () {
+          const ensureSwiperCSSLoaded = () => {
+            const existing = document.querySelector(
+              'link[href*="swiper-bundle.min.css"]'
+            );
+            if (!existing) {
+              const link = document.createElement("link");
+              link.rel = "stylesheet";
+              link.href =
+                "https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css";
+              document.head.appendChild(link);
+            }
+          };
+
+          ensureSwiperCSSLoaded();
+
           initialize();
-
-          //       $("#signup-modal").on("shown.bs.modal", function () {
-          //         var $modalBody = $(this).find(".modal-body");
-
-          //         if ($modalBody.find(".left-col").length === 0) {
-          //           $modalBody.children().wrapAll('<div class="right-col"></div>');
-
-          //           $modalBody.prepend(`
-          //   <div class="left-col">
-          //     <div class="left-content">
-          //       <img src="https://betrediofficial.github.io/images/signup-banner/betredi_banner.png" alt="Betredi Hoşgeldin" />
-          //       <h2>HOŞGELDİN</h2>
-          //       <p>Betredi dünyasına katılmak için hemen kaydol!</p>
-          //     </div>
-          //   </div>
-          // `);
-          //         }
-          //       });
-
-          //       $("#signup-modal").on("hidden.bs.modal", function () {
-          //         var $modalBody = $(this).find(".modal-body");
-          //         $modalBody.find(".left-col").remove();
-          //         $modalBody.find(".right-col").contents().unwrap();
-          //       });
 
           // History API kullanarak URL değişikliklerini izleyin
           const originalPushState = history.pushState;
@@ -171,50 +162,6 @@
       language = window.location.pathname.split("/")[1];
       const isHomePage = isHomePageCheck();
 
-      // Slider varsa önce destroy et
-      // if (
-      //   window.mainSliderInstance &&
-      //   typeof window.mainSliderInstance.destroy === "function"
-      // ) {
-      //   window.mainSliderInstance.destroy(true, true);
-      // }
-
-      // // Swiper varsa başlat
-      // if (
-      //   typeof Swiper !== "undefined" &&
-      //   document.querySelector("#main-slider-swiper")
-      // ) {
-      //   console.log("✅ Swiper başlatılıyor...");
-
-      //   window.mainSliderInstance = new Swiper("#main-slider-swiper", {
-      //     loop: true,
-      //     autoplay: {
-      //       delay: 4000,
-      //       disableOnInteraction: false,
-      //     },
-      //     pagination: {
-      //       el: ".swiper-pagination",
-      //       clickable: true,
-      //     },
-      //     navigation: {
-      //       nextEl: ".swiper-button-next",
-      //       prevEl: ".swiper-button-prev",
-      //     },
-      //     effect: "slide",
-      //     speed: 600,
-      //   });
-
-      //   console.log("✅ Swiper başarıyla başlatıldı!");
-      // } else {
-      //   console.warn(
-      //     "❌ Swiper tanımlı değil veya #main-slider-swiper bulunamadı."
-      //   );
-      // }
-
-      // if (language !== "tr") return;
-
-      // window.disableSwiperAutoInit = true;
-
       function destroyExistingSwipers() {
         const swipers = document.querySelectorAll(".swiper-container");
         swipers.forEach((swiperContainer) => {
@@ -227,7 +174,7 @@
       function initializeCustomSwiper() {
         destroyExistingSwipers();
 
-        var mySwiper = new Swiper("#main-slider-swiper", {
+        window.mySwiper = new Swiper("#main-slider-swiper", {
           loop: true,
           centeredSlides: false,
           slidesPerView: 1,
@@ -255,6 +202,22 @@
           },
         });
       }
+
+      function waitForSwiperAndInit() {
+        const checkInterval = setInterval(() => {
+          if (
+            typeof Swiper !== "undefined" &&
+            document.querySelector("#main-slider-swiper")
+          ) {
+            clearInterval(checkInterval);
+            initializeCustomSwiper();
+          }
+        }, 300);
+      }
+
+      document.addEventListener("DOMContentLoaded", () => {
+        waitForSwiperAndInit();
+      });
 
       function ensureSwiperLoaded(callback) {
         if (typeof Swiper === "undefined") {
