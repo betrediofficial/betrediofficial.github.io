@@ -1,5 +1,46 @@
 (function () {
   window.disableSwiperAutoInit = true;
+  document.addEventListener("DOMContentLoaded", () => {
+    function overrideMainSlider() {
+      const swiperEl = document.querySelector("#main-slider .swiper");
+      if (!swiperEl) return;
+
+      if (swiperEl.swiper) {
+        swiperEl.swiper.destroy(true, true);
+      }
+
+      window.mySwiper = new Swiper("#main-slider-swiper", {
+        loop: true,
+        centeredSlides: false,
+        slidesPerView: 1,
+        autoplay: {
+          delay: 4000,
+          disableOnInteraction: false,
+        },
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
+        },
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+        effect: "slide",
+        speed: 600,
+      });
+    }
+
+    overrideMainSlider();
+
+    const observer = new MutationObserver(() => {
+      overrideMainSlider();
+    });
+
+    observer.observe(document.body, {
+      childList: true,
+      subtree: true,
+    });
+  });
 
   var language = window.location.pathname.split("/")[1];
 
@@ -1650,46 +1691,4 @@
     margin-top: 10px;
 ">GİRİŞ</h1>`);
   }
-
-  document.addEventListener("DOMContentLoaded", () => {
-    function overrideMainSlider() {
-      const swiperEl = document.querySelector("#main-slider .swiper");
-      if (!swiperEl) return;
-
-      if (swiperEl.swiper) {
-        swiperEl.swiper.destroy(true, true);
-      }
-
-      new Swiper("#main-slider-swiper", {
-        loop: true,
-        centeredSlides: false,
-        slidesPerView: 1,
-        autoplay: {
-          delay: 4000,
-          disableOnInteraction: false,
-        },
-        pagination: {
-          el: ".swiper-pagination",
-          clickable: true,
-        },
-        navigation: {
-          nextEl: ".swiper-button-next",
-          prevEl: ".swiper-button-prev",
-        },
-        effect: "slide",
-        speed: 600,
-      });
-    }
-
-    overrideMainSlider();
-
-    const observer = new MutationObserver(() => {
-      overrideMainSlider();
-    });
-
-    observer.observe(document.body, {
-      childList: true,
-      subtree: true,
-    });
-  });
 })();
