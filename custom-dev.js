@@ -140,11 +140,10 @@
       }
     }
 
-    function initialize() {
+    function customizeSwiper() {
       const swiperEl = document.querySelector("#main-slider .swiper");
-      if (!swiperEl || typeof Swiper !== "function") return;
+      // if (!swiperEl || typeof Swiper !== "function") return;
 
-      // Daha önce başlatılmışsa yok et
       if (swiperEl.swiper) {
         swiperEl.swiper.destroy(true, true);
       }
@@ -153,26 +152,56 @@
         loop: true,
         slidesPerView: 1,
         centeredSlides: false,
-        // autoplay: {
-        //   delay: 5000,
-        // },
-        // pagination: {
-        //   el: "#main-slider .swiper-pagination",
-        //   clickable: true,
-        // },
-        // navigation: {
-        //   nextEl: "#main-slider .swiper-button-next",
-        //   prevEl: "#main-slider .swiper-button-prev",
-        // },
-        // effect: "slide",
-        // speed: 600,
+        autoplay: {
+          delay: 4000,
+          disableOnInteraction: false,
+        },
+        pagination: {
+          el: "#main-slider .swiper-pagination",
+          clickable: true,
+        },
+        navigation: {
+          nextEl: "#main-slider .swiper-button-next",
+          prevEl: "#main-slider .swiper-button-prev",
+        },
+        effect: "slide",
+        speed: 500,
       });
+    }
 
+    // DOM ve Swiper hazır mı? Kontrol et
+    const waitForReady = setInterval(() => {
+      const ready =
+        document.querySelector("#main-slider .swiper") &&
+        typeof Swiper === "function";
+      if (ready) {
+        clearInterval(waitForReady);
+        initialize();
+      }
+    }, 300);
+
+    // Swiper bozulursa yeniden yükle
+    const observer = new MutationObserver(() => {
+      const swiperEl = document.querySelector("#main-slider .swiper");
+      if (
+        swiperEl &&
+        swiperEl.swiper &&
+        swiperEl.swiper !== window.myMainSlider
+      ) {
+        swiperEl.swiper.destroy(true, true);
+        customizeSwiper(); // sadece slider'ı tekrar kur
+      }
+    });
+
+    observer.observe(document.body, { childList: true, subtree: true });
+
+    function initialize() {
       isLoggedIn = $(".header__signin").length > 0 ? false : true;
       language = window.location.pathname.split("/")[1];
       const isHomePage = isHomePageCheck();
 
       customCSS();
+      customizeSwiper();
 
       function customizeSignupModal() {
         const imgUrl =
