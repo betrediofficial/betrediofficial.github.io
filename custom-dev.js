@@ -37,7 +37,7 @@
       clearInterval(waitForSwiper);
       overrideMainSlider();
     }
-  }, 500);
+  }, 100);
 
   const observer = new MutationObserver(() => {
     const swiperEl = document.querySelector("#main-slider .swiper");
