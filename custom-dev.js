@@ -1,16 +1,17 @@
 (function () {
   function overrideMainSlider() {
     const swiperEl = document.querySelector("#main-slider .swiper");
-    if (!swiperEl || typeof window.Swiper !== "function") return;
+    if (!swiperEl || typeof Swiper !== "function") return;
 
     if (swiperEl.swiper) {
       swiperEl.swiper.destroy(true, true);
     }
 
+    console.log("OVERRIDING MAIN SLIDER...");
+
     window.myMainSlider = new Swiper(swiperEl, {
       loop: true,
       slidesPerView: 1,
-      centeredSlides: false,
       autoplay: {
         delay: 4000,
         disableOnInteraction: false,
@@ -28,18 +29,16 @@
     });
   }
 
-  // DOM hazır değilse bekle, ama Swiper da yüklenene kadar retry et
   const waitForSwiper = setInterval(() => {
     const swiperEl = document.querySelector("#main-slider .swiper");
-    const swiperLoaded = typeof window.Swiper === "function";
+    const swiperReady = typeof Swiper === "function";
 
-    if (swiperEl && swiperLoaded) {
+    if (swiperEl && swiperReady) {
       clearInterval(waitForSwiper);
       overrideMainSlider();
     }
-  }, 300);
+  }, 500);
 
-  // Ek güvenlik için MutationObserver ile sürekli kontrol et
   const observer = new MutationObserver(() => {
     const swiperEl = document.querySelector("#main-slider .swiper");
 
@@ -48,12 +47,16 @@
       swiperEl.swiper &&
       swiperEl.swiper !== window.myMainSlider
     ) {
+      console.log("Detected auto-init Swiper. Destroying and overriding...");
       swiperEl.swiper.destroy(true, true);
       overrideMainSlider();
     }
   });
 
-  observer.observe(document.body, { childList: true, subtree: true });
+  observer.observe(document.body, {
+    childList: true,
+    subtree: true,
+  });
 
   var language = window.location.pathname.split("/")[1];
 
