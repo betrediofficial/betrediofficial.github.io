@@ -745,11 +745,6 @@
 
       if (!isHomePage) {
         removeHomePageWidgets();
-      } else {
-        is_mobile && mobileBoxes();
-        mobileSignInText();
-        bottomMenuWidget(is_mobile);
-        otherGames();
 
         if (!is_mobile) slotGames();
 
@@ -758,6 +753,12 @@
         if (!is_mobile) casinoGames();
 
         sportsCard();
+      } else {
+        is_mobile && mobileBoxes();
+        mobileSignInText();
+        bottomMenuWidget(is_mobile);
+        otherGames();
+
         //hide default games
         !is_mobile && hideDefaultGames(50);
         !is_mobile && hideDefaultGames(1500);

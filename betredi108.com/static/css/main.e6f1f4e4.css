@@ -3425,7 +3425,7 @@ button:hover .svg-icon {
   align-items: center;
   display: flex;
   height: auto;
-  justify-content: center;
+  /* justify-content: center; */
   margin: 0;
 }
 .swiper-grid > .swiper-wrapper {
