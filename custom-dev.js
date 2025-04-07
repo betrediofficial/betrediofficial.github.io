@@ -157,8 +157,6 @@
       script.src = "https://code.jquery.com/jquery-3.6.0.min.js";
       script.onload = function () {
         $(document).ready(function () {
-          ensureSwiperCSSLoaded();
-
           initialize();
 
           // History API kullanarak URL değişikliklerini izleyin
@@ -185,19 +183,6 @@
     } else {
       console.log("jQuery zaten mevcut.");
     }
-
-    const ensureSwiperCSSLoaded = () => {
-      const existing = document.querySelector(
-        'link[href*="swiper-bundle.min.css"]'
-      );
-      if (!existing) {
-        const link = document.createElement("link");
-        link.rel = "stylesheet";
-        link.href =
-          "https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css";
-        document.head.appendChild(link);
-      }
-    };
 
     function isHomePageCheck() {
       const path = window.location.pathname;
