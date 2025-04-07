@@ -176,6 +176,15 @@
             <div class="swiper-slide">
               <a href="#"><img src="https://betrediofficial.github.io/images/slider/30Discount.png" class="slide-image" /></a>
             </div>
+            <div class="swiper-slide">
+              <a href="#"><img src="https://betrediofficial.github.io/images/slider/50Slot.png" class="slide-image" /></a>
+            </div>
+            <div class="swiper-slide">
+              <a href="#"><img src="https://betrediofficial.github.io/images/slider/100Freespin.png" class="slide-image" /></a>
+            </div>
+            <div class="swiper-slide">
+              <a href="#"><img src="https://betrediofficial.github.io/images/slider/100Slotiade.png" class="slide-image" /></a>
+            </div>
           </div>
           <div class="swiper-button-next"></div>
           <div class="swiper-button-prev"></div>
