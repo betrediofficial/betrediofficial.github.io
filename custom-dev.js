@@ -955,7 +955,7 @@ body.custom-dark-sportsbook #footer {
 }
 
 .main__content {
-  background: url("https://betrediofficial.github.io/images/") !important;
+  background: url("https://betrediofficial.github.io/images/bg.jpeg") !important;
   background-repat: no-repeat !important;
 }  
       `;
