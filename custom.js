@@ -173,6 +173,36 @@
               "https://betredi108.com/tr/casino/virtual_sports";
           }
         );
+
+        $(document).on("click", 'a[href="/tr/vip"]', function (e) {
+          e.preventDefault();
+          window.location.href = "https://betredi108.com/tr/vip";
+        });
+
+        $(document).on("click", 'a[href="/tr/casino"]', function (e) {
+          e.preventDefault();
+          window.location.href = "https://betredi108.com/tr/casino";
+        });
+
+        $(document).on("click", 'a[href="/tr/sportsbook"]', function (e) {
+          e.preventDefault();
+          window.location.href = "https://betredi108.com/tr/sportsbook";
+        });
+
+        $(document).on("click", 'a[href="/tr/e-sport"]', function (e) {
+          e.preventDefault();
+          window.location.href = "https://betredi108.com/tr/e-sport";
+        });
+
+        $(document).on("click", 'a[href="/tr/favorites"]', function (e) {
+          e.preventDefault();
+          window.location.href = "https://betredi108.com/tr/favorites";
+        });
+
+        $(document).on("click", 'a[href="/tr/trade"]', function (e) {
+          e.preventDefault();
+          window.location.href = "https://betredi108.com/tr/trade";
+        });
       }
     }, 300);
 
