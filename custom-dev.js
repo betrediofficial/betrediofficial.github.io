@@ -163,27 +163,27 @@
 
     function insertCustomMainSlider() {
       const sliderHTML = `
-    <div class="section pt-24" id="main-slider">
+    <div class="manually-added-home-widgets section pt-24" id="main-slider">
       <div class="container">
         <div class="swiper mySwiper">
           <div class="swiper-wrapper">
             <div class="swiper-slide">
-              <a href="#"><img src="https://betrediofficial.github.io/images/slider/15Casino.png" class="slide-image" /></a>
+              <a href="https://betredi108.com/tr/promotion/15-casino-yatirim-bonusu-tr"><img src="https://betrediofficial.github.io/images/slider/15Casino.png" class="slide-image" /></a>
             </div>
             <div class="swiper-slide">
-              <a href="#"><img src="https://betrediofficial.github.io/images/slider/15Spor.png" class="slide-image" /></a>
+              <a href="https://betredi108.com/tr/promotion/15-spor-yatirim-bonusu-tr"><img src="https://betrediofficial.github.io/images/slider/15Spor.png" class="slide-image" /></a>
             </div>
             <div class="swiper-slide">
-              <a href="#"><img src="https://betrediofficial.github.io/images/slider/30Discount.png" class="slide-image" /></a>
+              <a href="https://betredi108.com/tr/promotion/30-casino-discount-tr"><img src="https://betrediofficial.github.io/images/slider/30Discount.png" class="slide-image" /></a>
             </div>
             <div class="swiper-slide">
-              <a href="#"><img src="https://betrediofficial.github.io/images/slider/50Slot.png" class="slide-image" /></a>
+              <a href="https://betredi108.com/tr/promotion/50-slot-yatirim-bonusu-tr"><img src="https://betrediofficial.github.io/images/slider/50Slot.png" class="slide-image" /></a>
             </div>
             <div class="swiper-slide">
-              <a href="#"><img src="https://betrediofficial.github.io/images/slider/100Freespin.png" class="slide-image" /></a>
+              <a href="https://betredi108.com/tr/promotion/100-freespin-deneme-bonusu-trrf"><img src="https://betrediofficial.github.io/images/slider/100Freespin.png" class="slide-image" /></a>
             </div>
             <div class="swiper-slide">
-              <a href="#"><img src="https://betrediofficial.github.io/images/slider/100Slotiade.png" class="slide-image" /></a>
+              <a href="https://betredi108.com/tr/promotion/100-slot-iade-bonusu-rt"><img src="https://betrediofficial.github.io/images/slider/100Slotiade.png" class="slide-image" /></a>
             </div>
           </div>
           <div class="swiper-button-next"></div>
@@ -1495,12 +1495,12 @@
       let title = language === "tr" ? "SLOT CASİNO" : "SLOT CASINO";
 
       var newSection = `
-     <div class="manually-added-home-widgets section" id="slotoyunlari" style="margin-bottom: 10px;">
+     <div class="manually-added-home-widgets section" id="slotoyunlari" style="margin-bottom: 14px;">
   <div class="container otherGames">
     <div class="row">
       <div class="col-12">
         <div class="section__title-wrap">
-          <h2 class="section__title" style="font-size: 30px;">
+          <h2 class="section__title" style="font-size: 30px; font-family: 'Rajdhani-SemiBold', serif;">
             ${title}
           </h2>
         </div>
@@ -1674,7 +1674,7 @@
     <div class="row">
       <div class="col-12">
         <div class="section__title-wrap">
-          <h2 class="section__title" style="font-size: 30px; margin-bottom: 10px;">
+          <h2 class="section__title" style="font-size: 30px; font-family: 'Rajdhani-SemiBold', serif; margin-bottom: 10px;">
             ${title}
           </h2>
         </div>
