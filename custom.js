@@ -138,6 +138,11 @@
             removeHomePageWidgets();
           });
         });
+
+        $(document).on("click", 'a[href="/tr/casino/slots"]', function (e) {
+          e.preventDefault();
+          window.location.href = "https://betredi108.com/tr/casino/slots";
+        });
       }
     }, 300);
 
