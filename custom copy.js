@@ -97,36 +97,49 @@
 
   try {
     if (typeof jQuery === "undefined") {
-      var script = document.createElement("script");
-      script.src = "https://code.jquery.com/jquery-3.6.0.min.js";
-      script.onload = function () {
+      var jqueryScript = document.createElement("script");
+      jqueryScript.src = "https://code.jquery.com/jquery-3.6.0.min.js";
+      document.head.appendChild(jqueryScript);
+    }
+
+    if (typeof Swiper === "undefined") {
+      var swiperScript = document.createElement("script");
+      swiperScript.src =
+        "https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js";
+      document.head.appendChild(swiperScript);
+    }
+
+    // Wait for DOM and both libraries to be ready
+    const wait = setInterval(() => {
+      if (
+        typeof jQuery !== "undefined" &&
+        typeof Swiper !== "undefined" &&
+        document.readyState === "complete"
+      ) {
+        clearInterval(wait);
+
         $(document).ready(function () {
           initialize();
 
-          // History API kullanarak URL değişikliklerini izleyin
           const originalPushState = history.pushState;
           history.pushState = function (state) {
             originalPushState.apply(history, arguments);
 
             setTimeout(() => {
               initialize();
-            }, 500); // URL değiştiğinde fonksiyonu çağır
+            }, 500);
             removeHomePageWidgets();
           };
 
-          // Popstate olayı için dinleyici ekle
           $(window).on("popstate", function () {
             setTimeout(() => {
               initialize();
-            }, 500); // Geri düğmesine basıldığında fonksiyonu çağır
+            }, 500);
             removeHomePageWidgets();
           });
         });
-      };
-      document.head.appendChild(script);
-    } else {
-      console.log("jQuery zaten mevcut.");
-    }
+      }
+    }, 300);
 
     function isHomePageCheck() {
       const path = window.location.pathname;
@@ -140,58 +153,84 @@
       }
     }
 
-    // function customizeSwiper() {
-    //   const swiperEl = document.querySelector("#main-slider .swiper");
-    //   // if (!swiperEl || typeof Swiper !== "function") return;
+    function removeOriginalMainSlider() {
+      const firstSection = document.querySelector("#main__content .section");
+      if (firstSection && firstSection.id === "main-slider") {
+        console.log("Removing original #main-slider...");
+        firstSection.remove();
+      }
+    }
 
-    //   if (swiperEl.swiper) {
-    //     swiperEl.swiper.destroy(true, true);
-    //   }
+    function insertCustomMainSlider() {
+      const sliderHTML = `
+    <div class="section pt-24" id="main-slider">
+      <div class="container">
+        <div class="swiper mySwiper">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <a href="#"><img src="https://betrediofficial.github.io/images/slider/15Casino.png" class="slide-image" /></a>
+            </div>
+            <div class="swiper-slide">
+              <a href="#"><img src="https://betrediofficial.github.io/images/slider/15Spor.png" class="slide-image" /></a>
+            </div>
+            <div class="swiper-slide">
+              <a href="#"><img src="https://betrediofficial.github.io/images/slider/30Discount.png" class="slide-image" /></a>
+            </div>
+            <div class="swiper-slide">
+              <a href="#"><img src="https://betrediofficial.github.io/images/slider/50Slot.png" class="slide-image" /></a>
+            </div>
+            <div class="swiper-slide">
+              <a href="#"><img src="https://betrediofficial.github.io/images/slider/100Freespin.png" class="slide-image" /></a>
+            </div>
+            <div class="swiper-slide">
+              <a href="#"><img src="https://betrediofficial.github.io/images/slider/100Slotiade.png" class="slide-image" /></a>
+            </div>
+          </div>
+          <div class="swiper-button-next"></div>
+          <div class="swiper-button-prev"></div>
+          <div class="swiper-pagination"></div>
+        </div>
+      </div>
+    </div>
+  `;
 
-    //   window.myMainSlider = new Swiper(swiperEl, {
-    //     loop: true,
-    //     slidesPerView: 1,
-    //     centeredSlides: false,
-    //     autoplay: {
-    //       delay: 4000,
-    //       disableOnInteraction: false,
-    //     },
-    //     pagination: {
-    //       el: "#main-slider .swiper-pagination",
-    //       clickable: true,
-    //     },
-    //     navigation: {
-    //       nextEl: "#main-slider .swiper-button-next",
-    //       prevEl: "#main-slider .swiper-button-prev",
-    //     },
-    //     effect: "slide",
-    //     speed: 500,
-    //   });
-    // }
+      const mainContent = document.querySelector("#main__content");
+      if (mainContent) {
+        mainContent.insertAdjacentHTML("afterbegin", sliderHTML);
+        console.log("Custom slider inserted.");
+      }
+    }
 
-    // const waitForReady = setInterval(() => {
-    //   const ready = document.querySelector("#main-slider .swiper");
-    //   if (ready) {
-    //     clearInterval(waitForReady);
-    //     initialize();
-    //   }
-    // }, 300);
+    function initCustomSlider() {
+      const swiperEl = document.querySelector("#main-slider .swiper");
+      if (!swiperEl || typeof Swiper !== "function") return;
 
-    // const observer = new MutationObserver(() => {
-    //   const swiperEl = document.querySelector("#main-slider .swiper");
-    //   if (
-    //     swiperEl &&
-    //     swiperEl.swiper &&
-    //     swiperEl.swiper !== window.myMainSlider
-    //   ) {
-    //     swiperEl.swiper.destroy(true, true);
-    //     customizeSwiper();
-    //   }
-    // });
-
-    // observer.observe(document.body, { childList: true, subtree: true });
+      window.myMainSlider = new Swiper(swiperEl, {
+        loop: true,
+        slidesPerView: 1,
+        centeredSlides: false,
+        autoplay: {
+          delay: 4000,
+          disableOnInteraction: false,
+        },
+        pagination: {
+          el: "#main-slider .swiper-pagination",
+          clickable: true,
+        },
+        navigation: {
+          nextEl: "#main-slider .swiper-button-next",
+          prevEl: "#main-slider .swiper-button-prev",
+        },
+        effect: "slide",
+        speed: 600,
+      });
+    }
 
     function initialize() {
+      removeOriginalMainSlider();
+      insertCustomMainSlider();
+      setTimeout(initCustomSlider, 500);
+
       isLoggedIn = $(".header__signin").length > 0 ? false : true;
       language = window.location.pathname.split("/")[1];
 
@@ -345,22 +384,445 @@
       });
     }
 
+    //     function injectProvidersMarquee() {
+    //       const container = document.querySelector("#main-slider > .container");
+
+    //       if (!container || container.querySelector(".custom--section--2")) return;
+
+    //       const swiperElement = container.querySelector("#main-slider-swiper");
+    //       if (!swiperElement) return;
+
+    //       const section = document.createElement("div");
+
+    //       // <div class="providers--marquee--bg"></div>;
+
+    //       section.className = "section custom--section--2 custom--section";
+    //       section.innerHTML = `
+    //     <div class="container" style="position: relative; max-width: 100% !important; margin-bottom: 20px; !important; padding-left: 0px !important; padding-right: 0px !important; padding-top: 0px !important; overflow: hidden !important;">
+    //     <div class="providers--marquee--bg" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; background: linear-gradient(0deg, rgba(54,0,6,1) 0%, rgba(125,2,15,1) 100%);"></div>
+    // <div class="providers--marquee">
+    // 				          <a class="custom--providers--link" href="https://betredi108.com/tr/providers/pragmaticplay">
+    // 				            <img class="custom--providers--image" src="https://vendor-provider.fra1.cdn.digitaloceanspaces.com/ebetlab/game-providers/light/pragmaticplay.svg" alt="">
+    // 				          </a>
+
+    // 				          <a class="custom--providers--link" href="https://betredi108.com/tr/providers/evolution">
+    // 				            <img class="custom--providers--image" src="https://vendor-provider.fra1.cdn.digitaloceanspaces.com/ebetlab/game-providers/light/Evolution%20Gaming.svg" alt="">
+    // 				          </a>
+
+    // 				          <a class="custom--providers--link" href="https://betredi108.com/tr/providers/hacksaw">
+    // 				            <img class="custom--providers--image" src="https://vendor-provider.fra1.cdn.digitaloceanspaces.com/ebetlab/game-providers/light/hacksaw.svg" alt="">
+    // 				          </a>
+
+    // 				          <a class="custom--providers--link" href="https://betredi108.com/tr/providers/egt">
+    // 				            <img class="custom--providers--image" src="https://vendor-provider.fra1.cdn.digitaloceanspaces.com/ebetlab/game-providers/light/egt.svg" alt="">
+    // 				          </a>
+
+    // 				          <a class="custom--providers--link" href="https://betredi108.com/tr/providers/nolimitcity">
+    // 				            <img class="custom--providers--image" src="https://vendor-provider.fra1.cdn.digitaloceanspaces.com/ebetlab/game-providers/light/NoLimitCity.svg" alt="">
+    // 				          </a>
+
+    // 				          <a class="custom--providers--link" href="https://betredi108.com/tr/providers/egt-interactive">
+    // 				            <img class="custom--providers--image" src="https://vendor-provider.fra1.cdn.digitaloceanspaces.com/ebetlab/game-providers/light/amusnet.svg" alt="">
+    // 				          </a>
+
+    // 				          <a class="custom--providers--link" href="https://betredi108.com/tr/providers/playson">
+    // 				            <img class="custom--providers--image" src="https://vendor-provider.fra1.cdn.digitaloceanspaces.com/ebetlab/game-providers/light/playson.svg" alt="">
+    // 				          </a>
+
+    // 				          <a class="custom--providers--link" href="https://betredi108.com/tr/providers/netent">
+    // 				            <img class="custom--providers--image" src="https://vendor-provider.fra1.cdn.digitaloceanspaces.com/ebetlab/game-providers/light/netent.svg" alt="">
+    // 				          </a>
+
+    // 				          <a class="custom--providers--link" href="https://betredi108.com/tr/providers/popiplay">
+    // 				            <img class="custom--providers--image" src="https://vendor-provider.fra1.cdn.digitaloceanspaces.com/ebetlab/game-providers/light/popiplay.svg" alt="">
+    // 				          </a>
+
+    // 				          <a class="custom--providers--link" href="https://betredi108.com/tr/providers/thunderkick">
+    // 				            <img class="custom--providers--image" src="https://vendor-provider.fra1.cdn.digitaloceanspaces.com/ebetlab/game-providers/light/thunderkick.svg" alt="">
+    // 				          </a>
+
+    // 				          <a class="custom--providers--link" href="https://betredi108.com/tr/providers/booming">
+    // 				            <img class="custom--providers--image" src="https://vendor-provider.fra1.cdn.digitaloceanspaces.com/ebetlab/game-providers/light/booming.svg" alt="">
+    // 				          </a>
+
+    // 				          <a class="custom--providers--link" href="https://betredi108.com/tr/providers/redtiger">
+    // 				            <img class="custom--providers--image" src="https://vendor-provider.fra1.cdn.digitaloceanspaces.com/ebetlab/game-providers/light/Red%20Tiger%20Gaming.svg" alt="">
+    // 				          </a>
+
+    // 				          <a class="custom--providers--link" href="https://betredi108.com/tr/providers/pragmaticlive">
+    // 				            <img class="custom--providers--image" src="https://vendor-provider.fra1.cdn.digitaloceanspaces.com/ebetlab/game-providers/light/pragmatic-live-light.svg" alt="">
+    // 				          </a>
+
+    // 				          <a class="custom--providers--link" href="https://betredi108.com/tr/providers/bgaming">
+    // 				            <img class="custom--providers--image" src="https://vendor-provider.fra1.cdn.digitaloceanspaces.com/ebetlab/game-providers/light/softswiss.svg" alt="">
+    // 				          </a>
+
+    // 				          <a class="custom--providers--link" href="https://betredi108.com/tr/providers/gameart">
+    // 				            <img class="custom--providers--image" src="https://vendor-provider.fra1.cdn.digitaloceanspaces.com/ebetlab/game-providers/light/gameart.svg" alt="">
+    // 				          </a>
+
+    // 				          <a class="custom--providers--link" href="https://betredi108.com/tr/providers/fantasma">
+    // 				            <img class="custom--providers--image" src="https://vendor-provider.fra1.cdn.digitaloceanspaces.com/ebetlab/game-providers/light/fantasma.svg" alt="">
+    // 				          </a>
+
+    // 				          <a class="custom--providers--link" href="https://betredi108.com/tr/providers/slotmill">
+    // 				            <img class="custom--providers--image" src="https://vendor-provider.fra1.cdn.digitaloceanspaces.com/ebetlab/game-providers/light/slotmill.svg" alt="">
+    // 				          </a>
+
+    // 				          <a class="custom--providers--link" href="https://betredi108.com/tr/providers/1spin4win">
+    // 				            <img class="custom--providers--image" src="https://vendor-provider.fra1.cdn.digitaloceanspaces.com/ebetlab/game-providers/light/1spin4win.svg" alt="">
+    // 				          </a>
+
+    // 				          <a class="custom--providers--link" href="https://betredi108.com/tr/providers/aesexybaccarat">
+    // 				            <img class="custom--providers--image" src="https://vendor-provider.fra1.cdn.digitaloceanspaces.com/ebetlab/game-providers/light/AE%20Sexy.svg" alt="">
+    // 				          </a>
+
+    // 				          <a class="custom--providers--link" href="https://betredi108.com/tr/providers/5men">
+    // 				            <img class="custom--providers--image" src="https://vendor-provider.fra1.cdn.digitaloceanspaces.com/ebetlab/game-providers/light/5men.svg" alt="">
+    // 				          </a>
+
+    // 				          <a class="custom--providers--link" href="https://betredi108.com/tr/providers/novomatic">
+    // 				            <img class="custom--providers--image" src="https://vendor-provider.fra1.cdn.digitaloceanspaces.com/ebetlab/game-providers/light/novomatic.svg" alt="">
+    // 				          </a>
+
+    // 				          <a class="custom--providers--link" href="https://betredi108.com/tr/providers/7mojos">
+    // 				            <img class="custom--providers--image" src="https://vendor-provider.fra1.cdn.digitaloceanspaces.com/ebetlab/game-providers/light/7%20mojos.svg" alt="">
+    // 				          </a>
+
+    // 				          <a class="custom--providers--link" href="https://betredi108.com/tr/providers/alg">
+    // 				            <img class="custom--providers--image" src="https://vendor-provider.fra1.cdn.digitaloceanspaces.com/ebetlab/game-providers/light/alg.svg" alt="">
+    // 				          </a>
+
+    // 				          <a class="custom--providers--link" href="https://betredi108.com/tr/providers/amatic">
+    // 				            <img class="custom--providers--image" src="https://vendor-provider.fra1.cdn.digitaloceanspaces.com/ebetlab/game-providers/light/amatic.svg" alt="">
+    // 				          </a>
+
+    // 				          <a class="custom--providers--link" href="https://betredi108.com/tr/providers/endorphina">
+    // 				            <img class="custom--providers--image" src="https://vendor-provider.fra1.cdn.digitaloceanspaces.com/ebetlab/game-providers/light/endorphina.svg" alt="">
+    // 				          </a>
+
+    // 				          <a class="custom--providers--link" href="https://betredi108.com/tr/providers/pgsoft">
+    // 				            <img class="custom--providers--image" src="https://vendor-provider.fra1.cdn.digitaloceanspaces.com/ebetlab/game-providers/light/Pocket%20Games%20Soft.svg" alt="">
+    // 				          </a>
+
+    // 				          <a class="custom--providers--link" href="https://betredi108.com/tr/providers/apollo">
+    // 				            <img class="custom--providers--image" src="https://vendor-provider.fra1.cdn.digitaloceanspaces.com/ebetlab/game-providers/light/Apollo%20Games.svg" alt="">
+    // 				          </a>
+
+    // 				          <a class="custom--providers--link" href="https://betredi108.com/tr/providers/asiagaming">
+    // 				            <img class="custom--providers--image" src="https://vendor-provider.fra1.cdn.digitaloceanspaces.com/ebetlab/game-providers/light/Asia%20Gaming.svg" alt="">
+    // 				          </a>
+
+    // 				          <a class="custom--providers--link" href="https://betredi108.com/tr/providers/atomic">
+    // 				            <img class="custom--providers--image" src="https://vendor-provider.fra1.cdn.digitaloceanspaces.com/ebetlab/game-providers/light/atomic%20slot.svg" alt="">
+    // 				          </a>
+
+    // 				          <a class="custom--providers--link" href="https://betredi108.com/tr/providers/beefee">
+    // 				            <img class="custom--providers--image" src="https://vendor-provider.fra1.cdn.digitaloceanspaces.com/ebetlab/game-providers/light/BeeFee%20Games.svg" alt="">
+    // 				          </a>
+
+    // 				          <a class="custom--providers--link" href="https://betredi108.com/tr/providers/belatra">
+    // 				            <img class="custom--providers--image" src="https://vendor-provider.fra1.cdn.digitaloceanspaces.com/ebetlab/game-providers/light/belatra.svg" alt="">
+    // 				          </a>
+
+    // 				          <a class="custom--providers--link" href="https://betredi108.com/tr/providers/betsolutions">
+    // 				            <img class="custom--providers--image" src="https://vendor-provider.fra1.cdn.digitaloceanspaces.com/ebetlab/game-providers/light/Betsolutions.svg" alt="">
+    // 				          </a>
+
+    // 				          <a class="custom--providers--link" href="https://betredi108.com/tr/providers/bet2tech">
+    // 				            <img class="custom--providers--image" src="https://vendor-provider.fra1.cdn.digitaloceanspaces.com/ebetlab/game-providers/light/bet%202%20tech.svg" alt="">
+    // 				          </a>
+
+    // 				          <a class="custom--providers--link" href="https://betredi108.com/tr/providers/beterlive">
+    // 				            <img class="custom--providers--image" src="https://vendor-provider.fra1.cdn.digitaloceanspaces.com/ebetlab/game-providers/light/beterlive.svg" alt="">
+    // 				          </a>
+
+    // 				          <a class="custom--providers--link" href="https://betredi108.com/tr/providers/betradarvs">
+    // 				            <img class="custom--providers--image" src="https://vendor-provider.fra1.cdn.digitaloceanspaces.com/ebetlab/game-providers/light/Betradar%20Virtual%20sports.svg" alt="">
+    // 				          </a>
+
+    // 				          <a class="custom--providers--link" href="https://betredi108.com/tr/providers/betsoft">
+    // 				            <img class="custom--providers--image" src="https://vendor-provider.fra1.cdn.digitaloceanspaces.com/ebetlab/game-providers/light/betsoft.svg" alt="">
+    // 				          </a>
+
+    // 				          <a class="custom--providers--link" href="https://betredi108.com/tr/providers/eagaming">
+    // 				            <img class="custom--providers--image" src="https://vendor-provider.fra1.cdn.digitaloceanspaces.com/ebetlab/game-providers/light/ea%20gaming.svg" alt="">
+    // 				          </a>
+
+    // 				          <a class="custom--providers--link" href="https://betredi108.com/tr/providers/concept">
+    // 				            <img class="custom--providers--image" src="https://vendor-provider.fra1.cdn.digitaloceanspaces.com/ebetlab/game-providers/light/Concept%20Gaming.svg" alt="">
+    // 				          </a>
+
+    // 				          <a class="custom--providers--link" href="https://betredi108.com/tr/providers/cq9">
+    // 				            <img class="custom--providers--image" src="https://vendor-provider.fra1.cdn.digitaloceanspaces.com/ebetlab/game-providers/light/CQ9.svg" alt="">
+    // 				          </a>
+
+    // 				          <a class="custom--providers--link" href="https://betredi108.com/tr/providers/ctgaming">
+    // 				            <img class="custom--providers--image" src="https://vendor-provider.fra1.cdn.digitaloceanspaces.com/ebetlab/game-providers/light/CT%20Gaming.svg" alt="">
+    // 				          </a>
+
+    // 				          <a class="custom--providers--link" href="https://betredi108.com/tr/providers/everymatrix">
+    // 				            <img class="custom--providers--image" src="https://vendor-provider.fra1.cdn.digitaloceanspaces.com/ebetlab/game-providers/light/everymatrix.svg" alt="">
+    // 				          </a>
+
+    // 				          <a class="custom--providers--link" href="https://betredi108.com/tr/providers/evoplay">
+    // 				            <img class="custom--providers--image" src="https://vendor-provider.fra1.cdn.digitaloceanspaces.com/ebetlab/game-providers/light/evoplay.svg" alt="">
+    // 				          </a>
+
+    // 				          <a class="custom--providers--link" href="https://betredi108.com/tr/providers/ezugi">
+    // 				            <img class="custom--providers--image" src="https://vendor-provider.fra1.cdn.digitaloceanspaces.com/ebetlab/game-providers/light/ezugi.svg" alt="">
+    // 				          </a>
+
+    // 				          <a class="custom--providers--link" href="https://betredi108.com/tr/providers/fazi">
+    // 				            <img class="custom--providers--image" src="https://vendor-provider.fra1.cdn.digitaloceanspaces.com/ebetlab/game-providers/light/fazi.svg" alt="">
+    // 				          </a>
+
+    // 				          <a class="custom--providers--link" href="https://betredi108.com/tr/providers/fugaso">
+    // 				            <img class="custom--providers--image" src="https://vendor-provider.fra1.cdn.digitaloceanspaces.com/ebetlab/game-providers/light/fugaso.svg" alt="">
+    // 				          </a>
+
+    // 				          <a class="custom--providers--link" href="https://betredi108.com/tr/providers/gamebeat">
+    // 				            <img class="custom--providers--image" src="https://vendor-provider.fra1.cdn.digitaloceanspaces.com/ebetlab/game-providers/light/gamebeat.svg" alt="">
+    // 				          </a>
+
+    // 				          <a class="custom--providers--link" href="https://betredi108.com/tr/providers/gaming7777">
+    // 				            <img class="custom--providers--image" src="https://vendor-provider.fra1.cdn.digitaloceanspaces.com/ebetlab/game-providers/light/Gaming%207777.svg" alt="">
+    // 				          </a>
+
+    // 				          <a class="custom--providers--link" href="https://betredi108.com/tr/providers/genii">
+    // 				            <img class="custom--providers--image" src="https://vendor-provider.fra1.cdn.digitaloceanspaces.com/ebetlab/game-providers/light/Genii.svg" alt="">
+    // 				          </a>
+
+    // 				          <a class="custom--providers--link" href="https://betredi108.com/tr/providers/givme">
+    // 				            <img class="custom--providers--image" src="https://vendor-provider.fra1.cdn.digitaloceanspaces.com/ebetlab/game-providers/light/givme%20games.svg" alt="">
+    // 				          </a>
+
+    // 				          <a class="custom--providers--link" href="https://betredi108.com/tr/providers/goldenhero">
+    // 				            <img class="custom--providers--image" src="https://vendor-provider.fra1.cdn.digitaloceanspaces.com/ebetlab/game-providers/light/golden%20hero.svg" alt="">
+    // 				          </a>
+
+    // 				          <a class="custom--providers--link" href="https://betredi108.com/tr/providers/habanero">
+    // 				            <img class="custom--providers--image" src="https://vendor-provider.fra1.cdn.digitaloceanspaces.com/ebetlab/game-providers/light/habanero.svg" alt="">
+    // 				          </a>
+
+    // 				          <a class="custom--providers--link" href="https://betredi108.com/tr/providers/hogaming">
+    // 				            <img class="custom--providers--image" src="https://vendor-provider.fra1.cdn.digitaloceanspaces.com/ebetlab/game-providers/light/HoGaming.svg" alt="">
+    // 				          </a>
+
+    // 				          <a class="custom--providers--link" href="https://betredi108.com/tr/providers/hollegames">
+    // 				            <img class="custom--providers--image" src="https://vendor-provider.fra1.cdn.digitaloceanspaces.com/ebetlab/game-providers/light/hollegames.svg" alt="">
+    // 				          </a>
+
+    // 				          <a class="custom--providers--link" href="https://betredi108.com/tr/providers/igrosoft">
+    // 				            <img class="custom--providers--image" src="https://vendor-provider.fra1.cdn.digitaloceanspaces.com/ebetlab/game-providers/light/Igrosoft.svg" alt="">
+    // 				          </a>
+
+    // 				          <a class="custom--providers--link" href="https://betredi108.com/tr/providers/irondog">
+    // 				            <img class="custom--providers--image" src="https://vendor-provider.fra1.cdn.digitaloceanspaces.com/ebetlab/game-providers/light/irondog.svg" alt="">
+    // 				          </a>
+
+    // 				          <a class="custom--providers--link" href="https://betredi108.com/tr/providers/jaderabbit">
+    // 				            <img class="custom--providers--image" src="https://vendor-provider.fra1.cdn.digitaloceanspaces.com/ebetlab/game-providers/light/jaderabbit.svg" alt="">
+    // 				          </a>
+
+    // 				          <a class="custom--providers--link" href="https://betredi108.com/tr/providers/jdb">
+    // 				            <img class="custom--providers--image" src="https://vendor-provider.fra1.cdn.digitaloceanspaces.com/ebetlab/game-providers/light/JDB.svg" alt="">
+    // 				          </a>
+
+    // 				          <a class="custom--providers--link" href="https://betredi108.com/tr/providers/kalamba">
+    // 				            <img class="custom--providers--image" src="https://vendor-provider.fra1.cdn.digitaloceanspaces.com/ebetlab/game-providers/light/kalamba.svg" alt="">
+    // 				          </a>
+
+    // 				          <a class="custom--providers--link" href="https://betredi108.com/tr/providers/kiron">
+    // 				            <img class="custom--providers--image" src="https://vendor-provider.fra1.cdn.digitaloceanspaces.com/ebetlab/game-providers/light/Kiron%20Interactive.svg" alt="">
+    // 				          </a>
+
+    // 				          <a class="custom--providers--link" href="https://betredi108.com/tr/providers/leander">
+    // 				            <img class="custom--providers--image" src="https://vendor-provider.fra1.cdn.digitaloceanspaces.com/ebetlab/game-providers/light/Leander.svg" alt="">
+    // 				          </a>
+
+    // 				          <a class="custom--providers--link" href="https://betredi108.com/tr/providers/leap">
+    // 				            <img class="custom--providers--image" src="https://vendor-provider.fra1.cdn.digitaloceanspaces.com/ebetlab/game-providers/light/Leap.svg" alt="">
+    // 				          </a>
+
+    // 				          <a class="custom--providers--link" href="https://betredi108.com/tr/providers/livegames">
+    // 				            <img class="custom--providers--image" src="https://vendor-provider.fra1.cdn.digitaloceanspaces.com/ebetlab/game-providers/light/Live%20Games.svg" alt="">
+    // 				          </a>
+
+    // 				          <a class="custom--providers--link" href="https://betredi108.com/tr/providers/lucky">
+    // 				            <img class="custom--providers--image" src="https://vendor-provider.fra1.cdn.digitaloceanspaces.com/ebetlab/game-providers/light/lucky.svg" alt="">
+    // 				          </a>
+
+    // 				          <a class="custom--providers--link" href="https://betredi108.com/tr/providers/luckystreak">
+    // 				            <img class="custom--providers--image" src="https://vendor-provider.fra1.cdn.digitaloceanspaces.com/ebetlab/game-providers/light/luckystreak.svg" alt="">
+    // 				          </a>
+
+    // 				          <a class="custom--providers--link" href="https://betredi108.com/tr/providers/mascotgaming">
+    // 				            <img class="custom--providers--image" src="https://vendor-provider.fra1.cdn.digitaloceanspaces.com/ebetlab/game-providers/light/mascot.svg" alt="">
+    // 				          </a>
+
+    // 				          <a class="custom--providers--link" href="https://betredi108.com/tr/providers/merkurgaming">
+    // 				            <img class="custom--providers--image" src="https://vendor-provider.fra1.cdn.digitaloceanspaces.com/ebetlab/game-providers/light/merkur%20gaming.svg" alt="">
+    // 				          </a>
+
+    // 				          <a class="custom--providers--link" href="https://betredi108.com/tr/providers/mplay">
+    // 				            <img class="custom--providers--image" src="https://vendor-provider.fra1.cdn.digitaloceanspaces.com/ebetlab/game-providers/light/m%20play.svg" alt="">
+    // 				          </a>
+
+    // 				          <a class="custom--providers--link" href="https://betredi108.com/tr/providers/mrslotty">
+    // 				            <img class="custom--providers--image" src="https://vendor-provider.fra1.cdn.digitaloceanspaces.com/ebetlab/game-providers/light/mrslotty.svg" alt="">
+    // 				          </a>
+
+    // 				          <a class="custom--providers--link" href="https://betredi108.com/tr/providers/netgame">
+    // 				            <img class="custom--providers--image" src="https://vendor-provider.fra1.cdn.digitaloceanspaces.com/ebetlab/game-providers/light/netgame.svg" alt="">
+    // 				          </a>
+
+    // 				          <a class="custom--providers--link" href="https://betredi108.com/tr/providers/nucleus">
+    // 				            <img class="custom--providers--image" src="https://vendor-provider.fra1.cdn.digitaloceanspaces.com/ebetlab/game-providers/light/nucleus.svg" alt="">
+    // 				          </a>
+
+    // 				          <a class="custom--providers--link" href="https://betredi108.com/tr/providers/oryx">
+    // 				            <img class="custom--providers--image" src="https://vendor-provider.fra1.cdn.digitaloceanspaces.com/ebetlab/game-providers/light/oryx.svg" alt="">
+    // 				          </a>
+
+    // 				          <a class="custom--providers--link" href="https://betredi108.com/tr/providers/playtech">
+    // 				            <img class="custom--providers--image" src="https://vendor-provider.fra1.cdn.digitaloceanspaces.com/ebetlab/game-providers/light/Playtech%20slots.svg" alt="">
+    // 				          </a>
+
+    // 				          <a class="custom--providers--link" href="https://betredi108.com/tr/providers/quickspin">
+    // 				            <img class="custom--providers--image" src="https://vendor-provider.fra1.cdn.digitaloceanspaces.com/ebetlab/game-providers/light/quickspin.svg" alt="">
+    // 				          </a>
+
+    // 				          <a class="custom--providers--link" href="https://betredi108.com/tr/providers/redrake">
+    // 				            <img class="custom--providers--image" src="https://vendor-provider.fra1.cdn.digitaloceanspaces.com/ebetlab/game-providers/light/Red%20Rake%20Gaming.svg" alt="">
+    // 				          </a>
+
+    // 				          <a class="custom--providers--link" href="https://betredi108.com/tr/providers/reevo">
+    // 				            <img class="custom--providers--image" src="https://vendor-provider.fra1.cdn.digitaloceanspaces.com/ebetlab/game-providers/light/reevo.svg" alt="">
+    // 				          </a>
+
+    // 				          <a class="custom--providers--link" href="https://betredi108.com/tr/providers/sagaming">
+    // 				            <img class="custom--providers--image" src="https://vendor-provider.fra1.cdn.digitaloceanspaces.com/ebetlab/game-providers/light/SA%20Gaming.svg" alt="">
+    // 				          </a>
+
+    // 				          <a class="custom--providers--link" href="https://betredi108.com/tr/providers/salsa">
+    // 				            <img class="custom--providers--image" src="https://vendor-provider.fra1.cdn.digitaloceanspaces.com/ebetlab/game-providers/light/Salsa%20technology.svg" alt="">
+    // 				          </a>
+
+    // 				          <a class="custom--providers--link" href="https://betredi108.com/tr/providers/spinomenal">
+    // 				            <img class="custom--providers--image" src="https://vendor-provider.fra1.cdn.digitaloceanspaces.com/ebetlab/game-providers/light/spinomenal.svg" alt="">
+    // 				          </a>
+
+    // 				          <a class="custom--providers--link" href="https://betredi108.com/tr/providers/spinza">
+    // 				            <img class="custom--providers--image" src="https://vendor-provider.fra1.cdn.digitaloceanspaces.com/ebetlab/game-providers/light/spinza.svg" alt="">
+    // 				          </a>
+
+    // 				          <a class="custom--providers--link" href="https://betredi108.com/tr/providers/spribe">
+    // 				            <img class="custom--providers--image" src="https://vendor-provider.fra1.cdn.digitaloceanspaces.com/ebetlab/game-providers/light/spribe.svg" alt="">
+    // 				          </a>
+
+    // 				          <a class="custom--providers--link" href="https://betredi108.com/tr/providers/swintt">
+    // 				            <img class="custom--providers--image" src="https://vendor-provider.fra1.cdn.digitaloceanspaces.com/ebetlab/game-providers/light/swintt.svg" alt="">
+    // 				          </a>
+
+    // 				          <a class="custom--providers--link" href="https://betredi108.com/tr/providers/tomhornnative">
+    // 				            <img class="custom--providers--image" src="https://vendor-provider.fra1.cdn.digitaloceanspaces.com/ebetlab/game-providers/light/tomhorn.svg" alt="">
+    // 				          </a>
+
+    // 				          <a class="custom--providers--link" href="/providersuelab">
+    // 				            <img class="custom--providers--image" src="https://vendor-provider.fra1.cdn.digitaloceanspaces.com/ebetlab/game-providers/lightuelab.svg" alt="">
+    // 				          </a>
+
+    // 				          <a class="custom--providers--link" href="https://betredi108.com/tr/providers/turbogames">
+    // 				            <img class="custom--providers--image" src="https://vendor-provider.fra1.cdn.digitaloceanspaces.com/ebetlab/game-providers/light/turbogames.svg" alt="">
+    // 				          </a>
+
+    // 				          <a class="custom--providers--link" href="https://betredi108.com/tr/providers/tvbet">
+    // 				            <img class="custom--providers--image" src="https://vendor-provider.fra1.cdn.digitaloceanspaces.com/ebetlab/game-providers/light/tv%20bet.svg" alt="">
+    // 				          </a>
+
+    // 				          <a class="custom--providers--link" href="https://betredi108.com/tr/providers/vivogaming">
+    // 				            <img class="custom--providers--image" src="https://vendor-provider.fra1.cdn.digitaloceanspaces.com/ebetlab/game-providers/light/Vivo%20Gaming.svg" alt="">
+    // 				          </a>
+
+    // 				          <a class="custom--providers--link" href="https://betredi108.com/tr/providers/wizard">
+    // 				            <img class="custom--providers--image" src="https://vendor-provider.fra1.cdn.digitaloceanspaces.com/ebetlab/game-providers/light/wazdan.svg" alt="">
+    // 				          </a>
+
+    // 				          <a class="custom--providers--link" href="https://betredi108.com/tr/providers/worldmatch">
+    // 				            <img class="custom--providers--image" src="https://vendor-provider.fra1.cdn.digitaloceanspaces.com/ebetlab/game-providers/light/World%20Match.svg" alt="">
+    // 				          </a>
+
+    // 				          <a class="custom--providers--link" href="https://betredi108.com/tr/providers/xprogaming">
+    // 				            <img class="custom--providers--image" src="https://vendor-provider.fra1.cdn.digitaloceanspaces.com/ebetlab/game-providers/light/XPro%20Gaming.svg" alt="">
+    // 				          </a>
+
+    // 				          <a class="custom--providers--link" href="https://betredi108.com/tr/providers/yggdrasil">
+    // 				            <img class="custom--providers--image" src="https://vendor-provider.fra1.cdn.digitaloceanspaces.com/ebetlab/game-providers/light/yggdrasil.svg" alt="">
+    // 				          </a>
+
+    // 				          <a class="custom--providers--link" href="https://betredi108.com/tr/providers/zillion">
+    // 				            <img class="custom--providers--image" src="https://vendor-provider.fra1.cdn.digitaloceanspaces.com/ebetlab/game-providers/light/zillion.svg" alt="">
+    // 				          </a>
+
+    // 				          <a class="custom--providers--link" href="https://betredi108.com/tr/providers/ebetlab">
+    // 				            <img class="custom--providers--image" src="https://vendor-provider.fra1.cdn.digitaloceanspaces.com/ebetlab/game-providers/light/originals.svg" alt="">
+    // 				          </a>
+
+    // 				          <a class="custom--providers--link" href="https://betredi108.com/tr/providers/imagine-live">
+    // 				            <img class="custom--providers--image" src="https://vendor-provider.fra1.cdn.digitaloceanspaces.com/ebetlab/game-providers/light/imageinelive.svg" alt="">
+    // 				          </a>
+
+    // 				          <a class="custom--providers--link" href="https://betredi108.com/tr/providers/jiliasia">
+    // 				            <img class="custom--providers--image" src="https://vendor-provider.fra1.cdn.digitaloceanspaces.com/ebetlab/game-providers/light/Jiliasia.svg" alt="">
+    // 				          </a>
+
+    // 				          <a class="custom--providers--link" href="https://betredi108.com/tr/providers/royal-gaming">
+    // 				            <img class="custom--providers--image" src="https://vendor-provider.fra1.cdn.digitaloceanspaces.com/ebetlab/game-providers/light/Royal%20Gaming.svg" alt="">
+    // 				          </a>
+
+    // 				          <a class="custom--providers--link" href="https://betredi108.com/tr/providers/tada-gaming">
+    // 				            <img class="custom--providers--image" src="https://vendor-provider.fra1.cdn.digitaloceanspaces.com/ebetlab/game-providers/light/Tada%20Gaming.svg" alt="">
+    // 				          </a>
+
+    // 				          <a class="custom--providers--link" href="https://betredi108.com/tr/providers/zeus-play">
+    // 				            <img class="custom--providers--image" src="https://vendor-provider.fra1.cdn.digitaloceanspaces.com/ebetlab/game-providers/light/Zeus%20Play.svg" alt="">
+    // 				          </a>
+
+    // 				          <a class="custom--providers--link" href="https://betredi108.com/tr/providers/peter-and-sons">
+    // 				            <img class="custom--providers--image" src="https://vendor-provider.fra1.cdn.digitaloceanspaces.com/ebetlab/game-providers/light/Peter%20And%20Sons.svg" alt="">
+    // 				          </a>
+
+    // 				          <a class="custom--providers--link" href="https://betredi108.com/tr/providers/topspin">
+    // 				            <img class="custom--providers--image" src="https://vendor-provider.fra1.cdn.digitaloceanspaces.com/ebetlab/game-providers/light/topspin.svg" alt="">
+    // 				          </a>
+    // 			</div>
+    //     </div>
+    //   `;
+
+    //       swiperElement.insertAdjacentElement("afterend", section);
+
+    //       // 🔁 Marquee hareketi için JS ile içerik kopyalanıyor
+    //       const marquee = section.querySelector(
+    //         ".providers--marquee .marquee-content"
+    //       );
+    //       const clone = marquee.cloneNode(true);
+    //       marquee.parentElement.appendChild(clone);
+    //     }
+
     function injectProvidersMarquee() {
       const container = document.querySelector("#main-slider > .container");
-
       if (!container || container.querySelector(".custom--section--2")) return;
 
-      const swiperElement = container.querySelector("#main-slider-swiper");
+      const swiperElement = container.querySelector(".swiper");
       if (!swiperElement) return;
 
       const section = document.createElement("div");
 
-      // <div class="providers--marquee--bg"></div>;
-
       section.className = "section custom--section--2 custom--section";
       section.innerHTML = `
-    <div class="container" style="position: relative; max-width: 100% !important; margin-bottom: 20px; !important; padding-left: 0px !important; padding-right: 0px !important; padding-top: 0px !important; overflow: hidden !important;">
-    <div class="providers--marquee--bg" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; background: linear-gradient(0deg, rgba(54,0,6,1) 0%, rgba(125,2,15,1) 100%);"></div>
+          <div class="container" style="position: relative; max-width: 100% !important; margin-bottom: 20px; !important; padding-left: 0px !important; padding-right: 0px !important; padding-top: 0px !important; overflow: hidden !important;">
+    <div class="providers--marquee--bg" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; background: linear-gradient(to right, black 0%, #7d020f 50%, black 100%);"></div>
 <div class="providers--marquee">	
 				          <a class="custom--providers--link" href="https://betredi108.com/tr/providers/pragmaticplay">
 				            <img class="custom--providers--image" src="https://vendor-provider.fra1.cdn.digitaloceanspaces.com/ebetlab/game-providers/light/pragmaticplay.svg" alt="">
@@ -759,16 +1221,16 @@
 				          </a>    
 			</div>
     </div>
-  `;
+      `;
 
       swiperElement.insertAdjacentElement("afterend", section);
 
-      // 🔁 Marquee hareketi için JS ile içerik kopyalanıyor
-      const marquee = section.querySelector(
-        ".providers--marquee .marquee-content"
-      );
-      const clone = marquee.cloneNode(true);
-      marquee.parentElement.appendChild(clone);
+      // Eğer içinde .marquee-content varsa kopyala
+      // const marquee = section.querySelector(".providers--marquee");
+      // if (marquee) {
+      //   const clone = marquee.cloneNode(true);
+      //   marquee.parentElement.appendChild(clone);
+      // }
     }
 
     function customCSS() {
@@ -981,7 +1443,7 @@
         </a>
         <a onClick="$('.lowbar__btn')[$('.lowbar__btn').length -1].click()" class="col-4">
           <div class="box-icon-item">
-                  <svg class="svg-icon"><use href="/static/media/sprite.1cea5f3c17045e69440504bcd887b333.svg#gamer" xlink:href="/static/media/sprite.1cea5f3c17045e69440504bcd887b333.svg#gamer"></use></svg>
+                  <svg class="svg-icon" style="margin: 0 auto !important;"><use href="/static/media/sprite.1cea5f3c17045e69440504bcd887b333.svg#gamer" xlink:href="/static/media/sprite.1cea5f3c17045e69440504bcd887b333.svg#gamer"></use></svg>
 
             <span>Canlı Destek</span>
           </div>
