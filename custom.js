@@ -141,17 +141,26 @@
 
         $(document).on("click", 'a[href="/tr/casino/slots"]', function (e) {
           e.preventDefault();
-          window.location.href = "https://betredi108.com/tr/casino/slots";
+          window.location.href =
+            language === "tr"
+              ? "https://betredi108.com/tr/casino/slots"
+              : "https://betredi108.com/en/casino/slots";
         });
 
         $(document).on("click", 'a[href="/tr/live-casino"]', function (e) {
           e.preventDefault();
-          window.location.href = "https://betredi108.com/tr/live-casino";
+          window.location.href =
+            language === "tr"
+              ? "https://betredi108.com/tr/live-casino"
+              : "https://betredi108.com/en/live-casino";
         });
 
         $(document).on("click", 'a[href="/tr/sportsbook"]', function (e) {
           e.preventDefault();
-          window.location.href = "https://betredi108.com/tr/sportsbook";
+          window.location.href =
+            language === "tr"
+              ? "https://betredi108.com/tr/sportsbook"
+              : "https://betredi108.com/en/sportsbook";
         });
 
         $(document).on(
@@ -160,7 +169,9 @@
           function (e) {
             e.preventDefault();
             window.location.href =
-              "https://betredi108.com/tr/casino/category/exclusive";
+              language === "tr"
+                ? "https://betredi108.com/tr/casino/category/exclusive"
+                : "https://betredi108.com/en/casino/category/exclusive";
           }
         );
 
@@ -170,38 +181,58 @@
           function (e) {
             e.preventDefault();
             window.location.href =
-              "https://betredi108.com/tr/casino/virtual_sports";
+              language === "tr"
+                ? "https://betredi108.com/tr/casino/virtual_sports"
+                : "https://betredi108.com/en/casino/virtual_sports";
           }
         );
 
         $(document).on("click", 'a[href="/tr/vip"]', function (e) {
           e.preventDefault();
-          window.location.href = "https://betredi108.com/tr/vip";
+          window.location.href =
+            language === "tr"
+              ? "https://betredi108.com/tr/vip"
+              : "https://betredi108.com/en/vip";
         });
 
         $(document).on("click", 'a[href="/tr/casino"]', function (e) {
           e.preventDefault();
-          window.location.href = "https://betredi108.com/tr/casino";
+          window.location.href =
+            language === "tr"
+              ? "https://betredi108.com/tr/casino"
+              : "https://betredi108.com/tr/casino";
         });
 
         $(document).on("click", 'a[href="/tr/sportsbook"]', function (e) {
           e.preventDefault();
-          window.location.href = "https://betredi108.com/tr/sportsbook";
+          window.location.href =
+            language === "tr"
+              ? "https://betredi108.com/tr/sportsbook"
+              : "https://betredi108.com/en/sportsbook";
         });
 
         $(document).on("click", 'a[href="/tr/e-sport"]', function (e) {
           e.preventDefault();
-          window.location.href = "https://betredi108.com/tr/e-sport";
+          window.location.href =
+            language === "tr"
+              ? "https://betredi108.com/tr/e-sport"
+              : "https://betredi108.com/en/e-sport";
         });
 
         $(document).on("click", 'a[href="/tr/favorites"]', function (e) {
           e.preventDefault();
-          window.location.href = "https://betredi108.com/tr/favorites";
+          window.location.href =
+            language === "tr"
+              ? "https://betredi108.com/tr/favorites"
+              : "https://betredi108.com/en/favorites";
         });
 
         $(document).on("click", 'a[href="/tr/trade"]', function (e) {
           e.preventDefault();
-          window.location.href = "https://betredi108.com/tr/trade";
+          window.location.href =
+            language === "tr"
+              ? "https://betredi108.com/tr/trade"
+              : "https://betredi108.com/en/trade";
         });
       }
     }, 300);
