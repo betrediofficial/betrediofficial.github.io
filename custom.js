@@ -1500,7 +1500,7 @@
     <div class="row">
       <div class="col-12">
         <div class="section__title-wrap">
-          <h2 class="section__title" style="font-size: 24px; font-family: 'Rajdhani-SemiBold', serif;">
+          <h2 class="section__title" style="font-size: 30px; font-family: 'Rajdhani-SemiBold', serif;">
             ${title}
           </h2>
         </div>
@@ -1674,7 +1674,7 @@
     <div class="row">
       <div class="col-12">
         <div class="section__title-wrap">
-          <h2 class="section__title" style="font-size: 24px; font-family: 'Rajdhani-SemiBold', serif; margin-bottom: 10px;">
+          <h2 class="section__title" style="font-size: 30px; font-family: 'Rajdhani-SemiBold', serif; margin-bottom: 10px;">
             ${title}
           </h2>
         </div>
