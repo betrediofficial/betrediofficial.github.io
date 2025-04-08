@@ -1495,12 +1495,12 @@
       let title = language === "tr" ? "SLOT CASİNO" : "SLOT CASINO";
 
       var newSection = `
-     <div class="manually-added-home-widgets section" id="slotoyunlari" style="margin-bottom: 10px;">
+     <div class="manually-added-home-widgets section" id="slotoyunlari" style="margin-bottom: 14px;">
   <div class="container otherGames">
     <div class="row">
       <div class="col-12">
         <div class="section__title-wrap">
-          <h2 class="section__title" style="font-size: 30px;">
+          <h2 class="section__title" style="font-size: 24px; font-family: 'Rajdhani-SemiBold', serif;">
             ${title}
           </h2>
         </div>
@@ -1674,7 +1674,7 @@
     <div class="row">
       <div class="col-12">
         <div class="section__title-wrap">
-          <h2 class="section__title" style="font-size: 30px; margin-bottom: 10px;">
+          <h2 class="section__title" style="font-size: 24px; font-family: 'Rajdhani-SemiBold', serif;">
             ${title}
           </h2>
         </div>
