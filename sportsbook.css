@@ -24,60 +24,60 @@ html.sb-lang-ru body {
 }
 
 :root {
-  --app-main-menu-background: ##1e0434;
-  --app-body-background: #17002c;
+  --app-main-menu-background: ##141414;
+  --app-body-background: #000;
   --app-base-color: #fff;
   --app-accent-color: #07e942;
   --app-accent-color2: #07e942;
   --app-main-menu-btn-active-background: var(--app-main-gradient);
-  --app-main-gradient: #361355 !important;
+  --app-main-gradient: #131313 !important;
   --app-main-menu-padding: 8px 16px;
   --app-main-menu-border-radius: 0;
   --app-main-menu-color: #fff;
   --app-main-menu-item-after-display: none;
   --app-body-color: #fff;
-  --app-search-field-background: #1e0434;
-  --app-page-links-item-background: ##1e0434;
+  --app-search-field-background: #141414;
+  --app-page-links-item-background: ##141414;
   --app-page-links-item-color: #fff;
   --app-page-links-icon-fill: #fff;
   --app-page-links-item-hover-color: #fff;
-  --app-page-links-item-hover-background: #1e0434;
-  --app-sports-tabs-active-background: #1e0434;
-  --app-sports-tabs-background: ##1e0434;
-  --app-sports-tabs-active-border-bottom: 2px solid #1e0434;
+  --app-page-links-item-hover-background: #141414;
+  --app-sports-tabs-active-background: #141414;
+  --app-sports-tabs-background: ##141414;
+  --app-sports-tabs-active-border-bottom: 2px solid #141414;
   --app-sports-tabs-padding: 10px 0;
   --app-sports-tabs-active-color: #fff;
   --app-sports-tabs-color: #fff;
-  --app-sports-tabs-border-bottom: 2px solid #1e0434;
+  --app-sports-tabs-border-bottom: 2px solid #141414;
   --app-sports-tabs-margin: 3px;
   --app-sports-tabs-border-radius: 4px 4px 0 0;
   --app-sports-tabs-wrapper-background: transparent;
-  --app-sports-list-item-background: #1e0434;
+  --app-sports-list-item-background: #141414;
   --app-sports-list-item-link-color: #fff;
   --app-sports-list-item-icon-fill: #fff;
   --app-sports-list-item-icon-stroke: #fff;
   --app-sports-list-item-counter-color: #fff;
-  --app-banners-card-footer-background: #1e0434;
-  --app-banners-card-outcome-background: #361355;
+  --app-banners-card-footer-background: hsl(0, 0%, 14%);
+  --app-banners-card-outcome-background: #000;
   --app-event-block-item-background-hover: var(--app-main-gradient);
   --app-event-block-item-hover-color: #fff;
-  --app-slider-direction-button-background: #1e0434;
+  --app-slider-direction-button-background: #141414;
   --app-slider-direction-button-icon-fill: #fff;
   --app-slider-direction-button-icon-stroke: #fff;
-  --app-title_block-background: #361355;
+  --app-title_block-background: #000;
   --app-title_block-subtitle-color: #fff !important;
   --app-third-color: #fff;
   --app-title_block-subtitle-icon-stroke: #fff;
   --app-title_block-subtitle-icon-fill: #fff;
-  --app-matches-view-v2-match-background: #1e0434;
+  --app-matches-view-v2-match-background: #141414;
   --app-matches-view-v2-match-team-name-color: #fff;
-  --app-mgov2-outcome-button-background: #1e0434;
+  --app-mgov2-outcome-button-background: #141414;
   --app-mgov2-outcome-button-border: none;
   --app-mgov2-outcome-button-odds-color: #fff;
   --app-mgov2-outcome-button-hover-background: var(--app-main-gradient);
   --app-mgov2-outcome-button-title-color: #fff;
-  --app-bet-slip-with-open-bets-background: ##1e0434;
-  --app-betslip-item-v2-background: ##1e0434;
+  --app-bet-slip-with-open-bets-background: ##141414;
+  --app-betslip-item-v2-background: ##141414;
   --app-betslip-footer-v2-before-background: transparent;
   --app-tabs-item-active-color: #fff;
   --app-fifth-color: #fff;
@@ -90,36 +90,36 @@ html.sb-lang-ru body {
   --app-betslip-item-v2-delete-hover-background: transparent;
   --app-betslip-item-v2-delete-icon-fill: #fff;
   --app-betslip-item-v2-delete-icon-stroke: #fff;
-  --app-bet-slip-bet-input-background: #1e0434;
-  --app-bet-input-hover-border-color: #1e0434;
-  --app-betslip-footer-v2-btn-reset-background: #1e0434;
+  --app-bet-slip-bet-input-background: #141414;
+  --app-bet-input-hover-border-color: #141414;
+  --app-betslip-footer-v2-btn-reset-background: #141414;
   --app-betslip-tabs-item-border-bottom: 2px solid rgba(147, 158, 183, 0.5);
-  --app-betslip-tabs-item-active-border-bottom: 2px solid #5800a4;
+  --app-betslip-tabs-item-active-border-bottom: 2px solid #9b000e;
   --app-betslip-footer-v2-btn-reset-border: none;
   --app-betslip-footer-v2-total-win-title-color: #fff;
   --app-betslip-footer-v2-before-background: none;
   --app-betslip-footer-v2-before-top: -2px;
   --app-betslip-footer-v2-before-height: 15px;
   --app-betslip-item-v2-disabled-error-background: rgba(34, 32, 40, 0.4);
-  --app-sports-list-item-border-bottom: 2px solid #1e0434;
-  --app-sports-list-tabs-border-bottom: 2px solid #1e0434;
-  --app-sports-list-item-hover-background: #1e0434;
-  --app-sports-list-item-hover-color: #5800a4;
-  --app-sports-list-sub-item-background: #1e0434;
-  --app-sports-list-sub-item-tournament-background: #1e0434;
-  --app-sports-list-sub-item-border-bottom: 2px solid #1e0434;
+  --app-sports-list-item-border-bottom: 2px solid #141414;
+  --app-sports-list-tabs-border-bottom: 2px solid #141414;
+  --app-sports-list-item-hover-background: #141414;
+  --app-sports-list-item-hover-color: #9b000e;
+  --app-sports-list-sub-item-background: #141414;
+  --app-sports-list-sub-item-tournament-background: #141414;
+  --app-sports-list-sub-item-border-bottom: 2px solid #141414;
   --app-main-menu-border-bottom: none;
-  --app-banners-card-background: #1e0434;
-  --app-breadcrumbs-background: #1e0434;
+  --app-banners-card-background: #141414;
+  --app-breadcrumbs-background: #141414;
   --app-breadcrumbs-color: #fff;
-  --app-game-header-v2-top-background: #1e0434;
-  --app-game-header-v2-info-background: #1e0434;
+  --app-game-header-v2-top-background: #141414;
+  --app-game-header-v2-info-background: #141414;
   --app-game-header-v2-tournament-color: #fff;
-  --app-game-market-tabs-wrapper-background: #1e0434;
+  --app-game-market-tabs-wrapper-background: #141414;
   --app-game-markets-wrapper-background: none;
   --app-game-market-events-padding: 0;
   --app-game-event-padding: 0 2px 2px 0;
-  --app-game-event-item-background: #1e0434;
+  --app-game-event-item-background: #141414;
   --app-game-event-item_name-color: #fff;
   --app-game-event-item_price-color: #fff;
   --app-game-event-item-hover-background: var(--app-main-gradient);
@@ -129,40 +129,40 @@ html.sb-lang-ru body {
   --app-game-markets-tabs-item-padding: 11px 10px;
   --app-carousel-list-item-wrap-padding: 0 10px;
   --app-game-market-tabs-item-color: #fff;
-  --app-big-wins-header-background: #1e0434;
-  --app-big-wins-background: #1e0434;
-  --app-big-wins-items-background: #1e0434;
+  --app-big-wins-header-background: #141414;
+  --app-big-wins-background: #141414;
+  --app-big-wins-items-background: #141414;
   --app-big-wins-header-border-bottom: none;
-  --app-big-wins--background: #1e0434;
+  --app-big-wins--background: #141414;
   --app-big-wins-toggler-color: #fff;
   --app-big-wins-item-odds-background: var(--app-main-gradient);
   --app-matches-view-v2-match-team-score-active-color: #fff;
   --app-banners-card-info-team-color: #fff;
   --app-banners-card-info-date-color: #fff;
-  --app-title_block-background: #1e0434 !important;
-  --app-top-leagues-slider-background: #1e0434;
-  --app-top-leagues-slider-item-background: #1e0434;
+  --app-title_block-background: #141414 !important;
+  --app-top-leagues-slider-background: #141414;
+  --app-top-leagues-slider-item-background: #141414;
   --app-top-leagues-slider-item-title-color: #fff;
   --app-top-leagues-slider-header-color: #fff;
   --app-matches-view-v2-match-date-color: #fff;
-  --app-page-header-background: #1e0434;
-  --app-tabs-background: #1e0434;
+  --app-page-header-background: #141414;
+  --app-tabs-background: #141414;
   --app-week-calendar-background: none;
   --app-tabs_simple-item-color: #fff;
   --app-second-color: #fff;
   --app-page-header-icon-fill: #fff;
   --app-page-header-icon-stroke: #fff;
   --app-week-calendar-item-active-content-color: #fff;
-  --app-week-calendar-item-content-color: #5800a4;
-  --app-week-calendar-item-title-color: #5800a4;
-  --app-week-calendar-item-active-border-bottom: 2px solid #1e0434;
-  --app-tournaments-list-v2-item-s-background: #1e0434;
-  --app-tournaments-list-v2-background: #1e0434;
+  --app-week-calendar-item-content-color: #9b000e;
+  --app-week-calendar-item-title-color: #9b000e;
+  --app-week-calendar-item-active-border-bottom: 2px solid #141414;
+  --app-tournaments-list-v2-item-s-background: #141414;
+  --app-tournaments-list-v2-background: #141414;
   --app-tournaments-list-v2-tournament-color: #fff;
-  --app-tournaments-list-v2-item-t-hover-background: #1e0434;
-  --app-sports-slider-background: #1e0434;
+  --app-tournaments-list-v2-item-t-hover-background: #141414;
+  --app-sports-slider-background: #141414;
   --app-sports-slider-item-border: none;
-  --app-sports-slider-item-background: #1e0434;
+  --app-sports-slider-item-background: #141414;
   --app-sports-slider-item-padding: 0;
   --app-sports-slider-item-color: #6d7d97;
   --app-sports-slider-item-icon-margin: 0 0 5px 0;
@@ -171,27 +171,27 @@ html.sb-lang-ru body {
   --app-sports-slider-item-height: auto;
   --app-sports-slider-item-width: 85px;
   --app-betslip-item-v2-odds-background: var(--app-main-gradient);
-  --app-results-filter-background: #1e0434;
-  --app-results-filter-item-background: #1e0434;
-  --app-game-result-item-background: #1e0434;
-  --app-game-result-item-score-background: #1e0434;
+  --app-results-filter-background: #141414;
+  --app-results-filter-item-background: #141414;
+  --app-game-result-item-background: #141414;
+  --app-game-result-item-score-background: #141414;
   --app-game-result-item-color: #fff;
   --app-game-result-item-border-bottom: #fff;
-  --app-live-matches-header-background: #1e0434;
-  --app-preloader-background: #1e0434;
+  --app-live-matches-header-background: #141414;
+  --app-preloader-background: #141414;
   --app-preloader-line-color: var(--app-accent-color);
   --app-sports-list-item-title-active-before-display: none;
   --app-sports-list-sub-item-title-active-before-display: none;
   --app-game-header-v2-prematch-background: var(--app-main-gradient);
-  --app-mobile-main-menu-v2-background: #1e0434;
+  --app-mobile-main-menu-v2-background: #141414;
   --app-carousel-menu-item-active-background: var(--app-main-gradient);
   --app-carousel-menu-item-active-box-shadow: none;
-  --app-carousel-menu-item-background: #1e0434;
+  --app-carousel-menu-item-background: #141414;
   --app-carousel-menu-item-icon-height: 35px;
-  --app-event-block-item-background: #1e0434;
+  --app-event-block-item-background: #141414;
   --app-event-block-item-price-color: #fff;
   --app-event-block-item-name-color: #fff;
-  --app-mobile-main-menu-v2-dropdown-background: #1e0434;
+  --app-mobile-main-menu-v2-dropdown-background: #141414;
   --app-mobile-main-menu-v2-odds-item-active-background: var(
     --app-main-gradient
   );
@@ -201,12 +201,12 @@ html.sb-lang-ru body {
   --app-competitions-item-favourite-fill: #fff;
   --app-competitions-item-favourite-stroke: #fff;
   --app-sports-slider-padding: 0 0 15px 0;
-  --app-bet-history-item-background-color: #1e0434;
-  --app-bet-history-item-btn-details-background: #1e0434;
-  --app-bet-history-item-btn-details-background-color: #1e0434;
-  --app-bet-history-item-background: #1e0434;
-  --app-bet-history-item-opened-event-background-color: #1e0434;
-  --app-profile-inputs-background: #1e0434;
+  --app-bet-history-item-background-color: #141414;
+  --app-bet-history-item-btn-details-background: #141414;
+  --app-bet-history-item-btn-details-background-color: #141414;
+  --app-bet-history-item-background: #141414;
+  --app-bet-history-item-opened-event-background-color: #141414;
+  --app-profile-inputs-background: #141414;
   --app-bet-history-item-btn-cashout-background-color: var(--app-accent-color);
   --app-bet-history-item-btn-cashout-hover-background-color: var(
     --app-main-gradient
@@ -217,24 +217,24 @@ html.sb-lang-ru body {
   --app-bet-history-item-btn-cashout-confirm-hover-background-color: var(
     --app-main-gradient
   );
-  --app-bet-history-item-btn-details-background: #1e0434;
-  --app-bet-accumulators-item-price-background: #1e0434;
-  --app-bet-accumulators-bonus-background: #1e0434;
-  --app-bet-accumulators-item-background-hover: #1e0434;
-  --app-bet-accumulators-item-background: #1e0434;
-  --app-bet-history-item-btn-details-hover-background-color: #1e0434;
+  --app-bet-history-item-btn-details-background: #141414;
+  --app-bet-accumulators-item-price-background: #141414;
+  --app-bet-accumulators-bonus-background: #141414;
+  --app-bet-accumulators-item-background-hover: #141414;
+  --app-bet-accumulators-item-background: #141414;
+  --app-bet-history-item-btn-details-hover-background-color: #141414;
   --app-main-menu-item-padding: 6px 12px;
   --app-game-header-v2-top-btn-background: none;
-  --app-mobile-main-menu-v2-search-field-background: #1e0434;
+  --app-mobile-main-menu-v2-search-field-background: #141414;
   --app-mobile-main-menu-v2-search-field-color: #6d7d97;
-  --app-mobile-main-menu-v2-search-empty-icon-color: #1e0434;
+  --app-mobile-main-menu-v2-search-empty-icon-color: #141414;
   --app-search-field-clear-btn-background: transparent;
-  --app-empty-bets-cap-color: #1e0434;
-  --app-empty-bets-ballet-color: #1e0434;
+  --app-empty-bets-cap-color: #141414;
+  --app-empty-bets-ballet-color: #141414;
   --app-empty-bets-calculator-item-color: rgba(34, 32, 40, 0.5);
-  --app-empty-bets-calculator-item-button-color: #1e0434;
-  --app-empty-bets-item-color: #1e0434;
-  --app-empty-bets-ball-color: #1e0434;
+  --app-empty-bets-calculator-item-button-color: #141414;
+  --app-empty-bets-item-color: #141414;
+  --app-empty-bets-ball-color: #141414;
   --app-main-menu-item-font-size: 1.4rem;
   --app-search-field-font-size: 1.4rem;
   --app-sports-list-item-link-font-size: 1.4rem;
@@ -249,24 +249,24 @@ html.sb-lang-ru body {
   --app-banners-card-outcome-border-radius: 4px;
   --app-bet-accumulators-title-font-size: 1.8rem;
   --app-banners-card-vs-text-color: "#6D7D97";
-  --app-game-mini-tracker-background: #1e0434;
-  --app-sports-list-sub-item-tournament-active-background: #1e0434;
+  --app-game-mini-tracker-background: #141414;
+  --app-sports-list-sub-item-tournament-active-background: #141414;
   --app-sports-list-sub-item-tournament-active-color: #fff;
   --app-sports-list-sub-item-tournament-color: #fff;
   --app-sports-list-sub-item-active-background: rgb(34, 32, 40, 0.4);
   --app-sports-list-sub-item-hover-background: rgb(34, 32, 40, 0.4);
   --app-sports-list-item-link-active-color: inherit !important;
-  --app-sports-list-sub-item-active-color: #5800a4;
+  --app-sports-list-sub-item-active-color: #9b000e;
   --app-odds-booster-border-bottom: none;
-  --app-search-results-background: #1e0434;
-  --app-base-item-background: #1e0434;
-  --app-search-results-item-background: #1e0434;
+  --app-search-results-background: #141414;
+  --app-base-item-background: #141414;
+  --app-search-results-item-background: #141414;
   --app-search-results-item-hover-background: rgba(34, 32, 40, 0.8);
   --app-search-results-item-sport-icon-color: #fff;
   --app-betslip-item-v2_related-teams-background: #cc0000;
-  --app-matches-view-v2-tournament-title-background: #1e0434;
+  --app-matches-view-v2-tournament-title-background: #141414;
   --app-matches-view-v2-tournament-title-color: #fff;
-  --app-betslip-footer-v2-price-input-background: #1e0434;
+  --app-betslip-footer-v2-price-input-background: #141414;
   --app-outrights-outcomes-padding: 2px 0;
   --app-outrights-outcomes-background: transparent;
   --app-live-matches-live-toggler-s-flex: 0 0 100%;
@@ -275,12 +275,12 @@ html.sb-lang-ru body {
   --app-live-matches-live-toggler-s-font-weight: 700;
   --app-live-matches-live-toggler-border-radius: 4px;
   --app-live-matches-live-toggler-min-width: 90px;
-  --app-live-matches-live-toggler-background: #5800a4;
-  --app-live-matches-live-toggler-active-background: #5800a4;
+  --app-live-matches-live-toggler-background: #9b000e;
+  --app-live-matches-live-toggler-active-background: #9b000e;
   --app-live-matches-live-toggler-padding: 0;
   --app-betslip-footer-v2-btn-reset-icon-fill: #fff;
   --app-betslip-footer-v2-btn-reset-icon-stroke: #fff;
-  --app-bet-accumulators-nav-background: #1e0434;
+  --app-bet-accumulators-nav-background: #141414;
   --app-mgov2-outcome-button-disabled-border: none;
   --app-tournaments-list-v2-item-t-border-bottom: none;
   --app-tournaments-list-v2-item-s-border-top: none;
@@ -294,9 +294,9 @@ html.sb-lang-ru body {
   --app-mobile-main-menu-v2-odds-value-color: inherit;
   --app-checkbox-active-after-background: var(--app-main-gradient);
   --app-checkbox-active-background: var(--app-main-gradient);
-  --app-betslip-item-v2-border-bottom: 1px solid #1e0434;
+  --app-betslip-item-v2-border-bottom: 1px solid #141414;
   --app-toggler-background: rgba(34, 32, 40, 0.5);
-  --app-game-header-v2-status-item-background: #5800a4;
+  --app-game-header-v2-status-item-background: #9b000e;
   --app-game-header-v2-status-item-border-radius: 4px;
   --app-game-header-v2-date-active-color: #fff;
   --app-svg-html-icon-fill: none;
@@ -327,21 +327,21 @@ html.sb-lang-ru body {
   --app-svg-icon-lock-mark-fill: #fff;
   --app-svg-icon-lock-mark-color: #fff;
   --app-checkbox-border-radius: 4px;
-  --app-betslip-item-v2-odds-new-hover-background: #1e0434;
+  --app-betslip-item-v2-odds-new-hover-background: #141414;
   --app-checkbox-background: transparent;
-  --app-betslip-background: #1e0434;
+  --app-betslip-background: #141414;
   --app-event-up-color: #07e942 !important;
   --app-event-down-color: #cc0000;
   --app-betslip-footer-v2-btn-odds-changes-background: #07e942;
-  --app-matches-v2-loading-cap-background-color: #1e0434;
+  --app-matches-v2-loading-cap-background-color: #141414;
   --app-matches-v2-loading-cap-opacity: 0.8;
   --app-betslip-footer-v2-price-input-border: none;
-  --app-btsplr-background: #1e0434;
-  --app-mgov2-submarkets-background: #1e0434;
+  --app-btsplr-background: #141414;
+  --app-mgov2-submarkets-background: #141414;
 }
 
 .sb-game-tips {
-  --app-game-tips-background: #1b0033;
+  --app-game-tips-background: #141414;
   --app-game-tip-background: var(--app-game-header-v2-top-background);
   --app-game-tip-market-background: rgba(34, 32, 40, 0.2);
   --app-game-tip-market-border-top: 1px solid var(--app-body-background);
@@ -361,7 +361,7 @@ html.sb-lang-ru body {
 }
 
 .sb-betslip-item-v2__odds_down {
-  --app-betslip-item-v2-odds-background: #1b0033;
+  --app-betslip-item-v2-odds-background: #141414;
   --app-betslip-item-v2-odds-color: #cc0000;
 }
 
@@ -371,7 +371,7 @@ html.sb-lang-ru body {
 }
 
 .sb-betslip-item-v2__odds_up {
-  --app-betslip-item-v2-odds-background: #1b0033;
+  --app-betslip-item-v2-odds-background: #141414;
   --app-betslip-item-v2-odds-color: #07e942;
 }
 
@@ -425,15 +425,15 @@ html.sb-lang-ru body {
 }
 
 .app-upcoming-games__time-selector__options {
-  --app-upcoming-games-ts-options-background: #1b0033;
-  --app-upcoming-games-ts-options-item-active-background: #1e0434;
+  --app-upcoming-games-ts-options-background: #141414;
+  --app-upcoming-games-ts-options-item-active-background: #141414;
 }
 
 @media (max-width: 1200px) {
   .sb-game-header-v2__btn {
     --app-game-header-v2-top-btn-icon-height: 15px;
     --app-game-header-v2-top-btn-icon-width: 15px;
-    --app-game-header-v2-top-btn-background: #1e0434;
+    --app-game-header-v2-top-btn-background: #141414;
   }
 }
 
@@ -469,33 +469,33 @@ html.sb-lang-ru body {
 }
 
 .sb-game-event-content.sb-event-disabled {
-  background: #1b0033 !important;
+  background: #141414 !important;
 }
 
 .sb-game-event-content.sb-event-disabled:hover {
-  background: #1b0033 !important;
+  background: #141414 !important;
 }
 
 .sb-market-group-outcomes-v2__outcome-button.sb-event-disabled[type="button"] {
-  background: #1b0033;
+  background: #141414;
 }
 
 .sb-market-group-outcomes-v2__outcome-button.sb-event-disabled[type="button"]:hover {
-  background: #1b0033 !important;
+  background: #141414 !important;
 }
 
 .sb-mobile-main-menu-v2__odds-item {
   color: #6d7d97 !important;
   transition: 0.3s ease background;
-  background: #1b0033;
+  background: #141414;
 }
 
 .sb-svg-icon_lock .sb-lock-icon__mark {
-  color: #1b0033;
+  color: #141414;
 }
 
 .sb-svg-icon_lock .sb-lock-icon__lock {
-  color: #1b0033;
+  color: #141414;
 }
 
 .sb-results-filter .sb-results-filter-select {
@@ -508,7 +508,7 @@ html.sb-lang-ru body {
 }
 
 .sb-betslip-bet-input__max {
-  --app-betslip-bet_max-bet-background: #1b0033;
+  --app-betslip-bet_max-bet-background: #141414;
 }
 
 .sb-sports-list__item:hover .sb-sport-list-link__count {
@@ -567,7 +567,7 @@ html.sb-lang-ru body {
 }
 
 .sb-bet-history-item .sb-bet-history-item-details {
-  background: #1b0033;
+  background: #141414;
 }
 
 .sb-results-filter .sb-results-filter-select {
@@ -579,7 +579,7 @@ html.sb-lang-ru body {
 }
 
 .sb-tabs {
-  background: #1b0033 !important;
+  background: #141414 !important;
 }
 
 .sb-bet-slip-footer-v2__odds-changes__value.active {
@@ -591,7 +591,7 @@ html.sb-lang-ru body {
 }
 
 .sb-betslip-bet-input_buttons__buttons__button {
-  border: 1px solid #1b0033 !important;
+  border: 1px solid #141414 !important;
   background: transparent !important;
   color: #fff !important;
 }
@@ -602,15 +602,15 @@ html.sb-lang-ru body {
 }
 
 .sb-bet-slip-footer-v2 {
-  background: #1e0434;
+  background: #141414;
 }
 
 .sb-betslip-bet-input_buttons__input {
-  border: 1px solid #1b0033 !important;
+  border: 1px solid #141414 !important;
 }
 
 .sb-float-menu-tabs {
-  background: #1b0033;
+  background: #141414;
   border-radius: 15px 15px 0 0;
 }
 
@@ -619,11 +619,11 @@ html.sb-lang-ru body {
 }
 
 .sb-title_block-subtitle {
-  --app-title_block-subtitle-background: #1b0033 !important;
+  --app-title_block-subtitle-background: #141414 !important;
 }
 
 .sb-sport-matches-v2_soccer {
-  --app-title_block-background: #1b0033;
+  --app-title_block-background: #141414;
 }
 
 .sb-section-main-menu__item .sb-main-menu__link {
@@ -654,11 +654,11 @@ html.sb-lang-ru body {
 }
 
 .sb-title_block-title {
-  --app-title_block-background: #361355 !important;
+  --app-title_block-background: #000 !important;
 }
 
 .quick-click {
-  background: #1b0033;
+  background: #141414;
 }
 
 .sb-betslip-bet-input_buttons__input::placeholder {
@@ -666,7 +666,7 @@ html.sb-lang-ru body {
 }
 
 .sb-sport-matches-v2.loading {
-  --app-title_block-background: #1b0033 !important;
+  --app-title_block-background: #141414 !important;
 }
 
 .sb-sport-matches-v2.loading:before {
@@ -677,7 +677,7 @@ html.sb-lang-ru body {
 
 .sb-br-widgets-theme_default .sr-bb .srt-base-1 {
   color: #fff;
-  background-color: #1b0033;
+  background-color: #141414;
 }
 
 .sb-br-widgets-theme_default .sr-bb .srt-base-1-background {
@@ -693,7 +693,7 @@ html.sb-lang-ru body {
   --app-br-widgets-primary: var(--app-accent-color);
   --app-br-widgets-home: var(--app-accent-color);
   --app-br-widgets-away: #b969f8;
-  --app-br-widgets-cl: #1b0033;
+  --app-br-widgets-cl: #141414;
   --app-br-widgets-base: #ffffff;
   --app-br-widgets-border-radius: 0;
   border-radius: var(--app-br-widgets-border-radius);
