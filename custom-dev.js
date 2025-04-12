@@ -1212,7 +1212,7 @@ body.custom-dark-sportsbook #footer {
                 <div class="games-horiz">
                   <div class="games-horiz-scroll" style="grid-template-rows: auto auto;">
                     <div class="casino-game-item-content">
-                      <div class="casino-game-item" style="border: 2px solid #9b000e !important; overflow: hidden !important;">
+                      <div class="casino-game-item" style="position: relative; border: 2px solid #9b000e !important; overflow: hidden !important;">
                         <a href="casino/games/pragmaticplay-starlight-princess-1000" class="">
                           <img src="https://betrediofficial.github.io/images/casino-games-new/starlight_princess_1000.png" class="casino-game-image-bc" loading="lazy">
                         </a>
