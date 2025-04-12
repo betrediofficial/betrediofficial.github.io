@@ -1178,9 +1178,10 @@ body.custom-dark-sportsbook #footer {
       let title = language === "tr" ? "SLOT CASİNO" : "SLOT CASINO";
 
       var newSection = `
-     <div class="manually-added-home-widgets section" id="slotoyunlari" style="margin-bottom: 14px;">
+<div class="manually-added-home-widgets section" id="slotoyunlari" style="margin-bottom: 14px;">
   <div class="container otherGames">
     <div class="row">
+      
       <div class="col-12">
         <div class="section__title-wrap">
           <h2 class="section__title" style="font-size: 30px; font-family: 'Rajdhani-SemiBold', serif;">
@@ -1188,45 +1189,77 @@ body.custom-dark-sportsbook #footer {
           </h2>
         </div>
       </div>
+
       <div class="col-12">
         <div class="row">
+
           <div class="col-3">
             <div class="slider-bc">
-                <div class="carousel" style="height: 100% !important;">
-                  <div class="carousel-viewport" style="height: 100% !important;">
-                    <div class="carousel-container" style="transform: translate3d(0%, 0px, 0px); height: 100% !important;">
-                      <div class="carousel-slide active-slide" style="width: 100%; height: 100%;">
-                        <div class="sdr-item-holder-bc">
-                          <a href="casino/slots" class"sdr-item-bc" href="#">
-                            <img src="https://betrediofficial.github.io/images/slot-casino-banner/slot_casino.png" loading="lazy" class="sdr-image-bc">
-                          </a>
-                        </div>
+              <div class="carousel" style="height: 100% !important;">
+                <div class="carousel-viewport" style="height: 100% !important;">
+                  <div class="carousel-container" style="transform: translate3d(0%, 0px, 0px); height: 100% !important;">
+                    <div class="carousel-slide active-slide" style="width: 100%; height: 100%;">
+                      <div class="sdr-item-holder-bc">
+                        <a href="casino/slots" class="sdr-item-bc">
+                          <img src="https://betrediofficial.github.io/images/slot-casino-banner/slot_casino.png" loading="lazy" class="sdr-image-bc">
+                        </a>
                       </div>
                     </div>
-                  </div> 
-                </div>
+                  </div>
+                </div> 
               </div>
             </div>
           </div>
+
           <div class="col-9">
             <div class="row">
+
               <div class="col-2">
-                <a href="casino/slots" class"" href="#">
+                <a href="casino/slots">
                   <img src="https://betrediofficial.github.io/images/casino-games-new/starlight_princess_1000.png" loading="lazy" class="img-fluid">
                 </a>
               </div>
+
               <div class="col-2">
-                <a href="casino/slots" class"" href="#">
+                <a href="casino/slots">
                   <img src="https://betrediofficial.github.io/images/casino-games-new/wisdom_of_athena.png" loading="lazy" class="img-fluid">
                 </a>
               </div>
+
+              <div class="col-2">
+                <a href="casino/slots">
+                  <img src="https://betrediofficial.github.io/images/casino-games-new/image3.png" loading="lazy" class="img-fluid">
+                </a>
+              </div>
+
+              <div class="col-2">
+                <a href="casino/slots">
+                  <img src="https://betrediofficial.github.io/images/casino-games-new/image4.png" loading="lazy" class="img-fluid">
+                </a>
+              </div>
+
+              <div class="col-2">
+                <a href="casino/slots">
+                  <img src="https://betrediofficial.github.io/images/casino-games-new/image5.png" loading="lazy" class="img-fluid">
+                </a>
+              </div>
+
+              <div class="col-2">
+                <a href="casino/slots">
+                  <img src="https://betrediofficial.github.io/images/casino-games-new/image6.png" loading="lazy" class="img-fluid">
+                </a>
+              </div>
+
             </div>
           </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
+
+        </div> <!-- row -->
+      </div> <!-- col-12 -->
+
+    </div> <!-- row -->
+  </div> <!-- container -->
+</div> <!-- section -->
+
 `;
 
       $(".section--first").eq(0).before(newSection);
