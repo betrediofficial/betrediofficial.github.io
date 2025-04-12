@@ -694,7 +694,7 @@ html.sb-lang-ru body {
   --app-br-widgets-home: var(--app-accent-color);
   --app-br-widgets-away: #b969f8;
   --app-br-widgets-cl: #1b0033;
-  --app-br-widgets-base: #ffffff;
+  --app-br-widgets-base: #000;
   --app-br-widgets-border-radius: 0;
   border-radius: var(--app-br-widgets-border-radius);
   overflow: hidden;
