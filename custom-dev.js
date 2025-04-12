@@ -1189,8 +1189,8 @@ body.custom-dark-sportsbook #footer {
         </div>
       </div>
       <div class="col-12">
-        <div class="hm-row-bc has-game has-slider section__carousel" style="grid-template-columns: 3fr 12fr;">
-          <div class="pb-component-wrapper">
+        <div class="row">
+          <div class="col-3">
             <div class="slider-bc">
                 <div class="carousel" style="height: 100% !important;">
                   <div class="carousel-viewport" style="height: 100% !important;">
@@ -1208,7 +1208,7 @@ body.custom-dark-sportsbook #footer {
               </div>
             </div>
           </div>
-          <div class="pb-component-wrapper">
+          <div class="col-9">
             <div class="row">
               <div class="col-2">
                 <a href="casino/slots" class"" href="#">
