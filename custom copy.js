@@ -138,6 +138,194 @@
             removeHomePageWidgets();
           });
         });
+
+        /// ! Don't touch
+
+        $(document).on("click", 'a[href$="/casino/slots"]', function (e) {
+          e.preventDefault();
+          window.location.href =
+            language === "tr"
+              ? "https://betredi108.com/tr/casino/slots"
+              : "https://betredi108.com/en/casino/slots";
+        });
+
+        $(document).on("click", 'a[href$="/live-casino"]', function (e) {
+          e.preventDefault();
+          window.location.href =
+            language === "tr"
+              ? "https://betredi108.com/tr/live-casino"
+              : "https://betredi108.com/en/live-casino";
+        });
+
+        $(document).on("click", 'a[href$="/sportsbook"]', function (e) {
+          e.preventDefault();
+          window.location.href =
+            language === "tr"
+              ? "https://betredi108.com/tr/sportsbook"
+              : "https://betredi108.com/en/sportsbook";
+        });
+
+        $(document).on(
+          "click",
+          'a[href$="/casino/category/exclusive"]',
+          function (e) {
+            e.preventDefault();
+            window.location.href =
+              language === "tr"
+                ? "https://betredi108.com/tr/casino/category/exclusive"
+                : "https://betredi108.com/en/casino/category/exclusive";
+          }
+        );
+
+        $(document).on(
+          "click",
+          'a[href$="/casino/virtual_sports"]',
+          function (e) {
+            e.preventDefault();
+            window.location.href =
+              language === "tr"
+                ? "https://betredi108.com/tr/casino/virtual_sports"
+                : "https://betredi108.com/en/casino/virtual_sports";
+          }
+        );
+
+        $(document).on("click", 'a[href$="/vip"]', function (e) {
+          e.preventDefault();
+          window.location.href =
+            language === "tr"
+              ? "https://betredi108.com/tr/vip"
+              : "https://betredi108.com/en/vip";
+        });
+
+        $(document).on("click", 'a[href$="/casino"]', function (e) {
+          e.preventDefault();
+          window.location.href =
+            language === "tr"
+              ? "https://betredi108.com/tr/casino"
+              : "https://betredi108.com/en/casino";
+        });
+
+        $(document).on("click", 'a[href$="/e-sport"]', function (e) {
+          e.preventDefault();
+          window.location.href =
+            language === "tr"
+              ? "https://betredi108.com/tr/e-sport"
+              : "https://betredi108.com/en/e-sport";
+        });
+
+        $(document).on("click", 'a[href$="/favorites"]', function (e) {
+          e.preventDefault();
+          window.location.href =
+            language === "tr"
+              ? "https://betredi108.com/tr/favorites"
+              : "https://betredi108.com/en/favorites";
+        });
+
+        $(document).on("click", 'a[href$="/trade"]', function (e) {
+          e.preventDefault();
+          window.location.href =
+            language === "tr"
+              ? "https://betredi108.com/tr/trade"
+              : "https://betredi108.com/en/trade";
+        });
+
+        // ! done.
+
+        // $(document).on("click", 'a[href="/tr/casino/slots"]', function (e) {
+        //   e.preventDefault();
+        //   window.location.href =
+        //     language === "tr"
+        //       ? "https://betredi108.com/tr/casino/slots"
+        //       : "https://betredi108.com/en/casino/slots";
+        // });
+
+        // $(document).on("click", 'a[href="/tr/live-casino"]', function (e) {
+        //   e.preventDefault();
+        //   window.location.href =
+        //     language === "tr"
+        //       ? "https://betredi108.com/tr/live-casino"
+        //       : "https://betredi108.com/en/live-casino";
+        // });
+
+        // $(document).on("click", 'a[href="/tr/sportsbook"]', function (e) {
+        //   e.preventDefault();
+        //   window.location.href =
+        //     language === "tr"
+        //       ? "https://betredi108.com/tr/sportsbook"
+        //       : "https://betredi108.com/en/sportsbook";
+        // });
+
+        // $(document).on(
+        //   "click",
+        //   'a[href="/tr/casino/category/exclusive"]',
+        //   function (e) {
+        //     e.preventDefault();
+        //     window.location.href =
+        //       language === "tr"
+        //         ? "https://betredi108.com/tr/casino/category/exclusive"
+        //         : "https://betredi108.com/en/casino/category/exclusive";
+        //   }
+        // );
+
+        // $(document).on(
+        //   "click",
+        //   'a[href="/tr/casino/virtual_sports"]',
+        //   function (e) {
+        //     e.preventDefault();
+        //     window.location.href =
+        //       language === "tr"
+        //         ? "https://betredi108.com/tr/casino/virtual_sports"
+        //         : "https://betredi108.com/en/casino/virtual_sports";
+        //   }
+        // );
+
+        // $(document).on("click", 'a[href="/tr/vip"]', function (e) {
+        //   e.preventDefault();
+        //   window.location.href =
+        //     language === "tr"
+        //       ? "https://betredi108.com/tr/vip"
+        //       : "https://betredi108.com/en/vip";
+        // });
+
+        // $(document).on("click", 'a[href="/tr/casino"]', function (e) {
+        //   e.preventDefault();
+        //   window.location.href =
+        //     language === "tr"
+        //       ? "https://betredi108.com/tr/casino"
+        //       : "https://betredi108.com/tr/casino";
+        // });
+
+        // $(document).on("click", 'a[href="/tr/sportsbook"]', function (e) {
+        //   e.preventDefault();
+        //   window.location.href =
+        //     language === "tr"
+        //       ? "https://betredi108.com/tr/sportsbook"
+        //       : "https://betredi108.com/en/sportsbook";
+        // });
+
+        // $(document).on("click", 'a[href="/tr/e-sport"]', function (e) {
+        //   e.preventDefault();
+        //   window.location.href =
+        //     language === "tr"
+        //       ? "https://betredi108.com/tr/e-sport"
+        //       : "https://betredi108.com/en/e-sport";
+        // });
+
+        // $(document).on("click", 'a[href="/tr/favorites"]', function (e) {
+        //   e.preventDefault();
+        //   window.location.href =
+        //     language === "tr"
+        //       ? "https://betredi108.com/tr/favorites"
+        //       : "https://betredi108.com/en/favorites";
+        // });
+
+        // $(document).on("click", 'a[href="/tr/trade"]', function (e) {
+        //   e.preventDefault();
+        //   window.location.href =
+        //     language === "tr"
+        //       ? "https://betredi108.com/tr/trade"
+        //       : "https://betredi108.com/en/trade";
+        // });
       }
     }, 300);
 
@@ -163,27 +351,27 @@
 
     function insertCustomMainSlider() {
       const sliderHTML = `
-    <div class="section pt-24" id="main-slider">
+    <div class="manually-added-home-widgets section pt-24" id="main-slider">
       <div class="container">
         <div class="swiper mySwiper">
           <div class="swiper-wrapper">
             <div class="swiper-slide">
-              <a href="#"><img src="https://betrediofficial.github.io/images/slider/15Casino.png" class="slide-image" /></a>
+              <a href="https://betredi108.com/tr/promotion/15-casino-yatirim-bonusu-tr"><img src="https://betrediofficial.github.io/images/slider/15Casino.png" class="slide-image" /></a>
             </div>
             <div class="swiper-slide">
-              <a href="#"><img src="https://betrediofficial.github.io/images/slider/15Spor.png" class="slide-image" /></a>
+              <a href="https://betredi108.com/tr/promotion/15-spor-yatirim-bonusu-tr"><img src="https://betrediofficial.github.io/images/slider/15Spor.png" class="slide-image" /></a>
             </div>
             <div class="swiper-slide">
-              <a href="#"><img src="https://betrediofficial.github.io/images/slider/30Discount.png" class="slide-image" /></a>
+              <a href="https://betredi108.com/tr/promotion/30-casino-discount-tr"><img src="https://betrediofficial.github.io/images/slider/30Discount.png" class="slide-image" /></a>
             </div>
             <div class="swiper-slide">
-              <a href="#"><img src="https://betrediofficial.github.io/images/slider/50Slot.png" class="slide-image" /></a>
+              <a href="https://betredi108.com/tr/promotion/50-slot-yatirim-bonusu-tr"><img src="https://betrediofficial.github.io/images/slider/50Slot.png" class="slide-image" /></a>
             </div>
             <div class="swiper-slide">
-              <a href="#"><img src="https://betrediofficial.github.io/images/slider/100Freespin.png" class="slide-image" /></a>
+              <a href="https://betredi108.com/tr/promotion/100-freespin-deneme-bonusu-trrf"><img src="https://betrediofficial.github.io/images/slider/100Freespin.png" class="slide-image" /></a>
             </div>
             <div class="swiper-slide">
-              <a href="#"><img src="https://betrediofficial.github.io/images/slider/100Slotiade.png" class="slide-image" /></a>
+              <a href="https://betredi108.com/tr/promotion/100-slot-iade-bonusu-rt"><img src="https://betrediofficial.github.io/images/slider/100Slotiade.png" class="slide-image" /></a>
             </div>
           </div>
           <div class="swiper-button-next"></div>
@@ -1495,12 +1683,12 @@
       let title = language === "tr" ? "SLOT CASİNO" : "SLOT CASINO";
 
       var newSection = `
-     <div class="manually-added-home-widgets section" id="slotoyunlari" style="margin-bottom: 10px;">
+     <div class="manually-added-home-widgets section" id="slotoyunlari" style="margin-bottom: 14px;">
   <div class="container otherGames">
     <div class="row">
       <div class="col-12">
         <div class="section__title-wrap">
-          <h2 class="section__title" style="font-size: 30px;">
+          <h2 class="section__title" style="font-size: 30px; font-family: 'Rajdhani-SemiBold', serif;">
             ${title}
           </h2>
         </div>
@@ -1674,7 +1862,7 @@
     <div class="row">
       <div class="col-12">
         <div class="section__title-wrap">
-          <h2 class="section__title" style="font-size: 30px; margin-bottom: 10px;">
+          <h2 class="section__title" style="font-size: 30px; font-family: 'Rajdhani-SemiBold', serif; margin-bottom: 10px;">
             ${title}
           </h2>
         </div>

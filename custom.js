@@ -1462,6 +1462,10 @@
   box-sizing: content-box !important;
 }
 
+.main__content {
+  background: url("https://betrediofficial.github.io/images/bg.jpeg") !important;
+  background-repat: no-repeat !important;
+}  
 
   
       `;
