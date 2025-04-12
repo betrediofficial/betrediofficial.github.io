@@ -125,16 +125,12 @@
           history.pushState = function (state) {
             originalPushState.apply(history, arguments);
 
-            setTimeout(() => {
-              initialize();
-            }, 500);
+            waitForContentAndInitialize();
             removeHomePageWidgets();
           };
 
           $(window).on("popstate", function () {
-            setTimeout(() => {
-              initialize();
-            }, 500);
+            waitForContentAndInitialize();
             removeHomePageWidgets();
           });
         });
@@ -228,104 +224,6 @@
               ? "https://betredi108.com/tr/trade"
               : "https://betredi108.com/en/trade";
         });
-
-        // ! done.
-
-        // $(document).on("click", 'a[href="/tr/casino/slots"]', function (e) {
-        //   e.preventDefault();
-        //   window.location.href =
-        //     language === "tr"
-        //       ? "https://betredi108.com/tr/casino/slots"
-        //       : "https://betredi108.com/en/casino/slots";
-        // });
-
-        // $(document).on("click", 'a[href="/tr/live-casino"]', function (e) {
-        //   e.preventDefault();
-        //   window.location.href =
-        //     language === "tr"
-        //       ? "https://betredi108.com/tr/live-casino"
-        //       : "https://betredi108.com/en/live-casino";
-        // });
-
-        // $(document).on("click", 'a[href="/tr/sportsbook"]', function (e) {
-        //   e.preventDefault();
-        //   window.location.href =
-        //     language === "tr"
-        //       ? "https://betredi108.com/tr/sportsbook"
-        //       : "https://betredi108.com/en/sportsbook";
-        // });
-
-        // $(document).on(
-        //   "click",
-        //   'a[href="/tr/casino/category/exclusive"]',
-        //   function (e) {
-        //     e.preventDefault();
-        //     window.location.href =
-        //       language === "tr"
-        //         ? "https://betredi108.com/tr/casino/category/exclusive"
-        //         : "https://betredi108.com/en/casino/category/exclusive";
-        //   }
-        // );
-
-        // $(document).on(
-        //   "click",
-        //   'a[href="/tr/casino/virtual_sports"]',
-        //   function (e) {
-        //     e.preventDefault();
-        //     window.location.href =
-        //       language === "tr"
-        //         ? "https://betredi108.com/tr/casino/virtual_sports"
-        //         : "https://betredi108.com/en/casino/virtual_sports";
-        //   }
-        // );
-
-        // $(document).on("click", 'a[href="/tr/vip"]', function (e) {
-        //   e.preventDefault();
-        //   window.location.href =
-        //     language === "tr"
-        //       ? "https://betredi108.com/tr/vip"
-        //       : "https://betredi108.com/en/vip";
-        // });
-
-        // $(document).on("click", 'a[href="/tr/casino"]', function (e) {
-        //   e.preventDefault();
-        //   window.location.href =
-        //     language === "tr"
-        //       ? "https://betredi108.com/tr/casino"
-        //       : "https://betredi108.com/tr/casino";
-        // });
-
-        // $(document).on("click", 'a[href="/tr/sportsbook"]', function (e) {
-        //   e.preventDefault();
-        //   window.location.href =
-        //     language === "tr"
-        //       ? "https://betredi108.com/tr/sportsbook"
-        //       : "https://betredi108.com/en/sportsbook";
-        // });
-
-        // $(document).on("click", 'a[href="/tr/e-sport"]', function (e) {
-        //   e.preventDefault();
-        //   window.location.href =
-        //     language === "tr"
-        //       ? "https://betredi108.com/tr/e-sport"
-        //       : "https://betredi108.com/en/e-sport";
-        // });
-
-        // $(document).on("click", 'a[href="/tr/favorites"]', function (e) {
-        //   e.preventDefault();
-        //   window.location.href =
-        //     language === "tr"
-        //       ? "https://betredi108.com/tr/favorites"
-        //       : "https://betredi108.com/en/favorites";
-        // });
-
-        // $(document).on("click", 'a[href="/tr/trade"]', function (e) {
-        //   e.preventDefault();
-        //   window.location.href =
-        //     language === "tr"
-        //       ? "https://betredi108.com/tr/trade"
-        //       : "https://betredi108.com/en/trade";
-        // });
       }
     }, 300);
 
@@ -413,6 +311,15 @@
         speed: 600,
       });
     }
+
+    const waitForContentAndInitialize = () => {
+      const checkExist = setInterval(() => {
+        if (document.querySelector("#main__content")) {
+          clearInterval(checkExist);
+          initialize();
+        }
+      }, 200);
+    };
 
     function initialize() {
       removeOriginalMainSlider();
