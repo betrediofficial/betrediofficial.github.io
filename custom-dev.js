@@ -1212,12 +1212,11 @@ body.custom-dark-sportsbook #footer {
                 <div class="games-horiz">
                   <div class="games-horiz-scroll" style="grid-template-rows: auto auto;">
                     <div class="casino-game-item-content">
-                      <div class="casino-game-item" style="position: relative; border: 2px solid #9b000e !important; overflow: hidden !important;">
-                        <a href="casino/games/pragmaticplay-starlight-princess-1000" class="">
-                          <img src="https://betrediofficial.github.io/images/casino-games-new/starlight_princess_1000.png" class="casino-game-image-bc" loading="lazy">
-                        </a>
-                        <div class="hovered-effect" style="opacity: 0; position: absolute; width: 100%; height: 100%; background: rgba(255,255,255,0.1); z-index: 10; pointer-events: none;"></div>
-                      </div>
+                      <div class="casino-game-item" style="border: 2px solid #9b000e !important; overflow: hidden !important;">
+                        <img src="https://betrediofficial.github.io/images/casino-games-new/starlight_princess_1000.png" class="casino-game-image-bc" loading="lazy">
+                         <div class="overlay">
+                            <a href="casino/games/pragmaticplay-starlight-princess-1000" class="">Starlight Princess 1000</a>
+                        </div>
                       </div>
                     </div>
                     <div class="casino-game-item-content">
