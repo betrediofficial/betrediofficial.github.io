@@ -1212,16 +1212,17 @@ body.custom-dark-sportsbook #footer {
             <div class="row">
               <div class="col-2">
                 <a href="casino/slots" class"" href="#">
-                  <img src="https://betrediofficial.github.io/images/casino-games-new/starlight_princess_1000.png" loading="lazy" class="">
+                  <img src="https://betrediofficial.github.io/images/casino-games-new/starlight_princess_1000.png" loading="lazy" class="img-fluid">
                 </a>
               </div>
               <div class="col-2">
                 <a href="casino/slots" class"" href="#">
-                  <img src="https://betrediofficial.github.io/images/casino-games-new/wisdom_of_athena.png" loading="lazy" class="">
+                  <img src="https://betrediofficial.github.io/images/casino-games-new/wisdom_of_athena.png" loading="lazy" class="img-fluid">
                 </a>
               </div>
             </div>
           </div>
+        </div>
       </div>
     </div>
   </div>
