@@ -356,7 +356,7 @@
 
       insertCustomSidebarLink();
       injectProvidersMarquee();
-      injectMiniSlider();
+      // injectMiniSlider();
 
       hideBlogSection();
 
@@ -1329,44 +1329,44 @@
       // }
     }
 
-    function injectMiniSlider() {
-      const targetElement = document.querySelector(
-        "#main__content #mini-sportsbook-wrapper"
-      );
+    //   function injectMiniSlider() {
+    //     const targetElement = document.querySelector(
+    //       "#main__content #mini-sportsbook-wrapper"
+    //     );
 
-      if (!targetElement || document.querySelector("#mini-slider-wrapper"))
-        return;
+    //     if (!targetElement || document.querySelector("#mini-slider-wrapper"))
+    //       return;
 
-      const miniSliderHTML = `
-    <div class="section mini-slider pt-24" id="mini-slider-wrapper">
-      <div class="container d-flex pt-0">
-        <div class="swiper swiper-initialized swiper-horizontal swiper-backface-hidden">
-          <div class="swiper-wrapper" style="transform: translate3d(0px, 0px, 0px);">
-            <div class="swiper-slide swiper-slide-active mini-swiper" style="width: 456px; margin-right: 12px;">
-              <div class="slide-content mid-me cursor-pointer">
-                <img loading="lazy" src="https://vendor-provider.fra1.digitaloceanspaces.com/ebetlab/kuXcNtftx1apYGcBjYcCUWiVxeXSrJiW/mini-sliders/LZV2BKD25gihPfKLYSOCq7ioDEjPL0KlsErJBwJC.png" alt="" class="responsive-image">
-              </div>
-            </div>
-            <div class="swiper-slide swiper-slide-next mini-swiper" style="width: 456px; margin-right: 12px;">
-              <div class="slide-content mid-me cursor-pointer">
-                <img loading="lazy" src="https://vendor-provider.fra1.digitaloceanspaces.com/ebetlab/kuXcNtftx1apYGcBjYcCUWiVxeXSrJiW/mini-sliders/uBRbQlymH31KUcfTsFDH6i2Q1UlYc0Bma94O0oXa.png" alt="" class="responsive-image">
-              </div>
-            </div>
-            <div class="swiper-slide mini-swiper" style="width: 456px; margin-right: 12px;">
-              <div class="slide-content mid-me cursor-pointer">
-                <img loading="lazy" src="https://vendor-provider.fra1.digitaloceanspaces.com/ebetlab/kuXcNtftx1apYGcBjYcCUWiVxeXSrJiW/mini-sliders/0RJHqQhmhmYN22J6iF96UqF22tDYt2gDq4usp9Xs.png" alt="" class="responsive-image">
-              </div>
-            </div>
-          </div>
-          <div class="swiper-button-prev swiper-button-disabled swiper-button-lock"></div>
-          <div class="swiper-button-next swiper-button-disabled swiper-button-lock"></div>
-        </div>
-      </div>
-    </div>
-  `;
+    //     const miniSliderHTML = `
+    //   <div class="section mini-slider pt-24" id="mini-slider-wrapper">
+    //     <div class="container d-flex pt-0">
+    //       <div class="swiper swiper-initialized swiper-horizontal swiper-backface-hidden">
+    //         <div class="swiper-wrapper" style="transform: translate3d(0px, 0px, 0px);">
+    //           <div class="swiper-slide swiper-slide-active mini-swiper" style="width: 456px; margin-right: 12px;">
+    //             <div class="slide-content mid-me cursor-pointer">
+    //               <img loading="lazy" src="https://vendor-provider.fra1.digitaloceanspaces.com/ebetlab/kuXcNtftx1apYGcBjYcCUWiVxeXSrJiW/mini-sliders/LZV2BKD25gihPfKLYSOCq7ioDEjPL0KlsErJBwJC.png" alt="" class="responsive-image">
+    //             </div>
+    //           </div>
+    //           <div class="swiper-slide swiper-slide-next mini-swiper" style="width: 456px; margin-right: 12px;">
+    //             <div class="slide-content mid-me cursor-pointer">
+    //               <img loading="lazy" src="https://vendor-provider.fra1.digitaloceanspaces.com/ebetlab/kuXcNtftx1apYGcBjYcCUWiVxeXSrJiW/mini-sliders/uBRbQlymH31KUcfTsFDH6i2Q1UlYc0Bma94O0oXa.png" alt="" class="responsive-image">
+    //             </div>
+    //           </div>
+    //           <div class="swiper-slide mini-swiper" style="width: 456px; margin-right: 12px;">
+    //             <div class="slide-content mid-me cursor-pointer">
+    //               <img loading="lazy" src="https://vendor-provider.fra1.digitaloceanspaces.com/ebetlab/kuXcNtftx1apYGcBjYcCUWiVxeXSrJiW/mini-sliders/0RJHqQhmhmYN22J6iF96UqF22tDYt2gDq4usp9Xs.png" alt="" class="responsive-image">
+    //             </div>
+    //           </div>
+    //         </div>
+    //         <div class="swiper-button-prev swiper-button-disabled swiper-button-lock"></div>
+    //         <div class="swiper-button-next swiper-button-disabled swiper-button-lock"></div>
+    //       </div>
+    //     </div>
+    //   </div>
+    // `;
 
-      targetElement.insertAdjacentHTML("afterend", miniSliderHTML);
-    }
+    //     targetElement.insertAdjacentHTML("afterend", miniSliderHTML);
+    //   }
 
     function customCSS() {
       const style = document.createElement("style");
