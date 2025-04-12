@@ -321,61 +321,10 @@
       }, 200);
     };
 
-    // function initialize() {
-    //   removeOriginalMainSlider();
-    //   insertCustomMainSlider();
-    //   setTimeout(initCustomSlider, 500);
-
-    //   isLoggedIn = $(".header__signin").length > 0 ? false : true;
-    //   language = window.location.pathname.split("/")[1];
-
-    //   const isHomePage = isHomePageCheck();
-    //   const is_mobile = isMobile();
-
-    //   headerButtons(isHomePage);
-
-    //   if (!isHomePage) {
-    //     removeHomePageWidgets();
-    //   } else {
-    //     is_mobile && mobileBoxes();
-    //     mobileSignInText();
-    //     bottomMenuWidget(is_mobile);
-    //     otherGames();
-
-    //     if (!is_mobile) slotGames();
-
-    //     tgPromo();
-
-    //     if (!is_mobile) casinoGames();
-
-    //     sportsCard();
-    //     //hide default games
-    //     !is_mobile && hideDefaultGames(50);
-    //     !is_mobile && hideDefaultGames(1500);
-    //   }
-
-    //   insertCustomSidebarLink();
-    //   injectProvidersMarquee();
-    //   // injectMiniSlider();
-
-    //   hideBlogSection();
-
-    //   customizeSignupModal();
-    //   customizeSigninModal();
-    // }
-
     function initialize() {
-      const waitForMainContent = setInterval(() => {
-        const mainContent = document.querySelector("#main__content");
-
-        if (mainContent) {
-          clearInterval(waitForMainContent);
-
-          removeOriginalMainSlider();
-          insertCustomMainSlider();
-          setTimeout(initCustomSlider, 500);
-        }
-      }, 300);
+      removeOriginalMainSlider();
+      insertCustomMainSlider();
+      setTimeout(initCustomSlider, 500);
 
       isLoggedIn = $(".header__signin").length > 0 ? false : true;
       language = window.location.pathname.split("/")[1];
@@ -400,18 +349,69 @@
         if (!is_mobile) casinoGames();
 
         sportsCard();
+        //hide default games
         !is_mobile && hideDefaultGames(50);
         !is_mobile && hideDefaultGames(1500);
       }
 
       insertCustomSidebarLink();
       injectProvidersMarquee();
+      // injectMiniSlider();
 
       hideBlogSection();
 
       customizeSignupModal();
       customizeSigninModal();
     }
+
+    // function initialize() {
+    //   const waitForMainContent = setInterval(() => {
+    //     const mainContent = document.querySelector("#main__content");
+
+    //     if (mainContent) {
+    //       clearInterval(waitForMainContent);
+
+    //       removeOriginalMainSlider();
+    //       insertCustomMainSlider();
+    //       setTimeout(initCustomSlider, 500);
+    //     }
+    //   }, 300);
+
+    //   isLoggedIn = $(".header__signin").length > 0 ? false : true;
+    //   language = window.location.pathname.split("/")[1];
+
+    //   const isHomePage = isHomePageCheck();
+    //   const is_mobile = isMobile();
+
+    //   headerButtons(isHomePage);
+
+    //   if (!isHomePage) {
+    //     removeHomePageWidgets();
+    //   } else {
+    //     is_mobile && mobileBoxes();
+    //     mobileSignInText();
+    //     bottomMenuWidget(is_mobile);
+    //     otherGames();
+
+    //     if (!is_mobile) slotGames();
+
+    //     tgPromo();
+
+    //     if (!is_mobile) casinoGames();
+
+    //     sportsCard();
+    //     !is_mobile && hideDefaultGames(50);
+    //     !is_mobile && hideDefaultGames(1500);
+    //   }
+
+    //   insertCustomSidebarLink();
+    //   injectProvidersMarquee();
+
+    //   hideBlogSection();
+
+    //   customizeSignupModal();
+    //   customizeSigninModal();
+    // }
 
     customCSS();
     // customizeSwiper();
