@@ -27,8 +27,8 @@ html.sb-lang-ru body {
   --app-main-menu-background: ##141414;
   --app-body-background: #000;
   --app-base-color: #fff;
-  --app-accent-color: #07e942;
-  --app-accent-color2: #07e942;
+  --app-accent-color: #cc0000;
+  --app-accent-color2: #cc0000;
   --app-main-menu-btn-active-background: var(--app-main-gradient);
   --app-main-gradient: #131313 !important;
   --app-main-menu-padding: 8px 16px;
@@ -330,9 +330,9 @@ html.sb-lang-ru body {
   --app-betslip-item-v2-odds-new-hover-background: #141414;
   --app-checkbox-background: transparent;
   --app-betslip-background: #141414;
-  --app-event-up-color: #07e942 !important;
+  --app-event-up-color: #cc0000 !important;
   --app-event-down-color: #cc0000;
-  --app-betslip-footer-v2-btn-odds-changes-background: #07e942;
+  --app-betslip-footer-v2-btn-odds-changes-background: #cc0000;
   --app-matches-v2-loading-cap-background-color: #141414;
   --app-matches-v2-loading-cap-opacity: 0.8;
   --app-betslip-footer-v2-price-input-border: none;
@@ -353,7 +353,7 @@ html.sb-lang-ru body {
 }
 
 .sb-event-status_up:after {
-  --app-event-up-color: #07e942 !important;
+  --app-event-up-color: #cc0000 !important;
 }
 
 .sb-bet-slip-footer-v2__odds-changes__value {
@@ -372,12 +372,12 @@ html.sb-lang-ru body {
 
 .sb-betslip-item-v2__odds_up {
   --app-betslip-item-v2-odds-background: #141414;
-  --app-betslip-item-v2-odds-color: #07e942;
+  --app-betslip-item-v2-odds-color: #cc0000;
 }
 
 .sb-betslip-item-v2__odds_up::before {
-  border-right: 3px solid #07e942;
-  border-top: 3px solid #07e942;
+  border-right: 3px solid #cc0000;
+  border-top: 3px solid #cc0000;
 }
 
 .sb-betslip-footer-wrp {
@@ -512,29 +512,29 @@ html.sb-lang-ru body {
 }
 
 .sb-sports-list__item:hover .sb-sport-list-link__count {
-  color: #07e942 !important;
+  color: #cc0000 !important;
 }
 
 .sb-sports-list__item:hover .sb-sport-list-link {
-  color: #07e942 !important;
+  color: #cc0000 !important;
 }
 
 .sb-sports-list__item.active sportsbook-svg-icon {
-  --app-sports-list-item-hover-icon-fill: #07e942 !important;
-  --app-sports-list-item-hover-icon-stroke: #07e942 !important;
+  --app-sports-list-item-hover-icon-fill: #cc0000 !important;
+  --app-sports-list-item-hover-icon-stroke: #cc0000 !important;
 }
 
 .sb-sports-list__item.active .sb-sport-list-link__count {
-  color: #07e942 !important;
+  color: #cc0000 !important;
 }
 
 .sb-sports-list__item.active .sb-sport-list-link {
-  color: #07e942 !important;
+  color: #cc0000 !important;
 }
 
 .sb-sports-list__item:hover sportsbook-svg-icon {
-  --app-sports-list-item-hover-icon-fill: #07e942 !important;
-  --app-sports-list-item-hover-icon-stroke: #07e942 !important;
+  --app-sports-list-item-hover-icon-fill: #cc0000 !important;
+  --app-sports-list-item-hover-icon-stroke: #cc0000 !important;
 }
 
 .sb-bet-slip-footer-v2__btn_submit:hover {
@@ -702,7 +702,7 @@ html.sb-lang-ru body {
 
 .sb-sports-list__item:hover,
 .sb-sports-list__item.active {
-  color: #07e942;
+  color: #cc0000;
 }
 
 .sb-sport-matches-v2__match-time,
