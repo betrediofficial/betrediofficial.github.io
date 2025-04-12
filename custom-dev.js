@@ -125,12 +125,16 @@
           history.pushState = function (state) {
             originalPushState.apply(history, arguments);
 
-            waitForContentAndInitialize();
+            setTimeout(() => {
+              initialize();
+            }, 500);
             removeHomePageWidgets();
           };
 
           $(window).on("popstate", function () {
-            waitForContentAndInitialize();
+            setTimeout(() => {
+              initialize();
+            }, 500);
             removeHomePageWidgets();
           });
         });
@@ -224,6 +228,104 @@
               ? "https://betredi108.com/tr/trade"
               : "https://betredi108.com/en/trade";
         });
+
+        // ! done.
+
+        // $(document).on("click", 'a[href="/tr/casino/slots"]', function (e) {
+        //   e.preventDefault();
+        //   window.location.href =
+        //     language === "tr"
+        //       ? "https://betredi108.com/tr/casino/slots"
+        //       : "https://betredi108.com/en/casino/slots";
+        // });
+
+        // $(document).on("click", 'a[href="/tr/live-casino"]', function (e) {
+        //   e.preventDefault();
+        //   window.location.href =
+        //     language === "tr"
+        //       ? "https://betredi108.com/tr/live-casino"
+        //       : "https://betredi108.com/en/live-casino";
+        // });
+
+        // $(document).on("click", 'a[href="/tr/sportsbook"]', function (e) {
+        //   e.preventDefault();
+        //   window.location.href =
+        //     language === "tr"
+        //       ? "https://betredi108.com/tr/sportsbook"
+        //       : "https://betredi108.com/en/sportsbook";
+        // });
+
+        // $(document).on(
+        //   "click",
+        //   'a[href="/tr/casino/category/exclusive"]',
+        //   function (e) {
+        //     e.preventDefault();
+        //     window.location.href =
+        //       language === "tr"
+        //         ? "https://betredi108.com/tr/casino/category/exclusive"
+        //         : "https://betredi108.com/en/casino/category/exclusive";
+        //   }
+        // );
+
+        // $(document).on(
+        //   "click",
+        //   'a[href="/tr/casino/virtual_sports"]',
+        //   function (e) {
+        //     e.preventDefault();
+        //     window.location.href =
+        //       language === "tr"
+        //         ? "https://betredi108.com/tr/casino/virtual_sports"
+        //         : "https://betredi108.com/en/casino/virtual_sports";
+        //   }
+        // );
+
+        // $(document).on("click", 'a[href="/tr/vip"]', function (e) {
+        //   e.preventDefault();
+        //   window.location.href =
+        //     language === "tr"
+        //       ? "https://betredi108.com/tr/vip"
+        //       : "https://betredi108.com/en/vip";
+        // });
+
+        // $(document).on("click", 'a[href="/tr/casino"]', function (e) {
+        //   e.preventDefault();
+        //   window.location.href =
+        //     language === "tr"
+        //       ? "https://betredi108.com/tr/casino"
+        //       : "https://betredi108.com/tr/casino";
+        // });
+
+        // $(document).on("click", 'a[href="/tr/sportsbook"]', function (e) {
+        //   e.preventDefault();
+        //   window.location.href =
+        //     language === "tr"
+        //       ? "https://betredi108.com/tr/sportsbook"
+        //       : "https://betredi108.com/en/sportsbook";
+        // });
+
+        // $(document).on("click", 'a[href="/tr/e-sport"]', function (e) {
+        //   e.preventDefault();
+        //   window.location.href =
+        //     language === "tr"
+        //       ? "https://betredi108.com/tr/e-sport"
+        //       : "https://betredi108.com/en/e-sport";
+        // });
+
+        // $(document).on("click", 'a[href="/tr/favorites"]', function (e) {
+        //   e.preventDefault();
+        //   window.location.href =
+        //     language === "tr"
+        //       ? "https://betredi108.com/tr/favorites"
+        //       : "https://betredi108.com/en/favorites";
+        // });
+
+        // $(document).on("click", 'a[href="/tr/trade"]', function (e) {
+        //   e.preventDefault();
+        //   window.location.href =
+        //     language === "tr"
+        //       ? "https://betredi108.com/tr/trade"
+        //       : "https://betredi108.com/en/trade";
+        // });
       }
     }, 300);
 
@@ -312,70 +414,10 @@
       });
     }
 
-    const waitForContentAndInitialize = () => {
-      const checkExist = setInterval(() => {
-        if (document.querySelector("#main__content")) {
-          clearInterval(checkExist);
-          initialize();
-        }
-      }, 200);
-    };
-
-    // function initialize() {
-    //   removeOriginalMainSlider();
-    //   insertCustomMainSlider();
-    //   setTimeout(initCustomSlider, 500);
-
-    //   isLoggedIn = $(".header__signin").length > 0 ? false : true;
-    //   language = window.location.pathname.split("/")[1];
-
-    //   const isHomePage = isHomePageCheck();
-    //   const is_mobile = isMobile();
-
-    //   headerButtons(isHomePage);
-
-    //   if (!isHomePage) {
-    //     removeHomePageWidgets();
-    //   } else {
-    //     is_mobile && mobileBoxes();
-    //     mobileSignInText();
-    //     bottomMenuWidget(is_mobile);
-    //     otherGames();
-
-    //     if (!is_mobile) slotGames();
-
-    //     tgPromo();
-
-    //     if (!is_mobile) casinoGames();
-
-    //     sportsCard();
-    //     //hide default games
-    //     !is_mobile && hideDefaultGames(50);
-    //     !is_mobile && hideDefaultGames(1500);
-    //   }
-
-    //   insertCustomSidebarLink();
-    //   injectProvidersMarquee();
-    //   // injectMiniSlider();
-
-    //   hideBlogSection();
-
-    //   customizeSignupModal();
-    //   customizeSigninModal();
-    // }
-
     function initialize() {
-      const waitForMainContent = setInterval(() => {
-        const mainContent = document.querySelector("#main__content");
-
-        if (mainContent) {
-          clearInterval(waitForMainContent);
-
-          removeOriginalMainSlider();
-          insertCustomMainSlider();
-          setTimeout(initCustomSlider, 500);
-        }
-      }, 300);
+      removeOriginalMainSlider();
+      insertCustomMainSlider();
+      setTimeout(initCustomSlider, 500);
 
       isLoggedIn = $(".header__signin").length > 0 ? false : true;
       language = window.location.pathname.split("/")[1];
@@ -400,6 +442,7 @@
         if (!is_mobile) casinoGames();
 
         sportsCard();
+        //hide default games
         !is_mobile && hideDefaultGames(50);
         !is_mobile && hideDefaultGames(1500);
       }
@@ -1377,45 +1420,6 @@
       //   marquee.parentElement.appendChild(clone);
       // }
     }
-
-    //   function injectMiniSlider() {
-    //     const targetElement = document.querySelector(
-    //       "#main__content #mini-sportsbook-wrapper"
-    //     );
-
-    //     if (!targetElement || document.querySelector("#mini-slider-wrapper"))
-    //       return;
-
-    //     const miniSliderHTML = `
-    //   <div class="section mini-slider pt-24" id="mini-slider-wrapper">
-    //     <div class="container d-flex pt-0">
-    //       <div class="swiper swiper-initialized swiper-horizontal swiper-backface-hidden">
-    //         <div class="swiper-wrapper" style="transform: translate3d(0px, 0px, 0px);">
-    //           <div class="swiper-slide swiper-slide-active mini-swiper" style="width: 456px; margin-right: 12px;">
-    //             <div class="slide-content mid-me cursor-pointer">
-    //               <img loading="lazy" src="https://vendor-provider.fra1.digitaloceanspaces.com/ebetlab/kuXcNtftx1apYGcBjYcCUWiVxeXSrJiW/mini-sliders/LZV2BKD25gihPfKLYSOCq7ioDEjPL0KlsErJBwJC.png" alt="" class="responsive-image">
-    //             </div>
-    //           </div>
-    //           <div class="swiper-slide swiper-slide-next mini-swiper" style="width: 456px; margin-right: 12px;">
-    //             <div class="slide-content mid-me cursor-pointer">
-    //               <img loading="lazy" src="https://vendor-provider.fra1.digitaloceanspaces.com/ebetlab/kuXcNtftx1apYGcBjYcCUWiVxeXSrJiW/mini-sliders/uBRbQlymH31KUcfTsFDH6i2Q1UlYc0Bma94O0oXa.png" alt="" class="responsive-image">
-    //             </div>
-    //           </div>
-    //           <div class="swiper-slide mini-swiper" style="width: 456px; margin-right: 12px;">
-    //             <div class="slide-content mid-me cursor-pointer">
-    //               <img loading="lazy" src="https://vendor-provider.fra1.digitaloceanspaces.com/ebetlab/kuXcNtftx1apYGcBjYcCUWiVxeXSrJiW/mini-sliders/0RJHqQhmhmYN22J6iF96UqF22tDYt2gDq4usp9Xs.png" alt="" class="responsive-image">
-    //             </div>
-    //           </div>
-    //         </div>
-    //         <div class="swiper-button-prev swiper-button-disabled swiper-button-lock"></div>
-    //         <div class="swiper-button-next swiper-button-disabled swiper-button-lock"></div>
-    //       </div>
-    //     </div>
-    //   </div>
-    // `;
-
-    //     targetElement.insertAdjacentHTML("afterend", miniSliderHTML);
-    //   }
 
     function customCSS() {
       const style = document.createElement("style");
