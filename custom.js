@@ -2148,7 +2148,7 @@
 </svg>
 
       </span>
-      Para Yatır
+      ${language === "tr" ? "Para Yatır" : "Make Deposit"}
       </a>
    </div>
    
