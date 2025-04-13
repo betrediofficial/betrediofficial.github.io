@@ -139,7 +139,11 @@
           });
         });
 
-        /// ! Don't touch
+        // ! Don't touch
+        $(document).on("click", "#telegram-button", function (e) {
+          e.preventDefault();
+          window.open("https://t.me/betredi", "_blank");
+        });
 
         $(document).on("click", 'a[href$="/casino/slots"]', function (e) {
           e.preventDefault();
@@ -228,6 +232,104 @@
               ? "https://betredi108.com/tr/trade"
               : "https://betredi108.com/en/trade";
         });
+
+        // ! done.
+
+        // $(document).on("click", 'a[href="/tr/casino/slots"]', function (e) {
+        //   e.preventDefault();
+        //   window.location.href =
+        //     language === "tr"
+        //       ? "https://betredi108.com/tr/casino/slots"
+        //       : "https://betredi108.com/en/casino/slots";
+        // });
+
+        // $(document).on("click", 'a[href="/tr/live-casino"]', function (e) {
+        //   e.preventDefault();
+        //   window.location.href =
+        //     language === "tr"
+        //       ? "https://betredi108.com/tr/live-casino"
+        //       : "https://betredi108.com/en/live-casino";
+        // });
+
+        // $(document).on("click", 'a[href="/tr/sportsbook"]', function (e) {
+        //   e.preventDefault();
+        //   window.location.href =
+        //     language === "tr"
+        //       ? "https://betredi108.com/tr/sportsbook"
+        //       : "https://betredi108.com/en/sportsbook";
+        // });
+
+        // $(document).on(
+        //   "click",
+        //   'a[href="/tr/casino/category/exclusive"]',
+        //   function (e) {
+        //     e.preventDefault();
+        //     window.location.href =
+        //       language === "tr"
+        //         ? "https://betredi108.com/tr/casino/category/exclusive"
+        //         : "https://betredi108.com/en/casino/category/exclusive";
+        //   }
+        // );
+
+        // $(document).on(
+        //   "click",
+        //   'a[href="/tr/casino/virtual_sports"]',
+        //   function (e) {
+        //     e.preventDefault();
+        //     window.location.href =
+        //       language === "tr"
+        //         ? "https://betredi108.com/tr/casino/virtual_sports"
+        //         : "https://betredi108.com/en/casino/virtual_sports";
+        //   }
+        // );
+
+        // $(document).on("click", 'a[href="/tr/vip"]', function (e) {
+        //   e.preventDefault();
+        //   window.location.href =
+        //     language === "tr"
+        //       ? "https://betredi108.com/tr/vip"
+        //       : "https://betredi108.com/en/vip";
+        // });
+
+        // $(document).on("click", 'a[href="/tr/casino"]', function (e) {
+        //   e.preventDefault();
+        //   window.location.href =
+        //     language === "tr"
+        //       ? "https://betredi108.com/tr/casino"
+        //       : "https://betredi108.com/tr/casino";
+        // });
+
+        // $(document).on("click", 'a[href="/tr/sportsbook"]', function (e) {
+        //   e.preventDefault();
+        //   window.location.href =
+        //     language === "tr"
+        //       ? "https://betredi108.com/tr/sportsbook"
+        //       : "https://betredi108.com/en/sportsbook";
+        // });
+
+        // $(document).on("click", 'a[href="/tr/e-sport"]', function (e) {
+        //   e.preventDefault();
+        //   window.location.href =
+        //     language === "tr"
+        //       ? "https://betredi108.com/tr/e-sport"
+        //       : "https://betredi108.com/en/e-sport";
+        // });
+
+        // $(document).on("click", 'a[href="/tr/favorites"]', function (e) {
+        //   e.preventDefault();
+        //   window.location.href =
+        //     language === "tr"
+        //       ? "https://betredi108.com/tr/favorites"
+        //       : "https://betredi108.com/en/favorites";
+        // });
+
+        // $(document).on("click", 'a[href="/tr/trade"]', function (e) {
+        //   e.preventDefault();
+        //   window.location.href =
+        //     language === "tr"
+        //       ? "https://betredi108.com/tr/trade"
+        //       : "https://betredi108.com/en/trade";
+        // });
       }
     }, 300);
 
@@ -316,759 +418,6 @@
       });
     }
 
-    function addCustomSportsbookCSS() {
-      const checkIframe = setInterval(() => {
-        const iframe = document.querySelector("#bcsportsbookiframe");
-
-        if (iframe) {
-          const iframeDoc =
-            iframe.contentDocument || iframe.contentWindow.document;
-          const styleTag = iframeDoc.querySelector("#sportsbook-theme-css");
-
-          if (styleTag) {
-            styleTag.innerHTML += `
-@import url("https://p.typekit.net/p.css?s=1&k=aba0ebl&ht=tk&f=139.173.175.176.10296&a=6570577&app=typekit&e=css");
-
-@font-face {
-  font-family: "proxima-nova";
-  src: url("https://use.typekit.net/af/2555e1/00000000000000007735e603/30/l?primer=9e9145798bfc6b7954a6cb7abc2ead67980260945baf1d129a2d2e98d0352745&fvd=n7&v=3")
-      format("woff2"),
-    url("https://use.typekit.net/af/2555e1/00000000000000007735e603/30/d?primer=9e9145798bfc6b7954a6cb7abc2ead67980260945baf1d129a2d2e98d0352745&fvd=n7&v=3")
-      format("woff"),
-    url("https://use.typekit.net/af/2555e1/00000000000000007735e603/30/a?primer=9e9145798bfc6b7954a6cb7abc2ead67980260945baf1d129a2d2e98d0352745&fvd=n7&v=3")
-      format("opentype");
-  font-display: auto;
-  font-style: normal;
-  font-weight: 700;
-  font-stretch: normal;
-}
-
-html body {
-  font-family: "proxima-nova", sans-serif !important;
-  text-rendering: optimizeLegibility;
-}
-
-html.sb-lang-ru body {
-  font-family: "proxima-nova", sans-serif !important;
-}
-
-:root {
-  --app-main-menu-background: ##1e0434;
-  --app-body-background: #17002c;
-  --app-base-color: #fff;
-  --app-accent-color: #07e942;
-  --app-accent-color2: #07e942;
-  --app-main-menu-btn-active-background: var(--app-main-gradient);
-  --app-main-gradient: #361355 !important;
-  --app-main-menu-padding: 8px 16px;
-  --app-main-menu-border-radius: 0;
-  --app-main-menu-color: #fff;
-  --app-main-menu-item-after-display: none;
-  --app-body-color: #fff;
-  --app-search-field-background: #1e0434;
-  --app-page-links-item-background: ##1e0434;
-  --app-page-links-item-color: #fff;
-  --app-page-links-icon-fill: #fff;
-  --app-page-links-item-hover-color: #fff;
-  --app-page-links-item-hover-background: #1e0434;
-  --app-sports-tabs-active-background: #1e0434;
-  --app-sports-tabs-background: ##1e0434;
-  --app-sports-tabs-active-border-bottom: 2px solid #1e0434;
-  --app-sports-tabs-padding: 10px 0;
-  --app-sports-tabs-active-color: #fff;
-  --app-sports-tabs-color: #fff;
-  --app-sports-tabs-border-bottom: 2px solid #1e0434;
-  --app-sports-tabs-margin: 3px;
-  --app-sports-tabs-border-radius: 4px 4px 0 0;
-  --app-sports-tabs-wrapper-background: transparent;
-  --app-sports-list-item-background: #1e0434;
-  --app-sports-list-item-link-color: #fff;
-  --app-sports-list-item-icon-fill: #fff;
-  --app-sports-list-item-icon-stroke: #fff;
-  --app-sports-list-item-counter-color: #fff;
-  --app-banners-card-footer-background: #1e0434;
-  --app-banners-card-outcome-background: #361355;
-  --app-event-block-item-background-hover: var(--app-main-gradient);
-  --app-event-block-item-hover-color: #fff;
-  --app-slider-direction-button-background: #1e0434;
-  --app-slider-direction-button-icon-fill: #fff;
-  --app-slider-direction-button-icon-stroke: #fff;
-  --app-title_block-background: #361355;
-  --app-title_block-subtitle-color: #fff !important;
-  --app-third-color: #fff;
-  --app-title_block-subtitle-icon-stroke: #fff;
-  --app-title_block-subtitle-icon-fill: #fff;
-  --app-matches-view-v2-match-background: #1e0434;
-  --app-matches-view-v2-match-team-name-color: #fff;
-  --app-mgov2-outcome-button-background: #1e0434;
-  --app-mgov2-outcome-button-border: none;
-  --app-mgov2-outcome-button-odds-color: #fff;
-  --app-mgov2-outcome-button-hover-background: var(--app-main-gradient);
-  --app-mgov2-outcome-button-title-color: #fff;
-  --app-bet-slip-with-open-bets-background: ##1e0434;
-  --app-betslip-item-v2-background: ##1e0434;
-  --app-betslip-footer-v2-before-background: transparent;
-  --app-tabs-item-active-color: #fff;
-  --app-fifth-color: #fff;
-  --app-betslip-item-v2-team-color: #fff;
-  --app-betslip-item-v2-market-name-color: #fff;
-  --app-betslip-item-v2-outcome-name-color: #fff;
-  --app-betslip-item-v2-delete-background: transparent;
-  --app-betslip-item-v2-delete-icon-width: 11px;
-  --app-betslip-item-v2-delete-icon-height: 11px;
-  --app-betslip-item-v2-delete-hover-background: transparent;
-  --app-betslip-item-v2-delete-icon-fill: #fff;
-  --app-betslip-item-v2-delete-icon-stroke: #fff;
-  --app-bet-slip-bet-input-background: #1e0434;
-  --app-bet-input-hover-border-color: #1e0434;
-  --app-betslip-footer-v2-btn-reset-background: #1e0434;
-  --app-betslip-tabs-item-border-bottom: 2px solid rgba(147, 158, 183, 0.5);
-  --app-betslip-tabs-item-active-border-bottom: 2px solid #5800a4;
-  --app-betslip-footer-v2-btn-reset-border: none;
-  --app-betslip-footer-v2-total-win-title-color: #fff;
-  --app-betslip-footer-v2-before-background: none;
-  --app-betslip-footer-v2-before-top: -2px;
-  --app-betslip-footer-v2-before-height: 15px;
-  --app-betslip-item-v2-disabled-error-background: rgba(34, 32, 40, 0.4);
-  --app-sports-list-item-border-bottom: 2px solid #1e0434;
-  --app-sports-list-tabs-border-bottom: 2px solid #1e0434;
-  --app-sports-list-item-hover-background: #1e0434;
-  --app-sports-list-item-hover-color: #5800a4;
-  --app-sports-list-sub-item-background: #1e0434;
-  --app-sports-list-sub-item-tournament-background: #1e0434;
-  --app-sports-list-sub-item-border-bottom: 2px solid #1e0434;
-  --app-main-menu-border-bottom: none;
-  --app-banners-card-background: #1e0434;
-  --app-breadcrumbs-background: #1e0434;
-  --app-breadcrumbs-color: #fff;
-  --app-game-header-v2-top-background: #1e0434;
-  --app-game-header-v2-info-background: #1e0434;
-  --app-game-header-v2-tournament-color: #fff;
-  --app-game-market-tabs-wrapper-background: #1e0434;
-  --app-game-markets-wrapper-background: none;
-  --app-game-market-events-padding: 0;
-  --app-game-event-padding: 0 2px 2px 0;
-  --app-game-event-item-background: #1e0434;
-  --app-game-event-item_name-color: #fff;
-  --app-game-event-item_price-color: #fff;
-  --app-game-event-item-hover-background: var(--app-main-gradient);
-  --app-carousel-list-item-active-padding: 11px 5px;
-  --app-game-market-tabs-item-border-radius: 4px;
-  --app-game-markets-tabs-margin: 10px 0;
-  --app-game-markets-tabs-item-padding: 11px 10px;
-  --app-carousel-list-item-wrap-padding: 0 10px;
-  --app-game-market-tabs-item-color: #fff;
-  --app-big-wins-header-background: #1e0434;
-  --app-big-wins-background: #1e0434;
-  --app-big-wins-items-background: #1e0434;
-  --app-big-wins-header-border-bottom: none;
-  --app-big-wins--background: #1e0434;
-  --app-big-wins-toggler-color: #fff;
-  --app-big-wins-item-odds-background: var(--app-main-gradient);
-  --app-matches-view-v2-match-team-score-active-color: #fff;
-  --app-banners-card-info-team-color: #fff;
-  --app-banners-card-info-date-color: #fff;
-  --app-title_block-background: #1e0434 !important;
-  --app-top-leagues-slider-background: #1e0434;
-  --app-top-leagues-slider-item-background: #1e0434;
-  --app-top-leagues-slider-item-title-color: #fff;
-  --app-top-leagues-slider-header-color: #fff;
-  --app-matches-view-v2-match-date-color: #fff;
-  --app-page-header-background: #1e0434;
-  --app-tabs-background: #1e0434;
-  --app-week-calendar-background: none;
-  --app-tabs_simple-item-color: #fff;
-  --app-second-color: #fff;
-  --app-page-header-icon-fill: #fff;
-  --app-page-header-icon-stroke: #fff;
-  --app-week-calendar-item-active-content-color: #fff;
-  --app-week-calendar-item-content-color: #5800a4;
-  --app-week-calendar-item-title-color: #5800a4;
-  --app-week-calendar-item-active-border-bottom: 2px solid #1e0434;
-  --app-tournaments-list-v2-item-s-background: #1e0434;
-  --app-tournaments-list-v2-background: #1e0434;
-  --app-tournaments-list-v2-tournament-color: #fff;
-  --app-tournaments-list-v2-item-t-hover-background: #1e0434;
-  --app-sports-slider-background: #1e0434;
-  --app-sports-slider-item-border: none;
-  --app-sports-slider-item-background: #1e0434;
-  --app-sports-slider-item-padding: 0;
-  --app-sports-slider-item-color: #6d7d97;
-  --app-sports-slider-item-icon-margin: 0 0 5px 0;
-  --app-sports-slider-item-hover-background: var(--app-main-gradient);
-  --app-sports-slider-item-hover-border: none;
-  --app-sports-slider-item-height: auto;
-  --app-sports-slider-item-width: 85px;
-  --app-betslip-item-v2-odds-background: var(--app-main-gradient);
-  --app-results-filter-background: #1e0434;
-  --app-results-filter-item-background: #1e0434;
-  --app-game-result-item-background: #1e0434;
-  --app-game-result-item-score-background: #1e0434;
-  --app-game-result-item-color: #fff;
-  --app-game-result-item-border-bottom: #fff;
-  --app-live-matches-header-background: #1e0434;
-  --app-preloader-background: #1e0434;
-  --app-preloader-line-color: var(--app-accent-color);
-  --app-sports-list-item-title-active-before-display: none;
-  --app-sports-list-sub-item-title-active-before-display: none;
-  --app-game-header-v2-prematch-background: var(--app-main-gradient);
-  --app-mobile-main-menu-v2-background: #1e0434;
-  --app-carousel-menu-item-active-background: var(--app-main-gradient);
-  --app-carousel-menu-item-active-box-shadow: none;
-  --app-carousel-menu-item-background: #1e0434;
-  --app-carousel-menu-item-icon-height: 35px;
-  --app-event-block-item-background: #1e0434;
-  --app-event-block-item-price-color: #fff;
-  --app-event-block-item-name-color: #fff;
-  --app-mobile-main-menu-v2-dropdown-background: #1e0434;
-  --app-mobile-main-menu-v2-odds-item-active-background: var(
-    --app-main-gradient
-  );
-  --app-mobile-main-menu-v2-dropdown-border: none;
-  --app-competitions-item-favourite-active-stroke: var(--app-accent-color);
-  --app-competitions-item-favourite-active-fill: var(--app-accent-color);
-  --app-competitions-item-favourite-fill: #fff;
-  --app-competitions-item-favourite-stroke: #fff;
-  --app-sports-slider-padding: 0 0 15px 0;
-  --app-bet-history-item-background-color: #1e0434;
-  --app-bet-history-item-btn-details-background: #1e0434;
-  --app-bet-history-item-btn-details-background-color: #1e0434;
-  --app-bet-history-item-background: #1e0434;
-  --app-bet-history-item-opened-event-background-color: #1e0434;
-  --app-profile-inputs-background: #1e0434;
-  --app-bet-history-item-btn-cashout-background-color: var(--app-accent-color);
-  --app-bet-history-item-btn-cashout-hover-background-color: var(
-    --app-main-gradient
-  );
-  --app-bet-history-item-btn-cashout-confirm-background-color: var(
-    --app-accent-color
-  );
-  --app-bet-history-item-btn-cashout-confirm-hover-background-color: var(
-    --app-main-gradient
-  );
-  --app-bet-history-item-btn-details-background: #1e0434;
-  --app-bet-accumulators-item-price-background: #1e0434;
-  --app-bet-accumulators-bonus-background: #1e0434;
-  --app-bet-accumulators-item-background-hover: #1e0434;
-  --app-bet-accumulators-item-background: #1e0434;
-  --app-bet-history-item-btn-details-hover-background-color: #1e0434;
-  --app-main-menu-item-padding: 6px 12px;
-  --app-game-header-v2-top-btn-background: none;
-  --app-mobile-main-menu-v2-search-field-background: #1e0434;
-  --app-mobile-main-menu-v2-search-field-color: #6d7d97;
-  --app-mobile-main-menu-v2-search-empty-icon-color: #1e0434;
-  --app-search-field-clear-btn-background: transparent;
-  --app-empty-bets-cap-color: #1e0434;
-  --app-empty-bets-ballet-color: #1e0434;
-  --app-empty-bets-calculator-item-color: rgba(34, 32, 40, 0.5);
-  --app-empty-bets-calculator-item-button-color: #1e0434;
-  --app-empty-bets-item-color: #1e0434;
-  --app-empty-bets-ball-color: #1e0434;
-  --app-main-menu-item-font-size: 1.4rem;
-  --app-search-field-font-size: 1.4rem;
-  --app-sports-list-item-link-font-size: 1.4rem;
-  --app-title_block-font-size: 1.8rem;
-  --app-tabs-item-font-size: 1.4rem;
-  --app-big-wins-detail-outcome-value-background: var(--app-main-gradient);
-  --app-big-wins-detail-tournament-color: #fff;
-  --app-big-wins-detail-market-color: #fff;
-  --app-big-wins-detail-outcome-title-color: #fff;
-  --app-banners-card-team-color: #fff;
-  --app-mgov2-outcome-button-border-radius: 4px;
-  --app-banners-card-outcome-border-radius: 4px;
-  --app-bet-accumulators-title-font-size: 1.8rem;
-  --app-banners-card-vs-text-color: "#6D7D97";
-  --app-game-mini-tracker-background: #1e0434;
-  --app-sports-list-sub-item-tournament-active-background: #1e0434;
-  --app-sports-list-sub-item-tournament-active-color: #fff;
-  --app-sports-list-sub-item-tournament-color: #fff;
-  --app-sports-list-sub-item-active-background: rgb(34, 32, 40, 0.4);
-  --app-sports-list-sub-item-hover-background: rgb(34, 32, 40, 0.4);
-  --app-sports-list-item-link-active-color: inherit !important;
-  --app-sports-list-sub-item-active-color: #5800a4;
-  --app-odds-booster-border-bottom: none;
-  --app-search-results-background: #1e0434;
-  --app-base-item-background: #1e0434;
-  --app-search-results-item-background: #1e0434;
-  --app-search-results-item-hover-background: rgba(34, 32, 40, 0.8);
-  --app-search-results-item-sport-icon-color: #fff;
-  --app-betslip-item-v2_related-teams-background: #cc0000;
-  --app-matches-view-v2-tournament-title-background: #1e0434;
-  --app-matches-view-v2-tournament-title-color: #fff;
-  --app-betslip-footer-v2-price-input-background: #1e0434;
-  --app-outrights-outcomes-padding: 2px 0;
-  --app-outrights-outcomes-background: transparent;
-  --app-live-matches-live-toggler-s-flex: 0 0 100%;
-  --app-live-matches-live-toggler-s-background: none;
-  --app-live-matches-live-toggler-active-s-color: #fff;
-  --app-live-matches-live-toggler-s-font-weight: 700;
-  --app-live-matches-live-toggler-border-radius: 4px;
-  --app-live-matches-live-toggler-min-width: 90px;
-  --app-live-matches-live-toggler-background: #5800a4;
-  --app-live-matches-live-toggler-active-background: #5800a4;
-  --app-live-matches-live-toggler-padding: 0;
-  --app-betslip-footer-v2-btn-reset-icon-fill: #fff;
-  --app-betslip-footer-v2-btn-reset-icon-stroke: #fff;
-  --app-bet-accumulators-nav-background: #1e0434;
-  --app-mgov2-outcome-button-disabled-border: none;
-  --app-tournaments-list-v2-item-t-border-bottom: none;
-  --app-tournaments-list-v2-item-s-border-top: none;
-  --app-tournaments-list-v2-item-s-border-bottom: none;
-  --app-game-header-v2-top-btn-icon-fill: #fff;
-  --app-game-header-v2-team-abbr-color: #fff;
-  --app-carousel-menu-item-hover-background: var(--app-main-gradient);
-  --app-mobile-main-menu-v2-odds-item-border: none;
-  --app-mobile-main-menu-v2-odds-item-active-border: none;
-  --app-mobile-main-menu-v2-odds-title-color: inherit;
-  --app-mobile-main-menu-v2-odds-value-color: inherit;
-  --app-checkbox-active-after-background: var(--app-main-gradient);
-  --app-checkbox-active-background: var(--app-main-gradient);
-  --app-betslip-item-v2-border-bottom: 1px solid #1e0434;
-  --app-toggler-background: rgba(34, 32, 40, 0.5);
-  --app-game-header-v2-status-item-background: #5800a4;
-  --app-game-header-v2-status-item-border-radius: 4px;
-  --app-game-header-v2-date-active-color: #fff;
-  --app-svg-html-icon-fill: none;
-  --app-tabs-item-font-weight: 500;
-  --app-search-field-font-weight: 300;
-  --app-top-leagues-slider-header-font-weight: 500;
-  --app-top-leagues-slider-item-title-font-weight: 500;
-  --app-banners-card-info-team-font-weight: 500;
-  --app-banners-card-info-date-font-weight: 500;
-  --app-bet-accumulators-place-font-weight: 500;
-  --app-betslip-footer-v2-btn-submit-font-weight: 500;
-  --app-betslip-footer-v2-total-win-value-font-weight: 500;
-  --app-big-wins-title-font-weight: 500;
-  --app-big-wins-item-name-font-weight: 500;
-  --app-big-wins-item-value-font-weight: 500;
-  --app-title_block-font-weight: 500 !important;
-  --app-game-header-v2-team-name-font-weight: 500;
-  --app-game-header-v2-status-item-font-weight: 500;
-  --app-game-header-v2-time-font-weight: 500;
-  --app-live-matches-title-font-weight: 500;
-  --app-betslip-item-v2-outcome-name-font-weight: 500;
-  --app-live-matches-live-toggler-s-font-weight: 500;
-  --app-mobile-main-menu-v2-odds-value-font-weight: 500;
-  --app-betslip-footer-v2-total-odds-title-color: #fff;
-  --app-title-with-arrow-title-font-weight: 500;
-  --app-carousel-menu-item-icon-color: #6d7d97;
-  --app-carousel-menu-item-text-color: #6d7d97;
-  --app-svg-icon-lock-mark-fill: #fff;
-  --app-svg-icon-lock-mark-color: #fff;
-  --app-checkbox-border-radius: 4px;
-  --app-betslip-item-v2-odds-new-hover-background: #1e0434;
-  --app-checkbox-background: transparent;
-  --app-betslip-background: #1e0434;
-  --app-event-up-color: #07e942 !important;
-  --app-event-down-color: #cc0000;
-  --app-betslip-footer-v2-btn-odds-changes-background: #07e942;
-  --app-matches-v2-loading-cap-background-color: #1e0434;
-  --app-matches-v2-loading-cap-opacity: 0.8;
-  --app-betslip-footer-v2-price-input-border: none;
-  --app-btsplr-background: #1e0434;
-  --app-mgov2-submarkets-background: #1e0434;
-}
-
-.sb-game-tips {
-  --app-game-tips-background: #1b0033;
-  --app-game-tip-background: var(--app-game-header-v2-top-background);
-  --app-game-tip-market-background: rgba(34, 32, 40, 0.2);
-  --app-game-tip-market-border-top: 1px solid var(--app-body-background);
-  --app-game-tip-border: none;
-  --app-game-tips-header-background: transparent;
-  --app-game-tips-header-padding: 0;
-  --app-game-tips-margin: 10px 0;
-  --app-game-tips-padding: 10px;
-}
-
-.sb-event-status_up:after {
-  --app-event-up-color: #07e942 !important;
-}
-
-.sb-bet-slip-footer-v2__odds-changes__value {
-  border-radius: 4px !important;
-}
-
-.sb-betslip-item-v2__odds_down {
-  --app-betslip-item-v2-odds-background: #1b0033;
-  --app-betslip-item-v2-odds-color: #cc0000;
-}
-
-.sb-betslip-item-v2__odds_down:before {
-  border-right: 3px solid #cc0000 !important;
-  border-bottom: 3px solid #cc0000 !important;
-}
-
-.sb-betslip-item-v2__odds_up {
-  --app-betslip-item-v2-odds-background: #1b0033;
-  --app-betslip-item-v2-odds-color: #07e942;
-}
-
-.sb-betslip-item-v2__odds_up::before {
-  border-right: 3px solid #07e942;
-  border-top: 3px solid #07e942;
-}
-
-.sb-betslip-footer-wrp {
-  position: relative;
-  z-index: 1;
-}
-
-.sb-betslip-footer-wrp::after {
-  display: block;
-  position: absolute;
-  content: "";
-  background: linear-gradient(
-    180deg,
-    rgba(34, 32, 40, 0) 0%,
-    rgba(34, 32, 40, 0.5) 100%
-  );
-  width: 100%;
-  height: 24px;
-  left: 0;
-  top: -10px;
-  z-index: -1;
-}
-
-.sb-sport-icons-item__title-wrapper {
-  padding: 0 5px 10px 5px;
-}
-
-.sb-sports-slider .sb-sport-icons-item .sb-sport-icons-item__icon {
-  padding: 10px 5px 0 5px;
-}
-
-.sb-bet-slip-footer-v2__odds-changes__value {
-  border-radius: 4px;
-}
-
-.sb-checkbox.sb-checked div:before {
-  background: url("static/images/icons/checked-white.svg") !important;
-  background-repeat: no-repeat !important;
-  background-size: 10px !important;
-  background-position: center !important;
-}
-
-.sb-checkbox.sb-checked div:after {
-  display: none !important;
-}
-
-.app-upcoming-games__time-selector__options {
-  --app-upcoming-games-ts-options-background: #1b0033;
-  --app-upcoming-games-ts-options-item-active-background: #1e0434;
-}
-
-@media (max-width: 1200px) {
-  .sb-game-header-v2__btn {
-    --app-game-header-v2-top-btn-icon-height: 15px;
-    --app-game-header-v2-top-btn-icon-width: 15px;
-    --app-game-header-v2-top-btn-background: #1e0434;
-  }
-}
-
-.sb-outrights-header {
-  font-weight: 500 !important;
-}
-
-.sb-odds-booster__footer {
-  font-weight: 500 !important;
-}
-
-.sb-odds-booster__header {
-  font-weight: 500 !important;
-}
-
-.sb-title_block-title {
-  font-weight: 500 !important;
-}
-
-.sb-bet-accumulators__title {
-  font-weight: 600 !important;
-}
-
-.sb-mobile-main-menu-v2-btn.sb-active svg {
-  stroke: var(--app-accent-color);
-  --app-svg-html-icon-stroke: var(--app-accent-color);
-}
-
-.sb-carousel-menu-item.sb-active,
-.sb-carousel-menu-item.sb-active:hover {
-  color: #fff;
-  background: var(--app-main-gradient);
-}
-
-.sb-game-event-content.sb-event-disabled {
-  background: #1b0033 !important;
-}
-
-.sb-game-event-content.sb-event-disabled:hover {
-  background: #1b0033 !important;
-}
-
-.sb-market-group-outcomes-v2__outcome-button.sb-event-disabled[type="button"] {
-  background: #1b0033;
-}
-
-.sb-market-group-outcomes-v2__outcome-button.sb-event-disabled[type="button"]:hover {
-  background: #1b0033 !important;
-}
-
-.sb-mobile-main-menu-v2__odds-item {
-  color: #6d7d97 !important;
-  transition: 0.3s ease background;
-  background: #1b0033;
-}
-
-.sb-svg-icon_lock .sb-lock-icon__mark {
-  color: #1b0033;
-}
-
-.sb-svg-icon_lock .sb-lock-icon__lock {
-  color: #1b0033;
-}
-
-.sb-results-filter .sb-results-filter-select {
-  background: url("/static/images/icons/br_down-white.svg") no-repeat 98%
-    var(--app-results-filter-item-background) !important;
-}
-
-.app-event-block-item__price {
-  --app-event-block-item-price-color: #fff;
-}
-
-.sb-betslip-bet-input__max {
-  --app-betslip-bet_max-bet-background: #1b0033;
-}
-
-.sb-sports-list__item:hover .sb-sport-list-link__count {
-  color: #07e942 !important;
-}
-
-.sb-sports-list__item:hover .sb-sport-list-link {
-  color: #07e942 !important;
-}
-
-.sb-sports-list__item.active sportsbook-svg-icon {
-  --app-sports-list-item-hover-icon-fill: #07e942 !important;
-  --app-sports-list-item-hover-icon-stroke: #07e942 !important;
-}
-
-.sb-sports-list__item.active .sb-sport-list-link__count {
-  color: #07e942 !important;
-}
-
-.sb-sports-list__item.active .sb-sport-list-link {
-  color: #07e942 !important;
-}
-
-.sb-sports-list__item:hover sportsbook-svg-icon {
-  --app-sports-list-item-hover-icon-fill: #07e942 !important;
-  --app-sports-list-item-hover-icon-stroke: #07e942 !important;
-}
-
-.sb-bet-slip-footer-v2__btn_submit:hover {
-  opacity: 0.8;
-}
-
-.sb-search-field__input::placeholder {
-  color: #6d7d97 !important;
-}
-
-.sb-main-menu__right {
-  --app-main-menu-item-padding: 6px 12px;
-}
-
-.sb-tabs .sb-tabs__tab {
-  --app-tabs-item-padding: 10px 12px;
-  --app-tabs-item-border-radius: 4px;
-}
-
-.sb-main-menu__right .sb-section-main-menu__item {
-  margin-right: 10px;
-}
-
-.sb-section-main-menu__item .sb-main-menu__link.sb-active {
-  color: #fff;
-}
-
-.sb-bet-history-item .sb-bet-history-item-btn_cashout-confirm .sb-btn {
-  color: #fff !important;
-}
-
-.sb-bet-history-item .sb-bet-history-item-details {
-  background: #1b0033;
-}
-
-.sb-results-filter .sb-results-filter-select {
-  border: none;
-}
-
-.sb-tabs_simple .sb-tabs__tab {
-  color: #fff;
-}
-
-.sb-tabs {
-  background: #1b0033 !important;
-}
-
-.sb-bet-slip-footer-v2__odds-changes__value.active {
-  background: var(--app-main-gradient) !important;
-}
-
-.sb-game-content_v2 .sb-game-market-tabs .sb-carousel-list-item-wrap {
-  margin-right: 10px !important;
-}
-
-.sb-betslip-bet-input_buttons__buttons__button {
-  border: 1px solid #1b0033 !important;
-  background: transparent !important;
-  color: #fff !important;
-}
-
-.sb-betslip-bet-input_buttons__buttons__button.active {
-  border: 1px solid transparent !important;
-  background: var(--app-main-gradient) !important;
-}
-
-.sb-bet-slip-footer-v2 {
-  background: #1e0434;
-}
-
-.sb-betslip-bet-input_buttons__input {
-  border: 1px solid #1b0033 !important;
-}
-
-.sb-float-menu-tabs {
-  background: #1b0033;
-  border-radius: 15px 15px 0 0;
-}
-
-.sb-betslip-header span {
-  background: var(--app-main-gradient) !important;
-}
-
-.sb-title_block-subtitle {
-  --app-title_block-subtitle-background: #1b0033 !important;
-}
-
-.sb-sport-matches-v2_soccer {
-  --app-title_block-background: #1b0033;
-}
-
-.sb-section-main-menu__item .sb-main-menu__link {
-  border-radius: 4px;
-}
-
-.sb-context-left-side
-  .sb-sports-list-tabs
-  .sb-sports-list-tab:not(.active):hover {
-  opacity: 1 !important;
-}
-
-.sb-sport-list-link__count {
-  opacity: 1 !important;
-}
-
-.sb-bet-slip-footer-v2__odds-changes:hover
-  .sb-bet-slip-footer-v2__odds-changes__title {
-  color: #fff !important;
-}
-
-.sb-bet-slip-footer-v2__odds-changes__title {
-  color: #fff;
-}
-
-:root .sb-game-markets-tabs-wrapper {
-  border: none !important;
-}
-
-.sb-title_block-title {
-  --app-title_block-background: #361355 !important;
-}
-
-.quick-click {
-  background: #1b0033;
-}
-
-.sb-betslip-bet-input_buttons__input::placeholder {
-  color: #fff !important;
-}
-
-.sb-sport-matches-v2.loading {
-  --app-title_block-background: #1b0033 !important;
-}
-
-.sb-sport-matches-v2.loading:before {
-  background: rgba(34, 32, 40, 0.5) !important;
-  box-shadow: 0 0 30px rgba(34, 32, 40, 0.5), 0 0 30px rgba(34, 32, 40, 0.5),
-    0 0 30px rgba(34, 32, 40, 0.5) !important;
-}
-
-.sb-br-widgets-theme_default .sr-bb .srt-base-1 {
-  color: #fff;
-  background-color: #1b0033;
-}
-
-.sb-br-widgets-theme_default .sr-bb .srt-base-1-background {
-  color: #fff;
-  background-color: rgba(34, 32, 40, 0.1);
-}
-
-.sb-br-widgets-theme_default .sr-bb .srt-fill-neutral-7 {
-  fill: var(--app-accent-color);
-}
-
-.sb-br-widgets-theme_default {
-  --app-br-widgets-primary: var(--app-accent-color);
-  --app-br-widgets-home: var(--app-accent-color);
-  --app-br-widgets-away: #b969f8;
-  --app-br-widgets-cl: #1b0033;
-  --app-br-widgets-base: #ffffff;
-  --app-br-widgets-border-radius: 0;
-  border-radius: var(--app-br-widgets-border-radius);
-  overflow: hidden;
-}
-
-.sb-sports-list__item:hover,
-.sb-sports-list__item.active {
-  color: #07e942;
-}
-
-.sb-sport-matches-v2__match-time,
-.sb-sport-matches-v2__match-team-name,
-.sb-sport-matches-v2__match-date-day,
-.sb-title__header,
-.sb-sport-matches-v2__match-team-score,
-.sb-market-group-outcomes-v2__outcome-odds,
-.sb-sport-matches-v2__match-duration,
-.sb-market-group-outcomes-v2__outcome-title,
-.sb-game-event__name,
-.sb-game-event__price {
-  font-size: 1.4rem !important;
-}
-
-.sb-sport-matches-v2__match-duration {
-  font-size: 1.2rem !important;
-}
-
-.sb-sport-matches-v2__match,
-.sb-title_block-title,
-.sb-game-event {
-  border-bottom: 0.01rem solid rgb(140, 146, 172, 0.2) !important;
-}
-
-.sb-sport-matches-v2__match_euro:not(.sb-sport-matches-v2__match_mobile) {
-  padding: var(--app-matches-view-v2-match_euro-padding, 12px 0);
-}
-
-        `;
-
-            clearInterval(checkIframe);
-          }
-        }
-      }, 500);
-    }
-
     function initialize() {
       removeOriginalMainSlider();
       insertCustomMainSlider();
@@ -1109,8 +458,6 @@ html.sb-lang-ru body {
 
       customizeSignupModal();
       customizeSigninModal();
-
-      addCustomSportsbookCSS();
     }
 
     customCSS();
@@ -1228,6 +575,432 @@ html.sb-lang-ru body {
         subtree: true,
       });
     }
+
+    //     function injectProvidersMarquee() {
+    //       const container = document.querySelector("#main-slider > .container");
+
+    //       if (!container || container.querySelector(".custom--section--2")) return;
+
+    //       const swiperElement = container.querySelector("#main-slider-swiper");
+    //       if (!swiperElement) return;
+
+    //       const section = document.createElement("div");
+
+    //       // <div class="providers--marquee--bg"></div>;
+
+    //       section.className = "section custom--section--2 custom--section";
+    //       section.innerHTML = `
+    //     <div class="container" style="position: relative; max-width: 100% !important; margin-bottom: 20px; !important; padding-left: 0px !important; padding-right: 0px !important; padding-top: 0px !important; overflow: hidden !important;">
+    //     <div class="providers--marquee--bg" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; background: linear-gradient(0deg, rgba(54,0,6,1) 0%, rgba(125,2,15,1) 100%);"></div>
+    // <div class="providers--marquee">
+    // 				          <a class="custom--providers--link" href="https://betredi108.com/tr/providers/pragmaticplay">
+    // 				            <img class="custom--providers--image" src="https://vendor-provider.fra1.cdn.digitaloceanspaces.com/ebetlab/game-providers/light/pragmaticplay.svg" alt="">
+    // 				          </a>
+
+    // 				          <a class="custom--providers--link" href="https://betredi108.com/tr/providers/evolution">
+    // 				            <img class="custom--providers--image" src="https://vendor-provider.fra1.cdn.digitaloceanspaces.com/ebetlab/game-providers/light/Evolution%20Gaming.svg" alt="">
+    // 				          </a>
+
+    // 				          <a class="custom--providers--link" href="https://betredi108.com/tr/providers/hacksaw">
+    // 				            <img class="custom--providers--image" src="https://vendor-provider.fra1.cdn.digitaloceanspaces.com/ebetlab/game-providers/light/hacksaw.svg" alt="">
+    // 				          </a>
+
+    // 				          <a class="custom--providers--link" href="https://betredi108.com/tr/providers/egt">
+    // 				            <img class="custom--providers--image" src="https://vendor-provider.fra1.cdn.digitaloceanspaces.com/ebetlab/game-providers/light/egt.svg" alt="">
+    // 				          </a>
+
+    // 				          <a class="custom--providers--link" href="https://betredi108.com/tr/providers/nolimitcity">
+    // 				            <img class="custom--providers--image" src="https://vendor-provider.fra1.cdn.digitaloceanspaces.com/ebetlab/game-providers/light/NoLimitCity.svg" alt="">
+    // 				          </a>
+
+    // 				          <a class="custom--providers--link" href="https://betredi108.com/tr/providers/egt-interactive">
+    // 				            <img class="custom--providers--image" src="https://vendor-provider.fra1.cdn.digitaloceanspaces.com/ebetlab/game-providers/light/amusnet.svg" alt="">
+    // 				          </a>
+
+    // 				          <a class="custom--providers--link" href="https://betredi108.com/tr/providers/playson">
+    // 				            <img class="custom--providers--image" src="https://vendor-provider.fra1.cdn.digitaloceanspaces.com/ebetlab/game-providers/light/playson.svg" alt="">
+    // 				          </a>
+
+    // 				          <a class="custom--providers--link" href="https://betredi108.com/tr/providers/netent">
+    // 				            <img class="custom--providers--image" src="https://vendor-provider.fra1.cdn.digitaloceanspaces.com/ebetlab/game-providers/light/netent.svg" alt="">
+    // 				          </a>
+
+    // 				          <a class="custom--providers--link" href="https://betredi108.com/tr/providers/popiplay">
+    // 				            <img class="custom--providers--image" src="https://vendor-provider.fra1.cdn.digitaloceanspaces.com/ebetlab/game-providers/light/popiplay.svg" alt="">
+    // 				          </a>
+
+    // 				          <a class="custom--providers--link" href="https://betredi108.com/tr/providers/thunderkick">
+    // 				            <img class="custom--providers--image" src="https://vendor-provider.fra1.cdn.digitaloceanspaces.com/ebetlab/game-providers/light/thunderkick.svg" alt="">
+    // 				          </a>
+
+    // 				          <a class="custom--providers--link" href="https://betredi108.com/tr/providers/booming">
+    // 				            <img class="custom--providers--image" src="https://vendor-provider.fra1.cdn.digitaloceanspaces.com/ebetlab/game-providers/light/booming.svg" alt="">
+    // 				          </a>
+
+    // 				          <a class="custom--providers--link" href="https://betredi108.com/tr/providers/redtiger">
+    // 				            <img class="custom--providers--image" src="https://vendor-provider.fra1.cdn.digitaloceanspaces.com/ebetlab/game-providers/light/Red%20Tiger%20Gaming.svg" alt="">
+    // 				          </a>
+
+    // 				          <a class="custom--providers--link" href="https://betredi108.com/tr/providers/pragmaticlive">
+    // 				            <img class="custom--providers--image" src="https://vendor-provider.fra1.cdn.digitaloceanspaces.com/ebetlab/game-providers/light/pragmatic-live-light.svg" alt="">
+    // 				          </a>
+
+    // 				          <a class="custom--providers--link" href="https://betredi108.com/tr/providers/bgaming">
+    // 				            <img class="custom--providers--image" src="https://vendor-provider.fra1.cdn.digitaloceanspaces.com/ebetlab/game-providers/light/softswiss.svg" alt="">
+    // 				          </a>
+
+    // 				          <a class="custom--providers--link" href="https://betredi108.com/tr/providers/gameart">
+    // 				            <img class="custom--providers--image" src="https://vendor-provider.fra1.cdn.digitaloceanspaces.com/ebetlab/game-providers/light/gameart.svg" alt="">
+    // 				          </a>
+
+    // 				          <a class="custom--providers--link" href="https://betredi108.com/tr/providers/fantasma">
+    // 				            <img class="custom--providers--image" src="https://vendor-provider.fra1.cdn.digitaloceanspaces.com/ebetlab/game-providers/light/fantasma.svg" alt="">
+    // 				          </a>
+
+    // 				          <a class="custom--providers--link" href="https://betredi108.com/tr/providers/slotmill">
+    // 				            <img class="custom--providers--image" src="https://vendor-provider.fra1.cdn.digitaloceanspaces.com/ebetlab/game-providers/light/slotmill.svg" alt="">
+    // 				          </a>
+
+    // 				          <a class="custom--providers--link" href="https://betredi108.com/tr/providers/1spin4win">
+    // 				            <img class="custom--providers--image" src="https://vendor-provider.fra1.cdn.digitaloceanspaces.com/ebetlab/game-providers/light/1spin4win.svg" alt="">
+    // 				          </a>
+
+    // 				          <a class="custom--providers--link" href="https://betredi108.com/tr/providers/aesexybaccarat">
+    // 				            <img class="custom--providers--image" src="https://vendor-provider.fra1.cdn.digitaloceanspaces.com/ebetlab/game-providers/light/AE%20Sexy.svg" alt="">
+    // 				          </a>
+
+    // 				          <a class="custom--providers--link" href="https://betredi108.com/tr/providers/5men">
+    // 				            <img class="custom--providers--image" src="https://vendor-provider.fra1.cdn.digitaloceanspaces.com/ebetlab/game-providers/light/5men.svg" alt="">
+    // 				          </a>
+
+    // 				          <a class="custom--providers--link" href="https://betredi108.com/tr/providers/novomatic">
+    // 				            <img class="custom--providers--image" src="https://vendor-provider.fra1.cdn.digitaloceanspaces.com/ebetlab/game-providers/light/novomatic.svg" alt="">
+    // 				          </a>
+
+    // 				          <a class="custom--providers--link" href="https://betredi108.com/tr/providers/7mojos">
+    // 				            <img class="custom--providers--image" src="https://vendor-provider.fra1.cdn.digitaloceanspaces.com/ebetlab/game-providers/light/7%20mojos.svg" alt="">
+    // 				          </a>
+
+    // 				          <a class="custom--providers--link" href="https://betredi108.com/tr/providers/alg">
+    // 				            <img class="custom--providers--image" src="https://vendor-provider.fra1.cdn.digitaloceanspaces.com/ebetlab/game-providers/light/alg.svg" alt="">
+    // 				          </a>
+
+    // 				          <a class="custom--providers--link" href="https://betredi108.com/tr/providers/amatic">
+    // 				            <img class="custom--providers--image" src="https://vendor-provider.fra1.cdn.digitaloceanspaces.com/ebetlab/game-providers/light/amatic.svg" alt="">
+    // 				          </a>
+
+    // 				          <a class="custom--providers--link" href="https://betredi108.com/tr/providers/endorphina">
+    // 				            <img class="custom--providers--image" src="https://vendor-provider.fra1.cdn.digitaloceanspaces.com/ebetlab/game-providers/light/endorphina.svg" alt="">
+    // 				          </a>
+
+    // 				          <a class="custom--providers--link" href="https://betredi108.com/tr/providers/pgsoft">
+    // 				            <img class="custom--providers--image" src="https://vendor-provider.fra1.cdn.digitaloceanspaces.com/ebetlab/game-providers/light/Pocket%20Games%20Soft.svg" alt="">
+    // 				          </a>
+
+    // 				          <a class="custom--providers--link" href="https://betredi108.com/tr/providers/apollo">
+    // 				            <img class="custom--providers--image" src="https://vendor-provider.fra1.cdn.digitaloceanspaces.com/ebetlab/game-providers/light/Apollo%20Games.svg" alt="">
+    // 				          </a>
+
+    // 				          <a class="custom--providers--link" href="https://betredi108.com/tr/providers/asiagaming">
+    // 				            <img class="custom--providers--image" src="https://vendor-provider.fra1.cdn.digitaloceanspaces.com/ebetlab/game-providers/light/Asia%20Gaming.svg" alt="">
+    // 				          </a>
+
+    // 				          <a class="custom--providers--link" href="https://betredi108.com/tr/providers/atomic">
+    // 				            <img class="custom--providers--image" src="https://vendor-provider.fra1.cdn.digitaloceanspaces.com/ebetlab/game-providers/light/atomic%20slot.svg" alt="">
+    // 				          </a>
+
+    // 				          <a class="custom--providers--link" href="https://betredi108.com/tr/providers/beefee">
+    // 				            <img class="custom--providers--image" src="https://vendor-provider.fra1.cdn.digitaloceanspaces.com/ebetlab/game-providers/light/BeeFee%20Games.svg" alt="">
+    // 				          </a>
+
+    // 				          <a class="custom--providers--link" href="https://betredi108.com/tr/providers/belatra">
+    // 				            <img class="custom--providers--image" src="https://vendor-provider.fra1.cdn.digitaloceanspaces.com/ebetlab/game-providers/light/belatra.svg" alt="">
+    // 				          </a>
+
+    // 				          <a class="custom--providers--link" href="https://betredi108.com/tr/providers/betsolutions">
+    // 				            <img class="custom--providers--image" src="https://vendor-provider.fra1.cdn.digitaloceanspaces.com/ebetlab/game-providers/light/Betsolutions.svg" alt="">
+    // 				          </a>
+
+    // 				          <a class="custom--providers--link" href="https://betredi108.com/tr/providers/bet2tech">
+    // 				            <img class="custom--providers--image" src="https://vendor-provider.fra1.cdn.digitaloceanspaces.com/ebetlab/game-providers/light/bet%202%20tech.svg" alt="">
+    // 				          </a>
+
+    // 				          <a class="custom--providers--link" href="https://betredi108.com/tr/providers/beterlive">
+    // 				            <img class="custom--providers--image" src="https://vendor-provider.fra1.cdn.digitaloceanspaces.com/ebetlab/game-providers/light/beterlive.svg" alt="">
+    // 				          </a>
+
+    // 				          <a class="custom--providers--link" href="https://betredi108.com/tr/providers/betradarvs">
+    // 				            <img class="custom--providers--image" src="https://vendor-provider.fra1.cdn.digitaloceanspaces.com/ebetlab/game-providers/light/Betradar%20Virtual%20sports.svg" alt="">
+    // 				          </a>
+
+    // 				          <a class="custom--providers--link" href="https://betredi108.com/tr/providers/betsoft">
+    // 				            <img class="custom--providers--image" src="https://vendor-provider.fra1.cdn.digitaloceanspaces.com/ebetlab/game-providers/light/betsoft.svg" alt="">
+    // 				          </a>
+
+    // 				          <a class="custom--providers--link" href="https://betredi108.com/tr/providers/eagaming">
+    // 				            <img class="custom--providers--image" src="https://vendor-provider.fra1.cdn.digitaloceanspaces.com/ebetlab/game-providers/light/ea%20gaming.svg" alt="">
+    // 				          </a>
+
+    // 				          <a class="custom--providers--link" href="https://betredi108.com/tr/providers/concept">
+    // 				            <img class="custom--providers--image" src="https://vendor-provider.fra1.cdn.digitaloceanspaces.com/ebetlab/game-providers/light/Concept%20Gaming.svg" alt="">
+    // 				          </a>
+
+    // 				          <a class="custom--providers--link" href="https://betredi108.com/tr/providers/cq9">
+    // 				            <img class="custom--providers--image" src="https://vendor-provider.fra1.cdn.digitaloceanspaces.com/ebetlab/game-providers/light/CQ9.svg" alt="">
+    // 				          </a>
+
+    // 				          <a class="custom--providers--link" href="https://betredi108.com/tr/providers/ctgaming">
+    // 				            <img class="custom--providers--image" src="https://vendor-provider.fra1.cdn.digitaloceanspaces.com/ebetlab/game-providers/light/CT%20Gaming.svg" alt="">
+    // 				          </a>
+
+    // 				          <a class="custom--providers--link" href="https://betredi108.com/tr/providers/everymatrix">
+    // 				            <img class="custom--providers--image" src="https://vendor-provider.fra1.cdn.digitaloceanspaces.com/ebetlab/game-providers/light/everymatrix.svg" alt="">
+    // 				          </a>
+
+    // 				          <a class="custom--providers--link" href="https://betredi108.com/tr/providers/evoplay">
+    // 				            <img class="custom--providers--image" src="https://vendor-provider.fra1.cdn.digitaloceanspaces.com/ebetlab/game-providers/light/evoplay.svg" alt="">
+    // 				          </a>
+
+    // 				          <a class="custom--providers--link" href="https://betredi108.com/tr/providers/ezugi">
+    // 				            <img class="custom--providers--image" src="https://vendor-provider.fra1.cdn.digitaloceanspaces.com/ebetlab/game-providers/light/ezugi.svg" alt="">
+    // 				          </a>
+
+    // 				          <a class="custom--providers--link" href="https://betredi108.com/tr/providers/fazi">
+    // 				            <img class="custom--providers--image" src="https://vendor-provider.fra1.cdn.digitaloceanspaces.com/ebetlab/game-providers/light/fazi.svg" alt="">
+    // 				          </a>
+
+    // 				          <a class="custom--providers--link" href="https://betredi108.com/tr/providers/fugaso">
+    // 				            <img class="custom--providers--image" src="https://vendor-provider.fra1.cdn.digitaloceanspaces.com/ebetlab/game-providers/light/fugaso.svg" alt="">
+    // 				          </a>
+
+    // 				          <a class="custom--providers--link" href="https://betredi108.com/tr/providers/gamebeat">
+    // 				            <img class="custom--providers--image" src="https://vendor-provider.fra1.cdn.digitaloceanspaces.com/ebetlab/game-providers/light/gamebeat.svg" alt="">
+    // 				          </a>
+
+    // 				          <a class="custom--providers--link" href="https://betredi108.com/tr/providers/gaming7777">
+    // 				            <img class="custom--providers--image" src="https://vendor-provider.fra1.cdn.digitaloceanspaces.com/ebetlab/game-providers/light/Gaming%207777.svg" alt="">
+    // 				          </a>
+
+    // 				          <a class="custom--providers--link" href="https://betredi108.com/tr/providers/genii">
+    // 				            <img class="custom--providers--image" src="https://vendor-provider.fra1.cdn.digitaloceanspaces.com/ebetlab/game-providers/light/Genii.svg" alt="">
+    // 				          </a>
+
+    // 				          <a class="custom--providers--link" href="https://betredi108.com/tr/providers/givme">
+    // 				            <img class="custom--providers--image" src="https://vendor-provider.fra1.cdn.digitaloceanspaces.com/ebetlab/game-providers/light/givme%20games.svg" alt="">
+    // 				          </a>
+
+    // 				          <a class="custom--providers--link" href="https://betredi108.com/tr/providers/goldenhero">
+    // 				            <img class="custom--providers--image" src="https://vendor-provider.fra1.cdn.digitaloceanspaces.com/ebetlab/game-providers/light/golden%20hero.svg" alt="">
+    // 				          </a>
+
+    // 				          <a class="custom--providers--link" href="https://betredi108.com/tr/providers/habanero">
+    // 				            <img class="custom--providers--image" src="https://vendor-provider.fra1.cdn.digitaloceanspaces.com/ebetlab/game-providers/light/habanero.svg" alt="">
+    // 				          </a>
+
+    // 				          <a class="custom--providers--link" href="https://betredi108.com/tr/providers/hogaming">
+    // 				            <img class="custom--providers--image" src="https://vendor-provider.fra1.cdn.digitaloceanspaces.com/ebetlab/game-providers/light/HoGaming.svg" alt="">
+    // 				          </a>
+
+    // 				          <a class="custom--providers--link" href="https://betredi108.com/tr/providers/hollegames">
+    // 				            <img class="custom--providers--image" src="https://vendor-provider.fra1.cdn.digitaloceanspaces.com/ebetlab/game-providers/light/hollegames.svg" alt="">
+    // 				          </a>
+
+    // 				          <a class="custom--providers--link" href="https://betredi108.com/tr/providers/igrosoft">
+    // 				            <img class="custom--providers--image" src="https://vendor-provider.fra1.cdn.digitaloceanspaces.com/ebetlab/game-providers/light/Igrosoft.svg" alt="">
+    // 				          </a>
+
+    // 				          <a class="custom--providers--link" href="https://betredi108.com/tr/providers/irondog">
+    // 				            <img class="custom--providers--image" src="https://vendor-provider.fra1.cdn.digitaloceanspaces.com/ebetlab/game-providers/light/irondog.svg" alt="">
+    // 				          </a>
+
+    // 				          <a class="custom--providers--link" href="https://betredi108.com/tr/providers/jaderabbit">
+    // 				            <img class="custom--providers--image" src="https://vendor-provider.fra1.cdn.digitaloceanspaces.com/ebetlab/game-providers/light/jaderabbit.svg" alt="">
+    // 				          </a>
+
+    // 				          <a class="custom--providers--link" href="https://betredi108.com/tr/providers/jdb">
+    // 				            <img class="custom--providers--image" src="https://vendor-provider.fra1.cdn.digitaloceanspaces.com/ebetlab/game-providers/light/JDB.svg" alt="">
+    // 				          </a>
+
+    // 				          <a class="custom--providers--link" href="https://betredi108.com/tr/providers/kalamba">
+    // 				            <img class="custom--providers--image" src="https://vendor-provider.fra1.cdn.digitaloceanspaces.com/ebetlab/game-providers/light/kalamba.svg" alt="">
+    // 				          </a>
+
+    // 				          <a class="custom--providers--link" href="https://betredi108.com/tr/providers/kiron">
+    // 				            <img class="custom--providers--image" src="https://vendor-provider.fra1.cdn.digitaloceanspaces.com/ebetlab/game-providers/light/Kiron%20Interactive.svg" alt="">
+    // 				          </a>
+
+    // 				          <a class="custom--providers--link" href="https://betredi108.com/tr/providers/leander">
+    // 				            <img class="custom--providers--image" src="https://vendor-provider.fra1.cdn.digitaloceanspaces.com/ebetlab/game-providers/light/Leander.svg" alt="">
+    // 				          </a>
+
+    // 				          <a class="custom--providers--link" href="https://betredi108.com/tr/providers/leap">
+    // 				            <img class="custom--providers--image" src="https://vendor-provider.fra1.cdn.digitaloceanspaces.com/ebetlab/game-providers/light/Leap.svg" alt="">
+    // 				          </a>
+
+    // 				          <a class="custom--providers--link" href="https://betredi108.com/tr/providers/livegames">
+    // 				            <img class="custom--providers--image" src="https://vendor-provider.fra1.cdn.digitaloceanspaces.com/ebetlab/game-providers/light/Live%20Games.svg" alt="">
+    // 				          </a>
+
+    // 				          <a class="custom--providers--link" href="https://betredi108.com/tr/providers/lucky">
+    // 				            <img class="custom--providers--image" src="https://vendor-provider.fra1.cdn.digitaloceanspaces.com/ebetlab/game-providers/light/lucky.svg" alt="">
+    // 				          </a>
+
+    // 				          <a class="custom--providers--link" href="https://betredi108.com/tr/providers/luckystreak">
+    // 				            <img class="custom--providers--image" src="https://vendor-provider.fra1.cdn.digitaloceanspaces.com/ebetlab/game-providers/light/luckystreak.svg" alt="">
+    // 				          </a>
+
+    // 				          <a class="custom--providers--link" href="https://betredi108.com/tr/providers/mascotgaming">
+    // 				            <img class="custom--providers--image" src="https://vendor-provider.fra1.cdn.digitaloceanspaces.com/ebetlab/game-providers/light/mascot.svg" alt="">
+    // 				          </a>
+
+    // 				          <a class="custom--providers--link" href="https://betredi108.com/tr/providers/merkurgaming">
+    // 				            <img class="custom--providers--image" src="https://vendor-provider.fra1.cdn.digitaloceanspaces.com/ebetlab/game-providers/light/merkur%20gaming.svg" alt="">
+    // 				          </a>
+
+    // 				          <a class="custom--providers--link" href="https://betredi108.com/tr/providers/mplay">
+    // 				            <img class="custom--providers--image" src="https://vendor-provider.fra1.cdn.digitaloceanspaces.com/ebetlab/game-providers/light/m%20play.svg" alt="">
+    // 				          </a>
+
+    // 				          <a class="custom--providers--link" href="https://betredi108.com/tr/providers/mrslotty">
+    // 				            <img class="custom--providers--image" src="https://vendor-provider.fra1.cdn.digitaloceanspaces.com/ebetlab/game-providers/light/mrslotty.svg" alt="">
+    // 				          </a>
+
+    // 				          <a class="custom--providers--link" href="https://betredi108.com/tr/providers/netgame">
+    // 				            <img class="custom--providers--image" src="https://vendor-provider.fra1.cdn.digitaloceanspaces.com/ebetlab/game-providers/light/netgame.svg" alt="">
+    // 				          </a>
+
+    // 				          <a class="custom--providers--link" href="https://betredi108.com/tr/providers/nucleus">
+    // 				            <img class="custom--providers--image" src="https://vendor-provider.fra1.cdn.digitaloceanspaces.com/ebetlab/game-providers/light/nucleus.svg" alt="">
+    // 				          </a>
+
+    // 				          <a class="custom--providers--link" href="https://betredi108.com/tr/providers/oryx">
+    // 				            <img class="custom--providers--image" src="https://vendor-provider.fra1.cdn.digitaloceanspaces.com/ebetlab/game-providers/light/oryx.svg" alt="">
+    // 				          </a>
+
+    // 				          <a class="custom--providers--link" href="https://betredi108.com/tr/providers/playtech">
+    // 				            <img class="custom--providers--image" src="https://vendor-provider.fra1.cdn.digitaloceanspaces.com/ebetlab/game-providers/light/Playtech%20slots.svg" alt="">
+    // 				          </a>
+
+    // 				          <a class="custom--providers--link" href="https://betredi108.com/tr/providers/quickspin">
+    // 				            <img class="custom--providers--image" src="https://vendor-provider.fra1.cdn.digitaloceanspaces.com/ebetlab/game-providers/light/quickspin.svg" alt="">
+    // 				          </a>
+
+    // 				          <a class="custom--providers--link" href="https://betredi108.com/tr/providers/redrake">
+    // 				            <img class="custom--providers--image" src="https://vendor-provider.fra1.cdn.digitaloceanspaces.com/ebetlab/game-providers/light/Red%20Rake%20Gaming.svg" alt="">
+    // 				          </a>
+
+    // 				          <a class="custom--providers--link" href="https://betredi108.com/tr/providers/reevo">
+    // 				            <img class="custom--providers--image" src="https://vendor-provider.fra1.cdn.digitaloceanspaces.com/ebetlab/game-providers/light/reevo.svg" alt="">
+    // 				          </a>
+
+    // 				          <a class="custom--providers--link" href="https://betredi108.com/tr/providers/sagaming">
+    // 				            <img class="custom--providers--image" src="https://vendor-provider.fra1.cdn.digitaloceanspaces.com/ebetlab/game-providers/light/SA%20Gaming.svg" alt="">
+    // 				          </a>
+
+    // 				          <a class="custom--providers--link" href="https://betredi108.com/tr/providers/salsa">
+    // 				            <img class="custom--providers--image" src="https://vendor-provider.fra1.cdn.digitaloceanspaces.com/ebetlab/game-providers/light/Salsa%20technology.svg" alt="">
+    // 				          </a>
+
+    // 				          <a class="custom--providers--link" href="https://betredi108.com/tr/providers/spinomenal">
+    // 				            <img class="custom--providers--image" src="https://vendor-provider.fra1.cdn.digitaloceanspaces.com/ebetlab/game-providers/light/spinomenal.svg" alt="">
+    // 				          </a>
+
+    // 				          <a class="custom--providers--link" href="https://betredi108.com/tr/providers/spinza">
+    // 				            <img class="custom--providers--image" src="https://vendor-provider.fra1.cdn.digitaloceanspaces.com/ebetlab/game-providers/light/spinza.svg" alt="">
+    // 				          </a>
+
+    // 				          <a class="custom--providers--link" href="https://betredi108.com/tr/providers/spribe">
+    // 				            <img class="custom--providers--image" src="https://vendor-provider.fra1.cdn.digitaloceanspaces.com/ebetlab/game-providers/light/spribe.svg" alt="">
+    // 				          </a>
+
+    // 				          <a class="custom--providers--link" href="https://betredi108.com/tr/providers/swintt">
+    // 				            <img class="custom--providers--image" src="https://vendor-provider.fra1.cdn.digitaloceanspaces.com/ebetlab/game-providers/light/swintt.svg" alt="">
+    // 				          </a>
+
+    // 				          <a class="custom--providers--link" href="https://betredi108.com/tr/providers/tomhornnative">
+    // 				            <img class="custom--providers--image" src="https://vendor-provider.fra1.cdn.digitaloceanspaces.com/ebetlab/game-providers/light/tomhorn.svg" alt="">
+    // 				          </a>
+
+    // 				          <a class="custom--providers--link" href="/providersuelab">
+    // 				            <img class="custom--providers--image" src="https://vendor-provider.fra1.cdn.digitaloceanspaces.com/ebetlab/game-providers/lightuelab.svg" alt="">
+    // 				          </a>
+
+    // 				          <a class="custom--providers--link" href="https://betredi108.com/tr/providers/turbogames">
+    // 				            <img class="custom--providers--image" src="https://vendor-provider.fra1.cdn.digitaloceanspaces.com/ebetlab/game-providers/light/turbogames.svg" alt="">
+    // 				          </a>
+
+    // 				          <a class="custom--providers--link" href="https://betredi108.com/tr/providers/tvbet">
+    // 				            <img class="custom--providers--image" src="https://vendor-provider.fra1.cdn.digitaloceanspaces.com/ebetlab/game-providers/light/tv%20bet.svg" alt="">
+    // 				          </a>
+
+    // 				          <a class="custom--providers--link" href="https://betredi108.com/tr/providers/vivogaming">
+    // 				            <img class="custom--providers--image" src="https://vendor-provider.fra1.cdn.digitaloceanspaces.com/ebetlab/game-providers/light/Vivo%20Gaming.svg" alt="">
+    // 				          </a>
+
+    // 				          <a class="custom--providers--link" href="https://betredi108.com/tr/providers/wizard">
+    // 				            <img class="custom--providers--image" src="https://vendor-provider.fra1.cdn.digitaloceanspaces.com/ebetlab/game-providers/light/wazdan.svg" alt="">
+    // 				          </a>
+
+    // 				          <a class="custom--providers--link" href="https://betredi108.com/tr/providers/worldmatch">
+    // 				            <img class="custom--providers--image" src="https://vendor-provider.fra1.cdn.digitaloceanspaces.com/ebetlab/game-providers/light/World%20Match.svg" alt="">
+    // 				          </a>
+
+    // 				          <a class="custom--providers--link" href="https://betredi108.com/tr/providers/xprogaming">
+    // 				            <img class="custom--providers--image" src="https://vendor-provider.fra1.cdn.digitaloceanspaces.com/ebetlab/game-providers/light/XPro%20Gaming.svg" alt="">
+    // 				          </a>
+
+    // 				          <a class="custom--providers--link" href="https://betredi108.com/tr/providers/yggdrasil">
+    // 				            <img class="custom--providers--image" src="https://vendor-provider.fra1.cdn.digitaloceanspaces.com/ebetlab/game-providers/light/yggdrasil.svg" alt="">
+    // 				          </a>
+
+    // 				          <a class="custom--providers--link" href="https://betredi108.com/tr/providers/zillion">
+    // 				            <img class="custom--providers--image" src="https://vendor-provider.fra1.cdn.digitaloceanspaces.com/ebetlab/game-providers/light/zillion.svg" alt="">
+    // 				          </a>
+
+    // 				          <a class="custom--providers--link" href="https://betredi108.com/tr/providers/ebetlab">
+    // 				            <img class="custom--providers--image" src="https://vendor-provider.fra1.cdn.digitaloceanspaces.com/ebetlab/game-providers/light/originals.svg" alt="">
+    // 				          </a>
+
+    // 				          <a class="custom--providers--link" href="https://betredi108.com/tr/providers/imagine-live">
+    // 				            <img class="custom--providers--image" src="https://vendor-provider.fra1.cdn.digitaloceanspaces.com/ebetlab/game-providers/light/imageinelive.svg" alt="">
+    // 				          </a>
+
+    // 				          <a class="custom--providers--link" href="https://betredi108.com/tr/providers/jiliasia">
+    // 				            <img class="custom--providers--image" src="https://vendor-provider.fra1.cdn.digitaloceanspaces.com/ebetlab/game-providers/light/Jiliasia.svg" alt="">
+    // 				          </a>
+
+    // 				          <a class="custom--providers--link" href="https://betredi108.com/tr/providers/royal-gaming">
+    // 				            <img class="custom--providers--image" src="https://vendor-provider.fra1.cdn.digitaloceanspaces.com/ebetlab/game-providers/light/Royal%20Gaming.svg" alt="">
+    // 				          </a>
+
+    // 				          <a class="custom--providers--link" href="https://betredi108.com/tr/providers/tada-gaming">
+    // 				            <img class="custom--providers--image" src="https://vendor-provider.fra1.cdn.digitaloceanspaces.com/ebetlab/game-providers/light/Tada%20Gaming.svg" alt="">
+    // 				          </a>
+
+    // 				          <a class="custom--providers--link" href="https://betredi108.com/tr/providers/zeus-play">
+    // 				            <img class="custom--providers--image" src="https://vendor-provider.fra1.cdn.digitaloceanspaces.com/ebetlab/game-providers/light/Zeus%20Play.svg" alt="">
+    // 				          </a>
+
+    // 				          <a class="custom--providers--link" href="https://betredi108.com/tr/providers/peter-and-sons">
+    // 				            <img class="custom--providers--image" src="https://vendor-provider.fra1.cdn.digitaloceanspaces.com/ebetlab/game-providers/light/Peter%20And%20Sons.svg" alt="">
+    // 				          </a>
+
+    // 				          <a class="custom--providers--link" href="https://betredi108.com/tr/providers/topspin">
+    // 				            <img class="custom--providers--image" src="https://vendor-provider.fra1.cdn.digitaloceanspaces.com/ebetlab/game-providers/light/topspin.svg" alt="">
+    // 				          </a>
+    // 			</div>
+    //     </div>
+    //   `;
+
+    //       swiperElement.insertAdjacentElement("afterend", section);
+
+    //       // 🔁 Marquee hareketi için JS ile içerik kopyalanıyor
+    //       const marquee = section.querySelector(
+    //         ".providers--marquee .marquee-content"
+    //       );
+    //       const clone = marquee.cloneNode(true);
+    //       marquee.parentElement.appendChild(clone);
+    //     }
 
     function injectProvidersMarquee() {
       const container = document.querySelector("#main-slider > .container");
@@ -2073,9 +1846,15 @@ html.sb-lang-ru body {
     <a href="https://t.me/betredi" target="_blank">
       <img src="https://betrediofficial.github.io/images/tg-promo/tg_promo_new.png" alt="Telegram Promo" style="display: block; width: 100%; margin-bottom: 10px;" />
     </a>
+    <a href=${
+      language === "tr"
+        ? "https://betredi108.com/tr/promotions"
+        : "https://betredi108.com/en/promotions"
+    }>
     <img src="https://betrediofficial.github.io/images/tg-promo/reditg.gif"
          alt="Telegram Promo GIF"
          style="display: block; width: 100%; margin-bottom: 10px; border: 2px solid #9b000e; border-radius: 10px; max-width: 100% !important;" />
+    </a>
     <img src="https://betrediofficial.github.io/images/tg-promo/tg_promo_desc.png" alt="Kripto Bilgilendirme" style="display: block; width: 100%;" />
   </div>
 </div>
@@ -2304,6 +2083,7 @@ html.sb-lang-ru body {
     </div>
   </div>
 </div>
+
 `;
 
       // if ($("#casinooyunlari").length > 0)
