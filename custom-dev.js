@@ -545,7 +545,7 @@
       section.className = "section custom--section--2 custom--section";
       section.innerHTML = `
           <div class="container" style="position: relative; max-width: 100% !important; margin-bottom: 20px; !important; padding-left: 0px !important; padding-right: 0px !important; padding-top: 0px !important; overflow: hidden !important;">
-    <div class="providers--marquee--bg" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; background: linear-gradient(to right, black 0%, #7d020f 50%, black 100%);"></div>
+    <div class="providers--marquee--bg" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; background: linear-gradient(to right, black 0%, #570b13 50%, black 100%);"></div>
 <div class="providers--marquee">	
 				          <a class="custom--providers--link" href="https://betredi108.com/tr/providers/pragmaticplay">
 				            <img class="custom--providers--image" src="https://vendor-provider.fra1.cdn.digitaloceanspaces.com/ebetlab/game-providers/light/pragmaticplay.svg" alt="">
@@ -1578,69 +1578,69 @@
     console.log(e);
   }
 
-  function sportsCard() {
-    if ($("#sportscard").length > 0) return;
+  //   function sportsCard() {
+  //     if ($("#sportscard").length > 0) return;
 
-    var newSection = `
-      <div class="container manually-added-home-widgets" style="margin-top: 16px !important; margin-bottom: 16px !important;">
-  <div class="row row-cols-3 row-cols-xl-6 g-4 text-center">
-    <div class="col">
-      <div class="sport-card" style="position: relative; border: 2px solid #9B000E; border-top-right-radius: 24px; border-bottom-left-radius: 24px; overflow: hidden; cursor: pointer;">
-        <div class="hovered-effect" style="opacity: 0; position: absolute; width: 100%; height: 100%; background: rgba(255,255,255,0.1); z-index: 10; pointer-events: none;"></div>
-        <a href="/sportsbook">
-          <img src="https://betrediofficial.github.io/images/sports/futbol_new.png" alt="Futbol" style="width: 100%; aspect-ratio: 3/4; object-fit: cover;">
-        </a>
-      </div>
-    </div>
-    <div class="col">
-      <div class="sport-card" style="position: relative; border: 2px solid #9B000E; border-top-right-radius: 24px; border-bottom-left-radius: 24px; overflow: hidden; cursor: pointer;">
-        <div class="hovered-effect" style="opacity: 0; position: absolute; width: 100%; height: 100%; background: rgba(255,255,255,0.1); z-index: 10; pointer-events: none;"></div>
-        <a href="/sportsbook">
-          <img src="https://betrediofficial.github.io/images/sports/basketbol_new.png" alt="Basketbol" style="width: 100%; aspect-ratio: 3/4; object-fit: cover;">
-        </a>
-      </div>
-    </div>
-    <div class="col">
-      <div class="sport-card" style="position: relative; border: 2px solid #9B000E; border-top-right-radius: 24px; border-bottom-left-radius: 24px; overflow: hidden; cursor: pointer;">
-        <div class="hovered-effect" style="opacity: 0; position: absolute; width: 100%; height: 100%; background: rgba(255,255,255,0.1); z-index: 10; pointer-events: none;"></div>
-        <a href="/sportsbook">
-          <img src="https://betrediofficial.github.io/images/sports/voleybol_new.png" alt="Voleybol" style="width: 100%; aspect-ratio: 3/4; object-fit: cover;">
-        </a>
-      </div>
-    </div>
-    <div class="col">
-      <div class="sport-card" style="position: relative; border: 2px solid #9B000E; border-top-right-radius: 24px; border-bottom-left-radius: 24px; overflow: hidden; cursor: pointer;">
-        <div class="hovered-effect" style="opacity: 0; position: absolute; width: 100%; height: 100%; background: rgba(255,255,255,0.1); z-index: 10; pointer-events: none;"></div>
-        <a href="/sportsbook">
-          <img src="https://betrediofficial.github.io/images/sports/mma_new.png" alt="MMA" style="width: 100%; aspect-ratio: 3/4; object-fit: cover;">
-        </a>
-      </div>
-    </div>
-    <div class="col">
-      <div class="sport-card" style="position: relative; border: 2px solid #9B000E; border-top-right-radius: 24px; border-bottom-left-radius: 24px; overflow: hidden; cursor: pointer;">
-        <div class="hovered-effect" style="opacity: 0; position: absolute; width: 100%; height: 100%; background: rgba(255,255,255,0.1); z-index: 10; pointer-events: none;"></div>
-        <a href="/sportsbook">
-          <img src="https://betrediofficial.github.io/images/sports/tennis_new.png" alt="Tenis" style="width: 100%; aspect-ratio: 3/4; object-fit: cover;">
-        </a>
-      </div>
-    </div>
-    <div class="col">
-      <div class="sport-card" style="position: relative; border: 2px solid #9B000E; border-top-right-radius: 24px; border-bottom-left-radius: 24px; overflow: hidden; cursor: pointer;">
-        <div class="hovered-effect" style="opacity: 0; position: absolute; width: 100%; height: 100%; background: rgba(255,255,255,0.1); z-index: 10; pointer-events: none;"></div>
-        <a href="/sportsbook">
-          <img src="https://betrediofficial.github.io/images/sports/cycling_new.png" alt="Cycling" style="width: 100%; aspect-ratio: 3/4; object-fit: cover;">
-        </a>
-      </div>
-    </div>
-  </div>
-</div>
+  //     var newSection = `
+  //       <div class="container manually-added-home-widgets" style="margin-top: 16px !important; margin-bottom: 16px !important;">
+  //   <div class="row row-cols-3 row-cols-xl-6 g-4 text-center">
+  //     <div class="col">
+  //       <div class="sport-card" style="position: relative; border: 2px solid #9B000E; border-top-right-radius: 24px; border-bottom-left-radius: 24px; overflow: hidden; cursor: pointer;">
+  //         <div class="hovered-effect" style="opacity: 0; position: absolute; width: 100%; height: 100%; background: rgba(255,255,255,0.1); z-index: 10; pointer-events: none;"></div>
+  //         <a href="/sportsbook">
+  //           <img src="https://betrediofficial.github.io/images/sports/futbol_new.png" alt="Futbol" style="width: 100%; aspect-ratio: 3/4; object-fit: cover;">
+  //         </a>
+  //       </div>
+  //     </div>
+  //     <div class="col">
+  //       <div class="sport-card" style="position: relative; border: 2px solid #9B000E; border-top-right-radius: 24px; border-bottom-left-radius: 24px; overflow: hidden; cursor: pointer;">
+  //         <div class="hovered-effect" style="opacity: 0; position: absolute; width: 100%; height: 100%; background: rgba(255,255,255,0.1); z-index: 10; pointer-events: none;"></div>
+  //         <a href="/sportsbook">
+  //           <img src="https://betrediofficial.github.io/images/sports/basketbol_new.png" alt="Basketbol" style="width: 100%; aspect-ratio: 3/4; object-fit: cover;">
+  //         </a>
+  //       </div>
+  //     </div>
+  //     <div class="col">
+  //       <div class="sport-card" style="position: relative; border: 2px solid #9B000E; border-top-right-radius: 24px; border-bottom-left-radius: 24px; overflow: hidden; cursor: pointer;">
+  //         <div class="hovered-effect" style="opacity: 0; position: absolute; width: 100%; height: 100%; background: rgba(255,255,255,0.1); z-index: 10; pointer-events: none;"></div>
+  //         <a href="/sportsbook">
+  //           <img src="https://betrediofficial.github.io/images/sports/voleybol_new.png" alt="Voleybol" style="width: 100%; aspect-ratio: 3/4; object-fit: cover;">
+  //         </a>
+  //       </div>
+  //     </div>
+  //     <div class="col">
+  //       <div class="sport-card" style="position: relative; border: 2px solid #9B000E; border-top-right-radius: 24px; border-bottom-left-radius: 24px; overflow: hidden; cursor: pointer;">
+  //         <div class="hovered-effect" style="opacity: 0; position: absolute; width: 100%; height: 100%; background: rgba(255,255,255,0.1); z-index: 10; pointer-events: none;"></div>
+  //         <a href="/sportsbook">
+  //           <img src="https://betrediofficial.github.io/images/sports/mma_new.png" alt="MMA" style="width: 100%; aspect-ratio: 3/4; object-fit: cover;">
+  //         </a>
+  //       </div>
+  //     </div>
+  //     <div class="col">
+  //       <div class="sport-card" style="position: relative; border: 2px solid #9B000E; border-top-right-radius: 24px; border-bottom-left-radius: 24px; overflow: hidden; cursor: pointer;">
+  //         <div class="hovered-effect" style="opacity: 0; position: absolute; width: 100%; height: 100%; background: rgba(255,255,255,0.1); z-index: 10; pointer-events: none;"></div>
+  //         <a href="/sportsbook">
+  //           <img src="https://betrediofficial.github.io/images/sports/tennis_new.png" alt="Tenis" style="width: 100%; aspect-ratio: 3/4; object-fit: cover;">
+  //         </a>
+  //       </div>
+  //     </div>
+  //     <div class="col">
+  //       <div class="sport-card" style="position: relative; border: 2px solid #9B000E; border-top-right-radius: 24px; border-bottom-left-radius: 24px; overflow: hidden; cursor: pointer;">
+  //         <div class="hovered-effect" style="opacity: 0; position: absolute; width: 100%; height: 100%; background: rgba(255,255,255,0.1); z-index: 10; pointer-events: none;"></div>
+  //         <a href="/sportsbook">
+  //           <img src="https://betrediofficial.github.io/images/sports/cycling_new.png" alt="Cycling" style="width: 100%; aspect-ratio: 3/4; object-fit: cover;">
+  //         </a>
+  //       </div>
+  //     </div>
+  //   </div>
+  // </div>
 
-`;
+  // `;
 
-    // if ($("#casinooyunlari").length > 0)
-    $("#casinooyunlari").after(newSection);
-    // else $("#tgpromo").eq(0).after(newSection);
-  }
+  //     // if ($("#casinooyunlari").length > 0)
+  //     $("#casinooyunlari").after(newSection);
+  //     // else $("#tgpromo").eq(0).after(newSection);
+  //   }
 
   function miniGames() {
     if ($("#mini-games-wrapper").length > 0) return;
@@ -1667,7 +1667,7 @@
             <div class="swiper-slide" data-swiper-slide-index="0" style="width: 339px; margin-right: 12px; background: none !important;">
               <a class="mini-game mini-game--carousel mini-game--no-layer" href="/tr/casino/games/ebetlab-crash-originals">
                 <span class="mini-game__img">
-                  <img loading="lazy" src="https://betrediofficial.github.io/images/mini-games/crash.png" alt="">
+                  <img loading="lazy" src="https://betrediofficial.github.io/images/mini-games/crash_v2.png" alt="">
                 </span>
               </a>
             </div>
@@ -1675,7 +1675,7 @@
             <div class="swiper-slide" data-swiper-slide-index="1" style="width: 339px; margin-right: 12px; background: none !important;">
               <a class="mini-game mini-game--carousel mini-game--no-layer" href="/tr/casino/games/ebetlab-dice-originals">
                 <span class="mini-game__img">
-                  <img loading="lazy" src="https://betrediofficial.github.io/images/mini-games/dice.png" alt="">
+                  <img loading="lazy" src="https://betrediofficial.github.io/images/mini-games/dice_v2.png" alt="">
                 </span>
               </a>
             </div>
@@ -1683,7 +1683,7 @@
             <div class="swiper-slide" data-swiper-slide-index="2" style="width: 339px; margin-right: 12px; background: none !important;">
               <a class="mini-game mini-game--carousel mini-game--no-layer" href="/tr/casino/games/ebetlab-mines-originals">
                 <span class="mini-game__img">
-                  <img loading="lazy" src="https://betrediofficial.github.io/images/mini-games/mines.png" alt="">
+                  <img loading="lazy" src="https://betrediofficial.github.io/images/mini-games/mines_v2.png" alt="">
                 </span>
               </a>
             </div>
@@ -1691,7 +1691,7 @@
             <div class="swiper-slide" data-swiper-slide-index="3" style="width: 339px; margin-right: 12px; background: none !important;">
               <a class="mini-game mini-game--carousel mini-game--no-layer" href="/tr/casino/games/ebetlab-plinko-originals">
                 <span class="mini-game__img">
-                  <img loading="lazy" src="https://betrediofficial.github.io/images/mini-games/plinko.png" alt="">
+                  <img loading="lazy" src="https://betrediofficial.github.io/images/mini-games/plinko_v2.png" alt="">
                 </span>
               </a>
             </div>
