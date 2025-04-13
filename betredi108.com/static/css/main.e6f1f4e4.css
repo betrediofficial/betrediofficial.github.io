@@ -2760,7 +2760,7 @@ button:hover .svg-icon {
   width: 240px;
 }
 .swiper-slide {
-  background-color: initial !important;
+  /* background-color: initial !important; */
   border-radius: 18px;
   color: #fff;
   font-size: 22px;
@@ -3039,7 +3039,7 @@ button:hover .svg-icon {
 }
 .swiper-backface-hidden .swiper-slide {
   backface-visibility: hidden;
-  transform: translateZ(0);
+  /* transform: translateZ(0); */
 }
 .swiper-3d.swiper-css-mode .swiper-wrapper {
   perspective: 1200px;

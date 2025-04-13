@@ -28,7 +28,7 @@
 
 body {
     font-family: 'Rajdhani-SemiBold', serif;
-    background-color: var(--tf-bg);
+    /* background-color: var(--tf-bg); */
     font-weight: 400
 }
 
@@ -4407,7 +4407,7 @@ body::-webkit-scrollbar-track {
     overflow: hidden;
     width: 100%;
     min-height: 100px;
-    background-color: var(--tf-bg2);
+    /* background-color: var(--tf-bg2); */
     margin-top: 24px
 }
 

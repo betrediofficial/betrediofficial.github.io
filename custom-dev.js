@@ -1662,7 +1662,7 @@
 
       <div class="col-12">
         <div class="swiper swiper-initialized swiper-horizontal mySwiper swiper-backface-hidden">
-          <div class="swiper-wrapper" style="transform: translate3d(0px, 0px, 0px);">
+          <div class="swiper-wrapper"">
 
             <div class="swiper-slide" data-swiper-slide-index="0" style="width: 339px; margin-right: 12px;">
               <a class="mini-game mini-game--carousel mini-game--no-layer" href="/tr/casino/games/ebetlab-crash-originals">
