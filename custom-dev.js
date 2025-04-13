@@ -1479,7 +1479,7 @@
     aspect-ratio: 1 / 1.5 !important;
     height: 100% !important;
     overflow: hidden !important;
-    border-radius: 8px !important;
+    border-radius: 14px !important;
     background-color: #000 !important;
   }
 
