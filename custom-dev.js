@@ -1656,7 +1656,7 @@
             <img loading="lazy" src="https://betrediofficial.github.io/images/mini-games/crash.png" alt="">
           </span>
           <span class="mini-game__title">
-            <h3>Crash Originals</h3>
+           
           </span>
         </a>
       </div>
@@ -1667,7 +1667,7 @@
             <img loading="lazy" src="https://betrediofficial.github.io/images/mini-games/dice.png" alt="">
           </span>
           <span class="mini-game__title">
-            <h3>Dice Originals</h3>
+          
           </span>
         </a>
       </div>
@@ -1678,7 +1678,7 @@
             <img loading="lazy" src="https://betrediofficial.github.io/images/mini-games/mines.png" alt="">
           </span>
           <span class="mini-game__title">
-            <h3>Mines Originals</h3>
+          
           </span>
         </a>
       </div>
@@ -1689,7 +1689,7 @@
             <img loading="lazy" src="https://betrediofficial.github.io/images/mini-games/plinko.png" alt="">
           </span>
           <span class="mini-game__title">
-            <h3>Plinko Originals</h3>
+        
           </span>
         </a>
       </div>
