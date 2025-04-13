@@ -1096,29 +1096,367 @@
       if ($(".chooser").length > 0) return;
 
       var chooserSection = `
-<div class="manually-added-home-widgets container">
-  <div class="landing position-relative rounded-4 overflow-hidden">
-    <div class="landing-inner position-relative">
-      <div class="chooser py-auto py-sm-5">
-        <div class="d-block mb-4 mb-sm-5">
-          <h1 class="text-white fw-bold lh-sm mb-0 text-center">
-            Oyun seçerken yardıma mı ihtiyacınız var?
-          </h1>
-        </div>
-        <div class="chooser-inner mx-auto px-4 px-sm-5 py-4 rounded-5">
-          <div class="chooser-wrapper d-flex gap-3 overflow-hidden position-relative px-4 rounded-4">
-            <!-- your chooser-list content goes here (too long for here but copy-paste as is) -->
+    <div class="manually-added-home-widgets container">
+            <div class="landing position-relative rounded-4 overflow-hidden">
+              <div class="landing-inner position-relative">
+                <div class="chooser py-auto py-sm-5">
+                  <div class="d-block mb-4 mb-sm-5">
+                    <h1 class="text-white fw-bold lh-sm mb-0 text-center">Oyun seçerken yardıma mı ihtiyacınız var?</h1>
+                  </div>
+                  <div class="chooser-inner mx-auto px-4 px-sm-5 py-4 rounded-5">
+                    <div class="chooser-wrapper d-flex gap-3 overflow-hidden position-relative px-4 rounded-4">
+                      <div class="chooser-list d-flex flex-column justify-content-center w-100 first" style="--list-height: 1197.5px;">
+                        
+                          <div class="chooser-item position-relative">
+                            <a class="slot slot--carousel" href="casino/games/pragmaticplay-zeus-vs-hades-gods-of-war">
+                              <div class="z-0 slot__cover slot__cover--">
+                                <span class="slot__img">
+                                  <img src="https://vendor-provider.fra1.digitaloceanspaces.com/ebetlab/nTRaQbwA4VntuzQ2gp3Qxuda7u5W8exG/games/Yz21zkxEWvXy67u8ub39Dd0D2KY79ppSnIbYFCvu.jpg">
+                                </span>
+                                <div class="slot__title">
+                                  <!-- <h3>Sweet Bonanza 1000</h3> -->
+                                  <!-- <span class="game-provider">Pragmatic Play</span> -->
+                                </div>
+                              </div>
+                            </a>
+                          </div>
+                        
+                          <div class="chooser-item position-relative">
+                            <a class="slot slot--carousel" href="casino/games/pragmaticplay-gates-of-olympus">
+                              <div class="z-0 slot__cover slot__cover--">
+                                <span class="slot__img">
+                                  <img src="https://vendor-provider.fra1.digitaloceanspaces.com/ebetlab/nTRaQbwA4VntuzQ2gp3Qxuda7u5W8exG/games/XsEpljNd1AGU7nggivAviVK0RO1Sr6mmMVN7HqwS.jpg">
+                                </span>
+                                <div class="slot__title">
+                                  <!-- <h3>Sweet Bonanza 1000</h3> -->
+                                  <!-- <span class="game-provider">Pragmatic Play</span> -->
+                                </div>
+                              </div>
+                            </a>
+                          </div>
+                        
+                          <div class="chooser-item position-relative">
+                            <a class="slot slot--carousel" href="casino/games/pragmaticplay-sweet-bonanza">
+                              <div class="z-0 slot__cover slot__cover--">
+                                <span class="slot__img">
+                                  <img src="https://vendor-provider.fra1.digitaloceanspaces.com/ebetlab/nTRaQbwA4VntuzQ2gp3Qxuda7u5W8exG/games/Bp5TH9Fvrd4wHmnyaHRy4csNn9NOJzOW8zkeVygB.jpg">
+                                </span>
+                                <div class="slot__title">
+                                  <!-- <h3>Sweet Bonanza 1000</h3> -->
+                                  <!-- <span class="game-provider">Pragmatic Play</span> -->
+                                </div>
+                              </div>
+                            </a>
+                          </div>
+                        
+                          <div class="chooser-item position-relative">
+                            <a class="slot slot--carousel" href="casino/games/pragmaticplay-sugar-rush">
+                              <div class="z-0 slot__cover slot__cover--">
+                                <span class="slot__img">
+                                  <img src="https://vendor-provider.fra1.digitaloceanspaces.com/ebetlab/nTRaQbwA4VntuzQ2gp3Qxuda7u5W8exG/games/p00GPAq7KDfE9m3GaKntDU5kPUSjOVcq4fRUQCFa.jpg">
+                                </span>
+                                <div class="slot__title">
+                                  <!-- <h3>Sweet Bonanza 1000</h3> -->
+                                  <!-- <span class="game-provider">Pragmatic Play</span> -->
+                                </div>
+                              </div>
+                            </a>
+                          </div>
+                        
+                          <div class="chooser-item position-relative">
+                            <a class="slot slot--carousel" href="casino/games/pragmaticplay-the-dog-house-megaways">
+                              <div class="z-0 slot__cover slot__cover--">
+                                <span class="slot__img">
+                                  <img src="https://vendor-provider.fra1.digitaloceanspaces.com/ebetlab/nTRaQbwA4VntuzQ2gp3Qxuda7u5W8exG/games/UCzzpl54nGb5mzcujF5ua52b47S5RNU1oGd39qQ6.jpg">
+                                </span>
+                                <div class="slot__title">
+                                  <!-- <h3>Sweet Bonanza 1000</h3> -->
+                                  <!-- <span class="game-provider">Pragmatic Play</span> -->
+                                </div>
+                              </div>
+                            </a>
+                          </div>
+                        
+                          <div class="chooser-item position-relative">
+                            <a class="slot slot--carousel" href="casino/games/pragmaticplay-big-bass-splash">
+                              <div class="z-0 slot__cover slot__cover--">
+                                <span class="slot__img">
+                                  <img src="https://vendor-provider.fra1.digitaloceanspaces.com/ebetlab/nTRaQbwA4VntuzQ2gp3Qxuda7u5W8exG/games/wEpHUGXLnqVuRnvFqJoo1nisbNJ8BVQ9r5ClKem7.jpg">
+                                </span>
+                                <div class="slot__title">
+                                  <!-- <h3>Sweet Bonanza 1000</h3> -->
+                                  <!-- <span class="game-provider">Pragmatic Play</span> -->
+                                </div>
+                              </div>
+                            </a>
+                          </div>
+                        
+                          <div class="chooser-item position-relative">
+                            <a class="slot slot--carousel" href="casino/games/pragmaticplay-starlight-princess">
+                              <div class="z-0 slot__cover slot__cover--">
+                                <span class="slot__img">
+                                  <img src="https://vendor-provider.fra1.digitaloceanspaces.com/ebetlab/nTRaQbwA4VntuzQ2gp3Qxuda7u5W8exG/games/zEbhVgwGbPPzPMJAdVCVhJG7YVIHDIIsuR9DaqXz.jpg">
+                                </span>
+                                <div class="slot__title">
+                                  <!-- <h3>Sweet Bonanza 1000</h3> -->
+                                  <!-- <span class="game-provider">Pragmatic Play</span> -->
+                                </div>
+                              </div>
+                            </a>
+                          </div>
+                        
+                          <div class="chooser-item position-relative">
+                            <a class="slot slot--carousel" href="casino/games/pragmaticplay-madame-destiny">
+                              <div class="z-0 slot__cover slot__cover--">
+                                <span class="slot__img">
+                                  <img src="https://vendor-provider.fra1.digitaloceanspaces.com/ebetlab/nTRaQbwA4VntuzQ2gp3Qxuda7u5W8exG/games/69jTgdjuHzc6z6j5C24TwZnllDyIgWJxyj2MDw7z.jpg">
+                                </span>
+                                <div class="slot__title">
+                                  <!-- <h3>Sweet Bonanza 1000</h3> -->
+                                  <!-- <span class="game-provider">Pragmatic Play</span> -->
+                                </div>
+                              </div>
+                            </a>
+                          </div>
+                        
+                          <div class="chooser-item position-relative">
+                            <a class="slot slot--carousel" href="casino/games/pragmaticplay-gems-bonanza">
+                              <div class="z-0 slot__cover slot__cover--">
+                                <span class="slot__img">
+                                  <img src="https://vendor-provider.fra1.digitaloceanspaces.com/ebetlab/nTRaQbwA4VntuzQ2gp3Qxuda7u5W8exG/games/DpJMzigUfXYmHgehkJmvGo0Q9kG4d6AmpeeejTKU.jpg">
+                                </span>
+                                <div class="slot__title">
+                                  <!-- <h3>Sweet Bonanza 1000</h3> -->
+                                  <!-- <span class="game-provider">Pragmatic Play</span> -->
+                                </div>
+                              </div>
+                            </a>
+                          </div>
+                        
+                          <div class="chooser-item position-relative">
+                            <a class="slot slot--carousel" href="casino/games/pragmaticplay-zeus-vs-hades-gods-of-war">
+                              <div class="z-0 slot__cover slot__cover--">
+                                <span class="slot__img">
+                                  <img src="https://vendor-provider.fra1.digitaloceanspaces.com/ebetlab/nTRaQbwA4VntuzQ2gp3Qxuda7u5W8exG/games/Yz21zkxEWvXy67u8ub39Dd0D2KY79ppSnIbYFCvu.jpg">
+                                </span>
+                                <div class="slot__title">
+                                  <!-- <h3>Sweet Bonanza 1000</h3> -->
+                                  <!-- <span class="game-provider">Pragmatic Play</span> -->
+                                </div>
+                              </div>
+                            </a>
+                          </div>
+                        
+                          <div class="chooser-item position-relative">
+                            <a class="slot slot--carousel" href="casino/games/pragmaticplay-gates-of-olympus">
+                              <div class="z-0 slot__cover slot__cover--">
+                                <span class="slot__img">
+                                  <img src="https://vendor-provider.fra1.digitaloceanspaces.com/ebetlab/nTRaQbwA4VntuzQ2gp3Qxuda7u5W8exG/games/XsEpljNd1AGU7nggivAviVK0RO1Sr6mmMVN7HqwS.jpg">
+                                </span>
+                                <div class="slot__title">
+                                  <!-- <h3>Sweet Bonanza 1000</h3> -->
+                                  <!-- <span class="game-provider">Pragmatic Play</span> -->
+                                </div>
+                              </div>
+                            </a>
+                          </div>
+                        
+                      </div>
+                      <div class="chooser-list d-flex flex-column justify-content-center w-100 second" style="--list-height: 1197.5px;">
+                        
+                          <div class="chooser-item position-relative">
+                            <a class="slot slot--carousel" href="casino/games/evolution-speed-blackjack-d">
+                              <div class="z-0 slot__cover slot__cover--">
+                                <span class="slot__img">
+                                  <img src="https://vendor-provider.fra1.digitaloceanspaces.com/ebetlab/nTRaQbwA4VntuzQ2gp3Qxuda7u5W8exG/games/hFDel8XHsz9xjRlIrT29bd8Ik0c11kUTdmMXRx5m.jpg">
+                                </span>
+                                <div class="slot__title">
+                                  <!-- <h3>Sweet Bonanza 1000</h3> -->
+                                  <!-- <span class="game-provider">Pragmatic Play</span> -->
+                                </div>
+                              </div>
+                            </a>
+                          </div>
+                        
+                          <div class="chooser-item position-relative">
+                            <a class="slot slot--carousel" href="casino/games/ezugi-turkish-roulette">
+                              <div class="z-0 slot__cover slot__cover--">
+                                <span class="slot__img">
+                                  <img src="https://vendor-provider.fra1.digitaloceanspaces.com/ebetlab/nTRaQbwA4VntuzQ2gp3Qxuda7u5W8exG/games/PdjHXTeiXtA3FAAD4c5QKOQ678hlCGk88wgwHLjO.jpg">
+                                </span>
+                                <div class="slot__title">
+                                  <!-- <h3>Sweet Bonanza 1000</h3> -->
+                                  <!-- <span class="game-provider">Pragmatic Play</span> -->
+                                </div>
+                              </div>
+                            </a>
+                          </div>
+                        
+                          <div class="chooser-item position-relative">
+                            <a class="slot slot--carousel" href="casino/games/evolution-lightning-baccarat">
+                              <div class="z-0 slot__cover slot__cover--">
+                                <span class="slot__img">
+                                  <img src="https://vendor-provider.fra1.digitaloceanspaces.com/ebetlab/nTRaQbwA4VntuzQ2gp3Qxuda7u5W8exG/games/3TPOdVJpunNapyrWHXIKh9MV20EDAkKm7NlQmyfm.jpg">
+                                </span>
+                                <div class="slot__title">
+                                  <!-- <h3>Sweet Bonanza 1000</h3> -->
+                                  <!-- <span class="game-provider">Pragmatic Play</span> -->
+                                </div>
+                              </div>
+                            </a>
+                          </div>
+                        
+                          <div class="chooser-item position-relative">
+                            <a class="slot slot--carousel" href="casino/games/evolution-auto-lightning-roulette">
+                              <div class="z-0 slot__cover slot__cover--">
+                                <span class="slot__img">
+                                  <img src="https://vendor-provider.fra1.digitaloceanspaces.com/ebetlab/nTRaQbwA4VntuzQ2gp3Qxuda7u5W8exG/games/IVpUgKIviF8u3yKiM3FHj9JZqxi8F8oThxPz5CvG.jpg">
+                                </span>
+                                <div class="slot__title">
+                                  <!-- <h3>Sweet Bonanza 1000</h3> -->
+                                  <!-- <span class="game-provider">Pragmatic Play</span> -->
+                                </div>
+                              </div>
+                            </a>
+                          </div>
+                        
+                          <div class="chooser-item position-relative">
+                            <a class="slot slot--carousel" href="casino/games/evolution-crazy-time">
+                              <div class="z-0 slot__cover slot__cover--">
+                                <span class="slot__img">
+                                  <img src="https://vendor-provider.fra1.digitaloceanspaces.com/ebetlab/nTRaQbwA4VntuzQ2gp3Qxuda7u5W8exG/games/OrEpXUKLc3uYUruaUmlMF33tcYDP2ZFOljUB1Y49.jpg">
+                                </span>
+                                <div class="slot__title">
+                                  <!-- <h3>Sweet Bonanza 1000</h3> -->
+                                  <!-- <span class="game-provider">Pragmatic Play</span> -->
+                                </div>
+                              </div>
+                            </a>
+                          </div>
+                        
+                          <div class="chooser-item position-relative">
+                            <a class="slot slot--carousel" href="casino/games/evolution-xxxtreme-lightning-roulette">
+                              <div class="z-0 slot__cover slot__cover--">
+                                <span class="slot__img">
+                                  <img src="https://vendor-provider.fra1.digitaloceanspaces.com/ebetlab/nTRaQbwA4VntuzQ2gp3Qxuda7u5W8exG/games/ytvd9XDVeQSHYyQ8Zaxl6R4bxzvU0GUD03HLvaCg.jpg">
+                                </span>
+                                <div class="slot__title">
+                                  <!-- <h3>Sweet Bonanza 1000</h3> -->
+                                  <!-- <span class="game-provider">Pragmatic Play</span> -->
+                                </div>
+                              </div>
+                            </a>
+                          </div>
+                        
+                          <div class="chooser-item position-relative">
+                            <a class="slot slot--carousel" href="casino/games/evolution-funky-time">
+                              <div class="z-0 slot__cover slot__cover--">
+                                <span class="slot__img">
+                                  <img src="https://vendor-provider.fra1.digitaloceanspaces.com/ebetlab/nTRaQbwA4VntuzQ2gp3Qxuda7u5W8exG/games/VdJ5u6VxKid3Ek9ZVVcOrzVfEFeQ8ZoRHMfYo5ON.jpg">
+                                </span>
+                                <div class="slot__title">
+                                  <!-- <h3>Sweet Bonanza 1000</h3> -->
+                                  <!-- <span class="game-provider">Pragmatic Play</span> -->
+                                </div>
+                              </div>
+                            </a>
+                          </div>
+                        
+                          <div class="chooser-item position-relative">
+                            <a class="slot slot--carousel" href="casino/games/pragmaticlive-auto-roulette">
+                              <div class="z-0 slot__cover slot__cover--">
+                                <span class="slot__img">
+                                  <img src="https://vendor-provider.fra1.digitaloceanspaces.com/ebetlab/nTRaQbwA4VntuzQ2gp3Qxuda7u5W8exG/games/HjOlcJBrxE6il94aECMr0Attvp8HnvQnUwEMk2i4.jpg">
+                                </span>
+                                <div class="slot__title">
+                                  <!-- <h3>Sweet Bonanza 1000</h3> -->
+                                  <!-- <span class="game-provider">Pragmatic Play</span> -->
+                                </div>
+                              </div>
+                            </a>
+                          </div>
+                        
+                          <div class="chooser-item position-relative">
+                            <a class="slot slot--carousel" href="casino/games/ezugi-turkish-blackjack-1">
+                              <div class="z-0 slot__cover slot__cover--">
+                                <span class="slot__img">
+                                  <img src="https://agstatic.com/games/ezugi/turkish_blackjack_1.jpg">
+                                </span>
+                                <div class="slot__title">
+                                  <!-- <h3>Sweet Bonanza 1000</h3> -->
+                                  <!-- <span class="game-provider">Pragmatic Play</span> -->
+                                </div>
+                              </div>
+                            </a>
+                          </div>
+                        
+                          <div class="chooser-item position-relative">
+                            <a class="slot slot--carousel" href="casino/games/ezugi-turkish-blackjack-2">
+                              <div class="z-0 slot__cover slot__cover--">
+                                <span class="slot__img">
+                                  <img src="https://agstatic.com/games/ezugi/turkish_blackjack_2.jpg">
+                                </span>
+                                <div class="slot__title">
+                                  <!-- <h3>Sweet Bonanza 1000</h3> -->
+                                  <!-- <span class="game-provider">Pragmatic Play</span> -->
+                                </div>
+                              </div>
+                            </a>
+                          </div>
+                        
+                          <div class="chooser-item position-relative">
+                            <a class="slot slot--carousel" href="casino/games/evolution-turkce-lightning-rulet">
+                              <div class="z-0 slot__cover slot__cover--">
+                                <span class="slot__img">
+                                  <img src="https://vendor-provider.fra1.digitaloceanspaces.com/ebetlab/nTRaQbwA4VntuzQ2gp3Qxuda7u5W8exG/games/k9LtKerzLWg9kLKEkLpSezcypZV2s9ogEBrnt7E8.jpg">
+                                </span>
+                                <div class="slot__title">
+                                  <!-- <h3>Sweet Bonanza 1000</h3> -->
+                                  <!-- <span class="game-provider">Pragmatic Play</span> -->
+                                </div>
+                              </div>
+                            </a>
+                          </div>
+                        
+                          <div class="chooser-item position-relative">
+                            <a class="slot slot--carousel" href="casino/games/evolution-speed-blackjack-d">
+                              <div class="z-0 slot__cover slot__cover--">
+                                <span class="slot__img">
+                                  <img src="https://vendor-provider.fra1.digitaloceanspaces.com/ebetlab/nTRaQbwA4VntuzQ2gp3Qxuda7u5W8exG/games/hFDel8XHsz9xjRlIrT29bd8Ik0c11kUTdmMXRx5m.jpg">
+                                </span>
+                                <div class="slot__title">
+                                  <!-- <h3>Sweet Bonanza 1000</h3> -->
+                                  <!-- <span class="game-provider">Pragmatic Play</span> -->
+                                </div>
+                              </div>
+                            </a>
+                          </div>
+                        
+                          <div class="chooser-item position-relative">
+                            <a class="slot slot--carousel" href="casino/games/ezugi-turkish-roulette">
+                              <div class="z-0 slot__cover slot__cover--">
+                                <span class="slot__img">
+                                  <img src="https://vendor-provider.fra1.digitaloceanspaces.com/ebetlab/nTRaQbwA4VntuzQ2gp3Qxuda7u5W8exG/games/PdjHXTeiXtA3FAAD4c5QKOQ678hlCGk88wgwHLjO.jpg">
+                                </span>
+                                <div class="slot__title">
+                                  <!-- <h3>Sweet Bonanza 1000</h3> -->
+                                  <!-- <span class="game-provider">Pragmatic Play</span> -->
+                                </div>
+                              </div>
+                            </a>
+                          </div>
+                        
+                      </div>
+                      <div class="chooser-border position-absolute top-50 rounded-4 pe-none" style="height: 229.5px;"></div>
+                    </div>
+                    <div class="d-block text-center">
+                      <a href="?modal=register" class="spin-button d-block w-75 mx-auto text-white rounded-3 border mt-4">Üye Ol &amp; Çevir</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
-          <div class="d-block text-center">
-            <a href="?modal=register" class="spin-button d-block w-75 mx-auto text-white rounded-3 border mt-4">
-              Üye Ol & Çevir
-            </a>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
 `;
 
       $("#digeroyunlari").after(chooserSection);
