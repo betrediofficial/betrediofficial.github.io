@@ -395,8 +395,9 @@
 
         if (!is_mobile) casinoGames();
 
-        sportsCard();
-        casinoChooser();
+        // sportsCard();
+        miniGames();
+        // casinoChooser();
 
         //hide default games
         !is_mobile && hideDefaultGames(50);
@@ -1639,6 +1640,67 @@
   } catch (e) {
     alert("hata");
     console.log(e);
+  }
+
+  function miniGames() {
+    if ($("#mini-games-wrapper").length > 0) return;
+
+    var miniGamesSection = `
+    <div class="manually-added-home-widgets col-12">
+  <div class="swiper swiper-initialized swiper-horizontal mySwiper swiper-backface-hidden">
+    <div class="swiper-wrapper" style="transform: translate3d(0px, 0px, 0px);">
+      
+      <div class="swiper-slide swiper-slide-active" data-swiper-slide-index="0" style="width: 339px; margin-right: 12px;">
+        <a class="mini-game mini-game--carousel mini-game--no-layer" href="/tr/casino/games/ebetlab-crash-originals">
+          <span class="mini-game__img">
+            <img loading="lazy" src="https://betrediofficial.github.io/images/mini-games/crash.png" alt="">
+          </span>
+          <span class="mini-game__title">
+            <h3>Crash Originals</h3>
+          </span>
+        </a>
+      </div>
+
+      <div class="swiper-slide swiper-slide-next" data-swiper-slide-index="1" style="width: 339px; margin-right: 12px;">
+        <a class="mini-game mini-game--carousel mini-game--no-layer" href="/tr/casino/games/ebetlab-dice-originals">
+          <span class="mini-game__img">
+            <img loading="lazy" src="https://betrediofficial.github.io/images/mini-games/dice.png" alt="">
+          </span>
+          <span class="mini-game__title">
+            <h3>Dice Originals</h3>
+          </span>
+        </a>
+      </div>
+
+      <div class="swiper-slide" data-swiper-slide-index="2" style="width: 339px; margin-right: 12px;">
+        <a class="mini-game mini-game--carousel mini-game--no-layer" href="/tr/casino/games/ebetlab-mines-originals">
+          <span class="mini-game__img">
+            <img loading="lazy" src="https://betrediofficial.github.io/images/mini-games/mines.png" alt="">
+          </span>
+          <span class="mini-game__title">
+            <h3>Mines Originals</h3>
+          </span>
+        </a>
+      </div>
+
+      <div class="swiper-slide" data-swiper-slide-index="3" style="width: 339px; margin-right: 12px;">
+        <a class="mini-game mini-game--carousel mini-game--no-layer" href="/tr/casino/games/ebetlab-plinko-originals">
+          <span class="mini-game__img">
+            <img loading="lazy" src="https://betrediofficial.github.io/images/mini-games/plinko.png" alt="">
+          </span>
+          <span class="mini-game__title">
+            <h3>Plinko Originals</h3>
+          </span>
+        </a>
+      </div>
+
+    </div>
+  </div>
+</div>
+
+`;
+
+    $("#mini-slider-wrapper").before(miniGamesSection);
   }
 
   function hideDefaultGames(ms) {
