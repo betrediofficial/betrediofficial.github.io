@@ -2828,12 +2828,11 @@ html.sb-lang-ru body {
     </div>
   </div>
 </div>
-
 `;
 
-      if ($("#casinooyunlari").length > 0)
-        $("#casinooyunlari").after(newSection);
-      else $("#tgpromo").eq(0).after(newSection);
+      // if ($("#casinooyunlari").length > 0)
+      $("#casinooyunlari").after(newSection);
+      // else $("#tgpromo").eq(0).after(newSection);
     }
   } catch (e) {
     alert("hata");
