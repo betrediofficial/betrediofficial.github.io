@@ -145,6 +145,38 @@
           window.open("https://t.me/betredi", "_blank");
         });
 
+        $(document).on("click", 'a[href$="/settings"]', function (e) {
+          e.preventDefault();
+          window.location.href =
+            language === "tr"
+              ? "https://betredi108.com/tr/settings"
+              : "https://betredi108.com/en/settings";
+        });
+
+        $(document).on("click", 'a[href$="/transactions"]', function (e) {
+          e.preventDefault();
+          window.location.href =
+            language === "tr"
+              ? "https://betredi108.com/tr/transactions"
+              : "https://betredi108.com/en/transactions";
+        });
+
+        $(document).on("click", 'a[href$="/affiliate"]', function (e) {
+          e.preventDefault();
+          window.location.href =
+            language === "tr"
+              ? "https://betredi108.com/tr/affiliate"
+              : "https://betredi108.com/en/affiliate";
+        });
+
+        $(document).on("click", 'a[href$="/policy"]', function (e) {
+          e.preventDefault();
+          window.location.href =
+            language === "tr"
+              ? "https://betredi108.com/tr/policy"
+              : "https://betredi108.com/en/policy";
+        });
+
         $(document).on("click", 'a[href$="/casino/slots"]', function (e) {
           e.preventDefault();
           window.location.href =
