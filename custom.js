@@ -139,7 +139,12 @@
           });
         });
 
-        /// ! Don't touch
+        // ! Don't touch
+
+        $(document).on("click", "#telegram-button", function (e) {
+          e.preventDefault();
+          window.location.href = "https://t.me/betredi";
+        });
 
         $(document).on("click", 'a[href$="/casino/slots"]', function (e) {
           e.preventDefault();
