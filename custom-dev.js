@@ -1646,7 +1646,7 @@
     if ($("#mini-games-wrapper").length > 0) return;
 
     var miniGamesSection = `
-    <div class="section" id="mini-games-wrapper" style="margin-top: 16px !important; margin-bottom: 16px !important;">
+    <div class="manually-added-home-widgets section" id="mini-games-wrapper" style="margin-top: 16px !important; margin-bottom: 16px !important;">
   <div class="container">
     <div class="row">
       <div class="col-12">
@@ -1662,9 +1662,9 @@
 
       <div class="col-12">
         <div class="swiper swiper-initialized swiper-horizontal mySwiper swiper-backface-hidden">
-          <div class="swiper-wrapper"">
+          <div class="swiper-wrapper">
 
-            <div class="swiper-slide" data-swiper-slide-index="0" style="width: 339px; margin-right: 12px;">
+            <div class="swiper-slide" data-swiper-slide-index="0" style="width: 339px; margin-right: 12px; background: none !important;">
               <a class="mini-game mini-game--carousel mini-game--no-layer" href="/tr/casino/games/ebetlab-crash-originals">
                 <span class="mini-game__img">
                   <img loading="lazy" src="https://betrediofficial.github.io/images/mini-games/crash.png" alt="">
@@ -1672,7 +1672,7 @@
               </a>
             </div>
 
-            <div class="swiper-slide" data-swiper-slide-index="1" style="width: 339px; margin-right: 12px;">
+            <div class="swiper-slide" data-swiper-slide-index="1" style="width: 339px; margin-right: 12px; background: none !important;">
               <a class="mini-game mini-game--carousel mini-game--no-layer" href="/tr/casino/games/ebetlab-dice-originals">
                 <span class="mini-game__img">
                   <img loading="lazy" src="https://betrediofficial.github.io/images/mini-games/dice.png" alt="">
@@ -1680,7 +1680,7 @@
               </a>
             </div>
 
-            <div class="swiper-slide" data-swiper-slide-index="2" style="width: 339px; margin-right: 12px;">
+            <div class="swiper-slide" data-swiper-slide-index="2" style="width: 339px; margin-right: 12px; background: none !important;">
               <a class="mini-game mini-game--carousel mini-game--no-layer" href="/tr/casino/games/ebetlab-mines-originals">
                 <span class="mini-game__img">
                   <img loading="lazy" src="https://betrediofficial.github.io/images/mini-games/mines.png" alt="">
@@ -1688,7 +1688,7 @@
               </a>
             </div>
 
-            <div class="swiper-slide" data-swiper-slide-index="3" style="width: 339px; margin-right: 12px;">
+            <div class="swiper-slide" data-swiper-slide-index="3" style="width: 339px; margin-right: 12px; background: none !important;">
               <a class="mini-game mini-game--carousel mini-game--no-layer" href="/tr/casino/games/ebetlab-plinko-originals">
                 <span class="mini-game__img">
                   <img loading="lazy" src="https://betrediofficial.github.io/images/mini-games/plinko.png" alt="">
