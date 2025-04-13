@@ -1787,7 +1787,7 @@
                   <div class="games-horiz-scroll" style="grid-template-rows: auto auto;">
                     <div class="casino-game-item-content">
                       <div class="casino-game-item" style="border: 3px solid #9b000e !important; overflow: hidden !important;">
-                        <div class="hovered-effect" style="opacity: 0; position: absolute; width: 100%; height: 100%; background: rgba(255,255,255,0.15); z-index: 10; pointer-events: none;"></div>
+                        <div class="hovered-effect" style="opacity: 0; position: absolute; width: 100%; height: 100%; background: rgba(255,255,255,0.2); z-index: 10; pointer-events: none;"></div>
                         <a href="casino/games/pragmaticplay-starlight-princess-1000" class="">
                           <img src="https://betrediofficial.github.io/images/casino-games-new/starlight_princess_1000.png" class="casino-game-image-bc" loading="lazy">
                         </a>
@@ -1795,7 +1795,7 @@
                     </div>
                     <div class="casino-game-item-content">
                       <div class="casino-game-item" style="border: 3px solid #9b000e !important; overflow: hidden !important;">
-                        <div class="hovered-effect" style="opacity: 0; position: absolute; width: 100%; height: 100%; background: rgba(255,255,255,0.15); z-index: 10; pointer-events: none;"></div>
+                        <div class="hovered-effect" style="opacity: 0; position: absolute; width: 100%; height: 100%; background: rgba(255,255,255,0.2); z-index: 10; pointer-events: none;"></div>
                         <a href="casino/games/pragmaticplay-sweet-bonanza-1000" class="">
                           <img src="https://betrediofficial.github.io/images/casino-games-new/sweet_bonanza_1000.png" class="casino-game-image-bc" loading="lazy">
                         </a>
@@ -1803,7 +1803,7 @@
                     </div>
                     <div class="casino-game-item-content">
                       <div class="casino-game-item" style="border: 3px solid #9b000e !important; overflow: hidden !important;">
-                        <div class="hovered-effect" style="opacity: 0; position: absolute; width: 100%; height: 100%; background: rgba(255,255,255,0.15); z-index: 10; pointer-events: none;"></div>
+                        <div class="hovered-effect" style="opacity: 0; position: absolute; width: 100%; height: 100%; background: rgba(255,255,255,0.2); z-index: 10; pointer-events: none;"></div>
                         <a href="casino/games/pragmaticplay-wisdom-of-athena" class="">
                           <img src="https://betrediofficial.github.io/images/casino-games-new/wisdom_of_athena.png" class="casino-game-image-bc" loading="lazy">
                         </a>
@@ -1811,7 +1811,7 @@
                     </div>
                     <div class="casino-game-item-content">
                       <div class="casino-game-item" style="border: 3px solid #9b000e !important; overflow: hidden !important;">
-                        <div class="hovered-effect" style="opacity: 0; position: absolute; width: 100%; height: 100%; background: rgba(255,255,255,0.15); z-index: 10; pointer-events: none;"></div>
+                        <div class="hovered-effect" style="opacity: 0; position: absolute; width: 100%; height: 100%; background: rgba(255,255,255,0.2); z-index: 10; pointer-events: none;"></div>
                         <a href="casino/games/pragmaticplay-big-bass-secrets-of-the-golden-lake" class="">
                           <img src="https://betrediofficial.github.io/images/casino-games-new/big_bass_christmas_bash.png" class="casino-game-image-bc" loading="lazy">
                         </a>
@@ -1819,7 +1819,7 @@
                     </div>
                     <div class="casino-game-item-content">
                       <div class="casino-game-item" style="border: 3px solid #9b000e !important; overflow: hidden !important;">
-                        <div class="hovered-effect" style="opacity: 0; position: absolute; width: 100%; height: 100%; background: rgba(255,255,255,0.15); z-index: 10; pointer-events: none;"></div>
+                        <div class="hovered-effect" style="opacity: 0; position: absolute; width: 100%; height: 100%; background: rgba(255,255,255,0.2); z-index: 10; pointer-events: none;"></div>
                         <a href="casino/games/hacksaw-wanted-dead-or-a-wild" class="">
                           <img src="https://betrediofficial.github.io/images/casino-games-new/wanted_dead_or_a_wild.png" class="casino-game-image-bc" loading="lazy">
                         </a>
@@ -1827,7 +1827,7 @@
                     </div>
                     <div class="casino-game-item-content">
                       <div class="casino-game-item" style="border: 3px solid #9b000e !important; overflow: hidden !important;">
-                        <div class="hovered-effect" style="opacity: 0; position: absolute; width: 100%; height: 100%; background: rgba(255,255,255,0.15); z-index: 10; pointer-events: none;"></div>
+                        <div class="hovered-effect" style="opacity: 0; position: absolute; width: 100%; height: 100%; background: rgba(255,255,255,0.2); z-index: 10; pointer-events: none;"></div>
                         <a href="casino/games/pragmaticplay-big-bass-secrets-of-the-golden-lake" class="">
                           <img src="https://betrediofficial.github.io/images/casino-games-new/big_bass_secrets_of_the_golden_lake.png" class="casino-game-image-bc" loading="lazy">
                         </a>
@@ -1835,7 +1835,7 @@
                     </div>
                     <div class="casino-game-item-content">
                       <div class="casino-game-item" style="border: 3px solid #9b000e !important; overflow: hidden !important;"> 
-                        <div class="hovered-effect" style="opacity: 0; position: absolute; width: 100%; height: 100%; background: rgba(255,255,255,0.15); z-index: 10; pointer-events: none;"></div>
+                        <div class="hovered-effect" style="opacity: 0; position: absolute; width: 100%; height: 100%; background: rgba(255,255,255,0.2); z-index: 10; pointer-events: none;"></div>
                         <a href="casino/games/egt-interactive-shining-crown" class="">
                           <img src="https://betrediofficial.github.io/images/casino-games-new/shining_crown.png" class="casino-game-image-bc" loading="lazy">
                         </a>
@@ -1843,7 +1843,7 @@
                     </div>
                     <div class="casino-game-item-content">
                       <div class="casino-game-item" style="border: 3px solid #9b000e !important; overflow: hidden !important;">
-                        <div class="hovered-effect" style="opacity: 0; position: absolute; width: 100%; height: 100%; background: rgba(255,255,255,0.15); z-index: 10; pointer-events: none;"></div>
+                        <div class="hovered-effect" style="opacity: 0; position: absolute; width: 100%; height: 100%; background: rgba(255,255,255,0.2); z-index: 10; pointer-events: none;"></div>
                         <a href="casino/games/egt-flaming-hot" class="">
                           <img src="https://betrediofficial.github.io/images/casino-games-new/flaming_hot.png" class="casino-game-image-bc" loading="lazy">
                         </a>
@@ -1851,7 +1851,7 @@
                     </div>
                     <div class="casino-game-item-content">
                       <div class="casino-game-item" style="border: 3px solid #9b000e !important; overflow: hidden !important;">
-                        <div class="hovered-effect" style="opacity: 0; position: absolute; width: 100%; height: 100%; background: rgba(255,255,255,0.15); z-index: 10; pointer-events: none;"></div>
+                        <div class="hovered-effect" style="opacity: 0; position: absolute; width: 100%; height: 100%; background: rgba(255,255,255,0.2); z-index: 10; pointer-events: none;"></div>
                         <a href="casino/games/pragmaticplay-gates-of-olympus" class="">
                           <img src="https://betrediofficial.github.io/images/casino-games-new/gates_of_olympus.png" class="casino-game-image-bc" loading="lazy">
                         </a>
@@ -1859,7 +1859,7 @@
                     </div>
                     <div class="casino-game-item-content">
                       <div class="casino-game-item" style="border: 3px solid #9b000e !important; overflow: hidden !important;">
-                        <div class="hovered-effect" style="opacity: 0; position: absolute; width: 100%; height: 100%; background: rgba(255,255,255,0.15); z-index: 10; pointer-events: none;"></div>
+                        <div class="hovered-effect" style="opacity: 0; position: absolute; width: 100%; height: 100%; background: rgba(255,255,255,0.2); z-index: 10; pointer-events: none;"></div>
                         <a href="casino/games/pragmaticplay-wild-west-gold" class="">
                           <img src="https://betrediofficial.github.io/images/casino-games-new/wild_west_gold.png" class="casino-game-image-bc" loading="lazy">
                         </a>
@@ -1867,7 +1867,7 @@
                     </div>
                     <div class="casino-game-item-content">
                       <div class="casino-game-item" style="border: 3px solid #9b000e !important; overflow: hidden !important;">
-                        <div class="hovered-effect" style="opacity: 0; position: absolute; width: 100%; height: 100%; background: rgba(255,255,255,0.15); z-index: 10; pointer-events: none;"></div>
+                        <div class="hovered-effect" style="opacity: 0; position: absolute; width: 100%; height: 100%; background: rgba(255,255,255,0.2); z-index: 10; pointer-events: none;"></div>
                         <a href="casino/games/pragmaticplay-hand-of-midas-2" class="">
                           <img src="https://betrediofficial.github.io/images/casino-games-new/hand_of_midas_2.png" class="casino-game-image-bc" loading="lazy">
                         </a>
@@ -1875,7 +1875,7 @@
                     </div>
                     <div class="casino-game-item-content">
                       <div class="casino-game-item" style="border: 3px solid #9b000e !important; overflow: hidden !important;">
-                        <div class="hovered-effect" style="opacity: 0; position: absolute; width: 100%; height: 100%; background: rgba(255,255,255,0.15); z-index: 10; pointer-events: none;"></div>
+                        <div class="hovered-effect" style="opacity: 0; position: absolute; width: 100%; height: 100%; background: rgba(255,255,255,0.2); z-index: 10; pointer-events: none;"></div>
                         <a href="casino/games/pragmaticplay-ripe-rewards" class="">
                           <img src="https://betrediofficial.github.io/images/casino-games-new/ripe_rewards.png" class="casino-game-image-bc" loading="lazy">
                         </a>
@@ -1967,7 +1967,7 @@
                   
                   <div class="casino-game-item-content position-relative" style="overflow: hidden !important;">
                     <div class="casino-game-item" style="border: 3px solid #9b000e !important; overflow: hidden !important;">
-                      <div class="hovered-effect" style="opacity: 0; position: absolute; width: 100%; height: 100%; background: rgba(255,255,255,0.1); z-index: 10; pointer-events: none;"></div>
+                      <div class="hovered-effect" style="opacity: 0; position: absolute; width: 100%; height: 100%; background: rgba(255,255,255,0.2); z-index: 10; pointer-events: none;"></div>
                       <a href="casino/games/pragmaticlive-blackjack-3">
                         <img src="https://betrediofficial.github.io/images/live-casino-new/black_jack_3.png" class="casino-game-image-bc img-fluid">
                       </a>
@@ -1976,7 +1976,7 @@
                   
                   <div class="casino-game-item-content position-relative" style="overflow: hidden !important;">
                     <div class="casino-game-item" style="border: 3px solid #9b000e !important; overflow: hidden !important;">
-                      <div class="hovered-effect" style="opacity: 0; position: absolute; width: 100%; height: 100%; background: rgba(255,255,255,0.1); z-index: 10; pointer-events: none;"></div>
+                      <div class="hovered-effect" style="opacity: 0; position: absolute; width: 100%; height: 100%; background: rgba(255,255,255,0.2); z-index: 10; pointer-events: none;"></div>
                       <a href="casino/games/pragmaticlive-speed-blackjack-1">
                         <img src="https://betrediofficial.github.io/images/live-casino-new/speed_blackjack_1.png" class="casino-game-image-bc img-fluid">
                       </a>
@@ -1985,7 +1985,7 @@
 
                   <div class="casino-game-item-content position-relative" style="overflow: hidden !important;">
                     <div class="casino-game-item" style="border: 3px solid #9b000e !important; overflow: hidden !important;">
-                      <div class="hovered-effect" style="opacity: 0; position: absolute; width: 100%; height: 100%; background: rgba(255,255,255,0.1); z-index: 10; pointer-events: none;"></div>
+                      <div class="hovered-effect" style="opacity: 0; position: absolute; width: 100%; height: 100%; background: rgba(255,255,255,0.2); z-index: 10; pointer-events: none;"></div>
                       <a href="casino/games/pragmaticlive-mega-roulette">
                         <img src="https://betrediofficial.github.io/images/live-casino-new/mega_roulette.png" class="casino-game-image-bc img-fluid">
                       </a>
@@ -1994,7 +1994,7 @@
 
                   <div class="casino-game-item-content position-relative" style="overflow: hidden !important;">
                     <div class="casino-game-item" style="border: 3px solid #9b000e !important; overflow: hidden !important;">
-                      <div class="hovered-effect" style="opacity: 0; position: absolute; width: 100%; height: 100%; background: rgba(255,255,255,0.1); z-index: 10; pointer-events: none;"></div>
+                      <div class="hovered-effect" style="opacity: 0; position: absolute; width: 100%; height: 100%; background: rgba(255,255,255,0.2); z-index: 10; pointer-events: none;"></div>
                       <a href="casino/games/pragmaticlive-baccarat-lobby">
                         <img src="https://betrediofficial.github.io/images/live-casino-new/baccarat_lobby.png" class="casino-game-image-bc img-fluid">
                       </a>
@@ -2003,7 +2003,7 @@
 
                   <div class="casino-game-item-content position-relative" style="overflow: hidden !important;">
                     <div class="casino-game-item" style="border: 3px solid #9b000e !important; overflow: hidden !important;">
-                      <div class="hovered-effect" style="opacity: 0; position: absolute; width: 100%; height: 100%; background: rgba(255,255,255,0.1); z-index: 10; pointer-events: none;"></div>
+                      <div class="hovered-effect" style="opacity: 0; position: absolute; width: 100%; height: 100%; background: rgba(255,255,255,0.2); z-index: 10; pointer-events: none;"></div>
                       <a href="casino/games/evolution-blackjack-vip-20">
                         <img src="https://betrediofficial.github.io/images/live-casino-new/blackjack.png" class="casino-game-image-bc img-fluid">
                       </a>
@@ -2012,7 +2012,7 @@
 
                   <div class="casino-game-item-content position-relative" style="overflow: hidden !important;">
                     <div class="casino-game-item" style="border: 3px solid #9b000e !important; overflow: hidden !important;">
-                      <div class="hovered-effect" style="opacity: 0; position: absolute; width: 100%; height: 100%; background: rgba(255,255,255,0.1); z-index: 10; pointer-events: none;"></div>
+                      <div class="hovered-effect" style="opacity: 0; position: absolute; width: 100%; height: 100%; background: rgba(255,255,255,0.2); z-index: 10; pointer-events: none;"></div>
                       <a href="casino/games/evolution-auto-lightning-roulette">
                         <img src="https://betrediofficial.github.io/images/live-casino-new/lightning_roulette.png" class="casino-game-image-bc img-fluid">
                       </a>
@@ -2021,7 +2021,7 @@
 
                   <div class="casino-game-item-content position-relative" style="overflow: hidden !important;">
                     <div class="casino-game-item" style="border: 3px solid #9b000e !important; overflow: hidden !important;">
-                      <div class="hovered-effect" style="opacity: 0; position: absolute; width: 100%; height: 100%; background: rgba(255,255,255,0.1); z-index: 10; pointer-events: none;"></div>
+                      <div class="hovered-effect" style="opacity: 0; position: absolute; width: 100%; height: 100%; background: rgba(255,255,255,0.2); z-index: 10; pointer-events: none;"></div>
                       <a href="casino/games/pragmaticlive-roulette-lobby">
                         <img src="https://betrediofficial.github.io/images/live-casino-new/roulette_lobby.png" class="casino-game-image-bc img-fluid">
                       </a>
@@ -2030,7 +2030,7 @@
 
                   <div class="casino-game-item-content position-relative" style="overflow: hidden !important;">
                     <div class="casino-game-item" style="border: 3px solid #9b000e !important; overflow: hidden !important;">
-                      <div class="hovered-effect" style="opacity: 0; position: absolute; width: 100%; height: 100%; background: rgba(255,255,255,0.1); z-index: 10; pointer-events: none;"></div>
+                      <div class="hovered-effect" style="opacity: 0; position: absolute; width: 100%; height: 100%; background: rgba(255,255,255,0.2); z-index: 10; pointer-events: none;"></div>
                       <a href="casino/games/evolution-texas-holdem-bonus-poker">
                         <img src="https://betrediofficial.github.io/images/live-casino-new/texas_holdem_bonus_poker.png" class="casino-game-image-bc img-fluid">
                       </a>
@@ -2039,7 +2039,7 @@
 
                   <div class="casino-game-item-content position-relative" style="overflow: hidden !important;">
                     <div class="casino-game-item" style="border: 3px solid #9b000e !important; overflow: hidden !important;">
-                      <div class="hovered-effect" style="opacity: 0; position: absolute; width: 100%; height: 100%; background: rgba(255,255,255,0.1); z-index: 10; pointer-events: none;"></div>
+                      <div class="hovered-effect" style="opacity: 0; position: absolute; width: 100%; height: 100%; background: rgba(255,255,255,0.2); z-index: 10; pointer-events: none;"></div>
                       <a href="casino/games/evolution-first-person-roulette">
                         <img src="https://betrediofficial.github.io/images/live-casino-new/first_person_roulette.png" class="casino-game-image-bc img-fluid">
                       </a>
@@ -2048,7 +2048,7 @@
 
                   <div class="casino-game-item-content position-relative" style="overflow: hidden !important;">
                     <div class="casino-game-item" style="border: 3px solid #9b000e !important; overflow: hidden !important;">
-                      <div class="hovered-effect" style="opacity: 0; position: absolute; width: 100%; height: 100%; background: rgba(255,255,255,0.1); z-index: 10; pointer-events: none;"></div>
+                      <div class="hovered-effect" style="opacity: 0; position: absolute; width: 100%; height: 100%; background: rgba(255,255,255,0.2); z-index: 10; pointer-events: none;"></div>
                       <a href="casino/games/evolution-blackjack-silver-f">
                         <img src="https://betrediofficial.github.io/images/live-casino-new/blackjack_silver.png" class="casino-game-image-bc img-fluid">
                       </a>
@@ -2057,7 +2057,7 @@
 
                   <div class="casino-game-item-content position-relative" style="overflow: hidden !important;">
                     <div class="casino-game-item" style="border: 3px solid #9b000e !important; overflow: hidden !important;">
-                      <div class="hovered-effect" style="opacity: 0; position: absolute; width: 100%; height: 100%; background: rgba(255,255,255,0.1); z-index: 10; pointer-events: none;"></div>
+                      <div class="hovered-effect" style="opacity: 0; position: absolute; width: 100%; height: 100%; background: rgba(255,255,255,0.2); z-index: 10; pointer-events: none;"></div>
                       <a href="casino/games/evolution-golden-wealth-baccarat">
                         <img src="https://betrediofficial.github.io/images/live-casino-new/golden_wealth_baccarat.png" class="casino-game-image-bc img-fluid">
                       </a>
@@ -2066,7 +2066,7 @@
 
                   <div class="casino-game-item-content position-relative" style="overflow: hidden !important;">
                     <div class="casino-game-item" style="border: 3px solid #9b000e !important; overflow: hidden !important;">
-                      <div class="hovered-effect" style="opacity: 0; position: absolute; width: 100%; height: 100%; background: rgba(255,255,255,0.1); z-index: 10; pointer-events: none;"></div>
+                      <div class="hovered-effect" style="opacity: 0; position: absolute; width: 100%; height: 100%; background: rgba(255,255,255,0.2); z-index: 10; pointer-events: none;"></div>
                       <a href="casino/games/evolution-speed-vip-blackjack-h">
                         <img src="https://betrediofficial.github.io/images/live-casino-new/speed_vi_blackjack.png" class="casino-game-image-bc img-fluid">
                       </a>
