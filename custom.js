@@ -1842,9 +1842,11 @@
     <a href="https://t.me/betredi" target="_blank">
       <img src="https://betrediofficial.github.io/images/tg-promo/tg_promo_new.png" alt="Telegram Promo" style="display: block; width: 100%; margin-bottom: 10px;" />
     </a>
+    <a href="https://betredi108.com/tr/promotions">
     <img src="https://betrediofficial.github.io/images/tg-promo/reditg.gif"
          alt="Telegram Promo GIF"
          style="display: block; width: 100%; margin-bottom: 10px; border: 2px solid #9b000e; border-radius: 10px; max-width: 100% !important;" />
+    </a>
     <img src="https://betrediofficial.github.io/images/tg-promo/tg_promo_desc.png" alt="Kripto Bilgilendirme" style="display: block; width: 100%;" />
   </div>
 </div>
@@ -2148,7 +2150,7 @@
 </svg>
 
       </span>
-      ${language === "tr" ? "Para Yatır" : "Make Deposit"}
+      Para Yatır
       </a>
    </div>
    
