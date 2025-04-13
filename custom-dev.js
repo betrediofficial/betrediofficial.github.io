@@ -1655,9 +1655,6 @@
           <span class="mini-game__img">
             <img loading="lazy" src="https://betrediofficial.github.io/images/mini-games/crash.png" alt="">
           </span>
-          <span class="mini-game__title">
-           
-          </span>
         </a>
       </div>
 
@@ -1665,9 +1662,6 @@
         <a class="mini-game mini-game--carousel mini-game--no-layer" href="/tr/casino/games/ebetlab-dice-originals">
           <span class="mini-game__img">
             <img loading="lazy" src="https://betrediofficial.github.io/images/mini-games/dice.png" alt="">
-          </span>
-          <span class="mini-game__title">
-          
           </span>
         </a>
       </div>
@@ -1677,9 +1671,6 @@
           <span class="mini-game__img">
             <img loading="lazy" src="https://betrediofficial.github.io/images/mini-games/mines.png" alt="">
           </span>
-          <span class="mini-game__title">
-          
-          </span>
         </a>
       </div>
 
@@ -1687,9 +1678,6 @@
         <a class="mini-game mini-game--carousel mini-game--no-layer" href="/tr/casino/games/ebetlab-plinko-originals">
           <span class="mini-game__img">
             <img loading="lazy" src="https://betrediofficial.github.io/images/mini-games/plinko.png" alt="">
-          </span>
-          <span class="mini-game__title">
-        
           </span>
         </a>
       </div>
