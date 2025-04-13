@@ -1508,6 +1508,16 @@
     height: 100% !important;
     object-fit: cover !important;
     display: block !important;
+    transition: 0.3s all ease !important;
+  }
+
+  .casino-game-item:hover img {
+    transform: scale(1.03) !important;
+    opacity: 0.8 !important;
+  }
+
+  .casino-game-item:hover .hovered-effect {
+    opacity: 1 !important;
   }
 
   #main-slider .swiper-wrapper {
@@ -1778,10 +1788,10 @@
                   <div class="games-horiz-scroll" style="grid-template-rows: auto auto;">
                     <div class="casino-game-item-content">
                       <div class="casino-game-item" style="border: 3px solid #9b000e !important; overflow: hidden !important;">
-                        <img src="https://betrediofficial.github.io/images/casino-games-new/starlight_princess_1000.png" class="casino-game-image-bc" loading="lazy">
-                         <div class="overlay">
-                            <a href="casino/games/pragmaticplay-starlight-princess-1000" class="">Starlight Princess 1000</a>
-                          </div>
+                        <div class="hovered-effect" style="opacity: 0; position: absolute; width: 100%; height: 100%; background: rgba(255,255,255,0.1); z-index: 10; pointer-events: none;"></div>
+                        <a href="casino/games/pragmaticplay-starlight-princess-1000" class="">
+                          <img src="https://betrediofficial.github.io/images/casino-games-new/starlight_princess_1000.png" class="casino-game-image-bc" loading="lazy">
+                        </a>
                       </div>
                     </div>
                     <div class="casino-game-item-content">
