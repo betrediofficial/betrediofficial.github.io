@@ -1372,7 +1372,7 @@
       window.myMiniGamesSwiper = new Swiper(swiperEl, {
         slidesPerView: "auto",
         freeMode: false,
-        centeredSlides: true,
+        // centeredSlides: true,
         grabCursor: true,
       });
     }
