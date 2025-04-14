@@ -1334,7 +1334,7 @@
              <div class="swiper-slide" data-swiper-slide-index="2" style="width: 339px; margin-right: 12px; background: none !important;">
                <a class="mini-game mini-game--carousel mini-game--no-layer" href="/tr/casino/games/ebetlab-mines-originals" style="background: none !important;">
                  <span class="mini-game__img">
-                   <img loading="lazy" src="https://betrediofficial.github.io/images/mini-games-v2/mines_v2.webp" alt="">
+                   <img loading="lazy" src="https://betrediofficial.github.io/images/mini-games-v2/mines_v2.png" alt="">
                  </span>
                </a>
              </div>
@@ -2877,7 +2877,7 @@
 
          </span>
          </a>
-         <a href="" class="manual-redi-button" style="min-width: 32px !important; max-width: 32px; height: 32px; display: flex; align-items: center; justify-content: center; border-radius: 4px; border: none;">
+         <a href="https://wa.me/37254588167" target="_blank" class="manual-redi-button" style="min-width: 32px !important; max-width: 32px; height: 32px; display: flex; align-items: center; justify-content: center; border-radius: 4px; border: none;">
          <span>
          
 <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
