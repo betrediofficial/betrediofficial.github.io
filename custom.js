@@ -148,1065 +148,1065 @@
           });
         });
 
-        // ! Don't touch
-        $(document).on("click", "#telegram-button", function (e) {
-          e.preventDefault();
-          window.open("https://t.me/betredi", "_blank");
-        });
-
-        $(document).on("click", 'a[href$="/promotions"]', function (e) {
-          e.preventDefault();
-          window.location.href =
-            language === "tr"
-              ? "https://betredi109.com/tr/promotions"
-              : "https://betredi109.com/en/promotions";
-        });
-
-        $(document).on("click", 'a[href$="/tournaments"]', function (e) {
-          e.preventDefault();
-          window.location.href =
-            language === "tr"
-              ? "https://betredi109.com/tr/tournaments"
-              : "https://betredi109.com/en/tournaments";
-        });
-
-        $(document).on("click", 'a[href*="/settings"]', function (e) {
-          e.preventDefault();
-          // window.location.assign(
-          //   language === "tr"
-          //     ? "https://betredi109.com/tr/settings?tab=general"
-          //     : "https://betredi109.com/en/settings?tab=general"
-          // );
-          if (language === "tr")
-            window.location.href = "https://betredi109.com/tr/settings";
-          if (language === "en")
-            window.location.href = "https://betredi109.com/en/settings";
-          // window.location.href = "https://betredi109.com/tr/settings";
-        });
-
-        $(document).on("click", 'a[href$="/transactions"]', function (e) {
-          e.preventDefault();
-          window.location.href =
-            language === "tr"
-              ? "https://betredi109.com/tr/transactions"
-              : "https://betredi109.com/en/transactions";
-        });
-
-        $(document).on("click", 'a[href$="/affiliate"]', function (e) {
-          e.preventDefault();
-          window.location.href =
-            language === "tr"
-              ? "https://betredi109.com/tr/affiliate"
-              : "https://betredi109.com/en/affiliate";
-        });
-
-        $(document).on("click", 'a[href$="/policy"]', function (e) {
-          e.preventDefault();
-          window.location.href =
-            language === "tr"
-              ? "https://betredi109.com/tr/policy"
-              : "https://betredi109.com/en/policy";
-        });
-
-        $(document).on("click", 'a[href$="/casino/slots"]', function (e) {
-          e.preventDefault();
-          window.location.href =
-            language === "tr"
-              ? "https://betredi109.com/tr/casino/slots"
-              : "https://betredi109.com/en/casino/slots";
-        });
-
-        $(document).on("click", 'a[href$="/live-casino"]', function (e) {
-          e.preventDefault();
-          window.location.href =
-            language === "tr"
-              ? "https://betredi109.com/tr/live-casino"
-              : "https://betredi109.com/en/live-casino";
-        });
-
-        $(document).on("click", 'a[href$="/sportsbook"]', function (e) {
-          e.preventDefault();
-          window.location.href =
-            language === "tr"
-              ? "https://betredi109.com/tr/sportsbook"
-              : "https://betredi109.com/en/sportsbook";
-        });
-
-        $(document).on(
-          "click",
-          'a[href$="/casino/category/exclusive"]',
-          function (e) {
-            e.preventDefault();
-            window.location.href =
-              language === "tr"
-                ? "https://betredi109.com/tr/casino/category/exclusive"
-                : "https://betredi109.com/en/casino/category/exclusive";
-          }
-        );
-
-        $(document).on(
-          "click",
-          'a[href$="/casino/virtual_sports"]',
-          function (e) {
-            e.preventDefault();
-            window.location.href =
-              language === "tr"
-                ? "https://betredi109.com/tr/casino/virtual_sports"
-                : "https://betredi109.com/en/casino/virtual_sports";
-          }
-        );
-
-        $(document).on("click", 'a[href$="/vip"]', function (e) {
-          e.preventDefault();
-          window.location.href =
-            language === "tr"
-              ? "https://betredi109.com/tr/vip"
-              : "https://betredi109.com/en/vip";
-        });
-
-        $(document).on("click", 'a[href$="/casino"]', function (e) {
-          e.preventDefault();
-          window.location.href =
-            language === "tr"
-              ? "https://betredi109.com/tr/casino"
-              : "https://betredi109.com/en/casino";
-        });
-
-        $(document).on("click", 'a[href$="/e-sport"]', function (e) {
-          e.preventDefault();
-          window.location.href =
-            language === "tr"
-              ? "https://betredi109.com/tr/e-sport"
-              : "https://betredi109.com/en/e-sport";
-        });
-
-        $(document).on("click", 'a[href$="/favorites"]', function (e) {
-          e.preventDefault();
-          window.location.href =
-            language === "tr"
-              ? "https://betredi109.com/tr/favorites"
-              : "https://betredi109.com/en/favorites";
-        });
-
-        $(document).on("click", 'a[href$="/trade"]', function (e) {
-          e.preventDefault();
-          window.location.href =
-            language === "tr"
-              ? "https://betredi109.com/tr/trade"
-              : "https://betredi109.com/en/trade";
-        });
-
-        $(document).on("click", 'a[href$="/providers"]', function (e) {
-          e.preventDefault();
-          window.location.href =
-            language === "tr"
-              ? "https://betredi109.com/tr/providers"
-              : "https://betredi109.com/en/providers";
-        });
-
-        $(document).on(
-          "click",
-          'a[href$="/providers/pragmaticplay"]',
-          function (e) {
-            e.preventDefault();
-            window.location.href =
-              language === "tr"
-                ? "https://betredi109.com/tr/providers/pragmaticplay"
-                : "https://betredi109.com/en/providers/pragmaticplay";
-          }
-        );
-
-        $(document).on(
-          "click",
-          'a[href$="/providers/evolution"]',
-          function (e) {
-            e.preventDefault();
-            window.location.href =
-              language === "tr"
-                ? "https://betredi109.com/tr/providers/evolution"
-                : "https://betredi109.com/en/providers/evolution";
-          }
-        );
-
-        $(document).on("click", 'a[href$="/providers/hacksaw"]', function (e) {
-          e.preventDefault();
-          window.location.href =
-            language === "tr"
-              ? "https://betredi109.com/tr/providers/hacksaw"
-              : "https://betredi109.com/en/providers/hacksaw";
-        });
-
-        $(document).on("click", 'a[href$="/providers/egt"]', function (e) {
-          e.preventDefault();
-          window.location.href =
-            language === "tr"
-              ? "https://betredi109.com/tr/providers/egt"
-              : "https://betredi109.com/en/providers/egt";
-        });
-
-        $(document).on(
-          "click",
-          'a[href$="/providers/nolimitcity"]',
-          function (e) {
-            e.preventDefault();
-            window.location.href =
-              language === "tr"
-                ? "https://betredi109.com/tr/providers/nolimitcity"
-                : "https://betredi109.com/en/providers/nolimitcity";
-          }
-        );
-
-        $(document).on("click", 'a[href$="/providers/egt"]', function (e) {
-          e.preventDefault();
-          window.location.href =
-            language === "tr"
-              ? "https://betredi109.com/tr/providers/egt"
-              : "https://betredi109.com/en/providers/egt";
-        });
-
-        $(document).on("click", 'a[href$="/providers/playson"]', function (e) {
-          e.preventDefault();
-          window.location.href =
-            language === "tr"
-              ? "https://betredi109.com/tr/providers/playson"
-              : "https://betredi109.com/en/providers/playson";
-        });
-
-        $(document).on("click", 'a[href$="/providers/netent"]', function (e) {
-          e.preventDefault();
-          window.location.href =
-            language === "tr"
-              ? "https://betredi109.com/tr/providers/netent"
-              : "https://betredi109.com/en/providers/netent";
-        });
-
-        $(document).on("click", 'a[href$="/providers/popiplay"]', function (e) {
-          e.preventDefault();
-          window.location.href =
-            language === "tr"
-              ? "https://betredi109.com/tr/providers/popiplay"
-              : "https://betredi109.com/en/providers/popiplay";
-        });
-
-        $(document).on(
-          "click",
-          'a[href$="/providers/thunderkick"]',
-          function (e) {
-            e.preventDefault();
-            window.location.href =
-              language === "tr"
-                ? "https://betredi109.com/tr/providers/thunderkick"
-                : "https://betredi109.com/en/providers/thunderkick";
-          }
-        );
-
-        $(document).on("click", 'a[href$="/providers/booming"]', function (e) {
-          e.preventDefault();
-          window.location.href =
-            language === "tr"
-              ? "https://betredi109.com/tr/providers/booming"
-              : "https://betredi109.com/en/providers/booming";
-        });
-
-        $(document).on("click", 'a[href$="/providers/redtiger"]', function (e) {
-          e.preventDefault();
-          window.location.href =
-            language === "tr"
-              ? "https://betredi109.com/tr/providers/redtiger"
-              : "https://betredi109.com/en/providers/redtiger";
-        });
-
-        $(document).on(
-          "click",
-          'a[href$="/providers/pragmaticlive"]',
-          function (e) {
-            e.preventDefault();
-            window.location.href =
-              language === "tr"
-                ? "https://betredi109.com/tr/providers/pragmaticlive"
-                : "https://betredi109.com/en/providers/pragmaticlive";
-          }
-        );
-
-        $(document).on("click", 'a[href$="/providers/bgaming"]', function (e) {
-          e.preventDefault();
-          window.location.href =
-            language === "tr"
-              ? "https://betredi109.com/tr/providers/bgaming"
-              : "https://betredi109.com/en/providers/bgaming";
-        });
-
-        $(document).on("click", 'a[href$="/providers/gameart"]', function (e) {
-          e.preventDefault();
-          window.location.href =
-            language === "tr"
-              ? "https://betredi109.com/tr/providers/gameart"
-              : "https://betredi109.com/en/providers/gameart";
-        });
-
-        $(document).on("click", 'a[href$="/providers/fantasma"]', function (e) {
-          e.preventDefault();
-          window.location.href =
-            language === "tr"
-              ? "https://betredi109.com/tr/providers/fantasma"
-              : "https://betredi109.com/en/providers/fantasma";
-        });
-
-        $(document).on("click", 'a[href$="/providers/slotmill"]', function (e) {
-          e.preventDefault();
-          window.location.href =
-            language === "tr"
-              ? "https://betredi109.com/tr/providers/slotmill"
-              : "https://betredi109.com/en/providers/slotmill";
-        });
-
-        $(document).on(
-          "click",
-          'a[href$="/providers/1spin4win"]',
-          function (e) {
-            e.preventDefault();
-            window.location.href =
-              language === "tr"
-                ? "https://betredi109.com/tr/providers/1spin4win"
-                : "https://betredi109.com/en/providers/1spin4win";
-          }
-        );
-
-        $(document).on(
-          "click",
-          'a[href$="/providers/aesexybaccarat"]',
-          function (e) {
-            e.preventDefault();
-            window.location.href =
-              language === "tr"
-                ? "https://betredi109.com/tr/providers/aesexybaccarat"
-                : "https://betredi109.com/en/providers/aesexybaccarat";
-          }
-        );
-
-        $(document).on("click", 'a[href$="/providers/5men"]', function (e) {
-          e.preventDefault();
-          window.location.href =
-            language === "tr"
-              ? "https://betredi109.com/tr/providers/5men"
-              : "https://betredi109.com/en/providers/5men";
-        });
-
-        $(document).on(
-          "click",
-          'a[href$="/providers/novomatic"]',
-          function (e) {
-            e.preventDefault();
-            window.location.href =
-              language === "tr"
-                ? "https://betredi109.com/tr/providers/novomatic"
-                : "https://betredi109.com/en/providers/novomatic";
-          }
-        );
-
-        $(document).on("click", 'a[href$="/providers/7mojos"]', function (e) {
-          e.preventDefault();
-          window.location.href =
-            language === "tr"
-              ? "https://betredi109.com/tr/providers/7mojos"
-              : "https://betredi109.com/en/providers/7mojos";
-        });
-
-        $(document).on("click", 'a[href$="/providers/alg"]', function (e) {
-          e.preventDefault();
-          window.location.href =
-            language === "tr"
-              ? "https://betredi109.com/tr/providers/alg"
-              : "https://betredi109.com/en/providers/alg";
-        });
-
-        $(document).on("click", 'a[href$="/providers/amatic"]', function (e) {
-          e.preventDefault();
-          window.location.href =
-            language === "tr"
-              ? "https://betredi109.com/tr/providers/amatic"
-              : "https://betredi109.com/en/providers/amatic";
-        });
-
-        $(document).on(
-          "click",
-          'a[href$="/providers/endorphina"]',
-          function (e) {
-            e.preventDefault();
-            window.location.href =
-              language === "tr"
-                ? "https://betredi109.com/tr/providers/endorphina"
-                : "https://betredi109.com/en/providers/endorphina";
-          }
-        );
-
-        $(document).on("click", 'a[href$="/providers/pgsoft"]', function (e) {
-          e.preventDefault();
-          window.location.href =
-            language === "tr"
-              ? "https://betredi109.com/tr/providers/pgsoft"
-              : "https://betredi109.com/en/providers/pgsoft";
-        });
-
-        $(document).on("click", 'a[href$="/providers/apollo"]', function (e) {
-          e.preventDefault();
-          window.location.href =
-            language === "tr"
-              ? "https://betredi109.com/tr/providers/apollo"
-              : "https://betredi109.com/en/providers/apollo";
-        });
-
-        $(document).on(
-          "click",
-          'a[href$="/providers/asiagaming"]',
-          function (e) {
-            e.preventDefault();
-            window.location.href =
-              language === "tr"
-                ? "https://betredi109.com/tr/providers/asiagaming"
-                : "https://betredi109.com/en/providers/asiagaming";
-          }
-        );
-
-        $(document).on("click", 'a[href$="/providers/atomic"]', function (e) {
-          e.preventDefault();
-          window.location.href =
-            language === "tr"
-              ? "https://betredi109.com/tr/providers/atomic"
-              : "https://betredi109.com/en/providers/atomic";
-        });
-
-        $(document).on("click", 'a[href$="/providers/beefee"]', function (e) {
-          e.preventDefault();
-          window.location.href =
-            language === "tr"
-              ? "https://betredi109.com/tr/providers/beefee"
-              : "https://betredi109.com/en/providers/beefee";
-        });
-
-        $(document).on("click", 'a[href$="/providers/belatra"]', function (e) {
-          e.preventDefault();
-          window.location.href =
-            language === "tr"
-              ? "https://betredi109.com/tr/providers/belatra"
-              : "https://betredi109.com/en/providers/belatra";
-        });
-
-        $(document).on(
-          "click",
-          'a[href$="/providers/betsolutions"]',
-          function (e) {
-            e.preventDefault();
-            window.location.href =
-              language === "tr"
-                ? "https://betredi109.com/tr/providers/betsolutions"
-                : "https://betredi109.com/en/providers/betsolutions";
-          }
-        );
-
-        $(document).on("click", 'a[href$="/providers/bet2tech"]', function (e) {
-          e.preventDefault();
-          window.location.href =
-            language === "tr"
-              ? "https://betredi109.com/tr/providers/bet2tech"
-              : "https://betredi109.com/en/providers/bet2tech";
-        });
-
-        $(document).on(
-          "click",
-          'a[href$="/providers/beterlive"]',
-          function (e) {
-            e.preventDefault();
-            window.location.href =
-              language === "tr"
-                ? "https://betredi109.com/tr/providers/beterlive"
-                : "https://betredi109.com/en/providers/beterlive";
-          }
-        );
-
-        $(document).on(
-          "click",
-          'a[href$="/providers/betradarvs"]',
-          function (e) {
-            e.preventDefault();
-            window.location.href =
-              language === "tr"
-                ? "https://betredi109.com/tr/providers/betradarvs"
-                : "https://betredi109.com/en/providers/betradarvs";
-          }
-        );
-
-        $(document).on("click", 'a[href$="/providers/betsoft"]', function (e) {
-          e.preventDefault();
-          window.location.href =
-            language === "tr"
-              ? "https://betredi109.com/tr/providers/betsoft"
-              : "https://betredi109.com/en/providers/betsoft";
-        });
-
-        $(document).on("click", 'a[href$="/providers/eagaming"]', function (e) {
-          e.preventDefault();
-          window.location.href =
-            language === "tr"
-              ? "https://betredi109.com/tr/providers/eagaming"
-              : "https://betredi109.com/en/providers/eagaming";
-        });
-
-        $(document).on("click", 'a[href$="/providers/concept"]', function (e) {
-          e.preventDefault();
-          window.location.href =
-            language === "tr"
-              ? "https://betredi109.com/tr/providers/concept"
-              : "https://betredi109.com/en/providers/concept";
-        });
-
-        $(document).on("click", 'a[href$="/providers/cq9"]', function (e) {
-          e.preventDefault();
-          window.location.href =
-            language === "tr"
-              ? "https://betredi109.com/tr/providers/cq9"
-              : "https://betredi109.com/en/providers/cq9";
-        });
-
-        $(document).on("click", 'a[href$="/providers/ctgaming"]', function (e) {
-          e.preventDefault();
-          window.location.href =
-            language === "tr"
-              ? "https://betredi109.com/tr/providers/ctgaming"
-              : "https://betredi109.com/en/providers/ctgaming";
-        });
-
-        $(document).on(
-          "click",
-          'a[href$="/providers/everymatrix"]',
-          function (e) {
-            e.preventDefault();
-            window.location.href =
-              language === "tr"
-                ? "https://betredi109.com/tr/providers/everymatrix"
-                : "https://betredi109.com/en/providers/everymatrix";
-          }
-        );
-
-        $(document).on("click", 'a[href$="/providers/evoplay"]', function (e) {
-          e.preventDefault();
-          window.location.href =
-            language === "tr"
-              ? "https://betredi109.com/tr/providers/evoplay"
-              : "https://betredi109.com/en/providers/evoplay";
-        });
-
-        $(document).on("click", 'a[href$="/providers/ezugi"]', function (e) {
-          e.preventDefault();
-          window.location.href =
-            language === "tr"
-              ? "https://betredi109.com/tr/providers/ezugi"
-              : "https://betredi109.com/en/providers/ezugi";
-        });
-
-        $(document).on("click", 'a[href$="/providers/fazi"]', function (e) {
-          e.preventDefault();
-          window.location.href =
-            language === "tr"
-              ? "https://betredi109.com/tr/providers/fazi"
-              : "https://betredi109.com/en/providers/fazi";
-        });
-
-        $(document).on("click", 'a[href$="/providers/fugaso"]', function (e) {
-          e.preventDefault();
-          window.location.href =
-            language === "tr"
-              ? "https://betredi109.com/tr/providers/fugaso"
-              : "https://betredi109.com/en/providers/fugaso";
-        });
-
-        $(document).on("click", 'a[href$="/providers/gamebeat"]', function (e) {
-          e.preventDefault();
-          window.location.href =
-            language === "tr"
-              ? "https://betredi109.com/tr/providers/gamebeat"
-              : "https://betredi109.com/en/providers/gamebeat";
-        });
-
-        $(document).on(
-          "click",
-          'a[href$="/providers/gaming7777"]',
-          function (e) {
-            e.preventDefault();
-            window.location.href =
-              language === "tr"
-                ? "https://betredi109.com/tr/providers/gaming7777"
-                : "https://betredi109.com/en/providers/gaming7777";
-          }
-        );
-
-        $(document).on("click", 'a[href$="/providers/genii"]', function (e) {
-          e.preventDefault();
-          window.location.href =
-            language === "tr"
-              ? "https://betredi109.com/tr/providers/genii"
-              : "https://betredi109.com/en/providers/genii";
-        });
-
-        $(document).on("click", 'a[href$="/providers/givme"]', function (e) {
-          e.preventDefault();
-          window.location.href =
-            language === "tr"
-              ? "https://betredi109.com/tr/providers/givme"
-              : "https://betredi109.com/en/providers/givme";
-        });
-
-        $(document).on(
-          "click",
-          'a[href$="/providers/goldenhero"]',
-          function (e) {
-            e.preventDefault();
-            window.location.href =
-              language === "tr"
-                ? "https://betredi109.com/tr/providers/goldenhero"
-                : "https://betredi109.com/en/providers/goldenhero";
-          }
-        );
-
-        $(document).on("click", 'a[href$="/providers/habanero"]', function (e) {
-          e.preventDefault();
-          window.location.href =
-            language === "tr"
-              ? "https://betredi109.com/tr/providers/habanero"
-              : "https://betredi109.com/en/providers/habanero";
-        });
-
-        $(document).on("click", 'a[href$="/providers/hogaming"]', function (e) {
-          e.preventDefault();
-          window.location.href =
-            language === "tr"
-              ? "https://betredi109.com/tr/providers/hogaming"
-              : "https://betredi109.com/en/providers/hogaming";
-        });
-
-        $(document).on(
-          "click",
-          'a[href$="/providers/hollegames"]',
-          function (e) {
-            e.preventDefault();
-            window.location.href =
-              language === "tr"
-                ? "https://betredi109.com/tr/providers/hollegames"
-                : "https://betredi109.com/en/providers/hollegames";
-          }
-        );
-
-        $(document).on("click", 'a[href$="/providers/igrosoft"]', function (e) {
-          e.preventDefault();
-          window.location.href =
-            language === "tr"
-              ? "https://betredi109.com/tr/providers/igrosoft"
-              : "https://betredi109.com/en/providers/igrosoft";
-        });
-
-        $(document).on("click", 'a[href$="/providers/irondog"]', function (e) {
-          e.preventDefault();
-          window.location.href =
-            language === "tr"
-              ? "https://betredi109.com/tr/providers/irondog"
-              : "https://betredi109.com/en/providers/irondog";
-        });
-
-        $(document).on(
-          "click",
-          'a[href$="/providers/jaderabbit"]',
-          function (e) {
-            e.preventDefault();
-            window.location.href =
-              language === "tr"
-                ? "https://betredi109.com/tr/providers/jaderabbit"
-                : "https://betredi109.com/en/providers/jaderabbit";
-          }
-        );
-
-        $(document).on("click", 'a[href$="/providers/jdb"]', function (e) {
-          e.preventDefault();
-          window.location.href =
-            language === "tr"
-              ? "https://betredi109.com/tr/providers/jdb"
-              : "https://betredi109.com/en/providers/jdb";
-        });
-
-        $(document).on("click", 'a[href$="/providers/kalamba"]', function (e) {
-          e.preventDefault();
-          window.location.href =
-            language === "tr"
-              ? "https://betredi109.com/tr/providers/kalamba"
-              : "https://betredi109.com/en/providers/kalamba";
-        });
-
-        $(document).on("click", 'a[href$="/providers/kiron"]', function (e) {
-          e.preventDefault();
-          window.location.href =
-            language === "tr"
-              ? "https://betredi109.com/tr/providers/kiron"
-              : "https://betredi109.com/en/providers/kiron";
-        });
-
-        $(document).on("click", 'a[href$="/providers/leander"]', function (e) {
-          e.preventDefault();
-          window.location.href =
-            language === "tr"
-              ? "https://betredi109.com/tr/providers/leander"
-              : "https://betredi109.com/en/providers/leander";
-        });
-
-        $(document).on("click", 'a[href$="/providers/leap"]', function (e) {
-          e.preventDefault();
-          window.location.href =
-            language === "tr"
-              ? "https://betredi109.com/tr/providers/leap"
-              : "https://betredi109.com/en/providers/leap";
-        });
-
-        $(document).on(
-          "click",
-          'a[href$="/providers/livegames"]',
-          function (e) {
-            e.preventDefault();
-            window.location.href =
-              language === "tr"
-                ? "https://betredi109.com/tr/providers/livegames"
-                : "https://betredi109.com/en/providers/livegames";
-          }
-        );
-
-        $(document).on("click", 'a[href$="/providers/lucky"]', function (e) {
-          e.preventDefault();
-          window.location.href =
-            language === "tr"
-              ? "https://betredi109.com/tr/providers/lucky"
-              : "https://betredi109.com/en/providers/lucky";
-        });
-
-        $(document).on(
-          "click",
-          'a[href$="/providers/luckystreak"]',
-          function (e) {
-            e.preventDefault();
-            window.location.href =
-              language === "tr"
-                ? "https://betredi109.com/tr/providers/luckystreak"
-                : "https://betredi109.com/en/providers/luckystreak";
-          }
-        );
-
-        $(document).on(
-          "click",
-          'a[href$="/providers/mascotgaming"]',
-          function (e) {
-            e.preventDefault();
-            window.location.href =
-              language === "tr"
-                ? "https://betredi109.com/tr/providers/mascotgaming"
-                : "https://betredi109.com/en/providers/mascotgaming";
-          }
-        );
-
-        $(document).on(
-          "click",
-          'a[href$="/providers/merkurgaming"]',
-          function (e) {
-            e.preventDefault();
-            window.location.href =
-              language === "tr"
-                ? "https://betredi109.com/tr/providers/merkurgaming"
-                : "https://betredi109.com/en/providers/merkurgaming";
-          }
-        );
-
-        $(document).on("click", 'a[href$="/providers/mplay"]', function (e) {
-          e.preventDefault();
-          window.location.href =
-            language === "tr"
-              ? "https://betredi109.com/tr/providers/mplay"
-              : "https://betredi109.com/en/providers/mplay";
-        });
-
-        $(document).on("click", 'a[href$="/providers/mrslotty"]', function (e) {
-          e.preventDefault();
-          window.location.href =
-            language === "tr"
-              ? "https://betredi109.com/tr/providers/mrslotty"
-              : "https://betredi109.com/en/providers/mrslotty";
-        });
-
-        $(document).on("click", 'a[href$="/providers/netgame"]', function (e) {
-          e.preventDefault();
-          window.location.href =
-            language === "tr"
-              ? "https://betredi109.com/tr/providers/netgame"
-              : "https://betredi109.com/en/providers/netgame";
-        });
-
-        $(document).on("click", 'a[href$="/providers/nucleus"]', function (e) {
-          e.preventDefault();
-          window.location.href =
-            language === "tr"
-              ? "https://betredi109.com/tr/providers/nucleus"
-              : "https://betredi109.com/en/providers/nucleus";
-        });
-
-        $(document).on("click", 'a[href$="/providers/oryx"]', function (e) {
-          e.preventDefault();
-          window.location.href =
-            language === "tr"
-              ? "https://betredi109.com/tr/providers/oryx"
-              : "https://betredi109.com/en/providers/oryx";
-        });
-
-        $(document).on("click", 'a[href$="/providers/playtech"]', function (e) {
-          e.preventDefault();
-          window.location.href =
-            language === "tr"
-              ? "https://betredi109.com/tr/providers/playtech"
-              : "https://betredi109.com/en/providers/playtech";
-        });
-
-        $(document).on(
-          "click",
-          'a[href$="/providers/quickspin"]',
-          function (e) {
-            e.preventDefault();
-            window.location.href =
-              language === "tr"
-                ? "https://betredi109.com/tr/providers/quickspin"
-                : "https://betredi109.com/en/providers/quickspin";
-          }
-        );
-
-        $(document).on("click", 'a[href$="/providers/redrake"]', function (e) {
-          e.preventDefault();
-          window.location.href =
-            language === "tr"
-              ? "https://betredi109.com/tr/providers/redrake"
-              : "https://betredi109.com/en/providers/redrake";
-        });
-
-        $(document).on("click", 'a[href$="/providers/reevo"]', function (e) {
-          e.preventDefault();
-          window.location.href =
-            language === "tr"
-              ? "https://betredi109.com/tr/providers/reevo"
-              : "https://betredi109.com/en/providers/reevo";
-        });
-
-        $(document).on("click", 'a[href$="/providers/sagaming"]', function (e) {
-          e.preventDefault();
-          window.location.href =
-            language === "tr"
-              ? "https://betredi109.com/tr/providers/sagaming"
-              : "https://betredi109.com/en/providers/sagaming";
-        });
-
-        $(document).on("click", 'a[href$="/providers/salsa"]', function (e) {
-          e.preventDefault();
-          window.location.href =
-            language === "tr"
-              ? "https://betredi109.com/tr/providers/salsa"
-              : "https://betredi109.com/en/providers/salsa";
-        });
-
-        $(document).on(
-          "click",
-          'a[href$="/providers/spinomenal"]',
-          function (e) {
-            e.preventDefault();
-            window.location.href =
-              language === "tr"
-                ? "https://betredi109.com/tr/providers/spinomenal"
-                : "https://betredi109.com/en/providers/spinomenal";
-          }
-        );
-
-        $(document).on("click", 'a[href$="/providers/spinza"]', function (e) {
-          e.preventDefault();
-          window.location.href =
-            language === "tr"
-              ? "https://betredi109.com/tr/providers/spinza"
-              : "https://betredi109.com/en/providers/spinza";
-        });
-
-        $(document).on("click", 'a[href$="/providers/spribe"]', function (e) {
-          e.preventDefault();
-          window.location.href =
-            language === "tr"
-              ? "https://betredi109.com/tr/providers/spribe"
-              : "https://betredi109.com/en/providers/spribe";
-        });
-
-        $(document).on("click", 'a[href$="/providers/swintt"]', function (e) {
-          e.preventDefault();
-          window.location.href =
-            language === "tr"
-              ? "https://betredi109.com/tr/providers/swintt"
-              : "https://betredi109.com/en/providers/swintt";
-        });
-
-        $(document).on(
-          "click",
-          'a[href$="/providers/tomhornnative"]',
-          function (e) {
-            e.preventDefault();
-            window.location.href =
-              language === "tr"
-                ? "https://betredi109.com/tr/providers/tomhornnative"
-                : "https://betredi109.com/en/providers/tomhornnative";
-          }
-        );
-
-        $(document).on(
-          "click",
-          'a[href$="/providers/turbogames"]',
-          function (e) {
-            e.preventDefault();
-            window.location.href =
-              language === "tr"
-                ? "https://betredi109.com/tr/providers/turbogames"
-                : "https://betredi109.com/en/providers/turbogames";
-          }
-        );
-
-        $(document).on("click", 'a[href$="/providers/tvbet"]', function (e) {
-          e.preventDefault();
-          window.location.href =
-            language === "tr"
-              ? "https://betredi109.com/tr/providers/tvbet"
-              : "https://betredi109.com/en/providers/tvbet";
-        });
-
-        $(document).on(
-          "click",
-          'a[href$="/providers/vivogaming"]',
-          function (e) {
-            e.preventDefault();
-            window.location.href =
-              language === "tr"
-                ? "https://betredi109.com/tr/providers/vivogaming"
-                : "https://betredi109.com/en/providers/vivogaming";
-          }
-        );
-
-        $(document).on("click", 'a[href$="/providers/wizard"]', function (e) {
-          e.preventDefault();
-          window.location.href =
-            language === "tr"
-              ? "https://betredi109.com/tr/providers/wizard"
-              : "https://betredi109.com/en/providers/wizard";
-        });
-
-        $(document).on(
-          "click",
-          'a[href$="/providers/worldmatch"]',
-          function (e) {
-            e.preventDefault();
-            window.location.href =
-              language === "tr"
-                ? "https://betredi109.com/tr/providers/worldmatch"
-                : "https://betredi109.com/en/providers/worldmatch";
-          }
-        );
-
-        $(document).on(
-          "click",
-          'a[href$="/providers/xprogaming"]',
-          function (e) {
-            e.preventDefault();
-            window.location.href =
-              language === "tr"
-                ? "https://betredi109.com/tr/providers/xprogaming"
-                : "https://betredi109.com/en/providers/xprogaming";
-          }
-        );
-
-        $(document).on(
-          "click",
-          'a[href$="/providers/yggdrasil"]',
-          function (e) {
-            e.preventDefault();
-            window.location.href =
-              language === "tr"
-                ? "https://betredi109.com/tr/providers/yggdrasil"
-                : "https://betredi109.com/en/providers/yggdrasil";
-          }
-        );
-
-        $(document).on("click", 'a[href$="/providers/zillion"]', function (e) {
-          e.preventDefault();
-          window.location.href =
-            language === "tr"
-              ? "https://betredi109.com/tr/providers/zillion"
-              : "https://betredi109.com/en/providers/zillion";
-        });
-
-        $(document).on("click", 'a[href$="/providers/ebetlab"]', function (e) {
-          e.preventDefault();
-          window.location.href =
-            language === "tr"
-              ? "https://betredi109.com/tr/providers/ebetlab"
-              : "https://betredi109.com/en/providers/ebetlab";
-        });
-
-        $(document).on("click", 'a[href$="/providers/imagine"]', function (e) {
-          e.preventDefault();
-          window.location.href =
-            language === "tr"
-              ? "https://betredi109.com/tr/providers/imagine"
-              : "https://betredi109.com/en/providers/imagine";
-        });
-
-        $(document).on("click", 'a[href$="/providers/jiliasia"]', function (e) {
-          e.preventDefault();
-          window.location.href =
-            language === "tr"
-              ? "https://betredi109.com/tr/providers/jiliasia"
-              : "https://betredi109.com/en/providers/jiliasia";
-        });
-
-        $(document).on("click", 'a[href$="/providers/royal"]', function (e) {
-          e.preventDefault();
-          window.location.href =
-            language === "tr"
-              ? "https://betredi109.com/tr/providers/royal"
-              : "https://betredi109.com/en/providers/royal";
-        });
-
-        $(document).on("click", 'a[href$="/providers/tada"]', function (e) {
-          e.preventDefault();
-          window.location.href =
-            language === "tr"
-              ? "https://betredi109.com/tr/providers/tada"
-              : "https://betredi109.com/en/providers/tada";
-        });
-
-        $(document).on("click", 'a[href$="/providers/zeus"]', function (e) {
-          e.preventDefault();
-          window.location.href =
-            language === "tr"
-              ? "https://betredi109.com/tr/providers/zeus"
-              : "https://betredi109.com/en/providers/zeus";
-        });
-
-        $(document).on("click", 'a[href$="/providers/peter"]', function (e) {
-          e.preventDefault();
-          window.location.href =
-            language === "tr"
-              ? "https://betredi109.com/tr/providers/peter"
-              : "https://betredi109.com/en/providers/peter";
-        });
-
-        $(document).on("click", 'a[href$="/providers/topspin"]', function (e) {
-          e.preventDefault();
-          window.location.href =
-            language === "tr"
-              ? "https://betredi109.com/tr/providers/topspin"
-              : "https://betredi109.com/en/providers/topspin";
-        });
+        // ! No needed.
+        // $(document).on("click", "#telegram-button", function (e) {
+        //   e.preventDefault();
+        //   window.open("https://t.me/betredi", "_blank");
+        // });
+
+        // $(document).on("click", 'a[href$="/promotions"]', function (e) {
+        //   e.preventDefault();
+        //   window.location.href =
+        //     language === "tr"
+        //       ? "https://betredi109.com/tr/promotions"
+        //       : "https://betredi109.com/en/promotions";
+        // });
+
+        // $(document).on("click", 'a[href$="/tournaments"]', function (e) {
+        //   e.preventDefault();
+        //   window.location.href =
+        //     language === "tr"
+        //       ? "https://betredi109.com/tr/tournaments"
+        //       : "https://betredi109.com/en/tournaments";
+        // });
+
+        // $(document).on("click", 'a[href*="/settings"]', function (e) {
+        //   e.preventDefault();
+        //   // window.location.assign(
+        //   //   language === "tr"
+        //   //     ? "https://betredi109.com/tr/settings?tab=general"
+        //   //     : "https://betredi109.com/en/settings?tab=general"
+        //   // );
+        //   if (language === "tr")
+        //     window.location.href = "https://betredi109.com/tr/settings";
+        //   if (language === "en")
+        //     window.location.href = "https://betredi109.com/en/settings";
+        //   // window.location.href = "https://betredi109.com/tr/settings";
+        // });
+
+        // $(document).on("click", 'a[href$="/transactions"]', function (e) {
+        //   e.preventDefault();
+        //   window.location.href =
+        //     language === "tr"
+        //       ? "https://betredi109.com/tr/transactions"
+        //       : "https://betredi109.com/en/transactions";
+        // });
+
+        // $(document).on("click", 'a[href$="/affiliate"]', function (e) {
+        //   e.preventDefault();
+        //   window.location.href =
+        //     language === "tr"
+        //       ? "https://betredi109.com/tr/affiliate"
+        //       : "https://betredi109.com/en/affiliate";
+        // });
+
+        // $(document).on("click", 'a[href$="/policy"]', function (e) {
+        //   e.preventDefault();
+        //   window.location.href =
+        //     language === "tr"
+        //       ? "https://betredi109.com/tr/policy"
+        //       : "https://betredi109.com/en/policy";
+        // });
+
+        // $(document).on("click", 'a[href$="/casino/slots"]', function (e) {
+        //   e.preventDefault();
+        //   window.location.href =
+        //     language === "tr"
+        //       ? "https://betredi109.com/tr/casino/slots"
+        //       : "https://betredi109.com/en/casino/slots";
+        // });
+
+        // $(document).on("click", 'a[href$="/live-casino"]', function (e) {
+        //   e.preventDefault();
+        //   window.location.href =
+        //     language === "tr"
+        //       ? "https://betredi109.com/tr/live-casino"
+        //       : "https://betredi109.com/en/live-casino";
+        // });
+
+        // $(document).on("click", 'a[href$="/sportsbook"]', function (e) {
+        //   e.preventDefault();
+        //   window.location.href =
+        //     language === "tr"
+        //       ? "https://betredi109.com/tr/sportsbook"
+        //       : "https://betredi109.com/en/sportsbook";
+        // });
+
+        // $(document).on(
+        //   "click",
+        //   'a[href$="/casino/category/exclusive"]',
+        //   function (e) {
+        //     e.preventDefault();
+        //     window.location.href =
+        //       language === "tr"
+        //         ? "https://betredi109.com/tr/casino/category/exclusive"
+        //         : "https://betredi109.com/en/casino/category/exclusive";
+        //   }
+        // );
+
+        // $(document).on(
+        //   "click",
+        //   'a[href$="/casino/virtual_sports"]',
+        //   function (e) {
+        //     e.preventDefault();
+        //     window.location.href =
+        //       language === "tr"
+        //         ? "https://betredi109.com/tr/casino/virtual_sports"
+        //         : "https://betredi109.com/en/casino/virtual_sports";
+        //   }
+        // );
+
+        // $(document).on("click", 'a[href$="/vip"]', function (e) {
+        //   e.preventDefault();
+        //   window.location.href =
+        //     language === "tr"
+        //       ? "https://betredi109.com/tr/vip"
+        //       : "https://betredi109.com/en/vip";
+        // });
+
+        // $(document).on("click", 'a[href$="/casino"]', function (e) {
+        //   e.preventDefault();
+        //   window.location.href =
+        //     language === "tr"
+        //       ? "https://betredi109.com/tr/casino"
+        //       : "https://betredi109.com/en/casino";
+        // });
+
+        // $(document).on("click", 'a[href$="/e-sport"]', function (e) {
+        //   e.preventDefault();
+        //   window.location.href =
+        //     language === "tr"
+        //       ? "https://betredi109.com/tr/e-sport"
+        //       : "https://betredi109.com/en/e-sport";
+        // });
+
+        // $(document).on("click", 'a[href$="/favorites"]', function (e) {
+        //   e.preventDefault();
+        //   window.location.href =
+        //     language === "tr"
+        //       ? "https://betredi109.com/tr/favorites"
+        //       : "https://betredi109.com/en/favorites";
+        // });
+
+        // $(document).on("click", 'a[href$="/trade"]', function (e) {
+        //   e.preventDefault();
+        //   window.location.href =
+        //     language === "tr"
+        //       ? "https://betredi109.com/tr/trade"
+        //       : "https://betredi109.com/en/trade";
+        // });
+
+        // $(document).on("click", 'a[href$="/providers"]', function (e) {
+        //   e.preventDefault();
+        //   window.location.href =
+        //     language === "tr"
+        //       ? "https://betredi109.com/tr/providers"
+        //       : "https://betredi109.com/en/providers";
+        // });
+
+        // $(document).on(
+        //   "click",
+        //   'a[href$="/providers/pragmaticplay"]',
+        //   function (e) {
+        //     e.preventDefault();
+        //     window.location.href =
+        //       language === "tr"
+        //         ? "https://betredi109.com/tr/providers/pragmaticplay"
+        //         : "https://betredi109.com/en/providers/pragmaticplay";
+        //   }
+        // );
+
+        // $(document).on(
+        //   "click",
+        //   'a[href$="/providers/evolution"]',
+        //   function (e) {
+        //     e.preventDefault();
+        //     window.location.href =
+        //       language === "tr"
+        //         ? "https://betredi109.com/tr/providers/evolution"
+        //         : "https://betredi109.com/en/providers/evolution";
+        //   }
+        // );
+
+        // $(document).on("click", 'a[href$="/providers/hacksaw"]', function (e) {
+        //   e.preventDefault();
+        //   window.location.href =
+        //     language === "tr"
+        //       ? "https://betredi109.com/tr/providers/hacksaw"
+        //       : "https://betredi109.com/en/providers/hacksaw";
+        // });
+
+        // $(document).on("click", 'a[href$="/providers/egt"]', function (e) {
+        //   e.preventDefault();
+        //   window.location.href =
+        //     language === "tr"
+        //       ? "https://betredi109.com/tr/providers/egt"
+        //       : "https://betredi109.com/en/providers/egt";
+        // });
+
+        // $(document).on(
+        //   "click",
+        //   'a[href$="/providers/nolimitcity"]',
+        //   function (e) {
+        //     e.preventDefault();
+        //     window.location.href =
+        //       language === "tr"
+        //         ? "https://betredi109.com/tr/providers/nolimitcity"
+        //         : "https://betredi109.com/en/providers/nolimitcity";
+        //   }
+        // );
+
+        // $(document).on("click", 'a[href$="/providers/egt"]', function (e) {
+        //   e.preventDefault();
+        //   window.location.href =
+        //     language === "tr"
+        //       ? "https://betredi109.com/tr/providers/egt"
+        //       : "https://betredi109.com/en/providers/egt";
+        // });
+
+        // $(document).on("click", 'a[href$="/providers/playson"]', function (e) {
+        //   e.preventDefault();
+        //   window.location.href =
+        //     language === "tr"
+        //       ? "https://betredi109.com/tr/providers/playson"
+        //       : "https://betredi109.com/en/providers/playson";
+        // });
+
+        // $(document).on("click", 'a[href$="/providers/netent"]', function (e) {
+        //   e.preventDefault();
+        //   window.location.href =
+        //     language === "tr"
+        //       ? "https://betredi109.com/tr/providers/netent"
+        //       : "https://betredi109.com/en/providers/netent";
+        // });
+
+        // $(document).on("click", 'a[href$="/providers/popiplay"]', function (e) {
+        //   e.preventDefault();
+        //   window.location.href =
+        //     language === "tr"
+        //       ? "https://betredi109.com/tr/providers/popiplay"
+        //       : "https://betredi109.com/en/providers/popiplay";
+        // });
+
+        // $(document).on(
+        //   "click",
+        //   'a[href$="/providers/thunderkick"]',
+        //   function (e) {
+        //     e.preventDefault();
+        //     window.location.href =
+        //       language === "tr"
+        //         ? "https://betredi109.com/tr/providers/thunderkick"
+        //         : "https://betredi109.com/en/providers/thunderkick";
+        //   }
+        // );
+
+        // $(document).on("click", 'a[href$="/providers/booming"]', function (e) {
+        //   e.preventDefault();
+        //   window.location.href =
+        //     language === "tr"
+        //       ? "https://betredi109.com/tr/providers/booming"
+        //       : "https://betredi109.com/en/providers/booming";
+        // });
+
+        // $(document).on("click", 'a[href$="/providers/redtiger"]', function (e) {
+        //   e.preventDefault();
+        //   window.location.href =
+        //     language === "tr"
+        //       ? "https://betredi109.com/tr/providers/redtiger"
+        //       : "https://betredi109.com/en/providers/redtiger";
+        // });
+
+        // $(document).on(
+        //   "click",
+        //   'a[href$="/providers/pragmaticlive"]',
+        //   function (e) {
+        //     e.preventDefault();
+        //     window.location.href =
+        //       language === "tr"
+        //         ? "https://betredi109.com/tr/providers/pragmaticlive"
+        //         : "https://betredi109.com/en/providers/pragmaticlive";
+        //   }
+        // );
+
+        // $(document).on("click", 'a[href$="/providers/bgaming"]', function (e) {
+        //   e.preventDefault();
+        //   window.location.href =
+        //     language === "tr"
+        //       ? "https://betredi109.com/tr/providers/bgaming"
+        //       : "https://betredi109.com/en/providers/bgaming";
+        // });
+
+        // $(document).on("click", 'a[href$="/providers/gameart"]', function (e) {
+        //   e.preventDefault();
+        //   window.location.href =
+        //     language === "tr"
+        //       ? "https://betredi109.com/tr/providers/gameart"
+        //       : "https://betredi109.com/en/providers/gameart";
+        // });
+
+        // $(document).on("click", 'a[href$="/providers/fantasma"]', function (e) {
+        //   e.preventDefault();
+        //   window.location.href =
+        //     language === "tr"
+        //       ? "https://betredi109.com/tr/providers/fantasma"
+        //       : "https://betredi109.com/en/providers/fantasma";
+        // });
+
+        // $(document).on("click", 'a[href$="/providers/slotmill"]', function (e) {
+        //   e.preventDefault();
+        //   window.location.href =
+        //     language === "tr"
+        //       ? "https://betredi109.com/tr/providers/slotmill"
+        //       : "https://betredi109.com/en/providers/slotmill";
+        // });
+
+        // $(document).on(
+        //   "click",
+        //   'a[href$="/providers/1spin4win"]',
+        //   function (e) {
+        //     e.preventDefault();
+        //     window.location.href =
+        //       language === "tr"
+        //         ? "https://betredi109.com/tr/providers/1spin4win"
+        //         : "https://betredi109.com/en/providers/1spin4win";
+        //   }
+        // );
+
+        // $(document).on(
+        //   "click",
+        //   'a[href$="/providers/aesexybaccarat"]',
+        //   function (e) {
+        //     e.preventDefault();
+        //     window.location.href =
+        //       language === "tr"
+        //         ? "https://betredi109.com/tr/providers/aesexybaccarat"
+        //         : "https://betredi109.com/en/providers/aesexybaccarat";
+        //   }
+        // );
+
+        // $(document).on("click", 'a[href$="/providers/5men"]', function (e) {
+        //   e.preventDefault();
+        //   window.location.href =
+        //     language === "tr"
+        //       ? "https://betredi109.com/tr/providers/5men"
+        //       : "https://betredi109.com/en/providers/5men";
+        // });
+
+        // $(document).on(
+        //   "click",
+        //   'a[href$="/providers/novomatic"]',
+        //   function (e) {
+        //     e.preventDefault();
+        //     window.location.href =
+        //       language === "tr"
+        //         ? "https://betredi109.com/tr/providers/novomatic"
+        //         : "https://betredi109.com/en/providers/novomatic";
+        //   }
+        // );
+
+        // $(document).on("click", 'a[href$="/providers/7mojos"]', function (e) {
+        //   e.preventDefault();
+        //   window.location.href =
+        //     language === "tr"
+        //       ? "https://betredi109.com/tr/providers/7mojos"
+        //       : "https://betredi109.com/en/providers/7mojos";
+        // });
+
+        // $(document).on("click", 'a[href$="/providers/alg"]', function (e) {
+        //   e.preventDefault();
+        //   window.location.href =
+        //     language === "tr"
+        //       ? "https://betredi109.com/tr/providers/alg"
+        //       : "https://betredi109.com/en/providers/alg";
+        // });
+
+        // $(document).on("click", 'a[href$="/providers/amatic"]', function (e) {
+        //   e.preventDefault();
+        //   window.location.href =
+        //     language === "tr"
+        //       ? "https://betredi109.com/tr/providers/amatic"
+        //       : "https://betredi109.com/en/providers/amatic";
+        // });
+
+        // $(document).on(
+        //   "click",
+        //   'a[href$="/providers/endorphina"]',
+        //   function (e) {
+        //     e.preventDefault();
+        //     window.location.href =
+        //       language === "tr"
+        //         ? "https://betredi109.com/tr/providers/endorphina"
+        //         : "https://betredi109.com/en/providers/endorphina";
+        //   }
+        // );
+
+        // $(document).on("click", 'a[href$="/providers/pgsoft"]', function (e) {
+        //   e.preventDefault();
+        //   window.location.href =
+        //     language === "tr"
+        //       ? "https://betredi109.com/tr/providers/pgsoft"
+        //       : "https://betredi109.com/en/providers/pgsoft";
+        // });
+
+        // $(document).on("click", 'a[href$="/providers/apollo"]', function (e) {
+        //   e.preventDefault();
+        //   window.location.href =
+        //     language === "tr"
+        //       ? "https://betredi109.com/tr/providers/apollo"
+        //       : "https://betredi109.com/en/providers/apollo";
+        // });
+
+        // $(document).on(
+        //   "click",
+        //   'a[href$="/providers/asiagaming"]',
+        //   function (e) {
+        //     e.preventDefault();
+        //     window.location.href =
+        //       language === "tr"
+        //         ? "https://betredi109.com/tr/providers/asiagaming"
+        //         : "https://betredi109.com/en/providers/asiagaming";
+        //   }
+        // );
+
+        // $(document).on("click", 'a[href$="/providers/atomic"]', function (e) {
+        //   e.preventDefault();
+        //   window.location.href =
+        //     language === "tr"
+        //       ? "https://betredi109.com/tr/providers/atomic"
+        //       : "https://betredi109.com/en/providers/atomic";
+        // });
+
+        // $(document).on("click", 'a[href$="/providers/beefee"]', function (e) {
+        //   e.preventDefault();
+        //   window.location.href =
+        //     language === "tr"
+        //       ? "https://betredi109.com/tr/providers/beefee"
+        //       : "https://betredi109.com/en/providers/beefee";
+        // });
+
+        // $(document).on("click", 'a[href$="/providers/belatra"]', function (e) {
+        //   e.preventDefault();
+        //   window.location.href =
+        //     language === "tr"
+        //       ? "https://betredi109.com/tr/providers/belatra"
+        //       : "https://betredi109.com/en/providers/belatra";
+        // });
+
+        // $(document).on(
+        //   "click",
+        //   'a[href$="/providers/betsolutions"]',
+        //   function (e) {
+        //     e.preventDefault();
+        //     window.location.href =
+        //       language === "tr"
+        //         ? "https://betredi109.com/tr/providers/betsolutions"
+        //         : "https://betredi109.com/en/providers/betsolutions";
+        //   }
+        // );
+
+        // $(document).on("click", 'a[href$="/providers/bet2tech"]', function (e) {
+        //   e.preventDefault();
+        //   window.location.href =
+        //     language === "tr"
+        //       ? "https://betredi109.com/tr/providers/bet2tech"
+        //       : "https://betredi109.com/en/providers/bet2tech";
+        // });
+
+        // $(document).on(
+        //   "click",
+        //   'a[href$="/providers/beterlive"]',
+        //   function (e) {
+        //     e.preventDefault();
+        //     window.location.href =
+        //       language === "tr"
+        //         ? "https://betredi109.com/tr/providers/beterlive"
+        //         : "https://betredi109.com/en/providers/beterlive";
+        //   }
+        // );
+
+        // $(document).on(
+        //   "click",
+        //   'a[href$="/providers/betradarvs"]',
+        //   function (e) {
+        //     e.preventDefault();
+        //     window.location.href =
+        //       language === "tr"
+        //         ? "https://betredi109.com/tr/providers/betradarvs"
+        //         : "https://betredi109.com/en/providers/betradarvs";
+        //   }
+        // );
+
+        // $(document).on("click", 'a[href$="/providers/betsoft"]', function (e) {
+        //   e.preventDefault();
+        //   window.location.href =
+        //     language === "tr"
+        //       ? "https://betredi109.com/tr/providers/betsoft"
+        //       : "https://betredi109.com/en/providers/betsoft";
+        // });
+
+        // $(document).on("click", 'a[href$="/providers/eagaming"]', function (e) {
+        //   e.preventDefault();
+        //   window.location.href =
+        //     language === "tr"
+        //       ? "https://betredi109.com/tr/providers/eagaming"
+        //       : "https://betredi109.com/en/providers/eagaming";
+        // });
+
+        // $(document).on("click", 'a[href$="/providers/concept"]', function (e) {
+        //   e.preventDefault();
+        //   window.location.href =
+        //     language === "tr"
+        //       ? "https://betredi109.com/tr/providers/concept"
+        //       : "https://betredi109.com/en/providers/concept";
+        // });
+
+        // $(document).on("click", 'a[href$="/providers/cq9"]', function (e) {
+        //   e.preventDefault();
+        //   window.location.href =
+        //     language === "tr"
+        //       ? "https://betredi109.com/tr/providers/cq9"
+        //       : "https://betredi109.com/en/providers/cq9";
+        // });
+
+        // $(document).on("click", 'a[href$="/providers/ctgaming"]', function (e) {
+        //   e.preventDefault();
+        //   window.location.href =
+        //     language === "tr"
+        //       ? "https://betredi109.com/tr/providers/ctgaming"
+        //       : "https://betredi109.com/en/providers/ctgaming";
+        // });
+
+        // $(document).on(
+        //   "click",
+        //   'a[href$="/providers/everymatrix"]',
+        //   function (e) {
+        //     e.preventDefault();
+        //     window.location.href =
+        //       language === "tr"
+        //         ? "https://betredi109.com/tr/providers/everymatrix"
+        //         : "https://betredi109.com/en/providers/everymatrix";
+        //   }
+        // );
+
+        // $(document).on("click", 'a[href$="/providers/evoplay"]', function (e) {
+        //   e.preventDefault();
+        //   window.location.href =
+        //     language === "tr"
+        //       ? "https://betredi109.com/tr/providers/evoplay"
+        //       : "https://betredi109.com/en/providers/evoplay";
+        // });
+
+        // $(document).on("click", 'a[href$="/providers/ezugi"]', function (e) {
+        //   e.preventDefault();
+        //   window.location.href =
+        //     language === "tr"
+        //       ? "https://betredi109.com/tr/providers/ezugi"
+        //       : "https://betredi109.com/en/providers/ezugi";
+        // });
+
+        // $(document).on("click", 'a[href$="/providers/fazi"]', function (e) {
+        //   e.preventDefault();
+        //   window.location.href =
+        //     language === "tr"
+        //       ? "https://betredi109.com/tr/providers/fazi"
+        //       : "https://betredi109.com/en/providers/fazi";
+        // });
+
+        // $(document).on("click", 'a[href$="/providers/fugaso"]', function (e) {
+        //   e.preventDefault();
+        //   window.location.href =
+        //     language === "tr"
+        //       ? "https://betredi109.com/tr/providers/fugaso"
+        //       : "https://betredi109.com/en/providers/fugaso";
+        // });
+
+        // $(document).on("click", 'a[href$="/providers/gamebeat"]', function (e) {
+        //   e.preventDefault();
+        //   window.location.href =
+        //     language === "tr"
+        //       ? "https://betredi109.com/tr/providers/gamebeat"
+        //       : "https://betredi109.com/en/providers/gamebeat";
+        // });
+
+        // $(document).on(
+        //   "click",
+        //   'a[href$="/providers/gaming7777"]',
+        //   function (e) {
+        //     e.preventDefault();
+        //     window.location.href =
+        //       language === "tr"
+        //         ? "https://betredi109.com/tr/providers/gaming7777"
+        //         : "https://betredi109.com/en/providers/gaming7777";
+        //   }
+        // );
+
+        // $(document).on("click", 'a[href$="/providers/genii"]', function (e) {
+        //   e.preventDefault();
+        //   window.location.href =
+        //     language === "tr"
+        //       ? "https://betredi109.com/tr/providers/genii"
+        //       : "https://betredi109.com/en/providers/genii";
+        // });
+
+        // $(document).on("click", 'a[href$="/providers/givme"]', function (e) {
+        //   e.preventDefault();
+        //   window.location.href =
+        //     language === "tr"
+        //       ? "https://betredi109.com/tr/providers/givme"
+        //       : "https://betredi109.com/en/providers/givme";
+        // });
+
+        // $(document).on(
+        //   "click",
+        //   'a[href$="/providers/goldenhero"]',
+        //   function (e) {
+        //     e.preventDefault();
+        //     window.location.href =
+        //       language === "tr"
+        //         ? "https://betredi109.com/tr/providers/goldenhero"
+        //         : "https://betredi109.com/en/providers/goldenhero";
+        //   }
+        // );
+
+        // $(document).on("click", 'a[href$="/providers/habanero"]', function (e) {
+        //   e.preventDefault();
+        //   window.location.href =
+        //     language === "tr"
+        //       ? "https://betredi109.com/tr/providers/habanero"
+        //       : "https://betredi109.com/en/providers/habanero";
+        // });
+
+        // $(document).on("click", 'a[href$="/providers/hogaming"]', function (e) {
+        //   e.preventDefault();
+        //   window.location.href =
+        //     language === "tr"
+        //       ? "https://betredi109.com/tr/providers/hogaming"
+        //       : "https://betredi109.com/en/providers/hogaming";
+        // });
+
+        // $(document).on(
+        //   "click",
+        //   'a[href$="/providers/hollegames"]',
+        //   function (e) {
+        //     e.preventDefault();
+        //     window.location.href =
+        //       language === "tr"
+        //         ? "https://betredi109.com/tr/providers/hollegames"
+        //         : "https://betredi109.com/en/providers/hollegames";
+        //   }
+        // );
+
+        // $(document).on("click", 'a[href$="/providers/igrosoft"]', function (e) {
+        //   e.preventDefault();
+        //   window.location.href =
+        //     language === "tr"
+        //       ? "https://betredi109.com/tr/providers/igrosoft"
+        //       : "https://betredi109.com/en/providers/igrosoft";
+        // });
+
+        // $(document).on("click", 'a[href$="/providers/irondog"]', function (e) {
+        //   e.preventDefault();
+        //   window.location.href =
+        //     language === "tr"
+        //       ? "https://betredi109.com/tr/providers/irondog"
+        //       : "https://betredi109.com/en/providers/irondog";
+        // });
+
+        // $(document).on(
+        //   "click",
+        //   'a[href$="/providers/jaderabbit"]',
+        //   function (e) {
+        //     e.preventDefault();
+        //     window.location.href =
+        //       language === "tr"
+        //         ? "https://betredi109.com/tr/providers/jaderabbit"
+        //         : "https://betredi109.com/en/providers/jaderabbit";
+        //   }
+        // );
+
+        // $(document).on("click", 'a[href$="/providers/jdb"]', function (e) {
+        //   e.preventDefault();
+        //   window.location.href =
+        //     language === "tr"
+        //       ? "https://betredi109.com/tr/providers/jdb"
+        //       : "https://betredi109.com/en/providers/jdb";
+        // });
+
+        // $(document).on("click", 'a[href$="/providers/kalamba"]', function (e) {
+        //   e.preventDefault();
+        //   window.location.href =
+        //     language === "tr"
+        //       ? "https://betredi109.com/tr/providers/kalamba"
+        //       : "https://betredi109.com/en/providers/kalamba";
+        // });
+
+        // $(document).on("click", 'a[href$="/providers/kiron"]', function (e) {
+        //   e.preventDefault();
+        //   window.location.href =
+        //     language === "tr"
+        //       ? "https://betredi109.com/tr/providers/kiron"
+        //       : "https://betredi109.com/en/providers/kiron";
+        // });
+
+        // $(document).on("click", 'a[href$="/providers/leander"]', function (e) {
+        //   e.preventDefault();
+        //   window.location.href =
+        //     language === "tr"
+        //       ? "https://betredi109.com/tr/providers/leander"
+        //       : "https://betredi109.com/en/providers/leander";
+        // });
+
+        // $(document).on("click", 'a[href$="/providers/leap"]', function (e) {
+        //   e.preventDefault();
+        //   window.location.href =
+        //     language === "tr"
+        //       ? "https://betredi109.com/tr/providers/leap"
+        //       : "https://betredi109.com/en/providers/leap";
+        // });
+
+        // $(document).on(
+        //   "click",
+        //   'a[href$="/providers/livegames"]',
+        //   function (e) {
+        //     e.preventDefault();
+        //     window.location.href =
+        //       language === "tr"
+        //         ? "https://betredi109.com/tr/providers/livegames"
+        //         : "https://betredi109.com/en/providers/livegames";
+        //   }
+        // );
+
+        // $(document).on("click", 'a[href$="/providers/lucky"]', function (e) {
+        //   e.preventDefault();
+        //   window.location.href =
+        //     language === "tr"
+        //       ? "https://betredi109.com/tr/providers/lucky"
+        //       : "https://betredi109.com/en/providers/lucky";
+        // });
+
+        // $(document).on(
+        //   "click",
+        //   'a[href$="/providers/luckystreak"]',
+        //   function (e) {
+        //     e.preventDefault();
+        //     window.location.href =
+        //       language === "tr"
+        //         ? "https://betredi109.com/tr/providers/luckystreak"
+        //         : "https://betredi109.com/en/providers/luckystreak";
+        //   }
+        // );
+
+        // $(document).on(
+        //   "click",
+        //   'a[href$="/providers/mascotgaming"]',
+        //   function (e) {
+        //     e.preventDefault();
+        //     window.location.href =
+        //       language === "tr"
+        //         ? "https://betredi109.com/tr/providers/mascotgaming"
+        //         : "https://betredi109.com/en/providers/mascotgaming";
+        //   }
+        // );
+
+        // $(document).on(
+        //   "click",
+        //   'a[href$="/providers/merkurgaming"]',
+        //   function (e) {
+        //     e.preventDefault();
+        //     window.location.href =
+        //       language === "tr"
+        //         ? "https://betredi109.com/tr/providers/merkurgaming"
+        //         : "https://betredi109.com/en/providers/merkurgaming";
+        //   }
+        // );
+
+        // $(document).on("click", 'a[href$="/providers/mplay"]', function (e) {
+        //   e.preventDefault();
+        //   window.location.href =
+        //     language === "tr"
+        //       ? "https://betredi109.com/tr/providers/mplay"
+        //       : "https://betredi109.com/en/providers/mplay";
+        // });
+
+        // $(document).on("click", 'a[href$="/providers/mrslotty"]', function (e) {
+        //   e.preventDefault();
+        //   window.location.href =
+        //     language === "tr"
+        //       ? "https://betredi109.com/tr/providers/mrslotty"
+        //       : "https://betredi109.com/en/providers/mrslotty";
+        // });
+
+        // $(document).on("click", 'a[href$="/providers/netgame"]', function (e) {
+        //   e.preventDefault();
+        //   window.location.href =
+        //     language === "tr"
+        //       ? "https://betredi109.com/tr/providers/netgame"
+        //       : "https://betredi109.com/en/providers/netgame";
+        // });
+
+        // $(document).on("click", 'a[href$="/providers/nucleus"]', function (e) {
+        //   e.preventDefault();
+        //   window.location.href =
+        //     language === "tr"
+        //       ? "https://betredi109.com/tr/providers/nucleus"
+        //       : "https://betredi109.com/en/providers/nucleus";
+        // });
+
+        // $(document).on("click", 'a[href$="/providers/oryx"]', function (e) {
+        //   e.preventDefault();
+        //   window.location.href =
+        //     language === "tr"
+        //       ? "https://betredi109.com/tr/providers/oryx"
+        //       : "https://betredi109.com/en/providers/oryx";
+        // });
+
+        // $(document).on("click", 'a[href$="/providers/playtech"]', function (e) {
+        //   e.preventDefault();
+        //   window.location.href =
+        //     language === "tr"
+        //       ? "https://betredi109.com/tr/providers/playtech"
+        //       : "https://betredi109.com/en/providers/playtech";
+        // });
+
+        // $(document).on(
+        //   "click",
+        //   'a[href$="/providers/quickspin"]',
+        //   function (e) {
+        //     e.preventDefault();
+        //     window.location.href =
+        //       language === "tr"
+        //         ? "https://betredi109.com/tr/providers/quickspin"
+        //         : "https://betredi109.com/en/providers/quickspin";
+        //   }
+        // );
+
+        // $(document).on("click", 'a[href$="/providers/redrake"]', function (e) {
+        //   e.preventDefault();
+        //   window.location.href =
+        //     language === "tr"
+        //       ? "https://betredi109.com/tr/providers/redrake"
+        //       : "https://betredi109.com/en/providers/redrake";
+        // });
+
+        // $(document).on("click", 'a[href$="/providers/reevo"]', function (e) {
+        //   e.preventDefault();
+        //   window.location.href =
+        //     language === "tr"
+        //       ? "https://betredi109.com/tr/providers/reevo"
+        //       : "https://betredi109.com/en/providers/reevo";
+        // });
+
+        // $(document).on("click", 'a[href$="/providers/sagaming"]', function (e) {
+        //   e.preventDefault();
+        //   window.location.href =
+        //     language === "tr"
+        //       ? "https://betredi109.com/tr/providers/sagaming"
+        //       : "https://betredi109.com/en/providers/sagaming";
+        // });
+
+        // $(document).on("click", 'a[href$="/providers/salsa"]', function (e) {
+        //   e.preventDefault();
+        //   window.location.href =
+        //     language === "tr"
+        //       ? "https://betredi109.com/tr/providers/salsa"
+        //       : "https://betredi109.com/en/providers/salsa";
+        // });
+
+        // $(document).on(
+        //   "click",
+        //   'a[href$="/providers/spinomenal"]',
+        //   function (e) {
+        //     e.preventDefault();
+        //     window.location.href =
+        //       language === "tr"
+        //         ? "https://betredi109.com/tr/providers/spinomenal"
+        //         : "https://betredi109.com/en/providers/spinomenal";
+        //   }
+        // );
+
+        // $(document).on("click", 'a[href$="/providers/spinza"]', function (e) {
+        //   e.preventDefault();
+        //   window.location.href =
+        //     language === "tr"
+        //       ? "https://betredi109.com/tr/providers/spinza"
+        //       : "https://betredi109.com/en/providers/spinza";
+        // });
+
+        // $(document).on("click", 'a[href$="/providers/spribe"]', function (e) {
+        //   e.preventDefault();
+        //   window.location.href =
+        //     language === "tr"
+        //       ? "https://betredi109.com/tr/providers/spribe"
+        //       : "https://betredi109.com/en/providers/spribe";
+        // });
+
+        // $(document).on("click", 'a[href$="/providers/swintt"]', function (e) {
+        //   e.preventDefault();
+        //   window.location.href =
+        //     language === "tr"
+        //       ? "https://betredi109.com/tr/providers/swintt"
+        //       : "https://betredi109.com/en/providers/swintt";
+        // });
+
+        // $(document).on(
+        //   "click",
+        //   'a[href$="/providers/tomhornnative"]',
+        //   function (e) {
+        //     e.preventDefault();
+        //     window.location.href =
+        //       language === "tr"
+        //         ? "https://betredi109.com/tr/providers/tomhornnative"
+        //         : "https://betredi109.com/en/providers/tomhornnative";
+        //   }
+        // );
+
+        // $(document).on(
+        //   "click",
+        //   'a[href$="/providers/turbogames"]',
+        //   function (e) {
+        //     e.preventDefault();
+        //     window.location.href =
+        //       language === "tr"
+        //         ? "https://betredi109.com/tr/providers/turbogames"
+        //         : "https://betredi109.com/en/providers/turbogames";
+        //   }
+        // );
+
+        // $(document).on("click", 'a[href$="/providers/tvbet"]', function (e) {
+        //   e.preventDefault();
+        //   window.location.href =
+        //     language === "tr"
+        //       ? "https://betredi109.com/tr/providers/tvbet"
+        //       : "https://betredi109.com/en/providers/tvbet";
+        // });
+
+        // $(document).on(
+        //   "click",
+        //   'a[href$="/providers/vivogaming"]',
+        //   function (e) {
+        //     e.preventDefault();
+        //     window.location.href =
+        //       language === "tr"
+        //         ? "https://betredi109.com/tr/providers/vivogaming"
+        //         : "https://betredi109.com/en/providers/vivogaming";
+        //   }
+        // );
+
+        // $(document).on("click", 'a[href$="/providers/wizard"]', function (e) {
+        //   e.preventDefault();
+        //   window.location.href =
+        //     language === "tr"
+        //       ? "https://betredi109.com/tr/providers/wizard"
+        //       : "https://betredi109.com/en/providers/wizard";
+        // });
+
+        // $(document).on(
+        //   "click",
+        //   'a[href$="/providers/worldmatch"]',
+        //   function (e) {
+        //     e.preventDefault();
+        //     window.location.href =
+        //       language === "tr"
+        //         ? "https://betredi109.com/tr/providers/worldmatch"
+        //         : "https://betredi109.com/en/providers/worldmatch";
+        //   }
+        // );
+
+        // $(document).on(
+        //   "click",
+        //   'a[href$="/providers/xprogaming"]',
+        //   function (e) {
+        //     e.preventDefault();
+        //     window.location.href =
+        //       language === "tr"
+        //         ? "https://betredi109.com/tr/providers/xprogaming"
+        //         : "https://betredi109.com/en/providers/xprogaming";
+        //   }
+        // );
+
+        // $(document).on(
+        //   "click",
+        //   'a[href$="/providers/yggdrasil"]',
+        //   function (e) {
+        //     e.preventDefault();
+        //     window.location.href =
+        //       language === "tr"
+        //         ? "https://betredi109.com/tr/providers/yggdrasil"
+        //         : "https://betredi109.com/en/providers/yggdrasil";
+        //   }
+        // );
+
+        // $(document).on("click", 'a[href$="/providers/zillion"]', function (e) {
+        //   e.preventDefault();
+        //   window.location.href =
+        //     language === "tr"
+        //       ? "https://betredi109.com/tr/providers/zillion"
+        //       : "https://betredi109.com/en/providers/zillion";
+        // });
+
+        // $(document).on("click", 'a[href$="/providers/ebetlab"]', function (e) {
+        //   e.preventDefault();
+        //   window.location.href =
+        //     language === "tr"
+        //       ? "https://betredi109.com/tr/providers/ebetlab"
+        //       : "https://betredi109.com/en/providers/ebetlab";
+        // });
+
+        // $(document).on("click", 'a[href$="/providers/imagine"]', function (e) {
+        //   e.preventDefault();
+        //   window.location.href =
+        //     language === "tr"
+        //       ? "https://betredi109.com/tr/providers/imagine"
+        //       : "https://betredi109.com/en/providers/imagine";
+        // });
+
+        // $(document).on("click", 'a[href$="/providers/jiliasia"]', function (e) {
+        //   e.preventDefault();
+        //   window.location.href =
+        //     language === "tr"
+        //       ? "https://betredi109.com/tr/providers/jiliasia"
+        //       : "https://betredi109.com/en/providers/jiliasia";
+        // });
+
+        // $(document).on("click", 'a[href$="/providers/royal"]', function (e) {
+        //   e.preventDefault();
+        //   window.location.href =
+        //     language === "tr"
+        //       ? "https://betredi109.com/tr/providers/royal"
+        //       : "https://betredi109.com/en/providers/royal";
+        // });
+
+        // $(document).on("click", 'a[href$="/providers/tada"]', function (e) {
+        //   e.preventDefault();
+        //   window.location.href =
+        //     language === "tr"
+        //       ? "https://betredi109.com/tr/providers/tada"
+        //       : "https://betredi109.com/en/providers/tada";
+        // });
+
+        // $(document).on("click", 'a[href$="/providers/zeus"]', function (e) {
+        //   e.preventDefault();
+        //   window.location.href =
+        //     language === "tr"
+        //       ? "https://betredi109.com/tr/providers/zeus"
+        //       : "https://betredi109.com/en/providers/zeus";
+        // });
+
+        // $(document).on("click", 'a[href$="/providers/peter"]', function (e) {
+        //   e.preventDefault();
+        //   window.location.href =
+        //     language === "tr"
+        //       ? "https://betredi109.com/tr/providers/peter"
+        //       : "https://betredi109.com/en/providers/peter";
+        // });
+
+        // $(document).on("click", 'a[href$="/providers/topspin"]', function (e) {
+        //   e.preventDefault();
+        //   window.location.href =
+        //     language === "tr"
+        //       ? "https://betredi109.com/tr/providers/topspin"
+        //       : "https://betredi109.com/en/providers/topspin";
+        // });
       }
     }, 300);
 
