@@ -2226,6 +2226,17 @@
             <span>Canlı Destek</span>
           </div>
         </a>
+        <a onClick="$('.lowbar__btn')[$('.lowbar__btn').length -1].click()" class="col-4" style="background: linear-gradient(to right, black 0%, #5e0e17 50%, black 100%);">
+          <div class="box-icon-item">
+            <img
+              src="https://betrediofficial.github.io/images/mobile-view//support.png"
+              width="48"
+              height="48"
+              class="d-block mx-auto"
+            />
+            <span>RTP Sorgu</span>
+          </div>
+        </a>
 
 
       </div>

@@ -2375,8 +2375,6 @@
             <span>Canlı Destek</span>
           </div>
         </a>
-
-
       </div>
 </div>
     `);
