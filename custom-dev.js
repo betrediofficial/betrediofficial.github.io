@@ -280,6 +280,14 @@
               ? "https://betredi108.com/tr/trade"
               : "https://betredi108.com/en/trade";
         });
+
+        $(document).on("click", 'a[href$="/providers"]', function (e) {
+          e.preventDefault();
+          window.location.href =
+            language === "tr"
+              ? "https://betredi108.com/tr/providers"
+              : "https://betredi108.com/en/providers";
+        });
       }
     }, 300);
 
@@ -1382,8 +1390,8 @@
     </a>
     <a href=${
       language === "tr"
-        ? "https://betredi108.com/tr/promotions"
-        : "https://betredi108.com/en/promotions"
+        ? "https://betredi108.com/tr/promotion/100-freespin-deneme-bonusu-trrf"
+        : "https://betredi108.com/en/promotion/100-freespin-deneme-bonusu-trrf"
     }>
     <img src="https://betrediofficial.github.io/images/tg-promo/reditg.gif"
          alt="Telegram Promo GIF"
