@@ -124,34 +124,34 @@
           timeout: null,
           maxAttempts: 3,
           currentAttempt: 0,
-          
+
           // Start navigation process
-          startNavigation: function() {
+          startNavigation: function () {
             this.isNavigating = true;
             this.currentAttempt = 0;
-            document.body.classList.add('page-transitioning');
-            
+            document.body.classList.add("page-transitioning");
+
             // Set a safety timeout to reset state if navigation takes too long
             this.timeout = setTimeout(() => {
               this.resetNavigationState(true);
             }, 5000); // 5 second safety timeout
           },
-          
+
           // End navigation process
-          endNavigation: function() {
+          endNavigation: function () {
             clearTimeout(this.timeout);
             this.isNavigating = false;
             this.currentAttempt = 0;
-            document.body.classList.remove('page-transitioning');
+            document.body.classList.remove("page-transitioning");
           },
-          
+
           // Reset navigation state in case of errors
-          resetNavigationState: function(isTimeout = false) {
+          resetNavigationState: function (isTimeout = false) {
             console.log("Navigation timeout or error - resetting state");
             this.isNavigating = false;
             this.currentAttempt++;
-            document.body.classList.remove('page-transitioning');
-            
+            document.body.classList.remove("page-transitioning");
+
             // If we've had multiple failed attempts or it's a timeout, reload the page completely
             if (isTimeout || this.currentAttempt >= this.maxAttempts) {
               console.log("Multiple navigation failures - reloading page");
@@ -160,12 +160,16 @@
           },
 
           // Check if main content loaded correctly
-          checkContentLoaded: function() {
+          checkContentLoaded: function () {
             // Check if main content elements exist
             const mainContent = document.querySelector("#main__content");
-            if (!mainContent || !mainContent.children || mainContent.children.length === 0) {
+            if (
+              !mainContent ||
+              !mainContent.children ||
+              mainContent.children.length === 0
+            ) {
               console.log("Content not loaded properly, attempting recovery");
-              
+
               // If we're below max attempts, try to initialize again
               if (this.currentAttempt < this.maxAttempts) {
                 this.currentAttempt++;
@@ -180,45 +184,50 @@
               }
               return false;
             }
-            
+
             // Content loaded successfully
             this.endNavigation();
             return true;
           },
-          
+
           // Clean up resources before navigation
-          cleanupBeforeNavigation: function() {
+          cleanupBeforeNavigation: function () {
             // Clean up any custom Swiper instances
-            if (window.myMainSlider && typeof window.myMainSlider.destroy === 'function') {
+            if (
+              window.myMainSlider &&
+              typeof window.myMainSlider.destroy === "function"
+            ) {
               try {
                 window.myMainSlider.destroy(true, true);
               } catch (e) {
                 console.warn("Error cleaning up Swiper:", e);
               }
             }
-            
+
             // Remove temporary event listeners
-            $('.custom-temp-event').off();
-            
+            $(".custom-temp-event").off();
+
             // Clean up other custom resources or timers
             const customTimers = window.customTimers || [];
-            customTimers.forEach(timer => {
+            customTimers.forEach((timer) => {
               if (timer) {
                 clearTimeout(timer);
                 clearInterval(timer);
               }
             });
             window.customTimers = [];
-            
+
             // Clean up any script elements that might have been added dynamically
-            document.querySelectorAll('script.temp-script').forEach(script => {
-              script.remove();
-            });
-          }
+            document
+              .querySelectorAll("script.temp-script")
+              .forEach((script) => {
+                script.remove();
+              });
+          },
         };
 
         // Add necessary CSS for transitions
-        const navigationStyles = document.createElement('style');
+        const navigationStyles = document.createElement("style");
         navigationStyles.innerHTML = `
           body.page-transitioning {
             opacity: 1;
@@ -239,13 +248,14 @@
         document.head.appendChild(navigationStyles);
 
         // Create a loader element
-        const loader = document.createElement('div');
-        loader.className = 'navigation-loader';
-        loader.innerHTML = '<div style="width: 40px; height: 40px; border: 4px solid #333; border-top-color: #B01; border-radius: 50%; animation: spin 1s linear infinite;"></div>';
+        const loader = document.createElement("div");
+        loader.className = "navigation-loader";
+        loader.innerHTML =
+          '<div style="width: 40px; height: 40px; border: 4px solid #333; border-top-color: #B01; border-radius: 50%; animation: spin 1s linear infinite;"></div>';
         document.body.appendChild(loader);
 
         // Add animation for the loader
-        const loaderStyle = document.createElement('style');
+        const loaderStyle = document.createElement("style");
         loaderStyle.innerHTML = `
           @keyframes spin {
             0% { transform: rotate(0deg); }
@@ -260,18 +270,18 @@
           if (pageNavigationManager.isNavigating) {
             pageNavigationManager.endNavigation();
           }
-          
+
           // Clean up resources before navigation
           pageNavigationManager.cleanupBeforeNavigation();
-          
+
           // Start the navigation process
           pageNavigationManager.startNavigation();
-          
+
           // Push state and update the URL if this isn't from a popstate event
           if (!fromPopState) {
-            window.history.pushState({}, '', url);
+            window.history.pushState({}, "", url);
           }
-          
+
           // Attempt to load content and initialize
           setTimeout(() => {
             try {
@@ -282,7 +292,7 @@
               pageNavigationManager.resetNavigationState(true);
             }
           }, 500);
-          
+
           return false;
         }
 
@@ -303,9 +313,9 @@
             if (pageNavigationManager.isNavigating) {
               pageNavigationManager.endNavigation();
             }
-            
+
             originalPushState.apply(history, arguments);
-            
+
             // Use the unified navigation handler
             handleSpaNavigation(window.location.href, true);
             removeHomePageWidgets();
@@ -318,25 +328,31 @@
         });
 
         // Intercept all internal link clicks on the page
-        $(document).on('click', 'a[href^="/"], a[href^="' + window.location.origin + '"]', function(e) {
-          // Skip links that should be handled natively
-          if ($(this).attr('target') === '_blank' || 
-              $(this).hasClass('no-spa') || 
-              $(this).attr('href').indexOf('#') !== -1 ||
-              $(this).attr('href').indexOf('mailto:') !== -1 ||
-              $(this).attr('href').indexOf('tel:') !== -1) {
-            return true;
+        $(document).on(
+          "click",
+          'a[href^="/"], a[href^="' + window.location.origin + '"]',
+          function (e) {
+            // Skip links that should be handled natively
+            if (
+              $(this).attr("target") === "_blank" ||
+              $(this).hasClass("no-spa") ||
+              $(this).attr("href").indexOf("#") !== -1 ||
+              $(this).attr("href").indexOf("mailto:") !== -1 ||
+              $(this).attr("href").indexOf("tel:") !== -1
+            ) {
+              return true;
+            }
+
+            e.preventDefault();
+            handleSpaNavigation($(this).attr("href"));
+            return false;
           }
-          
-          e.preventDefault();
-          handleSpaNavigation($(this).attr('href'));
-          return false;
-        });
+        );
 
         // Add global error handler to recover from navigation issues
-        window.addEventListener('error', function(event) {
+        window.addEventListener("error", function (event) {
           if (pageNavigationManager.isNavigating) {
-            console.error('Error during navigation:', event.error);
+            console.error("Error during navigation:", event.error);
             pageNavigationManager.resetNavigationState(true);
           }
         });
