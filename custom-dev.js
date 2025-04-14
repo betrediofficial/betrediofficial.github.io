@@ -1418,8 +1418,8 @@
       insertCustomSidebarLink();
       injectProvidersMarquee();
 
-      insertCustomMiniGamesSlider();
-      setTimeout(initCustomMiniGamesSlider, 500);
+      // insertCustomMiniGamesSlider();
+      // setTimeout(initCustomMiniGamesSlider, 500);
 
       hideBlogSection();
 
