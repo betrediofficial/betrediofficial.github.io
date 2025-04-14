@@ -165,8 +165,8 @@
           e.preventDefault();
           location.replace(
             language === "tr"
-              ? "https://betredi108.com/tr/settings?tab=general"
-              : "https://betredi108.com/en/settings?tab=general"
+              ? "https://betredi108.com/tr/settings"
+              : "https://betredi108.com/en/settings"
           );
         });
 
