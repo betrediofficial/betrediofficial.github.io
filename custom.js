@@ -2056,13 +2056,15 @@
   box-sizing: content-box !important;
 }
 
-.main__content {
-  background: url("https://betrediofficial.github.io/images/bg.jpeg") no-repeat center center !important;
-  background-size: cover !important;
-}
+
       `;
       document.head.appendChild(style);
     }
+
+    //     .main__content {
+    //   background: url("https://betrediofficial.github.io/images/bg.jpeg") no-repeat center center !important;
+    //   background-size: cover !important;
+    // }
 
     function otherGames() {
       if ($("#digeroyunlari").length > 0) return;
