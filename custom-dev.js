@@ -386,22 +386,22 @@
         <div class="swiper mySwiper">
           <div class="swiper-wrapper">
             <div class="swiper-slide">
-              <a href="https://betredi108.com/promotion/15-casino-yatirim-bonusu-tr"><img src="https://betrediofficial.github.io/images/slider/15Casino.png" class="slide-image" /></a>
+              <a href="https://betredi108.com/tr/promotion/15-casino-yatirim-bonusu-tr"><img src="https://betrediofficial.github.io/images/slider/15Casino.png" class="slide-image" /></a>
             </div>
             <div class="swiper-slide">
-              <a href="https://betredi108.com/promotion/15-spor-yatirim-bonusu-tr"><img src="https://betrediofficial.github.io/images/slider/15Spor.png" class="slide-image" /></a>
+              <a href="https://betredi108.com/tr/promotion/15-spor-yatirim-bonusu-tr"><img src="https://betrediofficial.github.io/images/slider/15Spor.png" class="slide-image" /></a>
             </div>
             <div class="swiper-slide">
-              <a href="https://betredi108.com/promotion/30-casino-discount-tr"><img src="https://betrediofficial.github.io/images/slider/30Discount.png" class="slide-image" /></a>
+              <a href="https://betredi108.com/tr/promotion/30-casino-discount-tr"><img src="https://betrediofficial.github.io/images/slider/30Discount.png" class="slide-image" /></a>
             </div>
             <div class="swiper-slide">
-              <a href="https://betredi108.com/promotion/50-slot-yatirim-bonusu-tr"><img src="https://betrediofficial.github.io/images/slider/50Slot.png" class="slide-image" /></a>
+              <a href="https://betredi108.com/tr/promotion/50-slot-yatirim-bonusu-tr"><img src="https://betrediofficial.github.io/images/slider/50Slot.png" class="slide-image" /></a>
             </div>
             <div class="swiper-slide">
-              <a href="https://betredi108.com/promotion/100-freespin-deneme-bonusu-trrf"><img src="https://betrediofficial.github.io/images/slider/100Freespin.png" class="slide-image" /></a>
+              <a href="https://betredi108.com/tr/promotion/100-freespin-deneme-bonusu-trrf"><img src="https://betrediofficial.github.io/images/slider/100Freespin.png" class="slide-image" /></a>
             </div>
             <div class="swiper-slide">
-              <a href="https://betredi108.com/promotion/100-slot-iade-bonusu-rt"><img src="https://betrediofficial.github.io/images/slider/100Slotiade.png" class="slide-image" /></a>
+              <a href="https://betredi108.com/tr/promotion/100-slot-iade-bonusu-rt"><img src="https://betrediofficial.github.io/images/slider/100Slotiade.png" class="slide-image" /></a>
             </div>
           </div>
           <div class="swiper-button-next"></div>
