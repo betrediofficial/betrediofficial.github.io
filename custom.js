@@ -1,5 +1,5 @@
-try{
-  (function () {
+
+(function () {
   var language = window.location.pathname.split("/")[1];
 
   var isLoggedIn = false;
@@ -3005,7 +3005,3 @@ try{
 ">GİRİŞ</h1>`);
   }
 })();
-}
-catch(error){
-console.log("error happened", error)
-}
