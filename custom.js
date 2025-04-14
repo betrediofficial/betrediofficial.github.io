@@ -128,6 +128,8 @@
         $(document).ready(function () {
           initialize();
 
+          $(".form__btn span").text("Talep Gönder");
+
           const originalPushState = history.pushState;
           history.pushState = function (state) {
             originalPushState.apply(history, arguments);
@@ -1224,7 +1226,7 @@
       const firstSection = document.querySelector("#main__content .section");
       if (firstSection && firstSection.id === "main-slider") {
         console.log("Removing original #main-slider...");
-        firstSection.style.display = 'none'
+        firstSection.style.display = "none";
       }
     }
 
