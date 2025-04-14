@@ -264,65 +264,34 @@
         `;
         document.head.appendChild(loaderStyle);
 
-        // // Function to handle SPA navigation
-        // function handleSpaNavigation(url, fromPopState = false) {
-        //   // If we're already navigating, complete the previous navigation first
-        //   if (pageNavigationManager.isNavigating) {
-        //     pageNavigationManager.endNavigation();
-        //   }
-
-        //   // Clean up resources before navigation
-        //   pageNavigationManager.cleanupBeforeNavigation();
-
-        //   // Start the navigation process
-        //   pageNavigationManager.startNavigation();
-
-        //   // Push state and update the URL if this isn't from a popstate event
-        //   if (!fromPopState) {
-        //     window.history.pushState({}, "", url);
-        //   }
-
-        //   // Attempt to load content and initialize
-        //   setTimeout(() => {
-        //     try {
-        //       initialize();
-        //       pageNavigationManager.checkContentLoaded();
-        //     } catch (error) {
-        //       console.error("Navigation error:", error);
-        //       pageNavigationManager.resetNavigationState(true);
-        //     }
-        //   }, 500);
-
-        //   return false;
-        // }
-
+        // Function to handle SPA navigation
         function handleSpaNavigation(url, fromPopState = false) {
+          // If we're already navigating, complete the previous navigation first
           if (pageNavigationManager.isNavigating) {
             pageNavigationManager.endNavigation();
           }
 
+          // Clean up resources before navigation
           pageNavigationManager.cleanupBeforeNavigation();
+
+          // Start the navigation process
           pageNavigationManager.startNavigation();
 
+          // Push state and update the URL if this isn't from a popstate event
           if (!fromPopState) {
             window.history.pushState({}, "", url);
           }
 
-          $.get(url, function (data) {
-            const newContent = $(data).find("#main__content").html();
-
-            if (newContent) {
-              $("#main__content").html(newContent);
-            } else {
-              console.warn("New content not found for:", url);
+          // Attempt to load content and initialize
+          setTimeout(() => {
+            try {
+              initialize();
+              pageNavigationManager.checkContentLoaded();
+            } catch (error) {
+              console.error("Navigation error:", error);
+              pageNavigationManager.resetNavigationState(true);
             }
-
-            initialize();
-            pageNavigationManager.checkContentLoaded();
-          }).fail(function () {
-            console.error("Failed to load content for:", url);
-            pageNavigationManager.resetNavigationState(true);
-          });
+          }, 500);
 
           return false;
         }
@@ -417,22 +386,22 @@
         <div class="swiper mySwiper">
           <div class="swiper-wrapper">
             <div class="swiper-slide">
-              <a href="/promotion/15-casino-yatirim-bonusu-tr"><img src="https://betrediofficial.github.io/images/slider/15Casino.png" class="slide-image" /></a>
+              <a href="https://betredi108.com/promotion/15-casino-yatirim-bonusu-tr"><img src="https://betrediofficial.github.io/images/slider/15Casino.png" class="slide-image" /></a>
             </div>
             <div class="swiper-slide">
-              <a href="/promotion/15-spor-yatirim-bonusu-tr"><img src="https://betrediofficial.github.io/images/slider/15Spor.png" class="slide-image" /></a>
+              <a href="https://betredi108.com/promotion/15-spor-yatirim-bonusu-tr"><img src="https://betrediofficial.github.io/images/slider/15Spor.png" class="slide-image" /></a>
             </div>
             <div class="swiper-slide">
-              <a href="/promotion/30-casino-discount-tr"><img src="https://betrediofficial.github.io/images/slider/30Discount.png" class="slide-image" /></a>
+              <a href="https://betredi108.com/promotion/30-casino-discount-tr"><img src="https://betrediofficial.github.io/images/slider/30Discount.png" class="slide-image" /></a>
             </div>
             <div class="swiper-slide">
-              <a href="/promotion/50-slot-yatirim-bonusu-tr"><img src="https://betrediofficial.github.io/images/slider/50Slot.png" class="slide-image" /></a>
+              <a href="https://betredi108.com/promotion/50-slot-yatirim-bonusu-tr"><img src="https://betrediofficial.github.io/images/slider/50Slot.png" class="slide-image" /></a>
             </div>
             <div class="swiper-slide">
-              <a href="/promotion/100-freespin-deneme-bonusu-trrf"><img src="https://betrediofficial.github.io/images/slider/100Freespin.png" class="slide-image" /></a>
+              <a href="https://betredi108.com/promotion/100-freespin-deneme-bonusu-trrf"><img src="https://betrediofficial.github.io/images/slider/100Freespin.png" class="slide-image" /></a>
             </div>
             <div class="swiper-slide">
-              <a href="/promotion/100-slot-iade-bonusu-rt"><img src="https://betrediofficial.github.io/images/slider/100Slotiade.png" class="slide-image" /></a>
+              <a href="https://betredi108.com/promotion/100-slot-iade-bonusu-rt"><img src="https://betrediofficial.github.io/images/slider/100Slotiade.png" class="slide-image" /></a>
             </div>
           </div>
           <div class="swiper-button-next"></div>
