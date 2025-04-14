@@ -1647,7 +1647,7 @@ a {
 }
 
 .content__nav button.active {
-    color: var(--tf-active);
+    color: #e31f25;
 }
 
 .chat__message--share .chat__name {

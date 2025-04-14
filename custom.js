@@ -395,7 +395,10 @@
 
         if (!is_mobile) casinoGames();
 
-        sportsCard();
+        // sportsCard();
+        // miniGames();
+        // casinoChooser();
+
         //hide default games
         !is_mobile && hideDefaultGames(50);
         !is_mobile && hideDefaultGames(1500);
@@ -408,6 +411,8 @@
 
       customizeSignupModal();
       customizeSigninModal();
+
+      injectExtraText();
     }
 
     customCSS();
@@ -542,7 +547,7 @@
       section.className = "section custom--section--2 custom--section";
       section.innerHTML = `
           <div class="container" style="position: relative; max-width: 100% !important; margin-bottom: 20px; !important; padding-left: 0px !important; padding-right: 0px !important; padding-top: 0px !important; overflow: hidden !important;">
-    <div class="providers--marquee--bg" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; background: linear-gradient(to right, black 0%, #7d020f 50%, black 100%);"></div>
+    <div class="providers--marquee--bg" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; background: linear-gradient(to right, black 0%, #570b13 50%, black 100%);"></div>
 <div class="providers--marquee">	
 				          <a class="custom--providers--link" href="https://betredi108.com/tr/providers/pragmaticplay">
 				            <img class="custom--providers--image" src="https://vendor-provider.fra1.cdn.digitaloceanspaces.com/ebetlab/game-providers/light/pragmaticplay.svg" alt="">
@@ -953,6 +958,36 @@
       // }
     }
 
+    function injectExtraText() {
+      const observer = new MutationObserver(() => {
+        const $targetContainer = $(
+          "#collapse2-benefits .settings__container .settings__text"
+        ).parent();
+
+        if (
+          $targetContainer.length &&
+          $targetContainer.find(".extra-info-text").length === 0
+        ) {
+          const $newText = $(`
+        <p class="extra-info-text" style="margin: 8px 0; color: #e31f25; font-size:18px;">
+          ${
+            language === "tr"
+              ? "* Talep edilmediği sürece bu alan zorunlu değildir"
+              : "This field is not mandatory unless requested."
+          }
+        </p>
+      `);
+
+          $targetContainer.prepend($newText);
+        }
+      });
+
+      observer.observe(document.body, {
+        childList: true,
+        subtree: true,
+      });
+    }
+
     function customCSS() {
       const style = document.createElement("style");
 
@@ -1088,6 +1123,16 @@
         `;
 
       $(".section--first").eq(1).before(newSection);
+    }
+
+    function casinoChooser() {
+      if ($(".chooser").length > 0) return;
+
+      var chooserSection = `
+      <div class="manually-added-home-widgets container"></div>
+`;
+
+      $("#digeroyunlari").after(chooserSection);
     }
 
     function mobileBoxes() {
@@ -1377,17 +1422,17 @@
       var newSection = `
 <div class="manually-added-home-widgets section" id="tgpromo" style="margin-bottom: 14px; margin-top: 14px;">
   <div class="container otherGames">
-    <a href="https://t.me/betredi" target="_blank">
-      <img src="https://betrediofficial.github.io/images/tg-promo/tg_promo_new.png" alt="Telegram Promo" style="display: block; width: 100%; margin-bottom: 10px;" />
+    <a href="https://t.me/betredi" target="_blank" style="margin-bottom: 8px;">
+      <img src="https://betrediofficial.github.io/images/tg-promo/tg_promo_new.png" alt="Telegram Promo" style="display: block; width: 100%" />
     </a>
     <a href=${
       language === "tr"
         ? "https://betredi108.com/tr/promotions"
         : "https://betredi108.com/en/promotions"
-    }>
+    } style="margin-bottom: 8px;">
     <img src="https://betrediofficial.github.io/images/tg-promo/reditg.gif"
          alt="Telegram Promo GIF"
-         style="display: block; width: 100%; margin-bottom: 10px; border: 2px solid #9b000e; border-radius: 10px; max-width: 100% !important;" />
+         style="display: block; width: 100%; border: 2px solid #9b000e; border-radius: 10px; max-width: 100% !important;" />
     </a>
     <img src="https://betrediofficial.github.io/images/tg-promo/tg_promo_desc.png" alt="Kripto Bilgilendirme" style="display: block; width: 100%;" />
   </div>
@@ -1560,74 +1605,143 @@
 
       $("#tgpromo").after(newSection);
     }
-
-    function sportsCard() {
-      if ($("#sportscard").length > 0) return;
-
-      var newSection = `
-      <div class="container manually-added-home-widgets" style="margin-top: 16px !important; margin-bottom: 16px !important;">
-  <div class="row row-cols-3 row-cols-xl-6 g-4 text-center">
-    <div class="col">
-      <div class="sport-card" style="position: relative; border: 2px solid #9B000E; border-top-right-radius: 24px; border-bottom-left-radius: 24px; overflow: hidden; cursor: pointer;">
-        <div class="hovered-effect" style="opacity: 0; position: absolute; width: 100%; height: 100%; background: rgba(255,255,255,0.1); z-index: 10; pointer-events: none;"></div>
-        <a href="/sportsbook">
-          <img src="https://betrediofficial.github.io/images/sports/futbol_new.png" alt="Futbol" style="width: 100%; aspect-ratio: 3/4; object-fit: cover;">
-        </a>
-      </div>
-    </div>
-    <div class="col">
-      <div class="sport-card" style="position: relative; border: 2px solid #9B000E; border-top-right-radius: 24px; border-bottom-left-radius: 24px; overflow: hidden; cursor: pointer;">
-        <div class="hovered-effect" style="opacity: 0; position: absolute; width: 100%; height: 100%; background: rgba(255,255,255,0.1); z-index: 10; pointer-events: none;"></div>
-        <a href="/sportsbook">
-          <img src="https://betrediofficial.github.io/images/sports/basketbol_new.png" alt="Basketbol" style="width: 100%; aspect-ratio: 3/4; object-fit: cover;">
-        </a>
-      </div>
-    </div>
-    <div class="col">
-      <div class="sport-card" style="position: relative; border: 2px solid #9B000E; border-top-right-radius: 24px; border-bottom-left-radius: 24px; overflow: hidden; cursor: pointer;">
-        <div class="hovered-effect" style="opacity: 0; position: absolute; width: 100%; height: 100%; background: rgba(255,255,255,0.1); z-index: 10; pointer-events: none;"></div>
-        <a href="/sportsbook">
-          <img src="https://betrediofficial.github.io/images/sports/voleybol_new.png" alt="Voleybol" style="width: 100%; aspect-ratio: 3/4; object-fit: cover;">
-        </a>
-      </div>
-    </div>
-    <div class="col">
-      <div class="sport-card" style="position: relative; border: 2px solid #9B000E; border-top-right-radius: 24px; border-bottom-left-radius: 24px; overflow: hidden; cursor: pointer;">
-        <div class="hovered-effect" style="opacity: 0; position: absolute; width: 100%; height: 100%; background: rgba(255,255,255,0.1); z-index: 10; pointer-events: none;"></div>
-        <a href="/sportsbook">
-          <img src="https://betrediofficial.github.io/images/sports/mma_new.png" alt="MMA" style="width: 100%; aspect-ratio: 3/4; object-fit: cover;">
-        </a>
-      </div>
-    </div>
-    <div class="col">
-      <div class="sport-card" style="position: relative; border: 2px solid #9B000E; border-top-right-radius: 24px; border-bottom-left-radius: 24px; overflow: hidden; cursor: pointer;">
-        <div class="hovered-effect" style="opacity: 0; position: absolute; width: 100%; height: 100%; background: rgba(255,255,255,0.1); z-index: 10; pointer-events: none;"></div>
-        <a href="/sportsbook">
-          <img src="https://betrediofficial.github.io/images/sports/tennis_new.png" alt="Tenis" style="width: 100%; aspect-ratio: 3/4; object-fit: cover;">
-        </a>
-      </div>
-    </div>
-    <div class="col">
-      <div class="sport-card" style="position: relative; border: 2px solid #9B000E; border-top-right-radius: 24px; border-bottom-left-radius: 24px; overflow: hidden; cursor: pointer;">
-        <div class="hovered-effect" style="opacity: 0; position: absolute; width: 100%; height: 100%; background: rgba(255,255,255,0.1); z-index: 10; pointer-events: none;"></div>
-        <a href="/sportsbook">
-          <img src="https://betrediofficial.github.io/images/sports/cycling_new.png" alt="Cycling" style="width: 100%; aspect-ratio: 3/4; object-fit: cover;">
-        </a>
-      </div>
-    </div>
-  </div>
-</div>
-
-`;
-
-      // if ($("#casinooyunlari").length > 0)
-      $("#casinooyunlari").after(newSection);
-      // else $("#tgpromo").eq(0).after(newSection);
-    }
   } catch (e) {
     alert("hata");
     console.log(e);
   }
+
+  //   function sportsCard() {
+  //     if ($("#sportscard").length > 0) return;
+
+  //     var newSection = `
+  //       <div class="container manually-added-home-widgets" style="margin-top: 16px !important; margin-bottom: 16px !important;">
+  //   <div class="row row-cols-3 row-cols-xl-6 g-4 text-center">
+  //     <div class="col">
+  //       <div class="sport-card" style="position: relative; border: 2px solid #9B000E; border-top-right-radius: 24px; border-bottom-left-radius: 24px; overflow: hidden; cursor: pointer;">
+  //         <div class="hovered-effect" style="opacity: 0; position: absolute; width: 100%; height: 100%; background: rgba(255,255,255,0.1); z-index: 10; pointer-events: none;"></div>
+  //         <a href="/sportsbook">
+  //           <img src="https://betrediofficial.github.io/images/sports/futbol_new.png" alt="Futbol" style="width: 100%; aspect-ratio: 3/4; object-fit: cover;">
+  //         </a>
+  //       </div>
+  //     </div>
+  //     <div class="col">
+  //       <div class="sport-card" style="position: relative; border: 2px solid #9B000E; border-top-right-radius: 24px; border-bottom-left-radius: 24px; overflow: hidden; cursor: pointer;">
+  //         <div class="hovered-effect" style="opacity: 0; position: absolute; width: 100%; height: 100%; background: rgba(255,255,255,0.1); z-index: 10; pointer-events: none;"></div>
+  //         <a href="/sportsbook">
+  //           <img src="https://betrediofficial.github.io/images/sports/basketbol_new.png" alt="Basketbol" style="width: 100%; aspect-ratio: 3/4; object-fit: cover;">
+  //         </a>
+  //       </div>
+  //     </div>
+  //     <div class="col">
+  //       <div class="sport-card" style="position: relative; border: 2px solid #9B000E; border-top-right-radius: 24px; border-bottom-left-radius: 24px; overflow: hidden; cursor: pointer;">
+  //         <div class="hovered-effect" style="opacity: 0; position: absolute; width: 100%; height: 100%; background: rgba(255,255,255,0.1); z-index: 10; pointer-events: none;"></div>
+  //         <a href="/sportsbook">
+  //           <img src="https://betrediofficial.github.io/images/sports/voleybol_new.png" alt="Voleybol" style="width: 100%; aspect-ratio: 3/4; object-fit: cover;">
+  //         </a>
+  //       </div>
+  //     </div>
+  //     <div class="col">
+  //       <div class="sport-card" style="position: relative; border: 2px solid #9B000E; border-top-right-radius: 24px; border-bottom-left-radius: 24px; overflow: hidden; cursor: pointer;">
+  //         <div class="hovered-effect" style="opacity: 0; position: absolute; width: 100%; height: 100%; background: rgba(255,255,255,0.1); z-index: 10; pointer-events: none;"></div>
+  //         <a href="/sportsbook">
+  //           <img src="https://betrediofficial.github.io/images/sports/mma_new.png" alt="MMA" style="width: 100%; aspect-ratio: 3/4; object-fit: cover;">
+  //         </a>
+  //       </div>
+  //     </div>
+  //     <div class="col">
+  //       <div class="sport-card" style="position: relative; border: 2px solid #9B000E; border-top-right-radius: 24px; border-bottom-left-radius: 24px; overflow: hidden; cursor: pointer;">
+  //         <div class="hovered-effect" style="opacity: 0; position: absolute; width: 100%; height: 100%; background: rgba(255,255,255,0.1); z-index: 10; pointer-events: none;"></div>
+  //         <a href="/sportsbook">
+  //           <img src="https://betrediofficial.github.io/images/sports/tennis_new.png" alt="Tenis" style="width: 100%; aspect-ratio: 3/4; object-fit: cover;">
+  //         </a>
+  //       </div>
+  //     </div>
+  //     <div class="col">
+  //       <div class="sport-card" style="position: relative; border: 2px solid #9B000E; border-top-right-radius: 24px; border-bottom-left-radius: 24px; overflow: hidden; cursor: pointer;">
+  //         <div class="hovered-effect" style="opacity: 0; position: absolute; width: 100%; height: 100%; background: rgba(255,255,255,0.1); z-index: 10; pointer-events: none;"></div>
+  //         <a href="/sportsbook">
+  //           <img src="https://betrediofficial.github.io/images/sports/cycling_new.png" alt="Cycling" style="width: 100%; aspect-ratio: 3/4; object-fit: cover;">
+  //         </a>
+  //       </div>
+  //     </div>
+  //   </div>
+  // </div>
+
+  // `;
+
+  //     // if ($("#casinooyunlari").length > 0)
+  //     $("#casinooyunlari").after(newSection);
+  //     // else $("#tgpromo").eq(0).after(newSection);
+  //   }
+
+  //   function miniGames() {
+  //     if ($("#mini-games-wrapper").length > 0) return;
+
+  //     var miniGamesSection = `
+  // <div class="manually-added-home-widgets section" id="mini-games-wrapper" style="margin-top: 16px !important; margin-bottom: 16px !important;">
+  //   <div class="container">
+  //     <div class="row">
+  //       <div class="col-12">
+  //         <h2 class="section__title">
+  //           <svg class="svg-icon">
+  //             <use href="/static/media/sprite.1cea5f3c17045e69440504bcd887b333.svg#mini-games"
+  //                  xlink:href="/static/media/sprite.1cea5f3c17045e69440504bcd887b333.svg#mini-games">
+  //             </use>
+  //           </svg>
+  //           Mini Oyunlar
+  //         </h2>
+  //       </div>
+
+  //       <div class="col-12">
+  //         <div class="swiper swiper-initialized swiper-horizontal mySwiper swiper-backface-hidden">
+  //           <div class="swiper-wrapper" style="transform: translate3d(0px, 0px, 0px);">
+
+  //             <div class="swiper-slide" data-swiper-slide-index="0" style="background: none !important;">
+  //               <a class="mini-game mini-game--carousel mini-game--no-layer" href="/tr/casino/games/ebetlab-crash-originals">
+  //                 <span class="mini-game__img">
+  //                   <img loading="lazy" src="https://betrediofficial.github.io/images/mini-games-v2/crash_v2.png" alt="">
+  //                 </span>
+  //               </a>
+  //             </div>
+
+  //             <div class="swiper-slide" data-swiper-slide-index="1" style="background: none !important;">
+  //               <a class="mini-game mini-game--carousel mini-game--no-layer" href="/tr/casino/games/ebetlab-dice-originals">
+  //                 <span class="mini-game__img">
+  //                   <img loading="lazy" src="https://betrediofficial.github.io/images/mini-games-v2/dice_v2.png" alt="">
+  //                 </span>
+  //               </a>
+  //             </div>
+
+  //             <div class="swiper-slide" data-swiper-slide-index="2" style="background: none !important;">
+  //               <a class="mini-game mini-game--carousel mini-game--no-layer" href="/tr/casino/games/ebetlab-mines-originals">
+  //                 <span class="mini-game__img">
+  //                   <img loading="lazy" src="https://betrediofficial.github.io/images/mini-games-v2/mines_v2.png" alt="">
+  //                 </span>
+  //               </a>
+  //             </div>
+
+  //             <div class="swiper-slide" data-swiper-slide-index="3" style="background: none !important;">
+  //               <a class="mini-game mini-game--carousel mini-game--no-layer" href="/tr/casino/games/ebetlab-plinko-originals">
+  //                 <span class="mini-game__img">
+  //                   <img loading="lazy" src="https://betrediofficial.github.io/images/mini-games-v2/plinko_v2.png" alt="">
+  //                 </span>
+  //               </a>
+  //             </div>
+
+  //           </div>
+  //         </div>
+  //       </div>
+
+  //     </div>
+  //   </div>
+  // </div>
+
+  // `;
+
+  //     if ($("#casinooyunlari").length > 0)
+  //       $("#casinooyunlari").after(miniGamesSection);
+  //     else $("#tgpromo").eq(0).after(miniGamesSection);
+  //   }
 
   function hideDefaultGames(ms) {
     let popularGames = language === "tr" ? "Popüler Oyunlar" : "Popular Games";
