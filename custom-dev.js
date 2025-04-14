@@ -107,6 +107,11 @@
       swiperScript.src =
         "https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js";
       document.head.appendChild(swiperScript);
+
+      const link = document.createElement("link");
+      link.rel = "stylesheet";
+      link.href = "https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css";
+      document.head.appendChild(link);
     }
 
     // Wait for DOM and both libraries to be ready
