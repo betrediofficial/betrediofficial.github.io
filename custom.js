@@ -163,10 +163,12 @@
 
         $(document).on("click", 'a[href*="/settings"]', function (e) {
           e.preventDefault();
-          window.location.href =
+          window.open(
             language === "tr"
               ? "https://betredi108.com/tr/settings?tab=general"
-              : "https://betredi108.com/en/settings?tab=general";
+              : "https://betredi108.com/en/settings?tab=general",
+            "_blank"
+          );
         });
 
         $(document).on("click", 'a[href$="/transactions"]', function (e) {
