@@ -124,34 +124,34 @@
           timeout: null,
           maxAttempts: 3,
           currentAttempt: 0,
-          
+
           // Start navigation process
-          startNavigation: function() {
+          startNavigation: function () {
             this.isNavigating = true;
             this.currentAttempt = 0;
-            document.body.classList.add('page-transitioning');
-            
+            document.body.classList.add("page-transitioning");
+
             // Set a safety timeout to reset state if navigation takes too long
             this.timeout = setTimeout(() => {
               this.resetNavigationState(true);
             }, 5000); // 5 second safety timeout
           },
-          
+
           // End navigation process
-          endNavigation: function() {
+          endNavigation: function () {
             clearTimeout(this.timeout);
             this.isNavigating = false;
             this.currentAttempt = 0;
-            document.body.classList.remove('page-transitioning');
+            document.body.classList.remove("page-transitioning");
           },
-          
+
           // Reset navigation state in case of errors
-          resetNavigationState: function(isTimeout = false) {
+          resetNavigationState: function (isTimeout = false) {
             console.log("Navigation timeout or error - resetting state");
             this.isNavigating = false;
             this.currentAttempt++;
-            document.body.classList.remove('page-transitioning');
-            
+            document.body.classList.remove("page-transitioning");
+
             // If we've had multiple failed attempts or it's a timeout, reload the page completely
             if (isTimeout || this.currentAttempt >= this.maxAttempts) {
               console.log("Multiple navigation failures - reloading page");
@@ -160,12 +160,16 @@
           },
 
           // Check if main content loaded correctly
-          checkContentLoaded: function() {
+          checkContentLoaded: function () {
             // Check if main content elements exist
             const mainContent = document.querySelector("#main__content");
-            if (!mainContent || !mainContent.children || mainContent.children.length === 0) {
+            if (
+              !mainContent ||
+              !mainContent.children ||
+              mainContent.children.length === 0
+            ) {
               console.log("Content not loaded properly, attempting recovery");
-              
+
               // If we're below max attempts, try to initialize again
               if (this.currentAttempt < this.maxAttempts) {
                 this.currentAttempt++;
@@ -180,45 +184,50 @@
               }
               return false;
             }
-            
+
             // Content loaded successfully
             this.endNavigation();
             return true;
           },
-          
+
           // Clean up resources before navigation
-          cleanupBeforeNavigation: function() {
+          cleanupBeforeNavigation: function () {
             // Clean up any custom Swiper instances
-            if (window.myMainSlider && typeof window.myMainSlider.destroy === 'function') {
+            if (
+              window.myMainSlider &&
+              typeof window.myMainSlider.destroy === "function"
+            ) {
               try {
                 window.myMainSlider.destroy(true, true);
               } catch (e) {
                 console.warn("Error cleaning up Swiper:", e);
               }
             }
-            
+
             // Remove temporary event listeners
-            $('.custom-temp-event').off();
-            
+            $(".custom-temp-event").off();
+
             // Clean up other custom resources or timers
             const customTimers = window.customTimers || [];
-            customTimers.forEach(timer => {
+            customTimers.forEach((timer) => {
               if (timer) {
                 clearTimeout(timer);
                 clearInterval(timer);
               }
             });
             window.customTimers = [];
-            
+
             // Clean up any script elements that might have been added dynamically
-            document.querySelectorAll('script.temp-script').forEach(script => {
-              script.remove();
-            });
-          }
+            document
+              .querySelectorAll("script.temp-script")
+              .forEach((script) => {
+                script.remove();
+              });
+          },
         };
 
         // Add necessary CSS for transitions
-        const navigationStyles = document.createElement('style');
+        const navigationStyles = document.createElement("style");
         navigationStyles.innerHTML = `
           body.page-transitioning {
             opacity: 1;
@@ -239,13 +248,14 @@
         document.head.appendChild(navigationStyles);
 
         // Create a loader element
-        const loader = document.createElement('div');
-        loader.className = 'navigation-loader';
-        loader.innerHTML = '<div style="width: 40px; height: 40px; border: 4px solid #333; border-top-color: #B01; border-radius: 50%; animation: spin 1s linear infinite;"></div>';
+        const loader = document.createElement("div");
+        loader.className = "navigation-loader";
+        loader.innerHTML =
+          '<div style="width: 40px; height: 40px; border: 4px solid #333; border-top-color: #B01; border-radius: 50%; animation: spin 1s linear infinite;"></div>';
         document.body.appendChild(loader);
 
         // Add animation for the loader
-        const loaderStyle = document.createElement('style');
+        const loaderStyle = document.createElement("style");
         loaderStyle.innerHTML = `
           @keyframes spin {
             0% { transform: rotate(0deg); }
@@ -260,18 +270,18 @@
           if (pageNavigationManager.isNavigating) {
             pageNavigationManager.endNavigation();
           }
-          
+
           // Clean up resources before navigation
           pageNavigationManager.cleanupBeforeNavigation();
-          
+
           // Start the navigation process
           pageNavigationManager.startNavigation();
-          
+
           // Push state and update the URL if this isn't from a popstate event
           if (!fromPopState) {
-            window.history.pushState({}, '', url);
+            window.history.pushState({}, "", url);
           }
-          
+
           // Attempt to load content and initialize
           setTimeout(() => {
             try {
@@ -282,7 +292,7 @@
               pageNavigationManager.resetNavigationState(true);
             }
           }, 500);
-          
+
           return false;
         }
 
@@ -303,9 +313,9 @@
             if (pageNavigationManager.isNavigating) {
               pageNavigationManager.endNavigation();
             }
-            
+
             originalPushState.apply(history, arguments);
-            
+
             // Use the unified navigation handler
             handleSpaNavigation(window.location.href, true);
             removeHomePageWidgets();
@@ -318,170 +328,34 @@
         });
 
         // Intercept all internal link clicks on the page
-        $(document).on('click', 'a[href^="/"], a[href^="' + window.location.origin + '"]', function(e) {
-          // Skip links that should be handled natively
-          if ($(this).attr('target') === '_blank' || 
-              $(this).hasClass('no-spa') || 
-              $(this).attr('href').indexOf('#') !== -1 ||
-              $(this).attr('href').indexOf('mailto:') !== -1 ||
-              $(this).attr('href').indexOf('tel:') !== -1) {
-            return true;
+        $(document).on(
+          "click",
+          'a[href^="/"], a[href^="' + window.location.origin + '"]',
+          function (e) {
+            // Skip links that should be handled natively
+            if (
+              $(this).attr("target") === "_blank" ||
+              $(this).hasClass("no-spa") ||
+              $(this).attr("href").indexOf("#") !== -1 ||
+              $(this).attr("href").indexOf("mailto:") !== -1 ||
+              $(this).attr("href").indexOf("tel:") !== -1
+            ) {
+              return true;
+            }
+
+            e.preventDefault();
+            handleSpaNavigation($(this).attr("href"));
+            return false;
           }
-          
-          e.preventDefault();
-          handleSpaNavigation($(this).attr('href'));
-          return false;
-        });
+        );
 
         // Add global error handler to recover from navigation issues
-        window.addEventListener('error', function(event) {
+        window.addEventListener("error", function (event) {
           if (pageNavigationManager.isNavigating) {
-            console.error('Error during navigation:', event.error);
+            console.error("Error during navigation:", event.error);
             pageNavigationManager.resetNavigationState(true);
           }
         });
-
-        // ! Don't touch - Original event handlers
-        /*$(document).on("click", "#telegram-button", function (e) {
-          e.preventDefault();
-          window.open("https://t.me/betredi", "_blank");
-        });
-
-        $(document).on("click", 'a[href$="/promotions"]', function (e) {
-          e.preventDefault();
-          window.location.href =
-            language === "tr"
-              ? "https://betredi108.com/tr/promotions"
-              : "https://betredi108.com/en/promotions";
-        });
-
-        $(document).on("click", 'a[href$="/tournaments"]', function (e) {
-          e.preventDefault();
-          window.location.href =
-            language === "tr"
-              ? "https://betredi108.com/tr/tournaments"
-              : "https://betredi108.com/en/tournaments";
-        });
-
-        $(document).on("click", 'a[href$="/settings"]', function (e) {
-          e.preventDefault();
-          window.location.href =
-            language === "tr"
-              ? "https://betredi108.com/tr/settings"
-              : "https://betredi108.com/en/settings";
-        });
-
-        $(document).on("click", 'a[href$="/transactions"]', function (e) {
-          e.preventDefault();
-          window.location.href =
-            language === "tr"
-              ? "https://betredi108.com/tr/transactions"
-              : "https://betredi108.com/en/transactions";
-        });
-
-        $(document).on("click", 'a[href$="/affiliate"]', function (e) {
-          e.preventDefault();
-          window.location.href =
-            language === "tr"
-              ? "https://betredi108.com/tr/affiliate"
-              : "https://betredi108.com/en/affiliate";
-        });
-
-        $(document).on("click", 'a[href$="/policy"]', function (e) {
-          e.preventDefault();
-          window.location.href =
-            language === "tr"
-              ? "https://betredi108.com/tr/policy"
-              : "https://betredi108.com/en/policy";
-        });
-
-        $(document).on("click", 'a[href$="/casino/slots"]', function (e) {
-          e.preventDefault();
-          window.location.href =
-            language === "tr"
-              ? "https://betredi108.com/tr/casino/slots"
-              : "https://betredi108.com/en/casino/slots";
-        });
-
-        $(document).on("click", 'a[href$="/live-casino"]', function (e) {
-          e.preventDefault();
-          window.location.href =
-            language === "tr"
-              ? "https://betredi108.com/tr/live-casino"
-              : "https://betredi108.com/en/live-casino";
-        });
-
-        $(document).on("click", 'a[href$="/sportsbook"]', function (e) {
-          e.preventDefault();
-          window.location.href =
-            language === "tr"
-              ? "https://betredi108.com/tr/sportsbook"
-              : "https://betredi108.com/en/sportsbook";
-        });
-
-        $(document).on(
-          "click",
-          'a[href$="/casino/category/exclusive"]',
-          function (e) {
-            e.preventDefault();
-            window.location.href =
-              language === "tr"
-                ? "https://betredi108.com/tr/casino/category/exclusive"
-                : "https://betredi108.com/en/casino/category/exclusive";
-          }
-        );
-
-        $(document).on(
-          "click",
-          'a[href$="/casino/virtual_sports"]',
-          function (e) {
-            e.preventDefault();
-            window.location.href =
-              language === "tr"
-                ? "https://betredi108.com/tr/casino/virtual_sports"
-                : "https://betredi108.com/en/casino/virtual_sports";
-          }
-        );
-
-        $(document).on("click", 'a[href$="/vip"]', function (e) {
-          e.preventDefault();
-          window.location.href =
-            language === "tr"
-              ? "https://betredi108.com/tr/vip"
-              : "https://betredi108.com/en/vip";
-        });
-
-        $(document).on("click", 'a[href$="/casino"]', function (e) {
-          e.preventDefault();
-          window.location.href =
-            language === "tr"
-              ? "https://betredi108.com/tr/casino"
-              : "https://betredi108.com/en/casino";
-        });
-
-        $(document).on("click", 'a[href$="/e-sport"]', function (e) {
-          e.preventDefault();
-          window.location.href =
-            language === "tr"
-              ? "https://betredi108.com/tr/e-sport"
-              : "https://betredi108.com/en/e-sport";
-        });
-
-        $(document).on("click", 'a[href$="/favorites"]', function (e) {
-          e.preventDefault();
-          window.location.href =
-            language === "tr"
-              ? "https://betredi108.com/tr/favorites"
-              : "https://betredi108.com/en/favorites";
-        });
-
-        $(document).on("click", 'a[href$="/trade"]', function (e) {
-          e.preventDefault();
-          window.location.href =
-            language === "tr"
-              ? "https://betredi108.com/tr/trade"
-              : "https://betredi108.com/en/trade";
-        });*/
       }
     }, 300);
 
@@ -512,22 +386,22 @@
         <div class="swiper mySwiper">
           <div class="swiper-wrapper">
             <div class="swiper-slide">
-              <a href="https://betredi108.com/tr/promotion/15-casino-yatirim-bonusu-tr"><img src="https://betrediofficial.github.io/images/slider/15Casino.png" class="slide-image" /></a>
+              <a href="/promotion/15-casino-yatirim-bonusu-tr"><img src="https://betrediofficial.github.io/images/slider/15Casino.png" class="slide-image" /></a>
             </div>
             <div class="swiper-slide">
-              <a href="https://betredi108.com/tr/promotion/15-spor-yatirim-bonusu-tr"><img src="https://betrediofficial.github.io/images/slider/15Spor.png" class="slide-image" /></a>
+              <a href="/promotion/15-spor-yatirim-bonusu-tr"><img src="https://betrediofficial.github.io/images/slider/15Spor.png" class="slide-image" /></a>
             </div>
             <div class="swiper-slide">
-              <a href="https://betredi108.com/tr/promotion/30-casino-discount-tr"><img src="https://betrediofficial.github.io/images/slider/30Discount.png" class="slide-image" /></a>
+              <a href="/promotion/30-casino-discount-tr"><img src="https://betrediofficial.github.io/images/slider/30Discount.png" class="slide-image" /></a>
             </div>
             <div class="swiper-slide">
-              <a href="https://betredi108.com/tr/promotion/50-slot-yatirim-bonusu-tr"><img src="https://betrediofficial.github.io/images/slider/50Slot.png" class="slide-image" /></a>
+              <a href="/promotion/50-slot-yatirim-bonusu-tr"><img src="https://betrediofficial.github.io/images/slider/50Slot.png" class="slide-image" /></a>
             </div>
             <div class="swiper-slide">
-              <a href="https://betredi108.com/tr/promotion/100-freespin-deneme-bonusu-trrf"><img src="https://betrediofficial.github.io/images/slider/100Freespin.png" class="slide-image" /></a>
+              <a href="/promotion/100-freespin-deneme-bonusu-trrf"><img src="https://betrediofficial.github.io/images/slider/100Freespin.png" class="slide-image" /></a>
             </div>
             <div class="swiper-slide">
-              <a href="https://betredi108.com/tr/promotion/100-slot-iade-bonusu-rt"><img src="https://betrediofficial.github.io/images/slider/100Slotiade.png" class="slide-image" /></a>
+              <a href="/promotion/100-slot-iade-bonusu-rt"><img src="https://betrediofficial.github.io/images/slider/100Slotiade.png" class="slide-image" /></a>
             </div>
           </div>
           <div class="swiper-button-next"></div>
@@ -1419,15 +1293,6 @@
             <span>Canlı Destek</span>
           </div>
         </a>
-        <a onClick="$('.lowbar__btn')[$('.lowbar__btn').length -1].click()" class="col-4">
-          <div class="box-icon-item">
-                  <svg class="svg-icon" style="margin: 0 auto !important;"><use href="/static/media/sprite.1cea5f3c17045e69440504bcd887b333.svg#gamer" xlink:href="/static/media/sprite.1cea5f3c17045e69440504bcd887b333.svg#gamer"></use></svg>
-
-            <span>Canlı Destek</span>
-          </div>
-        </a>
-
-
       </div>
 </div>
     `);
