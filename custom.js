@@ -1217,7 +1217,7 @@
 
     function removeHomePageWidgets() {
       if (!isHomePageCheck()) {
-        $(".manually-added-home-widgets").remove();
+        $(".manually-added-home-widgets").hide();
       }
     }
 
@@ -1225,7 +1225,7 @@
       const firstSection = document.querySelector("#main__content .section");
       if (firstSection && firstSection.id === "main-slider") {
         console.log("Removing original #main-slider...");
-        firstSection.remove();
+        firstSection.hide();
       }
     }
 
