@@ -163,10 +163,10 @@
 
         $(document).on("click", 'a[href*="/settings"]', function (e) {
           e.preventDefault();
-          location.replace(
+          window.location.assign(
             language === "tr"
-              ? "https://betredi108.com/tr/settings"
-              : "https://betredi108.com/en/settings"
+              ? "https://betredi108.com/tr/settings?tab=general"
+              : "https://betredi108.com/en/settings?tab=general"
           );
         });
 
