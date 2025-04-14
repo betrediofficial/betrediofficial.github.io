@@ -1293,6 +1293,75 @@
       });
     }
 
+    function insertCustomMiniGamesSlider() {
+      if ($("#mini-games-wrapper").length > 0) return;
+
+      var miniGamesSection = `
+     <div class="manually-added-home-widgets section" id="mini-games-wrapper" style="margin-top: 16px !important; margin-bottom: 16px !important;">
+   <div class="container">
+     <div class="row">
+       <div class="col-12">
+         <h2 class="section__title">
+           <svg class="svg-icon">
+             <use href="/static/media/sprite.1cea5f3c17045e69440504bcd887b333.svg#mini-games" 
+                  xlink:href="/static/media/sprite.1cea5f3c17045e69440504bcd887b333.svg#mini-games">
+             </use>
+           </svg>
+           Mini Oyunlar
+         </h2>
+       </div>
+ 
+       <div class="col-12">
+         <div class="swiper swiper-initialized swiper-horizontal myMiniGamesSwiper swiper-backface-hidden">
+           <div class="swiper-wrapper" style="transform: translate3d(0px, 0px, 0px);">
+ 
+             <div class="swiper-slide" data-swiper-slide-index="0" style="width: 339px; margin-right: 12px; background: none !important;">
+               <a class="mini-game mini-game--carousel mini-game--no-layer" href="/tr/casino/games/ebetlab-crash-originals" style="background: none !important;">
+                 <span class="mini-game__img">
+                   <img loading="lazy" src="https://betrediofficial.github.io/images/mini-games-v2/crash_v2.png" alt="">
+                 </span>
+               </a>
+             </div>
+ 
+             <div class="swiper-slide" data-swiper-slide-index="1" style="width: 339px; margin-right: 12px; background: none !important;">
+               <a class="mini-game mini-game--carousel mini-game--no-layer" href="/tr/casino/games/ebetlab-dice-originals" style="background: none !important;">
+                 <span class="mini-game__img">
+                   <img loading="lazy" src="https://betrediofficial.github.io/images/mini-games-v2/dice_v2.png" alt="">
+                 </span>
+               </a>
+             </div>
+ 
+             <div class="swiper-slide" data-swiper-slide-index="2" style="width: 339px; margin-right: 12px; background: none !important;">
+               <a class="mini-game mini-game--carousel mini-game--no-layer" href="/tr/casino/games/ebetlab-mines-originals" style="background: none !important;">
+                 <span class="mini-game__img">
+                   <img loading="lazy" src="https://betrediofficial.github.io/images/mini-games-v2/mines_v2.png" alt="">
+                 </span>
+               </a>
+             </div>
+ 
+             <div class="swiper-slide" data-swiper-slide-index="3" style="width: 339px; margin-right: 12px; background: none !important;">
+               <a class="mini-game mini-game--carousel mini-game--no-layer" href="/tr/casino/games/ebetlab-plinko-originals" style="background: none !important;">
+                 <span class="mini-game__img">
+                   <img loading="lazy" src="https://betrediofficial.github.io/images/mini-games-v2/plinko_v2.png" alt="">
+                 </span>
+               </a>
+             </div>
+ 
+           </div>
+         </div>
+       </div>
+ 
+     </div>
+   </div>
+ </div>
+ 
+ `;
+
+      if ($("#casinooyunlari").length > 0)
+        $("#casinooyunlari").after(miniGamesSection);
+      else $("#tgpromo").eq(0).after(miniGamesSection);
+    }
+
     function initCustomMiniGamesSlider() {
       const swiperEl = document.querySelector(
         "#mini-games-wrapper .myMiniGamesSwiper"
@@ -1312,10 +1381,7 @@
       removeOriginalMainSlider();
 
       insertCustomMainSlider();
-      insertCustomMiniGamesSlider();
-
       setTimeout(initCustomSlider, 500);
-      setTimeout(initCustomMiniGamesSlider, 500);
 
       isLoggedIn = $(".header__signin").length > 0 ? false : true;
       language = window.location.pathname.split("/")[1];
@@ -1349,6 +1415,9 @@
 
       insertCustomSidebarLink();
       injectProvidersMarquee();
+
+      insertCustomMiniGamesSlider();
+      setTimeout(initCustomMiniGamesSlider, 500);
 
       hideBlogSection();
 
@@ -2667,75 +2736,6 @@
     // if ($("#casinooyunlari").length > 0)
     $("#casinooyunlari").after(newSection);
     // else $("#tgpromo").eq(0).after(newSection);
-  }
-
-  function insertCustomMiniGamesSlider() {
-    if ($("#mini-games-wrapper").length > 0) return;
-
-    var miniGamesSection = `
-     <div class="manually-added-home-widgets section" id="mini-games-wrapper" style="margin-top: 16px !important; margin-bottom: 16px !important;">
-   <div class="container">
-     <div class="row">
-       <div class="col-12">
-         <h2 class="section__title">
-           <svg class="svg-icon">
-             <use href="/static/media/sprite.1cea5f3c17045e69440504bcd887b333.svg#mini-games" 
-                  xlink:href="/static/media/sprite.1cea5f3c17045e69440504bcd887b333.svg#mini-games">
-             </use>
-           </svg>
-           Mini Oyunlar
-         </h2>
-       </div>
- 
-       <div class="col-12">
-         <div class="swiper swiper-initialized swiper-horizontal myMiniGamesSwiper swiper-backface-hidden">
-           <div class="swiper-wrapper" style="transform: translate3d(0px, 0px, 0px);">
- 
-             <div class="swiper-slide" data-swiper-slide-index="0" style="width: 339px; margin-right: 12px; background: none !important;">
-               <a class="mini-game mini-game--carousel mini-game--no-layer" href="/tr/casino/games/ebetlab-crash-originals" style="background: none !important;">
-                 <span class="mini-game__img">
-                   <img loading="lazy" src="https://betrediofficial.github.io/images/mini-games-v2/crash_v2.png" alt="">
-                 </span>
-               </a>
-             </div>
- 
-             <div class="swiper-slide" data-swiper-slide-index="1" style="width: 339px; margin-right: 12px; background: none !important;">
-               <a class="mini-game mini-game--carousel mini-game--no-layer" href="/tr/casino/games/ebetlab-dice-originals" style="background: none !important;">
-                 <span class="mini-game__img">
-                   <img loading="lazy" src="https://betrediofficial.github.io/images/mini-games-v2/dice_v2.png" alt="">
-                 </span>
-               </a>
-             </div>
- 
-             <div class="swiper-slide" data-swiper-slide-index="2" style="width: 339px; margin-right: 12px; background: none !important;">
-               <a class="mini-game mini-game--carousel mini-game--no-layer" href="/tr/casino/games/ebetlab-mines-originals" style="background: none !important;">
-                 <span class="mini-game__img">
-                   <img loading="lazy" src="https://betrediofficial.github.io/images/mini-games-v2/mines_v2.png" alt="">
-                 </span>
-               </a>
-             </div>
- 
-             <div class="swiper-slide" data-swiper-slide-index="3" style="width: 339px; margin-right: 12px; background: none !important;">
-               <a class="mini-game mini-game--carousel mini-game--no-layer" href="/tr/casino/games/ebetlab-plinko-originals" style="background: none !important;">
-                 <span class="mini-game__img">
-                   <img loading="lazy" src="https://betrediofficial.github.io/images/mini-games-v2/plinko_v2.png" alt="">
-                 </span>
-               </a>
-             </div>
- 
-           </div>
-         </div>
-       </div>
- 
-     </div>
-   </div>
- </div>
- 
- `;
-
-    if ($("#casinooyunlari").length > 0)
-      $("#casinooyunlari").after(miniGamesSection);
-    else $("#tgpromo").eq(0).after(miniGamesSection);
   }
 
   function hideDefaultGames(ms) {
