@@ -1320,6 +1320,8 @@
 
       customizeSignupModal();
       customizeSigninModal();
+
+      injectExtraText();
     }
 
     customCSS();
@@ -1863,6 +1865,41 @@
       //   const clone = marquee.cloneNode(true);
       //   marquee.parentElement.appendChild(clone);
       // }
+    }
+
+    function injectExtraText() {
+      const observer = new MutationObserver(() => {
+        const $targetContainer = $(
+          "#collapse2-benefits .settings__container .settings__text"
+        ).parent();
+
+        if (
+          $targetContainer.length &&
+          $targetContainer.find(".extra-info-text").length === 0
+        ) {
+          const $newText = $(`
+ 
+        <p class="extra-info-text" style="margin: 8px 0; color: #e31f25; font-size:18px;">
+ 
+          ${
+            language === "tr"
+              ? "* Talep edilmediği sürece bu alan zorunlu değildir."
+              : "This field is not mandatory unless requested."
+          }
+ 
+        </p>
+ 
+      `);
+
+          $targetContainer.prepend($newText);
+        }
+      });
+
+      observer.observe(document.body, {
+        childList: true,
+
+        subtree: true,
+      });
     }
 
     function customCSS() {
