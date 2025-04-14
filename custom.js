@@ -2237,7 +2237,7 @@
 <div class="manually-added-home-widgets bottomMenuWidgedContainer" id="bottomMenuWidgedContainer" style="margin-bottom: 10px;">
   <div class="bottom-menu-widget" style="flex: 1 1 calc(25% - 10px); text-align: center;">
     <a href="casino/category/exclusive">
-      <img src="https://betrediofficial.github.io/images/bottom-menu-widget/games.png" alt="games" class="bottomMenuWidgetImage" >
+      <img src="https://betrediofficial.github.io/images/bottom-menu-widget/games.webp" alt="games" class="bottomMenuWidgetImage" >
     </a>
   </div>
 
@@ -2245,7 +2245,7 @@
     !isMobile
       ? `<div class="bottom-menu-widget" style="flex: 1 1 calc(25% - 10px); text-align: center;">
     <a href="casino/group/live-casino">
-      <img src="https://betrediofficial.github.io/images/bottom-menu-widget/live_casino.png" alt="livecasino" class="bottomMenuWidgetImage" >
+      <img src="https://betrediofficial.github.io/images/bottom-menu-widget/live_casino.webp" alt="livecasino" class="bottomMenuWidgetImage" >
     </a>
   </div>`
       : ``
@@ -2253,12 +2253,12 @@
 
   <div class="bottom-menu-widget" style="flex: 1 1 calc(25% - 10px); text-align: center;">
     <a href="sportsbook">
-      <img src="https://betrediofficial.github.io/images/bottom-menu-widget/sport.png" alt="sporb" class="bottomMenuWidgetImage" >
+      <img src="https://betrediofficial.github.io/images/bottom-menu-widget/sport.webp" alt="sporb" class="bottomMenuWidgetImage" >
     </a>
   </div>
   <div class="bottom-menu-widget" style="flex: 1 1 calc(25% - 10px); text-align: center;">
     <a href="casino/slots">
-      <img src="https://betrediofficial.github.io/images/bottom-menu-widget/slot.png" alt="slotcasino" class="bottomMenuWidgetImage" >
+      <img src="https://betrediofficial.github.io/images/bottom-menu-widget/slot.webp" alt="slotcasino" class="bottomMenuWidgetImage" >
     </a>
   </div>
 </div>
