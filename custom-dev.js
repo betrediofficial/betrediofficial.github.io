@@ -1409,6 +1409,8 @@
 
         // sportsCard();
         //hide default games
+
+        // HIDE
         // !is_mobile && hideDefaultGames(50);
         // !is_mobile && hideDefaultGames(1500);
       }
