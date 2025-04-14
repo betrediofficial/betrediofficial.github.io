@@ -152,12 +152,160 @@
           window.open("https://t.me/betredi", "_blank");
         });
 
+        $(document).on("click", 'a[href$="/casino/group/lobby"]', function (e) {
+          e.preventDefault();
+          window.location.href =
+            language === "tr"
+              ? "https://betredi109.com/tr/casino/group/lobby"
+              : "https://betredi109.com/en/group/lobby";
+        });
+
+        $(document).on(
+          "click",
+          'a[href$="/casino/group/new-releases"]',
+          function (e) {
+            e.preventDefault();
+            window.location.href =
+              language === "tr"
+                ? "https://betredi109.com/tr/casino/group/new-releases"
+                : "https://betredi109.com/en/casino/group/new-releases";
+          }
+        );
+
+        $(document).on(
+          "click",
+          'a[href$="/casino/group/free-spins"]',
+          function (e) {
+            e.preventDefault();
+            window.location.href =
+              language === "tr"
+                ? "https://betredi109.com/tr/casino/group/free-spins"
+                : "https://betredi109.com/en/casino/group/free-spins";
+          }
+        );
+
+        $(document).on(
+          "click",
+          'a[href$="/casino/group/enhanced-rtp"]',
+          function (e) {
+            e.preventDefault();
+            window.location.href =
+              language === "tr"
+                ? "https://betredi109.com/tr/casino/group/enhanced-rtp"
+                : "https://betredi109.com/en/casino/group/enhanced-rtp";
+          }
+        );
+
+        $(document).on(
+          "click",
+          'a[href$="/casino/group/instant-win"]',
+          function (e) {
+            e.preventDefault();
+            window.location.href =
+              language === "tr"
+                ? "https://betredi109.com/tr/casino/group/instant-win"
+                : "https://betredi109.com/en/casino/group/instant-win";
+          }
+        );
+
+        $(document).on(
+          "click",
+          'a[href$="/casino/group/jackpot-games"]',
+          function (e) {
+            e.preventDefault();
+            window.location.href =
+              language === "tr"
+                ? "https://betredi109.com/tr/casino/group/jackpot-games"
+                : "https://betredi109.com/en/casino/group/jackpot-games";
+          }
+        );
+
         $(document).on("click", 'a[href$="/promotions"]', function (e) {
           e.preventDefault();
           window.location.href =
             language === "tr"
               ? "https://betredi109.com/tr/promotions"
               : "https://betredi109.com/en/promotions";
+        });
+
+        $(document).on(
+          "click",
+          'a[href$="/casino/group/bonus-buy"]',
+          function (e) {
+            e.preventDefault();
+            window.location.href =
+              language === "tr"
+                ? "https://betredi109.com/tr/casino/group/bonus-buy"
+                : "https://betredi109.com/en/casino/group/bonus-buy";
+          }
+        );
+
+        $(document).on(
+          "click",
+          'a[href$="/casino/group/live-lobby"]',
+          function (e) {
+            e.preventDefault();
+            window.location.href =
+              language === "tr"
+                ? "https://betredi109.com/tr/casino/group/live-lobby"
+                : "https://betredi109.com/en/casino/group/live-lobby";
+          }
+        );
+
+        $(document).on(
+          "click",
+          'a[href$="/casino/group/table-games"]',
+          function (e) {
+            e.preventDefault();
+            window.location.href =
+              language === "tr"
+                ? "https://betredi109.com/tr/casino/group/table-games"
+                : "https://betredi109.com/en/casino/group/table-games";
+          }
+        );
+
+        $(document).on(
+          "click",
+          'a[href$="/casino/group/roulette"]',
+          function (e) {
+            e.preventDefault();
+            window.location.href =
+              language === "tr"
+                ? "https://betredi109.com/tr/casino/group/roulette"
+                : "https://betredi109.com/en/casino/group/roulette";
+          }
+        );
+
+        $(document).on(
+          "click",
+          'a[href$="/casino/group/baccarat"]',
+          function (e) {
+            e.preventDefault();
+            window.location.href =
+              language === "tr"
+                ? "https://betredi109.com/tr/casino/group/baccarat"
+                : "https://betredi109.com/en/casino/group/baccarat";
+          }
+        );
+
+        $(document).on(
+          "click",
+          'a[href$="/casino/group/blackjack"]',
+          function (e) {
+            e.preventDefault();
+            window.location.href =
+              language === "tr"
+                ? "https://betredi109.com/tr/casino/group/blackjack"
+                : "https://betredi109.com/en/casino/group/blackjack";
+          }
+        );
+
+        $(document).on("click", 'a[href$="/casino/group/poker"]', function (e) {
+          e.preventDefault();
+          window.location.href =
+            language === "tr"
+              ? "https://betredi109.com/tr/casino/group/poker"
+              : "https://betredi109.com/en/casino/group/poker";
         });
 
         $(document).on("click", 'a[href$="/tournaments"]', function (e) {
