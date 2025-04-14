@@ -264,34 +264,65 @@
         `;
         document.head.appendChild(loaderStyle);
 
-        // Function to handle SPA navigation
+        // // Function to handle SPA navigation
+        // function handleSpaNavigation(url, fromPopState = false) {
+        //   // If we're already navigating, complete the previous navigation first
+        //   if (pageNavigationManager.isNavigating) {
+        //     pageNavigationManager.endNavigation();
+        //   }
+
+        //   // Clean up resources before navigation
+        //   pageNavigationManager.cleanupBeforeNavigation();
+
+        //   // Start the navigation process
+        //   pageNavigationManager.startNavigation();
+
+        //   // Push state and update the URL if this isn't from a popstate event
+        //   if (!fromPopState) {
+        //     window.history.pushState({}, "", url);
+        //   }
+
+        //   // Attempt to load content and initialize
+        //   setTimeout(() => {
+        //     try {
+        //       initialize();
+        //       pageNavigationManager.checkContentLoaded();
+        //     } catch (error) {
+        //       console.error("Navigation error:", error);
+        //       pageNavigationManager.resetNavigationState(true);
+        //     }
+        //   }, 500);
+
+        //   return false;
+        // }
+
         function handleSpaNavigation(url, fromPopState = false) {
-          // If we're already navigating, complete the previous navigation first
           if (pageNavigationManager.isNavigating) {
             pageNavigationManager.endNavigation();
           }
 
-          // Clean up resources before navigation
           pageNavigationManager.cleanupBeforeNavigation();
-
-          // Start the navigation process
           pageNavigationManager.startNavigation();
 
-          // Push state and update the URL if this isn't from a popstate event
           if (!fromPopState) {
             window.history.pushState({}, "", url);
           }
 
-          // Attempt to load content and initialize
-          setTimeout(() => {
-            try {
-              initialize();
-              pageNavigationManager.checkContentLoaded();
-            } catch (error) {
-              console.error("Navigation error:", error);
-              pageNavigationManager.resetNavigationState(true);
+          $.get(url, function (data) {
+            const newContent = $(data).find("#main__content").html();
+
+            if (newContent) {
+              $("#main__content").html(newContent);
+            } else {
+              console.warn("New content not found for:", url);
             }
-          }, 500);
+
+            initialize();
+            pageNavigationManager.checkContentLoaded();
+          }).fail(function () {
+            console.error("Failed to load content for:", url);
+            pageNavigationManager.resetNavigationState(true);
+          });
 
           return false;
         }
