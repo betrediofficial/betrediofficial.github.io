@@ -2153,89 +2153,73 @@
       $(".section:first").append(`
 <div class="manually-added-home-widgets container mt-4 mobile-boxes" id="mobileboxes" style="margin-bottom: 10px;">
   <div class="row row-cols-2 row-cols-md-3 row-cols-lg-4 g-1">
-        <a href="casino/group/live-lobby" class="col-4">
-          <div class="box-icon-item">
-            <img
-              src="https://betrediofficial.github.io/images/mobile-view//live_casino.png"
-              width="48"
-              height="48"
-              class="d-block mx-auto"
-            />
-            <span>Canlı Casino</span>
-          </div>
-        </a>
-        <a href="casino/group/lobby" class="col-4">
-          <div class="box-icon-item">
-            <img
-              src="https://betrediofficial.github.io/images/mobile-view/sloticon.png"
-              width="48"
-              height="48"
-              class="d-block mx-auto"
-            />
-            <span>Slot</span>
-          </div>
-        </a>
-        <a href="${depositMoneyLink()}" class="col-4">
-          <div class="box-icon-item">
-            <img
-              src="https://betrediofficial.github.io/images/mobile-view//deposit.png"
-              width="48"
-              height="48"
-              class="d-block mx-auto"
-            />
+    <a href="casino/group/live-lobby" class="col-4">
+      <div class="box-icon-item">
+        <img
+          src="https://betrediofficial.github.io/images/mobile-view//live_casino.png"
+          width="48"
+          height="48"
+          class="d-block mx-auto"
+        />
+        <span>Canlı Casino</span>
+      </div>
+    </a>
+    <a href="casino/group/lobby" class="col-4">
+      <div class="box-icon-item">
+        <img
+          src="https://betrediofficial.github.io/images/mobile-view/sloticon.png"
+          width="48"
+          height="48"
+          class="d-block mx-auto"
+        />
+        <span>Slot</span>
+      </div>
+    </a>
+    <a href="${depositMoneyLink()}" class="col-4">
+      <div class="box-icon-item">
+        <img
+          src="https://betrediofficial.github.io/images/mobile-view//deposit.png"
+            width="48"
+            height="48"
+            class="d-block mx-auto"
+        />
             <span>Para Yatır</span>
-          </div>
-        </a>
-        <a href="${withdrawMoneyLink()}" class="col-4">
-          <div class="box-icon-item">
-            <img
-              src="https://betrediofficial.github.io/images/mobile-view//withdraw.png"
-              width="48"
-              height="48"
-              class="d-block mx-auto"
-            />
-            <span>Para Çek</span>
-          </div>
-        </a>
-        <a class="col-4" href="promotions?modal=vip&tab=bonus-code">
-          <div class="box-icon-item">
-            <img
-              src="https://betrediofficial.github.io/images/mobile-view//bonus.png"
-              width="48"
-              height="48"
-              class="d-block mx-auto"
-            />
+      </div>
+    </a>
+    <a href="${withdrawMoneyLink()}" class="col-4">
+      <div class="box-icon-item">
+        <img
+          src="https://betrediofficial.github.io/images/mobile-view//withdraw.png"
+          width="48"
+          height="48"
+          class="d-block mx-auto"
+        />
+          <span>Para Çek</span>
+      </div>
+    </a>
+    <a class="col-4" href="promotions?modal=vip&tab=bonus-code">
+      <div class="box-icon-item">
+        <img
+          src="https://betrediofficial.github.io/images/mobile-view//bonus.png"
+          width="48"
+          height="48"
+          class="d-block mx-auto"
+        />
             <span>Bonus Talep</span>
-          </div>
-        </a>
-        <a href="promotions" class="col-4">
-          <div class="box-icon-item">
-            <img
-              src="https://betrediofficial.github.io/images/mobile-view//promotion.png"
-              width="48"
-              height="48"
-              class="d-block mx-auto"
-            />
+      </div>
+    </a>
+    <a href="promotions" class="col-4">
+      <div class="box-icon-item">
+        <img
+          src="https://betrediofficial.github.io/images/mobile-view//promotion.png"
+          width="48"
+          height="48"
+          class="d-block mx-auto"
+        />
             <span>Promosyonlar</span>
-          </div>
-        </a>
-        <a onClick="$('.lowbar__btn')[$('.lowbar__btn').length -1].click()" class="col-4">
-          <div class="box-icon-item">
-            <img
-              src="https://betrediofficial.github.io/images/mobile-view//support.png"
-              width="48"
-              height="48"
-              class="d-block mx-auto"
-            />
-            <span>Canlı Destek</span>
-          </div>
-        </a>
-
-    <a
-      onClick="$('.lowbar__btn')[$('.lowbar__btn').length -1].click()"
-      class="col-4"
-      style="background: linear-gradient(135deg, #3a0509, #5a0910, #a31624);"
-    >
+      </div>
+    </a>
+    <a onClick="$('.lowbar__btn')[$('.lowbar__btn').length -1].click()" class="col-4">
       <div class="box-icon-item">
         <img
           src="https://betrediofficial.github.io/images/mobile-view//support.png"
@@ -2243,10 +2227,21 @@
           height="48"
           class="d-block mx-auto"
         />
-        <span>RTP Sorgu</span>
+            <span>Canlı Destek</span>
       </div>
     </a>
+    <a href="https://rtpsorgu.com" target="_blank" class="col-4">
+      <div class="box-icon-item" style="background: linear-gradient(135deg, #3a0509, #5a0910, #a31624);">
+        <img
+          src="https://betrediofficial.github.io/images/mobile-view//support.png"
+          width="48"
+          height="48"
+          class="d-block mx-auto"
+        />
+            <span>RTP Sorgu</span>
       </div>
+    </a>
+  </div>
 </div>
     `);
     }
