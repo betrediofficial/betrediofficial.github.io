@@ -1296,7 +1296,9 @@
     function initialize() {
       removeOriginalMainSlider();
       insertCustomMainSlider();
+
       setTimeout(initCustomSlider, 500);
+      setTimeout(initCustomMiniGames, 500);
 
       isLoggedIn = $(".header__signin").length > 0 ? false : true;
       language = window.location.pathname.split("/")[1];
@@ -2717,6 +2719,13 @@
     if ($("#casinooyunlari").length > 0)
       $("#casinooyunlari").after(miniGamesSection);
     else $("#tgpromo").eq(0).after(miniGamesSection);
+
+    new Swiper("#mini-games-wrapper .swiper", {
+      slidesPerView: "auto",
+      spaceBetween: 12,
+      freeMode: true,
+      grabCursor: true,
+    });
   }
 
   function hideDefaultGames(ms) {
