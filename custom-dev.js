@@ -1418,6 +1418,7 @@
       insertCustomSidebarLink();
       injectProvidersMarquee();
 
+      // mini games
       insertCustomMiniGamesSlider();
       setTimeout(initCustomMiniGamesSlider, 500);
 
