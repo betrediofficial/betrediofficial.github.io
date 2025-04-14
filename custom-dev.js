@@ -118,243 +118,167 @@
       ) {
         clearInterval(wait);
 
-        // Create a navigation state manager
-        const pageNavigationManager = {
-          isNavigating: false,
-          timeout: null,
-          maxAttempts: 3,
-          currentAttempt: 0,
-
-          // Start navigation process
-          startNavigation: function () {
-            this.isNavigating = true;
-            this.currentAttempt = 0;
-            document.body.classList.add("page-transitioning");
-
-            // Set a safety timeout to reset state if navigation takes too long
-            this.timeout = setTimeout(() => {
-              this.resetNavigationState(true);
-            }, 5000); // 5 second safety timeout
-          },
-
-          // End navigation process
-          endNavigation: function () {
-            clearTimeout(this.timeout);
-            this.isNavigating = false;
-            this.currentAttempt = 0;
-            document.body.classList.remove("page-transitioning");
-          },
-
-          // Reset navigation state in case of errors
-          resetNavigationState: function (isTimeout = false) {
-            console.log("Navigation timeout or error - resetting state");
-            this.isNavigating = false;
-            this.currentAttempt++;
-            document.body.classList.remove("page-transitioning");
-
-            // If we've had multiple failed attempts or it's a timeout, reload the page completely
-            if (isTimeout || this.currentAttempt >= this.maxAttempts) {
-              console.log("Multiple navigation failures - reloading page");
-              window.location.reload();
-            }
-          },
-
-          // Check if main content loaded correctly
-          checkContentLoaded: function () {
-            // Check if main content elements exist
-            const mainContent = document.querySelector("#main__content");
-            if (
-              !mainContent ||
-              !mainContent.children ||
-              mainContent.children.length === 0
-            ) {
-              console.log("Content not loaded properly, attempting recovery");
-
-              // If we're below max attempts, try to initialize again
-              if (this.currentAttempt < this.maxAttempts) {
-                this.currentAttempt++;
-                setTimeout(() => {
-                  initialize();
-                  this.checkContentLoaded();
-                }, 1000);
-              } else {
-                // If we've tried too many times, reload the page
-                console.log("Too many recovery attempts, reloading page");
-                window.location.reload();
-              }
-              return false;
-            }
-
-            // Content loaded successfully
-            this.endNavigation();
-            return true;
-          },
-
-          // Clean up resources before navigation
-          cleanupBeforeNavigation: function () {
-            // Clean up any custom Swiper instances
-            if (
-              window.myMainSlider &&
-              typeof window.myMainSlider.destroy === "function"
-            ) {
-              try {
-                window.myMainSlider.destroy(true, true);
-              } catch (e) {
-                console.warn("Error cleaning up Swiper:", e);
-              }
-            }
-
-            // Remove temporary event listeners
-            $(".custom-temp-event").off();
-
-            // Clean up other custom resources or timers
-            const customTimers = window.customTimers || [];
-            customTimers.forEach((timer) => {
-              if (timer) {
-                clearTimeout(timer);
-                clearInterval(timer);
-              }
-            });
-            window.customTimers = [];
-
-            // Clean up any script elements that might have been added dynamically
-            document
-              .querySelectorAll("script.temp-script")
-              .forEach((script) => {
-                script.remove();
-              });
-          },
-        };
-
-        // Add necessary CSS for transitions
-        const navigationStyles = document.createElement("style");
-        navigationStyles.innerHTML = `
-          body.page-transitioning {
-            opacity: 1;
-            transition: opacity 0.3s ease;
-          }
-          .navigation-loader {
-            position: fixed;
-            top: 50%;
-            left: 50%;
-            transform: translate(-50%, -50%);
-            z-index: 9999;
-            display: none;
-          }
-          body.page-transitioning .navigation-loader {
-            display: block;
-          }
-        `;
-        document.head.appendChild(navigationStyles);
-
-        // Create a loader element
-        const loader = document.createElement("div");
-        loader.className = "navigation-loader";
-        loader.innerHTML =
-          '<div style="width: 40px; height: 40px; border: 4px solid #333; border-top-color: #B01; border-radius: 50%; animation: spin 1s linear infinite;"></div>';
-        document.body.appendChild(loader);
-
-        // Add animation for the loader
-        const loaderStyle = document.createElement("style");
-        loaderStyle.innerHTML = `
-          @keyframes spin {
-            0% { transform: rotate(0deg); }
-            100% { transform: rotate(360deg); }
-          }
-        `;
-        document.head.appendChild(loaderStyle);
-
-        // Function to handle SPA navigation
-        function handleSpaNavigation(url, fromPopState = false) {
-          // If we're already navigating, complete the previous navigation first
-          if (pageNavigationManager.isNavigating) {
-            pageNavigationManager.endNavigation();
-          }
-
-          // Clean up resources before navigation
-          pageNavigationManager.cleanupBeforeNavigation();
-
-          // Start the navigation process
-          pageNavigationManager.startNavigation();
-
-          // Push state and update the URL if this isn't from a popstate event
-          if (!fromPopState) {
-            window.history.pushState({}, "", url);
-          }
-
-          // Attempt to load content and initialize
-          setTimeout(() => {
-            try {
-              initialize();
-              pageNavigationManager.checkContentLoaded();
-            } catch (error) {
-              console.error("Navigation error:", error);
-              pageNavigationManager.resetNavigationState(true);
-            }
-          }, 500);
-
-          return false;
-        }
-
-        // Helper function to store timers for cleanup
-        function registerTimer(timer) {
-          if (!window.customTimers) {
-            window.customTimers = [];
-          }
-          window.customTimers.push(timer);
-          return timer;
-        }
-
         $(document).ready(function () {
           initialize();
 
           const originalPushState = history.pushState;
-          history.pushState = function () {
-            if (pageNavigationManager.isNavigating) {
-              pageNavigationManager.endNavigation();
-            }
-
+          history.pushState = function (state) {
             originalPushState.apply(history, arguments);
 
-            // Use the unified navigation handler
-            handleSpaNavigation(window.location.href, true);
+            setTimeout(() => {
+              initialize();
+            }, 500);
             removeHomePageWidgets();
           };
 
           $(window).on("popstate", function () {
-            handleSpaNavigation(window.location.href, true);
+            setTimeout(() => {
+              initialize();
+            }, 500);
             removeHomePageWidgets();
           });
         });
 
-        // Intercept all internal link clicks on the page
+        // ! Don't touch
+        $(document).on("click", "#telegram-button", function (e) {
+          e.preventDefault();
+          window.open("https://t.me/betredi", "_blank");
+        });
+
+        $(document).on("click", 'a[href$="/promotions"]', function (e) {
+          e.preventDefault();
+          window.location.href =
+            language === "tr"
+              ? "https://betredi108.com/tr/promotions"
+              : "https://betredi108.com/en/promotions";
+        });
+
+        $(document).on("click", 'a[href$="/tournaments"]', function (e) {
+          e.preventDefault();
+          window.location.href =
+            language === "tr"
+              ? "https://betredi108.com/tr/tournaments"
+              : "https://betredi108.com/en/tournaments";
+        });
+
+        $(document).on("click", 'a[href$="/settings"]', function (e) {
+          e.preventDefault();
+          window.location.href =
+            language === "tr"
+              ? "https://betredi108.com/tr/settings"
+              : "https://betredi108.com/en/settings";
+        });
+
+        $(document).on("click", 'a[href$="/transactions"]', function (e) {
+          e.preventDefault();
+          window.location.href =
+            language === "tr"
+              ? "https://betredi108.com/tr/transactions"
+              : "https://betredi108.com/en/transactions";
+        });
+
+        $(document).on("click", 'a[href$="/affiliate"]', function (e) {
+          e.preventDefault();
+          window.location.href =
+            language === "tr"
+              ? "https://betredi108.com/tr/affiliate"
+              : "https://betredi108.com/en/affiliate";
+        });
+
+        $(document).on("click", 'a[href$="/policy"]', function (e) {
+          e.preventDefault();
+          window.location.href =
+            language === "tr"
+              ? "https://betredi108.com/tr/policy"
+              : "https://betredi108.com/en/policy";
+        });
+
+        $(document).on("click", 'a[href$="/casino/slots"]', function (e) {
+          e.preventDefault();
+          window.location.href =
+            language === "tr"
+              ? "https://betredi108.com/tr/casino/slots"
+              : "https://betredi108.com/en/casino/slots";
+        });
+
+        $(document).on("click", 'a[href$="/live-casino"]', function (e) {
+          e.preventDefault();
+          window.location.href =
+            language === "tr"
+              ? "https://betredi108.com/tr/live-casino"
+              : "https://betredi108.com/en/live-casino";
+        });
+
+        $(document).on("click", 'a[href$="/sportsbook"]', function (e) {
+          e.preventDefault();
+          window.location.href =
+            language === "tr"
+              ? "https://betredi108.com/tr/sportsbook"
+              : "https://betredi108.com/en/sportsbook";
+        });
+
         $(document).on(
           "click",
-          'a[href^="/"], a[href^="' + window.location.origin + '"]',
+          'a[href$="/casino/category/exclusive"]',
           function (e) {
-            // Skip links that should be handled natively
-            if (
-              $(this).attr("target") === "_blank" ||
-              $(this).hasClass("no-spa") ||
-              $(this).attr("href").indexOf("#") !== -1 ||
-              $(this).attr("href").indexOf("mailto:") !== -1 ||
-              $(this).attr("href").indexOf("tel:") !== -1
-            ) {
-              return true;
-            }
-
             e.preventDefault();
-            handleSpaNavigation($(this).attr("href"));
-            return false;
+            window.location.href =
+              language === "tr"
+                ? "https://betredi108.com/tr/casino/category/exclusive"
+                : "https://betredi108.com/en/casino/category/exclusive";
           }
         );
 
-        // Add global error handler to recover from navigation issues
-        window.addEventListener("error", function (event) {
-          if (pageNavigationManager.isNavigating) {
-            console.error("Error during navigation:", event.error);
-            pageNavigationManager.resetNavigationState(true);
+        $(document).on(
+          "click",
+          'a[href$="/casino/virtual_sports"]',
+          function (e) {
+            e.preventDefault();
+            window.location.href =
+              language === "tr"
+                ? "https://betredi108.com/tr/casino/virtual_sports"
+                : "https://betredi108.com/en/casino/virtual_sports";
           }
+        );
+
+        $(document).on("click", 'a[href$="/vip"]', function (e) {
+          e.preventDefault();
+          window.location.href =
+            language === "tr"
+              ? "https://betredi108.com/tr/vip"
+              : "https://betredi108.com/en/vip";
+        });
+
+        $(document).on("click", 'a[href$="/casino"]', function (e) {
+          e.preventDefault();
+          window.location.href =
+            language === "tr"
+              ? "https://betredi108.com/tr/casino"
+              : "https://betredi108.com/en/casino";
+        });
+
+        $(document).on("click", 'a[href$="/e-sport"]', function (e) {
+          e.preventDefault();
+          window.location.href =
+            language === "tr"
+              ? "https://betredi108.com/tr/e-sport"
+              : "https://betredi108.com/en/e-sport";
+        });
+
+        $(document).on("click", 'a[href$="/favorites"]', function (e) {
+          e.preventDefault();
+          window.location.href =
+            language === "tr"
+              ? "https://betredi108.com/tr/favorites"
+              : "https://betredi108.com/en/favorites";
+        });
+
+        $(document).on("click", 'a[href$="/trade"]', function (e) {
+          e.preventDefault();
+          window.location.href =
+            language === "tr"
+              ? "https://betredi108.com/tr/trade"
+              : "https://betredi108.com/en/trade";
         });
       }
     }, 300);
@@ -471,10 +395,7 @@
 
         if (!is_mobile) casinoGames();
 
-        // sportsCard();
-        // miniGames();
-        // casinoChooser();
-
+        sportsCard();
         //hide default games
         !is_mobile && hideDefaultGames(50);
         !is_mobile && hideDefaultGames(1500);
@@ -487,8 +408,6 @@
 
       customizeSignupModal();
       customizeSigninModal();
-
-      injectExtraText();
     }
 
     customCSS();
@@ -623,7 +542,7 @@
       section.className = "section custom--section--2 custom--section";
       section.innerHTML = `
           <div class="container" style="position: relative; max-width: 100% !important; margin-bottom: 20px; !important; padding-left: 0px !important; padding-right: 0px !important; padding-top: 0px !important; overflow: hidden !important;">
-    <div class="providers--marquee--bg" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; background: linear-gradient(to right, black 0%, #570b13 50%, black 100%);"></div>
+    <div class="providers--marquee--bg" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; background: linear-gradient(to right, black 0%, #7d020f 50%, black 100%);"></div>
 <div class="providers--marquee">	
 				          <a class="custom--providers--link" href="https://betredi108.com/tr/providers/pragmaticplay">
 				            <img class="custom--providers--image" src="https://vendor-provider.fra1.cdn.digitaloceanspaces.com/ebetlab/game-providers/light/pragmaticplay.svg" alt="">
@@ -1034,36 +953,6 @@
       // }
     }
 
-    function injectExtraText() {
-      const observer = new MutationObserver(() => {
-        const $targetContainer = $(
-          "#collapse2-benefits .settings__container .settings__text"
-        ).parent();
-
-        if (
-          $targetContainer.length &&
-          $targetContainer.find(".extra-info-text").length === 0
-        ) {
-          const $newText = $(`
-        <p class="extra-info-text" style="margin: 8px 0; color: #e31f25; font-size:18px;">
-          ${
-            language === "tr"
-              ? "* Talep edilmediği sürece bu alan zorunlu değildir."
-              : "This field is not mandatory unless requested."
-          }
-        </p>
-      `);
-
-          $targetContainer.prepend($newText);
-        }
-      });
-
-      observer.observe(document.body, {
-        childList: true,
-        subtree: true,
-      });
-    }
-
     function customCSS() {
       const style = document.createElement("style");
 
@@ -1201,16 +1090,6 @@
       $(".section--first").eq(1).before(newSection);
     }
 
-    function casinoChooser() {
-      if ($(".chooser").length > 0) return;
-
-      var chooserSection = `
-      <div class="manually-added-home-widgets container"></div>
-`;
-
-      $("#digeroyunlari").after(chooserSection);
-    }
-
     function mobileBoxes() {
       if ($("#mobileboxes").length > 0) return;
       $(".section:first").append(`
@@ -1293,6 +1172,15 @@
             <span>Canlı Destek</span>
           </div>
         </a>
+        <a onClick="$('.lowbar__btn')[$('.lowbar__btn').length -1].click()" class="col-4">
+          <div class="box-icon-item">
+                  <svg class="svg-icon" style="margin: 0 auto !important;"><use href="/static/media/sprite.1cea5f3c17045e69440504bcd887b333.svg#gamer" xlink:href="/static/media/sprite.1cea5f3c17045e69440504bcd887b333.svg#gamer"></use></svg>
+
+            <span>Canlı Destek</span>
+          </div>
+        </a>
+
+
       </div>
 </div>
     `);
@@ -1489,17 +1377,17 @@
       var newSection = `
 <div class="manually-added-home-widgets section" id="tgpromo" style="margin-bottom: 14px; margin-top: 14px;">
   <div class="container otherGames">
-    <a href="https://t.me/betredi" target="_blank" style="margin-bottom: 8px;">
-      <img src="https://betrediofficial.github.io/images/tg-promo/tg_promo_new.png" alt="Telegram Promo" style="display: block; width: 100%" />
+    <a href="https://t.me/betredi" target="_blank">
+      <img src="https://betrediofficial.github.io/images/tg-promo/tg_promo_new.png" alt="Telegram Promo" style="display: block; width: 100%; margin-bottom: 10px;" />
     </a>
     <a href=${
       language === "tr"
         ? "https://betredi108.com/tr/promotions"
         : "https://betredi108.com/en/promotions"
-    } style="margin-bottom: 8px;">
+    }>
     <img src="https://betrediofficial.github.io/images/tg-promo/reditg.gif"
          alt="Telegram Promo GIF"
-         style="display: block; width: 100%; border: 2px solid #9b000e; border-radius: 10px; max-width: 100% !important;" />
+         style="display: block; width: 100%; margin-bottom: 10px; border: 2px solid #9b000e; border-radius: 10px; max-width: 100% !important;" />
     </a>
     <img src="https://betrediofficial.github.io/images/tg-promo/tg_promo_desc.png" alt="Kripto Bilgilendirme" style="display: block; width: 100%;" />
   </div>
@@ -1672,143 +1560,74 @@
 
       $("#tgpromo").after(newSection);
     }
+
+    function sportsCard() {
+      if ($("#sportscard").length > 0) return;
+
+      var newSection = `
+      <div class="container manually-added-home-widgets" style="margin-top: 16px !important; margin-bottom: 16px !important;">
+  <div class="row row-cols-3 row-cols-xl-6 g-4 text-center">
+    <div class="col">
+      <div class="sport-card" style="position: relative; border: 2px solid #9B000E; border-top-right-radius: 24px; border-bottom-left-radius: 24px; overflow: hidden; cursor: pointer;">
+        <div class="hovered-effect" style="opacity: 0; position: absolute; width: 100%; height: 100%; background: rgba(255,255,255,0.1); z-index: 10; pointer-events: none;"></div>
+        <a href="/sportsbook">
+          <img src="https://betrediofficial.github.io/images/sports/futbol_new.png" alt="Futbol" style="width: 100%; aspect-ratio: 3/4; object-fit: cover;">
+        </a>
+      </div>
+    </div>
+    <div class="col">
+      <div class="sport-card" style="position: relative; border: 2px solid #9B000E; border-top-right-radius: 24px; border-bottom-left-radius: 24px; overflow: hidden; cursor: pointer;">
+        <div class="hovered-effect" style="opacity: 0; position: absolute; width: 100%; height: 100%; background: rgba(255,255,255,0.1); z-index: 10; pointer-events: none;"></div>
+        <a href="/sportsbook">
+          <img src="https://betrediofficial.github.io/images/sports/basketbol_new.png" alt="Basketbol" style="width: 100%; aspect-ratio: 3/4; object-fit: cover;">
+        </a>
+      </div>
+    </div>
+    <div class="col">
+      <div class="sport-card" style="position: relative; border: 2px solid #9B000E; border-top-right-radius: 24px; border-bottom-left-radius: 24px; overflow: hidden; cursor: pointer;">
+        <div class="hovered-effect" style="opacity: 0; position: absolute; width: 100%; height: 100%; background: rgba(255,255,255,0.1); z-index: 10; pointer-events: none;"></div>
+        <a href="/sportsbook">
+          <img src="https://betrediofficial.github.io/images/sports/voleybol_new.png" alt="Voleybol" style="width: 100%; aspect-ratio: 3/4; object-fit: cover;">
+        </a>
+      </div>
+    </div>
+    <div class="col">
+      <div class="sport-card" style="position: relative; border: 2px solid #9B000E; border-top-right-radius: 24px; border-bottom-left-radius: 24px; overflow: hidden; cursor: pointer;">
+        <div class="hovered-effect" style="opacity: 0; position: absolute; width: 100%; height: 100%; background: rgba(255,255,255,0.1); z-index: 10; pointer-events: none;"></div>
+        <a href="/sportsbook">
+          <img src="https://betrediofficial.github.io/images/sports/mma_new.png" alt="MMA" style="width: 100%; aspect-ratio: 3/4; object-fit: cover;">
+        </a>
+      </div>
+    </div>
+    <div class="col">
+      <div class="sport-card" style="position: relative; border: 2px solid #9B000E; border-top-right-radius: 24px; border-bottom-left-radius: 24px; overflow: hidden; cursor: pointer;">
+        <div class="hovered-effect" style="opacity: 0; position: absolute; width: 100%; height: 100%; background: rgba(255,255,255,0.1); z-index: 10; pointer-events: none;"></div>
+        <a href="/sportsbook">
+          <img src="https://betrediofficial.github.io/images/sports/tennis_new.png" alt="Tenis" style="width: 100%; aspect-ratio: 3/4; object-fit: cover;">
+        </a>
+      </div>
+    </div>
+    <div class="col">
+      <div class="sport-card" style="position: relative; border: 2px solid #9B000E; border-top-right-radius: 24px; border-bottom-left-radius: 24px; overflow: hidden; cursor: pointer;">
+        <div class="hovered-effect" style="opacity: 0; position: absolute; width: 100%; height: 100%; background: rgba(255,255,255,0.1); z-index: 10; pointer-events: none;"></div>
+        <a href="/sportsbook">
+          <img src="https://betrediofficial.github.io/images/sports/cycling_new.png" alt="Cycling" style="width: 100%; aspect-ratio: 3/4; object-fit: cover;">
+        </a>
+      </div>
+    </div>
+  </div>
+</div>
+
+`;
+
+      // if ($("#casinooyunlari").length > 0)
+      $("#casinooyunlari").after(newSection);
+      // else $("#tgpromo").eq(0).after(newSection);
+    }
   } catch (e) {
     alert("hata");
     console.log(e);
   }
-
-  //   function sportsCard() {
-  //     if ($("#sportscard").length > 0) return;
-
-  //     var newSection = `
-  //       <div class="container manually-added-home-widgets" style="margin-top: 16px !important; margin-bottom: 16px !important;">
-  //   <div class="row row-cols-3 row-cols-xl-6 g-4 text-center">
-  //     <div class="col">
-  //       <div class="sport-card" style="position: relative; border: 2px solid #9B000E; border-top-right-radius: 24px; border-bottom-left-radius: 24px; overflow: hidden; cursor: pointer;">
-  //         <div class="hovered-effect" style="opacity: 0; position: absolute; width: 100%; height: 100%; background: rgba(255,255,255,0.1); z-index: 10; pointer-events: none;"></div>
-  //         <a href="/sportsbook">
-  //           <img src="https://betrediofficial.github.io/images/sports/futbol_new.png" alt="Futbol" style="width: 100%; aspect-ratio: 3/4; object-fit: cover;">
-  //         </a>
-  //       </div>
-  //     </div>
-  //     <div class="col">
-  //       <div class="sport-card" style="position: relative; border: 2px solid #9B000E; border-top-right-radius: 24px; border-bottom-left-radius: 24px; overflow: hidden; cursor: pointer;">
-  //         <div class="hovered-effect" style="opacity: 0; position: absolute; width: 100%; height: 100%; background: rgba(255,255,255,0.1); z-index: 10; pointer-events: none;"></div>
-  //         <a href="/sportsbook">
-  //           <img src="https://betrediofficial.github.io/images/sports/basketbol_new.png" alt="Basketbol" style="width: 100%; aspect-ratio: 3/4; object-fit: cover;">
-  //         </a>
-  //       </div>
-  //     </div>
-  //     <div class="col">
-  //       <div class="sport-card" style="position: relative; border: 2px solid #9B000E; border-top-right-radius: 24px; border-bottom-left-radius: 24px; overflow: hidden; cursor: pointer;">
-  //         <div class="hovered-effect" style="opacity: 0; position: absolute; width: 100%; height: 100%; background: rgba(255,255,255,0.1); z-index: 10; pointer-events: none;"></div>
-  //         <a href="/sportsbook">
-  //           <img src="https://betrediofficial.github.io/images/sports/voleybol_new.png" alt="Voleybol" style="width: 100%; aspect-ratio: 3/4; object-fit: cover;">
-  //         </a>
-  //       </div>
-  //     </div>
-  //     <div class="col">
-  //       <div class="sport-card" style="position: relative; border: 2px solid #9B000E; border-top-right-radius: 24px; border-bottom-left-radius: 24px; overflow: hidden; cursor: pointer;">
-  //         <div class="hovered-effect" style="opacity: 0; position: absolute; width: 100%; height: 100%; background: rgba(255,255,255,0.1); z-index: 10; pointer-events: none;"></div>
-  //         <a href="/sportsbook">
-  //           <img src="https://betrediofficial.github.io/images/sports/mma_new.png" alt="MMA" style="width: 100%; aspect-ratio: 3/4; object-fit: cover;">
-  //         </a>
-  //       </div>
-  //     </div>
-  //     <div class="col">
-  //       <div class="sport-card" style="position: relative; border: 2px solid #9B000E; border-top-right-radius: 24px; border-bottom-left-radius: 24px; overflow: hidden; cursor: pointer;">
-  //         <div class="hovered-effect" style="opacity: 0; position: absolute; width: 100%; height: 100%; background: rgba(255,255,255,0.1); z-index: 10; pointer-events: none;"></div>
-  //         <a href="/sportsbook">
-  //           <img src="https://betrediofficial.github.io/images/sports/tennis_new.png" alt="Tenis" style="width: 100%; aspect-ratio: 3/4; object-fit: cover;">
-  //         </a>
-  //       </div>
-  //     </div>
-  //     <div class="col">
-  //       <div class="sport-card" style="position: relative; border: 2px solid #9B000E; border-top-right-radius: 24px; border-bottom-left-radius: 24px; overflow: hidden; cursor: pointer;">
-  //         <div class="hovered-effect" style="opacity: 0; position: absolute; width: 100%; height: 100%; background: rgba(255,255,255,0.1); z-index: 10; pointer-events: none;"></div>
-  //         <a href="/sportsbook">
-  //           <img src="https://betrediofficial.github.io/images/sports/cycling_new.png" alt="Cycling" style="width: 100%; aspect-ratio: 3/4; object-fit: cover;">
-  //         </a>
-  //       </div>
-  //     </div>
-  //   </div>
-  // </div>
-
-  // `;
-
-  //     // if ($("#casinooyunlari").length > 0)
-  //     $("#casinooyunlari").after(newSection);
-  //     // else $("#tgpromo").eq(0).after(newSection);
-  //   }
-
-  //   function miniGames() {
-  //     if ($("#mini-games-wrapper").length > 0) return;
-
-  //     var miniGamesSection = `
-  // <div class="manually-added-home-widgets section" id="mini-games-wrapper" style="margin-top: 16px !important; margin-bottom: 16px !important;">
-  //   <div class="container">
-  //     <div class="row">
-  //       <div class="col-12">
-  //         <h2 class="section__title">
-  //           <svg class="svg-icon">
-  //             <use href="/static/media/sprite.1cea5f3c17045e69440504bcd887b333.svg#mini-games"
-  //                  xlink:href="/static/media/sprite.1cea5f3c17045e69440504bcd887b333.svg#mini-games">
-  //             </use>
-  //           </svg>
-  //           Mini Oyunlar
-  //         </h2>
-  //       </div>
-
-  //       <div class="col-12">
-  //         <div class="swiper swiper-initialized swiper-horizontal mySwiper swiper-backface-hidden">
-  //           <div class="swiper-wrapper" style="transform: translate3d(0px, 0px, 0px);">
-
-  //             <div class="swiper-slide" data-swiper-slide-index="0" style="background: none !important;">
-  //               <a class="mini-game mini-game--carousel mini-game--no-layer" href="/tr/casino/games/ebetlab-crash-originals">
-  //                 <span class="mini-game__img">
-  //                   <img loading="lazy" src="https://betrediofficial.github.io/images/mini-games-v2/crash_v2.png" alt="">
-  //                 </span>
-  //               </a>
-  //             </div>
-
-  //             <div class="swiper-slide" data-swiper-slide-index="1" style="background: none !important;">
-  //               <a class="mini-game mini-game--carousel mini-game--no-layer" href="/tr/casino/games/ebetlab-dice-originals">
-  //                 <span class="mini-game__img">
-  //                   <img loading="lazy" src="https://betrediofficial.github.io/images/mini-games-v2/dice_v2.png" alt="">
-  //                 </span>
-  //               </a>
-  //             </div>
-
-  //             <div class="swiper-slide" data-swiper-slide-index="2" style="background: none !important;">
-  //               <a class="mini-game mini-game--carousel mini-game--no-layer" href="/tr/casino/games/ebetlab-mines-originals">
-  //                 <span class="mini-game__img">
-  //                   <img loading="lazy" src="https://betrediofficial.github.io/images/mini-games-v2/mines_v2.png" alt="">
-  //                 </span>
-  //               </a>
-  //             </div>
-
-  //             <div class="swiper-slide" data-swiper-slide-index="3" style="background: none !important;">
-  //               <a class="mini-game mini-game--carousel mini-game--no-layer" href="/tr/casino/games/ebetlab-plinko-originals">
-  //                 <span class="mini-game__img">
-  //                   <img loading="lazy" src="https://betrediofficial.github.io/images/mini-games-v2/plinko_v2.png" alt="">
-  //                 </span>
-  //               </a>
-  //             </div>
-
-  //           </div>
-  //         </div>
-  //       </div>
-
-  //     </div>
-  //   </div>
-  // </div>
-
-  // `;
-
-  //     if ($("#casinooyunlari").length > 0)
-  //       $("#casinooyunlari").after(miniGamesSection);
-  //     else $("#tgpromo").eq(0).after(miniGamesSection);
-  //   }
 
   function hideDefaultGames(ms) {
     let popularGames = language === "tr" ? "Popüler Oyunlar" : "Popular Games";
