@@ -2943,7 +2943,7 @@
       </div>
 
        <div class="col-1">
-          <a href="https://wa.me/37254588167" class="manual-redi-button">
+          <a href="https://wa.me/37254588167" class="manual-redi-button" target="_blank">
             <span>
             ${SVGS.whatsappIcon}
             </span>
