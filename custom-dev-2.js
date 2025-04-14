@@ -1379,6 +1379,7 @@ try{
     }
 
     function initialize() {
+      console.log("initialized999")
       removeOriginalMainSlider();
 
       insertCustomMainSlider();
