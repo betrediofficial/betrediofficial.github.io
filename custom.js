@@ -152,160 +152,12 @@
           window.open("https://t.me/betredi", "_blank");
         });
 
-        $(document).on("click", 'a[href$="/casino/group/lobby"]', function (e) {
-          e.preventDefault();
-          window.location.href =
-            language === "tr"
-              ? "https://betredi109.com/tr/casino/group/lobby"
-              : "https://betredi109.com/en/group/lobby";
-        });
-
-        $(document).on(
-          "click",
-          'a[href$="/casino/group/new-releases"]',
-          function (e) {
-            e.preventDefault();
-            window.location.href =
-              language === "tr"
-                ? "https://betredi109.com/tr/casino/group/new-releases"
-                : "https://betredi109.com/en/casino/group/new-releases";
-          }
-        );
-
-        $(document).on(
-          "click",
-          'a[href$="/casino/group/free-spins"]',
-          function (e) {
-            e.preventDefault();
-            window.location.href =
-              language === "tr"
-                ? "https://betredi109.com/tr/casino/group/free-spins"
-                : "https://betredi109.com/en/casino/group/free-spins";
-          }
-        );
-
-        $(document).on(
-          "click",
-          'a[href$="/casino/group/enhanced-rtp"]',
-          function (e) {
-            e.preventDefault();
-            window.location.href =
-              language === "tr"
-                ? "https://betredi109.com/tr/casino/group/enhanced-rtp"
-                : "https://betredi109.com/en/casino/group/enhanced-rtp";
-          }
-        );
-
-        $(document).on(
-          "click",
-          'a[href$="/casino/group/instant-win"]',
-          function (e) {
-            e.preventDefault();
-            window.location.href =
-              language === "tr"
-                ? "https://betredi109.com/tr/casino/group/instant-win"
-                : "https://betredi109.com/en/casino/group/instant-win";
-          }
-        );
-
-        $(document).on(
-          "click",
-          'a[href$="/casino/group/jackpot-games"]',
-          function (e) {
-            e.preventDefault();
-            window.location.href =
-              language === "tr"
-                ? "https://betredi109.com/tr/casino/group/jackpot-games"
-                : "https://betredi109.com/en/casino/group/jackpot-games";
-          }
-        );
-
         $(document).on("click", 'a[href$="/promotions"]', function (e) {
           e.preventDefault();
           window.location.href =
             language === "tr"
               ? "https://betredi109.com/tr/promotions"
               : "https://betredi109.com/en/promotions";
-        });
-
-        $(document).on(
-          "click",
-          'a[href$="/casino/group/bonus-buy"]',
-          function (e) {
-            e.preventDefault();
-            window.location.href =
-              language === "tr"
-                ? "https://betredi109.com/tr/casino/group/bonus-buy"
-                : "https://betredi109.com/en/casino/group/bonus-buy";
-          }
-        );
-
-        $(document).on(
-          "click",
-          'a[href$="/casino/group/live-lobby"]',
-          function (e) {
-            e.preventDefault();
-            window.location.href =
-              language === "tr"
-                ? "https://betredi109.com/tr/casino/group/live-lobby"
-                : "https://betredi109.com/en/casino/group/live-lobby";
-          }
-        );
-
-        $(document).on(
-          "click",
-          'a[href$="/casino/group/table-games"]',
-          function (e) {
-            e.preventDefault();
-            window.location.href =
-              language === "tr"
-                ? "https://betredi109.com/tr/casino/group/table-games"
-                : "https://betredi109.com/en/casino/group/table-games";
-          }
-        );
-
-        $(document).on(
-          "click",
-          'a[href$="/casino/group/roulette"]',
-          function (e) {
-            e.preventDefault();
-            window.location.href =
-              language === "tr"
-                ? "https://betredi109.com/tr/casino/group/roulette"
-                : "https://betredi109.com/en/casino/group/roulette";
-          }
-        );
-
-        $(document).on(
-          "click",
-          'a[href$="/casino/group/baccarat"]',
-          function (e) {
-            e.preventDefault();
-            window.location.href =
-              language === "tr"
-                ? "https://betredi109.com/tr/casino/group/baccarat"
-                : "https://betredi109.com/en/casino/group/baccarat";
-          }
-        );
-
-        $(document).on(
-          "click",
-          'a[href$="/casino/group/blackjack"]',
-          function (e) {
-            e.preventDefault();
-            window.location.href =
-              language === "tr"
-                ? "https://betredi109.com/tr/casino/group/blackjack"
-                : "https://betredi109.com/en/casino/group/blackjack";
-          }
-        );
-
-        $(document).on("click", 'a[href$="/casino/group/poker"]', function (e) {
-          e.preventDefault();
-          window.location.href =
-            language === "tr"
-              ? "https://betredi109.com/tr/casino/group/poker"
-              : "https://betredi109.com/en/casino/group/poker";
         });
 
         $(document).on("click", 'a[href$="/tournaments"]', function (e) {
@@ -1383,22 +1235,22 @@
         <div class="swiper mySwiper">
           <div class="swiper-wrapper">
             <div class="swiper-slide">
-              <a href="https://betredi109.com/tr/promotion/15-casino-yatirim-bonusu-tr"><img src="https://betrediofficial.github.io/images/slider/15Casino.webp" class="slide-image" /></a>
+              <a href="https://betredi109.com/tr/promotion/15-casino-yatirim-bonusu-tr"><img src="https://betrediofficial.github.io/images/slider/15Casino.png" class="slide-image" /></a>
             </div>
             <div class="swiper-slide">
-              <a href="https://betredi109.com/tr/promotion/15-spor-yatirim-bonusu-tr"><img src="https://betrediofficial.github.io/images/slider/15Spor.webp" class="slide-image" /></a>
+              <a href="https://betredi109.com/tr/promotion/15-spor-yatirim-bonusu-tr"><img src="https://betrediofficial.github.io/images/slider/15Spor.png" class="slide-image" /></a>
             </div>
             <div class="swiper-slide">
-              <a href="https://betredi109.com/tr/promotion/30-casino-discount-tr"><img src="https://betrediofficial.github.io/images/slider/30Discount.webp" class="slide-image" /></a>
+              <a href="https://betredi109.com/tr/promotion/30-casino-discount-tr"><img src="https://betrediofficial.github.io/images/slider/30Discount.png" class="slide-image" /></a>
             </div>
             <div class="swiper-slide">
-              <a href="https://betredi109.com/tr/promotion/50-slot-yatirim-bonusu-tr"><img src="https://betrediofficial.github.io/images/slider/50Slot.webp" class="slide-image" /></a>
+              <a href="https://betredi109.com/tr/promotion/50-slot-yatirim-bonusu-tr"><img src="https://betrediofficial.github.io/images/slider/50Slot.png" class="slide-image" /></a>
             </div>
             <div class="swiper-slide">
-              <a href="https://betredi109.com/tr/promotion/100-freespin-deneme-bonusu-trrf"><img src="https://betrediofficial.github.io/images/slider/100Freespin.webp" class="slide-image" /></a>
+              <a href="https://betredi109.com/tr/promotion/100-freespin-deneme-bonusu-trrf"><img src="https://betrediofficial.github.io/images/slider/100Freespin.png" class="slide-image" /></a>
             </div>
             <div class="swiper-slide">
-              <a href="https://betredi109.com/tr/promotion/100-slot-iade-bonusu-rt"><img src="https://betrediofficial.github.io/images/slider/100Slotiade.webp" class="slide-image" /></a>
+              <a href="https://betredi109.com/tr/promotion/100-slot-iade-bonusu-rt"><img src="https://betrediofficial.github.io/images/slider/100Slotiade.png" class="slide-image" /></a>
             </div>
           </div>
           <div class="swiper-button-next"></div>
@@ -1557,16 +1409,17 @@
 
         // sportsCard();
         //hide default games
-        !is_mobile && hideDefaultGames(50);
-        !is_mobile && hideDefaultGames(1500);
+
+        // HIDE
+        // !is_mobile && hideDefaultGames(50);
+        // !is_mobile && hideDefaultGames(1500);
       }
 
       insertCustomSidebarLink();
       injectProvidersMarquee();
 
-      // mini games
-      insertCustomMiniGamesSlider();
-      setTimeout(initCustomMiniGamesSlider, 500);
+      // insertCustomMiniGamesSlider();
+      // setTimeout(initCustomMiniGamesSlider, 500);
 
       hideBlogSection();
 
@@ -1708,7 +1561,7 @@
       section.className = "section custom--section--2 custom--section";
       section.innerHTML = `
           <div class="container" style="position: relative; max-width: 100% !important; margin-bottom: 20px; !important; padding-left: 0px !important; padding-right: 0px !important; padding-top: 0px !important; overflow: hidden !important;">
-    <div class="providers--marquee--bg" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; background: linear-gradient(to right, black 0%, #5e0e17 50%, black 100%);"></div>
+    <div class="providers--marquee--bg" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; background: linear-gradient(to right, black 0%, #401015 50%, black 100%);"></div>
 <div class="providers--marquee">	
 				          <a class="custom--providers--link" href="https://betredi109.com/tr/providers/pragmaticplay">
 				            <img class="custom--providers--image" src="https://vendor-provider.fra1.cdn.digitaloceanspaces.com/ebetlab/game-providers/light/pragmaticplay.svg" alt="">
@@ -2198,7 +2051,6 @@
 
   #main-slider .swiper-wrapper {
   transform: translate3d(0, 0, 0);
-
   width: 100% !important;
   height: 100% !important;
   box-sizing: content-box !important;
@@ -2233,7 +2085,7 @@
   <div class="hovered-effect" style="opacity: 0; position: absolute; width: 100%; height: 100%; background: rgba(255,255,255,0.1); z-index: 10; pointer-events: none;"></div>
   <a href="casino/games/spribe-aviator">
     <img
-      src="https://betrediofficial.github.io/images/extra-games/aviator_new.webp"
+      src="https://betrediofficial.github.io/images/extra-games/aviator_new.png"
       alt="games"
       class="otherGamesComponentLayoutImg extra-games"
       style="width: 100%; height: 100%; object-fit: cover; display: block;"
@@ -2246,7 +2098,7 @@
   <div class="hovered-effect" style="opacity: 0; position: absolute; width: 100%; height: 100%; background: rgba(255,255,255,0.1); z-index: 10; pointer-events: none;"></div>
   <a href="casino/games/pragmaticlive-spaceman">
     <img
-      src="https://betrediofficial.github.io/images/extra-games/spaceman_new.webp"
+      src="https://betrediofficial.github.io/images/extra-games/spaceman_new.png"
       alt="maconcesi"
       class="otherGamesComponentLayoutImg extra-games"
       style="width: 100%; height: 100%; object-fit: cover; display: block;"
@@ -2259,7 +2111,7 @@
   <div class="hovered-effect" style="opacity: 0; position: absolute; width: 100%; height: 100%; background: rgba(255,255,255,0.1); z-index: 10; pointer-events: none;"></div>
   <a href="casino/games/betsolutions-zeppelin?modal=register">
     <img
-      src="https://betrediofficial.github.io/images/extra-games/zeppelin_new.webp"
+      src="https://betrediofficial.github.io/images/extra-games/zeppelin_new.png"
       alt="sporb"
       class="otherGamesComponentLayoutImg"
       style="width: 100%; height: 100%; object-fit: cover; display: block;"
@@ -2272,7 +2124,7 @@
   <div class="hovered-effect" style="opacity: 0; position: absolute; width: 100%; height: 100%; background: rgba(255,255,255,0.1); z-index: 10; pointer-events: none;"></div>
   <a href="casino/games/pragmaticlive-big-bass-crash">
     <img
-      src="https://betrediofficial.github.io/images/extra-games/big_bass_crash_new.webp"
+      src="https://betrediofficial.github.io/images/extra-games/big_bass_crash_new.png"
       alt="slotcasino"
       class="otherGamesComponentLayoutImg"
       style="width: 100%; height: 100%; object-fit: cover; display: block;"
@@ -2375,10 +2227,28 @@
             <span>Canlı Destek</span>
           </div>
         </a>
+
+
       </div>
 </div>
     `);
     }
+
+    // <a
+    //   onClick="$('.lowbar__btn')[$('.lowbar__btn').length -1].click()"
+    //   class="col-4"
+    //   style="background: linear-gradient(to right, black 0%, #5e0e17 50%, black 100%);"
+    // >
+    //   <div class="box-icon-item">
+    //     <img
+    //       src="https://betrediofficial.github.io/images/mobile-view//support.png"
+    //       width="48"
+    //       height="48"
+    //       class="d-block mx-auto"
+    //     />
+    //     <span>RTP Sorgu</span>
+    //   </div>
+    // </a>
 
     function bottomMenuWidget(isMobile) {
       if ($("#bottomMenuWidgedContainer").length > 0) return;
@@ -2386,7 +2256,7 @@
 <div class="manually-added-home-widgets bottomMenuWidgedContainer" id="bottomMenuWidgedContainer" style="margin-bottom: 10px;">
   <div class="bottom-menu-widget" style="flex: 1 1 calc(25% - 10px); text-align: center;">
     <a href="casino/category/exclusive">
-      <img src="https://betrediofficial.github.io/images/bottom-menu-widget/games.webp" alt="games" class="bottomMenuWidgetImage" >
+      <img src="https://betrediofficial.github.io/images/bottom-menu-widget/games.png" alt="games" class="bottomMenuWidgetImage" >
     </a>
   </div>
 
@@ -2394,7 +2264,7 @@
     !isMobile
       ? `<div class="bottom-menu-widget" style="flex: 1 1 calc(25% - 10px); text-align: center;">
     <a href="casino/group/live-casino">
-      <img src="https://betrediofficial.github.io/images/bottom-menu-widget/live_casino.webp" alt="livecasino" class="bottomMenuWidgetImage" >
+      <img src="https://betrediofficial.github.io/images/bottom-menu-widget/live_casino.png" alt="livecasino" class="bottomMenuWidgetImage" >
     </a>
   </div>`
       : ``
@@ -2402,12 +2272,12 @@
 
   <div class="bottom-menu-widget" style="flex: 1 1 calc(25% - 10px); text-align: center;">
     <a href="sportsbook">
-      <img src="https://betrediofficial.github.io/images/bottom-menu-widget/sport.webp" alt="sporb" class="bottomMenuWidgetImage" >
+      <img src="https://betrediofficial.github.io/images/bottom-menu-widget/sport.png" alt="sporb" class="bottomMenuWidgetImage" >
     </a>
   </div>
   <div class="bottom-menu-widget" style="flex: 1 1 calc(25% - 10px); text-align: center;">
     <a href="casino/slots">
-      <img src="https://betrediofficial.github.io/images/bottom-menu-widget/slot.webp" alt="slotcasino" class="bottomMenuWidgetImage" >
+      <img src="https://betrediofficial.github.io/images/bottom-menu-widget/slot.png" alt="slotcasino" class="bottomMenuWidgetImage" >
     </a>
   </div>
 </div>
@@ -2440,7 +2310,7 @@
                       <div class="carousel-slide active-slide" style="width: 100%; height: 100%;">
                         <div class="sdr-item-holder-bc">
                           <a href="casino/slots" class"sdr-item-bc" href="#">
-                            <img src="https://betrediofficial.github.io/images/slot-casino-banner/slot_casino.webp" loading="lazy" class="sdr-image-bc">
+                            <img src="https://betrediofficial.github.io/images/slot-casino-banner/slot_casino.png" loading="lazy" class="sdr-image-bc">
                           </a>
                         </div>
                       </div>
@@ -2572,7 +2442,7 @@
 <div class="manually-added-home-widgets section" id="tgpromo" style="margin-bottom: 14px; margin-top: 14px;">
   <div class="container otherGames">
     <a href="https://t.me/betredi" target="_blank">
-      <img src="https://betrediofficial.github.io/images/tg-promo/tg_promo_new.webp" alt="Telegram Promo" style="display: block; width: 100%; margin-bottom: 10px;" />
+      <img src="https://betrediofficial.github.io/images/tg-promo/tg_promo_new.png" alt="Telegram Promo" style="display: block; width: 100%; margin-bottom: 10px;" />
     </a>
     <a href=${
       language === "tr"
@@ -2583,7 +2453,7 @@
          alt="Telegram Promo GIF"
          style="display: block; width: 100%; margin-bottom: 10px; border: 2px solid #9b000e; border-radius: 10px; max-width: 100% !important;" />
     </a>
-    <img src="https://betrediofficial.github.io/images/tg-promo/tg_promo_desc.webp" alt="Kripto Bilgilendirme" style="display: block; width: 100%;" />
+    <img src="https://betrediofficial.github.io/images/tg-promo/tg_promo_desc.png" alt="Kripto Bilgilendirme" style="display: block; width: 100%;" />
   </div>
 </div>
 
@@ -2619,7 +2489,7 @@
                     <div class="carousel-slide active-slide" style="width: 100%; height: 100%; !important">
                       <div class="sdr-item-holder-bc">
                         <a href="casino/group/live-casino" class="sdr-item-bc">
-                          <img src="https://betrediofficial.github.io/images/live-casino-banner/live_casino.webp" loading="lazy" class="sdr-image-bc">
+                          <img src="https://betrediofficial.github.io/images/live-casino-banner/live_casino.png" loading="lazy" class="sdr-image-bc">
                         </a>
                       </div>
                     </div>
@@ -3073,7 +2943,7 @@
       </div>
 
        <div class="col-1">
-          <a href="" class="manual-redi-button">
+          <a href="https://wa.me/37254588167" class="manual-redi-button">
             <span>
             ${SVGS.whatsappIcon}
             </span>

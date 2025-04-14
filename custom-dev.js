@@ -2051,19 +2051,20 @@
 
   #main-slider .swiper-wrapper {
   transform: translate3d(0, 0, 0);
-
   width: 100% !important;
   height: 100% !important;
   box-sizing: content-box !important;
 }
 
-.main__content {
-  background: url("https://betrediofficial.github.io/images/bg.jpeg") no-repeat center center !important;
-  background-size: cover !important;
-}
+
       `;
       document.head.appendChild(style);
     }
+
+    //     .main__content {
+    //   background: url("https://betrediofficial.github.io/images/bg.jpeg") no-repeat center center !important;
+    //   background-size: cover !important;
+    // }
 
     function otherGames() {
       if ($("#digeroyunlari").length > 0) return;
@@ -2226,23 +2227,28 @@
             <span>Canlı Destek</span>
           </div>
         </a>
-        <a onClick="$('.lowbar__btn')[$('.lowbar__btn').length -1].click()" class="col-4" style="background: linear-gradient(to right, black 0%, #5e0e17 50%, black 100%);">
-          <div class="box-icon-item">
-            <img
-              src="https://betrediofficial.github.io/images/mobile-view//support.png"
-              width="48"
-              height="48"
-              class="d-block mx-auto"
-            />
-            <span>RTP Sorgu</span>
-          </div>
-        </a>
 
 
       </div>
 </div>
     `);
     }
+
+    // <a
+    //   onClick="$('.lowbar__btn')[$('.lowbar__btn').length -1].click()"
+    //   class="col-4"
+    //   style="background: linear-gradient(to right, black 0%, #5e0e17 50%, black 100%);"
+    // >
+    //   <div class="box-icon-item">
+    //     <img
+    //       src="https://betrediofficial.github.io/images/mobile-view//support.png"
+    //       width="48"
+    //       height="48"
+    //       class="d-block mx-auto"
+    //     />
+    //     <span>RTP Sorgu</span>
+    //   </div>
+    // </a>
 
     function bottomMenuWidget(isMobile) {
       if ($("#bottomMenuWidgedContainer").length > 0) return;
@@ -2937,7 +2943,7 @@
       </div>
 
        <div class="col-1">
-          <a href="" class="manual-redi-button">
+          <a href="https://wa.me/37254588167" class="manual-redi-button">
             <span>
             ${SVGS.whatsappIcon}
             </span>
