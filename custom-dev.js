@@ -342,7 +342,7 @@
         });
 
         // ! Don't touch - Original event handlers
-        $(document).on("click", "#telegram-button", function (e) {
+        /*$(document).on("click", "#telegram-button", function (e) {
           e.preventDefault();
           window.open("https://t.me/betredi", "_blank");
         });
@@ -481,7 +481,7 @@
             language === "tr"
               ? "https://betredi108.com/tr/trade"
               : "https://betredi108.com/en/trade";
-        });
+        });*/
       }
     }, 300);
 
