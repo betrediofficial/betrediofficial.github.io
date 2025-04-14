@@ -161,13 +161,17 @@
               : "https://betredi108.com/en/tournaments";
         });
 
-        $(document).on("click", 'a[href$="/settings"]', function (e) {
-          e.preventDefault();
-          window.location.href =
-            language === "tr"
-              ? "https://betredi108.com/tr/settings"
-              : "https://betredi108.com/en/settings";
-        });
+        $(document).on(
+          "click",
+          'a[href$="/settings"], a[href$="/tr/settings"]',
+          function (e) {
+            e.preventDefault();
+            window.location.href =
+              language === "tr"
+                ? "https://betredi108.com/tr/settings"
+                : "https://betredi108.com/en/settings";
+          }
+        );
 
         $(document).on("click", 'a[href$="/transactions"]', function (e) {
           e.preventDefault();
