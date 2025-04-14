@@ -139,7 +139,59 @@
           });
         });
 
-        /// ! Don't touch
+        // ! Don't touch
+        $(document).on("click", "#telegram-button", function (e) {
+          e.preventDefault();
+          window.open("https://t.me/betredi", "_blank");
+        });
+
+        $(document).on("click", 'a[href$="/promotions"]', function (e) {
+          e.preventDefault();
+          window.location.href =
+            language === "tr"
+              ? "https://betredi108.com/tr/promotions"
+              : "https://betredi108.com/en/promotions";
+        });
+
+        $(document).on("click", 'a[href$="/tournaments"]', function (e) {
+          e.preventDefault();
+          window.location.href =
+            language === "tr"
+              ? "https://betredi108.com/tr/tournaments"
+              : "https://betredi108.com/en/tournaments";
+        });
+
+        $(document).on("click", 'a[href$="/settings"]', function (e) {
+          e.preventDefault();
+          window.location.href =
+            language === "tr"
+              ? "https://betredi108.com/tr/settings"
+              : "https://betredi108.com/en/settings";
+        });
+
+        $(document).on("click", 'a[href$="/transactions"]', function (e) {
+          e.preventDefault();
+          window.location.href =
+            language === "tr"
+              ? "https://betredi108.com/tr/transactions"
+              : "https://betredi108.com/en/transactions";
+        });
+
+        $(document).on("click", 'a[href$="/affiliate"]', function (e) {
+          e.preventDefault();
+          window.location.href =
+            language === "tr"
+              ? "https://betredi108.com/tr/affiliate"
+              : "https://betredi108.com/en/affiliate";
+        });
+
+        $(document).on("click", 'a[href$="/policy"]', function (e) {
+          e.preventDefault();
+          window.location.href =
+            language === "tr"
+              ? "https://betredi108.com/tr/policy"
+              : "https://betredi108.com/en/policy";
+        });
 
         $(document).on("click", 'a[href$="/casino/slots"]', function (e) {
           e.preventDefault();
@@ -228,104 +280,6 @@
               ? "https://betredi108.com/tr/trade"
               : "https://betredi108.com/en/trade";
         });
-
-        // ! done.
-
-        // $(document).on("click", 'a[href="/tr/casino/slots"]', function (e) {
-        //   e.preventDefault();
-        //   window.location.href =
-        //     language === "tr"
-        //       ? "https://betredi108.com/tr/casino/slots"
-        //       : "https://betredi108.com/en/casino/slots";
-        // });
-
-        // $(document).on("click", 'a[href="/tr/live-casino"]', function (e) {
-        //   e.preventDefault();
-        //   window.location.href =
-        //     language === "tr"
-        //       ? "https://betredi108.com/tr/live-casino"
-        //       : "https://betredi108.com/en/live-casino";
-        // });
-
-        // $(document).on("click", 'a[href="/tr/sportsbook"]', function (e) {
-        //   e.preventDefault();
-        //   window.location.href =
-        //     language === "tr"
-        //       ? "https://betredi108.com/tr/sportsbook"
-        //       : "https://betredi108.com/en/sportsbook";
-        // });
-
-        // $(document).on(
-        //   "click",
-        //   'a[href="/tr/casino/category/exclusive"]',
-        //   function (e) {
-        //     e.preventDefault();
-        //     window.location.href =
-        //       language === "tr"
-        //         ? "https://betredi108.com/tr/casino/category/exclusive"
-        //         : "https://betredi108.com/en/casino/category/exclusive";
-        //   }
-        // );
-
-        // $(document).on(
-        //   "click",
-        //   'a[href="/tr/casino/virtual_sports"]',
-        //   function (e) {
-        //     e.preventDefault();
-        //     window.location.href =
-        //       language === "tr"
-        //         ? "https://betredi108.com/tr/casino/virtual_sports"
-        //         : "https://betredi108.com/en/casino/virtual_sports";
-        //   }
-        // );
-
-        // $(document).on("click", 'a[href="/tr/vip"]', function (e) {
-        //   e.preventDefault();
-        //   window.location.href =
-        //     language === "tr"
-        //       ? "https://betredi108.com/tr/vip"
-        //       : "https://betredi108.com/en/vip";
-        // });
-
-        // $(document).on("click", 'a[href="/tr/casino"]', function (e) {
-        //   e.preventDefault();
-        //   window.location.href =
-        //     language === "tr"
-        //       ? "https://betredi108.com/tr/casino"
-        //       : "https://betredi108.com/tr/casino";
-        // });
-
-        // $(document).on("click", 'a[href="/tr/sportsbook"]', function (e) {
-        //   e.preventDefault();
-        //   window.location.href =
-        //     language === "tr"
-        //       ? "https://betredi108.com/tr/sportsbook"
-        //       : "https://betredi108.com/en/sportsbook";
-        // });
-
-        // $(document).on("click", 'a[href="/tr/e-sport"]', function (e) {
-        //   e.preventDefault();
-        //   window.location.href =
-        //     language === "tr"
-        //       ? "https://betredi108.com/tr/e-sport"
-        //       : "https://betredi108.com/en/e-sport";
-        // });
-
-        // $(document).on("click", 'a[href="/tr/favorites"]', function (e) {
-        //   e.preventDefault();
-        //   window.location.href =
-        //     language === "tr"
-        //       ? "https://betredi108.com/tr/favorites"
-        //       : "https://betredi108.com/en/favorites";
-        // });
-
-        // $(document).on("click", 'a[href="/tr/trade"]', function (e) {
-        //   e.preventDefault();
-        //   window.location.href =
-        //     language === "tr"
-        //       ? "https://betredi108.com/tr/trade"
-        //       : "https://betredi108.com/en/trade";
-        // });
       }
     }, 300);
 
@@ -441,7 +395,10 @@
 
         if (!is_mobile) casinoGames();
 
-        sportsCard();
+        // sportsCard();
+        // miniGames();
+        // casinoChooser();
+
         //hide default games
         !is_mobile && hideDefaultGames(50);
         !is_mobile && hideDefaultGames(1500);
@@ -454,6 +411,8 @@
 
       customizeSignupModal();
       customizeSigninModal();
+
+      injectExtraText();
     }
 
     customCSS();
@@ -555,7 +514,11 @@
           const customDiv = document.createElement("div");
           customDiv.className = "sidebar__links custom_side";
           customDiv.innerHTML = `
-        <a class="sidebar__link sidebar__link--casino w-100" href="https://betredi108.com/tr/promotions"
+        <a class="sidebar__link sidebar__link--casino w-100" href=${
+          language === "tr"
+            ? "https://betredi108.com/tr/promotions"
+            : "https://betredi108.com/en/promotions"
+        }
            style="height: 46px; background: url('https://betrediofficial.github.io/images/aside-links/promotions.png') center center / cover no-repeat;">
         </a>
       `;
@@ -572,432 +535,6 @@
       });
     }
 
-    //     function injectProvidersMarquee() {
-    //       const container = document.querySelector("#main-slider > .container");
-
-    //       if (!container || container.querySelector(".custom--section--2")) return;
-
-    //       const swiperElement = container.querySelector("#main-slider-swiper");
-    //       if (!swiperElement) return;
-
-    //       const section = document.createElement("div");
-
-    //       // <div class="providers--marquee--bg"></div>;
-
-    //       section.className = "section custom--section--2 custom--section";
-    //       section.innerHTML = `
-    //     <div class="container" style="position: relative; max-width: 100% !important; margin-bottom: 20px; !important; padding-left: 0px !important; padding-right: 0px !important; padding-top: 0px !important; overflow: hidden !important;">
-    //     <div class="providers--marquee--bg" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; background: linear-gradient(0deg, rgba(54,0,6,1) 0%, rgba(125,2,15,1) 100%);"></div>
-    // <div class="providers--marquee">
-    // 				          <a class="custom--providers--link" href="https://betredi108.com/tr/providers/pragmaticplay">
-    // 				            <img class="custom--providers--image" src="https://vendor-provider.fra1.cdn.digitaloceanspaces.com/ebetlab/game-providers/light/pragmaticplay.svg" alt="">
-    // 				          </a>
-
-    // 				          <a class="custom--providers--link" href="https://betredi108.com/tr/providers/evolution">
-    // 				            <img class="custom--providers--image" src="https://vendor-provider.fra1.cdn.digitaloceanspaces.com/ebetlab/game-providers/light/Evolution%20Gaming.svg" alt="">
-    // 				          </a>
-
-    // 				          <a class="custom--providers--link" href="https://betredi108.com/tr/providers/hacksaw">
-    // 				            <img class="custom--providers--image" src="https://vendor-provider.fra1.cdn.digitaloceanspaces.com/ebetlab/game-providers/light/hacksaw.svg" alt="">
-    // 				          </a>
-
-    // 				          <a class="custom--providers--link" href="https://betredi108.com/tr/providers/egt">
-    // 				            <img class="custom--providers--image" src="https://vendor-provider.fra1.cdn.digitaloceanspaces.com/ebetlab/game-providers/light/egt.svg" alt="">
-    // 				          </a>
-
-    // 				          <a class="custom--providers--link" href="https://betredi108.com/tr/providers/nolimitcity">
-    // 				            <img class="custom--providers--image" src="https://vendor-provider.fra1.cdn.digitaloceanspaces.com/ebetlab/game-providers/light/NoLimitCity.svg" alt="">
-    // 				          </a>
-
-    // 				          <a class="custom--providers--link" href="https://betredi108.com/tr/providers/egt-interactive">
-    // 				            <img class="custom--providers--image" src="https://vendor-provider.fra1.cdn.digitaloceanspaces.com/ebetlab/game-providers/light/amusnet.svg" alt="">
-    // 				          </a>
-
-    // 				          <a class="custom--providers--link" href="https://betredi108.com/tr/providers/playson">
-    // 				            <img class="custom--providers--image" src="https://vendor-provider.fra1.cdn.digitaloceanspaces.com/ebetlab/game-providers/light/playson.svg" alt="">
-    // 				          </a>
-
-    // 				          <a class="custom--providers--link" href="https://betredi108.com/tr/providers/netent">
-    // 				            <img class="custom--providers--image" src="https://vendor-provider.fra1.cdn.digitaloceanspaces.com/ebetlab/game-providers/light/netent.svg" alt="">
-    // 				          </a>
-
-    // 				          <a class="custom--providers--link" href="https://betredi108.com/tr/providers/popiplay">
-    // 				            <img class="custom--providers--image" src="https://vendor-provider.fra1.cdn.digitaloceanspaces.com/ebetlab/game-providers/light/popiplay.svg" alt="">
-    // 				          </a>
-
-    // 				          <a class="custom--providers--link" href="https://betredi108.com/tr/providers/thunderkick">
-    // 				            <img class="custom--providers--image" src="https://vendor-provider.fra1.cdn.digitaloceanspaces.com/ebetlab/game-providers/light/thunderkick.svg" alt="">
-    // 				          </a>
-
-    // 				          <a class="custom--providers--link" href="https://betredi108.com/tr/providers/booming">
-    // 				            <img class="custom--providers--image" src="https://vendor-provider.fra1.cdn.digitaloceanspaces.com/ebetlab/game-providers/light/booming.svg" alt="">
-    // 				          </a>
-
-    // 				          <a class="custom--providers--link" href="https://betredi108.com/tr/providers/redtiger">
-    // 				            <img class="custom--providers--image" src="https://vendor-provider.fra1.cdn.digitaloceanspaces.com/ebetlab/game-providers/light/Red%20Tiger%20Gaming.svg" alt="">
-    // 				          </a>
-
-    // 				          <a class="custom--providers--link" href="https://betredi108.com/tr/providers/pragmaticlive">
-    // 				            <img class="custom--providers--image" src="https://vendor-provider.fra1.cdn.digitaloceanspaces.com/ebetlab/game-providers/light/pragmatic-live-light.svg" alt="">
-    // 				          </a>
-
-    // 				          <a class="custom--providers--link" href="https://betredi108.com/tr/providers/bgaming">
-    // 				            <img class="custom--providers--image" src="https://vendor-provider.fra1.cdn.digitaloceanspaces.com/ebetlab/game-providers/light/softswiss.svg" alt="">
-    // 				          </a>
-
-    // 				          <a class="custom--providers--link" href="https://betredi108.com/tr/providers/gameart">
-    // 				            <img class="custom--providers--image" src="https://vendor-provider.fra1.cdn.digitaloceanspaces.com/ebetlab/game-providers/light/gameart.svg" alt="">
-    // 				          </a>
-
-    // 				          <a class="custom--providers--link" href="https://betredi108.com/tr/providers/fantasma">
-    // 				            <img class="custom--providers--image" src="https://vendor-provider.fra1.cdn.digitaloceanspaces.com/ebetlab/game-providers/light/fantasma.svg" alt="">
-    // 				          </a>
-
-    // 				          <a class="custom--providers--link" href="https://betredi108.com/tr/providers/slotmill">
-    // 				            <img class="custom--providers--image" src="https://vendor-provider.fra1.cdn.digitaloceanspaces.com/ebetlab/game-providers/light/slotmill.svg" alt="">
-    // 				          </a>
-
-    // 				          <a class="custom--providers--link" href="https://betredi108.com/tr/providers/1spin4win">
-    // 				            <img class="custom--providers--image" src="https://vendor-provider.fra1.cdn.digitaloceanspaces.com/ebetlab/game-providers/light/1spin4win.svg" alt="">
-    // 				          </a>
-
-    // 				          <a class="custom--providers--link" href="https://betredi108.com/tr/providers/aesexybaccarat">
-    // 				            <img class="custom--providers--image" src="https://vendor-provider.fra1.cdn.digitaloceanspaces.com/ebetlab/game-providers/light/AE%20Sexy.svg" alt="">
-    // 				          </a>
-
-    // 				          <a class="custom--providers--link" href="https://betredi108.com/tr/providers/5men">
-    // 				            <img class="custom--providers--image" src="https://vendor-provider.fra1.cdn.digitaloceanspaces.com/ebetlab/game-providers/light/5men.svg" alt="">
-    // 				          </a>
-
-    // 				          <a class="custom--providers--link" href="https://betredi108.com/tr/providers/novomatic">
-    // 				            <img class="custom--providers--image" src="https://vendor-provider.fra1.cdn.digitaloceanspaces.com/ebetlab/game-providers/light/novomatic.svg" alt="">
-    // 				          </a>
-
-    // 				          <a class="custom--providers--link" href="https://betredi108.com/tr/providers/7mojos">
-    // 				            <img class="custom--providers--image" src="https://vendor-provider.fra1.cdn.digitaloceanspaces.com/ebetlab/game-providers/light/7%20mojos.svg" alt="">
-    // 				          </a>
-
-    // 				          <a class="custom--providers--link" href="https://betredi108.com/tr/providers/alg">
-    // 				            <img class="custom--providers--image" src="https://vendor-provider.fra1.cdn.digitaloceanspaces.com/ebetlab/game-providers/light/alg.svg" alt="">
-    // 				          </a>
-
-    // 				          <a class="custom--providers--link" href="https://betredi108.com/tr/providers/amatic">
-    // 				            <img class="custom--providers--image" src="https://vendor-provider.fra1.cdn.digitaloceanspaces.com/ebetlab/game-providers/light/amatic.svg" alt="">
-    // 				          </a>
-
-    // 				          <a class="custom--providers--link" href="https://betredi108.com/tr/providers/endorphina">
-    // 				            <img class="custom--providers--image" src="https://vendor-provider.fra1.cdn.digitaloceanspaces.com/ebetlab/game-providers/light/endorphina.svg" alt="">
-    // 				          </a>
-
-    // 				          <a class="custom--providers--link" href="https://betredi108.com/tr/providers/pgsoft">
-    // 				            <img class="custom--providers--image" src="https://vendor-provider.fra1.cdn.digitaloceanspaces.com/ebetlab/game-providers/light/Pocket%20Games%20Soft.svg" alt="">
-    // 				          </a>
-
-    // 				          <a class="custom--providers--link" href="https://betredi108.com/tr/providers/apollo">
-    // 				            <img class="custom--providers--image" src="https://vendor-provider.fra1.cdn.digitaloceanspaces.com/ebetlab/game-providers/light/Apollo%20Games.svg" alt="">
-    // 				          </a>
-
-    // 				          <a class="custom--providers--link" href="https://betredi108.com/tr/providers/asiagaming">
-    // 				            <img class="custom--providers--image" src="https://vendor-provider.fra1.cdn.digitaloceanspaces.com/ebetlab/game-providers/light/Asia%20Gaming.svg" alt="">
-    // 				          </a>
-
-    // 				          <a class="custom--providers--link" href="https://betredi108.com/tr/providers/atomic">
-    // 				            <img class="custom--providers--image" src="https://vendor-provider.fra1.cdn.digitaloceanspaces.com/ebetlab/game-providers/light/atomic%20slot.svg" alt="">
-    // 				          </a>
-
-    // 				          <a class="custom--providers--link" href="https://betredi108.com/tr/providers/beefee">
-    // 				            <img class="custom--providers--image" src="https://vendor-provider.fra1.cdn.digitaloceanspaces.com/ebetlab/game-providers/light/BeeFee%20Games.svg" alt="">
-    // 				          </a>
-
-    // 				          <a class="custom--providers--link" href="https://betredi108.com/tr/providers/belatra">
-    // 				            <img class="custom--providers--image" src="https://vendor-provider.fra1.cdn.digitaloceanspaces.com/ebetlab/game-providers/light/belatra.svg" alt="">
-    // 				          </a>
-
-    // 				          <a class="custom--providers--link" href="https://betredi108.com/tr/providers/betsolutions">
-    // 				            <img class="custom--providers--image" src="https://vendor-provider.fra1.cdn.digitaloceanspaces.com/ebetlab/game-providers/light/Betsolutions.svg" alt="">
-    // 				          </a>
-
-    // 				          <a class="custom--providers--link" href="https://betredi108.com/tr/providers/bet2tech">
-    // 				            <img class="custom--providers--image" src="https://vendor-provider.fra1.cdn.digitaloceanspaces.com/ebetlab/game-providers/light/bet%202%20tech.svg" alt="">
-    // 				          </a>
-
-    // 				          <a class="custom--providers--link" href="https://betredi108.com/tr/providers/beterlive">
-    // 				            <img class="custom--providers--image" src="https://vendor-provider.fra1.cdn.digitaloceanspaces.com/ebetlab/game-providers/light/beterlive.svg" alt="">
-    // 				          </a>
-
-    // 				          <a class="custom--providers--link" href="https://betredi108.com/tr/providers/betradarvs">
-    // 				            <img class="custom--providers--image" src="https://vendor-provider.fra1.cdn.digitaloceanspaces.com/ebetlab/game-providers/light/Betradar%20Virtual%20sports.svg" alt="">
-    // 				          </a>
-
-    // 				          <a class="custom--providers--link" href="https://betredi108.com/tr/providers/betsoft">
-    // 				            <img class="custom--providers--image" src="https://vendor-provider.fra1.cdn.digitaloceanspaces.com/ebetlab/game-providers/light/betsoft.svg" alt="">
-    // 				          </a>
-
-    // 				          <a class="custom--providers--link" href="https://betredi108.com/tr/providers/eagaming">
-    // 				            <img class="custom--providers--image" src="https://vendor-provider.fra1.cdn.digitaloceanspaces.com/ebetlab/game-providers/light/ea%20gaming.svg" alt="">
-    // 				          </a>
-
-    // 				          <a class="custom--providers--link" href="https://betredi108.com/tr/providers/concept">
-    // 				            <img class="custom--providers--image" src="https://vendor-provider.fra1.cdn.digitaloceanspaces.com/ebetlab/game-providers/light/Concept%20Gaming.svg" alt="">
-    // 				          </a>
-
-    // 				          <a class="custom--providers--link" href="https://betredi108.com/tr/providers/cq9">
-    // 				            <img class="custom--providers--image" src="https://vendor-provider.fra1.cdn.digitaloceanspaces.com/ebetlab/game-providers/light/CQ9.svg" alt="">
-    // 				          </a>
-
-    // 				          <a class="custom--providers--link" href="https://betredi108.com/tr/providers/ctgaming">
-    // 				            <img class="custom--providers--image" src="https://vendor-provider.fra1.cdn.digitaloceanspaces.com/ebetlab/game-providers/light/CT%20Gaming.svg" alt="">
-    // 				          </a>
-
-    // 				          <a class="custom--providers--link" href="https://betredi108.com/tr/providers/everymatrix">
-    // 				            <img class="custom--providers--image" src="https://vendor-provider.fra1.cdn.digitaloceanspaces.com/ebetlab/game-providers/light/everymatrix.svg" alt="">
-    // 				          </a>
-
-    // 				          <a class="custom--providers--link" href="https://betredi108.com/tr/providers/evoplay">
-    // 				            <img class="custom--providers--image" src="https://vendor-provider.fra1.cdn.digitaloceanspaces.com/ebetlab/game-providers/light/evoplay.svg" alt="">
-    // 				          </a>
-
-    // 				          <a class="custom--providers--link" href="https://betredi108.com/tr/providers/ezugi">
-    // 				            <img class="custom--providers--image" src="https://vendor-provider.fra1.cdn.digitaloceanspaces.com/ebetlab/game-providers/light/ezugi.svg" alt="">
-    // 				          </a>
-
-    // 				          <a class="custom--providers--link" href="https://betredi108.com/tr/providers/fazi">
-    // 				            <img class="custom--providers--image" src="https://vendor-provider.fra1.cdn.digitaloceanspaces.com/ebetlab/game-providers/light/fazi.svg" alt="">
-    // 				          </a>
-
-    // 				          <a class="custom--providers--link" href="https://betredi108.com/tr/providers/fugaso">
-    // 				            <img class="custom--providers--image" src="https://vendor-provider.fra1.cdn.digitaloceanspaces.com/ebetlab/game-providers/light/fugaso.svg" alt="">
-    // 				          </a>
-
-    // 				          <a class="custom--providers--link" href="https://betredi108.com/tr/providers/gamebeat">
-    // 				            <img class="custom--providers--image" src="https://vendor-provider.fra1.cdn.digitaloceanspaces.com/ebetlab/game-providers/light/gamebeat.svg" alt="">
-    // 				          </a>
-
-    // 				          <a class="custom--providers--link" href="https://betredi108.com/tr/providers/gaming7777">
-    // 				            <img class="custom--providers--image" src="https://vendor-provider.fra1.cdn.digitaloceanspaces.com/ebetlab/game-providers/light/Gaming%207777.svg" alt="">
-    // 				          </a>
-
-    // 				          <a class="custom--providers--link" href="https://betredi108.com/tr/providers/genii">
-    // 				            <img class="custom--providers--image" src="https://vendor-provider.fra1.cdn.digitaloceanspaces.com/ebetlab/game-providers/light/Genii.svg" alt="">
-    // 				          </a>
-
-    // 				          <a class="custom--providers--link" href="https://betredi108.com/tr/providers/givme">
-    // 				            <img class="custom--providers--image" src="https://vendor-provider.fra1.cdn.digitaloceanspaces.com/ebetlab/game-providers/light/givme%20games.svg" alt="">
-    // 				          </a>
-
-    // 				          <a class="custom--providers--link" href="https://betredi108.com/tr/providers/goldenhero">
-    // 				            <img class="custom--providers--image" src="https://vendor-provider.fra1.cdn.digitaloceanspaces.com/ebetlab/game-providers/light/golden%20hero.svg" alt="">
-    // 				          </a>
-
-    // 				          <a class="custom--providers--link" href="https://betredi108.com/tr/providers/habanero">
-    // 				            <img class="custom--providers--image" src="https://vendor-provider.fra1.cdn.digitaloceanspaces.com/ebetlab/game-providers/light/habanero.svg" alt="">
-    // 				          </a>
-
-    // 				          <a class="custom--providers--link" href="https://betredi108.com/tr/providers/hogaming">
-    // 				            <img class="custom--providers--image" src="https://vendor-provider.fra1.cdn.digitaloceanspaces.com/ebetlab/game-providers/light/HoGaming.svg" alt="">
-    // 				          </a>
-
-    // 				          <a class="custom--providers--link" href="https://betredi108.com/tr/providers/hollegames">
-    // 				            <img class="custom--providers--image" src="https://vendor-provider.fra1.cdn.digitaloceanspaces.com/ebetlab/game-providers/light/hollegames.svg" alt="">
-    // 				          </a>
-
-    // 				          <a class="custom--providers--link" href="https://betredi108.com/tr/providers/igrosoft">
-    // 				            <img class="custom--providers--image" src="https://vendor-provider.fra1.cdn.digitaloceanspaces.com/ebetlab/game-providers/light/Igrosoft.svg" alt="">
-    // 				          </a>
-
-    // 				          <a class="custom--providers--link" href="https://betredi108.com/tr/providers/irondog">
-    // 				            <img class="custom--providers--image" src="https://vendor-provider.fra1.cdn.digitaloceanspaces.com/ebetlab/game-providers/light/irondog.svg" alt="">
-    // 				          </a>
-
-    // 				          <a class="custom--providers--link" href="https://betredi108.com/tr/providers/jaderabbit">
-    // 				            <img class="custom--providers--image" src="https://vendor-provider.fra1.cdn.digitaloceanspaces.com/ebetlab/game-providers/light/jaderabbit.svg" alt="">
-    // 				          </a>
-
-    // 				          <a class="custom--providers--link" href="https://betredi108.com/tr/providers/jdb">
-    // 				            <img class="custom--providers--image" src="https://vendor-provider.fra1.cdn.digitaloceanspaces.com/ebetlab/game-providers/light/JDB.svg" alt="">
-    // 				          </a>
-
-    // 				          <a class="custom--providers--link" href="https://betredi108.com/tr/providers/kalamba">
-    // 				            <img class="custom--providers--image" src="https://vendor-provider.fra1.cdn.digitaloceanspaces.com/ebetlab/game-providers/light/kalamba.svg" alt="">
-    // 				          </a>
-
-    // 				          <a class="custom--providers--link" href="https://betredi108.com/tr/providers/kiron">
-    // 				            <img class="custom--providers--image" src="https://vendor-provider.fra1.cdn.digitaloceanspaces.com/ebetlab/game-providers/light/Kiron%20Interactive.svg" alt="">
-    // 				          </a>
-
-    // 				          <a class="custom--providers--link" href="https://betredi108.com/tr/providers/leander">
-    // 				            <img class="custom--providers--image" src="https://vendor-provider.fra1.cdn.digitaloceanspaces.com/ebetlab/game-providers/light/Leander.svg" alt="">
-    // 				          </a>
-
-    // 				          <a class="custom--providers--link" href="https://betredi108.com/tr/providers/leap">
-    // 				            <img class="custom--providers--image" src="https://vendor-provider.fra1.cdn.digitaloceanspaces.com/ebetlab/game-providers/light/Leap.svg" alt="">
-    // 				          </a>
-
-    // 				          <a class="custom--providers--link" href="https://betredi108.com/tr/providers/livegames">
-    // 				            <img class="custom--providers--image" src="https://vendor-provider.fra1.cdn.digitaloceanspaces.com/ebetlab/game-providers/light/Live%20Games.svg" alt="">
-    // 				          </a>
-
-    // 				          <a class="custom--providers--link" href="https://betredi108.com/tr/providers/lucky">
-    // 				            <img class="custom--providers--image" src="https://vendor-provider.fra1.cdn.digitaloceanspaces.com/ebetlab/game-providers/light/lucky.svg" alt="">
-    // 				          </a>
-
-    // 				          <a class="custom--providers--link" href="https://betredi108.com/tr/providers/luckystreak">
-    // 				            <img class="custom--providers--image" src="https://vendor-provider.fra1.cdn.digitaloceanspaces.com/ebetlab/game-providers/light/luckystreak.svg" alt="">
-    // 				          </a>
-
-    // 				          <a class="custom--providers--link" href="https://betredi108.com/tr/providers/mascotgaming">
-    // 				            <img class="custom--providers--image" src="https://vendor-provider.fra1.cdn.digitaloceanspaces.com/ebetlab/game-providers/light/mascot.svg" alt="">
-    // 				          </a>
-
-    // 				          <a class="custom--providers--link" href="https://betredi108.com/tr/providers/merkurgaming">
-    // 				            <img class="custom--providers--image" src="https://vendor-provider.fra1.cdn.digitaloceanspaces.com/ebetlab/game-providers/light/merkur%20gaming.svg" alt="">
-    // 				          </a>
-
-    // 				          <a class="custom--providers--link" href="https://betredi108.com/tr/providers/mplay">
-    // 				            <img class="custom--providers--image" src="https://vendor-provider.fra1.cdn.digitaloceanspaces.com/ebetlab/game-providers/light/m%20play.svg" alt="">
-    // 				          </a>
-
-    // 				          <a class="custom--providers--link" href="https://betredi108.com/tr/providers/mrslotty">
-    // 				            <img class="custom--providers--image" src="https://vendor-provider.fra1.cdn.digitaloceanspaces.com/ebetlab/game-providers/light/mrslotty.svg" alt="">
-    // 				          </a>
-
-    // 				          <a class="custom--providers--link" href="https://betredi108.com/tr/providers/netgame">
-    // 				            <img class="custom--providers--image" src="https://vendor-provider.fra1.cdn.digitaloceanspaces.com/ebetlab/game-providers/light/netgame.svg" alt="">
-    // 				          </a>
-
-    // 				          <a class="custom--providers--link" href="https://betredi108.com/tr/providers/nucleus">
-    // 				            <img class="custom--providers--image" src="https://vendor-provider.fra1.cdn.digitaloceanspaces.com/ebetlab/game-providers/light/nucleus.svg" alt="">
-    // 				          </a>
-
-    // 				          <a class="custom--providers--link" href="https://betredi108.com/tr/providers/oryx">
-    // 				            <img class="custom--providers--image" src="https://vendor-provider.fra1.cdn.digitaloceanspaces.com/ebetlab/game-providers/light/oryx.svg" alt="">
-    // 				          </a>
-
-    // 				          <a class="custom--providers--link" href="https://betredi108.com/tr/providers/playtech">
-    // 				            <img class="custom--providers--image" src="https://vendor-provider.fra1.cdn.digitaloceanspaces.com/ebetlab/game-providers/light/Playtech%20slots.svg" alt="">
-    // 				          </a>
-
-    // 				          <a class="custom--providers--link" href="https://betredi108.com/tr/providers/quickspin">
-    // 				            <img class="custom--providers--image" src="https://vendor-provider.fra1.cdn.digitaloceanspaces.com/ebetlab/game-providers/light/quickspin.svg" alt="">
-    // 				          </a>
-
-    // 				          <a class="custom--providers--link" href="https://betredi108.com/tr/providers/redrake">
-    // 				            <img class="custom--providers--image" src="https://vendor-provider.fra1.cdn.digitaloceanspaces.com/ebetlab/game-providers/light/Red%20Rake%20Gaming.svg" alt="">
-    // 				          </a>
-
-    // 				          <a class="custom--providers--link" href="https://betredi108.com/tr/providers/reevo">
-    // 				            <img class="custom--providers--image" src="https://vendor-provider.fra1.cdn.digitaloceanspaces.com/ebetlab/game-providers/light/reevo.svg" alt="">
-    // 				          </a>
-
-    // 				          <a class="custom--providers--link" href="https://betredi108.com/tr/providers/sagaming">
-    // 				            <img class="custom--providers--image" src="https://vendor-provider.fra1.cdn.digitaloceanspaces.com/ebetlab/game-providers/light/SA%20Gaming.svg" alt="">
-    // 				          </a>
-
-    // 				          <a class="custom--providers--link" href="https://betredi108.com/tr/providers/salsa">
-    // 				            <img class="custom--providers--image" src="https://vendor-provider.fra1.cdn.digitaloceanspaces.com/ebetlab/game-providers/light/Salsa%20technology.svg" alt="">
-    // 				          </a>
-
-    // 				          <a class="custom--providers--link" href="https://betredi108.com/tr/providers/spinomenal">
-    // 				            <img class="custom--providers--image" src="https://vendor-provider.fra1.cdn.digitaloceanspaces.com/ebetlab/game-providers/light/spinomenal.svg" alt="">
-    // 				          </a>
-
-    // 				          <a class="custom--providers--link" href="https://betredi108.com/tr/providers/spinza">
-    // 				            <img class="custom--providers--image" src="https://vendor-provider.fra1.cdn.digitaloceanspaces.com/ebetlab/game-providers/light/spinza.svg" alt="">
-    // 				          </a>
-
-    // 				          <a class="custom--providers--link" href="https://betredi108.com/tr/providers/spribe">
-    // 				            <img class="custom--providers--image" src="https://vendor-provider.fra1.cdn.digitaloceanspaces.com/ebetlab/game-providers/light/spribe.svg" alt="">
-    // 				          </a>
-
-    // 				          <a class="custom--providers--link" href="https://betredi108.com/tr/providers/swintt">
-    // 				            <img class="custom--providers--image" src="https://vendor-provider.fra1.cdn.digitaloceanspaces.com/ebetlab/game-providers/light/swintt.svg" alt="">
-    // 				          </a>
-
-    // 				          <a class="custom--providers--link" href="https://betredi108.com/tr/providers/tomhornnative">
-    // 				            <img class="custom--providers--image" src="https://vendor-provider.fra1.cdn.digitaloceanspaces.com/ebetlab/game-providers/light/tomhorn.svg" alt="">
-    // 				          </a>
-
-    // 				          <a class="custom--providers--link" href="/providersuelab">
-    // 				            <img class="custom--providers--image" src="https://vendor-provider.fra1.cdn.digitaloceanspaces.com/ebetlab/game-providers/lightuelab.svg" alt="">
-    // 				          </a>
-
-    // 				          <a class="custom--providers--link" href="https://betredi108.com/tr/providers/turbogames">
-    // 				            <img class="custom--providers--image" src="https://vendor-provider.fra1.cdn.digitaloceanspaces.com/ebetlab/game-providers/light/turbogames.svg" alt="">
-    // 				          </a>
-
-    // 				          <a class="custom--providers--link" href="https://betredi108.com/tr/providers/tvbet">
-    // 				            <img class="custom--providers--image" src="https://vendor-provider.fra1.cdn.digitaloceanspaces.com/ebetlab/game-providers/light/tv%20bet.svg" alt="">
-    // 				          </a>
-
-    // 				          <a class="custom--providers--link" href="https://betredi108.com/tr/providers/vivogaming">
-    // 				            <img class="custom--providers--image" src="https://vendor-provider.fra1.cdn.digitaloceanspaces.com/ebetlab/game-providers/light/Vivo%20Gaming.svg" alt="">
-    // 				          </a>
-
-    // 				          <a class="custom--providers--link" href="https://betredi108.com/tr/providers/wizard">
-    // 				            <img class="custom--providers--image" src="https://vendor-provider.fra1.cdn.digitaloceanspaces.com/ebetlab/game-providers/light/wazdan.svg" alt="">
-    // 				          </a>
-
-    // 				          <a class="custom--providers--link" href="https://betredi108.com/tr/providers/worldmatch">
-    // 				            <img class="custom--providers--image" src="https://vendor-provider.fra1.cdn.digitaloceanspaces.com/ebetlab/game-providers/light/World%20Match.svg" alt="">
-    // 				          </a>
-
-    // 				          <a class="custom--providers--link" href="https://betredi108.com/tr/providers/xprogaming">
-    // 				            <img class="custom--providers--image" src="https://vendor-provider.fra1.cdn.digitaloceanspaces.com/ebetlab/game-providers/light/XPro%20Gaming.svg" alt="">
-    // 				          </a>
-
-    // 				          <a class="custom--providers--link" href="https://betredi108.com/tr/providers/yggdrasil">
-    // 				            <img class="custom--providers--image" src="https://vendor-provider.fra1.cdn.digitaloceanspaces.com/ebetlab/game-providers/light/yggdrasil.svg" alt="">
-    // 				          </a>
-
-    // 				          <a class="custom--providers--link" href="https://betredi108.com/tr/providers/zillion">
-    // 				            <img class="custom--providers--image" src="https://vendor-provider.fra1.cdn.digitaloceanspaces.com/ebetlab/game-providers/light/zillion.svg" alt="">
-    // 				          </a>
-
-    // 				          <a class="custom--providers--link" href="https://betredi108.com/tr/providers/ebetlab">
-    // 				            <img class="custom--providers--image" src="https://vendor-provider.fra1.cdn.digitaloceanspaces.com/ebetlab/game-providers/light/originals.svg" alt="">
-    // 				          </a>
-
-    // 				          <a class="custom--providers--link" href="https://betredi108.com/tr/providers/imagine-live">
-    // 				            <img class="custom--providers--image" src="https://vendor-provider.fra1.cdn.digitaloceanspaces.com/ebetlab/game-providers/light/imageinelive.svg" alt="">
-    // 				          </a>
-
-    // 				          <a class="custom--providers--link" href="https://betredi108.com/tr/providers/jiliasia">
-    // 				            <img class="custom--providers--image" src="https://vendor-provider.fra1.cdn.digitaloceanspaces.com/ebetlab/game-providers/light/Jiliasia.svg" alt="">
-    // 				          </a>
-
-    // 				          <a class="custom--providers--link" href="https://betredi108.com/tr/providers/royal-gaming">
-    // 				            <img class="custom--providers--image" src="https://vendor-provider.fra1.cdn.digitaloceanspaces.com/ebetlab/game-providers/light/Royal%20Gaming.svg" alt="">
-    // 				          </a>
-
-    // 				          <a class="custom--providers--link" href="https://betredi108.com/tr/providers/tada-gaming">
-    // 				            <img class="custom--providers--image" src="https://vendor-provider.fra1.cdn.digitaloceanspaces.com/ebetlab/game-providers/light/Tada%20Gaming.svg" alt="">
-    // 				          </a>
-
-    // 				          <a class="custom--providers--link" href="https://betredi108.com/tr/providers/zeus-play">
-    // 				            <img class="custom--providers--image" src="https://vendor-provider.fra1.cdn.digitaloceanspaces.com/ebetlab/game-providers/light/Zeus%20Play.svg" alt="">
-    // 				          </a>
-
-    // 				          <a class="custom--providers--link" href="https://betredi108.com/tr/providers/peter-and-sons">
-    // 				            <img class="custom--providers--image" src="https://vendor-provider.fra1.cdn.digitaloceanspaces.com/ebetlab/game-providers/light/Peter%20And%20Sons.svg" alt="">
-    // 				          </a>
-
-    // 				          <a class="custom--providers--link" href="https://betredi108.com/tr/providers/topspin">
-    // 				            <img class="custom--providers--image" src="https://vendor-provider.fra1.cdn.digitaloceanspaces.com/ebetlab/game-providers/light/topspin.svg" alt="">
-    // 				          </a>
-    // 			</div>
-    //     </div>
-    //   `;
-
-    //       swiperElement.insertAdjacentElement("afterend", section);
-
-    //       // 🔁 Marquee hareketi için JS ile içerik kopyalanıyor
-    //       const marquee = section.querySelector(
-    //         ".providers--marquee .marquee-content"
-    //       );
-    //       const clone = marquee.cloneNode(true);
-    //       marquee.parentElement.appendChild(clone);
-    //     }
-
     function injectProvidersMarquee() {
       const container = document.querySelector("#main-slider > .container");
       if (!container || container.querySelector(".custom--section--2")) return;
@@ -1010,7 +547,7 @@
       section.className = "section custom--section--2 custom--section";
       section.innerHTML = `
           <div class="container" style="position: relative; max-width: 100% !important; margin-bottom: 20px; !important; padding-left: 0px !important; padding-right: 0px !important; padding-top: 0px !important; overflow: hidden !important;">
-    <div class="providers--marquee--bg" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; background: linear-gradient(to right, black 0%, #7d020f 50%, black 100%);"></div>
+    <div class="providers--marquee--bg" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; background: linear-gradient(to right, black 0%, #570b13 50%, black 100%);"></div>
 <div class="providers--marquee">	
 				          <a class="custom--providers--link" href="https://betredi108.com/tr/providers/pragmaticplay">
 				            <img class="custom--providers--image" src="https://vendor-provider.fra1.cdn.digitaloceanspaces.com/ebetlab/game-providers/light/pragmaticplay.svg" alt="">
@@ -1421,6 +958,36 @@
       // }
     }
 
+    function injectExtraText() {
+      const observer = new MutationObserver(() => {
+        const $targetContainer = $(
+          "#collapse2-benefits .settings__container .settings__text"
+        ).parent();
+
+        if (
+          $targetContainer.length &&
+          $targetContainer.find(".extra-info-text").length === 0
+        ) {
+          const $newText = $(`
+        <p class="extra-info-text" style="margin: 8px 0; color: #e31f25; font-size:18px;">
+          ${
+            language === "tr"
+              ? "* Talep edilmediği sürece bu alan zorunlu değildir."
+              : "This field is not mandatory unless requested."
+          }
+        </p>
+      `);
+
+          $targetContainer.prepend($newText);
+        }
+      });
+
+      observer.observe(document.body, {
+        childList: true,
+        subtree: true,
+      });
+    }
+
     function customCSS() {
       const style = document.createElement("style");
 
@@ -1443,7 +1010,7 @@
     aspect-ratio: 1 / 1.5 !important;
     height: 100% !important;
     overflow: hidden !important;
-    border-radius: 8px !important;
+    border-radius: 14px !important;
     background-color: #000 !important;
   }
 
@@ -1452,6 +1019,15 @@
     height: 100% !important;
     object-fit: cover !important;
     display: block !important;
+    transition: 0.3s all ease !important;
+  }
+
+  .casino-game-item:hover img {
+    transform: scale(1.03) !important;
+  }
+
+  .casino-game-item:hover .hovered-effect {
+    opacity: 1 !important;
   }
 
   #main-slider .swiper-wrapper {
@@ -1462,8 +1038,10 @@
   box-sizing: content-box !important;
 }
 
-
-  
+.main__content {
+  background: url("https://betrediofficial.github.io/images/bg.jpeg") no-repeat center center !important;
+  background-size: cover !important;
+}
       `;
       document.head.appendChild(style);
     }
@@ -1545,6 +1123,16 @@
         `;
 
       $(".section--first").eq(1).before(newSection);
+    }
+
+    function casinoChooser() {
+      if ($(".chooser").length > 0) return;
+
+      var chooserSection = `
+      <div class="manually-added-home-widgets container"></div>
+`;
+
+      $("#digeroyunlari").after(chooserSection);
     }
 
     function mobileBoxes() {
@@ -1717,100 +1305,99 @@
                 <div class="games-horiz">
                   <div class="games-horiz-scroll" style="grid-template-rows: auto auto;">
                     <div class="casino-game-item-content">
-                      <div class="casino-game-item" style="border: 1px solid #9b000e !important; overflow: hidden !important;">
-                        <img src="https://betrediofficial.github.io/images/casino-games-new/starlight_princess_1000.png" class="casino-game-image-bc" loading="lazy">
-                         <div class="overlay">
-                            <a href="casino/games/pragmaticplay-starlight-princess-1000" class="">Starlight Princess 1000</a>
-                        </div>
+                      <div class="casino-game-item" style="border: 3px solid #9b000e !important; overflow: hidden !important;">
+                        <div class="hovered-effect" style="opacity: 0; position: absolute; width: 100%; height: 100%; background: rgba(255,255,255,0.2); z-index: 10; pointer-events: none;"></div>
+                        <a href="casino/games/pragmaticplay-starlight-princess-1000" class="">
+                          <img src="https://betrediofficial.github.io/images/casino-games-new/starlight_princess_1000.png" class="casino-game-image-bc" loading="lazy">
+                        </a>
                       </div>
                     </div>
                     <div class="casino-game-item-content">
-                      <div class="casino-game-item" style="border: 1px solid #9b000e !important; overflow: hidden !important;">
-                        <img src="https://betrediofficial.github.io/images/casino-games-new/sweet_bonanza_1000.png" class="casino-game-image-bc" loading="lazy">
-                           <div class="overlay">
-                            <a href="casino/games/pragmaticplay-sweet-bonanza-1000" class="">Sweet Bonanza 1000</a>
-                        </div>
+                      <div class="casino-game-item" style="border: 3px solid #9b000e !important; overflow: hidden !important;">
+                        <div class="hovered-effect" style="opacity: 0; position: absolute; width: 100%; height: 100%; background: rgba(255,255,255,0.2); z-index: 10; pointer-events: none;"></div>
+                        <a href="casino/games/pragmaticplay-sweet-bonanza-1000" class="">
+                          <img src="https://betrediofficial.github.io/images/casino-games-new/sweet_bonanza_1000.png" class="casino-game-image-bc" loading="lazy">
+                        </a>
                       </div>
                     </div>
                     <div class="casino-game-item-content">
-                      <div class="casino-game-item" style="border: 1px solid #9b000e !important; overflow: hidden !important;">
-                        <img src="https://betrediofficial.github.io/images/casino-games-new/wisdom_of_athena.png" class="casino-game-image-bc" loading="lazy">
-                           <div class="overlay">
-                            <a href="casino/games/pragmaticplay-wisdom-of-athena" class="">Wisdom Of Athena</a>
-                        </div>
+                      <div class="casino-game-item" style="border: 3px solid #9b000e !important; overflow: hidden !important;">
+                        <div class="hovered-effect" style="opacity: 0; position: absolute; width: 100%; height: 100%; background: rgba(255,255,255,0.2); z-index: 10; pointer-events: none;"></div>
+                        <a href="casino/games/pragmaticplay-wisdom-of-athena" class="">
+                          <img src="https://betrediofficial.github.io/images/casino-games-new/wisdom_of_athena.png" class="casino-game-image-bc" loading="lazy">
+                        </a>
                       </div>
                     </div>
                     <div class="casino-game-item-content">
-                      <div class="casino-game-item" style="border: 1px solid #9b000e !important; overflow: hidden !important;">
-                        <img src="https://betrediofficial.github.io/images/casino-games-new/big_bass_christmas_bash.png" class="casino-game-image-bc" loading="lazy">
-                          <div class="overlay">
-                            <a href="casino/games/pragmaticplay-big-bass-secrets-of-the-golden-lake" class="">Big Bass Christmas</a>
-                        </div>
+                      <div class="casino-game-item" style="border: 3px solid #9b000e !important; overflow: hidden !important;">
+                        <div class="hovered-effect" style="opacity: 0; position: absolute; width: 100%; height: 100%; background: rgba(255,255,255,0.2); z-index: 10; pointer-events: none;"></div>
+                        <a href="casino/games/pragmaticplay-big-bass-secrets-of-the-golden-lake" class="">
+                          <img src="https://betrediofficial.github.io/images/casino-games-new/big_bass_christmas_bash.png" class="casino-game-image-bc" loading="lazy">
+                        </a>
                       </div>
                     </div>
                     <div class="casino-game-item-content">
-                      <div class="casino-game-item" style="border: 1px solid #9b000e !important; overflow: hidden !important;">
-                        <img src="https://betrediofficial.github.io/images/casino-games-new/wanted_dead_or_a_wild.png" class="casino-game-image-bc" loading="lazy">
-                          <div class="overlay">
-                            <a href="casino/games/hacksaw-wanted-dead-or-a-wild" class="">Wanted Dead or a Wild</a>
-                        </div>
-                      </div>
-                    </div>
-                     <div class="casino-game-item-content">
-                      <div class="casino-game-item" style="border: 1px solid #9b000e !important; overflow: hidden !important;">
-                        <img src="https://betrediofficial.github.io/images/casino-games-new/big_bass_secrets_of_the_golden_lake.png" class="casino-game-image-bc" loading="lazy">
-                     <div class="overlay">
-                            <a href="casino/games/pragmaticplay-big-bass-secrets-of-the-golden-lake" class="">Big Bass Screts</a>
-                        </div>
-                      </div>
-                    </div>
-                     <div class="casino-game-item-content">
-                      <div class="casino-game-item" style="border: 1px solid #9b000e !important; overflow: hidden !important;">
-                       
-                        <img src="https://betrediofficial.github.io/images/casino-games-new/shining_crown.png" class="casino-game-image-bc" loading="lazy">
-                      <div class="overlay">
-                            <a href="casino/games/egt-interactive-shining-crown" class="">Shining Crown</a>
-                        </div>
-                      </div>
-                    </div>
-                     <div class="casino-game-item-content">
-                      <div class="casino-game-item" style="border: 1px solid #9b000e !important; overflow: hidden !important;">
-                        <img src="https://betrediofficial.github.io/images/casino-games-new/flaming_hot.png" class="casino-game-image-bc" loading="lazy">
-                        <div class="overlay">
-                            <a href="casino/games/egt-flaming-hot" class="">Flaming Hot</a>
-                        </div>
-                      </div>
-                    </div>
-                     <div class="casino-game-item-content">
-                      <div class="casino-game-item" style="border: 1px solid #9b000e !important; overflow: hidden !important;">
-                        <img src="https://betrediofficial.github.io/images/casino-games-new/gates_of_olympus.png" class="casino-game-image-bc" loading="lazy">
-                       <div class="overlay">
-                            <a href="casino/games/pragmaticplay-gates-of-olympus" class="">Gates of Olympus</a>
-                        </div>
+                      <div class="casino-game-item" style="border: 3px solid #9b000e !important; overflow: hidden !important;">
+                        <div class="hovered-effect" style="opacity: 0; position: absolute; width: 100%; height: 100%; background: rgba(255,255,255,0.2); z-index: 10; pointer-events: none;"></div>
+                        <a href="casino/games/hacksaw-wanted-dead-or-a-wild" class="">
+                          <img src="https://betrediofficial.github.io/images/casino-games-new/wanted_dead_or_a_wild.png" class="casino-game-image-bc" loading="lazy">
+                        </a>
                       </div>
                     </div>
                     <div class="casino-game-item-content">
-                      <div class="casino-game-item" style="border: 1px solid #9b000e !important; overflow: hidden !important;">
-                        <img src="https://betrediofficial.github.io/images/casino-games-new/wild_west_gold.png" class="casino-game-image-bc" loading="lazy">
-                         <div class="overlay">
-                            <a href="casino/games/pragmaticplay-wild-west-gold" class="">Wild West Gold</a>
-                        </div>
+                      <div class="casino-game-item" style="border: 3px solid #9b000e !important; overflow: hidden !important;">
+                        <div class="hovered-effect" style="opacity: 0; position: absolute; width: 100%; height: 100%; background: rgba(255,255,255,0.2); z-index: 10; pointer-events: none;"></div>
+                        <a href="casino/games/pragmaticplay-big-bass-secrets-of-the-golden-lake" class="">
+                          <img src="https://betrediofficial.github.io/images/casino-games-new/big_bass_secrets_of_the_golden_lake.png" class="casino-game-image-bc" loading="lazy">
+                        </a>
                       </div>
                     </div>
                     <div class="casino-game-item-content">
-                      <div class="casino-game-item" style="border: 1px solid #9b000e !important; overflow: hidden !important;">
-                        <img src="https://betrediofficial.github.io/images/casino-games-new/hand_of_midas_2.png" class="casino-game-image-bc" loading="lazy">
-                         <div class="overlay">
-                            <a href="casino/games/pragmaticplay-hand-of-midas-2" class="">Hand Of Midas 2</a>
-                        </div>
+                      <div class="casino-game-item" style="border: 3px solid #9b000e !important; overflow: hidden !important;"> 
+                        <div class="hovered-effect" style="opacity: 0; position: absolute; width: 100%; height: 100%; background: rgba(255,255,255,0.2); z-index: 10; pointer-events: none;"></div>
+                        <a href="casino/games/egt-interactive-shining-crown" class="">
+                          <img src="https://betrediofficial.github.io/images/casino-games-new/shining_crown.png" class="casino-game-image-bc" loading="lazy">
+                        </a>
                       </div>
                     </div>
                     <div class="casino-game-item-content">
-                      <div class="casino-game-item" style="border: 1px solid #9b000e !important; overflow: hidden !important;">
-                        <img src="https://betrediofficial.github.io/images/casino-games-new/ripe_rewards.png" class="casino-game-image-bc" loading="lazy">
-                         <div class="overlay">
-                            <a href="casino/games/pragmaticplay-ripe-rewards" class="">Ripe Rewards</a>
-                        </div>
+                      <div class="casino-game-item" style="border: 3px solid #9b000e !important; overflow: hidden !important;">
+                        <div class="hovered-effect" style="opacity: 0; position: absolute; width: 100%; height: 100%; background: rgba(255,255,255,0.2); z-index: 10; pointer-events: none;"></div>
+                        <a href="casino/games/egt-flaming-hot" class="">
+                          <img src="https://betrediofficial.github.io/images/casino-games-new/flaming_hot.png" class="casino-game-image-bc" loading="lazy">
+                        </a>
+                      </div>
+                    </div>
+                    <div class="casino-game-item-content">
+                      <div class="casino-game-item" style="border: 3px solid #9b000e !important; overflow: hidden !important;">
+                        <div class="hovered-effect" style="opacity: 0; position: absolute; width: 100%; height: 100%; background: rgba(255,255,255,0.2); z-index: 10; pointer-events: none;"></div>
+                        <a href="casino/games/pragmaticplay-gates-of-olympus" class="">
+                          <img src="https://betrediofficial.github.io/images/casino-games-new/gates_of_olympus.png" class="casino-game-image-bc" loading="lazy">
+                        </a>
+                      </div>
+                    </div>
+                    <div class="casino-game-item-content">
+                      <div class="casino-game-item" style="border: 3px solid #9b000e !important; overflow: hidden !important;">
+                        <div class="hovered-effect" style="opacity: 0; position: absolute; width: 100%; height: 100%; background: rgba(255,255,255,0.2); z-index: 10; pointer-events: none;"></div>
+                        <a href="casino/games/pragmaticplay-wild-west-gold" class="">
+                          <img src="https://betrediofficial.github.io/images/casino-games-new/wild_west_gold.png" class="casino-game-image-bc" loading="lazy">
+                        </a>
+                      </div>
+                    </div>
+                    <div class="casino-game-item-content">
+                      <div class="casino-game-item" style="border: 3px solid #9b000e !important; overflow: hidden !important;">
+                        <div class="hovered-effect" style="opacity: 0; position: absolute; width: 100%; height: 100%; background: rgba(255,255,255,0.2); z-index: 10; pointer-events: none;"></div>
+                        <a href="casino/games/pragmaticplay-hand-of-midas-2" class="">
+                          <img src="https://betrediofficial.github.io/images/casino-games-new/hand_of_midas_2.png" class="casino-game-image-bc" loading="lazy">
+                        </a>
+                      </div>
+                    </div>
+                    <div class="casino-game-item-content">
+                      <div class="casino-game-item" style="border: 3px solid #9b000e !important; overflow: hidden !important;">
+                        <div class="hovered-effect" style="opacity: 0; position: absolute; width: 100%; height: 100%; background: rgba(255,255,255,0.2); z-index: 10; pointer-events: none;"></div>
+                        <a href="casino/games/pragmaticplay-ripe-rewards" class="">
+                          <img src="https://betrediofficial.github.io/images/casino-games-new/ripe_rewards.png" class="casino-game-image-bc" loading="lazy">
+                        </a>
                       </div>
                     </div>
                   </div>
@@ -1835,12 +1422,18 @@
       var newSection = `
 <div class="manually-added-home-widgets section" id="tgpromo" style="margin-bottom: 14px; margin-top: 14px;">
   <div class="container otherGames">
-    <a href="https://t.me/betredi" target="_blank">
-      <img src="https://betrediofficial.github.io/images/tg-promo/tg_promo_new.png" alt="Telegram Promo" style="display: block; width: 100%; margin-bottom: 10px;" />
+    <a href="https://t.me/betredi" target="_blank" style="margin-bottom: 8px;">
+      <img src="https://betrediofficial.github.io/images/tg-promo/tg_promo_new.png" alt="Telegram Promo" style="display: block; width: 100%" />
     </a>
+    <a href=${
+      language === "tr"
+        ? "https://betredi108.com/tr/promotions"
+        : "https://betredi108.com/en/promotions"
+    } style="margin-bottom: 8px;">
     <img src="https://betrediofficial.github.io/images/tg-promo/reditg.gif"
          alt="Telegram Promo GIF"
-         style="display: block; width: 100%; margin-bottom: 10px; border: 2px solid #9b000e; border-radius: 10px; max-width: 100% !important;" />
+         style="display: block; width: 100%; border: 2px solid #9b000e; border-radius: 10px; max-width: 100% !important;" />
+    </a>
     <img src="https://betrediofficial.github.io/images/tg-promo/tg_promo_desc.png" alt="Kripto Bilgilendirme" style="display: block; width: 100%;" />
   </div>
 </div>
@@ -1891,111 +1484,111 @@
               <div class="games-horiz">
                 <div class="games-horiz-scroll">
                   
-                  <div class="casino-game-item-content position-relative">
-                    <div class="casino-game-item" style="border: 1px solid #9b000e !important; overflow: hidden !important;">
-                      <img src="https://betrediofficial.github.io/images/live-casino-new/black_jack_3.png" class="casino-game-image-bc img-fluid">
-                      <div class="overlay">
-                        <a href="casino/games/pragmaticlive-blackjack-3">Blackjack 3</a>
-                      </div>
+                  <div class="casino-game-item-content position-relative" style="overflow: hidden !important;">
+                    <div class="casino-game-item" style="border: 3px solid #9b000e !important; overflow: hidden !important;">
+                      <div class="hovered-effect" style="opacity: 0; position: absolute; width: 100%; height: 100%; background: rgba(255,255,255,0.2); z-index: 10; pointer-events: none;"></div>
+                      <a href="casino/games/pragmaticlive-blackjack-3">
+                        <img src="https://betrediofficial.github.io/images/live-casino-new/black_jack_3.png" class="casino-game-image-bc img-fluid">
+                      </a>
                     </div>
                   </div>
                   
-                  <div class="casino-game-item-content position-relative">
-                    <div class="casino-game-item" style="border: 1px solid #9b000e !important; overflow: hidden !important;">
-                      <img src="https://betrediofficial.github.io/images/live-casino-new/speed_blackjack_1.png" class="casino-game-image-bc img-fluid">
-                      <div class="overlay">
-                        <a href="casino/games/pragmaticlive-speed-blackjack-1">Speed Blackjack 1</a>
-                      </div>
+                  <div class="casino-game-item-content position-relative" style="overflow: hidden !important;">
+                    <div class="casino-game-item" style="border: 3px solid #9b000e !important; overflow: hidden !important;">
+                      <div class="hovered-effect" style="opacity: 0; position: absolute; width: 100%; height: 100%; background: rgba(255,255,255,0.2); z-index: 10; pointer-events: none;"></div>
+                      <a href="casino/games/pragmaticlive-speed-blackjack-1">
+                        <img src="https://betrediofficial.github.io/images/live-casino-new/speed_blackjack_1.png" class="casino-game-image-bc img-fluid">
+                      </a>
                     </div>
                   </div>
 
-                  <div class="casino-game-item-content position-relative">
-                    <div class="casino-game-item" style="border: 1px solid #9b000e !important; overflow: hidden !important;">
-                      <img src="https://betrediofficial.github.io/images/live-casino-new/mega_roulette.png" class="casino-game-image-bc img-fluid">
-                      <div class="overlay">
-                        <a href="casino/games/pragmaticlive-mega-roulette">Mega Roulette</a>
-                      </div>
+                  <div class="casino-game-item-content position-relative" style="overflow: hidden !important;">
+                    <div class="casino-game-item" style="border: 3px solid #9b000e !important; overflow: hidden !important;">
+                      <div class="hovered-effect" style="opacity: 0; position: absolute; width: 100%; height: 100%; background: rgba(255,255,255,0.2); z-index: 10; pointer-events: none;"></div>
+                      <a href="casino/games/pragmaticlive-mega-roulette">
+                        <img src="https://betrediofficial.github.io/images/live-casino-new/mega_roulette.png" class="casino-game-image-bc img-fluid">
+                      </a>
                     </div>
                   </div>
 
-                  <div class="casino-game-item-content position-relative">
-                    <div class="casino-game-item" style="border: 1px solid #9b000e !important; overflow: hidden !important;">
-                      <img src="https://betrediofficial.github.io/images/live-casino-new/baccarat_lobby.png" class="casino-game-image-bc img-fluid">
-                      <div class="overlay">
-                        <a href="casino/games/pragmaticlive-baccarat-lobby">Baccarat Lobby</a>
-                      </div>
+                  <div class="casino-game-item-content position-relative" style="overflow: hidden !important;">
+                    <div class="casino-game-item" style="border: 3px solid #9b000e !important; overflow: hidden !important;">
+                      <div class="hovered-effect" style="opacity: 0; position: absolute; width: 100%; height: 100%; background: rgba(255,255,255,0.2); z-index: 10; pointer-events: none;"></div>
+                      <a href="casino/games/pragmaticlive-baccarat-lobby">
+                        <img src="https://betrediofficial.github.io/images/live-casino-new/baccarat_lobby.png" class="casino-game-image-bc img-fluid">
+                      </a>
                     </div>
                   </div>
 
-                  <div class="casino-game-item-content position-relative">
-                    <div class="casino-game-item" style="border: 1px solid #9b000e !important; overflow: hidden !important;">
-                      <img src="https://betrediofficial.github.io/images/live-casino-new/blackjack.png" class="casino-game-image-bc img-fluid">
-                      <div class="overlay">
-                        <a href="casino/games/evolution-blackjack-vip-20">Blackjack</a>
-                      </div>
+                  <div class="casino-game-item-content position-relative" style="overflow: hidden !important;">
+                    <div class="casino-game-item" style="border: 3px solid #9b000e !important; overflow: hidden !important;">
+                      <div class="hovered-effect" style="opacity: 0; position: absolute; width: 100%; height: 100%; background: rgba(255,255,255,0.2); z-index: 10; pointer-events: none;"></div>
+                      <a href="casino/games/evolution-blackjack-vip-20">
+                        <img src="https://betrediofficial.github.io/images/live-casino-new/blackjack.png" class="casino-game-image-bc img-fluid">
+                      </a>
                     </div>
                   </div>
 
-                  <div class="casino-game-item-content position-relative">
-                    <div class="casino-game-item" style="border: 1px solid #9b000e !important; overflow: hidden !important;">
-                      <img src="https://betrediofficial.github.io/images/live-casino-new/lightning_roulette.png" class="casino-game-image-bc img-fluid">
-                      <div class="overlay">
-                        <a href="casino/games/evolution-auto-lightning-roulette">Lightning Roulette</a>
-                      </div>
+                  <div class="casino-game-item-content position-relative" style="overflow: hidden !important;">
+                    <div class="casino-game-item" style="border: 3px solid #9b000e !important; overflow: hidden !important;">
+                      <div class="hovered-effect" style="opacity: 0; position: absolute; width: 100%; height: 100%; background: rgba(255,255,255,0.2); z-index: 10; pointer-events: none;"></div>
+                      <a href="casino/games/evolution-auto-lightning-roulette">
+                        <img src="https://betrediofficial.github.io/images/live-casino-new/lightning_roulette.png" class="casino-game-image-bc img-fluid">
+                      </a>
                     </div>
                   </div>
 
-                  <div class="casino-game-item-content position-relative">
-                    <div class="casino-game-item" style="border: 1px solid #9b000e !important; overflow: hidden !important;">
-                      <img src="https://betrediofficial.github.io/images/live-casino-new/roulette_lobby.png" class="casino-game-image-bc img-fluid">
-                      <div class="overlay">
-                        <a href="casino/games/pragmaticlive-roulette-lobby">Roulette Lobby</a>
-                      </div>
+                  <div class="casino-game-item-content position-relative" style="overflow: hidden !important;">
+                    <div class="casino-game-item" style="border: 3px solid #9b000e !important; overflow: hidden !important;">
+                      <div class="hovered-effect" style="opacity: 0; position: absolute; width: 100%; height: 100%; background: rgba(255,255,255,0.2); z-index: 10; pointer-events: none;"></div>
+                      <a href="casino/games/pragmaticlive-roulette-lobby">
+                        <img src="https://betrediofficial.github.io/images/live-casino-new/roulette_lobby.png" class="casino-game-image-bc img-fluid">
+                      </a>
                     </div>
                   </div>
 
-                  <div class="casino-game-item-content position-relative">
-                    <div class="casino-game-item" style="border: 1px solid #9b000e !important; overflow: hidden !important;">
-                      <img src="https://betrediofficial.github.io/images/live-casino-new/texas_holdem_bonus_poker.png" class="casino-game-image-bc img-fluid">
-                      <div class="overlay">
-                        <a href="casino/games/evolution-texas-holdem-bonus-poker">Texas Holdem Bonus</a>
-                      </div>
+                  <div class="casino-game-item-content position-relative" style="overflow: hidden !important;">
+                    <div class="casino-game-item" style="border: 3px solid #9b000e !important; overflow: hidden !important;">
+                      <div class="hovered-effect" style="opacity: 0; position: absolute; width: 100%; height: 100%; background: rgba(255,255,255,0.2); z-index: 10; pointer-events: none;"></div>
+                      <a href="casino/games/evolution-texas-holdem-bonus-poker">
+                        <img src="https://betrediofficial.github.io/images/live-casino-new/texas_holdem_bonus_poker.png" class="casino-game-image-bc img-fluid">
+                      </a>
                     </div>
                   </div>
 
-                  <div class="casino-game-item-content position-relative">
-                    <div class="casino-game-item" style="border: 1px solid #9b000e !important; overflow: hidden !important;">
-                      <img src="https://betrediofficial.github.io/images/live-casino-new/first_person_roulette.png" class="casino-game-image-bc img-fluid">
-                      <div class="overlay">
-                        <a href="casino/games/evolution-first-person-roulette">First Person Roulette</a>
-                      </div>
+                  <div class="casino-game-item-content position-relative" style="overflow: hidden !important;">
+                    <div class="casino-game-item" style="border: 3px solid #9b000e !important; overflow: hidden !important;">
+                      <div class="hovered-effect" style="opacity: 0; position: absolute; width: 100%; height: 100%; background: rgba(255,255,255,0.2); z-index: 10; pointer-events: none;"></div>
+                      <a href="casino/games/evolution-first-person-roulette">
+                        <img src="https://betrediofficial.github.io/images/live-casino-new/first_person_roulette.png" class="casino-game-image-bc img-fluid">
+                      </a>
                     </div>
                   </div>
 
-                  <div class="casino-game-item-content position-relative">
-                    <div class="casino-game-item" style="border: 1px solid #9b000e !important; overflow: hidden !important;">
-                      <img src="https://betrediofficial.github.io/images/live-casino-new/blackjack_silver.png" class="casino-game-image-bc img-fluid">
-                      <div class="overlay">
-                        <a href="casino/games/evolution-blackjack-silver-f">Blackjack Silver</a>
-                      </div>
+                  <div class="casino-game-item-content position-relative" style="overflow: hidden !important;">
+                    <div class="casino-game-item" style="border: 3px solid #9b000e !important; overflow: hidden !important;">
+                      <div class="hovered-effect" style="opacity: 0; position: absolute; width: 100%; height: 100%; background: rgba(255,255,255,0.2); z-index: 10; pointer-events: none;"></div>
+                      <a href="casino/games/evolution-blackjack-silver-f">
+                        <img src="https://betrediofficial.github.io/images/live-casino-new/blackjack_silver.png" class="casino-game-image-bc img-fluid">
+                      </a>
                     </div>
                   </div>
 
-                  <div class="casino-game-item-content position-relative">
-                    <div class="casino-game-item" style="border: 1px solid #9b000e !important; overflow: hidden !important;">
-                      <img src="https://betrediofficial.github.io/images/live-casino-new/golden_wealth_baccarat.png" class="casino-game-image-bc img-fluid">
-                      <div class="overlay">
-                        <a href="casino/games/evolution-golden-wealth-baccarat">Golden Wealth Baccarat</a>
-                      </div>
+                  <div class="casino-game-item-content position-relative" style="overflow: hidden !important;">
+                    <div class="casino-game-item" style="border: 3px solid #9b000e !important; overflow: hidden !important;">
+                      <div class="hovered-effect" style="opacity: 0; position: absolute; width: 100%; height: 100%; background: rgba(255,255,255,0.2); z-index: 10; pointer-events: none;"></div>
+                      <a href="casino/games/evolution-golden-wealth-baccarat">
+                        <img src="https://betrediofficial.github.io/images/live-casino-new/golden_wealth_baccarat.png" class="casino-game-image-bc img-fluid">
+                      </a>
                     </div>
                   </div>
 
-                  <div class="casino-game-item-content position-relative">
-                    <div class="casino-game-item" style="border: 1px solid #9b000e !important; overflow: hidden !important;">
-                      <img src="https://betrediofficial.github.io/images/live-casino-new/speed_vi_blackjack.png" class="casino-game-image-bc img-fluid">
-                      <div class="overlay">
-                        <a href="casino/games/evolution-speed-vip-blackjack-h">Speed VI Blackjack</a>
-                      </div>
+                  <div class="casino-game-item-content position-relative" style="overflow: hidden !important;">
+                    <div class="casino-game-item" style="border: 3px solid #9b000e !important; overflow: hidden !important;">
+                      <div class="hovered-effect" style="opacity: 0; position: absolute; width: 100%; height: 100%; background: rgba(255,255,255,0.2); z-index: 10; pointer-events: none;"></div>
+                      <a href="casino/games/evolution-speed-vip-blackjack-h">
+                        <img src="https://betrediofficial.github.io/images/live-casino-new/speed_vi_blackjack.png" class="casino-game-image-bc img-fluid">
+                      </a>
                     </div>
                   </div>
 
@@ -2012,74 +1605,143 @@
 
       $("#tgpromo").after(newSection);
     }
-
-    function sportsCard() {
-      if ($("#sportscard").length > 0) return;
-
-      var newSection = `
-      <div class="container manually-added-home-widgets" style="margin-top: 16px !important; margin-bottom: 16px !important;">
-  <div class="row row-cols-3 row-cols-xl-6 g-4 text-center">
-    <div class="col">
-      <div class="sport-card" style="position: relative; border: 2px solid #9B000E; border-top-right-radius: 24px; border-bottom-left-radius: 24px; overflow: hidden; cursor: pointer;">
-        <div class="hovered-effect" style="opacity: 0; position: absolute; width: 100%; height: 100%; background: rgba(255,255,255,0.1); z-index: 10; pointer-events: none;"></div>
-        <a href="/sportsbook">
-          <img src="https://betrediofficial.github.io/images/sports/futbol_new.png" alt="Futbol" style="width: 100%; aspect-ratio: 3/4; object-fit: cover;">
-        </a>
-      </div>
-    </div>
-    <div class="col">
-      <div class="sport-card" style="position: relative; border: 2px solid #9B000E; border-top-right-radius: 24px; border-bottom-left-radius: 24px; overflow: hidden; cursor: pointer;">
-        <div class="hovered-effect" style="opacity: 0; position: absolute; width: 100%; height: 100%; background: rgba(255,255,255,0.1); z-index: 10; pointer-events: none;"></div>
-        <a href="/sportsbook">
-          <img src="https://betrediofficial.github.io/images/sports/basketbol_new.png" alt="Basketbol" style="width: 100%; aspect-ratio: 3/4; object-fit: cover;">
-        </a>
-      </div>
-    </div>
-    <div class="col">
-      <div class="sport-card" style="position: relative; border: 2px solid #9B000E; border-top-right-radius: 24px; border-bottom-left-radius: 24px; overflow: hidden; cursor: pointer;">
-        <div class="hovered-effect" style="opacity: 0; position: absolute; width: 100%; height: 100%; background: rgba(255,255,255,0.1); z-index: 10; pointer-events: none;"></div>
-        <a href="/sportsbook">
-          <img src="https://betrediofficial.github.io/images/sports/voleybol_new.png" alt="Voleybol" style="width: 100%; aspect-ratio: 3/4; object-fit: cover;">
-        </a>
-      </div>
-    </div>
-    <div class="col">
-      <div class="sport-card" style="position: relative; border: 2px solid #9B000E; border-top-right-radius: 24px; border-bottom-left-radius: 24px; overflow: hidden; cursor: pointer;">
-        <div class="hovered-effect" style="opacity: 0; position: absolute; width: 100%; height: 100%; background: rgba(255,255,255,0.1); z-index: 10; pointer-events: none;"></div>
-        <a href="/sportsbook">
-          <img src="https://betrediofficial.github.io/images/sports/mma_new.png" alt="MMA" style="width: 100%; aspect-ratio: 3/4; object-fit: cover;">
-        </a>
-      </div>
-    </div>
-    <div class="col">
-      <div class="sport-card" style="position: relative; border: 2px solid #9B000E; border-top-right-radius: 24px; border-bottom-left-radius: 24px; overflow: hidden; cursor: pointer;">
-        <div class="hovered-effect" style="opacity: 0; position: absolute; width: 100%; height: 100%; background: rgba(255,255,255,0.1); z-index: 10; pointer-events: none;"></div>
-        <a href="/sportsbook">
-          <img src="https://betrediofficial.github.io/images/sports/tennis_new.png" alt="Tenis" style="width: 100%; aspect-ratio: 3/4; object-fit: cover;">
-        </a>
-      </div>
-    </div>
-    <div class="col">
-      <div class="sport-card" style="position: relative; border: 2px solid #9B000E; border-top-right-radius: 24px; border-bottom-left-radius: 24px; overflow: hidden; cursor: pointer;">
-        <div class="hovered-effect" style="opacity: 0; position: absolute; width: 100%; height: 100%; background: rgba(255,255,255,0.1); z-index: 10; pointer-events: none;"></div>
-        <a href="/sportsbook">
-          <img src="https://betrediofficial.github.io/images/sports/cycling_new.png" alt="Cycling" style="width: 100%; aspect-ratio: 3/4; object-fit: cover;">
-        </a>
-      </div>
-    </div>
-  </div>
-</div>
-
-`;
-
-      if ($("#casinooyunlari").length > 0)
-        $("#casinooyunlari").after(newSection);
-      else $("#tgpromo").eq(0).after(newSection);
-    }
   } catch (e) {
     alert("hata");
     console.log(e);
   }
+
+  //   function sportsCard() {
+  //     if ($("#sportscard").length > 0) return;
+
+  //     var newSection = `
+  //       <div class="container manually-added-home-widgets" style="margin-top: 16px !important; margin-bottom: 16px !important;">
+  //   <div class="row row-cols-3 row-cols-xl-6 g-4 text-center">
+  //     <div class="col">
+  //       <div class="sport-card" style="position: relative; border: 2px solid #9B000E; border-top-right-radius: 24px; border-bottom-left-radius: 24px; overflow: hidden; cursor: pointer;">
+  //         <div class="hovered-effect" style="opacity: 0; position: absolute; width: 100%; height: 100%; background: rgba(255,255,255,0.1); z-index: 10; pointer-events: none;"></div>
+  //         <a href="/sportsbook">
+  //           <img src="https://betrediofficial.github.io/images/sports/futbol_new.png" alt="Futbol" style="width: 100%; aspect-ratio: 3/4; object-fit: cover;">
+  //         </a>
+  //       </div>
+  //     </div>
+  //     <div class="col">
+  //       <div class="sport-card" style="position: relative; border: 2px solid #9B000E; border-top-right-radius: 24px; border-bottom-left-radius: 24px; overflow: hidden; cursor: pointer;">
+  //         <div class="hovered-effect" style="opacity: 0; position: absolute; width: 100%; height: 100%; background: rgba(255,255,255,0.1); z-index: 10; pointer-events: none;"></div>
+  //         <a href="/sportsbook">
+  //           <img src="https://betrediofficial.github.io/images/sports/basketbol_new.png" alt="Basketbol" style="width: 100%; aspect-ratio: 3/4; object-fit: cover;">
+  //         </a>
+  //       </div>
+  //     </div>
+  //     <div class="col">
+  //       <div class="sport-card" style="position: relative; border: 2px solid #9B000E; border-top-right-radius: 24px; border-bottom-left-radius: 24px; overflow: hidden; cursor: pointer;">
+  //         <div class="hovered-effect" style="opacity: 0; position: absolute; width: 100%; height: 100%; background: rgba(255,255,255,0.1); z-index: 10; pointer-events: none;"></div>
+  //         <a href="/sportsbook">
+  //           <img src="https://betrediofficial.github.io/images/sports/voleybol_new.png" alt="Voleybol" style="width: 100%; aspect-ratio: 3/4; object-fit: cover;">
+  //         </a>
+  //       </div>
+  //     </div>
+  //     <div class="col">
+  //       <div class="sport-card" style="position: relative; border: 2px solid #9B000E; border-top-right-radius: 24px; border-bottom-left-radius: 24px; overflow: hidden; cursor: pointer;">
+  //         <div class="hovered-effect" style="opacity: 0; position: absolute; width: 100%; height: 100%; background: rgba(255,255,255,0.1); z-index: 10; pointer-events: none;"></div>
+  //         <a href="/sportsbook">
+  //           <img src="https://betrediofficial.github.io/images/sports/mma_new.png" alt="MMA" style="width: 100%; aspect-ratio: 3/4; object-fit: cover;">
+  //         </a>
+  //       </div>
+  //     </div>
+  //     <div class="col">
+  //       <div class="sport-card" style="position: relative; border: 2px solid #9B000E; border-top-right-radius: 24px; border-bottom-left-radius: 24px; overflow: hidden; cursor: pointer;">
+  //         <div class="hovered-effect" style="opacity: 0; position: absolute; width: 100%; height: 100%; background: rgba(255,255,255,0.1); z-index: 10; pointer-events: none;"></div>
+  //         <a href="/sportsbook">
+  //           <img src="https://betrediofficial.github.io/images/sports/tennis_new.png" alt="Tenis" style="width: 100%; aspect-ratio: 3/4; object-fit: cover;">
+  //         </a>
+  //       </div>
+  //     </div>
+  //     <div class="col">
+  //       <div class="sport-card" style="position: relative; border: 2px solid #9B000E; border-top-right-radius: 24px; border-bottom-left-radius: 24px; overflow: hidden; cursor: pointer;">
+  //         <div class="hovered-effect" style="opacity: 0; position: absolute; width: 100%; height: 100%; background: rgba(255,255,255,0.1); z-index: 10; pointer-events: none;"></div>
+  //         <a href="/sportsbook">
+  //           <img src="https://betrediofficial.github.io/images/sports/cycling_new.png" alt="Cycling" style="width: 100%; aspect-ratio: 3/4; object-fit: cover;">
+  //         </a>
+  //       </div>
+  //     </div>
+  //   </div>
+  // </div>
+
+  // `;
+
+  //     // if ($("#casinooyunlari").length > 0)
+  //     $("#casinooyunlari").after(newSection);
+  //     // else $("#tgpromo").eq(0).after(newSection);
+  //   }
+
+  //   function miniGames() {
+  //     if ($("#mini-games-wrapper").length > 0) return;
+
+  //     var miniGamesSection = `
+  // <div class="manually-added-home-widgets section" id="mini-games-wrapper" style="margin-top: 16px !important; margin-bottom: 16px !important;">
+  //   <div class="container">
+  //     <div class="row">
+  //       <div class="col-12">
+  //         <h2 class="section__title">
+  //           <svg class="svg-icon">
+  //             <use href="/static/media/sprite.1cea5f3c17045e69440504bcd887b333.svg#mini-games"
+  //                  xlink:href="/static/media/sprite.1cea5f3c17045e69440504bcd887b333.svg#mini-games">
+  //             </use>
+  //           </svg>
+  //           Mini Oyunlar
+  //         </h2>
+  //       </div>
+
+  //       <div class="col-12">
+  //         <div class="swiper swiper-initialized swiper-horizontal mySwiper swiper-backface-hidden">
+  //           <div class="swiper-wrapper" style="transform: translate3d(0px, 0px, 0px);">
+
+  //             <div class="swiper-slide" data-swiper-slide-index="0" style="background: none !important;">
+  //               <a class="mini-game mini-game--carousel mini-game--no-layer" href="/tr/casino/games/ebetlab-crash-originals">
+  //                 <span class="mini-game__img">
+  //                   <img loading="lazy" src="https://betrediofficial.github.io/images/mini-games-v2/crash_v2.png" alt="">
+  //                 </span>
+  //               </a>
+  //             </div>
+
+  //             <div class="swiper-slide" data-swiper-slide-index="1" style="background: none !important;">
+  //               <a class="mini-game mini-game--carousel mini-game--no-layer" href="/tr/casino/games/ebetlab-dice-originals">
+  //                 <span class="mini-game__img">
+  //                   <img loading="lazy" src="https://betrediofficial.github.io/images/mini-games-v2/dice_v2.png" alt="">
+  //                 </span>
+  //               </a>
+  //             </div>
+
+  //             <div class="swiper-slide" data-swiper-slide-index="2" style="background: none !important;">
+  //               <a class="mini-game mini-game--carousel mini-game--no-layer" href="/tr/casino/games/ebetlab-mines-originals">
+  //                 <span class="mini-game__img">
+  //                   <img loading="lazy" src="https://betrediofficial.github.io/images/mini-games-v2/mines_v2.png" alt="">
+  //                 </span>
+  //               </a>
+  //             </div>
+
+  //             <div class="swiper-slide" data-swiper-slide-index="3" style="background: none !important;">
+  //               <a class="mini-game mini-game--carousel mini-game--no-layer" href="/tr/casino/games/ebetlab-plinko-originals">
+  //                 <span class="mini-game__img">
+  //                   <img loading="lazy" src="https://betrediofficial.github.io/images/mini-games-v2/plinko_v2.png" alt="">
+  //                 </span>
+  //               </a>
+  //             </div>
+
+  //           </div>
+  //         </div>
+  //       </div>
+
+  //     </div>
+  //   </div>
+  // </div>
+
+  // `;
+
+  //     if ($("#casinooyunlari").length > 0)
+  //       $("#casinooyunlari").after(miniGamesSection);
+  //     else $("#tgpromo").eq(0).after(miniGamesSection);
+  //   }
 
   function hideDefaultGames(ms) {
     let popularGames = language === "tr" ? "Popüler Oyunlar" : "Popular Games";
