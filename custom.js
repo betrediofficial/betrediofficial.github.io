@@ -1318,7 +1318,7 @@
              <div class="swiper-slide" data-swiper-slide-index="0" style="width: 339px; margin-right: 12px; background: none !important;">
                <a class="mini-game mini-game--carousel mini-game--no-layer" href="/tr/casino/games/ebetlab-crash-originals" style="background: none !important;">
                  <span class="mini-game__img">
-                   <img loading="lazy" src="https://betrediofficial.github.io/images/mini-games-v2/crash_v2.png" alt="">
+                   <img loading="lazy" src="https://betrediofficial.github.io/images/mini-games-v2/crash_v2.webp" alt="">
                  </span>
                </a>
              </div>
@@ -1326,7 +1326,7 @@
              <div class="swiper-slide" data-swiper-slide-index="1" style="width: 339px; margin-right: 12px; background: none !important;">
                <a class="mini-game mini-game--carousel mini-game--no-layer" href="/tr/casino/games/ebetlab-dice-originals" style="background: none !important;">
                  <span class="mini-game__img">
-                   <img loading="lazy" src="https://betrediofficial.github.io/images/mini-games-v2/dice_v2.png" alt="">
+                   <img loading="lazy" src="https://betrediofficial.github.io/images/mini-games-v2/dice_v2.webp" alt="">
                  </span>
                </a>
              </div>
@@ -1334,7 +1334,7 @@
              <div class="swiper-slide" data-swiper-slide-index="2" style="width: 339px; margin-right: 12px; background: none !important;">
                <a class="mini-game mini-game--carousel mini-game--no-layer" href="/tr/casino/games/ebetlab-mines-originals" style="background: none !important;">
                  <span class="mini-game__img">
-                   <img loading="lazy" src="https://betrediofficial.github.io/images/mini-games-v2/mines_v2.png" alt="">
+                   <img loading="lazy" src="https://betrediofficial.github.io/images/mini-games-v2/mines_v2.webp" alt="">
                  </span>
                </a>
              </div>
@@ -1342,7 +1342,7 @@
              <div class="swiper-slide" data-swiper-slide-index="3" style="width: 339px; margin-right: 12px; background: none !important;">
                <a class="mini-game mini-game--carousel mini-game--no-layer" href="/tr/casino/games/ebetlab-plinko-originals" style="background: none !important;">
                  <span class="mini-game__img">
-                   <img loading="lazy" src="https://betrediofficial.github.io/images/mini-games-v2/plinko_v2.png" alt="">
+                   <img loading="lazy" src="https://betrediofficial.github.io/images/mini-games-v2/plinko_v2.webp" alt="">
                  </span>
                </a>
              </div>
@@ -2442,7 +2442,7 @@
 <div class="manually-added-home-widgets section" id="tgpromo" style="margin-bottom: 14px; margin-top: 14px;">
   <div class="container otherGames">
     <a href="https://t.me/betredi" target="_blank">
-      <img src="https://betrediofficial.github.io/images/tg-promo/tg_promo_new.png" alt="Telegram Promo" style="display: block; width: 100%; margin-bottom: 10px;" />
+      <img src="https://betrediofficial.github.io/images/tg-promo/tg_promo_new.webp" alt="Telegram Promo" style="display: block; width: 100%; margin-bottom: 10px;" />
     </a>
     <a href=${
       language === "tr"
@@ -2453,7 +2453,7 @@
          alt="Telegram Promo GIF"
          style="display: block; width: 100%; margin-bottom: 10px; border: 2px solid #9b000e; border-radius: 10px; max-width: 100% !important;" />
     </a>
-    <img src="https://betrediofficial.github.io/images/tg-promo/tg_promo_desc.png" alt="Kripto Bilgilendirme" style="display: block; width: 100%;" />
+    <img src="https://betrediofficial.github.io/images/tg-promo/tg_promo_desc.webp" alt="Kripto Bilgilendirme" style="display: block; width: 100%;" />
   </div>
 </div>
 
