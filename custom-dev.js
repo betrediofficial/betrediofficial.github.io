@@ -1409,8 +1409,8 @@
 
         // sportsCard();
         //hide default games
-        !is_mobile && hideDefaultGames(50);
-        !is_mobile && hideDefaultGames(1500);
+        // !is_mobile && hideDefaultGames(50);
+        // !is_mobile && hideDefaultGames(1500);
       }
 
       insertCustomSidebarLink();
