@@ -168,8 +168,11 @@
           //     ? "https://betredi108.com/tr/settings?tab=general"
           //     : "https://betredi108.com/en/settings?tab=general"
           // );
-
-          window.location.href = "https://betredi108.com/tr/settings";
+          if (language === "tr")
+            window.location.href = "https://betredi108.com/tr/settings";
+          if (language === "en")
+            window.location.href = "https://betredi108.com/en/settings";
+          // window.location.href = "https://betredi108.com/tr/settings";
         });
 
         $(document).on("click", 'a[href$="/transactions"]', function (e) {
