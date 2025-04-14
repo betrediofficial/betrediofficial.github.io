@@ -288,6 +288,18 @@
               ? "https://betredi108.com/tr/providers"
               : "https://betredi108.com/en/providers";
         });
+
+        $(document).on(
+          "click",
+          'a[href$="/providers/pragmaticplay"]',
+          function (e) {
+            e.preventDefault();
+            window.location.href =
+              language === "tr"
+                ? "https://betredi108.com/tr/providers/pragmaticplay"
+                : "https://betredi108.com/en/providers/pragmaticplay";
+          }
+        );
       }
     }, 300);
 
