@@ -1436,7 +1436,7 @@
 
     function customizeSignupModal() {
       const imgUrl =
-        "https://betrediofficial.github.io/images/modal-banners/modal_story.png";
+        "https://betrediofficial.github.io/images/modal-banners/modal_story.webp";
 
       const observer = new MutationObserver(() => {
         const $modal = $("#signup-modal");
@@ -1478,7 +1478,7 @@
 
     function customizeSigninModal() {
       const imgUrl =
-        "https://betrediofficial.github.io/images/modal-banners/modal_story.png";
+        "https://betrediofficial.github.io/images/modal-banners/modal_story.webp";
 
       const observer = new MutationObserver(() => {
         const $modal = $("#signin-modal");
