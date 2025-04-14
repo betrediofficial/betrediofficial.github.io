@@ -163,11 +163,10 @@
 
         $(document).on("click", 'a[href*="/settings"]', function (e) {
           e.preventDefault();
-          window.open(
+          location.replace(
             language === "tr"
-              ? "https://betredi108.com/tr/settings"
-              : "https://betredi108.com/en/settings",
-            "_self"
+              ? "https://betredi108.com/tr/settings?tab=general"
+              : "https://betredi108.com/en/settings?tab=general"
           );
         });
 
@@ -1458,7 +1457,7 @@
       section.className = "section custom--section--2 custom--section";
       section.innerHTML = `
           <div class="container" style="position: relative; max-width: 100% !important; margin-bottom: 20px; !important; padding-left: 0px !important; padding-right: 0px !important; padding-top: 0px !important; overflow: hidden !important;">
-    <div class="providers--marquee--bg" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; background: linear-gradient(to right, black 0%, #7d020f 50%, black 100%);"></div>
+    <div class="providers--marquee--bg" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; background: linear-gradient(to right, black 0%, #401015 50%, black 100%);"></div>
 <div class="providers--marquee">	
 				          <a class="custom--providers--link" href="https://betredi108.com/tr/providers/pragmaticplay">
 				            <img class="custom--providers--image" src="https://vendor-provider.fra1.cdn.digitaloceanspaces.com/ebetlab/game-providers/light/pragmaticplay.svg" alt="">
