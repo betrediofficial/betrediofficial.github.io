@@ -1,4 +1,5 @@
-(function () {
+try{
+  (function () {
   var language = window.location.pathname.split("/")[1];
 
   var isLoggedIn = false;
@@ -3004,3 +3005,7 @@
 ">GİRİŞ</h1>`);
   }
 })();
+}
+catch(error){
+console.log("error happened", error)
+}
