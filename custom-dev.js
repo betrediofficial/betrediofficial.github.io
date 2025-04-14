@@ -2231,27 +2231,25 @@
           </div>
         </a>
 
-
+    <a
+      onClick="$('.lowbar__btn')[$('.lowbar__btn').length -1].click()"
+      class="col-4"
+      style="background: linear-gradient(135deg, #3a0509, #5a0910, #a31624);"
+    >
+      <div class="box-icon-item">
+        <img
+          src="https://betrediofficial.github.io/images/mobile-view//support.png"
+          width="48"
+          height="48"
+          class="d-block mx-auto"
+        />
+        <span>RTP Sorgu</span>
+      </div>
+    </a>
       </div>
 </div>
     `);
     }
-
-    // <a
-    //   onClick="$('.lowbar__btn')[$('.lowbar__btn').length -1].click()"
-    //   class="col-4"
-    //   style="background: linear-gradient(to right, black 0%, #5e0e17 50%, black 100%);"
-    // >
-    //   <div class="box-icon-item">
-    //     <img
-    //       src="https://betrediofficial.github.io/images/mobile-view//support.png"
-    //       width="48"
-    //       height="48"
-    //       class="d-block mx-auto"
-    //     />
-    //     <span>RTP Sorgu</span>
-    //   </div>
-    // </a>
 
     function bottomMenuWidget(isMobile) {
       if ($("#bottomMenuWidgedContainer").length > 0) return;
