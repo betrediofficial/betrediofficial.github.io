@@ -3010,6 +3010,6 @@
     color: #FFF;
     font-size: 16px;
     margin-top: 10px;
-">GİRİŞ</h1>`);
+">${language === "tr" ? "GİRİŞ" : "LOGIN"}</h1>`);
   }
 })();
