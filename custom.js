@@ -2152,8 +2152,8 @@
     function mobileBoxes() {
       if ($("#mobileboxes").length > 0) return;
 
-      if ($("#main-slider").length > 0)
-        $("#main-slider").after(`
+      if ($(".custom--section--2").length > 0)
+        $(".custom--section--2").after(`
 <div class="manually-added-home-widgets container mt-4 mobile-boxes" id="mobileboxes" style="margin-bottom: 10px;">
   <div class="row row-cols-2 row-cols-md-3 row-cols-lg-4 g-1">
     <a href="casino/group/live-lobby" class="col-4">
