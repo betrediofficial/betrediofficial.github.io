@@ -2779,6 +2779,8 @@ const casino_games = [
     </div>
   </div>
       `;
+
+      $("buy-bonus-games-wrapper").after(gameChooserSection);
     }
 
     // * Game Chooser Logic - START
