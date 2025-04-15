@@ -2159,7 +2159,7 @@
     <a href="casino/group/live-lobby" class="col-4">
       <div class="box-icon-item">
         <img
-          src="https://betrediofficial.github.io/images/mobile-view//live_casino.png"
+          src="https://betrediofficial.github.io/images/mobile-view/live_casino.png"
           width="48"
           height="48"
           class="d-block mx-auto"
@@ -2181,67 +2181,73 @@
     <a href="${depositMoneyLink()}" class="col-4">
       <div class="box-icon-item">
         <img
-          src="https://betrediofficial.github.io/images/mobile-view//deposit.png"
+          src="https://betrediofficial.github.io/images/mobile-view/deposit.png"
             width="48"
             height="48"
             class="d-block mx-auto"
         />
-            <span>Para Yatır</span>
+        <span>Para Yatır</span>
       </div>
     </a>
     <a href="${withdrawMoneyLink()}" class="col-4">
       <div class="box-icon-item">
         <img
-          src="https://betrediofficial.github.io/images/mobile-view//withdraw.png"
+          src="https://betrediofficial.github.io/images/mobile-view/withdraw.png"
           width="48"
           height="48"
           class="d-block mx-auto"
         />
-          <span>Para Çek</span>
+        <span>Para Çek</span>
       </div>
     </a>
     <a class="col-4" href="promotions?modal=vip&tab=bonus-code">
       <div class="box-icon-item">
         <img
-          src="https://betrediofficial.github.io/images/mobile-view//bonus.png"
+          src="https://betrediofficial.github.io/images/mobile-view/bonus.png"
           width="48"
           height="48"
           class="d-block mx-auto"
         />
-            <span>Bonus Talep</span>
+        <span>Bonus Talep</span>
       </div>
     </a>
     <a href="promotions" class="col-4">
       <div class="box-icon-item">
         <img
-          src="https://betrediofficial.github.io/images/mobile-view//promotion.png"
+          src="https://betrediofficial.github.io/images/mobile-view/promotion.png"
           width="48"
           height="48"
           class="d-block mx-auto"
         />
-            <span>Promosyonlar</span>
+        <span>Promosyonlar</span>
       </div>
     </a>
     <a onClick="$('.lowbar__btn')[$('.lowbar__btn').length -1].click()" class="col-4">
       <div class="box-icon-item">
         <img
-          src="https://betrediofficial.github.io/images/mobile-view//support.png"
+          src="https://betrediofficial.github.io/images/mobile-view/support.png"
           width="48"
           height="48"
           class="d-block mx-auto"
         />
-            <span>Canlı Destek</span>
+        <span>Canlı Destek</span>
+      </div>
+    </a>
+    <a href="/trade" target="_blank" class="col-4">
+      <div class="box-icon-item">
+      <svg class="svg-icon" style="margin: 0 auto 4px auto; width: 26px !important; height: 26px !important;"><use href="/static/media/sprite.1cea5f3c17045e69440504bcd887b333.svg#chart" xlink:href="/static/media/sprite.1cea5f3c17045e69440504bcd887b333.svg#chart"></use></svg>
+        <span>Borsa</span>
       </div>
     </a>
     <a href="https://rtpsorgu.com" target="_blank" class="col-4">
       <div class="box-icon-item" style="background: linear-gradient(135deg, #3a0509, #5a0910, #a31624);">
         <img
-          src="https://betrediofficial.github.io/images/mobile-view//support.png"
+          src="https://betrediofficial.github.io/images/mobile-view/graph.png"
           width="48"
           height="48"
           class="d-block mx-auto"
         />
-            <span>RTP Sorgu</span>
+        <span>RTP Sorgu</span>
       </div>
     </a>
   </div>
