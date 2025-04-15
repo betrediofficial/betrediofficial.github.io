@@ -1902,7 +1902,7 @@ const casino_games = [
       injectExtraText();
       autoplayMiniSlider();
 
-      // gameChooser();
+      gameChooser();
 
       if ($(".form__btn span").text().trim() === "Send Request") {
         $(".form__btn span").text("Talep Gönder");
@@ -2370,6 +2370,10 @@ const casino_games = [
 				          <a class="custom--providers--link" href="https://betredi109.com/tr/providers/tomhornnative">
 				            <img class="custom--providers--image" src="https://vendor-provider.fra1.cdn.digitaloceanspaces.com/ebetlab/game-providers/light/tomhorn.svg" alt="">
 				          </a>
+				        
+				          <a class="custom--providers--link" href="/providersuelab">
+				            <img class="custom--providers--image" src="https://vendor-provider.fra1.cdn.digitaloceanspaces.com/ebetlab/game-providers/lightuelab.svg" alt="">
+				          </a>
 
 				          <a class="custom--providers--link" href="https://betredi109.com/tr/providers/turbogames">
 				            <img class="custom--providers--image" src="https://vendor-provider.fra1.cdn.digitaloceanspaces.com/ebetlab/game-providers/light/turbogames.svg" alt="">
@@ -2748,7 +2752,7 @@ const casino_games = [
                 z-index: 1;
               "
             >
-              <img class="play-btn" src="play.png" style="z-index: 2" />
+              <img class="play-btn" src="https://betrediofficial.github.io/images/game-chooser-icons/play.png" style="z-index: 2" />
             </div>
           </div>
         </div>
@@ -3708,7 +3712,3 @@ const casino_games = [
 ">${language === "tr" ? "GİRİŞ" : "LOGIN"}</h1>`);
   }
 })();
-
-// <a class="custom--providers--link" href="/providersuelab">
-//   <img class="custom--providers--image" src="https://vendor-provider.fra1.cdn.digitaloceanspaces.com/ebetlab/game-providers/lightuelab.svg" alt="">
-// </a>
