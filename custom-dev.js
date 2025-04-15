@@ -2719,7 +2719,7 @@ const casino_games = [
                 z-index: 1;
               "
             >
-              <img class="play-btn" src="play.png" style="z-index: 2" />
+              <img class="play-btn" src="https://betrediofficial.github.io/images/game-chooser-icons/play.png" style="z-index: 2" />
             </div>
           </div>
           <div
