@@ -1382,16 +1382,13 @@
 
       if (!swiperEl || typeof Swiper !== "function") return;
 
+      const slidesPerViewValue = window.innerWidth <= 768 ? 1 : 3;
+
       window.swiper = new Swiper(swiperEl, {
-        slidesPerView: 3,
+        slidesPerView: slidesPerViewValue,
         autoplay: {
           delay: 3000,
           disableOnInteraction: false,
-        },
-        breakpoints: {
-          768: {
-            slidesPerView: 1,
-          },
         },
       });
     }
@@ -2264,7 +2261,7 @@
         <span>${language === "tr" ? "Borsa" : "Trade"}</span>
       </div>
     </a>
-    <a href="javascript:void(0)" onClick="alert('🔴 Çok yakında sadece Betredi de!')" class="col-4">
+    <a href="https://rtpsorgu.com" target="_blank" class="col-4">
       <div class="box-icon-item" style="background: linear-gradient(135deg, #3a0509, #5a0910, #a31624);">
         <img
           src="https://betrediofficial.github.io/images/mobile-view/graph.png"
@@ -2279,6 +2276,25 @@
 </div>
     `);
     }
+
+    // <a
+    //   href="javascript:void(0)"
+    //   onClick="alert('🔴 Çok yakında sadece Betredi de!')"
+    //   class="col-4"
+    // >
+    //   <div
+    //     class="box-icon-item"
+    //     style="background: linear-gradient(135deg, #3a0509, #5a0910, #a31624);"
+    //   >
+    //     <img
+    //       src="https://betrediofficial.github.io/images/mobile-view/graph.png"
+    //       width="48"
+    //       height="48"
+    //       class="d-block mx-auto"
+    //     />
+    //     <span>${language === "tr" ? "RTP Sorgu" : "RTP Query"}</span>
+    //   </div>
+    // </a>
 
     function bottomMenuWidget(isMobile) {
       if ($("#bottomMenuWidgedContainer").length > 0) return;
