@@ -1902,7 +1902,7 @@ const casino_games = [
       injectExtraText();
       autoplayMiniSlider();
 
-      gameChooser();
+      // gameChooser();
 
       if ($(".form__btn span").text().trim() === "Send Request") {
         $(".form__btn span").text("Talep Gönder");
