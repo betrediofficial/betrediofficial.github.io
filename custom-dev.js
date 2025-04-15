@@ -1379,6 +1379,21 @@
       });
     }
 
+    function autoplayMiniSlider() {
+      const swiperEl = document.querySelector("#mini-slider-wrapper .swiper");
+
+      if (!swiperEl || typeof Swiper !== "function") return;
+
+      window.swiper = new Swiper(swiperEl, {
+        // slidesPerView: "auto",
+        autoplay: {
+          delay: 3000,
+          disableOnInteraction: false,
+        },
+        // grabCursor: true,
+      });
+    }
+
     function initialize() {
       removeOriginalMainSlider();
 
@@ -1430,10 +1445,10 @@
       customizeSigninModal();
 
       injectExtraText();
+      autoplayMiniSlider();
     }
 
     customCSS();
-    // customizeSwiper();
 
     function customizeSignupModal() {
       const imgUrl =

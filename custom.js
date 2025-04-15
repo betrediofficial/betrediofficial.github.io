@@ -1379,6 +1379,8 @@
       });
     }
 
+    // function autoplayMiniSlider() {}
+
     function initialize() {
       removeOriginalMainSlider();
 
@@ -1430,6 +1432,7 @@
       customizeSigninModal();
 
       injectExtraText();
+      // autoplayMiniSlider();
     }
 
     customCSS();
