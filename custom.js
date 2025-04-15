@@ -128,8 +128,6 @@
         $(document).ready(function () {
           initialize();
 
-          $(".form__btn span").text("Talep Gönder");
-
           const originalPushState = history.pushState;
           history.pushState = function (state) {
             originalPushState.apply(history, arguments);
@@ -1446,6 +1444,8 @@
 
       injectExtraText();
       autoplayMiniSlider();
+
+      $(".form__btn span").text("Talep Gönder");
     }
 
     customCSS();
