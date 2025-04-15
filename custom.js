@@ -1230,10 +1230,10 @@
 
     function insertCustomMainSlider() {
 
-      if ($("#main-slider").length > 0) return;
+      if ($(".my-slider").length > 0) return;
 
       const sliderHTML = `
-    <div class="manually-added-home-widgets section pt-24" id="main-slider">
+    <div class="manually-added-home-widgets section pt-24 my-slider" id="main-slider">
       <div class="container">
         <div class="swiper mySwiper">
           <div class="swiper-wrapper">
