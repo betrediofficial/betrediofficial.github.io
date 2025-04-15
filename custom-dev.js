@@ -2173,7 +2173,7 @@
       if ($("#custom-section-12").length > 0) return;
 
       var gameChooser = `
-      <div id="custom-section-12" class="section custom-section">
+<div id="custom-section-12" class="section custom-section">
         	<div class="container mb-4">
             <img class="pe-none w-100 h-100 rounded-3" src="https://mobkcaj.github.io/assets/images/sponsor_mobile.png" alt="Banner">
           </div>
