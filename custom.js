@@ -1379,7 +1379,20 @@
       });
     }
 
-    // function autoplayMiniSlider() {}
+    function autoplayMiniSlider() {
+      const swiperEl = document.querySelector("#mini-slider-wrapper .swiper");
+
+      if (!swiperEl || typeof Swiper !== "function") return;
+
+      window.swiper = new Swiper(swiperEl, {
+        slidesPerView: 3,
+        autoplay: {
+          delay: 3000,
+          disableOnInteraction: false,
+        },
+        // grabCursor: true,
+      });
+    }
 
     function initialize() {
       removeOriginalMainSlider();
@@ -1432,11 +1445,10 @@
       customizeSigninModal();
 
       injectExtraText();
-      // autoplayMiniSlider();
+      autoplayMiniSlider();
     }
 
     customCSS();
-    // customizeSwiper();
 
     function customizeSignupModal() {
       const imgUrl =
@@ -1567,7 +1579,7 @@
       section.className = "section custom--section--2 custom--section";
       section.innerHTML = `
 <div class="container" style="position: relative; max-width: 100% !important; margin-bottom: 20px !important; padding-left: 0px !important; padding-right: 0px !important; padding-top: 0px !important; overflow: hidden !important;">
-  <div class="providers--marquee--bg" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; background: linear-gradient(to right, rgba(0, 0, 0, 0) 0%, #5a0910 50%, rgba(0, 0, 0, 0) 100%);"></div>
+  <div class="providers--marquee--bg" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; background: linear-gradient(to right, rgba(0, 0, 0, 0) 0%, #730812 50%, rgba(0, 0, 0, 0) 100%);"></div>
     <div class="providers--marquee--overlay" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; pointer-events: none; background: linear-gradient(to right, rgba(0, 0, 0, 0.75) 0%, rgba(106, 6, 15, 0) 50%, rgba(0, 0, 0, 0.75) 100%); z-index: 1;"></div>
 <div class="providers--marquee">	
 				          <a class="custom--providers--link" href="https://betredi109.com/tr/providers/pragmaticplay">
