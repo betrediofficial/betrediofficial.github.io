@@ -1382,16 +1382,13 @@
 
       if (!swiperEl || typeof Swiper !== "function") return;
 
+      const slidesPerViewValue = window.innerWidth <= 768 ? 1 : 3;
+
       window.swiper = new Swiper(swiperEl, {
-        slidesPerView: 3,
+        slidesPerView: slidesPerViewValue,
         autoplay: {
           delay: 3000,
           disableOnInteraction: false,
-        },
-        breakpoints: {
-          768: {
-            slidesPerView: 1,
-          },
         },
       });
     }
