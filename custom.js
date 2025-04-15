@@ -1226,6 +1226,7 @@
         console.log("Removing original #main-slider...");
         firstSection.style.display = "none";
       }
+      $("#main-slider-swiper").addClass("slider-hide-important");
     }
 
     function insertCustomMainSlider() {
