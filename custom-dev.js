@@ -1396,8 +1396,6 @@
       if (!isHomePage) {
         removeHomePageWidgets();
       } else {
-        is_mobile && mobileBoxes();
-
         mobileSignInText();
         bottomMenuWidget(is_mobile);
         otherGames();
@@ -1420,6 +1418,8 @@
 
       insertCustomSidebarLink();
       injectProvidersMarquee();
+
+      is_mobile && mobileBoxes();
 
       insertCustomMiniGamesSlider();
       setTimeout(initCustomMiniGamesSlider, 500);
@@ -2152,8 +2152,8 @@
     function mobileBoxes() {
       if ($("#mobileboxes").length > 0) return;
 
-      if ($("#main-slider").length > 0)
-        $("#main-slider").after(`
+      if ($(".custom--section--2").length > 0)
+        $(".custom--section--2").after(`
 <div class="manually-added-home-widgets container mt-4 mobile-boxes" id="mobileboxes" style="margin-bottom: 10px;">
   <div class="row row-cols-2 row-cols-md-3 row-cols-lg-4 g-1">
     <a href="casino/group/live-lobby" class="col-4">
@@ -2233,13 +2233,21 @@
         <span>${language === "tr" ? "Canlı Destek" : "Live Support"}</span>
       </div>
     </a>
-    <a href="/trade" target="_blank" class="col-4">
+    <a href="${
+      language === "tr"
+        ? "https://betredi109.com/tr/trade"
+        : "https://betredi109.com/en/trade"
+    }" target="_blank" class="col-4">
       <div class="box-icon-item">
       <svg class="svg-icon" style="margin: 0 auto 4px auto; width: 26px !important; height: 26px !important;"><use href="/static/media/sprite.1cea5f3c17045e69440504bcd887b333.svg#chart" xlink:href="/static/media/sprite.1cea5f3c17045e69440504bcd887b333.svg#chart"></use></svg>
         <span>${language === "tr" ? "Borsa" : "Trade"}</span>
       </div>
     </a>
-    <a href="javascript:void(0)" onClick="alert('🔴 Çok yakında sadece Betredide!')" class="col-4">
+    <a href="javascript:void(0)" onClick="alert('🔴 ${
+      language === "tr"
+        ? "Çok yakında sadece Betredi'de!"
+        : "Coming soon only at Betredi!"
+    }')" class="col-4">
       <div class="box-icon-item" style="background: linear-gradient(135deg, #3a0509, #5a0910, #a31624);">
         <img
           src="https://betrediofficial.github.io/images/mobile-view/graph.png"
@@ -3006,6 +3014,6 @@
     color: #FFF;
     font-size: 16px;
     margin-top: 10px;
-">GİRİŞ</h1>`);
+">${language === "tr" ? "GİRİŞ" : "LOGIN"}</h1>`);
   }
 })();
