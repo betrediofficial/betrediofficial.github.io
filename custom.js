@@ -2233,7 +2233,7 @@
         <span>${language === "tr" ? "Canlı Destek" : "Live Support"}</span>
       </div>
     </a>
-    <a href="/trade" target="_blank" class="col-4">
+    <a href="/trade" class="col-4">
       <div class="box-icon-item">
       <svg class="svg-icon" style="margin: 0 auto 4px auto; width: 26px !important; height: 26px !important;"><use href="/static/media/sprite.1cea5f3c17045e69440504bcd887b333.svg#chart" xlink:href="/static/media/sprite.1cea5f3c17045e69440504bcd887b333.svg#chart"></use></svg>
         <span>${language === "tr" ? "Borsa" : "Trade"}</span>
