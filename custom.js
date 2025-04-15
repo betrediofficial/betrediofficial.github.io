@@ -1396,8 +1396,6 @@
       if (!isHomePage) {
         removeHomePageWidgets();
       } else {
-        is_mobile && mobileBoxes();
-
         mobileSignInText();
         bottomMenuWidget(is_mobile);
         otherGames();
@@ -1420,6 +1418,8 @@
 
       insertCustomSidebarLink();
       injectProvidersMarquee();
+
+      is_mobile && mobileBoxes();
 
       insertCustomMiniGamesSlider();
       setTimeout(initCustomMiniGamesSlider, 500);
