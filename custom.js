@@ -1397,6 +1397,7 @@
         removeHomePageWidgets();
       } else {
         is_mobile && mobileBoxes();
+
         mobileSignInText();
         bottomMenuWidget(is_mobile);
         otherGames();
@@ -2150,108 +2151,109 @@
 
     function mobileBoxes() {
       if ($("#mobileboxes").length > 0) return;
-      $(".section:first").append(`
+
+      if ($("#main-slider").length > 0)
+        $("#main-slider").after(`
 <div class="manually-added-home-widgets container mt-4 mobile-boxes" id="mobileboxes" style="margin-bottom: 10px;">
   <div class="row row-cols-2 row-cols-md-3 row-cols-lg-4 g-1">
-        <a href="casino/group/live-lobby" class="col-4">
-          <div class="box-icon-item">
-            <img
-              src="https://betrediofficial.github.io/images/mobile-view//live_casino.png"
-              width="48"
-              height="48"
-              class="d-block mx-auto"
-            />
-            <span>Canlı Casino</span>
-          </div>
-        </a>
-        <a href="casino/group/lobby" class="col-4">
-          <div class="box-icon-item">
-            <img
-              src="https://betrediofficial.github.io/images/mobile-view/sloticon.png"
-              width="48"
-              height="48"
-              class="d-block mx-auto"
-            />
-            <span>Slot</span>
-          </div>
-        </a>
-        <a href="${depositMoneyLink()}" class="col-4">
-          <div class="box-icon-item">
-            <img
-              src="https://betrediofficial.github.io/images/mobile-view//deposit.png"
-              width="48"
-              height="48"
-              class="d-block mx-auto"
-            />
-            <span>Para Yatır</span>
-          </div>
-        </a>
-        <a href="${withdrawMoneyLink()}" class="col-4">
-          <div class="box-icon-item">
-            <img
-              src="https://betrediofficial.github.io/images/mobile-view//withdraw.png"
-              width="48"
-              height="48"
-              class="d-block mx-auto"
-            />
-            <span>Para Çek</span>
-          </div>
-        </a>
-        <a class="col-4" href="promotions?modal=vip&tab=bonus-code">
-          <div class="box-icon-item">
-            <img
-              src="https://betrediofficial.github.io/images/mobile-view//bonus.png"
-              width="48"
-              height="48"
-              class="d-block mx-auto"
-            />
-            <span>Bonus Talep</span>
-          </div>
-        </a>
-        <a href="promotions" class="col-4">
-          <div class="box-icon-item">
-            <img
-              src="https://betrediofficial.github.io/images/mobile-view//promotion.png"
-              width="48"
-              height="48"
-              class="d-block mx-auto"
-            />
-            <span>Promosyonlar</span>
-          </div>
-        </a>
-        <a onClick="$('.lowbar__btn')[$('.lowbar__btn').length -1].click()" class="col-4">
-          <div class="box-icon-item">
-            <img
-              src="https://betrediofficial.github.io/images/mobile-view//support.png"
-              width="48"
-              height="48"
-              class="d-block mx-auto"
-            />
-            <span>Canlı Destek</span>
-          </div>
-        </a>
-
-
+    <a href="casino/group/live-lobby" class="col-4">
+      <div class="box-icon-item">
+        <img
+          src="https://betrediofficial.github.io/images/mobile-view/live_casino.png"
+          width="48"
+          height="48"
+          class="d-block mx-auto"
+        />
+        <span>${language === "tr" ? "Canlı Casino" : "Live Casino"}</span>
       </div>
+    </a>
+    <a href="casino/group/lobby" class="col-4">
+      <div class="box-icon-item">
+        <img
+          src="https://betrediofficial.github.io/images/mobile-view/sloticon.png"
+          width="48"
+          height="48"
+          class="d-block mx-auto"
+        />
+        <span>Slot</span>
+      </div>
+    </a>
+    <a href="${depositMoneyLink()}" class="col-4">
+      <div class="box-icon-item">
+        <img
+          src="https://betrediofficial.github.io/images/mobile-view/deposit.png"
+            width="48"
+            height="48"
+            class="d-block mx-auto"
+        />
+        <span>${language === "tr" ? "Para Yatır" : "Deposit"}</span>
+      </div>
+    </a>
+    <a href="${withdrawMoneyLink()}" class="col-4">
+      <div class="box-icon-item">
+        <img
+          src="https://betrediofficial.github.io/images/mobile-view/withdraw.png"
+          width="48"
+          height="48"
+          class="d-block mx-auto"
+        />
+        <span>${language === "tr" ? "Para Çek" : "Withdraw"}</span>
+      </div>
+    </a>
+    <a class="col-4" href="promotions?modal=vip&tab=bonus-code">
+      <div class="box-icon-item">
+        <img
+          src="https://betrediofficial.github.io/images/mobile-view/bonus.png"
+          width="48"
+          height="48"
+          class="d-block mx-auto"
+        />
+        <span>${language === "tr" ? "Bonus Talep" : "Claim Bonus"}</span>
+      </div>
+    </a>
+    <a href="promotions" class="col-4">
+      <div class="box-icon-item">
+        <img
+          src="https://betrediofficial.github.io/images/mobile-view/promotion.png"
+          width="48"
+          height="48"
+          class="d-block mx-auto"
+        />
+        <span>${language === "tr" ? "Promosyonlar" : "Promotions"}</span>
+      </div>
+    </a>
+    <a onClick="$('.lowbar__btn')[$('.lowbar__btn').length -1].click()" class="col-4">
+      <div class="box-icon-item">
+        <img
+          src="https://betrediofficial.github.io/images/mobile-view/support.png"
+          width="48"
+          height="48"
+          class="d-block mx-auto"
+        />
+        <span>${language === "tr" ? "Canlı Destek" : "Live Support"}</span>
+      </div>
+    </a>
+    <a href="/trade" target="_blank" class="col-4">
+      <div class="box-icon-item">
+      <svg class="svg-icon" style="margin: 0 auto 4px auto; width: 26px !important; height: 26px !important;"><use href="/static/media/sprite.1cea5f3c17045e69440504bcd887b333.svg#chart" xlink:href="/static/media/sprite.1cea5f3c17045e69440504bcd887b333.svg#chart"></use></svg>
+        <span>${language === "tr" ? "Borsa" : "Trade"}</span>
+      </div>
+    </a>
+    <a href="javascript:void(0)" onClick="alert('🔴 Çok yakında sadece Betredide!')" class="col-4">
+      <div class="box-icon-item" style="background: linear-gradient(135deg, #3a0509, #5a0910, #a31624);">
+        <img
+          src="https://betrediofficial.github.io/images/mobile-view/graph.png"
+          width="48"
+          height="48"
+          class="d-block mx-auto"
+        />
+        <span>${language === "tr" ? "RTP Sorgu" : "RTP Query"}</span>
+      </div>
+    </a>
+  </div>
 </div>
     `);
     }
-
-    // <a
-    //   onClick="$('.lowbar__btn')[$('.lowbar__btn').length -1].click()"
-    //   class="col-4"
-    //   style="background: linear-gradient(to right, black 0%, #5e0e17 50%, black 100%);"
-    // >
-    //   <div class="box-icon-item">
-    //     <img
-    //       src="https://betrediofficial.github.io/images/mobile-view//support.png"
-    //       width="48"
-    //       height="48"
-    //       class="d-block mx-auto"
-    //     />
-    //     <span>RTP Sorgu</span>
-    //   </div>
-    // </a>
 
     function bottomMenuWidget(isMobile) {
       if ($("#bottomMenuWidgedContainer").length > 0) return;
