@@ -1397,6 +1397,7 @@
         removeHomePageWidgets();
       } else {
         is_mobile && mobileBoxes();
+
         mobileSignInText();
         bottomMenuWidget(is_mobile);
         otherGames();
@@ -2150,7 +2151,9 @@
 
     function mobileBoxes() {
       if ($("#mobileboxes").length > 0) return;
-      $(".section:first").append(`
+
+      if ($("#main-slider").length > 0)
+        $("#main-slider").after(`
 <div class="manually-added-home-widgets container mt-4 mobile-boxes" id="mobileboxes" style="margin-bottom: 10px;">
   <div class="row row-cols-2 row-cols-md-3 row-cols-lg-4 g-1">
     <a href="casino/group/live-lobby" class="col-4">
@@ -2228,6 +2231,17 @@
           class="d-block mx-auto"
         />
             <span>Canlı Destek</span>
+      </div>
+    </a>
+    <a href="https://rtpsorgu.com" target="_blank" class="col-4">
+      <div class="box-icon-item" style="background: linear-gradient(135deg, #3a0509, #5a0910, #a31624);">
+        <img
+          src="https://betrediofficial.github.io/images/mobile-view//support.png"
+          width="48"
+          height="48"
+          class="d-block mx-auto"
+        />
+            <span>RTP Sorgu</span>
       </div>
     </a>
   </div>
