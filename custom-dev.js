@@ -2164,7 +2164,7 @@
           height="48"
           class="d-block mx-auto"
         />
-        <span>Canlı Casino</span>
+        <span>${language === "tr" ? "Canlı Casino" : "Live Casino"}</span>
       </div>
     </a>
     <a href="casino/group/lobby" class="col-4">
@@ -2186,7 +2186,7 @@
             height="48"
             class="d-block mx-auto"
         />
-        <span>Para Yatır</span>
+        <span>${language === "tr" ? "Para Yatır" : "Deposit"}</span>
       </div>
     </a>
     <a href="${withdrawMoneyLink()}" class="col-4">
@@ -2197,7 +2197,7 @@
           height="48"
           class="d-block mx-auto"
         />
-        <span>Para Çek</span>
+        <span>${language === "tr" ? "Para Çek" : "Withdraw"}</span>
       </div>
     </a>
     <a class="col-4" href="promotions?modal=vip&tab=bonus-code">
@@ -2208,7 +2208,7 @@
           height="48"
           class="d-block mx-auto"
         />
-        <span>Bonus Talep</span>
+        <span>${language === "tr" ? "Bonus Talep" : "Claim Bonus"}</span>
       </div>
     </a>
     <a href="promotions" class="col-4">
@@ -2219,7 +2219,7 @@
           height="48"
           class="d-block mx-auto"
         />
-        <span>Promosyonlar</span>
+        <span>${language === "tr" ? "Promosyonlar" : "Promotions"}</span>
       </div>
     </a>
     <a onClick="$('.lowbar__btn')[$('.lowbar__btn').length -1].click()" class="col-4">
@@ -2230,13 +2230,13 @@
           height="48"
           class="d-block mx-auto"
         />
-        <span>Canlı Destek</span>
+        <span>${language === "tr" ? "Canlı Destek" : "Live Support"}</span>
       </div>
     </a>
     <a href="/trade" target="_blank" class="col-4">
       <div class="box-icon-item">
       <svg class="svg-icon" style="margin: 0 auto 4px auto; width: 26px !important; height: 26px !important;"><use href="/static/media/sprite.1cea5f3c17045e69440504bcd887b333.svg#chart" xlink:href="/static/media/sprite.1cea5f3c17045e69440504bcd887b333.svg#chart"></use></svg>
-        <span>Borsa</span>
+        <span>${language === "tr" ? "Borsa" : "Trade"}</span>
       </div>
     </a>
     <a href="https://rtpsorgu.com" target="_blank" class="col-4">
@@ -2247,7 +2247,7 @@
           height="48"
           class="d-block mx-auto"
         />
-        <span>RTP Sorgu</span>
+        <span>${language === "tr" ? "RTP Sorgu" : "RTP Query"}</span>
       </div>
     </a>
   </div>
