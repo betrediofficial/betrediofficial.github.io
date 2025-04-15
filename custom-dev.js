@@ -2371,11 +2371,10 @@ const casino_games = [
 				            <img class="custom--providers--image" src="https://vendor-provider.fra1.cdn.digitaloceanspaces.com/ebetlab/game-providers/light/tomhorn.svg" alt="">
 				          </a>
 				        
-                <!--
 				          <a class="custom--providers--link" href="/providersuelab">
 				            <img class="custom--providers--image" src="https://vendor-provider.fra1.cdn.digitaloceanspaces.com/ebetlab/game-providers/lightuelab.svg" alt="">
 				          </a>
-				        -->
+
 				          <a class="custom--providers--link" href="https://betredi109.com/tr/providers/turbogames">
 				            <img class="custom--providers--image" src="https://vendor-provider.fra1.cdn.digitaloceanspaces.com/ebetlab/game-providers/light/turbogames.svg" alt="">
 				          </a>
@@ -2781,7 +2780,7 @@ const casino_games = [
   </div>
       `;
 
-      $("buy-bonus-games-wrapper").after(gameChooserSection);
+      $("#buy-bonus-games-wrapper").after(gameChooserSection);
     }
 
     // * Game Chooser Logic - START
