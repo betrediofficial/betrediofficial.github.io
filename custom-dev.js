@@ -1388,7 +1388,11 @@
           delay: 3000,
           disableOnInteraction: false,
         },
-        // grabCursor: true,
+        breakpoints: {
+          768: {
+            slidesPerView: 1,
+          },
+        },
       });
     }
 
@@ -1445,7 +1449,9 @@
       injectExtraText();
       autoplayMiniSlider();
 
-      $(".form__btn span").text("Talep Gönder");
+      if ($(".form__btn span").text().trim() === "Send Request") {
+        $(".form__btn span").text("Talep Gönder");
+      }
     }
 
     customCSS();
