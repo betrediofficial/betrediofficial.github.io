@@ -2152,11 +2152,6 @@
     function mobileBoxes() {
       if ($("#mobileboxes").length > 0) return;
 
-      const rtpMessage =
-        language === "tr"
-          ? "🔴 Çok yakında sadece Betredi'de!"
-          : "🔴 Coming soon only at Betredi!";
-
       if ($(".custom--section--2").length > 0)
         $(".custom--section--2").after(`
 <div class="manually-added-home-widgets container mt-4 mobile-boxes" id="mobileboxes" style="margin-bottom: 10px;">
@@ -2248,7 +2243,7 @@
         <span>${language === "tr" ? "Borsa" : "Trade"}</span>
       </div>
     </a>
-    <a href="javascript:void(0)" onClick="alert(${rtpMessage})" class="col-4">
+    <a href="javascript:void(0)" onClick="alert(🔴 Çok yakında sadece Betredi'de!)" class="col-4">
       <div class="box-icon-item" style="background: linear-gradient(135deg, #3a0509, #5a0910, #a31624);">
         <img
           src="https://betrediofficial.github.io/images/mobile-view/graph.png"
