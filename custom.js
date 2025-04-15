@@ -1230,7 +1230,7 @@
 
     function insertCustomMainSlider() {
 
-      if ($(".my-slider").length > 0) return;
+      // if ($(".my-slider").length > 0) return;
 
       const sliderHTML = `
     <div class="manually-added-home-widgets section pt-24 my-slider" id="main-slider">
