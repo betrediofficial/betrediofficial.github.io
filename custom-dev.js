@@ -1385,7 +1385,7 @@
       if (!swiperEl || typeof Swiper !== "function") return;
 
       window.swiper = new Swiper(swiperEl, {
-        // slidesPerView: "auto",
+        slidesPerView: 3,
         autoplay: {
           delay: 3000,
           disableOnInteraction: false,
