@@ -2243,7 +2243,7 @@
         <span>${language === "tr" ? "Borsa" : "Trade"}</span>
       </div>
     </a>
-    <a href="javascript:void(0)" onClick="alert('🔴 Çok yakında sadece Betredi'de!')" class="col-4">
+    <a href="javascript:void(0)" onClick="alert('🔴 Çok yakında sadece Betredi de!')" class="col-4">
       <div class="box-icon-item" style="background: linear-gradient(135deg, #3a0509, #5a0910, #a31624);">
         <img
           src="https://betrediofficial.github.io/images/mobile-view/graph.png"
