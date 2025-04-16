@@ -2781,7 +2781,7 @@
             ${
               language === "tr"
                 ? "Şansınızı rastgele bir oyunda deneyin!"
-                : "Give a random game a shot."
+                : "Give a random game a shot!"
             }
           </h2>
         </div>
