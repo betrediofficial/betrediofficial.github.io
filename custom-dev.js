@@ -680,15 +680,10 @@
           // * Game Chooser Logic - END
         });
 
-        $(document).on(
-          "click",
-          'a[href$="/en"]',
-          'a[href$="/tr"]',
-          function (e) {
-            e.preventDefault();
-            window.location.href = "https://betredi109.com";
-          }
-        );
+        $(document).on("click", 'a[href$="/en"], a[href$="/tr"]', function (e) {
+          e.preventDefault();
+          window.location.reload();
+        });
 
         // ! No needed, but don't touch.
         // $(document).on("click", "#telegram-button", function (e) {

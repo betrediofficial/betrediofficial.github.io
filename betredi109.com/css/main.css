@@ -3209,7 +3209,8 @@ body::-webkit-scrollbar-track {
     position: relative;
     width: 100%;
     padding-top: 12px;
-    /*overflow: hidden;*/
+    /* overflow: hidden; */
+    background: url('https://betrediofficial.github.io/images/game-chooser-icons/bg.png');
 }
 
 .section--frame {
