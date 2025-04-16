@@ -2652,7 +2652,6 @@
       #main__content {
         background: url("https://betrediofficial.github.io/images/betredi_background.png") no-repeat center center !important;
         width: 100% !important;
-          height: 100vh !important;
   background-size: cover !important; 
   background-position: center !important; 
   background-attachment: fixed !important;
