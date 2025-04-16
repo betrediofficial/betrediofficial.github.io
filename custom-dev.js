@@ -1919,10 +1919,12 @@
       const slidesPerViewValue = window.innerWidth <= 768 ? 1 : 3;
 
       window.swiper = new Swiper(swiperEl, {
+        loop: true,
         slidesPerView: slidesPerViewValue,
         freeMode: false,
         grabCursor: true,
         centeredSlides: true,
+        spaceBetween: 20,
         autoplay: {
           delay: 3000,
           disableOnInteraction: false,
