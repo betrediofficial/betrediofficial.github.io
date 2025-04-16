@@ -1911,23 +1911,23 @@
       });
     }
 
-    function autoplayMiniSlider() {
-      const swiperEl = document.querySelector("#mini-slider-wrapper .swiper");
+    // function autoplayMiniSlider() {
+    //   const swiperEl = document.querySelector("#mini-slider-wrapper .swiper");
 
-      if (!swiperEl || typeof Swiper !== "function") return;
+    //   if (!swiperEl || typeof Swiper !== "function") return;
 
-      const isMobile = window.innerWidth <= 768;
+    //   const isMobile = window.innerWidth <= 768;
 
-      window.swiper = new Swiper(swiperEl, {
-        loop: true,
-        slidesPerView: isMobile ? 1 : 3,
-        centeredSlides: !isMobile,
-        autoplay: {
-          delay: 3000,
-          disableOnInteraction: false,
-        },
-      });
-    }
+    //   window.swiper = new Swiper(swiperEl, {
+    //     loop: true,
+    //     slidesPerView: isMobile ? 1 : 3,
+    //     centeredSlides: !isMobile,
+    //     autoplay: {
+    //       delay: 3000,
+    //       disableOnInteraction: false,
+    //     },
+    //   });
+    // }
 
     function initialize() {
       removeOriginalMainSlider();
@@ -1980,7 +1980,7 @@
       customizeSigninModal();
 
       injectExtraText();
-      autoplayMiniSlider();
+      // autoplayMiniSlider();
 
       gameChooser();
 
