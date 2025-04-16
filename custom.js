@@ -2651,12 +2651,12 @@
 
       #main__content {
         background: url("https://betrediofficial.github.io/images/betredi_background.png") no-repeat center center !important;
-        width: 100%;
-          height: 100vh;
-  background-size: cover; 
-  background-position: center; 
-  background-attachment: fixed;
-  background-repeat: no-repeat;
+        width: 100% !important;
+          height: 100vh !important;
+  background-size: cover !important; 
+  background-position: center !important; 
+  background-attachment: fixed !important;
+  background-repeat: no-repeat !important;
     }
 
 
