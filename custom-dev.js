@@ -1920,6 +1920,7 @@
 
       window.swiper = new Swiper(swiperEl, {
         slidesPerView: slidesPerViewValue,
+        freeMode: false,
         autoplay: {
           delay: 3000,
           disableOnInteraction: false,
