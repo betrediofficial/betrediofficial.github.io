@@ -1922,6 +1922,7 @@
         slidesPerView: slidesPerViewValue,
         freeMode: false,
         grabCursor: true,
+        centeredSlides: true,
         autoplay: {
           delay: 3000,
           disableOnInteraction: false,
