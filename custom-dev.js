@@ -2768,13 +2768,13 @@
       const gameChooserSection = `
   <div class="manually-added-home-widgets container" id="game-chooser" style="margin: 48px auto">
     <div id="game-chooser" class="text-white" style="width: 100%; margin: 0 auto;">
-      <div style="padding: 64px 24px; background: url('https://betrediofficial.github.io/images/game-chooser-icons/bg.png'); border-radius: 12px">
+      <div style="padding: 72px 24px; background: url('https://betrediofficial.github.io/images/game-chooser-icons/bg.png'); border-radius: 12px">
         <div style="margin-bottom: 32px">
           <h2 class="text-center" style="font-size: 24px; margin-bottom: 4px">
             Oyun seçmekte zorlanıyor musunuz?
           </h2>
           <h2 class="text-center" style="font-size: 32px; font-weight: bold">
-            Rastgele bir oyunda şansınızı deneyin.
+            Rastgele bir oyunda şansınızı deneyin
           </h2>
         </div>
         <div
