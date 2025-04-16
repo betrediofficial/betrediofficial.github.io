@@ -1916,14 +1916,12 @@
 
       if (!swiperEl || typeof Swiper !== "function") return;
 
-      const slidesPerViewValue = window.innerWidth <= 768 ? 1 : 3;
+      const isMobile = window.innerWidth <= 768;
 
       window.swiper = new Swiper(swiperEl, {
         loop: true,
-        slidesPerView: slidesPerViewValue,
-        freeMode: false,
-        grabCursor: true,
-        centeredSlides: true,
+        slidesPerView: isMobile ? 1 : 3,
+        centeredSlides: !isMobile,
         autoplay: {
           delay: 3000,
           disableOnInteraction: false,
