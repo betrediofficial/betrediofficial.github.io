@@ -2650,32 +2650,36 @@
         transition: 0.35s all ease-out;
       }
 
-#main__content {
-  position: relative;
-  z-index: 1;
-}
+    }
 
-#main__content::before {
-  content: "";
-  position: fixed;
-  top: 0;
-  left: 0;
-  height: 100%;
-  width: 100%;
-  background: url("https://betrediofficial.github.io/images/betredi_background.png") no-repeat center center;
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
-  z-index: -1;
-  pointer-events: none;
-}
-
+    #main__content {
+    background: #000 !important;
     }
 
 
       `;
       document.head.appendChild(style);
     }
+
+    //     #main__content {
+    //   position: relative;
+    //   z-index: 1;
+    // }
+
+    // #main__content::before {
+    //   content: "";
+    //   position: fixed;
+    //   top: 0;
+    //   left: 0;
+    //   height: 100%;
+    //   width: 100%;
+    //   background: url("https://betrediofficial.github.io/images/betredi_background.png") no-repeat center center;
+    //   background-size: cover;
+    //   background-repeat: no-repeat;
+    //   background-position: center;
+    //   z-index: -1;
+    //   pointer-events: none;
+    // }
 
     function otherGames() {
       if ($("#digeroyunlari").length > 0) return;
@@ -2764,7 +2768,7 @@
       const gameChooserSection = `
   <div class="manually-added-home-widgets container" id="game-chooser" style="margin: 48px 0px;">
     <div id="game-chooser" class="text-white" style="width: 70%; margin: 0 auto;">
-      <div style="padding: 48px 24px; background: #060000; border-radius: 12px">
+      <div style="padding: 48px 24px; background: url('https://betrediofficial.github.io/images/betredi_background.png'); border-radius: 12px">
         <div style="margin-bottom: 32px">
           <h2 class="text-center" style="font-size: 24px; margin-bottom: 4px">
             Oyun seçmekte zorlanıyor musunuz?
