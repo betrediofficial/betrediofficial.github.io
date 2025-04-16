@@ -2766,11 +2766,11 @@
       if ($("#game-chooser").length > 0) return;
 
       const gameChooserSection = `
-  <div class="manually-added-home-widgets container" id="game-chooser" style="margin: 48px auto">
+  <div class="manually-added-home-widgets" id="game-chooser" style="width: 100%; margin: 48px auto">
     <div id="game-chooser" class="text-white" style="width: 100%; margin: 0 auto;">
-      <div style="padding: 72px 24px; background: url('https://betrediofficial.github.io/images/game-chooser-icons/bg.png'); border-radius: 12px">
-        <div style="margin-bottom: 32px">
-          <h2 class="text-center" style="font-size: 24px; margin-bottom: 4px">
+      <div style="padding: 96px 0px; background: url('https://betrediofficial.github.io/images/game-chooser-icons/bg.png');">
+        <div style="margin-bottom: 48px">
+          <h2 class="text-center" style="font-size: 28px; margin-bottom: 4px">
             Oyun seçmekte zorlanıyor musunuz?
           </h2>
           <h2 class="text-center" style="font-size: 32px; font-weight: bold">
@@ -2781,14 +2781,14 @@
           class="d-flex align-items-center justify-content-center mx-auto"
           style="
             width: 512px;
-            border: 4px solid #7b0111;
+            border: 5px solid #b10017;
             border-radius: 16px;
             overflow-x: hidden;
             overflow-y: hidden;
             margin-bottom: 32px;
             height: 359px;
-            background: #7b0111;
-            gap: 4px;
+            background: #b10017;
+            gap: 5px;
           "
         >
           <div
@@ -2864,7 +2864,7 @@
             id="spin-game-btn"
             class="mx-auto"
             style="
-              border: 2px solid #7b0111;
+              border: 2px solid #e71f25;
               background: #310204;
               color: #fff;
               padding: 10px 24px;
@@ -2874,7 +2874,9 @@
               transition: 0.3s;
             "
           >
-            <span style="font-weight: 600">ÇEVİR</span>
+            <span style="font-weight: 600">${
+              language === "tr" ? "ÇEVİR" : "SPIN"
+            }</span>
           </button>
         </div>
       </div>
