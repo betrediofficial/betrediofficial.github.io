@@ -2635,7 +2635,7 @@
       }
 
       #spin-game-btn:hover {
-        background: #e71f25 !important;
+        background: #7b0111 !important;
       }
 
       #spin-game-btn:disabled {
@@ -2781,13 +2781,13 @@
           class="d-flex align-items-center justify-content-center mx-auto"
           style="
             width: 512px;
-            border: 4px solid #e71f25;
+            border: 4px solid #7b0111;
             border-radius: 16px;
             overflow-x: hidden;
             overflow-y: hidden;
             margin-bottom: 32px;
             height: 359px;
-            background: #e71f25;
+            background: #7b0111;
             gap: 4px;
           "
         >
@@ -2864,7 +2864,7 @@
             id="spin-game-btn"
             class="mx-auto"
             style="
-              border: 2px solid #e71f25;
+              border: 2px solid #7b0111;
               background: #310204;
               color: #fff;
               padding: 10px 24px;
