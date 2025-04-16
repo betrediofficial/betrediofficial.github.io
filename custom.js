@@ -2660,6 +2660,12 @@
   background-repeat: no-repeat !important;
     }
 
+    @keyframe (max-width: 768px) {
+      #game-chooser {
+    display: none !important;
+  }
+    }
+
 
       `;
       document.head.appendChild(style);
