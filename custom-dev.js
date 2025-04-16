@@ -611,8 +611,8 @@
 
           // * Game Chooser Logic - START
 
-          let slot_count = 0,
-            casino_count = 0;
+          let prevSlotCount = -1;
+          let prevCasinoCount = -1;
 
           console.log("Slot Oyunları Sayısı: ", slot_games.length);
           console.log("Casino Oyunları Sayısı: ", casino_games.length);
@@ -647,8 +647,17 @@
           $("#spin-game-btn").click(function () {
             $(this).prop("disabled", true);
 
-            slot_count = Math.floor(Math.random() * slot_games.length);
-            casino_count = Math.floor(Math.random() * casino_games.length);
+            let slot_count;
+            do {
+              slot_count = Math.floor(Math.random() * slot_games.length);
+            } while (slot_count === prevSlotCount || Math.abs(slot_count - prevSlotCount) < 10);
+            prevSlotCount = slot_count;
+
+            let casino_count;
+            do {
+              casino_count = Math.floor(Math.random() * casino_games.length);
+            } while (casino_count === prevCasinoCount || Math.abs(casino_count - prevCasinoCount) < 10);
+            prevCasinoCount = casino_count;
 
             console.log("S Random: ", slot_count);
             console.log("C Random: ", casino_count);
@@ -2735,17 +2744,17 @@
       if ($("#game-chooser").length > 0) return;
 
       const gameChooserSection = `
-  <div class="manually-added-widgets container" id="game-chooser">
-    <div id="game-chooser" class="text-white" style="width: 50%">
-      <div style="margin-bottom: 32px">
-        <h2 class="text-center" style="font-size: 24px; margin-bottom: 12px">
-          Oyun seçmekte zorlanıyor musunuz?
-        </h2>
-        <h2 class="text-center" style="font-size: 32px; font-weight: bold">
-          Rastgele bir oyunda şansınızı deneyin.
-        </h2>
-      </div>
+  <div class="manually-added-widgets container" id="game-chooser" style="margin: 48px 0px;">
+    <div id="game-chooser" class="text-white" style="width: 70%">
       <div style="padding: 48px 24px; background: #141414; border-radius: 12px">
+        <div style="margin-bottom: 32px">
+          <h2 class="text-center" style="font-size: 24px; margin-bottom: 4px">
+            Oyun seçmekte zorlanıyor musunuz?
+          </h2>
+          <h2 class="text-center" style="font-size: 32px; font-weight: bold">
+            Rastgele bir oyunda şansınızı deneyin.
+          </h2>
+        </div>
         <div
           class="d-flex align-items-center justify-content-center mx-auto"
           style="
