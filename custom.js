@@ -2789,13 +2789,13 @@
           class="d-flex align-items-center justify-content-center mx-auto"
           style="
             width: 512px;
-            border: 5px solid #b10017;
+            border: 5px solid #7b0111;
             border-radius: 16px;
             overflow-x: hidden;
             overflow-y: hidden;
             margin-bottom: 32px;
             height: 359px;
-            background: #b10017;
+            background: #7b0111;
             gap: 5px;
           "
         >
