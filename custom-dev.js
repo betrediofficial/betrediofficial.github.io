@@ -2651,19 +2651,26 @@
         transition: 0.35s all ease-out;
       }
 
-      #main__content {
-        background: url("https://betrediofficial.github.io/images/betredi_background.png") no-repeat center center !important;
-        width: 100% !important;
-        background-attachment: fixed !important;
-  background-size: cover !important; 
-  background-position: center !important; 
-  background-repeat: no-repeat !important;
-    }
+#main__content {
+  position: relative;
+  z-index: 1;
+}
 
-    @keyframe (max-width: 768px) {
-      #game-chooser {
-    display: none !important;
-  }
+#main__content::before {
+  content: "";
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background: url("https://betrediofficial.github.io/images/betredi_background.png") no-repeat center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  z-index: -1;
+  pointer-events: none;
+}
+
     }
 
 
