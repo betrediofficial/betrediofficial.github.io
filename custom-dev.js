@@ -2650,7 +2650,7 @@
       }
 
       #main__content {
-        background: url("https://betrediofficial.github.io/betredi_background.png") no-repeat center center !important;
+        background: url("https://betrediofficial.github.io/images/betredi_background.png") no-repeat center center !important;
         background-size: cover !important;
     }
 

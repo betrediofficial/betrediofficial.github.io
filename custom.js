@@ -11,6 +11,462 @@
 
   const isMobile = () => window.innerWidth < 770;
 
+  const slot_games = [
+    {
+      src: "/casino/games/pragmaticplay-wisdom-of-athena",
+      image:
+        "https://vendor-provider.fra1.digitaloceanspaces.com/ebetlab/gXmqkthvbB1521K/games/QHij6XwNJYI8vtYWthfFj6JxMcOru5CdnnnOFICG.avif",
+    },
+    {
+      src: "/casino/games/pragmaticplay-fruit-party-2",
+      image:
+        "https://vendor-provider.fra1.digitaloceanspaces.com/ebetlab/gXmqkthvbB1521K/games/Wji6qPSBMnL9SovdpZXAtIY9p4eWCIjiagrmOxYZ.avif",
+    },
+    {
+      src: "/casino/games/pragmaticplay-starlight-princess-1000",
+      image:
+        "https://vendor-provider.fra1.digitaloceanspaces.com/ebetlab/gXmqkthvbB1521K/games/q6Nmy9YDyiOCOdVD1ruYF9EfBloh6LOdx5okrBFz.avif",
+    },
+    {
+      src: "/casino/games/pragmaticplay-big-bass-bonanza",
+      image:
+        "https://vendor-provider.fra1.digitaloceanspaces.com/ebetlab/gXmqkthvbB1521K/games/ncWysw2TQGFV7JclXSvraBfRuw2IlS3Xc47TaFCt.avif",
+    },
+    {
+      src: "/casino/games/hacksaw-wanted-dead-or-a-wild",
+      image:
+        "https://vendor-provider.fra1.digitaloceanspaces.com/ebetlab/gXmqkthvbB1521K/games/BBYGett6YWkmehO4EfmconeL4bxPVRgczwsV4f0d.png",
+    },
+    {
+      src: "/casino/games/pragmaticplay-sweet-bonanza-1000",
+      image:
+        "https://vendor-provider.fra1.digitaloceanspaces.com/ebetlab/gXmqkthvbB1521K/games/dy3y1exXqAstJkCAgmiNmtCjTOd53fiRR8v5hqeW.avif",
+    },
+    {
+      src: "/casino/games/egt-interactive-shining-crown",
+      image:
+        "https://vendor-provider.fra1.digitaloceanspaces.com/ebetlab/gXmqkthvbB1521K/games/87k5hgsDuGbjmm3o2tL7bRg1Ubl4twobxXECLlbe.webp",
+    },
+    {
+      src: "/casino/games/pragmaticplay-book-of-fallen",
+      image:
+        "https://vendor-provider.fra1.digitaloceanspaces.com/ebetlab/gXmqkthvbB1521K/games/EOt4FUPKzQ47EElaXPjmZCF2FZteqcwIj9tF1v60.avif",
+    },
+    {
+      src: "/casino/games/pragmaticplay-curse-of-the-werewolf-megaways",
+      image:
+        "https://vendor-provider.fra1.digitaloceanspaces.com/ebetlab/gXmqkthvbB1521K/games/KFkaXzbe7PTssBQcMbDLUoTB7W1G9USQ9YovzOfr.avif",
+    },
+    {
+      src: "/casino/games/pragmaticplay-gates-of-olympus",
+      image:
+        "https://vendor-provider.fra1.digitaloceanspaces.com/ebetlab/gXmqkthvbB1521K/games/iwGuLBdSCaXGLlqSgZyfczCuBNioR9abnbjL4HpW.avif",
+    },
+    {
+      src: "/casino/games/pragmaticplay-big-bass-christmas-bash",
+      image:
+        "https://vendor-provider.fra1.digitaloceanspaces.com/ebetlab/gXmqkthvbB1521K/games/dKOrrFhs12ZHg8GrBY4TJKVSxXDelokTwkyQW8nC.avif",
+    },
+    {
+      src: "/casino/games/pragmaticplay-vampy-party",
+      image:
+        "https://vendor-provider.fra1.digitaloceanspaces.com/ebetlab/gXmqkthvbB1521K/games/36YYqw8TGOHV342MA6sSM2BxPdJKfhPAspe0o93O.avif",
+    },
+    {
+      src: "/casino/games/pragmaticplay-big-bass-bonanza-reel-action",
+      image:
+        "https://vendor-provider.fra1.digitaloceanspaces.com/ebetlab/gXmqkthvbB1521K/games/PCIoP6qtposvrzfNMTLBN9zoWQ1rzEmgaGvQneDy.avif",
+    },
+    {
+      src: "/casino/games/pragmaticplay-sweet-baklava",
+      image:
+        "https://vendor-provider.fra1.digitaloceanspaces.com/ebetlab/gXmqkthvbB1521K/games/Gg8tuQof12N6yJoh7HIW12yFi9ZwAwOWPLkurfwN.png",
+    },
+    {
+      src: "/casino/games/pragmaticplay-fruity-treats",
+      image:
+        "https://vendor-provider.fra1.digitaloceanspaces.com/ebetlab/gXmqkthvbB1521K/games/EyrQKaGBRiOAVZJvtkORFNPVvq7pqHhNYhNKb1xs.avif",
+    },
+    {
+      src: "/casino/games/pragmaticplay-good-luck-good-fortune",
+      image:
+        "https://vendor-provider.fra1.digitaloceanspaces.com/ebetlab/gXmqkthvbB1521K/games/KA9ipmrLDF7EXBwejBB8a24gbCfUjbzmNALIvdAK.avif",
+    },
+    {
+      src: "/casino/games/pragmaticplay-gravity-bonanza",
+      image:
+        "https://vendor-provider.fra1.digitaloceanspaces.com/ebetlab/gXmqkthvbB1521K/games/YfDBzgJSTJJVHHlSpZFkbl6ttQEmXydlH80oUKVk.avif",
+    },
+    {
+      src: "/casino/games/pragmaticplay-5-frozen-charms-megaways",
+      image:
+        "https://vendor-provider.fra1.digitaloceanspaces.com/ebetlab/gXmqkthvbB1521K/games/uHSkFspqwnxSSzeS3DTODWOpE7As8C2tsyio2uPV.avif",
+    },
+    {
+      src: "/casino/games/pragmaticplay-medusas-stone",
+      image:
+        "https://vendor-provider.fra1.digitaloceanspaces.com/ebetlab/gXmqkthvbB1521K/games/60SnWNHpFFIy4KVbRkTvm8VAE7ALYGWPGCIRTt3h.avif",
+    },
+    {
+      src: "/casino/games/pragmaticplay-heart-of-cleopatra",
+      image:
+        "https://vendor-provider.fra1.digitaloceanspaces.com/ebetlab/gXmqkthvbB1521K/games/LdRa2mDl3vjyO8m5b4Xrx6QGqUf1SwmTzjvabiNk.avif",
+    },
+    {
+      src: "/casino/games/pragmaticplay-candy-blitz-bombs",
+      image:
+        "https://vendor-provider.fra1.digitaloceanspaces.com/ebetlab/gXmqkthvbB1521K/games/0CJLPX7nUsSbrFshKq41DUZP1qHZbk077zXaYGr4.avif",
+    },
+    {
+      src: "/casino/games/pragmaticplay-wheel-ogold",
+      image:
+        "https://vendor-provider.fra1.digitaloceanspaces.com/ebetlab/gXmqkthvbB1521K/games/abxzbjznV7kgMJ430ebqL6rh9ponyFMe1aCjmcPH.avif",
+    },
+    {
+      src: "/casino/games/pragmaticplay-big-bass-hold-spinner-megaways",
+      image:
+        "https://vendor-provider.fra1.digitaloceanspaces.com/ebetlab/gXmqkthvbB1521K/games/kxPAoHL6weONYPx2AtyYtkhty6mZOcuuGJLqX21s.avif",
+    },
+    {
+      src: "/casino/games/pragmaticplay-rise-of-pyramids",
+      image:
+        "https://vendor-provider.fra1.digitaloceanspaces.com/ebetlab/gXmqkthvbB1521K/games/aUexJt3UvTkzLsTPP2eqB86pONa54Qk0PVUjvzvj.avif",
+    },
+    {
+      src: "/casino/games/pragmaticplay-sugar-rush",
+      image:
+        "https://vendor-provider.fra1.digitaloceanspaces.com/ebetlab/gXmqkthvbB1521K/games/MojldHUpQY3EzpzYn6Y9H2C6CfoyZsKXRoyRxZJR.avif",
+    },
+    {
+      src: "/casino/games/pragmaticplay-fruit-party-2",
+      image:
+        "https://vendor-provider.fra1.digitaloceanspaces.com/ebetlab/gXmqkthvbB1521K/games/Wji6qPSBMnL9SovdpZXAtIY9p4eWCIjiagrmOxYZ.avif",
+    },
+    {
+      src: "/casino/games/pragmaticplay-buffalo-king",
+      image:
+        "https://vendor-provider.fra1.digitaloceanspaces.com/ebetlab/gXmqkthvbB1521K/games/1tktqskfVA6jIaRb4IKJhOxp8z65oWmt41A4Ked7.avif",
+    },
+    {
+      src: "/casino/games/nolimitcity-san-quentin-xways",
+      image:
+        "https://vendor-provider.fra1.digitaloceanspaces.com/ebetlab/gXmqkthvbB1521K/games/968crLUtx1i741Ux5UQaB6USoeIX2OSF0DDNSG5a.png",
+    },
+    {
+      src: "/casino/games/hacksaw-chaos-crew",
+      image:
+        "https://vendor-provider.fra1.digitaloceanspaces.com/ebetlab/gXmqkthvbB1521K/games/cC6QIBFZbSziSnHO4S2Vnd6mbqPFz8cyRxFLnTQt.png",
+    },
+    {
+      src: "/casino/games/pragmaticplay-the-dog-house-megaways",
+      image:
+        "https://vendor-provider.fra1.digitaloceanspaces.com/ebetlab/gXmqkthvbB1521K/games/p3gbbDfOQNEMLDZsvvZKLJEr611c946Ioa5zdBsF.avif",
+    },
+    {
+      src: "/casino/games/hacksaw-dork-unit",
+      image:
+        "https://vendor-provider.fra1.digitaloceanspaces.com/ebetlab/gXmqkthvbB1521K/games/QfMGwjSZRE7gkU29bfnbxRtwc88UY0UiMZ7SOyYX.png",
+    },
+    {
+      src: "/casino/games/nolimitcity-tombstone-rip",
+      image:
+        "https://vendor-provider.fra1.digitaloceanspaces.com/ebetlab/gXmqkthvbB1521K/games/vi7Wi4ksAo0Q1SWKdWbb2JQN3UD1hCGYTTtHayFm.png",
+    },
+    {
+      src: "/casino/games/pragmaticplay-revenge-of-loki-megaways",
+      image:
+        "https://vendor-provider.fra1.digitaloceanspaces.com/ebetlab/gXmqkthvbB1521K/games/c47Mu0Tu8itijzJY51XPjE0YthcsturxPVufmh5w.avif",
+    },
+    {
+      src: "/casino/games/pragmaticplay-wildies",
+      image:
+        "https://vendor-provider.fra1.digitaloceanspaces.com/ebetlab/gXmqkthvbB1521K/games/wJyYx8KZs4ijlDeTJHlWm7gaKcn7F4aMwnczIBWC.avif",
+    },
+    {
+      src: "/casino/games/pragmaticplay-devilicious",
+      image:
+        "https://vendor-provider.fra1.digitaloceanspaces.com/ebetlab/gXmqkthvbB1521K/games/cUJdSD7vhLuTqZY7azlJ4coXybjZq212TwGB4Cbj.avif",
+    },
+    {
+      src: "/casino/games/pragmaticplay-big-bass-mission-fishin",
+      image:
+        "https://vendor-provider.fra1.digitaloceanspaces.com/ebetlab/gXmqkthvbB1521K/games/NtQeNzDe8uyunG15rT5k3H6TKHG6hmTAkqJpwRM9.jpg",
+    },
+    {
+      src: "/casino/games/pragmaticplay-sweet-kingdom",
+      image:
+        "https://vendor-provider.fra1.digitaloceanspaces.com/ebetlab/gXmqkthvbB1521K/games/QZJ0NUEGPoPFfo1lXpvso1bZiZylGZviPbf8t6q2.avif",
+    },
+    {
+      src: "/casino/games/pragmaticplay-samurai-code",
+      image:
+        "https://vendor-provider.fra1.digitaloceanspaces.com/ebetlab/gXmqkthvbB1521K/games/AdACJ1AcOkMWv5eNa83wX9uzmi43kb9izyF5pYVq.avif",
+    },
+    {
+      src: "/casino/games/pragmaticplay-dynamite-diggin-doug",
+      image:
+        "https://vendor-provider.fra1.digitaloceanspaces.com/ebetlab/gXmqkthvbB1521K/games/GE7BHRIUYFwZ12jM0VRZ6tmM6hVqRohOWFBbmEK9.avif",
+    },
+    {
+      src: "/casino/games/pragmaticplay-jackpot-hunter",
+      image:
+        "https://vendor-provider.fra1.digitaloceanspaces.com/ebetlab/gXmqkthvbB1521K/games/VIDDc0sIiHmxzpp1OgZ340QjiPYp4NlKN1lxZ9ON.avif",
+    },
+    {
+      src: "/casino/games/pragmaticplay-hot-to-burn-7-deadly-free-spins",
+      image:
+        "https://vendor-provider.fra1.digitaloceanspaces.com/ebetlab/gXmqkthvbB1521K/games/JT8ZShXESmfjcV0jNcJ1tJx8Fpp09gSgg2BhVKoD.avif",
+    },
+    {
+      src: "/casino/games/pragmaticplay-mustang-gold-megaways",
+      image:
+        "https://vendor-provider.fra1.digitaloceanspaces.com/ebetlab/gXmqkthvbB1521K/games/EqigmGLZZ6SJRkbMa4vz0JbL4dWPRm9fP8CbTXuV.avif",
+    },
+    {
+      src: "/casino/games/pragmaticplay-gem-elevator",
+      image:
+        "https://vendor-provider.fra1.digitaloceanspaces.com/ebetlab/gXmqkthvbB1521K/games/oNcvAofsaKby58E1cX7iQBCHNKr5RD2VPul794EN.avif",
+    },
+    {
+      src: "/casino/games/pragmaticplay-bow-of-artemis",
+      image:
+        "https://vendor-provider.fra1.digitaloceanspaces.com/ebetlab/gXmqkthvbB1521K/games/DUbFurGJ9nhhTIxUnxKX8JuqH36i6fuwIuDCTAzC.avif",
+    },
+    {
+      src: "/casino/games/pragmaticplay-dragon-gold-88",
+      image:
+        "https://vendor-provider.fra1.digitaloceanspaces.com/ebetlab/gXmqkthvbB1521K/games/32cYtcN32UOxfO4mgWTet4pPvVqIF8izFHNYc5OF.avif",
+    },
+  ];
+
+  const casino_games = [
+    {
+      src: "/casino/games/pragmaticlive-mega-baccarat",
+      image:
+        "https://vendor-provider.fra1.digitaloceanspaces.com/ebetlab/gXmqkthvbB1521K/games/j6BmKQh05ST54KJi6CHSsZuPHgouq2W7lXwfhP0s.png",
+    },
+    {
+      src: "/casino/games/pragmaticlive-one-blackjack-1",
+      image:
+        "https://vendor-provider.fra1.digitaloceanspaces.com/ebetlab/gXmqkthvbB1521K/games/zUViumeb5yt4j9gWmDGJarAggtNQDFW7EiylYyX2.png",
+    },
+    {
+      src: "/casino/games/pragmaticlive-vip-blackjack-1",
+      image:
+        "https://vendor-provider.fra1.digitaloceanspaces.com/ebetlab/gXmqkthvbB1521K/games/K2z2qPXRTurLkLGiaQmKYoGE2TjaYQITU27i792I.png",
+    },
+    {
+      src: "https://betredi109.com/tr/casino/games/ezugi-turkish-roulette",
+      image:
+        "https://vendor-provider.fra1.digitaloceanspaces.com/ebetlab/gXmqkthvbB1521K/games/xhXPHQwmLBWEwfoM3oXpnEXgTEg5UrL0Ol0jE9Os.webp",
+    },
+    {
+      src: "/casino/games/netent-european-roulette",
+      image:
+        "https://vendor-provider.fra1.digitaloceanspaces.com/ebetlab/gXmqkthvbB1521K/games/NVmmiFmGdnKEkJ53CSHE8cEgxFhN0tvL7Qr2ZxkV.png",
+    },
+    {
+      src: "/casino/games/pragmaticlive-speed-roulette-1",
+      image:
+        "https://vendor-provider.fra1.digitaloceanspaces.com/ebetlab/gXmqkthvbB1521K/games/GaccTzxzkR6vUZmQy5cfXY9urBx0vSPMaNbI1cUe.avif",
+    },
+    {
+      src: "/casino/games/evolution-infinite-blackjack",
+      image:
+        "https://vendor-provider.fra1.digitaloceanspaces.com/ebetlab/gXmqkthvbB1521K/games/tJ6juxYMJnYeYgRWfO1y5ebNQFuyDsW3msVMq1dg.avif",
+    },
+    {
+      src: "/casino/games/evolution-first-person-lightning-blackjack",
+      image:
+        "https://vendor-provider.fra1.digitaloceanspaces.com/ebetlab/gXmqkthvbB1521K/games/guHiFu4IVQfpFErPyNnSSj8BGiLFXo9VvqPWwYyX.avif",
+    },
+    {
+      src: "/casino/games/evolution-lightning-roulette",
+      image:
+        "https://vendor-provider.fra1.digitaloceanspaces.com/ebetlab/gXmqkthvbB1521K/games/MEU1Af6cv9uA9rOMgVNNOrCQrXczRyOhEvOPiasu.avif",
+    },
+    {
+      src: "/casino/games/pragmaticlive-mega-roulette",
+      image:
+        "https://vendor-provider.fra1.digitaloceanspaces.com/ebetlab/gXmqkthvbB1521K/games/Jhn5GMOIURAdpCkzA61rfwvFCiaHehgCERMP6hG1.avif",
+    },
+    {
+      src: "/casino/games/evolution-speed-roulette",
+      image:
+        "https://vendor-provider.fra1.digitaloceanspaces.com/ebetlab/gXmqkthvbB1521K/games/Eo7vGS5UB5MfXzTCZ2b8TcOAp3gJQvikBEYuTpym.avif",
+    },
+    {
+      src: "/casino/games/evolution-lightning-roulette",
+      image:
+        "https://vendor-provider.fra1.digitaloceanspaces.com/ebetlab/gXmqkthvbB1521K/games/MEU1Af6cv9uA9rOMgVNNOrCQrXczRyOhEvOPiasu.avif",
+    },
+    {
+      src: "/casino/games/pragmaticlive-vip-blackjack-6",
+      image:
+        "https://vendor-provider.fra1.digitaloceanspaces.com/ebetlab/gXmqkthvbB1521K/games/CrwWXNtFZpgER5I23OPIllCCvRD0RcJCdfj8d3Fn.png",
+    },
+    {
+      src: "/casino/games/pragmaticlive-blackjackx-4",
+      image:
+        "https://vendor-provider.fra1.digitaloceanspaces.com/ebetlab/gXmqkthvbB1521K/games/xzxEGDgN0QH6bMnb8hlVYti0KGKepmcKTVNgAMJG.png",
+    },
+    {
+      src: "/casino/games/pragmaticlive-blackjack-48",
+      image:
+        "https://vendor-provider.fra1.digitaloceanspaces.com/ebetlab/gXmqkthvbB1521K/games/13MuplOuOnMzNyMH6QBL5oMJQMybsEJ9TYV2I7Wo.png",
+    },
+    {
+      src: "/casino/games/pragmaticlive-blackjack-1",
+      image:
+        "https://vendor-provider.fra1.digitaloceanspaces.com/ebetlab/gXmqkthvbB1521K/games/gEXVJdXHWh0RFyILLxgdIvDzAl1yTqfvdJx1yhKB.png",
+    },
+    {
+      src: "/casino/games/pragmaticlive-blackjack-14",
+      image:
+        "https://vendor-provider.fra1.digitaloceanspaces.com/ebetlab/gXmqkthvbB1521K/games/onbl82oX2F9PbGCdnpMxxxDXqFz9ri4PGOXQNpl7.png",
+    },
+    {
+      src: "/casino/games/pragmaticlive-speed-blackjack-1",
+      image:
+        "https://vendor-provider.fra1.digitaloceanspaces.com/ebetlab/gXmqkthvbB1521K/games/WFOwlaJjuIPtBftfhfwviNnVG5zy7ChF6KqzVSgQ.png",
+    },
+    {
+      src: "/casino/games/pragmaticlive-speed-blackjack-11",
+      image:
+        "https://vendor-provider.fra1.digitaloceanspaces.com/ebetlab/gXmqkthvbB1521K/games/V7kLgbdPpg07B3mdrmXyxVeN7u9xUwmDf0EusF52.png",
+    },
+    {
+      src: "/casino/games/evolution-speed-vip-blackjack-h",
+      image:
+        "https://vendor-provider.fra1.digitaloceanspaces.com/ebetlab/gXmqkthvbB1521K/games/yZEqvwLW41eLZxWP7lYilbAdgDJ28Gvug3zud91y.png",
+    },
+    {
+      src: "/casino/games/evolution-lightning-blackjack",
+      image:
+        "https://vendor-provider.fra1.digitaloceanspaces.com/ebetlab/gXmqkthvbB1521K/games/MHm9snB8jVy362jQTKeIdwWZ1SejsQdXAL2xGs36.avif",
+    },
+    {
+      src: "/casino/games/evolution-first-person-lightning-blackjack",
+      image:
+        "https://vendor-provider.fra1.digitaloceanspaces.com/ebetlab/gXmqkthvbB1521K/games/guHiFu4IVQfpFErPyNnSSj8BGiLFXo9VvqPWwYyX.avif",
+    },
+    {
+      src: "/casino/games/evolution-blackjack-a",
+      image:
+        "https://vendor-provider.fra1.digitaloceanspaces.com/ebetlab/gXmqkthvbB1521K/games/thzcbPcaqN4ymeBBdvqeHjw1AbNXdpimJeXr4yR0.png",
+    },
+    {
+      src: "/casino/games/pragmaticlive-roulette-lobby",
+      image:
+        "https://vendor-provider.fra1.digitaloceanspaces.com/ebetlab/gXmqkthvbB1521K/games/xN1rae5cYKXHx5dGpfk5r9Ppg79hZEKFqJJRmUWW.avif",
+    },
+    {
+      src: "/casino/games/pragmaticlive-vip-roulette",
+      image:
+        "https://vendor-provider.fra1.digitaloceanspaces.com/ebetlab/gXmqkthvbB1521K/games/tpwzjbLJI5zSqHGYMpVmmS23NIdttU1WMSZawpPA.png",
+    },
+    {
+      src: "/casino/games/pragmaticlive-roulette-3",
+      image:
+        "https://vendor-provider.fra1.digitaloceanspaces.com/ebetlab/gXmqkthvbB1521K/games/zuZLZKbnFEnt8CHVeaIzaqU77sh6cDqvDoCqEy5d.png",
+    },
+    {
+      src: "/casino/games/pragmaticlive-speed-roulette-1",
+      image:
+        "https://vendor-provider.fra1.digitaloceanspaces.com/ebetlab/gXmqkthvbB1521K/games/GaccTzxzkR6vUZmQy5cfXY9urBx0vSPMaNbI1cUe.avif",
+    },
+    {
+      src: "/casino/games/pragmaticlive-speed-roulette-1",
+      image:
+        "https://vendor-provider.fra1.digitaloceanspaces.com/ebetlab/gXmqkthvbB1521K/games/GaccTzxzkR6vUZmQy5cfXY9urBx0vSPMaNbI1cUe.avif",
+    },
+    {
+      src: "/casino/games/ezugi-auto-roulette",
+      image:
+        "https://vendor-provider.fra1.digitaloceanspaces.com/ebetlab/gXmqkthvbB1521K/games/NUnOdi7Y4bD2z11iUNyofuSHZtZ22rYd4b86kGjO.webp",
+    },
+    {
+      src: "/casino/games/ezugi-prestige-auto-roulette",
+      image:
+        "https://vendor-provider.fra1.digitaloceanspaces.com/ebetlab/gXmqkthvbB1521K/games/2b5ZMblYfmzlRds5OvZpxmtKxf3sWFaYtNrf3eL1.webp",
+    },
+    {
+      src: "/casino/games/ezugi-speed-auto-roulette",
+      image:
+        "https://vendor-provider.fra1.digitaloceanspaces.com/ebetlab/gXmqkthvbB1521K/games/pvqnHHn8smqfDv3gRmZY2iAEWfmFxUuX7FgXEqL9.webp",
+    },
+    {
+      src: "/casino/games/evolution-xxxtreme-lightning-roulette",
+      image:
+        "https://vendor-provider.fra1.digitaloceanspaces.com/ebetlab/gXmqkthvbB1521K/games/h8dPPJH94Skot5DgcKDhos7FbTViYVpk1gVsXwMa.avif",
+    },
+    {
+      src: "/casino/games/ezugi-ultimate-sic-bo",
+      image:
+        "https://vendor-provider.fra1.digitaloceanspaces.com/ebetlab/gXmqkthvbB1521K/games/b8etXVVWF4QNvj3STJpQPGq5NbhxM89CoyaDxlTZ.webp",
+    },
+    {
+      src: "/casino/games/ezugi-ez-baccarat",
+      image:
+        "https://vendor-provider.fra1.digitaloceanspaces.com/ebetlab/gXmqkthvbB1521K/games/Dz3wnCrnz4Bebm8MdsCkgxBiDH8XQdGyNKjZZnMc.webp",
+    },
+    {
+      src: "/casino/games/ezugi-knockout-baccarat",
+      image:
+        "https://vendor-provider.fra1.digitaloceanspaces.com/ebetlab/gXmqkthvbB1521K/games/BNk0tjn1vex5n5jPa6CCGo1ORb2IjDFErBi9WTW9.webp",
+    },
+    {
+      src: "/casino/games/ezugi-super-6-baccarat",
+      image:
+        "https://vendor-provider.fra1.digitaloceanspaces.com/ebetlab/gXmqkthvbB1521K/games/b3pVimuP7zn7PZymWALJhuVbHzuZddk1EuzhU2j6.webp",
+    },
+    {
+      src: "/casino/games/evolution-baccarat",
+      image:
+        "https://vendor-provider.fra1.digitaloceanspaces.com/ebetlab/gXmqkthvbB1521K/games/xJXLSNziLz8ALoj6p9v2bJAU1XHKxKJ9DFAQzjH4.avif",
+    },
+    {
+      src: "/casino/games/evolution-bac-bo",
+      image:
+        "https://vendor-provider.fra1.digitaloceanspaces.com/ebetlab/gXmqkthvbB1521K/games/QoBhQ3K0xXp3NASQEyz0WsxuZu9Oh6mB3IePQkgF.avif",
+    },
+    {
+      src: "/casino/games/evolution-super-sic-bo",
+      image:
+        "https://vendor-provider.fra1.digitaloceanspaces.com/ebetlab/gXmqkthvbB1521K/games/X7RiXa0yqtu7VUrBqW8CaLsse7EvKIjCarMIkN84.avif",
+    },
+    {
+      src: "/casino/games/pragmaticlive-mega-sic-bo",
+      image:
+        "https://vendor-provider.fra1.digitaloceanspaces.com/ebetlab/gXmqkthvbB1521K/games/uKMxSjVnpH8YuXjjVCzWVndjUq8DieHtragVJLom.png",
+    },
+    {
+      src: "/casino/games/evolution-peek-baccarat",
+      image:
+        "https://vendor-provider.fra1.digitaloceanspaces.com/ebetlab/gXmqkthvbB1521K/games/2GZeeBBDiW174VLMAQaKHi4ox5XkWgArLbCMmF1h.avif",
+    },
+    {
+      src: "/casino/games/pragmaticlive-baccarat-lobby",
+      image:
+        "https://vendor-provider.fra1.digitaloceanspaces.com/ebetlab/gXmqkthvbB1521K/games/T0z4GsUCOOU9DXvIczMALs3RYInud4GWTB4KVTq5.png",
+    },
+    {
+      src: "/casino/games/evolution-casino-holdem",
+      image:
+        "https://vendor-provider.fra1.digitaloceanspaces.com/ebetlab/gXmqkthvbB1521K/games/SkpxY3PwLZCjY6P6nBzMEPSnQbriQskzUkSIMe2n.avif",
+    },
+    {
+      src: "/casino/games/evolution-first-person-lightning-blackjack",
+      image:
+        "https://vendor-provider.fra1.digitaloceanspaces.com/ebetlab/gXmqkthvbB1521K/games/guHiFu4IVQfpFErPyNnSSj8BGiLFXo9VvqPWwYyX.avif",
+    },
+    {
+      src: "https://betredi109.com/tr/casino/games/pragmaticlive-roulette-1",
+      image:
+        "https://vendor-provider.fra1.digitaloceanspaces.com/ebetlab/gXmqkthvbB1521K/games/FnInlYfZZfd4yUZld05M5y6T6BKHqVvy9AqhpeYO.png",
+    },
+  ];
+
   const SVGS = {
     tvIcon: `
   <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -116,6 +572,14 @@
       // css
     }
 
+    const shuffleArray = (array) => {
+      for (let i = array.length - 1; i > 0; i--) {
+        const j = Math.floor(Math.random() * (i + 1));
+        [array[i], array[j]] = [array[j], array[i]];
+      }
+      return array;
+    };
+
     // Wait for DOM and both libraries to be ready
     const wait = setInterval(() => {
       if (
@@ -144,6 +608,76 @@
             }, 500);
             removeHomePageWidgets();
           });
+
+          // * Game Chooser Logic - START
+
+          let prevSlotCount = -1;
+          let prevCasinoCount = -1;
+
+          console.log("Slot Oyunları Sayısı: ", slot_games.length);
+          console.log("Casino Oyunları Sayısı: ", casino_games.length);
+
+          const shuffledSlotGames = shuffleArray([...slot_games]);
+          const suffledCasinoGames = shuffleArray([...casino_games]);
+
+          shuffledSlotGames.forEach((slot_game) => {
+            const img = `
+    <a href="${slot_game.src}">
+        <img class="slot-game-chooser-item" src="${slot_game.image}" alt="slot game" style="width: 100%; height: 100%; object-fit: cover; display: block;">
+    </a>
+    `;
+
+            $("#slot-game-chooser-section .game-chooser-hovered-effect").after(
+              img
+            );
+          });
+
+          suffledCasinoGames.forEach((casino_game) => {
+            const img = `
+    <a disabled="true" href="${casino_game.src}">
+        <img class="casino-game-chooser-item" src="${casino_game.image}" alt="casino game" style="width: 100%; height: 100%; object-fit: cover; display: block;">
+    </a>
+    `;
+
+            $(
+              "#casino-game-chooser-section .game-chooser-hovered-effect"
+            ).after(img);
+          });
+
+          $("#spin-game-btn").click(function () {
+            $(this).prop("disabled", true);
+
+            let slot_count;
+            do {
+              slot_count = Math.floor(Math.random() * slot_games.length);
+            } while (slot_count === prevSlotCount || Math.abs(slot_count - prevSlotCount) < 10);
+            prevSlotCount = slot_count;
+
+            let casino_count;
+            do {
+              casino_count = Math.floor(Math.random() * casino_games.length);
+            } while (casino_count === prevCasinoCount || Math.abs(casino_count - prevCasinoCount) < 10);
+            prevCasinoCount = casino_count;
+
+            console.log("S Random: ", slot_count);
+            console.log("C Random: ", casino_count);
+
+            $("#slot-game-chooser-section img.slot-game-chooser-item").css(
+              "transform",
+              `translateY(-${slot_count * 100}%)`
+            );
+
+            $("#casino-game-chooser-section img.casino-game-chooser-item").css(
+              "transform",
+              `translateY(-${casino_count * 100}%)`
+            );
+
+            setTimeout(() => {
+              $(this).prop("disabled", false);
+            }, 2000);
+          });
+
+          // * Game Chooser Logic - END
         });
 
         // ! No needed.
@@ -1226,15 +1760,11 @@
         console.log("Removing original #main-slider...");
         firstSection.style.display = "none";
       }
-      $("#main-slider-swiper").addClass("slider-hide-important");
     }
 
     function insertCustomMainSlider() {
-
-      // if ($(".my-slider").length > 0) return;
-
       const sliderHTML = `
-    <div class="manually-added-home-widgets section pt-24 my-slider" id="main-slider">
+    <div class="manually-added-home-widgets section pt-24" id="main-slider">
       <div class="container">
         <div class="swiper mySwiper">
           <div class="swiper-wrapper">
@@ -1449,6 +1979,8 @@
 
       injectExtraText();
       autoplayMiniSlider();
+
+      gameChooser();
 
       if ($(".form__btn span").text().trim() === "Send Request") {
         $(".form__btn span").text("Talep Gönder");
@@ -1920,7 +2452,7 @@
 				          <a class="custom--providers--link" href="/providersuelab">
 				            <img class="custom--providers--image" src="https://vendor-provider.fra1.cdn.digitaloceanspaces.com/ebetlab/game-providers/lightuelab.svg" alt="">
 				          </a>
-				        
+
 				          <a class="custom--providers--link" href="https://betredi109.com/tr/providers/turbogames">
 				            <img class="custom--providers--image" src="https://vendor-provider.fra1.cdn.digitaloceanspaces.com/ebetlab/game-providers/light/turbogames.svg" alt="">
 				          </a>
@@ -2082,15 +2614,50 @@
   box-sizing: content-box !important;
 }
 
+#slot-game-chooser-section a img.slot-game-chooser-item,
+      #casino-game-chooser-section a img.casino-game-chooser-item {
+        transition: 2s transform ease;
+      }
+
+      .game-chooser-hovered-effect {
+        transition: 0.35s all ease-out;
+      }
+
+      #slot-game-chooser-section:hover .game-chooser-hovered-effect,
+      #casino-game-chooser-section:hover .game-chooser-hovered-effect {
+        opacity: 1 !important;
+      }
+
+      #slot-game-chooser-section:hover .play-btn,
+      #casino-game-chooser-section:hover .play-btn {
+        transform: scale(0.75);
+      }
+
+      #spin-game-btn:hover {
+        background: #e71f25 !important;
+      }
+
+      #spin-game-btn:disabled {
+        opacity: 0.5;
+      }
+
+      #spin-game-btn:disabled:hover {
+        background: #310204 !important;
+      }
+
+      .play-btn {
+        transition: 0.35s all ease-out;
+      }
+
+      #main__content {
+        background: url("https://betrediofficial.github.io/images/betredi_background.png") no-repeat center center !important;
+        background-size: cover !important;
+    }
+
 
       `;
       document.head.appendChild(style);
     }
-
-    //     .main__content {
-    //   background: url("https://betrediofficial.github.io/images/bg.jpeg") no-repeat center center !important;
-    //   background-size: cover !important;
-    // }
 
     function otherGames() {
       if ($("#digeroyunlari").length > 0) return;
@@ -2169,6 +2736,131 @@
         `;
 
       $(".section--first").eq(1).before(newSection);
+    }
+
+    // * Game Chooser
+
+    function gameChooser() {
+      if ($("#game-chooser").length > 0) return;
+
+      const gameChooserSection = `
+  <div class="manually-added-widgets container" id="game-chooser" style="margin: 48px 0px;">
+    <div id="game-chooser" class="text-white" style="width: 70%; margin: 0 auto;">
+      <div style="padding: 48px 24px; background: #141414; border-radius: 12px">
+        <div style="margin-bottom: 32px">
+          <h2 class="text-center" style="font-size: 24px; margin-bottom: 4px">
+            Oyun seçmekte zorlanıyor musunuz?
+          </h2>
+          <h2 class="text-center" style="font-size: 32px; font-weight: bold">
+            Rastgele bir oyunda şansınızı deneyin.
+          </h2>
+        </div>
+        <div
+          class="d-flex align-items-center justify-content-center mx-auto"
+          style="
+            width: 512px;
+            border: 4px solid #e71f25;
+            border-radius: 16px;
+            overflow-x: hidden;
+            overflow-y: hidden;
+            margin-bottom: 32px;
+            height: 359px;
+            background: #e71f25;
+            gap: 4px;
+          "
+        >
+          <div
+            id="slot-game-chooser-section"
+            style="
+              position: relative;
+              width: 256px;
+              height: 359px;
+              overflow: hidden;
+            "
+          >
+            <div
+              class="game-chooser-hovered-effect disabled-game-chooser"
+              style="
+                position: absolute;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                background: linear-gradient(
+                  to top,
+                  rgba(231, 31, 38, 0.2) 30%,
+                  rgba(0, 0, 0, 0.4) 70%
+                );
+                pointer-events: none;
+                opacity: 0;
+                z-index: 1;
+              "
+            >
+              <img class="play-btn" src="https://betrediofficial.github.io/images/game-chooser-icons/play.png" style="z-index: 2" />
+            </div>
+          </div>
+          <div
+            id="casino-game-chooser-section"
+            style="
+              position: relative;
+              width: 256px;
+              height: 359px;
+              overflow: hidden;
+            "
+          >
+            <div
+              class="game-chooser-hovered-effect"
+              style="
+                position: absolute;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                background: linear-gradient(
+                  to top,
+                  rgba(231, 31, 38, 0.2) 30%,
+                  rgba(0, 0, 0, 0.4) 70%
+                );
+                pointer-events: none;
+                opacity: 0;
+                z-index: 1;
+              "
+            >
+              <img class="play-btn" src="https://betrediofficial.github.io/images/game-chooser-icons/play.png" style="z-index: 2" />
+            </div>
+          </div>
+        </div>
+        <div class="d-flex align-items-center justify-content-center">
+          <button
+            type="button"
+            id="spin-game-btn"
+            class="mx-auto"
+            style="
+              border: 2px solid #e71f25;
+              background: #310204;
+              color: #fff;
+              padding: 10px 24px;
+              border-radius: 8px;
+              font-size: 16px;
+              font-weight: 500;
+              transition: 0.3s;
+            "
+          >
+            <span style="font-weight: 600">ÇEVİR</span>
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+      `;
+
+      $("#buy-bonus-games-wrapper").after(gameChooserSection);
     }
 
     function mobileBoxes() {
@@ -2280,25 +2972,6 @@
 </div>
     `);
     }
-
-    // <a
-    //   href="javascript:void(0)"
-    //   onClick="alert('🔴 Çok yakında sadece Betredi de!')"
-    //   class="col-4"
-    // >
-    //   <div
-    //     class="box-icon-item"
-    //     style="background: linear-gradient(135deg, #3a0509, #5a0910, #a31624);"
-    //   >
-    //     <img
-    //       src="https://betrediofficial.github.io/images/mobile-view/graph.png"
-    //       width="48"
-    //       height="48"
-    //       class="d-block mx-auto"
-    //     />
-    //     <span>${language === "tr" ? "RTP Sorgu" : "RTP Query"}</span>
-    //   </div>
-    // </a>
 
     function bottomMenuWidget(isMobile) {
       if ($("#bottomMenuWidgedContainer").length > 0) return;
