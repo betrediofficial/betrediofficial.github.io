@@ -2649,15 +2649,15 @@
         transition: 0.35s all ease-out;
       }
 
+      #main__content {
+        background: url("https://betrediofficial.github.io/betredi_background.png") no-repeat center center !important;
+        background-size: cover !important;
+    }
+
 
       `;
       document.head.appendChild(style);
     }
-
-    //     .main__content {
-    //   background: url("https://betrediofficial.github.io/images/bg.jpeg") no-repeat center center !important;
-    //   background-size: cover !important;
-    // }
 
     function otherGames() {
       if ($("#digeroyunlari").length > 0) return;
@@ -2745,7 +2745,7 @@
 
       const gameChooserSection = `
   <div class="manually-added-widgets container" id="game-chooser" style="margin: 48px 0px;">
-    <div id="game-chooser" class="text-white" style="width: 70%">
+    <div id="game-chooser" class="text-white" style="width: 70%; margin: 0 auto;">
       <div style="padding: 48px 24px; background: #141414; border-radius: 12px">
         <div style="margin-bottom: 32px">
           <h2 class="text-center" style="font-size: 24px; margin-bottom: 4px">
