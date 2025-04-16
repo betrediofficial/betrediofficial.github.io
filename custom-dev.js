@@ -2659,7 +2659,6 @@
         width: 100% !important;
   background-size: cover !important; 
   background-position: center !important; 
-  background-attachment: fixed !important;
   background-repeat: no-repeat !important;
     }
 
