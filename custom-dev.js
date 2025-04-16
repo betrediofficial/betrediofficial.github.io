@@ -2766,9 +2766,9 @@
       if ($("#game-chooser").length > 0) return;
 
       const gameChooserSection = `
-  <div class="manually-added-home-widgets container" id="game-chooser" style="margin: 48px 0px;">
-    <div id="game-chooser" class="text-white" style="width: 70%; margin: 0 auto;">
-      <div style="padding: 48px 24px; background: url('https://betrediofficial.github.io/images/betredi_background.png'); border-radius: 12px">
+  <div class="manually-added-home-widgets container" id="game-chooser" style="margin: 48px auto">
+    <div id="game-chooser" class="text-white" style="width: 100%; margin: 0 auto;">
+      <div style="padding: 64px 24px; background: url('https://betrediofficial.github.io/images/game-chooser-icons/bg.png'); border-radius: 12px">
         <div style="margin-bottom: 32px">
           <h2 class="text-center" style="font-size: 24px; margin-bottom: 4px">
             Oyun seçmekte zorlanıyor musunuz?
