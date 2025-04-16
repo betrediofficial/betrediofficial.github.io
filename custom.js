@@ -2762,8 +2762,8 @@
       if ($("#game-chooser").length > 0) return;
 
       const gameChooserSection = `
-  <div class="manually-added-home-widgets container" id="game-chooser" style="margin: 48px 0px;">
-    <div id="game-chooser" class="text-white" style="width: 70%; margin: 0 auto;">
+  <div class="manually-added-home-widgets container" id="game-chooser" style="margin: 48px auto">
+    <div id="game-chooser" class="text-white" style="width: 100%; margin: 0 auto;">
       <div style="padding: 48px 24px; background: #060000; border-radius: 12px">
         <div style="margin-bottom: 32px">
           <h2 class="text-center" style="font-size: 24px; margin-bottom: 4px">
