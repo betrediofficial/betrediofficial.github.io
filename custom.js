@@ -1350,15 +1350,13 @@
 
         insertCustomMiniGamesSlider();
         setTimeout(initCustomMiniGamesSlider, 500);
-
-        is_mobile && mobileBoxes();
       }
 
       // GENERAL
 
       insertCustomSidebarLink();
       injectProvidersMarquee();
-
+      is_mobile && mobileBoxes();
 
 
       hideBlogSection();
