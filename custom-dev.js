@@ -1491,7 +1491,7 @@
           customDiv.className = "sidebar__links custom_side";
           customDiv.innerHTML = `
         <a class="sidebar__link sidebar__link--casino w-100" href="https://betredi109.com/en/promotions"
-           style="height: 46px; background: url('https://betrediofficial.github.io/images/aside-links/promotions_new.png') center center / cover no-repeat;">
+           style="height: 46px; background: url('https://betrediofficial.github.io/images/aside-links/promotions.png') center center / cover no-repeat;">
         </a>
       `;
           $sidebarLinks.parentNode.insertBefore(
