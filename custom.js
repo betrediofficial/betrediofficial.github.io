@@ -2150,6 +2150,9 @@
     // * Game Chooser
 
     function gameChooser() {
+      const isHomePage = isHomePageCheck();
+      if(!isHomePage) return;
+
       if ($("#game-chooser").length > 0){
         $("#game-chooser").show()
       }
