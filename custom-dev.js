@@ -1104,23 +1104,6 @@
       });
 
       // * Game Chooser Logic - END
-
-      $(document).on(
-        "click",
-        "#slot-game-chooser-section a, #casino-game-chooser-section a",
-        function (e) {
-          e.preventDefault();
-          const href = $(this).attr("href");
-
-          if (window.location.pathname !== href) {
-            history.pushState({}, "", href);
-
-            setTimeout(() => {
-              initialize();
-            }, 100);
-          }
-        }
-      );
     }
 
     // Wait for DOM and both libraries to be ready
@@ -1149,7 +1132,6 @@
           $(window).on("popstate", function () {
             setTimeout(() => {
               initialize();
-              gameChooserLogic();
             }, 500);
 
             removeHomePageWidgets();
