@@ -2087,15 +2087,21 @@
   #main__content {
     background: #000 !important;
   }
+
+  
+  #game-chooser {
+    display: block !important;
+  }
+
+  @media screen and (max-width: 768px) {
+    #game-chooser {
+      display: block !important;
+    }
+  }
       `;
+
       document.head.appendChild(style);
     }
-
-    //     @media screen and (max-width: 768px) {
-    //   #game-chooser {
-    //     display: none !important;
-    //   }
-    // }
 
     // * BG Image Optimization for all OS
     // ! Don't touch
