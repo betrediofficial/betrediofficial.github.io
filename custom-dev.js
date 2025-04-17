@@ -2109,6 +2109,14 @@
     #casino-game-chooser-section {
       width: 50% !important;
     }
+
+    #game-chooser-title-1 {
+      font-size: 24px !important;
+    }
+
+    #game-chooser-title-2 {
+      font-size: 28px !important;
+    }
   }
       `;
 
@@ -2227,14 +2235,14 @@
     <div class="text-white" style="width: 100%; margin: 0 auto;">
       <div style="padding: 96px 0px; background: url('https://betrediofficial.github.io/images/game-chooser-icons/bg.png');">
         <div style="margin-bottom: 42px">
-          <h2 class="text-center" style="font-size: 28px; margin-bottom: 4px">
+          <h2 class="text-center" id="game-chooser-title-1" style="font-size: 28px; margin-bottom: 4px">
             ${
               language === "tr"
                 ? "Ne oynayacağınıza karar veremiyor musunuz?"
                 : "Can’t decide what to play?"
             }
           </h2>
-          <h2 class="text-center" style="font-size: 32px; font-weight: bold">
+          <h2 class="text-center" id="game-chooser-title-2" style="font-size: 32px; font-weight: bold">
             ${
               language === "tr"
                 ? "Şansınızı rastgele bir oyunda deneyin!"
