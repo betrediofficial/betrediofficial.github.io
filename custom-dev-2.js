@@ -1310,6 +1310,7 @@
     }
 
     function initialize() {
+      window.console.log("initialized")
       removeOriginalMainSlider();
 
       insertCustomMainSlider();
