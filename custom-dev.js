@@ -1479,10 +1479,8 @@
           linksToRemove.forEach((link) => link.remove());
 
           const newLinksHTML = `
-        <a class="sidebar__link sidebar__link--slot" href="/slot" style="background: url('https://betrediofficial.github.io/images/aside-links/slot.png') left center / cover no-repeat;">
-        </a>
-        <a class="sidebar__link sidebar__link--casino" href="/casino" style="background: url('https://betrediofficial.github.io/images/aside-links/casino.png') left center / cover no-repeat;">
-        </a>
+        <a class="sidebar__link sidebar__link--slot" href="/casino/slots" style="background: url('https://betrediofficial.github.io/images/aside-links/slot.png') left center / cover no-repeat;"></a>
+        <a class="sidebar__link sidebar__link--casino" href="/casino" style="background: url('https://betrediofficial.github.io/images/aside-links/casino.png') left center / cover no-repeat;"></a>
       `;
           $sidebarLinks.insertAdjacentHTML("beforeend", newLinksHTML);
           $sidebarLinks.classList.add("custom_links_replaced");
@@ -1493,7 +1491,7 @@
           customDiv.className = "sidebar__links custom_side";
           customDiv.innerHTML = `
         <a class="sidebar__link sidebar__link--casino w-100" href="https://betredi109.com/en/promotions"
-           style="height: 46px; background: url('https://betrediofficial.github.io/images/aside-links/promotions.png') center center / cover no-repeat;">
+           style="height: 46px; background: url('https://betrediofficial.github.io/images/aside-links/promotions_new.png') center center / cover no-repeat;">
         </a>
       `;
           $sidebarLinks.parentNode.insertBefore(
