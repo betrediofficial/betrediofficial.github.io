@@ -1053,7 +1053,7 @@
 
       shuffledSlotGames.forEach((slot_game) => {
         const img = `
-    <a href="${slot_game.src}">
+    <a href="${slot_game.src}" target="_blank">
         <img class="slot-game-chooser-item" src="${slot_game.image}" alt="slot game" style="width: 100%; height: 100%; object-fit: cover; display: block;">
     </a>
     `;
@@ -1063,7 +1063,7 @@
 
       suffledCasinoGames.forEach((casino_game) => {
         const img = `
-    <a disabled="true" href="${casino_game.src}">
+    <a disabled="true" href="${casino_game.src}" target="_blank">
         <img class="casino-game-chooser-item" src="${casino_game.image}" alt="casino game" style="width: 100%; height: 100%; object-fit: cover; display: block;">
     </a>
     `;
@@ -1470,16 +1470,28 @@
 
         const exists = document.querySelector(".sidebar__links.custom_side");
 
+        if (
+          $sidebarLinks &&
+          !$sidebarLinks.classList.contains("custom_links_replaced")
+        ) {
+          const linksToRemove =
+            $sidebarLinks.querySelectorAll(".sidebar__link");
+          linksToRemove.forEach((link) => link.remove());
+
+          const newLinksHTML = `
+        <a class="sidebar__link sidebar__link--slot" href="/casino/slots" style="background: url('https://betrediofficial.github.io/images/aside-links/slot.png') left center / cover no-repeat;"></a>
+        <a class="sidebar__link sidebar__link--casino" href="/casino" style="background: url('https://betrediofficial.github.io/images/aside-links/casino.png') left center / cover no-repeat;"></a>
+      `;
+          $sidebarLinks.insertAdjacentHTML("beforeend", newLinksHTML);
+          $sidebarLinks.classList.add("custom_links_replaced");
+        }
+
         if ($sidebarLinks && !exists) {
           const customDiv = document.createElement("div");
           customDiv.className = "sidebar__links custom_side";
           customDiv.innerHTML = `
-        <a class="sidebar__link sidebar__link--casino w-100" href=${
-          language === "tr"
-            ? "https://betredi109.com/tr/promotions"
-            : "https://betredi109.com/en/promotions"
-        }
-           style="height: 46px; background: url('https://betrediofficial.github.io/images/aside-links/promotions.png') center center / cover no-repeat;">
+        <a class="sidebar__link sidebar__link--casino w-100" href="https://betredi109.com/en/promotions"
+           style="height: 46px; background: url('https://betrediofficial.github.io/images/aside-links/promotions_new.png') center center / cover no-repeat;">
         </a>
       `;
           $sidebarLinks.parentNode.insertBefore(
@@ -1494,6 +1506,40 @@
         subtree: true,
       });
     }
+
+    // function insertCustomSidebarLink() {
+    //   const observer = new MutationObserver(() => {
+
+    //     const $sidebarLinks = document.querySelector(
+    //       ".sidebar__big .sidebar__links"
+    //     );
+
+    //     const exists = document.querySelector(".sidebar__links.custom_side");
+
+    //     if ($sidebarLinks && !exists) {
+    //       const customDiv = document.createElement("div");
+    //       customDiv.className = "sidebar__links custom_side";
+    //       customDiv.innerHTML = `
+    //     <a class="sidebar__link sidebar__link--casino w-100" href=${
+    //       language === "tr"
+    //         ? "https://betredi109.com/tr/promotions"
+    //         : "https://betredi109.com/en/promotions"
+    //     }
+    //        style="height: 46px; background: url('https://betrediofficial.github.io/images/aside-links/promotions.png') center center / cover no-repeat;">
+    //     </a>
+    //   `;
+    //       $sidebarLinks.parentNode.insertBefore(
+    //         customDiv,
+    //         $sidebarLinks.nextSibling
+    //       );
+    //     }
+    //   });
+
+    //   observer.observe(document.body, {
+    //     childList: true,
+    //     subtree: true,
+    //   });
+    // }
 
     function injectProvidersMarquee() {
       const container = document.querySelector("#main-slider > .container");
