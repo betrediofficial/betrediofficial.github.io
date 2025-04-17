@@ -2203,6 +2203,7 @@
     function gameChooser() {
 
       if ($("#game-chooser").length > 0){
+        return;
         return $("#game-chooser").show() 
        }
 
