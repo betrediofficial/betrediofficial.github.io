@@ -2101,8 +2101,13 @@
   }
 
   @media screen and (max-width: 768px) {
-    #game-chooser {
-      display: none !important;
+    #game-chooser-wrapper {
+      width: 100% !important;
+    }
+
+    #slot-game-chooser-section,
+    #casino-game-chooser-section {
+      width: 50% !important;
     }
   }
       `;
@@ -2239,6 +2244,7 @@
         </div>
         <div
           class="d-flex align-items-center justify-content-center mx-auto"
+          id="game-chooser-wrapper"
           style="
             width: 512px;
             border: 5px solid #7b0111;
