@@ -1325,8 +1325,10 @@
       headerButtons(isHomePage);
 
       if (!isHomePage) {
+        alert('not home page')
         removeHomePageWidgets();
       } else {
+        alert('home page')
         mobileSignInText();
         bottomMenuWidget(is_mobile);
         otherGames();
