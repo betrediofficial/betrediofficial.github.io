@@ -2469,8 +2469,8 @@
       <div class="box-icon-item" style="background: linear-gradient(135deg, #3a0509, #5a0910, #a31624);">
         <img
           src="https://betrediofficial.github.io/images/mobile-view/graph.png"
-          width="48"
-          height="48"
+"          width="48"
+"          height="48"
           class="d-block mx-auto"
         />
         <span>${language === "tr" ? "RTP Sorgu" : "RTP Query"}</span>
