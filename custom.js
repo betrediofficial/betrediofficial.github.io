@@ -2464,7 +2464,7 @@
     }
 
     function bottomMenuWidget(isMobile) {
-      if ($("#bottomMenuWidgedContainer").length > 0){
+      if ($(".bottomMenuWidgedContainer").length > 0){
         return;
       }
       $(".section:first").after(`
