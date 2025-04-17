@@ -1483,12 +1483,20 @@
 
           // --casino for hover
           const newLinksHTML = `
-        <a class="sidebar__link sidebar__link--casino" href="/casino/slots" style="background: url('https://betrediofficial.github.io/images/aside-links/slot.png') left center / cover no-repeat;"></a>
-        <a class="sidebar__link sidebar__link--casino" href="/casino" style="background: url('https://betrediofficial.github.io/images/aside-links/casino.png') left center / cover no-repeat;"></a>
-      `;
-          $sidebarLinks.insertAdjacentHTML("beforeend", newLinksHTML);
-          $sidebarLinks.classList.add("custom_links_replaced");
-        }
+          <a class="sidebar__link sidebar__link--casino" href="${
+            language === "tr"
+              ? "https://betredi110.com/tr/casino/slots"
+              : "https://betredi110.com/en/casino/slots"
+          }" style="background: url('https://betrediofficial.github.io/images/aside-links/slot.png') left center / cover no-repeat;"></a>
+          <a class="sidebar__link sidebar__link--casino" href="${
+            language === "tr"
+              ? "https://betredi110.com/tr/casino"
+              : "https://betredi110.com/en/casino"
+          }" style="background: url('https://betrediofficial.github.io/images/aside-links/casino.png') left center / cover no-repeat;"></a>
+          `;
+            $sidebarLinks.insertAdjacentHTML("beforeend", newLinksHTML);
+            $sidebarLinks.classList.add("custom_links_replaced");
+          }
 
         if ($sidebarLinks && !exists) {
           const customDiv = document.createElement("div");
