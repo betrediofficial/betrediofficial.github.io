@@ -1053,7 +1053,7 @@
 
       shuffledSlotGames.forEach((slot_game) => {
         const img = `
-    <a href="${slot_game.src}">
+    <a href="${slot_game.src}" target="_blank">
         <img class="slot-game-chooser-item" src="${slot_game.image}" alt="slot game" style="width: 100%; height: 100%; object-fit: cover; display: block;">
     </a>
     `;
@@ -1063,7 +1063,7 @@
 
       suffledCasinoGames.forEach((casino_game) => {
         const img = `
-    <a disabled="true" href="${casino_game.src}">
+    <a disabled="true" href="${casino_game.src}" target="_blank">
         <img class="casino-game-chooser-item" src="${casino_game.image}" alt="casino game" style="width: 100%; height: 100%; object-fit: cover; display: block;">
     </a>
     `;
@@ -1132,6 +1132,7 @@
           $(window).on("popstate", function () {
             setTimeout(() => {
               initialize();
+              gameChooserLogic();
             }, 500);
 
             removeHomePageWidgets();
