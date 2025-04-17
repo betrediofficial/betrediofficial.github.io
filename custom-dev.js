@@ -1104,6 +1104,21 @@
       });
 
       // * Game Chooser Logic - END
+
+      $(document).on(
+        "click",
+        "#slot-game-chooser-section a, #casino-game-chooser-section a",
+        function (e) {
+          e.preventDefault();
+          const href = $(this).attr("href");
+
+          history.pushState({}, "", href);
+          $("#main__content").empty();
+          setTimeout(() => {
+            initialize();
+          }, 300);
+        }
+      );
     }
 
     // Wait for DOM and both libraries to be ready
