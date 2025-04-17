@@ -2483,7 +2483,8 @@
 
     function bottomMenuWidget(isMobile) {
       if ($(".bottomMenuWidgedContainer").length > 0){
-        return $(".bottomMenuWidgedContainer").show();
+        return;
+        // return $(".bottomMenuWidgedContainer").show();
       }
       $(".section:first").after(`
 <div class="manually-added-home-widgets bottomMenuWidgedContainer" id="bottomMenuWidgedContainer" style="margin-bottom: 10px;">
