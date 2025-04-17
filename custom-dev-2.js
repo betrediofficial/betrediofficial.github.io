@@ -1337,8 +1337,7 @@
 
         if (!is_mobile) casinoGames();
 
-        setTimeout(()=> gameChooser(), 1050)
-        gameChooserLogic();
+        gameChooser()
 
         // miniGames();
 
@@ -2334,6 +2333,7 @@
       `;
 
       $("#buy-bonus-games-wrapper").after(gameChooserSection);
+      gameChooserLogic();
     }
 
     function mobileBoxes() {
