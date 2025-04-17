@@ -2199,9 +2199,11 @@
     function gameChooser() {
 
       if ($("#game-chooser").length > 0){
+        alert('game chooser show')
         return $("#game-chooser").show() 
        }
 
+       alert('game chooser new add')
       const gameChooserSection = `
   <div class="manually-added-home-widgets" id="game-chooser" style="width: 100%; margin: 48px auto">
     <div class="text-white" style="width: 100%; margin: 0 auto;">
