@@ -1170,19 +1170,19 @@
               <a href="https://betredi110.com/tr/promotion/15-casino-yatirim-bonusu-tr"><img src="https://betrediofficial.github.io/images/slider/15Casino.webp" class="slide-image" /></a>
             </div>
             <div class="swiper-slide">
-              <a href="d/tr/promotion/15-spor-yatirim-bonusu-tr"><img src="https://betrediofficial.github.io/images/slider/15Spor.webp" class="slide-image" /></a>
+              <a href="https://betredi110.com/tr/promotion/10-spor-yatirim-bonusu-tr"><img src="https://betrediofficial.github.io/images/slider/15Spor.webp" class="slide-image" /></a>
             </div>
             <div class="swiper-slide">
-              <a href="d/tr/promotion/30-casino-discount-tr"><img src="https://betrediofficial.github.io/images/slider/30Discount.webp" class="slide-image" /></a>
+              <a href="https://betredi110.com/tr/promotion/30-casino-discount-tr"><img src="https://betrediofficial.github.io/images/slider/30Discount.webp" class="slide-image" /></a>
             </div>
             <div class="swiper-slide">
-              <a href="d/tr/promotion/50-slot-yatirim-bonusu-tr"><img src="https://betrediofficial.github.io/images/slider/50Slot.webp" class="slide-image" /></a>
+              <a href="https://betredi110.com/tr/promotion/50-slot-yatirim-bonusu-tr"><img src="https://betrediofficial.github.io/images/slider/50Slot.webp" class="slide-image" /></a>
             </div>
             <div class="swiper-slide">
-              <a href="d/tr/promotion/100-freespin-deneme-bonusu-trrf"><img src="https://betrediofficial.github.io/images/slider/100Freespin.webp" class="slide-image" /></a>
+              <a href="https://betredi110.com/tr/promotion/100-freespin-deneme-bonusu-trrf"><img src="https://betrediofficial.github.io/images/slider/100Freespin.webp" class="slide-image" /></a>
             </div>
             <div class="swiper-slide">
-              <a href="d/tr/promotion/100-slot-iade-bonusu-rt"><img src="https://betrediofficial.github.io/images/slider/100Slotiade.webp" class="slide-image" /></a>
+              <a href="https://betredi110.com/tr/promotion/100-slot-iade-bonusu-rt"><img src="https://betrediofficial.github.io/images/slider/100Slotiade.webp" class="slide-image" /></a>
             </div>
           </div>
           <div class="swiper-button-next"></div>
