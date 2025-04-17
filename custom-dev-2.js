@@ -1350,6 +1350,11 @@
         // HIDE
         // !is_mobile && hideDefaultGames(50);
         // !is_mobile && hideDefaultGames(1500);
+
+        insertCustomMiniGamesSlider();
+        setTimeout(initCustomMiniGamesSlider, 500);
+
+        is_mobile && mobileBoxes();
       }
 
       // GENERAL
@@ -1357,10 +1362,7 @@
       insertCustomSidebarLink();
       injectProvidersMarquee();
 
-      is_mobile && mobileBoxes();
 
-      insertCustomMiniGamesSlider();
-      setTimeout(initCustomMiniGamesSlider, 500);
 
       hideBlogSection();
 
