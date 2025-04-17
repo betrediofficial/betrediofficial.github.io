@@ -1479,7 +1479,7 @@
           linksToRemove.forEach((link) => link.remove());
 
           const newLinksHTML = `
-        <a class="sidebar__link sidebar__link--slot" href="/casino/slots" style="background: url('https://betrediofficial.github.io/images/aside-links/slot.png') left center / cover no-repeat;"></a>
+        <a class="sidebar__link sidebar__link--casino" href="/casino/slots" style="background: url('https://betrediofficial.github.io/images/aside-links/slot.png') left center / cover no-repeat;"></a>
         <a class="sidebar__link sidebar__link--casino" href="/casino" style="background: url('https://betrediofficial.github.io/images/aside-links/casino.png') left center / cover no-repeat;"></a>
       `;
           $sidebarLinks.insertAdjacentHTML("beforeend", newLinksHTML);
