@@ -1226,7 +1226,7 @@
     }
 
     function insertCustomMiniGamesSlider() {
-      if ($("#mini-games-wrapper").length > 0) return;
+      if ($("#mini-games-wrapper").length > 0) return $("#mini-games-wrapper").show();
 
       var miniGamesSection = `
      <div class="manually-added-home-widgets section" id="mini-games-wrapper" style="margin-top: 16px !important; margin-bottom: 16px !important;">
@@ -2114,7 +2114,7 @@ alert('initialized')
     // }
 
     function otherGames() {
-      if ($("#digeroyunlari").length > 0) return;
+      if ($("#digeroyunlari").length > 0) return $("#digeroyunlari").show();
 
       var newSection = `
 <div class="manually-added-home-widgets section" id="digeroyunlari">
@@ -2331,7 +2331,7 @@ alert('initialized')
     }
 
     function mobileBoxes() {
-      if ($("#mobileboxes").length > 0) return;
+      if ($("#mobileboxes").length > 0) return $("#mobileboxes").show();
 
       if ($(".custom--section--2").length > 0)
         $(".custom--section--2").after(`
@@ -2441,7 +2441,7 @@ alert('initialized')
     }
 
     function bottomMenuWidget(isMobile) {
-      if ($("#bottomMenuWidgedContainer").length > 0) return;
+      if ($("#bottomMenuWidgedContainer").length > 0) return $("#bottomMenuWidgedContainer").show();
       $(".section:first").append(`
 <div class="manually-added-home-widgets bottomMenuWidgedContainer" id="bottomMenuWidgedContainer" style="margin-bottom: 10px;">
   <div class="bottom-menu-widget" style="flex: 1 1 calc(25% - 10px); text-align: center;">
@@ -2475,7 +2475,7 @@ alert('initialized')
     }
 
     function slotGames() {
-      if ($("#slotoyunlari").length > 0) return;
+      if ($("#slotoyunlari").length > 0) return $("#slotoyunlari").show();
 
       let title = language === "tr" ? "SLOT CASİNO" : "SLOT CASINO";
 
@@ -2626,7 +2626,7 @@ alert('initialized')
     }
 
     function tgPromo() {
-      if ($("#tgpromo").length > 0) return;
+      if ($("#tgpromo").length > 0) $("#tgpromo").show();
 
       var newSection = `
 <div class="manually-added-home-widgets section" id="tgpromo" style="margin-bottom: 14px; margin-top: 14px;">
@@ -2654,7 +2654,7 @@ alert('initialized')
     }
 
     function casinoGames() {
-      if ($("#casinooyunlari").length > 0) return;
+      if ($("#casinooyunlari").length > 0) return $("#casinooyunlari").show();
 
       let title = language === "tr" ? "CANLI CASİNO" : "LIVE CASINO";
 
@@ -2884,7 +2884,7 @@ alert('initialized')
   //   }
 
   function sportsCard() {
-    if ($("#sportscard").length > 0) return;
+    if ($("#sportscard").length > 0) return $("#sportscard").show();
 
     var newSection = `
       <div class="container manually-added-home-widgets" style="margin-top: 16px !important; margin-bottom: 16px !important;">
