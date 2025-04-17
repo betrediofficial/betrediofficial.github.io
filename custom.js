@@ -2372,7 +2372,7 @@
     }
 
     function mobileBoxes() {
-      if ($("#mobileboxes").length > 0) return $("#mobileboxes").show();
+      // if ($("#mobileboxes").length > 0) return $("#mobileboxes").show();
 
       if ($(".custom--section--2").length > 0)
         $(".custom--section--2").after(`
