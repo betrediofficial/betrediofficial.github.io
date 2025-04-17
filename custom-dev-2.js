@@ -1132,13 +1132,10 @@
           $(window).on("popstate", function () {
             setTimeout(() => {
               initialize();
-              gameChooserLogic();
             }, 500);
 
             removeHomePageWidgets();
           });
-
-          gameChooserLogic();
         });
       }
     }, 300);
