@@ -1253,7 +1253,7 @@
              <div class="swiper-slide" data-swiper-slide-index="0" style="width: 339px; margin-right: 12px; background: none !important;">
                <a class="mini-game mini-game--carousel mini-game--no-layer" href="/tr/casino/games/ebetlab-crash-originals" style="background: none !important;">
                  <span class="mini-game__img">
-                   <img loading="lazy" src="https://betrediofficial.github.io/images/mini-games-v2/crash_v2.webp" alt="">
+                   <img loading="lazy" src="https://betrediofficial.github.io/images/mini-games-v2/crash.webp" alt="">
                  </span>
                </a>
              </div>
@@ -1261,7 +1261,7 @@
              <div class="swiper-slide" data-swiper-slide-index="1" style="width: 339px; margin-right: 12px; background: none !important;">
                <a class="mini-game mini-game--carousel mini-game--no-layer" href="/tr/casino/games/ebetlab-dice-originals" style="background: none !important;">
                  <span class="mini-game__img">
-                   <img loading="lazy" src="https://betrediofficial.github.io/images/mini-games-v2/dice_v2.webp" alt="">
+                   <img loading="lazy" src="https://betrediofficial.github.io/images/mini-games-v2/dice.webp" alt="">
                  </span>
                </a>
              </div>
@@ -1269,7 +1269,7 @@
              <div class="swiper-slide" data-swiper-slide-index="2" style="width: 339px; margin-right: 12px; background: none !important;">
                <a class="mini-game mini-game--carousel mini-game--no-layer" href="/tr/casino/games/ebetlab-mines-originals" style="background: none !important;">
                  <span class="mini-game__img">
-                   <img loading="lazy" src="https://betrediofficial.github.io/images/mini-games-v2/mines_v2.webp" alt="">
+                   <img loading="lazy" src="https://betrediofficial.github.io/images/mini-games-v2/mines.webp" alt="">
                  </span>
                </a>
              </div>
@@ -1277,7 +1277,7 @@
              <div class="swiper-slide" data-swiper-slide-index="3" style="width: 339px; margin-right: 12px; background: none !important;">
                <a class="mini-game mini-game--carousel mini-game--no-layer" href="/tr/casino/games/ebetlab-plinko-originals" style="background: none !important;">
                  <span class="mini-game__img">
-                   <img loading="lazy" src="https://betrediofficial.github.io/images/mini-games-v2/plinko_v2.webp" alt="">
+                   <img loading="lazy" src="https://betrediofficial.github.io/images/mini-games-v2/plinko.webp" alt="">
                  </span>
                </a>
              </div>
@@ -1478,8 +1478,9 @@
             $sidebarLinks.querySelectorAll(".sidebar__link");
           linksToRemove.forEach((link) => link.remove());
 
+          // --casino for hover
           const newLinksHTML = `
-        <a class="sidebar__link sidebar__link--slot" href="/casino/slots" style="background: url('https://betrediofficial.github.io/images/aside-links/slot.png') left center / cover no-repeat;"></a>
+        <a class="sidebar__link sidebar__link--casino" href="/casino/slots" style="background: url('https://betrediofficial.github.io/images/aside-links/slot.png') left center / cover no-repeat;"></a>
         <a class="sidebar__link sidebar__link--casino" href="/casino" style="background: url('https://betrediofficial.github.io/images/aside-links/casino.png') left center / cover no-repeat;"></a>
       `;
           $sidebarLinks.insertAdjacentHTML("beforeend", newLinksHTML);
@@ -1491,7 +1492,7 @@
           customDiv.className = "sidebar__links custom_side";
           customDiv.innerHTML = `
         <a class="sidebar__link sidebar__link--casino w-100" href="https://betredi109.com/en/promotions"
-           style="height: 46px; background: url('https://betrediofficial.github.io/images/aside-links/promotions_new.png') center center / cover no-repeat;">
+           style="height: 46px; background: url('https://betrediofficial.github.io/images/aside-links/promotions.png') center center / cover no-repeat;">
         </a>
       `;
           $sidebarLinks.parentNode.insertBefore(
