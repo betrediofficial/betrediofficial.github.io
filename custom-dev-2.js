@@ -1339,6 +1339,9 @@
 
         if (!is_mobile) casinoGames();
 
+        gameChooser();
+        gameChooserLogic();
+
         // miniGames();
 
         // sportsCard();
@@ -1348,6 +1351,8 @@
         // !is_mobile && hideDefaultGames(50);
         // !is_mobile && hideDefaultGames(1500);
       }
+
+      // GENERAL
 
       insertCustomSidebarLink();
       injectProvidersMarquee();
@@ -1368,8 +1373,7 @@
       slot_games = getSlotGames();
       casino_games = getCasinoGames();
 
-      gameChooser();
-      gameChooserLogic();
+
 
       if ($(".form__btn span").text().trim() === "Send Request") {
         $(".form__btn span").text("Talep Gönder");
