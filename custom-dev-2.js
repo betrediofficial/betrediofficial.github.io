@@ -1170,7 +1170,7 @@
               <a href="https://betredi109.com/tr/promotion/15-casino-yatirim-bonusu-tr"><img src="https://betrediofficial.github.io/images/slider/15Casino.webp" class="slide-image" /></a>
             </div>
             <div class="swiper-slide">
-              <a href="https://betredi109.com/tr/promotion/15-spor-yatirim-bonusu-tr"><img src="https://betrediofficial.github.io/images/slider/15Spor.webp" class="slide-image" /></a>
+              <a href="/promotion/10-spor-yatirim-bonusu-tr"><img src="https://betrediofficial.github.io/images/slider/15Spor.webp" class="slide-image" /></a>
             </div>
             <div class="swiper-slide">
               <a href="https://betredi109.com/tr/promotion/30-casino-discount-tr"><img src="https://betrediofficial.github.io/images/slider/30Discount.webp" class="slide-image" /></a>
@@ -1350,15 +1350,13 @@
 
         insertCustomMiniGamesSlider();
         setTimeout(initCustomMiniGamesSlider, 500);
-
-        is_mobile && mobileBoxes();
       }
 
       // GENERAL
 
       insertCustomSidebarLink();
       injectProvidersMarquee();
-
+      is_mobile && mobileBoxes();
 
 
       hideBlogSection();
@@ -1483,18 +1481,30 @@
 
           // --casino for hover
           const newLinksHTML = `
-        <a class="sidebar__link sidebar__link--casino" href="/casino/slots" style="background: url('https://betrediofficial.github.io/images/aside-links/slot.png') left center / cover no-repeat;"></a>
-        <a class="sidebar__link sidebar__link--casino" href="/casino" style="background: url('https://betrediofficial.github.io/images/aside-links/casino.png') left center / cover no-repeat;"></a>
-      `;
-          $sidebarLinks.insertAdjacentHTML("beforeend", newLinksHTML);
-          $sidebarLinks.classList.add("custom_links_replaced");
-        }
+          <a class="sidebar__link sidebar__link--casino" href="${
+            language === "tr"
+              ? "https://betredi110.com/tr/casino/slots"
+              : "https://betredi110.com/en/casino/slots"
+          }" style="background: url('https://betrediofficial.github.io/images/aside-links/slot.png') left center / cover no-repeat;"></a>
+          <a class="sidebar__link sidebar__link--casino" href="${
+            language === "tr"
+              ? "https://betredi110.com/tr/casino"
+              : "https://betredi110.com/en/casino"
+          }" style="background: url('https://betrediofficial.github.io/images/aside-links/casino.png') left center / cover no-repeat;"></a>
+          `;
+            $sidebarLinks.insertAdjacentHTML("beforeend", newLinksHTML);
+            $sidebarLinks.classList.add("custom_links_replaced");
+          }
 
         if ($sidebarLinks && !exists) {
           const customDiv = document.createElement("div");
           customDiv.className = "sidebar__links custom_side";
           customDiv.innerHTML = `
-        <a class="sidebar__link sidebar__link--casino w-100" href="https://betredi109.com/en/promotions"
+        <a class="sidebar__link sidebar__link--casino w-100" href="${
+          language === "tr"
+            ? "https://betredi110.com/tr/promotions"
+            : "https://betredi110.com/en/promotions"
+        }"
            style="height: 46px; background: url('https://betrediofficial.github.io/images/aside-links/promotions.png') center center / cover no-repeat;">
         </a>
       `;
@@ -1557,6 +1567,7 @@
       section.className = "section custom--section--2 custom--section";
       section.innerHTML = `
 <div class="container" style="position: relative; max-width: 100% !important; margin-bottom: 20px !important; padding-left: 0px !important; padding-right: 0px !important; padding-top: 0px !important; overflow: hidden !important;">
+<div class="providers--marquee--bg" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; background: linear-gradient(to right, rgba(0, 0, 0, 0.8) 0%, transparent 50%, rgba(0, 0, 0, 0.8) 100%);z-index: 1;pointer-events: none;"></div>
   <div class="providers--marquee--bg" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; background: linear-gradient(to right, rgba(0, 0, 0, 1) 0%, #730812 50%, rgba(0, 0, 0, 1) 100%);"></div>
 <div class="providers--marquee">	
 				          <a class="custom--providers--link" href="https://betredi109.com/tr/providers/pragmaticplay">
@@ -2046,57 +2057,80 @@
   }
 
   #main-slider .swiper-wrapper {
-  transform: translate3d(0, 0, 0);
-  width: 100% !important;
-  height: 100% !important;
-  box-sizing: content-box !important;
-}
+    transform: translate3d(0, 0, 0);
+    width: 100% !important;
+    height: 100% !important;
+    box-sizing: content-box !important;
+  }
 
-#slot-game-chooser-section a img.slot-game-chooser-item,
-      #casino-game-chooser-section a img.casino-game-chooser-item {
-        transition: 2s transform ease;
-      }
+  #slot-game-chooser-section a img.slot-game-chooser-item,
+  #casino-game-chooser-section a img.casino-game-chooser-item {
+    transition: 2s transform ease;
+  }
 
-      .game-chooser-hovered-effect {
-        transition: 0.35s all ease-out;
-      }
+  .game-chooser-hovered-effect {
+    transition: 0.35s all ease-out;
+  }
 
-      #slot-game-chooser-section:hover .game-chooser-hovered-effect,
-      #casino-game-chooser-section:hover .game-chooser-hovered-effect {
-        opacity: 1 !important;
-      }
+  #slot-game-chooser-section:hover .game-chooser-hovered-effect,
+  #casino-game-chooser-section:hover .game-chooser-hovered-effect {
+    opacity: 1 !important;
+  }
 
-      #slot-game-chooser-section:hover .play-btn,
-      #casino-game-chooser-section:hover .play-btn {
-        transform: scale(0.75);
-      }
+  #slot-game-chooser-section:hover .play-btn,
+  #casino-game-chooser-section:hover .play-btn {
+    transform: scale(0.75);
+  }
 
-      #spin-game-btn:hover {
-        background: #7b0111 !important;
-      }
+  #spin-game-btn:hover {
+    background: #7b0111 !important;
+  }
 
-      #spin-game-btn:disabled {
-        opacity: 0.5;
-      }
+  #spin-game-btn:disabled {
+    opacity: 0.5;
+  }
 
-      #spin-game-btn:disabled:hover {
-        background: #310204 !important;
-      }
+  #spin-game-btn:disabled:hover {
+    background: #310204 !important;
+  }
 
-      .play-btn {
-        transition: 0.35s all ease-out;
-      }
+  .play-btn {
+    transition: 0.35s all ease-out;
+  }
 
-    }
-
-    #main__content {
+  #main__content {
     background: #000 !important;
+  }
+
+  @media screen and (max-width: 768px) {
+    #game-chooser-wrapper {
+      width: 100% !important;
     }
 
+    #slot-game-chooser-section,
+    #casino-game-chooser-section {
+      width: 50% !important;
+    }
 
+    #game-chooser-title-1 {
+      font-size: 20px !important;
+    }
+
+    #game-chooser-title-2 {
+      font-size: 24px !important;
+    }
+
+    #game-chooser-title-1,
+    #game-chooser-title-2 {
+      padding: 0px 12px;
+    }
+  }
       `;
       document.head.appendChild(style);
     }
+
+    // * BG Image Optimization for all OS
+    // ! Don't touch
 
     //     #main__content {
     //   position: relative;
@@ -2210,14 +2244,14 @@
     <div class="text-white" style="width: 100%; margin: 0 auto;">
       <div style="padding: 96px 0px; background: url('https://betrediofficial.github.io/images/game-chooser-icons/bg.png');">
         <div style="margin-bottom: 42px">
-          <h2 class="text-center" style="font-size: 28px; margin-bottom: 4px">
+          <h2 class="text-center" id="game-chooser-title-1" style="font-size: 28px; margin-bottom: 4px">
             ${
               language === "tr"
                 ? "Ne oynayacağınıza karar veremiyor musunuz?"
                 : "Can’t decide what to play?"
             }
           </h2>
-          <h2 class="text-center" style="font-size: 32px; font-weight: bold">
+          <h2 class="text-center" id="game-chooser-title-2" style="font-size: 32px; font-weight: bold">
             ${
               language === "tr"
                 ? "Şansınızı rastgele bir oyunda deneyin!"
@@ -2227,6 +2261,7 @@
         </div>
         <div
           class="d-flex align-items-center justify-content-center mx-auto"
+          id="game-chooser-wrapper"
           style="
             width: 512px;
             border: 5px solid #7b0111;
@@ -2343,7 +2378,7 @@
         $(".custom--section--2").after(`
 <div class="manually-added-home-widgets container mt-4 mobile-boxes" id="mobileboxes" style="margin-bottom: 10px;">
   <div class="row row-cols-2 row-cols-md-3 row-cols-lg-4 g-1">
-    <a href="casino/group/live-lobby" class="col-4" style="background: #141414;">
+    <a href="casino/group/live-lobby" class="col-4" style="background: #040404;">
       <div class="box-icon-item">
         <img
           src="https://betrediofficial.github.io/images/mobile-view/live_casino.png"
@@ -2354,7 +2389,7 @@
         <span>${language === "tr" ? "Canlı Casino" : "Live Casino"}</span>
       </div>
     </a>
-    <a href="casino/group/lobby" class="col-4" style="background: #141414;">
+    <a href="casino/group/lobby" class="col-4" style="background: #040404;">
       <div class="box-icon-item">
         <img
           src="https://betrediofficial.github.io/images/mobile-view/sloticon.png"
@@ -2365,7 +2400,7 @@
         <span>Slot</span>
       </div>
     </a>
-    <a href="${depositMoneyLink()}" class="col-4" style="background: #141414;">
+    <a href="${depositMoneyLink()}" class="col-4" style="background: #040404;">
       <div class="box-icon-item">
         <img
           src="https://betrediofficial.github.io/images/mobile-view/deposit.png"
@@ -2376,7 +2411,7 @@
         <span>${language === "tr" ? "Para Yatır" : "Deposit"}</span>
       </div>
     </a>
-    <a href="${withdrawMoneyLink()}" class="col-4" style="background: #141414;">
+    <a href="${withdrawMoneyLink()}" class="col-4" style="background: #040404;">
       <div class="box-icon-item">
         <img
           src="https://betrediofficial.github.io/images/mobile-view/withdraw.png"
@@ -2387,7 +2422,7 @@
         <span>${language === "tr" ? "Para Çek" : "Withdraw"}</span>
       </div>
     </a>
-    <a class="col-4" style="background: #141414;" href="promotions?modal=vip&tab=bonus-code">
+    <a class="col-4" style="background: #040404;" href="promotions?modal=vip&tab=bonus-code">
       <div class="box-icon-item">
         <img
           src="https://betrediofficial.github.io/images/mobile-view/bonus.png"
@@ -2398,7 +2433,7 @@
         <span>${language === "tr" ? "Bonus Talep" : "Claim Bonus"}</span>
       </div>
     </a>
-    <a href="promotions" class="col-4" style="background: #141414;">
+    <a href="promotions" class="col-4" style="background: #040404;">
       <div class="box-icon-item">
         <img
           src="https://betrediofficial.github.io/images/mobile-view/promotion.png"
@@ -2409,7 +2444,7 @@
         <span>${language === "tr" ? "Promosyonlar" : "Promotions"}</span>
       </div>
     </a>
-    <a onClick="$('.lowbar__btn')[$('.lowbar__btn').length -1].click()" class="col-4" style="background: #141414;">
+    <a onClick="$('.lowbar__btn')[$('.lowbar__btn').length -1].click()" class="col-4" style="background: #040404;">
       <div class="box-icon-item">
         <img
           src="https://betrediofficial.github.io/images/mobile-view/support.png"
@@ -2424,7 +2459,7 @@
       language === "tr"
         ? "https://betredi109.com/tr/trade"
         : "https://betredi109.com/en/trade"
-    }" target="_blank" class="col-4" style="background: #141414;">
+    }" target="_blank" class="col-4" style="background: #040404;">
       <div class="box-icon-item">
       <svg class="svg-icon" style="margin: 0 auto 4px auto; width: 26px !important; height: 26px !important;"><use href="/static/media/sprite.1cea5f3c17045e69440504bcd887b333.svg#chart" xlink:href="/static/media/sprite.1cea5f3c17045e69440504bcd887b333.svg#chart"></use></svg>
         <span>${language === "tr" ? "Borsa" : "Trade"}</span>
@@ -2447,8 +2482,10 @@
     }
 
     function bottomMenuWidget(isMobile) {
-      if ($("#bottomMenuWidgedContainer").length > 0) $("#bottomMenuWidgedContainer").remove();
-      $("#main-slider .container").after(`
+      if ($(".bottomMenuWidgedContainer").length > 0){
+        return;
+      }
+      $(".section:first").after(`
 <div class="manually-added-home-widgets bottomMenuWidgedContainer" id="bottomMenuWidgedContainer" style="margin-bottom: 10px;">
   <div class="bottom-menu-widget" style="flex: 1 1 calc(25% - 10px); text-align: center;">
     <a href="casino/category/exclusive">
