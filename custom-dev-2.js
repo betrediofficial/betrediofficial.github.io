@@ -1310,7 +1310,7 @@
     }
 
     function initialize() {
-alert('initialized 2')
+
       removeOriginalMainSlider();
 
       insertCustomMainSlider();
