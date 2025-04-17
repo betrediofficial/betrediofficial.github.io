@@ -1478,6 +1478,7 @@
             $sidebarLinks.querySelectorAll(".sidebar__link");
           linksToRemove.forEach((link) => link.remove());
 
+          // --casino for hover
           const newLinksHTML = `
         <a class="sidebar__link sidebar__link--casino" href="/casino/slots" style="background: url('https://betrediofficial.github.io/images/aside-links/slot.png') left center / cover no-repeat;"></a>
         <a class="sidebar__link sidebar__link--casino" href="/casino" style="background: url('https://betrediofficial.github.io/images/aside-links/casino.png') left center / cover no-repeat;"></a>
