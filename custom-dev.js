@@ -1480,10 +1480,8 @@
 
           const newLinksHTML = `
         <a class="sidebar__link sidebar__link--slot" href="/slot" style="background: url('https://betrediofficial.github.io/images/aside-links/slot.png') left center / cover no-repeat;">
-          <span>SLOT</span>
         </a>
         <a class="sidebar__link sidebar__link--casino" href="/casino" style="background: url('https://betrediofficial.github.io/images/aside-links/casino.png') left center / cover no-repeat;">
-          <span>CASINO</span>
         </a>
       `;
           $sidebarLinks.insertAdjacentHTML("beforeend", newLinksHTML);
