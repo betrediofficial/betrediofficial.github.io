@@ -2117,6 +2117,11 @@
     #game-chooser-title-2 {
       font-size: 24px !important;
     }
+
+    #game-chooser-title-1,
+    #game-chooser-title-2 {
+      padding: 0px 12px;
+    }
   }
       `;
 
@@ -2368,7 +2373,7 @@
         $(".custom--section--2").after(`
 <div class="manually-added-home-widgets container mt-4 mobile-boxes" id="mobileboxes" style="margin-bottom: 10px;">
   <div class="row row-cols-2 row-cols-md-3 row-cols-lg-4 g-1">
-    <a href="casino/group/live-lobby" class="col-4" style="background: #141414;">
+    <a href="casino/group/live-lobby" class="col-4" style="background: #040404;">
       <div class="box-icon-item">
         <img
           src="https://betrediofficial.github.io/images/mobile-view/live_casino.png"
@@ -2379,7 +2384,7 @@
         <span>${language === "tr" ? "Canlı Casino" : "Live Casino"}</span>
       </div>
     </a>
-    <a href="casino/group/lobby" class="col-4" style="background: #141414;">
+    <a href="casino/group/lobby" class="col-4" style="background: #040404;">
       <div class="box-icon-item">
         <img
           src="https://betrediofficial.github.io/images/mobile-view/sloticon.png"
@@ -2390,7 +2395,7 @@
         <span>Slot</span>
       </div>
     </a>
-    <a href="${depositMoneyLink()}" class="col-4" style="background: #141414;">
+    <a href="${depositMoneyLink()}" class="col-4" style="background: #040404;">
       <div class="box-icon-item">
         <img
           src="https://betrediofficial.github.io/images/mobile-view/deposit.png"
@@ -2401,7 +2406,7 @@
         <span>${language === "tr" ? "Para Yatır" : "Deposit"}</span>
       </div>
     </a>
-    <a href="${withdrawMoneyLink()}" class="col-4" style="background: #141414;">
+    <a href="${withdrawMoneyLink()}" class="col-4" style="background: #040404;">
       <div class="box-icon-item">
         <img
           src="https://betrediofficial.github.io/images/mobile-view/withdraw.png"
@@ -2412,7 +2417,7 @@
         <span>${language === "tr" ? "Para Çek" : "Withdraw"}</span>
       </div>
     </a>
-    <a class="col-4" style="background: #141414;" href="promotions?modal=vip&tab=bonus-code">
+    <a class="col-4" style="background: #040404;" href="promotions?modal=vip&tab=bonus-code">
       <div class="box-icon-item">
         <img
           src="https://betrediofficial.github.io/images/mobile-view/bonus.png"
@@ -2423,7 +2428,7 @@
         <span>${language === "tr" ? "Bonus Talep" : "Claim Bonus"}</span>
       </div>
     </a>
-    <a href="promotions" class="col-4" style="background: #141414;">
+    <a href="promotions" class="col-4" style="background: #040404;">
       <div class="box-icon-item">
         <img
           src="https://betrediofficial.github.io/images/mobile-view/promotion.png"
@@ -2434,7 +2439,7 @@
         <span>${language === "tr" ? "Promosyonlar" : "Promotions"}</span>
       </div>
     </a>
-    <a onClick="$('.lowbar__btn')[$('.lowbar__btn').length -1].click()" class="col-4" style="background: #141414;">
+    <a onClick="$('.lowbar__btn')[$('.lowbar__btn').length -1].click()" class="col-4" style="background: #040404;">
       <div class="box-icon-item">
         <img
           src="https://betrediofficial.github.io/images/mobile-view/support.png"
@@ -2449,7 +2454,7 @@
       language === "tr"
         ? "https://betredi109.com/tr/trade"
         : "https://betredi109.com/en/trade"
-    }" target="_blank" class="col-4" style="background: #141414;">
+    }" target="_blank" class="col-4" style="background: #040404;">
       <div class="box-icon-item">
       <svg class="svg-icon" style="margin: 0 auto 4px auto; width: 26px !important; height: 26px !important;"><use href="/static/media/sprite.1cea5f3c17045e69440504bcd887b333.svg#chart" xlink:href="/static/media/sprite.1cea5f3c17045e69440504bcd887b333.svg#chart"></use></svg>
         <span>${language === "tr" ? "Borsa" : "Trade"}</span>
