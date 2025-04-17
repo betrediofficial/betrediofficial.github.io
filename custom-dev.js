@@ -1112,11 +1112,13 @@
           e.preventDefault();
           const href = $(this).attr("href");
 
-          history.pushState({}, "", href);
-          $("#main__content").empty();
-          setTimeout(() => {
-            initialize();
-          }, 300);
+          if (window.location.pathname !== href) {
+            history.pushState({}, "", href);
+
+            setTimeout(() => {
+              initialize();
+            }, 100);
+          }
         }
       );
     }
