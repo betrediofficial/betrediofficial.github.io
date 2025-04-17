@@ -1480,8 +1480,16 @@
 
           // --casino for hover
           const newLinksHTML = `
-        <a class="sidebar__link sidebar__link--casino" href="/casino/slots" style="background: url('https://betrediofficial.github.io/images/aside-links/slot.png') left center / cover no-repeat;"></a>
-        <a class="sidebar__link sidebar__link--casino" href="/casino" style="background: url('https://betrediofficial.github.io/images/aside-links/casino.png') left center / cover no-repeat;"></a>
+        <a class="sidebar__link sidebar__link--casino" href="${
+          language === "tr"
+            ? "https://betredi110.com/tr/casino/slots"
+            : "https://betredi110.com/en/casino/slots"
+        }" style="background: url('https://betrediofficial.github.io/images/aside-links/slot.png') left center / cover no-repeat;"></a>
+        <a class="sidebar__link sidebar__link--casino" href="${
+          language === "tr"
+            ? "https://betredi110.com/tr/casino"
+            : "https://betredi110.com/en/casino"
+        }" style="background: url('https://betrediofficial.github.io/images/aside-links/casino.png') left center / cover no-repeat;"></a>
       `;
           $sidebarLinks.insertAdjacentHTML("beforeend", newLinksHTML);
           $sidebarLinks.classList.add("custom_links_replaced");
@@ -1491,7 +1499,11 @@
           const customDiv = document.createElement("div");
           customDiv.className = "sidebar__links custom_side";
           customDiv.innerHTML = `
-        <a class="sidebar__link sidebar__link--casino w-100" href="https://betredi109.com/en/promotions"
+        <a class="sidebar__link sidebar__link--casino w-100" href="${
+          language === "tr"
+            ? "https://betredi110.com/tr/promotions"
+            : "https://betredi110.com/en/promotions"
+        }"
            style="height: 46px; background: url('https://betrediofficial.github.io/images/aside-links/promotions.png') center center / cover no-repeat;">
         </a>
       `;
@@ -2088,14 +2100,9 @@
     background: #000 !important;
   }
 
-  
-  #game-chooser {
-    display: block !important;
-  }
-
   @media screen and (max-width: 768px) {
     #game-chooser {
-      display: block !important;
+      display: none !important;
     }
   }
       `;
