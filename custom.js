@@ -1170,7 +1170,7 @@
               <a href="https://betredi109.com/tr/promotion/15-casino-yatirim-bonusu-tr"><img src="https://betrediofficial.github.io/images/slider/15Casino.webp" class="slide-image" /></a>
             </div>
             <div class="swiper-slide">
-              <a href="https://betredi109.com/tr/promotion/15-spor-yatirim-bonusu-tr"><img src="https://betrediofficial.github.io/images/slider/15Spor.webp" class="slide-image" /></a>
+              <a href="/promotion/10-spor-yatirim-bonusu-tr"><img src="https://betrediofficial.github.io/images/slider/15Spor.webp" class="slide-image" /></a>
             </div>
             <div class="swiper-slide">
               <a href="https://betredi109.com/tr/promotion/30-casino-discount-tr"><img src="https://betrediofficial.github.io/images/slider/30Discount.webp" class="slide-image" /></a>
