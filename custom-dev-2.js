@@ -2448,7 +2448,7 @@
 
     function bottomMenuWidget(isMobile) {
       if ($("#bottomMenuWidgedContainer").length > 0) $("#bottomMenuWidgedContainer").remove();
-      $(".section:first").append(`
+      $("#main-slider .container").after(`
 <div class="manually-added-home-widgets bottomMenuWidgedContainer" id="bottomMenuWidgedContainer" style="margin-bottom: 10px;">
   <div class="bottom-menu-widget" style="flex: 1 1 calc(25% - 10px); text-align: center;">
     <a href="casino/category/exclusive">
