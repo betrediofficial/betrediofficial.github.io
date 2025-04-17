@@ -1567,6 +1567,7 @@
       section.className = "section custom--section--2 custom--section";
       section.innerHTML = `
 <div class="container" style="position: relative; max-width: 100% !important; margin-bottom: 20px !important; padding-left: 0px !important; padding-right: 0px !important; padding-top: 0px !important; overflow: hidden !important;">
+<div class="providers--marquee--bg" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; background: linear-gradient(to right, rgba(0, 0, 0, 0.8) 0%, transparent 50%, rgba(0, 0, 0, 0.8) 100%);z-index: 1;pointer-events: none;"></div>
   <div class="providers--marquee--bg" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; background: linear-gradient(to right, rgba(0, 0, 0, 1) 0%, #730812 50%, rgba(0, 0, 0, 1) 100%);"></div>
 <div class="providers--marquee">	
 				          <a class="custom--providers--link" href="https://betredi109.com/tr/providers/pragmaticplay">
