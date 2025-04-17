@@ -2043,57 +2043,62 @@
   }
 
   #main-slider .swiper-wrapper {
-  transform: translate3d(0, 0, 0);
-  width: 100% !important;
-  height: 100% !important;
-  box-sizing: content-box !important;
-}
+    transform: translate3d(0, 0, 0);
+    width: 100% !important;
+    height: 100% !important;
+    box-sizing: content-box !important;
+  }
 
-#slot-game-chooser-section a img.slot-game-chooser-item,
-      #casino-game-chooser-section a img.casino-game-chooser-item {
-        transition: 2s transform ease;
-      }
+  #slot-game-chooser-section a img.slot-game-chooser-item,
+  #casino-game-chooser-section a img.casino-game-chooser-item {
+    transition: 2s transform ease;
+  }
 
-      .game-chooser-hovered-effect {
-        transition: 0.35s all ease-out;
-      }
+  .game-chooser-hovered-effect {
+    transition: 0.35s all ease-out;
+  }
 
-      #slot-game-chooser-section:hover .game-chooser-hovered-effect,
-      #casino-game-chooser-section:hover .game-chooser-hovered-effect {
-        opacity: 1 !important;
-      }
+  #slot-game-chooser-section:hover .game-chooser-hovered-effect,
+  #casino-game-chooser-section:hover .game-chooser-hovered-effect {
+    opacity: 1 !important;
+  }
 
-      #slot-game-chooser-section:hover .play-btn,
-      #casino-game-chooser-section:hover .play-btn {
-        transform: scale(0.75);
-      }
+  #slot-game-chooser-section:hover .play-btn,
+  #casino-game-chooser-section:hover .play-btn {
+    transform: scale(0.75);
+  }
 
-      #spin-game-btn:hover {
-        background: #7b0111 !important;
-      }
+  #spin-game-btn:hover {
+    background: #7b0111 !important;
+  }
 
-      #spin-game-btn:disabled {
-        opacity: 0.5;
-      }
+  #spin-game-btn:disabled {
+    opacity: 0.5;
+  }
 
-      #spin-game-btn:disabled:hover {
-        background: #310204 !important;
-      }
+  #spin-game-btn:disabled:hover {
+    background: #310204 !important;
+  }
 
-      .play-btn {
-        transition: 0.35s all ease-out;
-      }
+  .play-btn {
+    transition: 0.35s all ease-out;
+  }
 
-    }
-
-    #main__content {
+  #main__content {
     background: #000 !important;
+  }
+
+  @media screen and (max-width: 768px) {
+    #game-chooser {
+      display: none !important;
     }
-
-
+  }
       `;
       document.head.appendChild(style);
     }
+
+    // * BG Image Optimization for all OS
+    // ! Don't touch
 
     //     #main__content {
     //   position: relative;
