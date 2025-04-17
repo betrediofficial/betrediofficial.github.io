@@ -2111,11 +2111,11 @@
     }
 
     #game-chooser-title-1 {
-      font-size: 18px !important;
+      font-size: 20px !important;
     }
 
     #game-chooser-title-2 {
-      font-size: 22px !important;
+      font-size: 24px !important;
     }
   }
       `;
