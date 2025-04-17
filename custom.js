@@ -2464,7 +2464,9 @@
     }
 
     function bottomMenuWidget(isMobile) {
-      if ($("#bottomMenuWidgedContainer").length > 0) $("#bottomMenuWidgedContainer").remove();
+      if ($("#bottomMenuWidgedContainer").length > 0){
+        return  $("#bottomMenuWidgedContainer").show();
+      }
       $(".section:first").after(`
 <div class="manually-added-home-widgets bottomMenuWidgedContainer" id="bottomMenuWidgedContainer" style="margin-bottom: 10px;">
   <div class="bottom-menu-widget" style="flex: 1 1 calc(25% - 10px); text-align: center;">
