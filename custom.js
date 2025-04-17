@@ -2112,6 +2112,9 @@
       document.head.appendChild(style);
     }
 
+    // * BG Image Optimization for all OS
+    // ! Don't touch
+
     //     #main__content {
     //   position: relative;
     //   z-index: 1;
