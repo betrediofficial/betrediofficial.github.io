@@ -1815,7 +1815,7 @@
 				          </a>
 				        
 				          <a class="custom--providers--link" href=${
-                    langugage === "tr"
+                    language === "tr"
                       ? "https://betredi110.com/tr/providers/eagaming"
                       : "https://betredi110.com/en/providers/eagaming"
                   }>
@@ -1823,7 +1823,7 @@
 				          </a>
 				        
 				          <a class="custom--providers--link" href=${
-                    langugage === "tr"
+                    language === "tr"
                       ? "https://betredi110.com/tr/providers/concept"
                       : "https://betredi110.com/en/providers/concept"
                   }>
@@ -1831,7 +1831,7 @@
 				          </a>
 				        
 				          <a class="custom--providers--link" href=${
-                    langugage === "tr"
+                    language === "tr"
                       ? "https://betredi110.com/tr/providers/cq9"
                       : "https://betredi110.com/en/providers/cq9"
                   }>
@@ -1839,7 +1839,7 @@
 				          </a>
 				        
 				          <a class="custom--providers--link" href=${
-                    langugage === "tr"
+                    language === "tr"
                       ? "https://betredi110.com/tr/providers/ctgaming"
                       : "https://betredi110.com/en/providers/ctgaming"
                   }>
@@ -1847,7 +1847,7 @@
 				          </a>
 				        
 				          <a class="custom--providers--link" href=${
-                    langugage === "tr"
+                    language === "tr"
                       ? "https://betredi110.com/tr/providers/everymatrix"
                       : "https://betredi110.com/en/providers/everymatrix"
                   }>
@@ -1855,7 +1855,7 @@
 				          </a>
 				        
 				          <a class="custom--providers--link" href=${
-                    langugage === "tr"
+                    language === "tr"
                       ? "https://betredi110.com/tr/providers/evoplay"
                       : "https://betredi110.com/en/providers/evoplay"
                   }>
@@ -1863,7 +1863,7 @@
 				          </a>
 				        
 				          <a class="custom--providers--link" href=${
-                    langugage === "tr"
+                    language === "tr"
                       ? "https://betredi110.com/tr/providers/ezugi"
                       : "https://betredi110.com/en/providers/ezugi"
                   }>
@@ -1871,7 +1871,7 @@
 				          </a>
 				        
 				          <a class="custom--providers--link" href=${
-                    langugage === "tr"
+                    language === "tr"
                       ? "https://betredi110.com/tr/providers/fazi"
                       : "https://betredi110.com/en/providers/fazi"
                   }>
@@ -1879,7 +1879,7 @@
 				          </a>
 				        
 				          <a class="custom--providers--link" href=${
-                    langugage === "tr"
+                    language === "tr"
                       ? "https://betredi110.com/tr/providers/fugaso"
                       : "https://betredi110.com/en/providers/fugaso"
                   }>
@@ -1887,7 +1887,7 @@
 				          </a>
 				        
 				          <a class="custom--providers--link" href=${
-                    langugage === "tr"
+                    language === "tr"
                       ? "https://betredi110.com/tr/providers/gamebeat"
                       : "https://betredi110.com/en/providers/gamebeat"
                   }>
@@ -1895,7 +1895,7 @@
 				          </a>
 				        
 				          <a class="custom--providers--link" href=${
-                    langugage === "tr"
+                    language === "tr"
                       ? "https://betredi110.com/tr/providers/gaming7777"
                       : "https://betredi110.com/en/providers/gaming7777"
                   }>
@@ -1903,7 +1903,7 @@
 				          </a>
 				        
 				          <a class="custom--providers--link" href=${
-                    langugage === "tr"
+                    language === "tr"
                       ? "https://betredi110.com/tr/providers/genii"
                       : "https://betredi110.com/en/providers/genii"
                   }>
@@ -1911,7 +1911,7 @@
 				          </a>
 				        
 				          <a class="custom--providers--link" href=${
-                    langugage === "tr"
+                    language === "tr"
                       ? "https://betredi110.com/tr/providers/givme"
                       : "https://betredi110.com/en/providers/givme"
                   }>
@@ -1919,7 +1919,7 @@
 				          </a>
 				        
 				          <a class="custom--providers--link" href=${
-                    langugage === "tr"
+                    language === "tr"
                       ? "https://betredi110.com/tr/providers/goldenhero"
                       : "https://betredi110.com/en/providers/goldenhero"
                   }>
@@ -1927,7 +1927,7 @@
 				          </a>
 				        
 				          <a class="custom--providers--link" href=${
-                    langugage === "tr"
+                    language === "tr"
                       ? "https://betredi110.com/tr/providers/habanero"
                       : "https://betredi110.com/en/providers/habanero"
                   }>
@@ -1935,7 +1935,7 @@
 				          </a>
 				        
 				          <a class="custom--providers--link" href=${
-                    langugage === "tr"
+                    language === "tr"
                       ? "https://betredi110.com/tr/providers/hogaming"
                       : "https://betredi110.com/en/providers/hogaming"
                   }>
@@ -1943,7 +1943,7 @@
 				          </a>
 				        
 				          <a class="custom--providers--link" href=${
-                    langugage === "tr"
+                    language === "tr"
                       ? "https://betredi110.com/tr/providers/hollegames"
                       : "https://betredi110.com/en/providers/hollegames"
                   }>
@@ -1951,7 +1951,7 @@
 				          </a>
 				        
 				          <a class="custom--providers--link" href=${
-                    langugage === "tr"
+                    language === "tr"
                       ? "https://betredi110.com/tr/providers/igrosoft"
                       : "https://betredi110.com/en/providers/igrosoft"
                   }>
@@ -1959,7 +1959,7 @@
 				          </a>
 				        
 				          <a class="custom--providers--link" href=${
-                    langugage === "tr"
+                    language === "tr"
                       ? "https://betredi110.com/tr/providers/irondog"
                       : "https://betredi110.com/en/providers/irondog"
                   }>
@@ -1967,7 +1967,7 @@
 				          </a>
 				        
 				          <a class="custom--providers--link" href=${
-                    langugage === "tr"
+                    language === "tr"
                       ? "https://betredi110.com/tr/providers/jaderabbit"
                       : "https://betredi110.com/en/providers/jaderabbit"
                   }>
@@ -1975,7 +1975,7 @@
 				          </a>
 				        
 				          <a class="custom--providers--link" href=${
-                    langugage === "tr"
+                    language === "tr"
                       ? "https://betredi110.com/tr/providers/jdb"
                       : "https://betredi110.com/en/providers/jdb"
                   }>
@@ -1983,7 +1983,7 @@
 				          </a>
 				        
 				          <a class="custom--providers--link" href=${
-                    langugage === "tr"
+                    language === "tr"
                       ? "https://betredi110.com/tr/providers/kalamba"
                       : "https://betredi110.com/en/providers/kalamba"
                   }>
@@ -1991,7 +1991,7 @@
 				          </a>
 				        
 				          <a class="custom--providers--link" href=${
-                    langugage === "tr"
+                    language === "tr"
                       ? "https://betredi110.com/tr/providers/kiron"
                       : "https://betredi110.com/en/providers/kiron"
                   }>
@@ -1999,7 +1999,7 @@
 				          </a>
 				        
 				          <a class="custom--providers--link" href=${
-                    langugage === "tr"
+                    language === "tr"
                       ? "https://betredi110.com/tr/providers/leander"
                       : "https://betredi110.com/en/providers/leander"
                   }>
@@ -2007,7 +2007,7 @@
 				          </a>
 				        
 				          <a class="custom--providers--link" href=${
-                    langugage === "tr"
+                    language === "tr"
                       ? "https://betredi110.com/tr/providers/leap"
                       : "https://betredi110.com/en/providers/leap"
                   }>
@@ -2015,7 +2015,7 @@
 				          </a>
 				        
 				          <a class="custom--providers--link" href=${
-                    langugage === "tr"
+                    language === "tr"
                       ? "https://betredi110.com/tr/providers/livegames"
                       : "https://betredi110.com/en/providers/livegames"
                   }>
@@ -2023,7 +2023,7 @@
 				          </a>
 				        
 				          <a class="custom--providers--link" href=${
-                    langugage === "tr"
+                    language === "tr"
                       ? "https://betredi110.com/tr/providers/lucky"
                       : "https://betredi110.com/en/providers/lucky"
                   }>
