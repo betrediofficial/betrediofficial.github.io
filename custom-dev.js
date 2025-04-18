@@ -2476,7 +2476,7 @@
       height: 25vh !important;
     }
 
-    #main-slider .mySwiper .swiper-slide a {
+    #main-slider .swiper-slide a {
       height: 100% !important;
     }
   }
@@ -2615,7 +2615,7 @@
       const gameChooserSection = `
   <div class="manually-added-home-widgets" id="game-chooser" style="width: 100%; margin: 48px auto">
     <div class="text-white" style="width: 100%; margin: 0 auto;">
-      <div style="padding: 96px 0px; background: url('https://betrediofficial.github.io/images/game-chooser-icons/bg.png');">
+      <div style="padding: 128px 0px; background: url('https://betrediofficial.github.io/images/game-chooser-icons/bg.png');">
         <div style="margin-bottom: 42px">
           <h2 class="text-center" id="game-chooser-title-1" style="font-size: 28px; margin-bottom: 4px">
             ${
