@@ -2451,7 +2451,7 @@
 
   @media screen and (max-width: 768px) {
     #game-chooser-wrapper {
-      width: 100% !important;
+      width: 92% !important;
     }
 
     #slot-game-chooser-section,
