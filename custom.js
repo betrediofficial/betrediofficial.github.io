@@ -1082,8 +1082,8 @@
             <div class="swiper-slide">
               <a href="${
                 language === "tr"
-                  ? "https://betredi110.com/tr/promotion/10-spor-yatirim-bonusu-tr"
-                  : "https://betredi110.com/en/promotion/10-spor-yatirim-bonusu-tr"
+                  ? "https://betredi110.com/tr/promotion/15-spor-yatirim-bonusu-tr"
+                  : "https://betredi110.com/en/promotion/15-spor-yatirim-bonusu-tr"
               }">
                 <img src="https://betrediofficial.github.io/images/slider/15Spor.webp" class="slide-image" />
               </a>
