@@ -1076,7 +1076,11 @@
                   ? "https://betredi110.com/tr/promotion/15-casino-yatirim-bonusu-tr"
                   : "https://betredi110.com/en/promotion/15-casino-yatirim-bonusu-tr"
               }">
-                <img src="https://betrediofficial.github.io/images/slider/15Casino.webp" class="slide-image" />
+                ${
+                  isMobile()
+                    ? '<img src="https://betrediofficial.github.io/images/mobile-main-slider/15casino.webp" class="slide-image" />'
+                    : '<img src="https://betrediofficial.github.io/images/slider/15Casino.webp" class="slide-image" />'
+                }
               </a>
             </div>
             <div class="swiper-slide">
@@ -1085,7 +1089,11 @@
                   ? "https://betredi110.com/tr/promotion/15-spor-yatirim-bonusu-tr"
                   : "https://betredi110.com/en/promotion/15-spor-yatirim-bonusu-tr"
               }">
-                <img src="https://betrediofficial.github.io/images/slider/15Spor.webp" class="slide-image" />
+                ${
+                  isMobile()
+                    ? '<img src="https://betrediofficial.github.io/images/mobile-main-slider/15spor.webp" class="slide-image" />'
+                    : '<img src="https://betrediofficial.github.io/images/slider/15Spor.webp" class="slide-image" />'
+                }
               </a>
             </div>
             <div class="swiper-slide">
@@ -1094,7 +1102,11 @@
                   ? "https://betredi110.com/tr/promotion/30-casino-discount-tr"
                   : "https://betredi110.com/en/promotion/30-casino-discount-tr"
               }">
-                <img src="https://betrediofficial.github.io/images/slider/30Discount.webp" class="slide-image" />
+                ${
+                  isMobile()
+                    ? '<img src="https://betrediofficial.github.io/images/mobile-main-slider/30casino.webp" class="slide-image" />'
+                    : '<img src="https://betrediofficial.github.io/images/slider/30Discount.webp" class="slide-image" />'
+                }
               </a>
             </div>
             <div class="swiper-slide">
@@ -1103,7 +1115,11 @@
                   ? "https://betredi110.com/tr/promotion/50-slot-yatirim-bonusu-tr"
                   : "https://betredi110.com/en/promotion/50-slot-yatirim-bonusu-tr"
               }">
-                <img src="https://betrediofficial.github.io/images/slider/50Slot.webp" class="slide-image" />
+                ${
+                  isMobile()
+                    ? '<img src="https://betrediofficial.github.io/images/mobile-main-slider/50slot.webp" class="slide-image" />'
+                    : '<img src="https://betrediofficial.github.io/images/slider/50Slot.webp" class="slide-image" />'
+                }
               </a>
             </div>
             <div class="swiper-slide">
@@ -1112,7 +1128,11 @@
                   ? "https://betredi110.com/tr/promotion/100-freespin-deneme-bonusu-trrf"
                   : "https://betredi110.com/en/promotion/100-freespin-deneme-bonusu-trrf"
               }">
-                <img src="https://betrediofficial.github.io/images/slider/100Freespin.webp" class="slide-image" />
+                ${
+                  isMobile()
+                    ? '<img src="https://betrediofficial.github.io/images/mobile-main-slider/100freespin.webp" class="slide-image" />'
+                    : '<img src="https://betrediofficial.github.io/images/slider/100Freespin.webp" class="slide-image" />'
+                }
               </a>
             </div>
             <div class="swiper-slide">
@@ -1524,7 +1544,11 @@
       section.innerHTML = `
 <div class="container" style="position: relative; max-width: 100% !important; margin-bottom: 20px !important; padding-left: 0px !important; padding-right: 0px !important; padding-top: 0px !important; overflow: hidden !important;">
 <div class="providers--marquee--bg" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; background: linear-gradient(to right, rgba(0, 0, 0, 0.8) 0%, transparent 50%, rgba(0, 0, 0, 0.8) 100%);z-index: 1;pointer-events: none;"></div>
-  <div class="providers--marquee--bg" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; background: linear-gradient(to right, rgba(0, 0, 0, 1) 0%, #7a0603 50%, rgba(0, 0, 0, 1) 100%);"></div>
+${
+  isMobile
+    ? `<div class="providers--marquee--bg" style="background: linear-gradient(to right, rgb(0, 0, 0) 0%, #6c0c09 50%, rgb(0, 0, 0) 100%); position: absolute; top: 0; left: 0; width: 100%; height: 100%;"></div>`
+    : `<div class="providers--marquee--bg" style="background: linear-gradient(to right, rgba(0, 0, 0, 1) 0%, #7a0603 50%, rgba(0, 0, 0, 1) 100%); position: absolute; top: 0; left: 0; width: 100%; height: 100%;"></div>`
+}
 <div class="providers--marquee">	
 				          <a class="custom--providers--link" href=${
                     language === "tr"
@@ -2472,6 +2496,14 @@
     #game-chooser-title-2 {
       padding: 0px 12px;
     }
+
+    #main-slider .mySwiper {
+      height: 25vh !important;
+    }
+
+    #main-slider .swiper-slide a {
+      height: 100% !important;
+    }
   }
       `;
       document.head.appendChild(style);
@@ -2610,7 +2642,7 @@
       const gameChooserSection = `
   <div class="manually-added-home-widgets" id="game-chooser" style="width: 100%; margin: 48px auto">
     <div class="text-white" style="width: 100%; margin: 0 auto;">
-      <div style="padding: 96px 0px; background: url('https://betrediofficial.github.io/images/game-chooser-icons/bg.png');">
+      <div style="padding: 128px 0px; background: url('https://betrediofficial.github.io/images/game-chooser-icons/bg.png');">
         <div style="margin-bottom: 42px">
           <h2 class="text-center" id="game-chooser-title-1" style="font-size: 28px; margin-bottom: 4px">
             ${

@@ -1080,7 +1080,7 @@
                   : "https://betredi110.com/en/promotion/15-casino-yatirim-bonusu-tr"
               }">
                 ${
-                  isMobile
+                  isMobile()
                     ? '<img src="https://betrediofficial.github.io/images/mobile-main-slider/15casino.webp" class="slide-image" />'
                     : '<img src="https://betrediofficial.github.io/images/slider/15Casino.webp" class="slide-image" />'
                 }
@@ -1093,7 +1093,7 @@
                   : "https://betredi110.com/en/promotion/15-spor-yatirim-bonusu-tr"
               }">
                 ${
-                  isMobile
+                  isMobile()
                     ? '<img src="https://betrediofficial.github.io/images/mobile-main-slider/15spor.webp" class="slide-image" />'
                     : '<img src="https://betrediofficial.github.io/images/slider/15Spor.webp" class="slide-image" />'
                 }
@@ -1106,7 +1106,7 @@
                   : "https://betredi110.com/en/promotion/30-casino-discount-tr"
               }">
                 ${
-                  isMobile
+                  isMobile()
                     ? '<img src="https://betrediofficial.github.io/images/mobile-main-slider/30casino.webp" class="slide-image" />'
                     : '<img src="https://betrediofficial.github.io/images/slider/30Discount.webp" class="slide-image" />'
                 }
@@ -1119,7 +1119,7 @@
                   : "https://betredi110.com/en/promotion/50-slot-yatirim-bonusu-tr"
               }">
                 ${
-                  isMobile
+                  isMobile()
                     ? '<img src="https://betrediofficial.github.io/images/mobile-main-slider/50slot.webp" class="slide-image" />'
                     : '<img src="https://betrediofficial.github.io/images/slider/50Slot.webp" class="slide-image" />'
                 }
@@ -1132,7 +1132,7 @@
                   : "https://betredi110.com/en/promotion/100-freespin-deneme-bonusu-trrf"
               }">
                 ${
-                  isMobile
+                  isMobile()
                     ? '<img src="https://betrediofficial.github.io/images/mobile-main-slider/100freespin.webp" class="slide-image" />'
                     : '<img src="https://betrediofficial.github.io/images/slider/100Freespin.webp" class="slide-image" />'
                 }
