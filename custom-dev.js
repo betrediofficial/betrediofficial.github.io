@@ -2476,8 +2476,8 @@
       height: 25vh !important;
     }
 
-    #main-slider .mySwiper .swiper-slide {
-      height: 25vh !important;
+    #main-slider .mySwiper .swiper-slide a {
+      height: 100% !important;
     }
   }
       `;
