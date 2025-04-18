@@ -1188,7 +1188,11 @@
            <div class="swiper-wrapper" style="transform: translate3d(0px, 0px, 0px);">
  
              <div class="swiper-slide" data-swiper-slide-index="0" style="width: 339px; margin-right: 12px; background: none !important;">
-               <a class="mini-game mini-game--carousel mini-game--no-layer" href="/tr/casino/games/ebetlab-crash-originals" style="background: none !important;">
+               <a class="mini-game mini-game--carousel mini-game--no-layer" href=${
+                 language === "tr"
+                   ? "https://betredi110.com/tr/casino/games/ebetlab-crash-originals"
+                   : "https://betredi110.com/en/casino/games/ebetlab-crash-originals"
+               } style="background: none !important;">
                  <span class="mini-game__img">
                    <img loading="lazy" src="https://betrediofficial.github.io/images/mini-games-v2/crash.webp" alt="">
                  </span>
@@ -1196,7 +1200,11 @@
              </div>
  
              <div class="swiper-slide" data-swiper-slide-index="1" style="width: 339px; margin-right: 12px; background: none !important;">
-               <a class="mini-game mini-game--carousel mini-game--no-layer" href="/tr/casino/games/ebetlab-dice-originals" style="background: none !important;">
+               <a class="mini-game mini-game--carousel mini-game--no-layer" href=${
+                 language === "tr"
+                   ? "https://betredi110.com/tr/casino/games/ebetlab-dice-originals"
+                   : "https://betredi110.com/en/casino/games/ebetlab-dice-originals"
+               } style="background: none !important;">
                  <span class="mini-game__img">
                    <img loading="lazy" src="https://betrediofficial.github.io/images/mini-games-v2/dice.webp" alt="">
                  </span>
@@ -1204,7 +1212,11 @@
              </div>
  
              <div class="swiper-slide" data-swiper-slide-index="2" style="width: 339px; margin-right: 12px; background: none !important;">
-               <a class="mini-game mini-game--carousel mini-game--no-layer" href="/tr/casino/games/ebetlab-mines-originals" style="background: none !important;">
+               <a class="mini-game mini-game--carousel mini-game--no-layer" href=${
+                 language === "tr"
+                   ? "https://betredi110.com/tr/casino/games/ebetlab-mines-originals"
+                   : "https://betredi110.com/en/casino/games/ebetlab-mines-originals"
+               } style="background: none !important;">
                  <span class="mini-game__img">
                    <img loading="lazy" src="https://betrediofficial.github.io/images/mini-games-v2/mines.webp" alt="">
                  </span>
@@ -1212,7 +1224,11 @@
              </div>
  
              <div class="swiper-slide" data-swiper-slide-index="3" style="width: 339px; margin-right: 12px; background: none !important;">
-               <a class="mini-game mini-game--carousel mini-game--no-layer" href="/tr/casino/games/ebetlab-plinko-originals" style="background: none !important;">
+               <a class="mini-game mini-game--carousel mini-game--no-layer" href=${
+                 language === "tr"
+                   ? "https://betredi110.com/tr/casino/games/ebetlab-plinko-originals"
+                   : "https://betredi110.com/en/casino/games/ebetlab-plinko-originals"
+               } style="background: none !important;">
                  <span class="mini-game__img">
                    <img loading="lazy" src="https://betrediofficial.github.io/images/mini-games-v2/plinko.webp" alt="">
                  </span>
@@ -1510,331 +1526,659 @@
 <div class="providers--marquee--bg" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; background: linear-gradient(to right, rgba(0, 0, 0, 0.8) 0%, transparent 50%, rgba(0, 0, 0, 0.8) 100%);z-index: 1;pointer-events: none;"></div>
   <div class="providers--marquee--bg" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; background: linear-gradient(to right, rgba(0, 0, 0, 1) 0%, #730812 50%, rgba(0, 0, 0, 1) 100%);"></div>
 <div class="providers--marquee">	
-				          <a class="custom--providers--link" href="d/tr/providers/pragmaticplay">
+				          <a class="custom--providers--link" href=${
+                    language === "tr"
+                      ? "https://betredi110.com/tr/providers/pragmaticplay"
+                      : "https://betredi110.com/en/providers/pragmaticplay"
+                  }>
 				            <img class="custom--providers--image" src="https://vendor-provider.fra1.cdn.digitaloceanspaces.com/ebetlab/game-providers/light/pragmaticplay.svg" alt="">
 				          </a>
 				        
-				          <a class="custom--providers--link" href="d/tr/providers/evolution">
+				          <a class="custom--providers--link" href=${
+                    language === "tr"
+                      ? "https://betredi110.com/tr/providers/evolution"
+                      : "https://betredi110.com/en/providers/evolution"
+                  }>
 				            <img class="custom--providers--image" src="https://vendor-provider.fra1.cdn.digitaloceanspaces.com/ebetlab/game-providers/light/Evolution%20Gaming.svg" alt="">
 				          </a>
 				        
-				          <a class="custom--providers--link" href="d/tr/providers/hacksaw">
+				          <a class="custom--providers--link" href=${
+                    language === "tr"
+                      ? "https://betredi110.com/tr/providers/hacksaw"
+                      : "https://betredi110.com/tr/providers/hacksaw"
+                  }>
 				            <img class="custom--providers--image" src="https://vendor-provider.fra1.cdn.digitaloceanspaces.com/ebetlab/game-providers/light/hacksaw.svg" alt="">
 				          </a>
 				        
-				          <a class="custom--providers--link" href="d/tr/providers/egt">
+				          <a class="custom--providers--link" href=${
+                    language === "tr"
+                      ? "https://betredi110.com/tr/providers/egt"
+                      : "https://betredi110.com/tr/providers/egt"
+                  }>
 				            <img class="custom--providers--image" src="https://vendor-provider.fra1.cdn.digitaloceanspaces.com/ebetlab/game-providers/light/egt.svg" alt="">
 				          </a>
 				        
-				          <a class="custom--providers--link" href="d/tr/providers/nolimitcity">
+				          <a class="custom--providers--link" href=${
+                    language === "tr"
+                      ? "https://betredi110.com/tr/providers/nolimitcity"
+                      : "https://betredi110.com/en/providers/nolimitcity"
+                  }>
 				            <img class="custom--providers--image" src="https://vendor-provider.fra1.cdn.digitaloceanspaces.com/ebetlab/game-providers/light/NoLimitCity.svg" alt="">
 				          </a>
 				        
-				          <a class="custom--providers--link" href="d/tr/providers/egt-interactive">
+				          <a class="custom--providers--link" href=${
+                    language === "tr"
+                      ? "https://betredi110.com/tr/providers/egt-interactive"
+                      : "https://betredi110.com/en/providers/egt-interactive"
+                  }>
 				            <img class="custom--providers--image" src="https://vendor-provider.fra1.cdn.digitaloceanspaces.com/ebetlab/game-providers/light/amusnet.svg" alt="">
 				          </a>
 				        
-				          <a class="custom--providers--link" href="d/tr/providers/playson">
+				          <a class="custom--providers--link" href=${
+                    language === "tr"
+                      ? "https://betredi110.com/tr/providers/playson"
+                      : "https://betredi110.com/en/providers/playson"
+                  }>
 				            <img class="custom--providers--image" src="https://vendor-provider.fra1.cdn.digitaloceanspaces.com/ebetlab/game-providers/light/playson.svg" alt="">
 				          </a>
 				        
-				          <a class="custom--providers--link" href="d/tr/providers/netent">
+				          <a class="custom--providers--link" href=${
+                    language === "tr"
+                      ? "https://betredi110.com/tr/providers/netent"
+                      : "https://betredi110.com/en/providers/netent"
+                  }>
 				            <img class="custom--providers--image" src="https://vendor-provider.fra1.cdn.digitaloceanspaces.com/ebetlab/game-providers/light/netent.svg" alt="">
 				          </a>
 				        
-				          <a class="custom--providers--link" href="d/tr/providers/popiplay">
+				          <a class="custom--providers--link" href=${
+                    language === "tr"
+                      ? "https://betredi110.com/tr/providers/popiplay"
+                      : "https://betredi110.com/en/providers/popiplay"
+                  }>
 				            <img class="custom--providers--image" src="https://vendor-provider.fra1.cdn.digitaloceanspaces.com/ebetlab/game-providers/light/popiplay.svg" alt="">
 				          </a>
 				        
-				          <a class="custom--providers--link" href="d/tr/providers/thunderkick">
+				          <a class="custom--providers--link" href="${
+                    language === "tr"
+                      ? "https://betredi110.com/tr/providers/thunderkick"
+                      : "https://betredi110.com/en/providers/thunderkick"
+                  }">
 				            <img class="custom--providers--image" src="https://vendor-provider.fra1.cdn.digitaloceanspaces.com/ebetlab/game-providers/light/thunderkick.svg" alt="">
 				          </a>
 				        
-				          <a class="custom--providers--link" href="d/tr/providers/booming">
+				          <a class="custom--providers--link" href=${
+                    language === "tr"
+                      ? "https://betredi110.com/tr/providers/booming"
+                      : "https://betredi110.com/en/providers/booming"
+                  }>
 				            <img class="custom--providers--image" src="https://vendor-provider.fra1.cdn.digitaloceanspaces.com/ebetlab/game-providers/light/booming.svg" alt="">
 				          </a>
 				        
-				          <a class="custom--providers--link" href="d/tr/providers/redtiger">
+				          <a class="custom--providers--link" href=${
+                    language === "tr"
+                      ? "https://betredi110.com/tr/providers/redtiger"
+                      : "https://betredi110.com/en/providers/redtiger"
+                  }>
 				            <img class="custom--providers--image" src="https://vendor-provider.fra1.cdn.digitaloceanspaces.com/ebetlab/game-providers/light/Red%20Tiger%20Gaming.svg" alt="">
 				          </a>
 				        
-				          <a class="custom--providers--link" href="d/tr/providers/pragmaticlive">
+				          <a class="custom--providers--link" href=${
+                    language === "tr"
+                      ? "https://betredi110.com/tr/providers/pragmaticlive"
+                      : "https://betredi110.com/en/providers/pragmaticlive"
+                  }>
 				            <img class="custom--providers--image" src="https://vendor-provider.fra1.cdn.digitaloceanspaces.com/ebetlab/game-providers/light/pragmatic-live-light.svg" alt="">
 				          </a>
 				        
-				          <a class="custom--providers--link" href="d/tr/providers/bgaming">
+				          <a class="custom--providers--link" href=${
+                    language === "tr"
+                      ? "https://betredi110.com/tr/providers/bgaming"
+                      : "https://betredi110.com/en/providers/bgaming"
+                  }>
 				            <img class="custom--providers--image" src="https://vendor-provider.fra1.cdn.digitaloceanspaces.com/ebetlab/game-providers/light/softswiss.svg" alt="">
 				          </a>
 				        
-				          <a class="custom--providers--link" href="d/tr/providers/gameart">
+				          <a class="custom--providers--link" href=${
+                    language === "tr"
+                      ? "https://betredi110.com/tr/providers/gameart"
+                      : "https://betredi110.com/en/providers/gameart"
+                  }>
 				            <img class="custom--providers--image" src="https://vendor-provider.fra1.cdn.digitaloceanspaces.com/ebetlab/game-providers/light/gameart.svg" alt="">
 				          </a>
 				        
-				          <a class="custom--providers--link" href="d/tr/providers/fantasma">
+				          <a class="custom--providers--link" href=${
+                    language === "tr"
+                      ? "https://betredi110.com/tr/providers/fantasma"
+                      : "https://betredi110.com/tr/providers/fantasma"
+                  }>
 				            <img class="custom--providers--image" src="https://vendor-provider.fra1.cdn.digitaloceanspaces.com/ebetlab/game-providers/light/fantasma.svg" alt="">
 				          </a>
 				        
-				          <a class="custom--providers--link" href="d/tr/providers/slotmill">
+				          <a class="custom--providers--link" href=${
+                    language == "tr"
+                      ? "https://betredi110.com/tr/providers/slotmill"
+                      : "https://betredi110.com/en/providers/slotmill"
+                  }>
 				            <img class="custom--providers--image" src="https://vendor-provider.fra1.cdn.digitaloceanspaces.com/ebetlab/game-providers/light/slotmill.svg" alt="">
 				          </a>
 				        
-				          <a class="custom--providers--link" href="d/tr/providers/1spin4win">
+				          <a class="custom--providers--link" href=${
+                    language === "tr"
+                      ? "https://betredi110.com/tr/providers/1spin4win"
+                      : "https://betredi110.com/en/providers/1spin4win"
+                  }>
 				            <img class="custom--providers--image" src="https://vendor-provider.fra1.cdn.digitaloceanspaces.com/ebetlab/game-providers/light/1spin4win.svg" alt="">
 				          </a>
 				        
-				          <a class="custom--providers--link" href="d/tr/providers/aesexybaccarat">
+				          <a class="custom--providers--link" href=${
+                    language === "tr"
+                      ? "https://betredi110.com/tr/providers/aesexybaccarat"
+                      : "https://betredi110.com/en/providers/aesexybaccarat"
+                  }>
 				            <img class="custom--providers--image" src="https://vendor-provider.fra1.cdn.digitaloceanspaces.com/ebetlab/game-providers/light/AE%20Sexy.svg" alt="">
 				          </a>
 				        
-				          <a class="custom--providers--link" href="d/tr/providers/5men">
+				          <a class="custom--providers--link" href=${
+                    language === "tr"
+                      ? "https://betredi110.com/tr/providers/5men"
+                      : "https://betredi110.com/en/providers/5men"
+                  }>
 				            <img class="custom--providers--image" src="https://vendor-provider.fra1.cdn.digitaloceanspaces.com/ebetlab/game-providers/light/5men.svg" alt="">
 				          </a>
 				        
-				          <a class="custom--providers--link" href="d/tr/providers/novomatic">
+				          <a class="custom--providers--link" href=${
+                    language === "tr"
+                      ? "https://betredi110.com/tr/providers/novomatic"
+                      : "https://betredi110.com/en/providers/novomatic"
+                  }>
 				            <img class="custom--providers--image" src="https://vendor-provider.fra1.cdn.digitaloceanspaces.com/ebetlab/game-providers/light/novomatic.svg" alt="">
 				          </a>
 				        
-				          <a class="custom--providers--link" href="d/tr/providers/7mojos">
+				          <a class="custom--providers--link" href=${
+                    language === "tr"
+                      ? "https://betredi110.com/tr/providers/7mojos"
+                      : "https://betredi110.com/en/providers/7mojos"
+                  }>
 				            <img class="custom--providers--image" src="https://vendor-provider.fra1.cdn.digitaloceanspaces.com/ebetlab/game-providers/light/7%20mojos.svg" alt="">
 				          </a>
 				        
-				          <a class="custom--providers--link" href="d/tr/providers/alg">
+				          <a class="custom--providers--link" href=${
+                    language === "tr"
+                      ? "https://betredi110.com/tr/providers/alg"
+                      : "https://betredi110.com/en/providers/alg"
+                  }>
 				            <img class="custom--providers--image" src="https://vendor-provider.fra1.cdn.digitaloceanspaces.com/ebetlab/game-providers/light/alg.svg" alt="">
 				          </a>
 				        
-				          <a class="custom--providers--link" href="d/tr/providers/amatic">
+				          <a class="custom--providers--link" href=${
+                    language === "tr"
+                      ? "https://betredi110.com/tr/providers/amatic"
+                      : "https://betredi110.com/en/providers/amatic"
+                  }>
 				            <img class="custom--providers--image" src="https://vendor-provider.fra1.cdn.digitaloceanspaces.com/ebetlab/game-providers/light/amatic.svg" alt="">
 				          </a>
 				        
-				          <a class="custom--providers--link" href="d/tr/providers/endorphina">
+				          <a class="custom--providers--link" href=${
+                    language === "tr"
+                      ? "https://betredi110.com/tr/providers/endorphina"
+                      : "https://betredi110.com/en/providers/endorphina"
+                  }>
 				            <img class="custom--providers--image" src="https://vendor-provider.fra1.cdn.digitaloceanspaces.com/ebetlab/game-providers/light/endorphina.svg" alt="">
 				          </a>
 				        
-				          <a class="custom--providers--link" href="d/tr/providers/pgsoft">
+				          <a class="custom--providers--link" href=${
+                    language === "tr"
+                      ? "https://betredi110.com/tr/providers/pgsoft"
+                      : "https://betredi110.com/en/providers/pgsoft"
+                  }>
 				            <img class="custom--providers--image" src="https://vendor-provider.fra1.cdn.digitaloceanspaces.com/ebetlab/game-providers/light/Pocket%20Games%20Soft.svg" alt="">
 				          </a>
 				        
-				          <a class="custom--providers--link" href="d/tr/providers/apollo">
+				          <a class="custom--providers--link" href=${
+                    language === "tr"
+                      ? "https://betredi110.com/tr/providers/apollo"
+                      : "https://betredi110.com/en/providers/apollo"
+                  }>
 				            <img class="custom--providers--image" src="https://vendor-provider.fra1.cdn.digitaloceanspaces.com/ebetlab/game-providers/light/Apollo%20Games.svg" alt="">
 				          </a>
 				        
-				          <a class="custom--providers--link" href="d/tr/providers/asiagaming">
+				          <a class="custom--providers--link" href=${
+                    language === "tr"
+                      ? "https://betredi110.com/tr/providers/asiagaming"
+                      : "https://betredi110.com/en/providers/asiagaming"
+                  }>
 				            <img class="custom--providers--image" src="https://vendor-provider.fra1.cdn.digitaloceanspaces.com/ebetlab/game-providers/light/Asia%20Gaming.svg" alt="">
 				          </a>
 				        
-				          <a class="custom--providers--link" href="d/tr/providers/atomic">
+				          <a class="custom--providers--link" href=${
+                    language === "tr"
+                      ? "https://betredi110.com/tr/providers/atomic"
+                      : "https://betredi110.com/en/providers/atomic"
+                  }>
 				            <img class="custom--providers--image" src="https://vendor-provider.fra1.cdn.digitaloceanspaces.com/ebetlab/game-providers/light/atomic%20slot.svg" alt="">
 				          </a>
 				        
-				          <a class="custom--providers--link" href="d/tr/providers/beefee">
+				          <a class="custom--providers--link" href=${
+                    language === "tr"
+                      ? "https://betredi110.com/tr/providers/beefee"
+                      : "https://betredi110.com/en/providers/beefee"
+                  }>
 				            <img class="custom--providers--image" src="https://vendor-provider.fra1.cdn.digitaloceanspaces.com/ebetlab/game-providers/light/BeeFee%20Games.svg" alt="">
 				          </a>
 				        
-				          <a class="custom--providers--link" href="d/tr/providers/belatra">
+				          <a class="custom--providers--link" href=${
+                    language === "tr"
+                      ? "https://betredi110.com/tr/providers/belatra"
+                      : "https://betredi110.com/en/providers/belatra"
+                  }>
 				            <img class="custom--providers--image" src="https://vendor-provider.fra1.cdn.digitaloceanspaces.com/ebetlab/game-providers/light/belatra.svg" alt="">
 				          </a>
 				        
-				          <a class="custom--providers--link" href="d/tr/providers/betsolutions">
+				          <a class="custom--providers--link" href=${
+                    language === "tr"
+                      ? "https://betredi110.com/tr/providers/betsolutions"
+                      : "https://betredi110.com/en/providers/betsolutions"
+                  }>
 				            <img class="custom--providers--image" src="https://vendor-provider.fra1.cdn.digitaloceanspaces.com/ebetlab/game-providers/light/Betsolutions.svg" alt="">
 				          </a>
 				        
-				          <a class="custom--providers--link" href="d/tr/providers/bet2tech">
+				          <a class="custom--providers--link" href=${
+                    language === "tr"
+                      ? "https://betredi110.com/tr/providers/bet2tech"
+                      : "https://betredi110.com/en/providers/bet2tech"
+                  }>
 				            <img class="custom--providers--image" src="https://vendor-provider.fra1.cdn.digitaloceanspaces.com/ebetlab/game-providers/light/bet%202%20tech.svg" alt="">
 				          </a>
 				        
-				          <a class="custom--providers--link" href="d/tr/providers/beterlive">
+				          <a class="custom--providers--link" href=${
+                    language === "tr"
+                      ? "https://betredi110.com/tr/providers/beterlive"
+                      : "https://betredi110.com/en/providers/beterlive"
+                  }>
 				            <img class="custom--providers--image" src="https://vendor-provider.fra1.cdn.digitaloceanspaces.com/ebetlab/game-providers/light/beterlive.svg" alt="">
 				          </a>
 				        
-				          <a class="custom--providers--link" href="d/tr/providers/betradarvs">
+				          <a class="custom--providers--link" href=${
+                    language === "tr"
+                      ? "https://betredi110.com/tr/providers/betradarvs"
+                      : "https://betredi110.com/en/providers/betradarvs"
+                  }>
 				            <img class="custom--providers--image" src="https://vendor-provider.fra1.cdn.digitaloceanspaces.com/ebetlab/game-providers/light/Betradar%20Virtual%20sports.svg" alt="">
 				          </a>
 				        
-				          <a class="custom--providers--link" href="d/tr/providers/betsoft">
+				          <a class="custom--providers--link" href=${
+                    language === "tr"
+                      ? "https://betredi110.com/tr/providers/betsoft"
+                      : "https://betredi110.com/en/providers/betsoft"
+                  }>
 				            <img class="custom--providers--image" src="https://vendor-provider.fra1.cdn.digitaloceanspaces.com/ebetlab/game-providers/light/betsoft.svg" alt="">
 				          </a>
 				        
-				          <a class="custom--providers--link" href="d/tr/providers/eagaming">
+				          <a class="custom--providers--link" href=${
+                    langugage === "tr"
+                      ? "https://betredi110.com/tr/providers/eagaming"
+                      : "https://betredi110.com/en/providers/eagaming"
+                  }>
 				            <img class="custom--providers--image" src="https://vendor-provider.fra1.cdn.digitaloceanspaces.com/ebetlab/game-providers/light/ea%20gaming.svg" alt="">
 				          </a>
 				        
-				          <a class="custom--providers--link" href="https://betredi110.com/tr/providers/concept">
+				          <a class="custom--providers--link" href=${
+                    langugage === "tr"
+                      ? "https://betredi110.com/tr/providers/concept"
+                      : "https://betredi110.com/en/providers/concept"
+                  }>
 				            <img class="custom--providers--image" src="https://vendor-provider.fra1.cdn.digitaloceanspaces.com/ebetlab/game-providers/light/Concept%20Gaming.svg" alt="">
 				          </a>
 				        
-				          <a class="custom--providers--link" href="https://betredi110.com/tr/providers/cq9">
+				          <a class="custom--providers--link" href=${
+                    langugage === "tr"
+                      ? "https://betredi110.com/tr/providers/cq9"
+                      : "https://betredi110.com/en/providers/cq9"
+                  }>
 				            <img class="custom--providers--image" src="https://vendor-provider.fra1.cdn.digitaloceanspaces.com/ebetlab/game-providers/light/CQ9.svg" alt="">
 				          </a>
 				        
-				          <a class="custom--providers--link" href="https://betredi110.com/tr/providers/ctgaming">
+				          <a class="custom--providers--link" href=${
+                    langugage === "tr"
+                      ? "https://betredi110.com/tr/providers/ctgaming"
+                      : "https://betredi110.com/en/providers/ctgaming"
+                  }>
 				            <img class="custom--providers--image" src="https://vendor-provider.fra1.cdn.digitaloceanspaces.com/ebetlab/game-providers/light/CT%20Gaming.svg" alt="">
 				          </a>
 				        
-				          <a class="custom--providers--link" href="https://betredi110.com/tr/providers/everymatrix">
+				          <a class="custom--providers--link" href=${
+                    langugage === "tr"
+                      ? "https://betredi110.com/tr/providers/everymatrix"
+                      : "https://betredi110.com/en/providers/everymatrix"
+                  }>
 				            <img class="custom--providers--image" src="https://vendor-provider.fra1.cdn.digitaloceanspaces.com/ebetlab/game-providers/light/everymatrix.svg" alt="">
 				          </a>
 				        
-				          <a class="custom--providers--link" href="https://betredi110.com/tr/providers/evoplay">
+				          <a class="custom--providers--link" href=${
+                    langugage === "tr"
+                      ? "https://betredi110.com/tr/providers/evoplay"
+                      : "https://betredi110.com/en/providers/evoplay"
+                  }>
 				            <img class="custom--providers--image" src="https://vendor-provider.fra1.cdn.digitaloceanspaces.com/ebetlab/game-providers/light/evoplay.svg" alt="">
 				          </a>
 				        
-				          <a class="custom--providers--link" href="https://betredi110.com/tr/providers/ezugi">
+				          <a class="custom--providers--link" href=${
+                    langugage === "tr"
+                      ? "https://betredi110.com/tr/providers/ezugi"
+                      : "https://betredi110.com/en/providers/ezugi"
+                  }>
 				            <img class="custom--providers--image" src="https://vendor-provider.fra1.cdn.digitaloceanspaces.com/ebetlab/game-providers/light/ezugi.svg" alt="">
 				          </a>
 				        
-				          <a class="custom--providers--link" href="https://betredi110.com/tr/providers/fazi">
+				          <a class="custom--providers--link" href=${
+                    langugage === "tr"
+                      ? "https://betredi110.com/tr/providers/fazi"
+                      : "https://betredi110.com/en/providers/fazi"
+                  }>
 				            <img class="custom--providers--image" src="https://vendor-provider.fra1.cdn.digitaloceanspaces.com/ebetlab/game-providers/light/fazi.svg" alt="">
 				          </a>
 				        
-				          <a class="custom--providers--link" href="https://betredi110.com/tr/providers/fugaso">
+				          <a class="custom--providers--link" href=${
+                    langugage === "tr"
+                      ? "https://betredi110.com/tr/providers/fugaso"
+                      : "https://betredi110.com/en/providers/fugaso"
+                  }>
 				            <img class="custom--providers--image" src="https://vendor-provider.fra1.cdn.digitaloceanspaces.com/ebetlab/game-providers/light/fugaso.svg" alt="">
 				          </a>
 				        
-				          <a class="custom--providers--link" href="https://betredi110.com/tr/providers/gamebeat">
+				          <a class="custom--providers--link" href=${
+                    langugage === "tr"
+                      ? "https://betredi110.com/tr/providers/gamebeat"
+                      : "https://betredi110.com/en/providers/gamebeat"
+                  }>
 				            <img class="custom--providers--image" src="https://vendor-provider.fra1.cdn.digitaloceanspaces.com/ebetlab/game-providers/light/gamebeat.svg" alt="">
 				          </a>
 				        
-				          <a class="custom--providers--link" href="https://betredi110.com/tr/providers/gaming7777">
+				          <a class="custom--providers--link" href=${
+                    langugage === "tr"
+                      ? "https://betredi110.com/tr/providers/gaming7777"
+                      : "https://betredi110.com/en/providers/gaming7777"
+                  }>
 				            <img class="custom--providers--image" src="https://vendor-provider.fra1.cdn.digitaloceanspaces.com/ebetlab/game-providers/light/Gaming%207777.svg" alt="">
 				          </a>
 				        
-				          <a class="custom--providers--link" href="https://betredi110.com/tr/providers/genii">
+				          <a class="custom--providers--link" href=${
+                    langugage === "tr"
+                      ? "https://betredi110.com/tr/providers/genii"
+                      : "https://betredi110.com/en/providers/genii"
+                  }>
 				            <img class="custom--providers--image" src="https://vendor-provider.fra1.cdn.digitaloceanspaces.com/ebetlab/game-providers/light/Genii.svg" alt="">
 				          </a>
 				        
-				          <a class="custom--providers--link" href="https://betredi110.com/tr/providers/givme">
+				          <a class="custom--providers--link" href=${
+                    langugage === "tr"
+                      ? "https://betredi110.com/tr/providers/givme"
+                      : "https://betredi110.com/en/providers/givme"
+                  }>
 				            <img class="custom--providers--image" src="https://vendor-provider.fra1.cdn.digitaloceanspaces.com/ebetlab/game-providers/light/givme%20games.svg" alt="">
 				          </a>
 				        
-				          <a class="custom--providers--link" href="https://betredi110.com/tr/providers/goldenhero">
+				          <a class="custom--providers--link" href=${
+                    langugage === "tr"
+                      ? "https://betredi110.com/tr/providers/goldenhero"
+                      : "https://betredi110.com/en/providers/goldenhero"
+                  }>
 				            <img class="custom--providers--image" src="https://vendor-provider.fra1.cdn.digitaloceanspaces.com/ebetlab/game-providers/light/golden%20hero.svg" alt="">
 				          </a>
 				        
-				          <a class="custom--providers--link" href="https://betredi110.com/tr/providers/habanero">
+				          <a class="custom--providers--link" href=${
+                    langugage === "tr"
+                      ? "https://betredi110.com/tr/providers/habanero"
+                      : "https://betredi110.com/en/providers/habanero"
+                  }>
 				            <img class="custom--providers--image" src="https://vendor-provider.fra1.cdn.digitaloceanspaces.com/ebetlab/game-providers/light/habanero.svg" alt="">
 				          </a>
 				        
-				          <a class="custom--providers--link" href="https://betredi110.com/tr/providers/hogaming">
+				          <a class="custom--providers--link" href=${
+                    langugage === "tr"
+                      ? "https://betredi110.com/tr/providers/hogaming"
+                      : "https://betredi110.com/en/providers/hogaming"
+                  }>
 				            <img class="custom--providers--image" src="https://vendor-provider.fra1.cdn.digitaloceanspaces.com/ebetlab/game-providers/light/HoGaming.svg" alt="">
 				          </a>
 				        
-				          <a class="custom--providers--link" href="https://betredi110.com/tr/providers/hollegames">
+				          <a class="custom--providers--link" href=${
+                    langugage === "tr"
+                      ? "https://betredi110.com/tr/providers/hollegames"
+                      : "https://betredi110.com/en/providers/hollegames"
+                  }>
 				            <img class="custom--providers--image" src="https://vendor-provider.fra1.cdn.digitaloceanspaces.com/ebetlab/game-providers/light/hollegames.svg" alt="">
 				          </a>
 				        
-				          <a class="custom--providers--link" href="https://betredi110.com/tr/providers/igrosoft">
+				          <a class="custom--providers--link" href=${
+                    langugage === "tr"
+                      ? "https://betredi110.com/tr/providers/igrosoft"
+                      : "https://betredi110.com/en/providers/igrosoft"
+                  }>
 				            <img class="custom--providers--image" src="https://vendor-provider.fra1.cdn.digitaloceanspaces.com/ebetlab/game-providers/light/Igrosoft.svg" alt="">
 				          </a>
 				        
-				          <a class="custom--providers--link" href="https://betredi110.com/tr/providers/irondog">
+				          <a class="custom--providers--link" href=${
+                    langugage === "tr"
+                      ? "https://betredi110.com/tr/providers/irondog"
+                      : "https://betredi110.com/en/providers/irondog"
+                  }>
 				            <img class="custom--providers--image" src="https://vendor-provider.fra1.cdn.digitaloceanspaces.com/ebetlab/game-providers/light/irondog.svg" alt="">
 				          </a>
 				        
-				          <a class="custom--providers--link" href="https://betredi110.com/tr/providers/jaderabbit">
+				          <a class="custom--providers--link" href=${
+                    langugage === "tr"
+                      ? "https://betredi110.com/tr/providers/jaderabbit"
+                      : "https://betredi110.com/en/providers/jaderabbit"
+                  }>
 				            <img class="custom--providers--image" src="https://vendor-provider.fra1.cdn.digitaloceanspaces.com/ebetlab/game-providers/light/jaderabbit.svg" alt="">
 				          </a>
 				        
-				          <a class="custom--providers--link" href="https://betredi110.com/tr/providers/jdb">
+				          <a class="custom--providers--link" href=${
+                    langugage === "tr"
+                      ? "https://betredi110.com/tr/providers/jdb"
+                      : "https://betredi110.com/en/providers/jdb"
+                  }>
 				            <img class="custom--providers--image" src="https://vendor-provider.fra1.cdn.digitaloceanspaces.com/ebetlab/game-providers/light/JDB.svg" alt="">
 				          </a>
 				        
-				          <a class="custom--providers--link" href="https://betredi110.com/tr/providers/kalamba">
+				          <a class="custom--providers--link" href=${
+                    langugage === "tr"
+                      ? "https://betredi110.com/tr/providers/kalamba"
+                      : "https://betredi110.com/en/providers/kalamba"
+                  }>
 				            <img class="custom--providers--image" src="https://vendor-provider.fra1.cdn.digitaloceanspaces.com/ebetlab/game-providers/light/kalamba.svg" alt="">
 				          </a>
 				        
-				          <a class="custom--providers--link" href="https://betredi110.com/tr/providers/kiron">
+				          <a class="custom--providers--link" href=${
+                    langugage === "tr"
+                      ? "https://betredi110.com/tr/providers/kiron"
+                      : "https://betredi110.com/en/providers/kiron"
+                  }>
 				            <img class="custom--providers--image" src="https://vendor-provider.fra1.cdn.digitaloceanspaces.com/ebetlab/game-providers/light/Kiron%20Interactive.svg" alt="">
 				          </a>
 				        
-				          <a class="custom--providers--link" href="https://betredi110.com/tr/providers/leander">
+				          <a class="custom--providers--link" href=${
+                    langugage === "tr"
+                      ? "https://betredi110.com/tr/providers/leander"
+                      : "https://betredi110.com/en/providers/leander"
+                  }>
 				            <img class="custom--providers--image" src="https://vendor-provider.fra1.cdn.digitaloceanspaces.com/ebetlab/game-providers/light/Leander.svg" alt="">
 				          </a>
 				        
-				          <a class="custom--providers--link" href="https://betredi110.com/tr/providers/leap">
+				          <a class="custom--providers--link" href=${
+                    langugage === "tr"
+                      ? "https://betredi110.com/tr/providers/leap"
+                      : "https://betredi110.com/en/providers/leap"
+                  }>
 				            <img class="custom--providers--image" src="https://vendor-provider.fra1.cdn.digitaloceanspaces.com/ebetlab/game-providers/light/Leap.svg" alt="">
 				          </a>
 				        
-				          <a class="custom--providers--link" href="https://betredi110.com/tr/providers/livegames">
+				          <a class="custom--providers--link" href=${
+                    langugage === "tr"
+                      ? "https://betredi110.com/tr/providers/livegames"
+                      : "https://betredi110.com/en/providers/livegames"
+                  }>
 				            <img class="custom--providers--image" src="https://vendor-provider.fra1.cdn.digitaloceanspaces.com/ebetlab/game-providers/light/Live%20Games.svg" alt="">
 				          </a>
 				        
-				          <a class="custom--providers--link" href="https://betredi110.com/tr/providers/lucky">
+				          <a class="custom--providers--link" href=${
+                    langugage === "tr"
+                      ? "https://betredi110.com/tr/providers/lucky"
+                      : "https://betredi110.com/en/providers/lucky"
+                  }>
 				            <img class="custom--providers--image" src="https://vendor-provider.fra1.cdn.digitaloceanspaces.com/ebetlab/game-providers/light/lucky.svg" alt="">
 				          </a>
 				        
-				          <a class="custom--providers--link" href="https://betredi110.com/tr/providers/luckystreak">
+				          <a class="custom--providers--link" href=${
+                    language === "tr"
+                      ? "https://betredi110.com/tr/providers/luckystreak"
+                      : "https://betredi110.com/en/providers/luckystreak"
+                  }>
 				            <img class="custom--providers--image" src="https://vendor-provider.fra1.cdn.digitaloceanspaces.com/ebetlab/game-providers/light/luckystreak.svg" alt="">
 				          </a>
 				        
-				          <a class="custom--providers--link" href="https://betredi110.com/tr/providers/mascotgaming">
+				          <a class="custom--providers--link" href=${
+                    language === "tr"
+                      ? "https://betredi110.com/tr/providers/mascotgaming"
+                      : "https://betredi110.com/en/providers/mascotgaming"
+                  }>
 				            <img class="custom--providers--image" src="https://vendor-provider.fra1.cdn.digitaloceanspaces.com/ebetlab/game-providers/light/mascot.svg" alt="">
 				          </a>
 				        
-				          <a class="custom--providers--link" href="https://betredi110.com/tr/providers/merkurgaming">
+				          <a class="custom--providers--link" href=${
+                    language === "tr"
+                      ? "https://betredi110.com/tr/providers/merkurgaming"
+                      : "https://betredi110.com/en/providers/merkurgaming"
+                  }>
 				            <img class="custom--providers--image" src="https://vendor-provider.fra1.cdn.digitaloceanspaces.com/ebetlab/game-providers/light/merkur%20gaming.svg" alt="">
 				          </a>
 				        
-				          <a class="custom--providers--link" href="https://betredi110.com/tr/providers/mplay">
+				          <a class="custom--providers--link" href=${
+                    language === "tr"
+                      ? "https://betredi110.com/tr/providers/mplay"
+                      : "https://betredi110.com/en/providers/mplay"
+                  }>
 				            <img class="custom--providers--image" src="https://vendor-provider.fra1.cdn.digitaloceanspaces.com/ebetlab/game-providers/light/m%20play.svg" alt="">
 				          </a>
 				        
-				          <a class="custom--providers--link" href="https://betredi110.com/tr/providers/mrslotty">
+				          <a class="custom--providers--link" href=${
+                    language === "tr"
+                      ? "https://betredi110.com/tr/providers/mrslotty"
+                      : "https://betredi110.com/en/providers/mrslotty"
+                  }>
 				            <img class="custom--providers--image" src="https://vendor-provider.fra1.cdn.digitaloceanspaces.com/ebetlab/game-providers/light/mrslotty.svg" alt="">
 				          </a>
 				        
-				          <a class="custom--providers--link" href="https://betredi110.com/tr/providers/netgame">
+				          <a class="custom--providers--link" href=${
+                    language === "tr"
+                      ? "https://betredi110.com/tr/providers/netgame"
+                      : "https://betredi110.com/en/providers/netgame"
+                  }>
 				            <img class="custom--providers--image" src="https://vendor-provider.fra1.cdn.digitaloceanspaces.com/ebetlab/game-providers/light/netgame.svg" alt="">
 				          </a>
 				        
-				          <a class="custom--providers--link" href="https://betredi110.com/tr/providers/nucleus">
+				          <a class="custom--providers--link" href=${
+                    language === "tr"
+                      ? "https://betredi110.com/tr/providers/nucleus"
+                      : "https://betredi110.com/en/providers/nucleus"
+                  }>
 				            <img class="custom--providers--image" src="https://vendor-provider.fra1.cdn.digitaloceanspaces.com/ebetlab/game-providers/light/nucleus.svg" alt="">
 				          </a>
 				        
-				          <a class="custom--providers--link" href="https://betredi110.com/tr/providers/oryx">
+				          <a class="custom--providers--link" href=${
+                    language === "tr"
+                      ? "https://betredi110.com/tr/providers/oryx"
+                      : "https://betredi110.com/en/providers/oryx"
+                  }>
 				            <img class="custom--providers--image" src="https://vendor-provider.fra1.cdn.digitaloceanspaces.com/ebetlab/game-providers/light/oryx.svg" alt="">
 				          </a>
 				        
-				          <a class="custom--providers--link" href="https://betredi110.com/tr/providers/playtech">
+				          <a class="custom--providers--link" href=${
+                    language === "tr"
+                      ? "https://betredi110.com/tr/providers/playtech"
+                      : "https://betredi110.com/en/providers/playtech"
+                  }>
 				            <img class="custom--providers--image" src="https://vendor-provider.fra1.cdn.digitaloceanspaces.com/ebetlab/game-providers/light/Playtech%20slots.svg" alt="">
 				          </a>
 				        
-				          <a class="custom--providers--link" href="https://betredi110.com/tr/providers/quickspin">
+				          <a class="custom--providers--link" href=${
+                    language === "tr"
+                      ? "https://betredi110.com/tr/providers/quickspin"
+                      : "https://betredi110.com/en/providers/quickspin"
+                  }>
 				            <img class="custom--providers--image" src="https://vendor-provider.fra1.cdn.digitaloceanspaces.com/ebetlab/game-providers/light/quickspin.svg" alt="">
 				          </a>
 				        
-				          <a class="custom--providers--link" href="https://betredi110.com/tr/providers/redrake">
+				          <a class="custom--providers--link" href=${
+                    language === "tr"
+                      ? "https://betredi110.com/tr/providers/redrake"
+                      : "https://betredi110.com/en/providers/redrake"
+                  }>
 				            <img class="custom--providers--image" src="https://vendor-provider.fra1.cdn.digitaloceanspaces.com/ebetlab/game-providers/light/Red%20Rake%20Gaming.svg" alt="">
 				          </a>
 				        
-				          <a class="custom--providers--link" href="https://betredi110.com/tr/providers/reevo">
+				          <a class="custom--providers--link" href=${
+                    language === "tr"
+                      ? "https://betredi110.com/tr/providers/reevo"
+                      : "https://betredi110.com/en/providers/reevo"
+                  }>
 				            <img class="custom--providers--image" src="https://vendor-provider.fra1.cdn.digitaloceanspaces.com/ebetlab/game-providers/light/reevo.svg" alt="">
 				          </a>
 				        
-				          <a class="custom--providers--link" href="https://betredi110.com/tr/providers/sagaming">
+				          <a class="custom--providers--link" href=${
+                    language === "tr"
+                      ? "https://betredi110.com/tr/providers/sagaming"
+                      : "https://betredi110.com/en/providers/sagaming"
+                  }>
 				            <img class="custom--providers--image" src="https://vendor-provider.fra1.cdn.digitaloceanspaces.com/ebetlab/game-providers/light/SA%20Gaming.svg" alt="">
 				          </a>
 				        
-				          <a class="custom--providers--link" href="https://betredi110.com/tr/providers/salsa">
+				          <a class="custom--providers--link" href=${
+                    language === "tr"
+                      ? "https://betredi110.com/tr/providers/salsa"
+                      : "https://betredi110.com/en/providers/salsa"
+                  }>
 				            <img class="custom--providers--image" src="https://vendor-provider.fra1.cdn.digitaloceanspaces.com/ebetlab/game-providers/light/Salsa%20technology.svg" alt="">
 				          </a>
 				        
-				          <a class="custom--providers--link" href="https://betredi110.com/tr/providers/spinomenal">
+				          <a class="custom--providers--link" href=${
+                    language === "tr"
+                      ? "https://betredi110.com/tr/providers/spinomenal"
+                      : "https://betredi110.com/en/providers/spinomenal"
+                  }>
 				            <img class="custom--providers--image" src="https://vendor-provider.fra1.cdn.digitaloceanspaces.com/ebetlab/game-providers/light/spinomenal.svg" alt="">
 				          </a>
 				        
-				          <a class="custom--providers--link" href="https://betredi110.com/tr/providers/spinza">
+				          <a class="custom--providers--link" href=${
+                    language === "tr"
+                      ? "https://betredi110.com/tr/providers/spinza"
+                      : "https://betredi110.com/en/providers/spinza"
+                  }>
 				            <img class="custom--providers--image" src="https://vendor-provider.fra1.cdn.digitaloceanspaces.com/ebetlab/game-providers/light/spinza.svg" alt="">
 				          </a>
 				        
-				          <a class="custom--providers--link" href="https://betredi110.com/tr/providers/spribe">
+				          <a class="custom--providers--link" href=${
+                    language === "tr"
+                      ? "https://betredi110.com/tr/providers/spribe"
+                      : "https://betredi110.com/en/providers/spribe"
+                  }>
 				            <img class="custom--providers--image" src="https://vendor-provider.fra1.cdn.digitaloceanspaces.com/ebetlab/game-providers/light/spribe.svg" alt="">
 				          </a>
 				        
-				          <a class="custom--providers--link" href="https://betredi110.com/tr/providers/swintt">
+				          <a class="custom--providers--link" href=${
+                    language === "tr"
+                      ? "https://betredi110.com/tr/providers/swintt"
+                      : "https://betredi110.com/en/providers/swintt"
+                  }>
 				            <img class="custom--providers--image" src="https://vendor-provider.fra1.cdn.digitaloceanspaces.com/ebetlab/game-providers/light/swintt.svg" alt="">
 				          </a>
 				        
-				          <a class="custom--providers--link" href="https://betredi110.com/tr/providers/tomhornnative">
+				          <a class="custom--providers--link" href=${
+                    language === "tr"
+                      ? "https://betredi110.com/tr/providers/tomhornnative"
+                      : "https://betredi110.com/en/providers/tomhornnative"
+                  }>
 				            <img class="custom--providers--image" src="https://vendor-provider.fra1.cdn.digitaloceanspaces.com/ebetlab/game-providers/light/tomhorn.svg" alt="">
 				          </a>
 				        
@@ -1842,67 +2186,131 @@
 				            <img class="custom--providers--image" src="https://vendor-provider.fra1.cdn.digitaloceanspaces.com/ebetlab/game-providers/lightuelab.svg" alt="">
 				          </a>
 
-				          <a class="custom--providers--link" href="https://betredi110.com/tr/providers/turbogames">
+				          <a class="custom--providers--link" href=${
+                    language === "tr"
+                      ? "https://betredi110.com/tr/providers/turbogames"
+                      : "https://betredi110.com/en/providers/turbogames"
+                  }>
 				            <img class="custom--providers--image" src="https://vendor-provider.fra1.cdn.digitaloceanspaces.com/ebetlab/game-providers/light/turbogames.svg" alt="">
 				          </a>
 				        
-				          <a class="custom--providers--link" href="https://betredi110.com/tr/providers/tvbet">
+				          <a class="custom--providers--link" href=${
+                    language === "tr"
+                      ? "https://betredi110.com/tr/providers/tvbet"
+                      : "https://betredi110.com/en/providers/tvbet"
+                  }>
 				            <img class="custom--providers--image" src="https://vendor-provider.fra1.cdn.digitaloceanspaces.com/ebetlab/game-providers/light/tv%20bet.svg" alt="">
 				          </a>
 				        
-				          <a class="custom--providers--link" href="https://betredi110.com/tr/providers/vivogaming">
+				          <a class="custom--providers--link" href=${
+                    language === "tr"
+                      ? "https://betredi110.com/tr/providers/vivogaming"
+                      : "https://betredi110.com/en/providers/vivogaming"
+                  }>
 				            <img class="custom--providers--image" src="https://vendor-provider.fra1.cdn.digitaloceanspaces.com/ebetlab/game-providers/light/Vivo%20Gaming.svg" alt="">
 				          </a>
 				        
-				          <a class="custom--providers--link" href="https://betredi110.com/tr/providers/wizard">
+				          <a class="custom--providers--link" href=${
+                    language === "tr"
+                      ? "https://betredi110.com/tr/providers/wizard"
+                      : "https://betredi110.com/en/providers/wizard"
+                  }>
 				            <img class="custom--providers--image" src="https://vendor-provider.fra1.cdn.digitaloceanspaces.com/ebetlab/game-providers/light/wazdan.svg" alt="">
 				          </a>
 				        
-				          <a class="custom--providers--link" href="https://betredi110.com/tr/providers/worldmatch">
+				          <a class="custom--providers--link" href=${
+                    language === "tr"
+                      ? "https://betredi110.com/tr/providers/worldmatch"
+                      : "https://betredi110.com/en/providers/worldmatch"
+                  }>
 				            <img class="custom--providers--image" src="https://vendor-provider.fra1.cdn.digitaloceanspaces.com/ebetlab/game-providers/light/World%20Match.svg" alt="">
 				          </a>
 				        
-				          <a class="custom--providers--link" href="https://betredi110.com/tr/providers/xprogaming">
+				          <a class="custom--providers--link" href=${
+                    language === "tr"
+                      ? "https://betredi110.com/tr/providers/xprogaming"
+                      : "https://betredi110.com/en/providers/xprogaming"
+                  }>
 				            <img class="custom--providers--image" src="https://vendor-provider.fra1.cdn.digitaloceanspaces.com/ebetlab/game-providers/light/XPro%20Gaming.svg" alt="">
 				          </a>
 				        
-				          <a class="custom--providers--link" href="https://betredi110.com/tr/providers/yggdrasil">
+				          <a class="custom--providers--link" href=${
+                    language === "tr"
+                      ? "https://betredi110.com/tr/providers/yggdrasil"
+                      : "https://betredi110.com/en/providers/yggdrasil"
+                  }>
 				            <img class="custom--providers--image" src="https://vendor-provider.fra1.cdn.digitaloceanspaces.com/ebetlab/game-providers/light/yggdrasil.svg" alt="">
 				          </a>
 				        
-				          <a class="custom--providers--link" href="https://betredi110.com/tr/providers/zillion">
+				          <a class="custom--providers--link" href=${
+                    language === "tr"
+                      ? "https://betredi110.com/tr/providers/zillion"
+                      : "https://betredi110.com/en/providers/zillion"
+                  }>
 				            <img class="custom--providers--image" src="https://vendor-provider.fra1.cdn.digitaloceanspaces.com/ebetlab/game-providers/light/zillion.svg" alt="">
 				          </a>
 				        
-				          <a class="custom--providers--link" href="https://betredi110.com/tr/providers/ebetlab">
+				          <a class="custom--providers--link" href=${
+                    language === "tr"
+                      ? "https://betredi110.com/tr/providers/ebetlab"
+                      : "https://betredi110.com/en/providers/ebetlab"
+                  }>
 				            <img class="custom--providers--image" src="https://vendor-provider.fra1.cdn.digitaloceanspaces.com/ebetlab/game-providers/light/originals.svg" alt="">
 				          </a>
 				        
-				          <a class="custom--providers--link" href="https://betredi110.com/tr/providers/imagine-live">
+				          <a class="custom--providers--link" href=${
+                    language === "tr"
+                      ? "https://betredi110.com/tr/providers/imagine-live"
+                      : "https://betredi110.com/en/providers/imagine-live"
+                  }>
 				            <img class="custom--providers--image" src="https://vendor-provider.fra1.cdn.digitaloceanspaces.com/ebetlab/game-providers/light/imageinelive.svg" alt="">
 				          </a>
 				        
-				          <a class="custom--providers--link" href="https://betredi110.com/tr/providers/jiliasia">
+				          <a class="custom--providers--link" href=${
+                    language === "tr"
+                      ? "https://betredi110.com/tr/providers/jiliasia"
+                      : "https://betredi110.com/en/providers/jiliasia"
+                  }>
 				            <img class="custom--providers--image" src="https://vendor-provider.fra1.cdn.digitaloceanspaces.com/ebetlab/game-providers/light/Jiliasia.svg" alt="">
 				          </a>
 				        
-				          <a class="custom--providers--link" href="https://betredi110.com/tr/providers/royal-gaming">
+				          <a class="custom--providers--link" href=${
+                    language === "tr"
+                      ? "https://betredi110.com/tr/providers/royal-gaming"
+                      : "https://betredi110.com/en/providers/royal-gaming"
+                  }>
 				            <img class="custom--providers--image" src="https://vendor-provider.fra1.cdn.digitaloceanspaces.com/ebetlab/game-providers/light/Royal%20Gaming.svg" alt="">
 				          </a>
 				        
-				          <a class="custom--providers--link" href="https://betredi110.com/tr/providers/tada-gaming">
+				          <a class="custom--providers--link" href=${
+                    language === "tr"
+                      ? "https://betredi110.com/tr/providers/tada-gaming"
+                      : "https://betredi110.com/en/providers/tada-gaming"
+                  }>
 				            <img class="custom--providers--image" src="https://vendor-provider.fra1.cdn.digitaloceanspaces.com/ebetlab/game-providers/light/Tada%20Gaming.svg" alt="">
 				          </a>
 				        
-				          <a class="custom--providers--link" href="https://betredi110.com/tr/providers/zeus-play">
+				          <a class="custom--providers--link" href=${
+                    language === "tr"
+                      ? "https://betredi110.com/tr/providers/zeus-play"
+                      : "https://betredi110.com/en/providers/zeus-play"
+                  }>
 				            <img class="custom--providers--image" src="https://vendor-provider.fra1.cdn.digitaloceanspaces.com/ebetlab/game-providers/light/Zeus%20Play.svg" alt="">
 				          </a>
 				        
-				          <a class="custom--providers--link" href="https://betredi110.com/tr/providers/peter-and-sons">
+				          <a class="custom--providers--link" href=${
+                    language === "tr"
+                      ? "https://betredi110.com/tr/providers/peter-and-sons"
+                      : "https://betredi110.com/en/providers/peter-and-sons"
+                  }>
 				            <img class="custom--providers--image" src="https://vendor-provider.fra1.cdn.digitaloceanspaces.com/ebetlab/game-providers/light/Peter%20And%20Sons.svg" alt="">
 				          </a>
 				        
-				          <a class="custom--providers--link" href="https://betredi110.com/tr/providers/topspin">
+				          <a class="custom--providers--link" href=${
+                    language === "tr"
+                      ? "https://betredi110.com/tr/providers/topspin"
+                      : "https://betredi110.com/en/providers/topspin"
+                  }>
 				            <img class="custom--providers--image" src="https://vendor-provider.fra1.cdn.digitaloceanspaces.com/ebetlab/game-providers/light/topspin.svg" alt="">
 				          </a>    
 			</div>
