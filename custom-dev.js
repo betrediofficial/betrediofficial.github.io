@@ -2471,6 +2471,14 @@
     #game-chooser-title-2 {
       padding: 0px 12px;
     }
+
+    #main-slider .mySwiper {
+      height: 25vh !important;
+    }
+
+    #main-slider .mySwiper .swiper-slide {
+      height: 25vh !important;
+    }
   }
       `;
 
