@@ -1079,7 +1079,11 @@
                   ? "https://betredi110.com/tr/promotion/15-casino-yatirim-bonusu-tr"
                   : "https://betredi110.com/en/promotion/15-casino-yatirim-bonusu-tr"
               }">
-                <img src="https://betrediofficial.github.io/images/slider/15Casino.webp" class="slide-image" />
+                <img src=${
+                  isMobile
+                    ? "https://betrediofficial.github.io/images/mobile-main-slider/15casino.webp"
+                    : "https://betrediofficial.github.io/images/slider/15Casino.webp"
+                } class="slide-image" />
               </a>
             </div>
             <div class="swiper-slide">
@@ -1088,7 +1092,11 @@
                   ? "https://betredi110.com/tr/promotion/15-spor-yatirim-bonusu-tr"
                   : "https://betredi110.com/en/promotion/15-spor-yatirim-bonusu-tr"
               }">
-                <img src="https://betrediofficial.github.io/images/slider/15Spor.webp" class="slide-image" />
+                <img src=${
+                  isMobile
+                    ? "https://betrediofficial.github.io/images/mobile-main-slider/15spor.webp"
+                    : "https://betrediofficial.github.io/images/slider/15Spor.webp"
+                } class="slide-image" />
               </a>
             </div>
             <div class="swiper-slide">
@@ -1097,7 +1105,11 @@
                   ? "https://betredi110.com/tr/promotion/30-casino-discount-tr"
                   : "https://betredi110.com/en/promotion/30-casino-discount-tr"
               }">
-                <img src="https://betrediofficial.github.io/images/slider/30Discount.webp" class="slide-image" />
+                <img src=${
+                  isMobile
+                    ? "https://betrediofficial.github.io/images/mobile-main-slider/30casino.webp"
+                    : "https://betrediofficial.github.io/images/slider/30Discount.webp"
+                } class="slide-image" />
               </a>
             </div>
             <div class="swiper-slide">
@@ -1106,7 +1118,11 @@
                   ? "https://betredi110.com/tr/promotion/50-slot-yatirim-bonusu-tr"
                   : "https://betredi110.com/en/promotion/50-slot-yatirim-bonusu-tr"
               }">
-                <img src="https://betrediofficial.github.io/images/slider/50Slot.webp" class="slide-image" />
+                <img src=${
+                  isMobile
+                    ? "https://betrediofficial.github.io/images/mobile-main-slider/50slot.webp"
+                    : "https://betrediofficial.github.io/images/slider/50Slot.webp"
+                } class="slide-image" />
               </a>
             </div>
             <div class="swiper-slide">
@@ -1115,7 +1131,11 @@
                   ? "https://betredi110.com/tr/promotion/100-freespin-deneme-bonusu-trrf"
                   : "https://betredi110.com/en/promotion/100-freespin-deneme-bonusu-trrf"
               }">
-                <img src="https://betrediofficial.github.io/images/slider/100Freespin.webp" class="slide-image" />
+                <img src=${
+                  isMobile
+                    ? "https://betrediofficial.github.io/images/mobile-main-slider/100freespin.webp"
+                    : "https://betrediofficial.github.io/images/slider/100Freespin.webp"
+                } class="slide-image" />
               </a>
             </div>
             <div class="swiper-slide">
