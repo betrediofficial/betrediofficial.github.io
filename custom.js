@@ -2497,7 +2497,7 @@ ${
     }
 
     #main-slider .mySwiper {
-      height: 25vh !important;
+      height: 27vh !important;
     }
 
     #main-slider .swiper-slide a {
