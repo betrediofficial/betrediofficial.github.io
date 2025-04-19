@@ -1004,7 +1004,7 @@
 
         setTimeout(() => {
           $(this).prop("disabled", false);
-          // $(".game-chooser-hovered-effect").css("opacity", 0);
+          $(".game-chooser-hovered-effect").hide(); // veya .css("display", "none")
         }, 2000);
       });
 
@@ -2504,10 +2504,6 @@ ${
 
     #main-slider .swiper-slide a {
       height: 100% !important;
-    }
-
-    .disabled-game-chooser {
-      display: none !important;
     }
   }
       `;
