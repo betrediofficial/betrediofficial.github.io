@@ -1005,16 +1005,14 @@
         setTimeout(() => {
           $(this).prop("disabled", false);
           // $(".game-chooser-hovered-effect").hide();
-          $(".game-chooser-hovered-effect").each(function () {
-            this.style.setProperty("display", "none", "important");
-          });
+          // $(".game-chooser-hovered-effect").each(function () {
+          //   this.style.setProperty("display", "none", "important");
+          // });
+
+          $(".game-chooser-hovered-effect").css("opacity", 0, "importamt");
         }, 2250);
 
-        setTimeout(() => {
-          $(".game-chooser-hovered-effect").each(function () {
-            this.style.removeProperty("display", "flex", "important");
-          });
-        }, 2500);
+        $(".game-chooser-hovered-effect").css("opacity", 1, "important");
       });
 
       // * Game Chooser Logic - END
