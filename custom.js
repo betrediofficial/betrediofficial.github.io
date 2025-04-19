@@ -1036,10 +1036,13 @@
           $(window).on("popstate", function () {
             setTimeout(() => {
               initialize();
+              gameChooserLogic();
             }, 500);
 
             removeHomePageWidgets();
           });
+
+          gameChooserLogic();
         });
       }
     }, 300);
@@ -1135,15 +1138,6 @@
                 }
               </a>
             </div>
-            <div class="swiper-slide">
-              <a href="${
-                language === "tr"
-                  ? "https://betredi110.com/tr/promotion/100-slot-iade-bonusu-rt"
-                  : "https://betredi110.com/en/promotion/100-slot-iade-bonusu-rt"
-              }">
-                <img src="https://betrediofficial.github.io/images/slider/100Slotiade.webp" class="slide-image" />
-              </a>
-            </div>
           </div>
           <div class="swiper-button-next"></div>
           <div class="swiper-button-prev"></div>
@@ -1159,6 +1153,16 @@
         console.log("Custom slider inserted.");
       }
     }
+
+    //     <div class="swiper-slide">
+    //   <a href="${
+    //     language === "tr"
+    //       ? "https://betredi110.com/tr/promotion/100-slot-iade-bonusu-rt"
+    //       : "https://betredi110.com/en/promotion/100-slot-iade-bonusu-rt"
+    //   }">
+    //     <img src="https://betrediofficial.github.io/images/slider/100Slotiade.webp" class="slide-image" />
+    //   </a>
+    // </div>
 
     function initCustomSlider() {
       const swiperEl = document.querySelector("#main-slider .swiper");
@@ -1186,7 +1190,7 @@
     }
 
     function insertCustomMiniGamesSlider() {
-      if ($("#mini-games-wrapper").length > 0) return $("#mini-games-wrapper").show();
+      if ($("#mini-games-wrapper").length > 0) return;
 
       var miniGamesSection = `
      <div class="manually-added-home-widgets section" id="mini-games-wrapper" style="margin-top: 16px !important; margin-bottom: 16px !important;">
@@ -1286,7 +1290,6 @@
     }
 
     function initialize() {
-
       removeOriginalMainSlider();
 
       insertCustomMainSlider();
@@ -1313,8 +1316,6 @@
 
         if (!is_mobile) casinoGames();
 
-        gameChooser()
-
         // miniGames();
 
         // sportsCard();
@@ -1323,17 +1324,15 @@
         // HIDE
         // !is_mobile && hideDefaultGames(50);
         // !is_mobile && hideDefaultGames(1500);
-
-        insertCustomMiniGamesSlider();
-        setTimeout(initCustomMiniGamesSlider, 500);
       }
-
-      // GENERAL
 
       insertCustomSidebarLink();
       injectProvidersMarquee();
+
       is_mobile && mobileBoxes();
 
+      insertCustomMiniGamesSlider();
+      setTimeout(initCustomMiniGamesSlider, 500);
 
       hideBlogSection();
 
@@ -1346,7 +1345,8 @@
       slot_games = getSlotGames();
       casino_games = getCasinoGames();
 
-
+      gameChooser();
+      gameChooserLogic();
 
       if ($(".form__btn span").text().trim() === "Send Request") {
         $(".form__btn span").text("Talep Gönder");
@@ -1457,20 +1457,20 @@
 
           // --casino for hover
           const newLinksHTML = `
-          <a class="sidebar__link sidebar__link--casino" href="${
-            language === "tr"
-              ? "https://betredi110.com/tr/casino/slots"
-              : "https://betredi110.com/en/casino/slots"
-          }" style="background: url('https://betrediofficial.github.io/images/aside-links/slot.png') left center / cover no-repeat;"></a>
-          <a class="sidebar__link sidebar__link--casino" href="${
-            language === "tr"
-              ? "https://betredi110.com/tr/casino"
-              : "https://betredi110.com/en/casino"
-          }" style="background: url('https://betrediofficial.github.io/images/aside-links/casino.png') left center / cover no-repeat;"></a>
-          `;
-            $sidebarLinks.insertAdjacentHTML("beforeend", newLinksHTML);
-            $sidebarLinks.classList.add("custom_links_replaced");
-          }
+        <a class="sidebar__link sidebar__link--casino" href="${
+          language === "tr"
+            ? "https://betredi110.com/tr/casino/slots"
+            : "https://betredi110.com/en/casino/slots"
+        }" style="background: url('https://betrediofficial.github.io/images/aside-links/slot.png') left center / cover no-repeat;"></a>
+        <a class="sidebar__link sidebar__link--casino" href="${
+          language === "tr"
+            ? "https://betredi110.com/tr/casino"
+            : "https://betredi110.com/en/casino"
+        }" style="background: url('https://betrediofficial.github.io/images/aside-links/casino.png') left center / cover no-repeat;"></a>
+      `;
+          $sidebarLinks.insertAdjacentHTML("beforeend", newLinksHTML);
+          $sidebarLinks.classList.add("custom_links_replaced");
+        }
 
         if ($sidebarLinks && !exists) {
           const customDiv = document.createElement("div");
@@ -2498,7 +2498,7 @@ ${
     }
 
     #main-slider .mySwiper {
-      height: 27vh !important;
+      height: 30vh !important;
     }
 
     #main-slider .swiper-slide a {
@@ -2506,6 +2506,7 @@ ${
     }
   }
       `;
+
       document.head.appendChild(style);
     }
 
@@ -2533,7 +2534,7 @@ ${
     // }
 
     function otherGames() {
-      if ($("#digeroyunlari").length > 0) return $("#digeroyunlari").show();
+      if ($("#digeroyunlari").length > 0) return;
 
       var newSection = `
 <div class="manually-added-home-widgets section" id="digeroyunlari">
@@ -2634,10 +2635,7 @@ ${
     // * Game Chooser
 
     function gameChooser() {
-
-      if ($("#game-chooser").length > 0){
-        $("#game-chooser").remove() 
-       }
+      if ($("#game-chooser").length > 0) return;
 
       const gameChooserSection = `
   <div class="manually-added-home-widgets" id="game-chooser" style="width: 100%; margin: 48px auto">
@@ -2768,11 +2766,10 @@ ${
       `;
 
       $("#buy-bonus-games-wrapper").after(gameChooserSection);
-      gameChooserLogic();
     }
 
     function mobileBoxes() {
-      // if ($("#mobileboxes").length > 0) return $("#mobileboxes").show();
+      if ($("#mobileboxes").length > 0) return;
 
       if ($(".custom--section--2").length > 0)
         $(".custom--section--2").after(`
@@ -2898,10 +2895,8 @@ ${
     }
 
     function bottomMenuWidget(isMobile) {
-      if ($(".bottomMenuWidgedContainer").length > 0){
-        return $(".bottomMenuWidgedContainer").show();
-      }
-      $(".section:first").after(`
+      if ($("#bottomMenuWidgedContainer").length > 0) return;
+      $(".section:first").append(`
 <div class="manually-added-home-widgets bottomMenuWidgedContainer" id="bottomMenuWidgedContainer" style="margin-bottom: 10px;">
   <div class="bottom-menu-widget" style="flex: 1 1 calc(25% - 10px); text-align: center;">
     <a href=${
@@ -2950,7 +2945,7 @@ ${
     }
 
     function slotGames() {
-      if ($("#slotoyunlari").length > 0) return $("#slotoyunlari").show();
+      if ($("#slotoyunlari").length > 0) return;
 
       let title = language === "tr" ? "SLOT CASİNO" : "SLOT CASINO";
 
@@ -3153,7 +3148,7 @@ ${
     }
 
     function tgPromo() {
-      if ($("#tgpromo").length > 0) return $("#tgpromo").show();
+      if ($("#tgpromo").length > 0) return;
 
       var newSection = `
 <div class="manually-added-home-widgets section" id="tgpromo" style="margin-bottom: 14px; margin-top: 14px;">
@@ -3181,7 +3176,7 @@ ${
     }
 
     function casinoGames() {
-      if ($("#casinooyunlari").length > 0) return $("#casinooyunlari").show();
+      if ($("#casinooyunlari").length > 0) return;
 
       let title = language === "tr" ? "CANLI CASİNO" : "LIVE CASINO";
 
@@ -3463,7 +3458,7 @@ ${
   //   }
 
   function sportsCard() {
-    if ($("#sportscard").length > 0) return $("#sportscard").show();
+    if ($("#sportscard").length > 0) return;
 
     var newSection = `
       <div class="container manually-added-home-widgets" style="margin-top: 16px !important; margin-bottom: 16px !important;">

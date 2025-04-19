@@ -1138,15 +1138,6 @@
                 }
               </a>
             </div>
-            <div class="swiper-slide">
-              <a href="${
-                language === "tr"
-                  ? "https://betredi110.com/tr/promotion/100-slot-iade-bonusu-rt"
-                  : "https://betredi110.com/en/promotion/100-slot-iade-bonusu-rt"
-              }">
-                <img src="https://betrediofficial.github.io/images/slider/100Slotiade.webp" class="slide-image" />
-              </a>
-            </div>
           </div>
           <div class="swiper-button-next"></div>
           <div class="swiper-button-prev"></div>
@@ -1162,6 +1153,16 @@
         console.log("Custom slider inserted.");
       }
     }
+
+    //     <div class="swiper-slide">
+    //   <a href="${
+    //     language === "tr"
+    //       ? "https://betredi110.com/tr/promotion/100-slot-iade-bonusu-rt"
+    //       : "https://betredi110.com/en/promotion/100-slot-iade-bonusu-rt"
+    //   }">
+    //     <img src="https://betrediofficial.github.io/images/slider/100Slotiade.webp" class="slide-image" />
+    //   </a>
+    // </div>
 
     function initCustomSlider() {
       const swiperEl = document.querySelector("#main-slider .swiper");
@@ -2497,7 +2498,7 @@ ${
     }
 
     #main-slider .mySwiper {
-      height: 27vh !important;
+      height: 30vh !important;
     }
 
     #main-slider .swiper-slide a {
