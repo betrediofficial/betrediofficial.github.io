@@ -1004,6 +1004,7 @@
 
         setTimeout(() => {
           $(this).prop("disabled", false);
+          $(".game-chooser-hovered-effect").css("opacity", 0);
         }, 2000);
       });
 
