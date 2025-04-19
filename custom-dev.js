@@ -1004,7 +1004,10 @@
 
         setTimeout(() => {
           $(this).prop("disabled", false);
-          // $(".game-chooser-hovered-effect").css("opacity", 0);
+          // $(".game-chooser-hovered-effect").hide();
+          $(".game-chooser-hovered-effect").each(function () {
+            this.style.setProperty("display", "none", "important");
+          });
         }, 2000);
       });
 
@@ -2504,10 +2507,6 @@ ${
 
     #main-slider .swiper-slide a {
       height: 100% !important;
-    }
-
-    .disabled-game-chooser {
-      display: none !important;
     }
   }
       `;
