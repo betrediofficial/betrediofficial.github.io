@@ -1004,7 +1004,10 @@
 
         setTimeout(() => {
           $(this).prop("disabled", false);
-          $(".game-chooser-hovered-effect").hide(); // veya .css("display", "none")
+          // $(".game-chooser-hovered-effect").hide();
+          $(".game-chooser-hovered-effect").each(function () {
+            this.style.setProperty("display", "none", "important");
+          });
         }, 2000);
       });
 
