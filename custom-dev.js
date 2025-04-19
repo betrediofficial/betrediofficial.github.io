@@ -2507,7 +2507,7 @@ ${
     }
 
     .disabled-game-chooser {
-      opacity: 0 !important;
+      display: none !important;
     }
   }
       `;
