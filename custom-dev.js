@@ -1007,6 +1007,7 @@
           // $(".game-chooser-hovered-effect").hide();
           $(".game-chooser-hovered-effect").each(function () {
             this.style.setProperty("display", "none", "important");
+            this.style.setProperty("opacity", "0", "important");
           });
         }, 2000);
       });
