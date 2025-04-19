@@ -979,7 +979,7 @@
 
       $("#spin-game-btn").click(function () {
         $(this).prop("disabled", true);
-        $(".game-chooser-hovered-effect").css("display", "none", "important");
+        $(".game-chooser-hovered-effect").css("display", "none");
 
         let slot_count;
         do {
@@ -1005,13 +1005,8 @@
 
         setTimeout(() => {
           $(this).prop("disabled", false);
-          // $(".game-chooser-hovered-effect").hide();
-          // $(".game-chooser-hovered-effect").each(function () {
-          //   this.style.setProperty("display", "none", "important");
-          // });
-
-          $(".game-chooser-hovered-effect").css("display", "flex", "important");
-        }, 2250);
+          $(".game-chooser-hovered-effect").css("display", "flex");
+        }, 2500);
       });
 
       // * Game Chooser Logic - END
