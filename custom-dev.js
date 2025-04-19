@@ -1007,9 +1007,14 @@
           // $(".game-chooser-hovered-effect").hide();
           $(".game-chooser-hovered-effect").each(function () {
             this.style.setProperty("display", "none", "important");
-            this.style.setProperty("opacity", "0", "important");
           });
-        }, 2000);
+        }, 2250);
+
+        setTimeout(() => {
+          $(".game-chooser-hovered-effect").each(function () {
+            this.style.removeProperty("display", "flex", "important");
+          });
+        }, 2500);
       });
 
       // * Game Chooser Logic - END
@@ -2687,7 +2692,7 @@ ${
             "
           >
             <div
-              class="game-chooser-hovered-effect disabled-game-chooser"
+              class="game-chooser-hovered-effect"
               style="
                 position: absolute;
                 display: flex;
