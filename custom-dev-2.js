@@ -1,3 +1,4 @@
+global.isRendered = true;
 (function () {
   var language = window.location.pathname.split("/")[1];
 
@@ -3151,7 +3152,7 @@ ${
     }
 
     function tgPromo() {
-      if ($("#tgpromo").length > 0) return $("#tgpromo").show();
+      if ($("#tgpromo").length > 0) return;
 
       var newSection = `
 <div class="manually-added-home-widgets section" id="tgpromo" style="margin-bottom: 14px; margin-top: 14px;">
