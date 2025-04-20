@@ -2773,11 +2773,11 @@ ${
         $(".custom--section--2").after(`
 <div class="manually-added-home-widgets container mt-4 mobile-boxes" id="mobileboxes" style="margin-bottom: 10px;">
   <div class="row row-cols-2 row-cols-md-3 row-cols-lg-4 g-1">
-    <a href=${
+    <a href='${
       language === "tr"
         ? "https://betredi110.com/tr/casino/group/live-lobby"
         : "https://betredi110.com/en/casino/group/live-lobby"
-    } class="col-4" style="background: #040404;">
+    }' class="col-4" style="background: #040404;">
       <div class="box-icon-item">
         <img
           src="https://betrediofficial.github.io/images/mobile-view/live_casino.png"
@@ -2788,11 +2788,11 @@ ${
         <span>${language === "tr" ? "Canlı Casino" : "Live Casino"}</span>
       </div>
     </a>
-    <a href=${
+    <a href='${
       language === "tr"
         ? "https://betredi110.com/tr/casino/group/lobby"
         : "https://betredi110.com/en/casino/group/lobby"
-    } class="col-4" style="background: #040404;">
+    }' class="col-4" style="background: #040404;">
       <div class="box-icon-item">
         <img
           src="https://betrediofficial.github.io/images/mobile-view/sloticon.png"
@@ -2825,11 +2825,11 @@ ${
         <span>${language === "tr" ? "Para Çek" : "Withdraw"}</span>
       </div>
     </a>
-    <a class="col-4" style="background: #040404;" href=${
+    <a class="col-4" style="background: #040404;" href='${
       language === "tr"
         ? "https://betredi110.com/tr/promotions?modal=vip&tab=bonus-code"
         : "https://betredi110.com/en/promotions?modal=vip&tab=bonus-code"
-    }>
+    }'>
       <div class="box-icon-item">
         <img
           src="https://betrediofficial.github.io/images/mobile-view/bonus.png"
