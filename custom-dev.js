@@ -2640,7 +2640,7 @@ ${
     // * Game Chooser
 
     function gameChooser() {
-      if ($("#game-chooser").length > 0) return;
+      if ($("#game-chooser").length > 0) return $("#game-chooser").show();
 
       const gameChooserSection = `
   <div class="manually-added-home-widgets" id="game-chooser" style="width: 100%; margin: 48px auto">
