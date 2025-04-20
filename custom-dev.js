@@ -1293,55 +1293,12 @@
     }
 
     function initialize() {
-      removeOriginalMainSlider();
-
-      insertCustomMainSlider();
-      setTimeout(initCustomSlider, 500);
-
-      isLoggedIn = $(".header__signin").length > 0 ? false : true;
-      language = window.location.pathname.split("/")[1];
-
       const isHomePage = isHomePageCheck();
       const is_mobile = isMobile();
 
+      // * GENERAL - START
       headerButtons(isHomePage);
-
-      if (!isHomePage) {
-        removeHomePageWidgets();
-      } else {
-        mobileSignInText();
-        bottomMenuWidget(is_mobile);
-        otherGames();
-
-        if (!is_mobile) slotGames();
-
-        tgPromo();
-
-        if (!is_mobile) casinoGames();
-
-        // miniGames();
-
-        // sportsCard();
-        //hide default games
-
-        // HIDE
-        // !is_mobile && hideDefaultGames(50);
-        // !is_mobile && hideDefaultGames(1500);
-
-        injectProvidersMarquee();
-
-        if (is_mobile) mobileBoxes();
-
-        insertCustomMiniGamesSlider();
-        setTimeout(initCustomMiniGamesSlider, 500);
-
-        slot_games = getSlotGames();
-        casino_games = getCasinoGames();
-
-        gameChooser();
-        gameChooserLogic();
-      }
-
+      mobileSignInText();
       insertCustomSidebarLink();
 
       hideBlogSection();
@@ -1350,11 +1307,39 @@
       customizeSigninModal();
 
       injectExtraText();
+      // * GENERAL - END
+
+      if (!isHomePage) removeHomePageWidgets();
+
+      removeOriginalMainSlider();
+      insertCustomMainSlider();
+      setTimeout(initCustomSlider, 500);
+
+      injectProvidersMarquee();
+      bottomMenuWidget(is_mobile);
+
+      if (is_mobile) mobileBoxes();
+      if (!is_mobile) slotGames();
+
+      tgPromo();
+
+      if (!is_mobile) casinoGames();
+
+      insertCustomMiniGamesSlider();
+      setTimeout(initCustomMiniGamesSlider, 500);
+
+      slot_games = getSlotGames();
+      casino_games = getCasinoGames();
+
+      gameChooser();
+      gameChooserLogic();
+
       // autoplayMiniSlider();
 
-      if ($(".form__btn span").text().trim() === "Send Request") {
+      otherGames();
+
+      if ($(".form__btn span").text().trim() === "Send Request")
         $(".form__btn span").text("Talep Gönder");
-      }
     }
 
     customCSS();
