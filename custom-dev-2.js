@@ -2947,7 +2947,7 @@ ${
     }
 
     function slotGames() {
-      if ($("#slotoyunlari").length > 0) return;
+      if ($("#slotoyunlari").length > 0) return $("#slotoyunlari").show();
 
       let title = language === "tr" ? "SLOT CASİNO" : "SLOT CASINO";
 
