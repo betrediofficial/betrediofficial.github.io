@@ -2529,7 +2529,7 @@ ${
 
     function otherGames() {
       if ($("#digeroyunlari").length > 0) return $("#digeroyunlari").remove();
-
+      alert('triggered')
       var newSection = `
 <div class="manually-added-home-widgets section" id="digeroyunlari">
   <div class="container otherGames">
