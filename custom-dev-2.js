@@ -2894,7 +2894,9 @@ ${
     }
 
     function bottomMenuWidget(isMobile) {
-      if ($("#bottomMenuWidgedContainer").length > 0) return;
+      if ($(".bottomMenuWidgedContainer").length > 0){
+        return $(".bottomMenuWidgedContainer").show();
+      }
 
       $("#slotoyunlari").before(`
 <div class="manually-added-home-widgets bottomMenuWidgedContainer" id="bottomMenuWidgedContainer" style="margin-bottom: 10px;">
