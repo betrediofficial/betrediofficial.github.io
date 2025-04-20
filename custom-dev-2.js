@@ -1300,7 +1300,7 @@
       } else {
         mobileSignInText();
         bottomMenuWidget(is_mobile);
-        otherGames();
+        setTimeout(()=> otherGames(), 150)
 
         if (!is_mobile) slotGames();
 
