@@ -1300,7 +1300,6 @@
       } else {
         mobileSignInText();
         bottomMenuWidget(is_mobile);
-        setTimeout(otherGames, 150)
 
         if (!is_mobile) slotGames();
 
@@ -1321,6 +1320,7 @@
 
         insertCustomMiniGamesSlider();
         setTimeout(initCustomMiniGamesSlider, 500);
+        otherGames()
       }
 
       // GENERAL
