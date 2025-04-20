@@ -2622,7 +2622,7 @@ ${
 
         `;
 
-      $(".section--first").eq(1).before(newSection);
+      $("#game-chooser").after(newSection);
     }
 
     // * Game Chooser
