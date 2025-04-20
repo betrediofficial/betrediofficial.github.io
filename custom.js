@@ -1181,7 +1181,8 @@
     }
 
     function insertCustomMiniGamesSlider() {
-      if ($("#mini-games-wrapper").length > 0) return $("#mini-games-wrapper").show();
+      if ($("#mini-games-wrapper").length > 0)
+        return $("#mini-games-wrapper").show();
 
       var miniGamesSection = `
       <div class="manually-added-home-widgets section" id="mini-games-wrapper" style="margin-top: 16px !important; margin-bottom: 16px !important;">
@@ -1281,7 +1282,6 @@
     }
 
     function initialize() {
-
       removeOriginalMainSlider();
 
       insertCustomMainSlider();
@@ -1307,7 +1307,7 @@
 
         if (!is_mobile) casinoGames();
 
-        gameChooser()
+        gameChooser();
 
         // miniGames();
 
@@ -1320,7 +1320,7 @@
 
         insertCustomMiniGamesSlider();
         setTimeout(initCustomMiniGamesSlider, 500);
-        otherGames()
+        otherGames();
       }
 
       // GENERAL
@@ -1328,7 +1328,6 @@
       insertCustomSidebarLink();
       injectProvidersMarquee();
       is_mobile && mobileBoxes();
-
 
       hideBlogSection();
 
@@ -1340,8 +1339,6 @@
 
       slot_games = getSlotGames();
       casino_games = getCasinoGames();
-
-
 
       if ($(".form__btn span").text().trim() === "Send Request") {
         $(".form__btn span").text("Talep Gönder");
@@ -1463,9 +1460,9 @@
               : "https://betredi110.com/en/casino"
           }" style="background: url('https://betrediofficial.github.io/images/aside-links/casino.png') left center / cover no-repeat;"></a>
           `;
-            $sidebarLinks.insertAdjacentHTML("beforeend", newLinksHTML);
-            $sidebarLinks.classList.add("custom_links_replaced");
-          }
+          $sidebarLinks.insertAdjacentHTML("beforeend", newLinksHTML);
+          $sidebarLinks.classList.add("custom_links_replaced");
+        }
 
         if ($sidebarLinks && !exists) {
           const customDiv = document.createElement("div");
@@ -2528,7 +2525,6 @@ ${
     // }
 
     function otherGames() {
-
       if ($("#digeroyunlari").length > 0) $("#digeroyunlari").remove();
 
       var newSection = `
@@ -2539,7 +2535,7 @@ ${
         <div class="section__title-wrap"><h2 class="section__title"><svg class="svg-icon"><use href="/static/media/sprite.33143bc5180d8cec7f771b3eedc5187c.svg#top-games"></use></svg>
         EKSTRA OYUNLAR
         </h2><a class="section__view section__view--carousel" href='${
-         language === "tr"
+          language === "tr"
             ? "https://betredi110.com/tr/casino/group/top-games"
             : "https://betredi110.com/en/casino/group/top-games"
         }'>Tümünü Görüntüle</a></div>
@@ -2582,10 +2578,10 @@ ${
   <div class="hovered-effect" style="opacity: 0; position: absolute; width: 100%; height: 100%; background: rgba(255,255,255,0.1); z-index: 10; pointer-events: none;"></div>
   <a href="casino/games/betsolutions-zeppelin?modal=register">
    <a href=${
-    language === "tr"
-      ? "https://betredi110.com/tr/casino/games/betsolutions-zeppelin"
-      : "https://betredi110.com/en/casino/games/betsolutions-zeppelin"
-  }>  
+     language === "tr"
+       ? "https://betredi110.com/tr/casino/games/betsolutions-zeppelin"
+       : "https://betredi110.com/en/casino/games/betsolutions-zeppelin"
+   }>  
    <img
       src="https://betrediofficial.github.io/images/extra-games/zeppelin_new.webp"
       alt="sporb"
@@ -2600,10 +2596,10 @@ ${
   <div class="hovered-effect" style="opacity: 0; position: absolute; width: 100%; height: 100%; background: rgba(255,255,255,0.1); z-index: 10; pointer-events: none;"></div>
   <a href="casino/games/pragmaticlive-big-bass-crash">
    <a href=${
-    language === "tr"
-      ? "https://betredi110.com/tr/casino/games/pragmaticlive-big-bass-crash"
-      : "https://betredi110.com/en/casino/games/pragmaticlive-big-bass-crash"
-  }>
+     language === "tr"
+       ? "https://betredi110.com/tr/casino/games/pragmaticlive-big-bass-crash"
+       : "https://betredi110.com/en/casino/games/pragmaticlive-big-bass-crash"
+   }>
     <img
       src="https://betrediofficial.github.io/images/extra-games/big_bass_crash_new.webp"
       alt="slotcasino"
@@ -2629,10 +2625,9 @@ ${
     // * Game Chooser
 
     function gameChooser() {
-
-      if ($("#game-chooser").length > 0){
-        $("#game-chooser").remove() 
-       }
+      if ($("#game-chooser").length > 0) {
+        $("#game-chooser").remove();
+      }
 
       const gameChooserSection = `
   <div class="manually-added-home-widgets" id="game-chooser" style="width: 100%; margin: 48px auto">
@@ -2893,7 +2888,7 @@ ${
     }
 
     function bottomMenuWidget(isMobile) {
-      if ($(".bottomMenuWidgedContainer").length > 0){
+      if ($(".bottomMenuWidgedContainer").length > 0) {
         return $(".bottomMenuWidgedContainer").show();
       }
 
