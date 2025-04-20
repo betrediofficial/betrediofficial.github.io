@@ -1193,7 +1193,7 @@
 
     function insertCustomMiniGamesSlider() {
       if ($("#mini-games-wrapper").length > 0)
-        return $("#mini-games-wrapper").show();
+        $("#mini-games-wrapper").remove();
 
       var miniGamesSection = `
      <div class="manually-added-home-widgets section" id="mini-games-wrapper" style="margin-top: 16px !important; margin-bottom: 16px !important;">
@@ -1309,8 +1309,6 @@
       injectExtraText();
       // * GENERAL - END
 
-      if (!isHomePage) removeHomePageWidgets();
-
       removeOriginalMainSlider();
       insertCustomMainSlider();
       setTimeout(initCustomSlider, 500);
@@ -1340,6 +1338,8 @@
 
       if ($(".form__btn span").text().trim() === "Send Request")
         $(".form__btn span").text("Talep Gönder");
+
+      if (!isHomePage) removeHomePageWidgets();
     }
 
     customCSS();
