@@ -1,4 +1,4 @@
-global.isRendered = true;
+window.isRendered = true;
 (function () {
   var language = window.location.pathname.split("/")[1];
 
