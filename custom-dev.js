@@ -1318,37 +1318,29 @@
 
         if (!is_mobile) casinoGames();
 
-        // miniGames();
+        injectProvidersMarquee();
 
-        // sportsCard();
-        //hide default games
+        if (is_mobile) mobileBoxes();
 
-        // HIDE
-        // !is_mobile && hideDefaultGames(50);
-        // !is_mobile && hideDefaultGames(1500);
+        insertCustomMiniGamesSlider();
+        setTimeout(initCustomMiniGamesSlider, 500);
+
+        hideBlogSection();
+
+        customizeSignupModal();
+        customizeSigninModal();
+
+        injectExtraText();
+        // autoplayMiniSlider();
+
+        slot_games = getSlotGames();
+        casino_games = getCasinoGames();
+
+        gameChooser();
+        gameChooserLogic();
       }
 
       insertCustomSidebarLink();
-      injectProvidersMarquee();
-
-      is_mobile && mobileBoxes();
-
-      insertCustomMiniGamesSlider();
-      setTimeout(initCustomMiniGamesSlider, 500);
-
-      hideBlogSection();
-
-      customizeSignupModal();
-      customizeSigninModal();
-
-      injectExtraText();
-      // autoplayMiniSlider();
-
-      slot_games = getSlotGames();
-      casino_games = getCasinoGames();
-
-      gameChooser();
-      gameChooserLogic();
 
       if ($(".form__btn span").text().trim() === "Send Request") {
         $(".form__btn span").text("Talep Gönder");
