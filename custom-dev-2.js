@@ -1300,7 +1300,7 @@
       } else {
         mobileSignInText();
         bottomMenuWidget(is_mobile);
-        setTimeout(otherGames,450)
+        setTimeout(otherGames, 150)
 
         if (!is_mobile) slotGames();
 
@@ -2528,7 +2528,7 @@ ${
     // }
 
     function otherGames() {
-      if ($("#digeroyunlari").length > 0) return $("#digeroyunlari").show();
+      if ($("#digeroyunlari").length > 0) return;
 
       var newSection = `
 <div class="manually-added-home-widgets section" id="digeroyunlari">
