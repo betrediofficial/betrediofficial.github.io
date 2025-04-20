@@ -1545,7 +1545,7 @@
       section.className = "section custom--section--2 custom--section";
       section.innerHTML = `
 <div class="container" style="position: relative; max-width: 100% !important; margin-bottom: 20px !important; padding-left: 0px !important; padding-right: 0px !important; padding-top: 0px !important; overflow: hidden !important;">
-<div class="providers--marquee--bg" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; background: linear-gradient(to right, rgba(0, 0, 0, 0.8) 0%, transparent 50%, rgba(0, 0, 0, 0.8) 100%);z-index: 1;pointer-events: none;"></div>
+<div class="providers--marquee--bg" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; background: linear-gradient(to right, rgba(0, 0, 0, 0.3) 0%, transparent 50%, rgba(0, 0, 0, 0.3) 100%);z-index: 1;pointer-events: none;"></div>
 ${
   isMobile
     ? `<div class="providers--marquee--bg" style="background: linear-gradient(to right, rgb(0, 0, 0) 0%, #6c0c09 50%, rgb(0, 0, 0) 100%); position: absolute; top: 0; left: 0; width: 100%; height: 100%;"></div>`
@@ -2876,7 +2876,7 @@ ${
         : "https://betredi110.com/en/trade"
     }" target="_blank" class="col-4" style="background: #040404;">
       <div class="box-icon-item">
-      <svg class="svg-icon" style="margin: 0 auto 4px auto; width: 26px !important; height: 26px !important;"><use href="/static/media/sprite.1cea5f3c17045e69440504bcd887b333.svg#chart" xlink:href="/static/media/sprite.1cea5f3c17045e69440504bcd887b333.svg#chart"></use></svg>
+      <svg class="svg-icon" style="margin: 0 auto 4px auto; width: 26px !important; height: 26px !important;" ><use href="/static/media/sprite.94622980f40d877c6d27eb5b2474fa5a.svg#chart" xlink:href="/static/media/sprite.94622980f40d877c6d27eb5b2474fa5a.svg#chart"></use></svg>
         <span>${language === "tr" ? "Borsa" : "Trade"}</span>
       </div>
     </a>
