@@ -1071,7 +1071,7 @@
 
     function insertCustomMainSlider() {
       const sliderHTML = `
-    <div class="custom-main-slider manually-added-home-widgets section pt-24" id="main-slider">
+    <div class="manually-added-home-widgets section pt-24" id="main-slider">
       <div class="container">
         <div class="swiper mySwiper">
           <div class="swiper-wrapper">
@@ -2899,7 +2899,7 @@ ${
     function bottomMenuWidget(isMobile) {
       if ($("#bottomMenuWidgedContainer").length > 0) return;
 
-      $(".custom-main-slider").after(`
+      $("#slotoyunlari").before(`
 <div class="manually-added-home-widgets bottomMenuWidgedContainer" id="bottomMenuWidgedContainer" style="margin-bottom: 10px;">
   <div class="bottom-menu-widget" style="flex: 1 1 calc(25% - 10px); text-align: center;">
     <a href=${
