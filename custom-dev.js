@@ -1274,7 +1274,7 @@
 
       if ($("#casinooyunlari").length > 0)
         $("#casinooyunlari").after(miniGamesSection);
-      else $("#tgpromo").eq(0).after(miniGamesSection);
+      else $("#tgpromo").after(miniGamesSection);
     }
 
     function initCustomMiniGamesSlider() {
@@ -1330,7 +1330,7 @@
 
         injectProvidersMarquee();
 
-        is_mobile && mobileBoxes();
+        if (is_mobile) mobileBoxes();
 
         insertCustomMiniGamesSlider();
         setTimeout(initCustomMiniGamesSlider, 500);
@@ -1540,7 +1540,7 @@
 
       if (!container || container.querySelector(".custom--section--2")) return;
 
-      const swiperElement = container.querySelector(".swiper");
+      const swiperElement = container.querySelector(".mySwiper");
       if (!swiperElement) return;
 
       const section = document.createElement("div");
