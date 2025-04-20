@@ -2528,7 +2528,7 @@ ${
     // }
 
     function otherGames() {
-      if ($("#digeroyunlari").length > 0) return;
+      if ($("#digeroyunlari").length > 0) return $("#digeroyunlari").remove();
 
       var newSection = `
 <div class="manually-added-home-widgets section" id="digeroyunlari">
