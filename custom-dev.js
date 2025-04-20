@@ -1192,7 +1192,8 @@
     }
 
     function insertCustomMiniGamesSlider() {
-      if ($("#mini-games-wrapper").length > 0) return;
+      if ($("#mini-games-wrapper").length > 0)
+        return $("#mini-games-wrapper").show();
 
       var miniGamesSection = `
      <div class="manually-added-home-widgets section" id="mini-games-wrapper" style="margin-top: 16px !important; margin-bottom: 16px !important;">
@@ -1318,20 +1319,21 @@
 
         if (!is_mobile) casinoGames();
 
+        // miniGames();
+
+        // sportsCard();
+        //hide default games
+
+        // HIDE
+        // !is_mobile && hideDefaultGames(50);
+        // !is_mobile && hideDefaultGames(1500);
+
         injectProvidersMarquee();
 
-        if (is_mobile) mobileBoxes();
+        is_mobile && mobileBoxes();
 
         insertCustomMiniGamesSlider();
         setTimeout(initCustomMiniGamesSlider, 500);
-
-        hideBlogSection();
-
-        customizeSignupModal();
-        customizeSigninModal();
-
-        injectExtraText();
-        // autoplayMiniSlider();
 
         slot_games = getSlotGames();
         casino_games = getCasinoGames();
@@ -1341,6 +1343,14 @@
       }
 
       insertCustomSidebarLink();
+
+      hideBlogSection();
+
+      customizeSignupModal();
+      customizeSigninModal();
+
+      injectExtraText();
+      // autoplayMiniSlider();
 
       if ($(".form__btn span").text().trim() === "Send Request") {
         $(".form__btn span").text("Talep Gönder");
@@ -1527,6 +1537,7 @@
 
     function injectProvidersMarquee() {
       const container = document.querySelector("#main-slider > .container");
+
       if (!container || container.querySelector(".custom--section--2")) return;
 
       const swiperElement = container.querySelector(".swiper");
@@ -2763,7 +2774,7 @@ ${
     }
 
     function mobileBoxes() {
-      if ($("#mobileboxes").length > 0) return;
+      if ($("#mobileboxes").length > 0) return $("#mobileboxes").show();
 
       if ($(".custom--section--2").length > 0)
         $(".custom--section--2").after(`
@@ -2889,7 +2900,8 @@ ${
     }
 
     function bottomMenuWidget(isMobile) {
-      if ($("#bottomMenuWidgedContainer").length > 0) return;
+      if ($("#bottomMenuWidgedContainer").length > 0)
+        return $("#bottomMenuWidgedContainer").show();
 
       $("#slotoyunlari").before(`
 <div class="manually-added-home-widgets bottomMenuWidgedContainer" id="bottomMenuWidgedContainer" style="margin-bottom: 10px;">
@@ -2940,7 +2952,7 @@ ${
     }
 
     function slotGames() {
-      if ($("#slotoyunlari").length > 0) return;
+      if ($("#slotoyunlari").length > 0) return $("#slotoyunlari").show();
 
       let title = language === "tr" ? "SLOT CASİNO" : "SLOT CASINO";
 
@@ -3143,7 +3155,7 @@ ${
     }
 
     function tgPromo() {
-      if ($("#tgpromo").length > 0) return;
+      if ($("#tgpromo").length > 0) return $("$tgpromo").show();
 
       var newSection = `
 <div class="manually-added-home-widgets section" id="tgpromo" style="margin-bottom: 14px; margin-top: 14px;">
@@ -3167,11 +3179,11 @@ ${
 `;
 
       if ($("#slotoyunlari").length > 0) $("#slotoyunlari").after(newSection);
-      else $("#bottomMenuWidgedContainer").eq(0).after(newSection);
+      else $("#bottomMenuWidgedContainer").after(newSection);
     }
 
     function casinoGames() {
-      if ($("#casinooyunlari").length > 0) return;
+      if ($("#casinooyunlari").length > 0) return $("#casinooyunlari").show();
 
       let title = language === "tr" ? "CANLI CASİNO" : "LIVE CASINO";
 
@@ -3451,70 +3463,6 @@ ${
   //     $("#casinooyunlari").after(newSection);
   //     // else $("#tgpromo").eq(0).after(newSection);
   //   }
-
-  function sportsCard() {
-    if ($("#sportscard").length > 0) return;
-
-    var newSection = `
-      <div class="container manually-added-home-widgets" style="margin-top: 16px !important; margin-bottom: 16px !important;">
-  <div class="row row-cols-3 row-cols-xl-6 g-4 text-center">
-    <div class="col">
-      <div class="sport-card" style="position: relative; border: 2px solid #9B000E; border-top-right-radius: 24px; border-bottom-left-radius: 24px; overflow: hidden; cursor: pointer;">
-        <div class="hovered-effect" style="opacity: 0; position: absolute; width: 100%; height: 100%; background: rgba(255,255,255,0.1); z-index: 10; pointer-events: none;"></div>
-        <a href="/sportsbook">
-          <img src="https://betrediofficial.github.io/images/sports/futbol_new.png" alt="Futbol" style="width: 100%; aspect-ratio: 3/4; object-fit: cover;">
-        </a>
-      </div>
-    </div>
-    <div class="col">
-      <div class="sport-card" style="position: relative; border: 2px solid #9B000E; border-top-right-radius: 24px; border-bottom-left-radius: 24px; overflow: hidden; cursor: pointer;">
-        <div class="hovered-effect" style="opacity: 0; position: absolute; width: 100%; height: 100%; background: rgba(255,255,255,0.1); z-index: 10; pointer-events: none;"></div>
-        <a href="/sportsbook">
-          <img src="https://betrediofficial.github.io/images/sports/basketbol_new.png" alt="Basketbol" style="width: 100%; aspect-ratio: 3/4; object-fit: cover;">
-        </a>
-      </div>
-    </div>
-    <div class="col">
-      <div class="sport-card" style="position: relative; border: 2px solid #9B000E; border-top-right-radius: 24px; border-bottom-left-radius: 24px; overflow: hidden; cursor: pointer;">
-        <div class="hovered-effect" style="opacity: 0; position: absolute; width: 100%; height: 100%; background: rgba(255,255,255,0.1); z-index: 10; pointer-events: none;"></div>
-        <a href="/sportsbook">
-          <img src="https://betrediofficial.github.io/images/sports/voleybol_new.png" alt="Voleybol" style="width: 100%; aspect-ratio: 3/4; object-fit: cover;">
-        </a>
-      </div>
-    </div>
-    <div class="col">
-      <div class="sport-card" style="position: relative; border: 2px solid #9B000E; border-top-right-radius: 24px; border-bottom-left-radius: 24px; overflow: hidden; cursor: pointer;">
-        <div class="hovered-effect" style="opacity: 0; position: absolute; width: 100%; height: 100%; background: rgba(255,255,255,0.1); z-index: 10; pointer-events: none;"></div>
-        <a href="/sportsbook">
-          <img src="https://betrediofficial.github.io/images/sports/mma_new.png" alt="MMA" style="width: 100%; aspect-ratio: 3/4; object-fit: cover;">
-        </a>
-      </div>
-    </div>
-    <div class="col">
-      <div class="sport-card" style="position: relative; border: 2px solid #9B000E; border-top-right-radius: 24px; border-bottom-left-radius: 24px; overflow: hidden; cursor: pointer;">
-        <div class="hovered-effect" style="opacity: 0; position: absolute; width: 100%; height: 100%; background: rgba(255,255,255,0.1); z-index: 10; pointer-events: none;"></div>
-        <a href="/sportsbook">
-          <img src="https://betrediofficial.github.io/images/sports/tennis_new.png" alt="Tenis" style="width: 100%; aspect-ratio: 3/4; object-fit: cover;">
-        </a>
-      </div>
-    </div>
-    <div class="col">
-      <div class="sport-card" style="position: relative; border: 2px solid #9B000E; border-top-right-radius: 24px; border-bottom-left-radius: 24px; overflow: hidden; cursor: pointer;">
-        <div class="hovered-effect" style="opacity: 0; position: absolute; width: 100%; height: 100%; background: rgba(255,255,255,0.1); z-index: 10; pointer-events: none;"></div>
-        <a href="/sportsbook">
-          <img src="https://betrediofficial.github.io/images/sports/cycling_new.png" alt="Cycling" style="width: 100%; aspect-ratio: 3/4; object-fit: cover;">
-        </a>
-      </div>
-    </div>
-  </div>
-</div>
-
-`;
-
-    // if ($("#casinooyunlari").length > 0)
-    $("#casinooyunlari").after(newSection);
-    // else $("#tgpromo").eq(0).after(newSection);
-  }
 
   function hideDefaultGames(ms) {
     let popularGames = language === "tr" ? "Popüler Oyunlar" : "Popular Games";
