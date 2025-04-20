@@ -979,17 +979,18 @@
 
       $("#spin-game-btn").click(function () {
         $(this).prop("disabled", true);
+        $(".game-chooser-hovered-effect").css("display", "none");
 
         let slot_count;
         do {
           slot_count = Math.floor(Math.random() * slot_games.length);
-        } while (slot_count === prevSlotCount || Math.abs(slot_count - prevSlotCount) < 10);
+        } while (slot_count === prevSlotCount || Math.abs(slot_count - prevSlotCount) < 15);
         prevSlotCount = slot_count;
 
         let casino_count;
         do {
           casino_count = Math.floor(Math.random() * casino_games.length);
-        } while (casino_count === prevCasinoCount || Math.abs(casino_count - prevCasinoCount) < 10);
+        } while (casino_count === prevCasinoCount || Math.abs(casino_count - prevCasinoCount) < 15);
         prevCasinoCount = casino_count;
 
         $("#slot-game-chooser-section img.slot-game-chooser-item").css(
@@ -1004,7 +1005,8 @@
 
         setTimeout(() => {
           $(this).prop("disabled", false);
-        }, 2000);
+          $(".game-chooser-hovered-effect").css("display", "flex");
+        }, 2500);
       });
 
       // * Game Chooser Logic - END
@@ -2682,7 +2684,7 @@ ${
             "
           >
             <div
-              class="game-chooser-hovered-effect disabled-game-chooser"
+              class="game-chooser-hovered-effect"
               style="
                 position: absolute;
                 display: flex;
@@ -2896,7 +2898,8 @@ ${
 
     function bottomMenuWidget(isMobile) {
       if ($("#bottomMenuWidgedContainer").length > 0) return;
-      $(".section:first").append(`
+
+      $("#slotoyunlari").before(`
 <div class="manually-added-home-widgets bottomMenuWidgedContainer" id="bottomMenuWidgedContainer" style="margin-bottom: 10px;">
   <div class="bottom-menu-widget" style="flex: 1 1 calc(25% - 10px); text-align: center;">
     <a href=${
