@@ -2528,7 +2528,7 @@ ${
     // }
 
     function otherGames() {
-      alert('triggered unmounted')
+      alert($("#digeroyunlari").length)
       if ($("#digeroyunlari").length > 0) return $("#digeroyunlari").remove();
       alert('triggered')
       var newSection = `
