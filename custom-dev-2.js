@@ -2528,9 +2528,9 @@ ${
     // }
 
     function otherGames() {
-      alert($("#digeroyunlari").length)
-      if ($("#digeroyunlari").length > 0) return $("#digeroyunlari").remove();
-      alert('triggered')
+
+      if ($("#digeroyunlari").length > 0) $("#digeroyunlari").remove();
+
       var newSection = `
 <div class="manually-added-home-widgets section" id="digeroyunlari">
   <div class="container otherGames">
