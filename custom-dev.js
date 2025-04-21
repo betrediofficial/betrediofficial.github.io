@@ -964,14 +964,20 @@
       });
     }
 
-    // * Document Ready
-    jQuery(function ($) {
-      // * Slider Functions - START
+    $(document).ready(function () {
       removeOriginalMainSlider();
       insertCustomMainSlider();
       initCustomSlider();
-      // * Slider Functions - END
     });
+
+    // // * Document Ready
+    // jQuery(function ($) {
+    //   // * Slider Functions - START
+    //   removeOriginalMainSlider();
+    //   insertCustomMainSlider();
+    //   initCustomSlider();
+    //   // * Slider Functions - END
+    // });
   }
 
   (async function () {
