@@ -850,7 +850,10 @@
 
     // * Widget Functions
     function removeOriginalMainSlider() {
-      const firstSection = document.querySelector("#main__content .section");
+      const firstSection = document.querySelector(
+        "#main__content #main-slider.section"
+      );
+
       if (firstSection && firstSection.id === "main-slider")
         firstSection.remove();
     }
