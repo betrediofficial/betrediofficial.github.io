@@ -848,17 +848,15 @@
   const isMobile = () => window.innerWidth < 768;
 
   function removeOriginalMainSlider() {
-    const firstSection = document.querySelector(
-      "#main__content #main-slider.section"
-    );
+    const slider = document.querySelector("#main__content #main-slider");
 
-    if (firstSection && firstSection.id === "main-slider")
-      firstSection.remove();
+    if (slider && !slider.classList.contains("manually-added-home-widgets"))
+      slider.remove();
   }
 
   function insertCustomMainSlider() {
     const sliderHTML = `
-    <div class="manually-added-home-widgets" id="main-slider">
+    <div class="manually-added-home-widgets section" id="main-slider">
       <div class="container">
         <div class="swiper mainSwiper">
           <div class="swiper-wrapper">
@@ -966,10 +964,6 @@
   }
 
   function App() {
-    // removeOriginalMainSlider();
-    // insertCustomMainSlider();
-    // initCustomSlider();
-
     const waitForMainContent = setInterval(() => {
       const mainContent = document.querySelector("#main__content");
       if (mainContent) {
@@ -981,21 +975,6 @@
         initCustomSlider();
       }
     }, 250);
-
-    // $(document).ready(function () {
-    //   removeOriginalMainSlider();
-    //   insertCustomMainSlider();
-    //   initCustomSlider();
-    // });
-
-    // // * Document Ready
-    // jQuery(function ($) {
-    //   // * Slider Functions - START
-    // removeOriginalMainSlider();
-    // insertCustomMainSlider();
-    // initCustomSlider();
-    //   // * Slider Functions - END
-    // });
   }
 
   (async function () {
