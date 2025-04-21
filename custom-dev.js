@@ -850,12 +850,12 @@
       link.href = "https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css";
       document.head.appendChild(link);
     }
-
-    $(document).ready(function () {
-      alert("Custom-dev.js");
-    });
   } catch (e) {
     alert("Couldn't load JQuery & swiper!");
     alert(e);
   }
+
+  $(document).ready(function () {
+    alert("Custom-dev.js");
+  });
 })();
