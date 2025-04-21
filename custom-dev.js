@@ -858,9 +858,9 @@
 
   function insertCustomMainSlider() {
     const sliderHTML = `
-    <div class="manually-added-home-widgets mainSwiper" id="main-slider">
+    <div class="manually-added-home-widgets" id="main-slider">
       <div class="container">
-        <div class="swiper mySwiper">
+        <div class="swiper mainSwiper">
           <div class="swiper-wrapper">
             <div class="swiper-slide">
               <a href="${
