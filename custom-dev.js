@@ -835,7 +835,7 @@
     document.head.appendChild(link);
   };
 
-  const App = () => {
+  function App() {
     const language = window.location.pathname.split("/")[1];
     const isLoggedIn = false;
 
@@ -851,9 +851,9 @@
     jQuery(function ($) {
       alert("Custom-dev.js is installed.");
     });
-  };
+  }
 
-  (async () => {
+  (async function () {
     try {
       // * jQuery load
       if (typeof jQuery === "undefined") {
