@@ -847,16 +847,17 @@
 
   const isMobile = () => window.innerWidth < 768;
 
-  function removeOriginalMainSlider() {
-    const slider = document.querySelector("#main__content #main-slider");
+  function mainSlider() {
+    function removeOriginalMainSlider() {
+      const slider = document.querySelector("#main__content #main-slider");
 
-    if (slider && !slider.classList.contains("manually-added-home-widgets"))
-      slider.remove();
-  }
+      if (slider && !slider.classList.contains("manually-added-home-widgets"))
+        slider.remove();
+    }
 
-  function insertCustomMainSlider() {
-    const sliderHTML = `
-    <div class="manually-added-home-widgets section" id="main-slider">
+    function insertCustomMainSlider() {
+      const sliderHTML = `
+    <div class="manually-added-home-widgets" id="main-slider">
       <div class="container">
         <div class="swiper mainSwiper">
           <div class="swiper-wrapper">
@@ -934,33 +935,38 @@
     </div>
   `;
 
-    const mainContent = document.querySelector("#main__content");
-    if (mainContent) mainContent.insertAdjacentHTML("afterbegin", sliderHTML);
-  }
+      const mainContent = document.querySelector("#main__content");
+      if (mainContent) mainContent.insertAdjacentHTML("afterbegin", sliderHTML);
+    }
 
-  function initCustomSlider() {
-    const swiperEl = document.querySelector("#main-slider .mainSwiper");
-    if (!swiperEl || typeof Swiper !== "function") return;
+    function initCustomSlider() {
+      const swiperEl = document.querySelector("#main-slider .mainSwiper");
+      if (!swiperEl || typeof Swiper !== "function") return;
 
-    window.mainSwiper = new Swiper(swiperEl, {
-      loop: true,
-      slidesPerView: 1,
-      centeredSlides: false,
-      autoplay: {
-        delay: 4000,
-        disableOnInteraction: false,
-      },
-      pagination: {
-        el: "#main-slider .swiper-pagination",
-        clickable: true,
-      },
-      navigation: {
-        nextEl: "#main-slider .swiper-button-next",
-        prevEl: "#main-slider .swiper-button-prev",
-      },
-      effect: "slide",
-      speed: 600,
-    });
+      window.mainSwiper = new Swiper(swiperEl, {
+        loop: true,
+        slidesPerView: 1,
+        centeredSlides: false,
+        autoplay: {
+          delay: 4000,
+          disableOnInteraction: false,
+        },
+        pagination: {
+          el: "#main-slider .swiper-pagination",
+          clickable: true,
+        },
+        navigation: {
+          nextEl: "#main-slider .swiper-button-next",
+          prevEl: "#main-slider .swiper-button-prev",
+        },
+        effect: "slide",
+        speed: 600,
+      });
+    }
+
+    removeOriginalMainSlider();
+    insertCustomMainSlider();
+    initCustomSlider();
   }
 
   function App() {
@@ -970,9 +976,11 @@
         clearInterval(waitForMainContent);
 
         // * Homepage Widgets Calling
-        removeOriginalMainSlider();
-        insertCustomMainSlider();
-        initCustomSlider();
+        mainSlider();
+
+        // removeOriginalMainSlider();
+        // insertCustomMainSlider();
+        // initCustomSlider();
       }
     }, 250);
   }
