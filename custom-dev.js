@@ -836,7 +836,6 @@
     document.head.appendChild(link);
   };
 
-  let isAppRunning = false;
   const language = window.location.pathname.split("/")[1];
   const isLoggedIn = false;
 
@@ -847,49 +846,6 @@
     !isLoggedIn ? "?modal=login" : "?modal=wallet&tab=withdraw";
 
   const isMobile = () => window.innerWidth < 768;
-
-  function isHomepage() {
-    const path = window.location.pathname.replace(/\/+$/, "");
-    return path === "" || path === "/tr" || path === "/en";
-  }
-
-  function removeAllHomepageWidgets() {
-    document.querySelectorAll(".manually-added-home-widgets").forEach((el) => {
-      el.remove();
-    });
-  }
-
-  function onRouteChange() {
-    const target = document.querySelector("#main__content");
-    if (!target) return;
-
-    const observer = new MutationObserver((mutationsList, observer) => {
-      const hasRealChange = mutationsList.some((mutation) =>
-        Array.from(mutation.addedNodes).some((node) => node.nodeType === 1)
-      );
-
-      if (hasRealChange) {
-        observer.disconnect();
-
-        // İçerik doldurulduktan sonra 300ms gecikme ile çalıştır
-        setTimeout(() => {
-          console.log("📦 Route değişimiyle App yeniden başlatılıyor...");
-          App();
-        }, 300);
-      }
-    });
-
-    observer.observe(target, { childList: true, subtree: false });
-  }
-
-  function observeRouteChanges() {
-    const pushState = history.pushState;
-    history.pushState = function () {
-      pushState.apply(this, arguments);
-      onRouteChange();
-    };
-    window.addEventListener("popstate", onRouteChange);
-  }
 
   function mainSlider() {
     function removeOriginalMainSlider() {
@@ -994,21 +950,13 @@
   }
 
   function App() {
-    if (isAppRunning) return;
-
-    isAppRunning = true;
-
     const waitForMainContent = setInterval(() => {
       const mainContent = document.querySelector("#main__content");
       if (mainContent) {
         clearInterval(waitForMainContent);
-        removeAllHomepageWidgets();
 
-        if (isHomepage()) {
-          mainSlider();
-        }
-
-        isAppRunning = false;
+        // * Homepage Widgets Calling
+        mainSlider();
       }
     }, 250);
   }
@@ -1040,8 +988,6 @@
           $(document).ready(function () {
             App();
           });
-
-          observeRouteChanges(() => setTimeout(App, 300));
         }
       }, 250);
     } catch (e) {
