@@ -836,30 +836,29 @@
     document.head.appendChild(link);
   };
 
-  function App() {
-    const language = window.location.pathname.split("/")[1];
-    const isLoggedIn = false;
+  const language = window.location.pathname.split("/")[1];
+  const isLoggedIn = false;
 
-    const depositMoneyLink = () =>
-      !isLoggedIn ? "?modal=login" : "?modal=wallet&tab=deposit";
+  const depositMoneyLink = () =>
+    !isLoggedIn ? "?modal=login" : "?modal=wallet&tab=deposit";
 
-    const withdrawMoneyLink = () =>
-      !isLoggedIn ? "?modal=login" : "?modal=wallet&tab=withdraw";
+  const withdrawMoneyLink = () =>
+    !isLoggedIn ? "?modal=login" : "?modal=wallet&tab=withdraw";
 
-    const isMobile = () => window.innerWidth < 768;
+  const isMobile = () => window.innerWidth < 768;
 
-    // * Widget Functions
-    function removeOriginalMainSlider() {
-      const firstSection = document.querySelector(
-        "#main__content #main-slider.section"
-      );
+  // * Widget Functions
+  function removeOriginalMainSlider() {
+    const firstSection = document.querySelector(
+      "#main__content #main-slider.section"
+    );
 
-      if (firstSection && firstSection.id === "main-slider")
-        firstSection.remove();
-    }
+    if (firstSection && firstSection.id === "main-slider")
+      firstSection.remove();
+  }
 
-    function insertCustomMainSlider() {
-      const sliderHTML = `
+  function insertCustomMainSlider() {
+    const sliderHTML = `
     <div class="manually-added-home-widgets mainSwiper" id="main-slider">
       <div class="container">
         <div class="swiper mySwiper">
@@ -938,34 +937,39 @@
     </div>
   `;
 
-      const mainContent = document.querySelector("#main__content");
-      if (mainContent) mainContent.insertAdjacentHTML("afterbegin", sliderHTML);
-    }
+    const mainContent = document.querySelector("#main__content");
+    if (mainContent) mainContent.insertAdjacentHTML("afterbegin", sliderHTML);
+  }
 
-    function initCustomSlider() {
-      const swiperEl = document.querySelector("#main-slider .mainSwiper");
-      if (!swiperEl || typeof Swiper !== "function") return;
+  function initCustomSlider() {
+    const swiperEl = document.querySelector("#main-slider .mainSwiper");
+    if (!swiperEl || typeof Swiper !== "function") return;
 
-      window.mainSwiper = new Swiper(swiperEl, {
-        loop: true,
-        slidesPerView: 1,
-        centeredSlides: false,
-        autoplay: {
-          delay: 4000,
-          disableOnInteraction: false,
-        },
-        pagination: {
-          el: "#main-slider .swiper-pagination",
-          clickable: true,
-        },
-        navigation: {
-          nextEl: "#main-slider .swiper-button-next",
-          prevEl: "#main-slider .swiper-button-prev",
-        },
-        effect: "slide",
-        speed: 600,
-      });
-    }
+    window.mainSwiper = new Swiper(swiperEl, {
+      loop: true,
+      slidesPerView: 1,
+      centeredSlides: false,
+      autoplay: {
+        delay: 4000,
+        disableOnInteraction: false,
+      },
+      pagination: {
+        el: "#main-slider .swiper-pagination",
+        clickable: true,
+      },
+      navigation: {
+        nextEl: "#main-slider .swiper-button-next",
+        prevEl: "#main-slider .swiper-button-prev",
+      },
+      effect: "slide",
+      speed: 600,
+    });
+  }
+
+  function App() {
+    removeOriginalMainSlider();
+    insertCustomMainSlider();
+    initCustomSlider();
 
     // $(document).ready(function () {
     //   removeOriginalMainSlider();
@@ -973,14 +977,14 @@
     //   initCustomSlider();
     // });
 
-    // * Document Ready
-    jQuery(function ($) {
-      // * Slider Functions - START
-      removeOriginalMainSlider();
-      insertCustomMainSlider();
-      initCustomSlider();
-      // * Slider Functions - END
-    });
+    // // * Document Ready
+    // jQuery(function ($) {
+    //   // * Slider Functions - START
+    // removeOriginalMainSlider();
+    // insertCustomMainSlider();
+    // initCustomSlider();
+    //   // * Slider Functions - END
+    // });
   }
 
   (async function () {
@@ -999,7 +1003,19 @@
         loadCSS("https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css");
       }
 
-      App();
+      const wait = setInterval(function () {
+        if (
+          typeof jQuery !== "undefined" &&
+          typeof Swiper !== "undefined" &&
+          document.readyState === "complete"
+        ) {
+          clearInterval(wait);
+
+          $(document).ready(function () {
+            App();
+          });
+        }
+      }, 500);
     } catch (e) {
       alert("Couldn't load jQuery & Swiper!");
       console.error(e);
