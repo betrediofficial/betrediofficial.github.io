@@ -986,7 +986,8 @@
           clearInterval(wait);
 
           $(document).ready(function () {
-            App();
+            // App();
+            mainSlider();
           });
         }
       }, 250);
