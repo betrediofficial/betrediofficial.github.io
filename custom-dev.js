@@ -855,19 +855,35 @@
   function removeAllHomepageWidgets() {
     document.querySelectorAll(".manually-added-home-widgets").forEach((el) => {
       el.remove();
-      console.log("🧹 .manually-added-home-widgets DOM'dan kaldırıldı.");
     });
   }
 
-  function observeRouteChanges(callback) {
-    const pushState = history.pushState;
+  function onRouteChange() {
+    const target = document.querySelector("#main__content");
 
+    if (!target) return;
+
+    const observer = new MutationObserver((mutationsList, observer) => {
+      const hasDOMChange = mutationsList.some(
+        (mutation) => mutation.addedNodes.length > 0
+      );
+
+      if (hasDOMChange) {
+        observer.disconnect();
+        setTimeout(App, 200);
+      }
+    });
+
+    observer.observe(target, { childList: true, subtree: true });
+  }
+
+  function observeRouteChanges() {
+    const pushState = history.pushState;
     history.pushState = function () {
       pushState.apply(this, arguments);
-      callback();
+      onRouteChange();
     };
-
-    window.addEventListener("popstate", callback);
+    window.addEventListener("popstate", onRouteChange);
   }
 
   function mainSlider() {
@@ -885,7 +901,7 @@
         <div class="swiper mainSwiper">
           <div class="swiper-wrapper">
             <div class="swiper-slide">
-              <a href="https://betredi110.com/${language}/promotion/15-casino-yatirim-bonusu-tr">
+              <a href="/promotion/15-casino-yatirim-bonusu-tr">
                 ${
                   isMobile()
                     ? '<img src="https://betrediofficial.github.io/images/mobile-main-slider/15casino.webp" class="slide-image" />'
@@ -894,7 +910,7 @@
               </a>
             </div>
             <div class="swiper-slide">
-              <a href="https://betredi110.com/${language}/promotion/15-spor-yatirim-bonusu-tr">
+              <a href="/promotion/15-spor-yatirim-bonusu-tr">
                 ${
                   isMobile()
                     ? '<img src="https://betrediofficial.github.io/images/mobile-main-slider/15spor.webp" class="slide-image" />'
@@ -903,7 +919,7 @@
               </a>
             </div>
             <div class="swiper-slide">
-              <a href="https://betredi110.com/${language}/promotion/30-casino-discount-tr">
+              <a href="/promotion/30-casino-discount-tr">
                 ${
                   isMobile()
                     ? '<img src="https://betrediofficial.github.io/images/mobile-main-slider/30casino.webp" class="slide-image" />'
@@ -912,7 +928,7 @@
               </a>
             </div>
             <div class="swiper-slide">
-              <a href="https://betredi110.com/${language}/promotion/50-slot-yatirim-bonusu-tr">
+              <a href="/promotion/50-slot-yatirim-bonusu-tr">
                 ${
                   isMobile()
                     ? '<img src="https://betrediofficial.github.io/images/mobile-main-slider/50slot.webp" class="slide-image" />'
@@ -921,7 +937,7 @@
               </a>
             </div>
             <div class="swiper-slide">
-              <a href="https://betredi110.com/${language}/promotion/100-freespin-deneme-bonusu-trrf">
+              <a href="/promotion/100-freespin-deneme-bonusu-trrf">
                 ${
                   isMobile()
                     ? '<img src="https://betrediofficial.github.io/images/mobile-main-slider/100freespin.webp" class="slide-image" />'
