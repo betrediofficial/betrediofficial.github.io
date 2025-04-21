@@ -847,6 +847,19 @@
 
   const isMobile = () => window.innerWidth < 768;
 
+  function checkHomePage() {
+    const path = window.location.pathname;
+    const splitPath = path.split("/");
+    return !splitPath[2] || splitPath[2] === "";
+  }
+
+  function removeHomepageWidgets() {
+    if (!checkHomePage()) {
+      $(".manually-added-home-widgets").hide();
+    }
+  }
+
+  // * Homepage Widgets - START
   function mainSlider() {
     function removeOriginalMainSlider() {
       const slider = document.querySelector("#main__content #main-slider");
@@ -948,6 +961,7 @@
     insertCustomMainSlider();
     initCustomSlider();
   }
+  // * Homepage Widgets - END
 
   function App() {
     const waitForMainContent = setInterval(() => {
@@ -977,7 +991,28 @@
         loadCSS("https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css");
       }
 
-      App();
+      $(document).ready(function () {
+        App();
+
+        const originalPushState = history.pushState;
+        history.pushState = function (state) {
+          originalPushState.apply(history, arguments);
+
+          setTimeout(() => {
+            App();
+          }, 250);
+
+          removeHomepageWidgets();
+        };
+
+        $(window).on("popstate", function () {
+          setTimeout(() => {
+            App();
+          }, 250);
+
+          removeHomepageWidgets();
+        });
+      });
     } catch (e) {
       alert("Couldn't load jQuery & Swiper!");
       console.error(e);
