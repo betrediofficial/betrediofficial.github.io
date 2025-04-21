@@ -818,6 +818,7 @@
 // let casino_games = getCasinoGames();
 
 (function () {
+  // * Script & CSS Initialization
   const loadScript = (src) =>
     new Promise((resolve, reject) => {
       const script = document.createElement("script");
@@ -835,6 +836,99 @@
     document.head.appendChild(link);
   };
 
+  // * Widget Functions
+  function removeOriginalMainSlider() {
+    const firstSection = document.querySelector("#main__content .section");
+    if (firstSection && firstSection.id === "main-slider") {
+      console.log("Removing original #main-slider...");
+      firstSection.style.display = "none";
+    }
+  }
+
+  function insertCustomMainSlider() {
+    const sliderHTML = `
+    <div class="manually-added-home-widgets section pt-24" id="main-slider">
+      <div class="container">
+        <div class="swiper mySwiper">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <a href="${
+                language === "tr"
+                  ? "https://betredi110.com/tr/promotion/15-casino-yatirim-bonusu-tr"
+                  : "https://betredi110.com/en/promotion/15-casino-yatirim-bonusu-tr"
+              }">
+                ${
+                  isMobile()
+                    ? '<img src="https://betrediofficial.github.io/images/mobile-main-slider/15casino.webp" class="slide-image" />'
+                    : '<img src="https://betrediofficial.github.io/images/slider/15Casino.webp" class="slide-image" />'
+                }
+              </a>
+            </div>
+            <div class="swiper-slide">
+              <a href="${
+                language === "tr"
+                  ? "https://betredi110.com/tr/promotion/15-spor-yatirim-bonusu-tr"
+                  : "https://betredi110.com/en/promotion/15-spor-yatirim-bonusu-tr"
+              }">
+                ${
+                  isMobile()
+                    ? '<img src="https://betrediofficial.github.io/images/mobile-main-slider/15spor.webp" class="slide-image" />'
+                    : '<img src="https://betrediofficial.github.io/images/slider/15Spor.webp" class="slide-image" />'
+                }
+              </a>
+            </div>
+            <div class="swiper-slide">
+              <a href="${
+                language === "tr"
+                  ? "https://betredi110.com/tr/promotion/30-casino-discount-tr"
+                  : "https://betredi110.com/en/promotion/30-casino-discount-tr"
+              }">
+                ${
+                  isMobile()
+                    ? '<img src="https://betrediofficial.github.io/images/mobile-main-slider/30casino.webp" class="slide-image" />'
+                    : '<img src="https://betrediofficial.github.io/images/slider/30Discount.webp" class="slide-image" />'
+                }
+              </a>
+            </div>
+            <div class="swiper-slide">
+              <a href="${
+                language === "tr"
+                  ? "https://betredi110.com/tr/promotion/50-slot-yatirim-bonusu-tr"
+                  : "https://betredi110.com/en/promotion/50-slot-yatirim-bonusu-tr"
+              }">
+                ${
+                  isMobile()
+                    ? '<img src="https://betrediofficial.github.io/images/mobile-main-slider/50slot.webp" class="slide-image" />'
+                    : '<img src="https://betrediofficial.github.io/images/slider/50Slot.webp" class="slide-image" />'
+                }
+              </a>
+            </div>
+            <div class="swiper-slide">
+              <a href="${
+                language === "tr"
+                  ? "https://betredi110.com/tr/promotion/100-freespin-deneme-bonusu-trrf"
+                  : "https://betredi110.com/en/promotion/100-freespin-deneme-bonusu-trrf"
+              }">
+                ${
+                  isMobile()
+                    ? '<img src="https://betrediofficial.github.io/images/mobile-main-slider/100freespin.webp" class="slide-image" />'
+                    : '<img src="https://betrediofficial.github.io/images/slider/100Freespin.webp" class="slide-image" />'
+                }
+              </a>
+            </div>
+          </div>
+          <div class="swiper-button-next"></div>
+          <div class="swiper-button-prev"></div>
+          <div class="swiper-pagination"></div>
+        </div>
+      </div>
+    </div>
+  `;
+
+    const mainContent = document.querySelector("#main__content");
+    if (mainContent) mainContent.insertAdjacentHTML("afterbegin", sliderHTML);
+  }
+
   function App() {
     const language = window.location.pathname.split("/")[1];
     const isLoggedIn = false;
@@ -849,7 +943,8 @@
 
     // * Document Ready
     jQuery(function ($) {
-      alert("Custom-dev.js is installed.");
+      removeOriginalMainSlider();
+      insertCustomMainSlider();
     });
   }
 
