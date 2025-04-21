@@ -847,14 +847,21 @@
 
   const isMobile = () => window.innerWidth < 768;
 
-  // * Widget Functions
-  function removeOriginalMainSlider() {
-    const firstSection = document.querySelector(
-      "#main__content #main-slider.section"
-    );
+  // function removeOriginalMainSlider() {
+  //   const firstSection = document.querySelector(
+  //     "#main__content #main-slider.section"
+  //   );
 
-    if (firstSection && firstSection.id === "main-slider")
-      firstSection.remove();
+  //   if (firstSection && firstSection.id === "main-slider")
+  //     firstSection.remove();
+  // }
+
+  function removeOriginalMainSlider() {
+    const firstSection = document.querySelector("#main__content .section");
+    if (firstSection && firstSection.id === "main-slider") {
+      console.log("Removing original #main-slider...");
+      firstSection.style.display = "none";
+    }
   }
 
   function insertCustomMainSlider() {
