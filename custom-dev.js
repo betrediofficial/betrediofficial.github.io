@@ -975,44 +975,50 @@
     }, 250);
   }
 
-  (async function () {
+  (function () {
     try {
-      // * jQuery load
-      if (typeof jQuery === "undefined") {
-        await loadScript("https://code.jquery.com/jquery-3.6.0.min.js");
-      }
+      const wait = setInterval(async function () {
+        clearInterval(wait);
 
-      // * Swiper JS yükle
-      if (typeof Swiper === "undefined") {
-        await loadScript(
-          "https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"
-        );
+        // * jQuery load
+        if (typeof jQuery === "undefined") {
+          await loadScript("https://code.jquery.com/jquery-3.6.0.min.js");
+        }
 
-        loadCSS("https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css");
-      }
+        // * Swiper JS yükle
+        if (typeof Swiper === "undefined") {
+          await loadScript(
+            "https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"
+          );
 
-      $(document).ready(function () {
-        App();
+          loadCSS(
+            "https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"
+          );
+        }
 
-        const originalPushState = history.pushState;
-        history.pushState = function (state) {
-          originalPushState.apply(history, arguments);
+        $(document).ready(function () {
+          App();
 
-          setTimeout(() => {
-            App();
-          }, 250);
+          const originalPushState = history.pushState;
+          history.pushState = function (state) {
+            originalPushState.apply(history, arguments);
 
-          removeHomepageWidgets();
-        };
+            setTimeout(() => {
+              App();
+            }, 500);
 
-        $(window).on("popstate", function () {
-          setTimeout(() => {
-            App();
-          }, 250);
+            removeHomepageWidgets();
+          };
 
-          removeHomepageWidgets();
+          $(window).on("popstate", function () {
+            setTimeout(() => {
+              App();
+            }, 500);
+
+            removeHomepageWidgets();
+          });
         });
-      });
+      }, 300);
     } catch (e) {
       alert("Couldn't load jQuery & Swiper!");
       console.error(e);
