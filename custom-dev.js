@@ -1230,7 +1230,7 @@
 
       if ($("#casinooyunlari").length > 0)
         $("#casinooyunlari").after(miniGamesSection);
-      else $("#tgpromo").eq(0).after(miniGamesSection);
+      else $("#popular-games-wrapper").eq(0).after(miniGamesSection);
     }
 
     function initCustomMiniGamesSlider() {
@@ -2917,7 +2917,7 @@ ${
       var newSection = `
      <div class="manually-added-home-widgets section" id="slotoyunlari" style="margin-bottom: 14px;">
   <div class="container otherGames">
-    <div class="row">bottomMenuWidget
+    <div class="row">
       <div class="col-12">
         <div class="section__title-wrap">
           <h2 class="section__title" style="font-size: 30px; font-family: 'Rajdhani-SemiBold', serif;">
@@ -3137,7 +3137,7 @@ ${
 `;
 
       if ($("#slotoyunlari").length > 0) $("#slotoyunlari").after(newSection);
-      else $("#bottomMenuWidgedContainer").eq(0).after(newSection);
+      else $("#mini-slider-wrapper").eq(0).after(newSection);
     }
 
     function casinoGames() {
