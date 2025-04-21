@@ -871,11 +871,7 @@
               </a>
             </div>
             <div class="swiper-slide">
-              <a href="${
-                language === "tr"
-                  ? "https://betredi110.com/tr/promotion/15-spor-yatirim-bonusu-tr"
-                  : "https://betredi110.com/en/promotion/15-spor-yatirim-bonusu-tr"
-              }">
+              <a href="https://betredi110.com/${language}/promotion/15-spor-yatirim-bonusu-tr">
                 ${
                   isMobile()
                     ? '<img src="https://betrediofficial.github.io/images/mobile-main-slider/15spor.webp" class="slide-image" />'
@@ -884,11 +880,7 @@
               </a>
             </div>
             <div class="swiper-slide">
-              <a href="${
-                language === "tr"
-                  ? "https://betredi110.com/tr/promotion/30-casino-discount-tr"
-                  : "https://betredi110.com/en/promotion/30-casino-discount-tr"
-              }">
+              <a href="https://betredi110.com/${language}/promotion/30-casino-discount-tr">
                 ${
                   isMobile()
                     ? '<img src="https://betrediofficial.github.io/images/mobile-main-slider/30casino.webp" class="slide-image" />'
@@ -897,11 +889,7 @@
               </a>
             </div>
             <div class="swiper-slide">
-              <a href="${
-                language === "tr"
-                  ? "https://betredi110.com/tr/promotion/50-slot-yatirim-bonusu-tr"
-                  : "https://betredi110.com/en/promotion/50-slot-yatirim-bonusu-tr"
-              }">
+              <a href="https://betredi110.com/${language}/promotion/50-slot-yatirim-bonusu-tr">
                 ${
                   isMobile()
                     ? '<img src="https://betrediofficial.github.io/images/mobile-main-slider/50slot.webp" class="slide-image" />'
@@ -910,11 +898,7 @@
               </a>
             </div>
             <div class="swiper-slide">
-              <a href="${
-                language === "tr"
-                  ? "https://betredi110.com/tr/promotion/100-freespin-deneme-bonusu-trrf"
-                  : "https://betredi110.com/en/promotion/100-freespin-deneme-bonusu-trrf"
-              }">
+              <a href="https://betredi110.com/${language}/promotion/100-freespin-deneme-bonusu-trrf">
                 ${
                   isMobile()
                     ? '<img src="https://betrediofficial.github.io/images/mobile-main-slider/100freespin.webp" class="slide-image" />'
