@@ -836,15 +836,27 @@
     document.head.appendChild(link);
   };
 
-  // * Widget Functions
-  function removeOriginalMainSlider() {
-    const firstSection = document.querySelector("#main__content .section");
-    if (firstSection && firstSection.id === "main-slider")
-      firstSection.remove();
-  }
+  function App() {
+    const language = window.location.pathname.split("/")[1];
+    const isLoggedIn = false;
 
-  function insertCustomMainSlider() {
-    const sliderHTML = `
+    const depositMoneyLink = () =>
+      !isLoggedIn ? "?modal=login" : "?modal=wallet&tab=deposit";
+
+    const withdrawMoneyLink = () =>
+      !isLoggedIn ? "?modal=login" : "?modal=wallet&tab=withdraw";
+
+    const isMobile = () => window.innerWidth < 768;
+
+    // * Widget Functions
+    function removeOriginalMainSlider() {
+      const firstSection = document.querySelector("#main__content .section");
+      if (firstSection && firstSection.id === "main-slider")
+        firstSection.remove();
+    }
+
+    function insertCustomMainSlider() {
+      const sliderHTML = `
     <div class="manually-added-home-widgets section pt-24" id="main-slider">
       <div class="container">
         <div class="swiper mySwiper">
@@ -923,46 +935,34 @@
     </div>
   `;
 
-    const mainContent = document.querySelector("#main__content");
-    if (mainContent) mainContent.insertAdjacentHTML("afterbegin", sliderHTML);
-  }
+      const mainContent = document.querySelector("#main__content");
+      if (mainContent) mainContent.insertAdjacentHTML("afterbegin", sliderHTML);
+    }
 
-  function initCustomSlider() {
-    const swiperEl = document.querySelector("#main-slider .swiper");
-    if (!swiperEl || typeof Swiper !== "function") return;
+    function initCustomSlider() {
+      const swiperEl = document.querySelector("#main-slider .swiper");
+      if (!swiperEl || typeof Swiper !== "function") return;
 
-    window.myMainSlider = new Swiper(swiperEl, {
-      loop: true,
-      slidesPerView: 1,
-      centeredSlides: false,
-      autoplay: {
-        delay: 4000,
-        disableOnInteraction: false,
-      },
-      pagination: {
-        el: "#main-slider .swiper-pagination",
-        clickable: true,
-      },
-      navigation: {
-        nextEl: "#main-slider .swiper-button-next",
-        prevEl: "#main-slider .swiper-button-prev",
-      },
-      effect: "slide",
-      speed: 600,
-    });
-  }
-
-  function App() {
-    const language = window.location.pathname.split("/")[1];
-    const isLoggedIn = false;
-
-    const depositMoneyLink = () =>
-      !isLoggedIn ? "?modal=login" : "?modal=wallet&tab=deposit";
-
-    const withdrawMoneyLink = () =>
-      !isLoggedIn ? "?modal=login" : "?modal=wallet&tab=withdraw";
-
-    const isMobile = () => window.innerWidth < 768;
+      window.myMainSlider = new Swiper(swiperEl, {
+        loop: true,
+        slidesPerView: 1,
+        centeredSlides: false,
+        autoplay: {
+          delay: 4000,
+          disableOnInteraction: false,
+        },
+        pagination: {
+          el: "#main-slider .swiper-pagination",
+          clickable: true,
+        },
+        navigation: {
+          nextEl: "#main-slider .swiper-button-next",
+          prevEl: "#main-slider .swiper-button-prev",
+        },
+        effect: "slide",
+        speed: 600,
+      });
+    }
 
     // * Document Ready
     jQuery(function ($) {
