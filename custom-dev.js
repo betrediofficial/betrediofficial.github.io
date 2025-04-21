@@ -1184,18 +1184,16 @@
         <div class="col-12">
           <h2 class="section__title">
             <svg class="svg-icon">
-              <use href="/static/media/sprite.1cea5f3c17045e69440504bcd887b333.svg#mini-games" 
-                   xlink:href="/static/media/sprite.1cea5f3c17045e69440504bcd887b333.svg#mini-games">
+              <use href="/static/media/sprite.94622980f40d877c6d27eb5b2474fa5a.svg#mini-games" xlink:href="/static/media/sprite.94622980f40d877c6d27eb5b2474fa5a.svg#mini-games">
               </use>
             </svg>
             Mini Oyunlar
           </h2>
         </div>
-  
         <div class="col-12">
           <div class="swiper swiper-initialized swiper-horizontal myMiniGamesSwiper swiper-backface-hidden">
             <div class="swiper-wrapper" style="transform: translate3d(0px, 0px, 0px);">
-  
+
               <div class="swiper-slide" data-swiper-slide-index="0" style="width: 339px; margin-right: 12px; background: none !important;">
                 <a class="mini-game mini-game--carousel mini-game--no-layer" href=${
                   language === "tr"
@@ -2944,11 +2942,6 @@ ${
      <div class="manually-added-home-widgets section" id="slotoyunlari" style="margin-bottom: 14px;">
   <div class="container otherGames">
     <div class="row">bottomMenuWidget
-bottomMenuWidget
-bottomMenuWidget
-bottomMenuWidget
-bottomMenuWidget
-bottomMenuWidget
       <div class="col-12">
         <div class="section__title-wrap">
           <h2 class="section__title" style="font-size: 30px; font-family: 'Rajdhani-SemiBold', serif;">
