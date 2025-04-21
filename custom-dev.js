@@ -847,6 +847,29 @@
 
   const isMobile = () => window.innerWidth < 768;
 
+  function isHomepage() {
+    const path = window.location.pathname.replace(/\/+$/, "");
+    return path === "" || path === "/tr" || path === "/en";
+  }
+
+  function removeAllHomepageWidgets() {
+    document.querySelectorAll(".manually-added-home-widgets").forEach((el) => {
+      el.remove();
+      console.log("🧹 .manually-added-home-widgets DOM'dan kaldırıldı.");
+    });
+  }
+
+  function observeRouteChanges(callback) {
+    const pushState = history.pushState;
+
+    history.pushState = function () {
+      pushState.apply(this, arguments);
+      callback();
+    };
+
+    window.addEventListener("popstate", callback);
+  }
+
   function mainSlider() {
     function removeOriginalMainSlider() {
       const slider = document.querySelector("#main__content #main-slider");
@@ -955,8 +978,10 @@
       if (mainContent) {
         clearInterval(waitForMainContent);
 
+        removeAllHomepageWidgets();
+
         // * Homepage Widgets Calling
-        mainSlider();
+        if (isHomepage()) mainSlider();
       }
     }, 250);
   }
@@ -988,6 +1013,8 @@
           $(document).ready(function () {
             App();
           });
+
+          observeRouteChanges(() => setTimeout(App, 300));
         }
       }, 250);
     } catch (e) {
