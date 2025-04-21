@@ -855,7 +855,7 @@
 
   function removeHomepageWidgets() {
     if (!checkHomePage()) {
-      $(".manually-added-home-widgets").hide();
+      $(".manually-added-home-widgets").remove();
     }
   }
 
@@ -970,7 +970,7 @@
         clearInterval(waitForMainContent);
 
         // * Homepage Widgets Calling
-        mainSlider();
+        if (checkHomePage()) mainSlider();
       }
     }, 250);
   }
