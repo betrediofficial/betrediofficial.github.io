@@ -836,6 +836,7 @@
     document.head.appendChild(link);
   };
 
+  let isAppRunning = false;
   const language = window.location.pathname.split("/")[1];
   const isLoggedIn = false;
 
@@ -860,21 +861,25 @@
 
   function onRouteChange() {
     const target = document.querySelector("#main__content");
-
     if (!target) return;
 
     const observer = new MutationObserver((mutationsList, observer) => {
-      const hasDOMChange = mutationsList.some(
-        (mutation) => mutation.addedNodes.length > 0
+      const hasRealChange = mutationsList.some((mutation) =>
+        Array.from(mutation.addedNodes).some((node) => node.nodeType === 1)
       );
 
-      if (hasDOMChange) {
+      if (hasRealChange) {
         observer.disconnect();
-        setTimeout(App, 200);
+
+        // İçerik doldurulduktan sonra 300ms gecikme ile çalıştır
+        setTimeout(() => {
+          console.log("📦 Route değişimiyle App yeniden başlatılıyor...");
+          App();
+        }, 300);
       }
     });
 
-    observer.observe(target, { childList: true, subtree: true });
+    observer.observe(target, { childList: true, subtree: false });
   }
 
   function observeRouteChanges() {
@@ -989,15 +994,21 @@
   }
 
   function App() {
+    if (isAppRunning) return;
+
+    isAppRunning = true;
+
     const waitForMainContent = setInterval(() => {
       const mainContent = document.querySelector("#main__content");
       if (mainContent) {
         clearInterval(waitForMainContent);
-
         removeAllHomepageWidgets();
 
-        // * Homepage Widgets Calling
-        if (isHomepage()) mainSlider();
+        if (isHomepage()) {
+          mainSlider();
+        }
+
+        isAppRunning = false;
       }
     }, 250);
   }
