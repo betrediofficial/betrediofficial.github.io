@@ -818,44 +818,61 @@
 // let casino_games = getCasinoGames();
 
 (function () {
-  var language = window.location.pathname.split("/")[1];
+  const loadScript = (src) =>
+    new Promise((resolve, reject) => {
+      const script = document.createElement("script");
+      script.src = src;
+      script.onload = resolve;
+      script.onerror = reject;
 
-  var isLoggedIn = false;
+      document.head.appendChild(script);
+    });
 
-  const depositMoneyLink = () =>
-    !isLoggedIn ? "?modal=login" : "?modal=wallet&tab=deposit";
+  const loadCSS = (href) => {
+    const link = document.createElement("link");
+    link.rel = "stylesheet";
+    link.href = href;
+    document.head.appendChild(link);
+  };
 
-  const withdrawMoneyLink = () =>
-    !isLoggedIn ? "?modal=login" : "?modal=wallet&tab=withdraw";
+  const App = () => {
+    const language = window.location.pathname.split("/")[1];
+    const isLoggedIn = false;
 
-  const isMobile = () => window.innerWidth < 768;
+    const depositMoneyLink = () =>
+      !isLoggedIn ? "?modal=login" : "?modal=wallet&tab=deposit";
 
-  try {
-    // * Jquery CDN
-    if (typeof jQuery === "undefined") {
-      var jqueryScript = document.createElement("script");
-      jqueryScript.src = "https://code.jquery.com/jquery-3.6.0.min.js";
-      document.head.append(jqueryScript);
+    const withdrawMoneyLink = () =>
+      !isLoggedIn ? "?modal=login" : "?modal=wallet&tab=withdraw";
+
+    const isMobile = () => window.innerWidth < 768;
+
+    // * Document Ready
+    jQuery(function ($) {
+      alert("Custom-dev.js is installed.");
+    });
+  };
+
+  (async () => {
+    try {
+      // * jQuery load
+      if (typeof jQuery === "undefined") {
+        await loadScript("https://code.jquery.com/jquery-3.6.0.min.js");
+      }
+
+      // * Swiper JS yükle
+      if (typeof Swiper === "undefined") {
+        await loadScript(
+          "https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"
+        );
+
+        loadCSS("https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css");
+      }
+
+      App();
+    } catch (e) {
+      alert("Couldn't load jQuery & Swiper!");
+      console.error(e);
     }
-
-    // * Swiper CDN JS & CSS
-    if (typeof Swiper === "undefined") {
-      var swiperScript = document.createElement("script");
-      swiperScript.src =
-        "https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js";
-      document.head.appendChild(swiperScript);
-
-      const link = document.createElement("link");
-      link.rel = "stylesheet";
-      link.href = "https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css";
-      document.head.appendChild(link);
-    }
-  } catch (e) {
-    alert("Couldn't load JQuery & swiper!");
-    alert(e);
-  }
-
-  $(document).ready(function () {
-    alert("Custom-dev.js");
-  });
+  })();
 })();
