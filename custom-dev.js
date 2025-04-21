@@ -854,4 +854,8 @@
     alert("Couldn't load jquery & swiper!");
     alert(e);
   }
-});
+
+  $(document).ready(function () {
+    alert("Custom-dev.js");
+  });
+})();
