@@ -2445,11 +2445,11 @@ ${
     }
 
     #game-chooser-title-1 {
-      font-size: 20px !important;
+      font-size: 18px !important;
     }
 
     #game-chooser-title-2 {
-      font-size: 24px !important;
+      font-size: 20px !important;
     }
 
     #game-chooser-title-1,
@@ -2457,7 +2457,7 @@ ${
       padding: 0px 12px;
     }
 
-      #main-slider .mySwiper {
+    #main-slider .mySwiper {
       height: 30vh !important;
     }
 
@@ -2600,7 +2600,7 @@ ${
       const gameChooserSection = `
   <div class="manually-added-home-widgets" id="game-chooser" style="width: 100%; margin: 48px auto">
     <div class="text-white" style="width: 100%; margin: 0 auto;">
-      <div style="padding: 96px 0px; background: url('https://betrediofficial.github.io/images/game-chooser-icons/bg.png');">
+      <div style="padding: 128px 0px; background: url('https://betrediofficial.github.io/images/game-chooser-icons/bg.png');">
         <div style="margin-bottom: 42px">
           <h2 class="text-center" id="game-chooser-title-1" style="font-size: 28px; margin-bottom: 4px">
             ${
@@ -2861,7 +2861,7 @@ ${
         return $(".bottomMenuWidgedContainer").show();
       }
 
-      $("#slotoyunlari").before(`
+      var newSection = `
 <div class="manually-added-home-widgets bottomMenuWidgedContainer" id="bottomMenuWidgedContainer" style="margin-bottom: 10px;">
   <div class="bottom-menu-widget" style="flex: 1 1 calc(25% - 10px); text-align: center;">
     <a href=${
@@ -2906,7 +2906,9 @@ ${
     </a>
   </div>
 </div>
-    `);
+    `;
+
+      $("#slotoyunlari").before(newSection);
     }
 
     function slotGames() {
