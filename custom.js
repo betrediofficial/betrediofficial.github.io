@@ -13,11 +13,7 @@
 
   const getSlotGames = () => [
     {
-      src: `${
-        language === "tr"
-          ? "https://betredi110.com/tr/casino/games/pragmaticplay-wisdom-of-athena"
-          : "https://betredi110.com/en/casino/games/pragmaticplay-wisdom-of-athena"
-      }`,
+      src: `https://betredi110.com/${language}/casino/games/pragmaticplay-wisdom-of-athena`,
       image:
         "https://vendor-provider.fra1.digitaloceanspaces.com/ebetlab/gXmqkthvbB1521K/games/QHij6XwNJYI8vtYWthfFj6JxMcOru5CdnnnOFICG.avif",
     },
@@ -944,13 +940,8 @@
     };
 
     function gameChooserLogic() {
-      // * Game Chooser Logic - START
-
       let prevSlotCount = -1;
       let prevCasinoCount = -1;
-
-      console.log("Slot Oyunları Sayısı: ", slot_games.length);
-      console.log("Casino Oyunları Sayısı: ", casino_games.length);
 
       const shuffledSlotGames = shuffleArray([...slot_games]);
       const suffledCasinoGames = shuffleArray([...casino_games]);
@@ -1008,8 +999,6 @@
           $(".game-chooser-hovered-effect").css("display", "flex");
         }, 2500);
       });
-
-      // * Game Chooser Logic - END
     }
 
     // Wait for DOM and both libraries to be ready
@@ -1075,11 +1064,7 @@
         <div class="swiper mySwiper">
           <div class="swiper-wrapper">
             <div class="swiper-slide">
-              <a href="${
-                language === "tr"
-                  ? "https://betredi110.com/tr/promotion/15-casino-yatirim-bonusu-tr"
-                  : "https://betredi110.com/en/promotion/15-casino-yatirim-bonusu-tr"
-              }">
+              <a href="https://betredi110.com/${language}/promotion/15-casino-yatirim-bonusu-tr">
                 ${
                   isMobile()
                     ? '<img src="https://betrediofficial.github.io/images/mobile-main-slider/15casino.webp" class="slide-image" />'
@@ -1088,11 +1073,7 @@
               </a>
             </div>
             <div class="swiper-slide">
-              <a href="${
-                language === "tr"
-                  ? "https://betredi110.com/tr/promotion/15-spor-yatirim-bonusu-tr"
-                  : "https://betredi110.com/en/promotion/15-spor-yatirim-bonusu-tr"
-              }">
+              <a href="https://betredi110.com/${language}/promotion/15-spor-yatirim-bonusu-tr">
                 ${
                   isMobile()
                     ? '<img src="https://betrediofficial.github.io/images/mobile-main-slider/15spor.webp" class="slide-image" />'
@@ -1101,11 +1082,7 @@
               </a>
             </div>
             <div class="swiper-slide">
-              <a href="${
-                language === "tr"
-                  ? "https://betredi110.com/tr/promotion/30-casino-discount-tr"
-                  : "https://betredi110.com/en/promotion/30-casino-discount-tr"
-              }">
+              <a href="https://betredi110.com/${language}/promotion/30-casino-discount-tr">
                 ${
                   isMobile()
                     ? '<img src="https://betrediofficial.github.io/images/mobile-main-slider/30casino.webp" class="slide-image" />'
@@ -1114,11 +1091,7 @@
               </a>
             </div>
             <div class="swiper-slide">
-              <a href="${
-                language === "tr"
-                  ? "https://betredi110.com/tr/promotion/50-slot-yatirim-bonusu-tr"
-                  : "https://betredi110.com/en/promotion/50-slot-yatirim-bonusu-tr"
-              }">
+              <a href="https://betredi110.com/${language}/promotion/50-slot-yatirim-bonusu-tr">
                 ${
                   isMobile()
                     ? '<img src="https://betrediofficial.github.io/images/mobile-main-slider/50slot.webp" class="slide-image" />'
@@ -1127,11 +1100,7 @@
               </a>
             </div>
             <div class="swiper-slide">
-              <a href="${
-                language === "tr"
-                  ? "https://betredi110.com/tr/promotion/100-freespin-deneme-bonusu-trrf"
-                  : "https://betredi110.com/en/promotion/100-freespin-deneme-bonusu-trrf"
-              }">
+              <a href="https://betredi110.com/${language}/promotion/100-freespin-deneme-bonusu-trrf">
                 ${
                   isMobile()
                     ? '<img src="https://betrediofficial.github.io/images/mobile-main-slider/100freespin.webp" class="slide-image" />'
@@ -1191,18 +1160,16 @@
         <div class="col-12">
           <h2 class="section__title">
             <svg class="svg-icon">
-              <use href="/static/media/sprite.1cea5f3c17045e69440504bcd887b333.svg#mini-games" 
-                   xlink:href="/static/media/sprite.1cea5f3c17045e69440504bcd887b333.svg#mini-games">
+              <use href="/static/media/sprite.94622980f40d877c6d27eb5b2474fa5a.svg#mini-games" xlink:href="/static/media/sprite.94622980f40d877c6d27eb5b2474fa5a.svg#mini-games">
               </use>
             </svg>
             Mini Oyunlar
           </h2>
         </div>
-  
         <div class="col-12">
           <div class="swiper swiper-initialized swiper-horizontal myMiniGamesSwiper swiper-backface-hidden">
             <div class="swiper-wrapper" style="transform: translate3d(0px, 0px, 0px);">
-  
+
               <div class="swiper-slide" data-swiper-slide-index="0" style="width: 339px; margin-right: 12px; background: none !important;">
                 <a class="mini-game mini-game--carousel mini-game--no-layer" href=${
                   language === "tr"
@@ -1263,7 +1230,7 @@
 
       if ($("#casinooyunlari").length > 0)
         $("#casinooyunlari").after(miniGamesSection);
-      else $("#tgpromo").eq(0).after(miniGamesSection);
+      else $("#popular-games-wrapper").eq(0).after(miniGamesSection);
     }
 
     function initCustomMiniGamesSlider() {
@@ -1299,9 +1266,10 @@
         removeHomePageWidgets();
       } else {
         mobileSignInText();
-        bottomMenuWidget(is_mobile);
 
         if (!is_mobile) slotGames();
+
+        bottomMenuWidget(is_mobile);
 
         tgPromo();
 
@@ -2477,11 +2445,11 @@ ${
     }
 
     #game-chooser-title-1 {
-      font-size: 20px !important;
+      font-size: 18px !important;
     }
 
     #game-chooser-title-2 {
-      font-size: 24px !important;
+      font-size: 20px !important;
     }
 
     #game-chooser-title-1,
@@ -2489,7 +2457,7 @@ ${
       padding: 0px 12px;
     }
 
-      #main-slider .mySwiper {
+    #main-slider .mySwiper {
       height: 30vh !important;
     }
 
@@ -2632,7 +2600,7 @@ ${
       const gameChooserSection = `
   <div class="manually-added-home-widgets" id="game-chooser" style="width: 100%; margin: 48px auto">
     <div class="text-white" style="width: 100%; margin: 0 auto;">
-      <div style="padding: 96px 0px; background: url('https://betrediofficial.github.io/images/game-chooser-icons/bg.png');">
+      <div style="padding: 128px 0px; background: url('https://betrediofficial.github.io/images/game-chooser-icons/bg.png');">
         <div style="margin-bottom: 42px">
           <h2 class="text-center" id="game-chooser-title-1" style="font-size: 28px; margin-bottom: 4px">
             ${
@@ -2758,6 +2726,7 @@ ${
       `;
 
       $("#buy-bonus-games-wrapper").after(gameChooserSection);
+
       gameChooserLogic();
     }
 
@@ -2892,7 +2861,7 @@ ${
         return $(".bottomMenuWidgedContainer").show();
       }
 
-      $("#slotoyunlari").before(`
+      var newSection = `
 <div class="manually-added-home-widgets bottomMenuWidgedContainer" id="bottomMenuWidgedContainer" style="margin-bottom: 10px;">
   <div class="bottom-menu-widget" style="flex: 1 1 calc(25% - 10px); text-align: center;">
     <a href=${
@@ -2937,7 +2906,9 @@ ${
     </a>
   </div>
 </div>
-    `);
+    `;
+
+      $("#slotoyunlari").before(newSection);
     }
 
     function slotGames() {
@@ -3168,7 +3139,7 @@ ${
 `;
 
       if ($("#slotoyunlari").length > 0) $("#slotoyunlari").after(newSection);
-      else $("#bottomMenuWidgedContainer").eq(0).after(newSection);
+      else $("#mini-slider-wrapper").eq(0).after(newSection);
     }
 
     function casinoGames() {
