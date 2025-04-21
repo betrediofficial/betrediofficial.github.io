@@ -944,13 +944,8 @@
     };
 
     function gameChooserLogic() {
-      // * Game Chooser Logic - START
-
       let prevSlotCount = -1;
       let prevCasinoCount = -1;
-
-      console.log("Slot Oyunları Sayısı: ", slot_games.length);
-      console.log("Casino Oyunları Sayısı: ", casino_games.length);
 
       const shuffledSlotGames = shuffleArray([...slot_games]);
       const suffledCasinoGames = shuffleArray([...casino_games]);
@@ -1008,8 +1003,6 @@
           $(".game-chooser-hovered-effect").css("display", "flex");
         }, 2500);
       });
-
-      // * Game Chooser Logic - END
     }
 
     // Wait for DOM and both libraries to be ready
