@@ -967,9 +967,21 @@
   }
 
   function App() {
-    removeOriginalMainSlider();
-    insertCustomMainSlider();
-    initCustomSlider();
+    // removeOriginalMainSlider();
+    // insertCustomMainSlider();
+    // initCustomSlider();
+
+    const waitForMainContent = setInterval(() => {
+      const mainContent = document.querySelector("#main__content");
+      if (mainContent) {
+        clearInterval(waitForMainContent);
+
+        // * Homepage Widgets Calling
+        removeOriginalMainSlider();
+        insertCustomMainSlider();
+        initCustomSlider();
+      }
+    }, 250);
 
     // $(document).ready(function () {
     //   removeOriginalMainSlider();
@@ -1015,7 +1027,7 @@
             App();
           });
         }
-      }, 500);
+      }, 250);
     } catch (e) {
       alert("Couldn't load jQuery & Swiper!");
       console.error(e);
