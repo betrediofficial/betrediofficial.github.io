@@ -832,7 +832,7 @@
 
   try {
     // * Jquery CDN
-    if (typeof Jquery === "undefined") {
+    if (typeof JQuery === "undefined") {
       var jqueryScript = document.createElement("script");
       jqueryScript.src = "https://code.jquery.com/jquery-3.6.0.min.js";
       document.head.append(jqueryScript);
