@@ -832,7 +832,7 @@
 
   try {
     // * Jquery CDN
-    if (typeof JQuery === "undefined") {
+    if (typeof jQuery === "undefined") {
       var jqueryScript = document.createElement("script");
       jqueryScript.src = "https://code.jquery.com/jquery-3.6.0.min.js";
       document.head.append(jqueryScript);
@@ -855,7 +855,7 @@
       alert("Custom-dev.js");
     });
   } catch (e) {
-    alert("Couldn't load jquery & swiper!");
+    alert("Couldn't load JQuery & swiper!");
     alert(e);
   }
 })();
