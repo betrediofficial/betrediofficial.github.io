@@ -862,11 +862,7 @@
         <div class="swiper mainSwiper">
           <div class="swiper-wrapper">
             <div class="swiper-slide">
-              <a href="${
-                language === "tr"
-                  ? "https://betredi110.com/tr/promotion/15-casino-yatirim-bonusu-tr"
-                  : "https://betredi110.com/en/promotion/15-casino-yatirim-bonusu-tr"
-              }">
+              <a href="https://betredi110.com/${language}/promotion/15-casino-yatirim-bonusu-tr">
                 ${
                   isMobile()
                     ? '<img src="https://betrediofficial.github.io/images/mobile-main-slider/15casino.webp" class="slide-image" />'
@@ -977,10 +973,6 @@
 
         // * Homepage Widgets Calling
         mainSlider();
-
-        // removeOriginalMainSlider();
-        // insertCustomMainSlider();
-        // initCustomSlider();
       }
     }, 250);
   }
