@@ -857,7 +857,7 @@
 
     function insertCustomMainSlider() {
       const sliderHTML = `
-    <div class="manually-added-home-widgets" id="main-slider">
+    <div class="manually-added-home-widgets mainSwiper" id="main-slider">
       <div class="container">
         <div class="swiper mySwiper">
           <div class="swiper-wrapper">
@@ -940,10 +940,10 @@
     }
 
     function initCustomSlider() {
-      const swiperEl = document.querySelector("#main-slider .swiper");
+      const swiperEl = document.querySelector("#main-slider .mainSwiper");
       if (!swiperEl || typeof Swiper !== "function") return;
 
-      window.myMainSlider = new Swiper(swiperEl, {
+      window.mainSwiper = new Swiper(swiperEl, {
         loop: true,
         slidesPerView: 1,
         centeredSlides: false,
