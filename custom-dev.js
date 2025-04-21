@@ -977,20 +977,32 @@
         loadCSS("https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css");
       }
 
-      const wait = setInterval(function () {
-        if (
-          typeof jQuery !== "undefined" &&
-          typeof Swiper !== "undefined" &&
-          document.readyState === "complete"
-        ) {
-          clearInterval(wait);
+      $(document).ready(function () {
+        setInterval(() => {
+          const mainContent = document.querySelector("#main__content");
+          if (mainContent) {
+            clearInterval(waitForMainContent);
 
-          $(document).ready(function () {
-            // App();
+            // * Homepage Widgets Calling
             mainSlider();
-          });
-        }
-      }, 250);
+          }
+        }, 250);
+      });
+
+      // const wait = setInterval(function () {
+      //   if (
+      //     typeof jQuery !== "undefined" &&
+      //     typeof Swiper !== "undefined" &&
+      //     document.readyState === "complete"
+      //   ) {
+      //     clearInterval(wait);
+
+      //     $(document).ready(function () {
+      //       // App();
+      //       mainSlider();
+      //     });
+      //   }
+      // }, 250);
     } catch (e) {
       alert("Couldn't load jQuery & Swiper!");
       console.error(e);
