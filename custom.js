@@ -2492,7 +2492,7 @@ ${
           height="48"
           class="d-block mx-auto"
         />
-        <span>${language === "tr" ? "RTP Sorgu" : "RTP Query"}</span>
+        <span>${language === "tr" ? "Şanslı Oyunlar" : "Lucky Games"}</span>
       </div>
     </a>
   </div>
