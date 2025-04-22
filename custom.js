@@ -2080,7 +2080,7 @@ ${
 
   @media screen and (max-width: 768px) {
     #game-chooser-wrapper {
-      width: 100% !important;
+      width: 92% !important;
     }
 
     #slot-game-chooser-section,
@@ -2089,11 +2089,11 @@ ${
     }
 
     #game-chooser-title-1 {
-      font-size: 20px !important;
+      font-size: 24px !important;
     }
 
     #game-chooser-title-2 {
-      font-size: 24px !important;
+      font-size: 28px !important;
     }
 
     #game-chooser-title-1,
