@@ -664,10 +664,6 @@
         clearInterval(wait);
 
         $(document).ready(function () {
-          $(document).on("click", "a.no-click", function (e) {
-            e.preventDefault();
-          });
-
           initialize();
 
           const originalPushState = history.pushState;
@@ -689,6 +685,11 @@
 
             removeHomePageWidgets();
           });
+
+          $(document).on("click", "a.no-click", function (e) {
+            e.preventDefault();
+          });
+
           gameChooserLogic();
         });
       }
