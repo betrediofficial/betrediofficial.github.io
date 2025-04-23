@@ -1,4 +1,6 @@
 (function () {
+  // * proximus v2
+
   var language = window.location.pathname.split("/")[1];
 
   var isLoggedIn = false;
