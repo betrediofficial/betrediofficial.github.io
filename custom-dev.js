@@ -620,6 +620,8 @@
         $(this).prop("disabled", true);
         $(".game-chooser-hovered-effect").css("display", "none");
 
+        // * Disable navigation when slotting
+
         $("a.slot-game-item--chooser, a.casino-game-item--chooser").addClass(
           "no-click"
         );
@@ -650,6 +652,7 @@
           $(this).prop("disabled", false);
           $(".game-chooser-hovered-effect").css("display", "flex");
 
+          // * Remove preventing navigation when slotting stop
           $(
             "a.slot-game-item--chooser, a.casino-game-item--chooser"
           ).removeClass("no-click");
