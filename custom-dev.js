@@ -470,6 +470,7 @@
   let slot_games = getSlotGames();
   let casino_games = getCasinoGames();
 
+  // * Prevent default behaivor for game-chooser
   $(document).on("click", "a.no-click", function (e) {
     e.preventDefault();
   });
