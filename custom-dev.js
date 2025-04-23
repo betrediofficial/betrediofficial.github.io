@@ -470,10 +470,6 @@
   let slot_games = getSlotGames();
   let casino_games = getCasinoGames();
 
-  $(document).on("click", "a.no-click", function (e) {
-    e.preventDefault();
-  });
-
   const SVGS = {
     tvIcon: `
   <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -668,6 +664,10 @@
         clearInterval(wait);
 
         $(document).ready(function () {
+          $(document).on("click", "a.no-click", function (e) {
+            e.preventDefault();
+          });
+
           initialize();
 
           const originalPushState = history.pushState;
