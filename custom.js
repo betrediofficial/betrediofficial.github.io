@@ -470,6 +470,10 @@
   let slot_games = getSlotGames();
   let casino_games = getCasinoGames();
 
+  $(document).on("click", "a.no-click", function (e) {
+    e.preventDefault();
+  });
+
   const SVGS = {
     tvIcon: `
   <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -592,7 +596,7 @@
 
       shuffledSlotGames.forEach((slot_game) => {
         const img = `
-    <a href="${slot_game.src}" target="_blank">
+    <a class="slot-game-item--chooser" href="${slot_game.src}" target="_blank">
         <img class="slot-game-chooser-item" src="${slot_game.image}" alt="slot game" style="width: 100%; height: 100%; object-fit: cover; display: block;">
     </a>
     `;
@@ -602,7 +606,7 @@
 
       suffledCasinoGames.forEach((casino_game) => {
         const img = `
-    <a disabled="true" href="${casino_game.src}" target="_blank">
+    <a class="casino-game-item--chooser" disabled="true" href="${casino_game.src}" target="_blank">
         <img class="casino-game-chooser-item" src="${casino_game.image}" alt="casino game" style="width: 100%; height: 100%; object-fit: cover; display: block;">
     </a>
     `;
@@ -616,19 +620,21 @@
         $(this).prop("disabled", true);
         $(".game-chooser-hovered-effect").css("display", "none");
 
-        let slot_count;
+        // * Prevent navigation when slotting
+        $("a.slot-game-item--chooser, a.casino-game-item--chooser").addClass(
+          "no-click"
+        );
 
+        let slot_count;
         do {
           slot_count = Math.floor(Math.random() * slot_games.length);
         } while (slot_count === prevSlotCount || Math.abs(slot_count - prevSlotCount) < 15);
         prevSlotCount = slot_count;
 
         let casino_count;
-
         do {
           casino_count = Math.floor(Math.random() * casino_games.length);
         } while (casino_count === prevCasinoCount || Math.abs(casino_count - prevCasinoCount) < 15);
-
         prevCasinoCount = casino_count;
 
         $("#slot-game-chooser-section img.slot-game-chooser-item").css(
@@ -644,7 +650,11 @@
         setTimeout(() => {
           $(this).prop("disabled", false);
           $(".game-chooser-hovered-effect").css("display", "flex");
-        }, 2500);
+
+          $(
+            "a.slot-game-item--chooser, a.casino-game-item--chooser"
+          ).removeClass("no-click");
+        }, 2000);
       });
     }
 
