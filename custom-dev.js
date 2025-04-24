@@ -1367,9 +1367,9 @@
 
         randomGames.sort((a, b) => parseFloat(b.rtp) - parseFloat(a.rtp));
 
-        renderGames(filteredGames || randomGames); // filtre varsa onu göster
+        renderGames(filteredGames || randomGames);
 
-        const nextDelay = Math.floor(Math.random() * (6000 - 2000 + 1)) + 2000;
+        const nextDelay = Math.floor(Math.random() * (10000 - 2500 + 1)) + 2500;
         setTimeout(startRtpLoop, nextDelay);
       }
 
