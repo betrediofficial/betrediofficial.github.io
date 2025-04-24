@@ -467,8 +467,362 @@
     },
   ];
 
+  const getRTPGames = () => [
+    {
+      src: `https://betredi110.com/${language}/casino/games/pragmaticplay-wisdom-of-athena`,
+      image:
+        "https://vendor-provider.fra1.digitaloceanspaces.com/ebetlab/gXmqkthvbB1521K/games/QHij6XwNJYI8vtYWthfFj6JxMcOru5CdnnnOFICG.avif",
+      name: "Wisdom Of Athena",
+      provider: "PragmaticPlay",
+    },
+    {
+      src: `https://betredi110.com/${language}/casino/games/pragmaticplay-fruit-party-2`,
+      image:
+        "https://vendor-provider.fra1.digitaloceanspaces.com/ebetlab/gXmqkthvbB1521K/games/Wji6qPSBMnL9SovdpZXAtIY9p4eWCIjiagrmOxYZ.avif",
+      name: "Fruit Party 2",
+      provider: "PragmaticPlay",
+    },
+    {
+      src: `https://betredi110.com/${language}/casino/games/pragmaticplay-starlight-princess-1000`,
+      image:
+        "https://vendor-provider.fra1.digitaloceanspaces.com/ebetlab/gXmqkthvbB1521K/games/q6Nmy9YDyiOCOdVD1ruYF9EfBloh6LOdx5okrBFz.avif",
+      name: "Starlight Princess 1000",
+      provider: "PragmaticPlay",
+    },
+    {
+      src: `https://betredi110.com/${language}/casino/games/pragmaticplay-big-bass-bonanza`,
+      image:
+        "https://vendor-provider.fra1.digitaloceanspaces.com/ebetlab/gXmqkthvbB1521K/games/ncWysw2TQGFV7JclXSvraBfRuw2IlS3Xc47TaFCt.avif",
+      name: "Big Bass Bonanza",
+      provider: "PragmaticPlay",
+    },
+    {
+      src: `https://betredi110.com/${language}/casino/games/hacksaw-wanted-dead-or-a-wild`,
+      image:
+        "https://vendor-provider.fra1.digitaloceanspaces.com/ebetlab/gXmqkthvbB1521K/games/BBYGett6YWkmehO4EfmconeL4bxPVRgczwsV4f0d.png",
+      name: "Dead or Wild",
+      provider: "PragmaticPlay",
+    },
+    {
+      src: `https://betredi110.com/${language}/casino/games/pragmaticplay-sweet-bonanza-1000`,
+      image:
+        "https://vendor-provider.fra1.digitaloceanspaces.com/ebetlab/gXmqkthvbB1521K/games/dy3y1exXqAstJkCAgmiNmtCjTOd53fiRR8v5hqeW.avif",
+      name: "Sweet Bonanza 1000",
+      provider: "PragmaticPlay",
+    },
+    {
+      src: `https://betredi110.com/${language}/casino/games/egt-interactive-shining-crown`,
+      image:
+        "https://vendor-provider.fra1.digitaloceanspaces.com/ebetlab/gXmqkthvbB1521K/games/87k5hgsDuGbjmm3o2tL7bRg1Ubl4twobxXECLlbe.webp",
+      name: "Shining Crown",
+      provider: "EGT",
+    },
+    {
+      src: `https://betredi110.com/${language}/casino/games/pragmaticplay-book-of-fallen`,
+      image:
+        "https://vendor-provider.fra1.digitaloceanspaces.com/ebetlab/gXmqkthvbB1521K/games/EOt4FUPKzQ47EElaXPjmZCF2FZteqcwIj9tF1v60.avif",
+      name: "Book of Fallen",
+      provider: "PragmaticPlay",
+    },
+    {
+      src: `https://betredi110.com/${language}/casino/games/pragmaticplay-curse-of-the-werewolf-megaways`,
+      image:
+        "https://vendor-provider.fra1.digitaloceanspaces.com/ebetlab/gXmqkthvbB1521K/games/KFkaXzbe7PTssBQcMbDLUoTB7W1G9USQ9YovzOfr.avif",
+      name: "Curse of the Werewolf Megaways",
+      provider: "PragmaticPlay",
+    },
+    {
+      src: `https://betredi110.com/${language}/casino/games/pragmaticplay-gates-of-olympus`,
+      image:
+        "https://vendor-provider.fra1.digitaloceanspaces.com/ebetlab/gXmqkthvbB1521K/games/iwGuLBdSCaXGLlqSgZyfczCuBNioR9abnbjL4HpW.avif",
+      name: "Gates of Olympus",
+      provider: "PragmaticPlay",
+    },
+    {
+      src: `https://betredi110.com/${language}/casino/games/pragmaticplay-big-bass-christmas-bash`,
+      image:
+        "https://vendor-provider.fra1.digitaloceanspaces.com/ebetlab/gXmqkthvbB1521K/games/dKOrrFhs12ZHg8GrBY4TJKVSxXDelokTwkyQW8nC.avif",
+      name: "Big Bass Christmas Bash",
+      provider: "PragmaticPlay",
+    },
+    {
+      src: `https://betredi110.com/${language}/casino/games/pragmaticplay-vampy-party`,
+      image:
+        "https://vendor-provider.fra1.digitaloceanspaces.com/ebetlab/gXmqkthvbB1521K/games/36YYqw8TGOHV342MA6sSM2BxPdJKfhPAspe0o93O.avif",
+      name: "Vampy Party",
+      provider: "PragmaticPlay",
+    },
+    {
+      src: `https://betredi110.com/${language}/casino/games/pragmaticplay-big-bass-bonanza-reel-action`,
+      image:
+        "https://vendor-provider.fra1.digitaloceanspaces.com/ebetlab/gXmqkthvbB1521K/games/PCIoP6qtposvrzfNMTLBN9zoWQ1rzEmgaGvQneDy.avif",
+      name: "Big Bass Bonanza Reel Action",
+      provider: "PragmaticPlay",
+    },
+    {
+      src: `https://betredi110.com/${language}/casino/games/pragmaticplay-sweet-baklava`,
+      image:
+        "https://vendor-provider.fra1.digitaloceanspaces.com/ebetlab/gXmqkthvbB1521K/games/Gg8tuQof12N6yJoh7HIW12yFi9ZwAwOWPLkurfwN.png",
+      name: "Sweet Baklava",
+      provider: "PragmaticPlay",
+    },
+    {
+      src: `https://betredi110.com/${language}/casino/games/pragmaticplay-fruity-treats`,
+      image:
+        "https://vendor-provider.fra1.digitaloceanspaces.com/ebetlab/gXmqkthvbB1521K/games/EyrQKaGBRiOAVZJvtkORFNPVvq7pqHhNYhNKb1xs.avif",
+      name: "Fruit Treats",
+      provider: "PragmaticPlay",
+    },
+    {
+      src: `https://betredi110.com/${language}/casino/games/pragmaticplay-good-luck-good-fortune`,
+      image:
+        "https://vendor-provider.fra1.digitaloceanspaces.com/ebetlab/gXmqkthvbB1521K/games/KA9ipmrLDF7EXBwejBB8a24gbCfUjbzmNALIvdAK.avif",
+      name: "Good Luck Good Fortune",
+      provider: "PragmaticPlay",
+    },
+    {
+      src: `https://betredi110.com/${language}/casino/games/pragmaticplay-gravity-bonanza`,
+      image:
+        "https://vendor-provider.fra1.digitaloceanspaces.com/ebetlab/gXmqkthvbB1521K/games/YfDBzgJSTJJVHHlSpZFkbl6ttQEmXydlH80oUKVk.avif",
+      name: "Gravity Bonanza",
+      provider: "PragmaticPlay",
+    },
+    {
+      src: `https://betredi110.com/${language}/casino/games/pragmaticplay-5-frozen-charms-megaways`,
+      image:
+        "https://vendor-provider.fra1.digitaloceanspaces.com/ebetlab/gXmqkthvbB1521K/games/uHSkFspqwnxSSzeS3DTODWOpE7As8C2tsyio2uPV.avif",
+      name: "5 Frozen Charms Megaways",
+      provider: "PragmaticPlay",
+    },
+    {
+      src: `https://betredi110.com/${language}/casino/games/pragmaticplay-medusas-stone`,
+      image:
+        "https://vendor-provider.fra1.digitaloceanspaces.com/ebetlab/gXmqkthvbB1521K/games/60SnWNHpFFIy4KVbRkTvm8VAE7ALYGWPGCIRTt3h.avif",
+      name: "Medusa's Stone",
+      provider: "PragmaticPlay",
+    },
+    {
+      src: `https://betredi110.com/${language}/casino/games/pragmaticplay-heart-of-cleopatra`,
+      image:
+        "https://vendor-provider.fra1.digitaloceanspaces.com/ebetlab/gXmqkthvbB1521K/games/LdRa2mDl3vjyO8m5b4Xrx6QGqUf1SwmTzjvabiNk.avif",
+      name: "Heart of Cleopatra",
+      provider: "PragmaticPlay",
+    },
+    {
+      src: `https://betredi110.com/${language}/casino/games/pragmaticplay-candy-blitz-bombs`,
+      image:
+        "https://vendor-provider.fra1.digitaloceanspaces.com/ebetlab/gXmqkthvbB1521K/games/0CJLPX7nUsSbrFshKq41DUZP1qHZbk077zXaYGr4.avif",
+      name: "Candy Blitz Boms",
+      provider: "PragmaticPlay",
+    },
+    {
+      src: `https://betredi110.com/${language}/casino/games/pragmaticplay-wheel-ogold`,
+      image:
+        "https://vendor-provider.fra1.digitaloceanspaces.com/ebetlab/gXmqkthvbB1521K/games/abxzbjznV7kgMJ430ebqL6rh9ponyFMe1aCjmcPH.avif",
+      name: "Wheel O'Gold",
+      provider: "PragmaticPlay",
+    },
+    {
+      src: `https://betredi110.com/${language}/casino/games/pragmaticplay-big-bass-hold-spinner-megaways`,
+      image:
+        "https://vendor-provider.fra1.digitaloceanspaces.com/ebetlab/gXmqkthvbB1521K/games/kxPAoHL6weONYPx2AtyYtkhty6mZOcuuGJLqX21s.avif",
+      name: "Big Bass Hold Spinner Megaways",
+      provider: "PragmaticPlay",
+    },
+    {
+      src: `https://betredi110.com/${language}/casino/games/pragmaticplay-rise-of-pyramids`,
+      image:
+        "https://vendor-provider.fra1.digitaloceanspaces.com/ebetlab/gXmqkthvbB1521K/games/aUexJt3UvTkzLsTPP2eqB86pONa54Qk0PVUjvzvj.avif",
+      name: "Rise of Pyramids",
+      provider: "PragmaticPlay",
+    },
+    {
+      src: `https://betredi110.com/${language}/casino/games/pragmaticplay-sugar-rush`,
+      image:
+        "https://vendor-provider.fra1.digitaloceanspaces.com/ebetlab/gXmqkthvbB1521K/games/MojldHUpQY3EzpzYn6Y9H2C6CfoyZsKXRoyRxZJR.avif",
+      name: "Sugar Rush",
+      provider: "PragmaticPlay",
+    },
+    {
+      src: `https://betredi110.com/${language}/casino/games/pragmaticplay-fruit-party-2`,
+      image:
+        "https://vendor-provider.fra1.digitaloceanspaces.com/ebetlab/gXmqkthvbB1521K/games/Wji6qPSBMnL9SovdpZXAtIY9p4eWCIjiagrmOxYZ.avif",
+      name: "Fruit Party 2",
+      provider: "PragmaticPlay",
+    },
+    {
+      src: `https://betredi110.com/${language}/casino/games/pragmaticplay-buffalo-king`,
+      image:
+        "https://vendor-provider.fra1.digitaloceanspaces.com/ebetlab/gXmqkthvbB1521K/games/1tktqskfVA6jIaRb4IKJhOxp8z65oWmt41A4Ked7.avif",
+      name: "Buffalo King",
+      provider: "PragmaticPlay",
+    },
+    {
+      src: `https://betredi110.com/${language}/casino/games/nolimitcity-san-quentin-xways`,
+      image:
+        "https://vendor-provider.fra1.digitaloceanspaces.com/ebetlab/gXmqkthvbB1521K/games/968crLUtx1i741Ux5UQaB6USoeIX2OSF0DDNSG5a.png",
+      name: "San Quentin xWays",
+      provider: "Nolimitcity",
+    },
+    {
+      src: `https://betredi110.com/${language}/casino/games/hacksaw-chaos-crew`,
+      image:
+        "https://vendor-provider.fra1.digitaloceanspaces.com/ebetlab/gXmqkthvbB1521K/games/cC6QIBFZbSziSnHO4S2Vnd6mbqPFz8cyRxFLnTQt.png",
+      name: "Chaos Crew",
+      provider: "Hacksaw Gaming",
+    },
+    {
+      src: `https://betredi110.com/${language}/casino/games/pragmaticplay-the-dog-house-megaways`,
+      image:
+        "https://vendor-provider.fra1.digitaloceanspaces.com/ebetlab/gXmqkthvbB1521K/games/p3gbbDfOQNEMLDZsvvZKLJEr611c946Ioa5zdBsF.avif",
+      name: "The Dog House Megaways",
+      provider: "PragmaticPlay",
+    },
+    {
+      src: `https://betredi110.com/${language}/casino/games/hacksaw-dork-unit`,
+      image:
+        "https://vendor-provider.fra1.digitaloceanspaces.com/ebetlab/gXmqkthvbB1521K/games/QfMGwjSZRE7gkU29bfnbxRtwc88UY0UiMZ7SOyYX.png",
+      name: "Dork Unit",
+      provider: "Hacksaw Gaming",
+    },
+    {
+      src: `https://betredi110.com/${language}/casino/games/nolimitcity-tombstone-rip`,
+      image:
+        "https://vendor-provider.fra1.digitaloceanspaces.com/ebetlab/gXmqkthvbB1521K/games/vi7Wi4ksAo0Q1SWKdWbb2JQN3UD1hCGYTTtHayFm.png",
+      name: "Tombstone RIP",
+      provider: "Nolimitcity",
+    },
+    {
+      src: `https://betredi110.com/${language}/casino/games/pragmaticplay-revenge-of-loki-megaways`,
+      image:
+        "https://vendor-provider.fra1.digitaloceanspaces.com/ebetlab/gXmqkthvbB1521K/games/c47Mu0Tu8itijzJY51XPjE0YthcsturxPVufmh5w.avif",
+      name: "Revenge of Loki Megaways",
+      provider: "PragmaticPlay",
+    },
+    {
+      src: `https://betredi110.com/${language}/casino/games/pragmaticplay-wildies`,
+      image:
+        "https://vendor-provider.fra1.digitaloceanspaces.com/ebetlab/gXmqkthvbB1521K/games/wJyYx8KZs4ijlDeTJHlWm7gaKcn7F4aMwnczIBWC.avif",
+      name: "Wildies",
+      provider: "PragmaticPlay",
+    },
+    {
+      src: `https://betredi110.com/${language}/casino/games/pragmaticplay-devilicious`,
+      image:
+        "https://vendor-provider.fra1.digitaloceanspaces.com/ebetlab/gXmqkthvbB1521K/games/cUJdSD7vhLuTqZY7azlJ4coXybjZq212TwGB4Cbj.avif",
+      name: "Devilicious",
+      provider: "PragmaticPlay",
+    },
+    {
+      src: `https://betredi110.com/${language}/casino/games/pragmaticplay-big-bass-mission-fishin`,
+      image:
+        "https://vendor-provider.fra1.digitaloceanspaces.com/ebetlab/gXmqkthvbB1521K/games/NtQeNzDe8uyunG15rT5k3H6TKHG6hmTAkqJpwRM9.jpg",
+      name: "Big Bass Mission Fishin",
+      provider: "PragmaticPlay",
+    },
+    {
+      src: `https://betredi110.com/${language}/casino/games/pragmaticplay-sweet-kingdom`,
+      image:
+        "https://vendor-provider.fra1.digitaloceanspaces.com/ebetlab/gXmqkthvbB1521K/games/QZJ0NUEGPoPFfo1lXpvso1bZiZylGZviPbf8t6q2.avif",
+      name: "Sweet Kingdom",
+      provider: "PragmaticPlay",
+    },
+    {
+      src: `https://betredi110.com/${language}/casino/games/pragmaticplay-samurai-code`,
+      image:
+        "https://vendor-provider.fra1.digitaloceanspaces.com/ebetlab/gXmqkthvbB1521K/games/AdACJ1AcOkMWv5eNa83wX9uzmi43kb9izyF5pYVq.avif",
+      name: "Samurai Code",
+      provider: "PragmaticPlay",
+    },
+    {
+      src: `https://betredi110.com/${language}/casino/games/pragmaticplay-dynamite-diggin-doug`,
+      image:
+        "https://vendor-provider.fra1.digitaloceanspaces.com/ebetlab/gXmqkthvbB1521K/games/GE7BHRIUYFwZ12jM0VRZ6tmM6hVqRohOWFBbmEK9.avif",
+      name: "Dynamite Diggin Doug",
+      provider: "PragmaticPlay",
+    },
+    {
+      src: `https://betredi110.com/${language}/casino/games/pragmaticplay-jackpot-hunter`,
+      image:
+        "https://vendor-provider.fra1.digitaloceanspaces.com/ebetlab/gXmqkthvbB1521K/games/VIDDc0sIiHmxzpp1OgZ340QjiPYp4NlKN1lxZ9ON.avif",
+      name: "Jacpot Hunter",
+      provider: "PragmaticPlay",
+    },
+    {
+      src: `https://betredi110.com/${language}/casino/games/pragmaticplay-hot-to-burn-7-deadly-free-spins`,
+      image:
+        "https://vendor-provider.fra1.digitaloceanspaces.com/ebetlab/gXmqkthvbB1521K/games/JT8ZShXESmfjcV0jNcJ1tJx8Fpp09gSgg2BhVKoD.avif",
+      name: "Hot to Burn 7 Deadly Free Spins",
+      provider: "PragmaticPlay",
+    },
+    {
+      src: `https://betredi110.com/${language}/casino/games/pragmaticplay-mustang-gold-megaways`,
+      image:
+        "https://vendor-provider.fra1.digitaloceanspaces.com/ebetlab/gXmqkthvbB1521K/games/EqigmGLZZ6SJRkbMa4vz0JbL4dWPRm9fP8CbTXuV.avif",
+      name: "Mustang Gold Megaways",
+      provider: "PragmaticPlay",
+    },
+    {
+      src: `https://betredi110.com/${language}/casino/games/pragmaticplay-gem-elevator`,
+      image:
+        "https://vendor-provider.fra1.digitaloceanspaces.com/ebetlab/gXmqkthvbB1521K/games/oNcvAofsaKby58E1cX7iQBCHNKr5RD2VPul794EN.avif",
+      name: "Gem Elevator",
+      provider: "PragmaticPlay",
+    },
+    {
+      src: `https://betredi110.com/${language}/casino/games/pragmaticplay-bow-of-artemis`,
+      image:
+        "https://vendor-provider.fra1.digitaloceanspaces.com/ebetlab/gXmqkthvbB1521K/games/DUbFurGJ9nhhTIxUnxKX8JuqH36i6fuwIuDCTAzC.avif",
+      name: "Bow of Artemis",
+      provider: "PragmaticPlay",
+    },
+    {
+      src: `https://betredi110.com/${language}/casino/games/pragmaticplay-dragon-gold-88`,
+      image:
+        "https://vendor-provider.fra1.digitaloceanspaces.com/ebetlab/gXmqkthvbB1521K/games/32cYtcN32UOxfO4mgWTet4pPvVqIF8izFHNYc5OF.avif",
+      name: "Dragon Gold 88",
+      provider: "PragmaticPlay",
+    },
+    {
+      src: `https://betredi110.com/${language}/casino/games/netent-space-wars`,
+      image:
+        "https://vendor-provider.fra1.digitaloceanspaces.com/ebetlab/gXmqkthvbB1521K/games/6MStcLvijjhuXuP7VN0HiFFMELI525e14eEY41IC.png",
+      name: "Space Wars",
+      provider: "Netent",
+    },
+    {
+      src: `https://betredi110.com/${language}/casino/games/netent-dead-or-alive-2`,
+      image:
+        "https://vendor-provider.fra1.digitaloceanspaces.com/ebetlab/gXmqkthvbB1521K/games/rZH47pzEDr4OzB3mi4N2cyW7VbowpjKI9ngg0r2V.png",
+      name: "Dead Or Alive 2",
+      provider: "Netent",
+    },
+    {
+      src: `https://betredi110.com/${language}/casino/games/hacksaw-chaos-crew-ii`,
+      image:
+        "https://vendor-provider.fra1.digitaloceanspaces.com/ebetlab/gXmqkthvbB1521K/games/WBLMhsYevzT8MI1nMCygt8ecrlaAgayFgLZ6TeKh.png",
+      name: "Chaos Crew 2",
+      provider: "Hacksaw Gaming",
+    },
+    {
+      src: `https://betredi110.com/${language}/casino/games/hacksaw-temple-of-torment`,
+      image:
+        "https://vendor-provider.fra1.digitaloceanspaces.com/ebetlab/gXmqkthvbB1521K/games/XypCtoZrLGpXzg4JGRY7n5Ctc7wM1yICxmnOekT9.png",
+      name: "Temple of Torment",
+      provider: "Hacksaw Gaming",
+    },
+    {
+      src: `https://betredi110.com/${language}/casino/games/hacksaw-mayan-stackways`,
+      image:
+        "https://vendor-provider.fra1.digitaloceanspaces.com/ebetlab/gXmqkthvbB1521K/games/ouMNJ0ll0ji34AD78kTB09rCXhab07VdHcTi5tcW.png",
+      name: "Mayan Stackways",
+      provider: "Hacksaw Gaming",
+    },
+  ];
+
   let slot_games = getSlotGames();
   let casino_games = getCasinoGames();
+  let rtpsorgu_games = getRTPGames();
 
   const SVGS = {
     tvIcon: `
@@ -681,16 +1035,20 @@
             setTimeout(() => {
               initialize();
               gameChooserLogic();
+              rtpSorgu();
+              rtpSorguLogic();
             }, 500);
 
             removeHomePageWidgets();
           });
 
+          gameChooserLogic();
+          rtpSorgu();
+          rtpSorguLogic();
+
           $(document).on("click", "a.no-click", function (e) {
             e.preventDefault();
           });
-
-          gameChooserLogic();
         });
       }
     }, 300);
@@ -890,6 +1248,299 @@
       });
     }
 
+    function rtpSorguLogic() {
+      let filteredGames = null;
+
+      function getRandomGames(gamesArray, count) {
+        const shuffled = gamesArray.sort(() => 0.5 - Math.random());
+        return shuffled.slice(0, count);
+      }
+
+      function getRandomRTP(oldRTP) {
+        const newRTP = (Math.random() * (99.95 - 96.0) + 96.0).toFixed(2);
+
+        return {
+          value: newRTP,
+          color: Number(oldRTP) > Number(newRTP) ? "#f82228" : "#008000",
+        };
+      }
+
+      function renderGames(games) {
+        const $wrapper = $("#rtp-sorgu-bottom-sheet #rtp-games-wrapper");
+
+        $wrapper.fadeOut(200, function () {
+          $wrapper.empty();
+
+          games.forEach(function (game) {
+            const gameHTML = `
+<a href=${game.src} target="_blank" class="text-white" style="
+  display: flex; 
+  align-items: center; 
+  justify-content: space-between; 
+  gap: 10px; 
+  text-decoration: none; 
+  margin-bottom: 24px;
+">
+  <div style="flex: 0 0 auto;">
+    <img src="${
+      game.image
+    }" width="42" height="42" style="border-radius: 360px" />
+  </div>
+
+  <div style="flex: 1 1 auto; overflow: hidden;">
+    <strong style="display: block; white-space: nowrap; overflow: hidden; text-overflow: ellipsis">
+      ${game.name}
+    </strong>
+    <small style="color: gray">${game.provider || "Bilinmiyor"}</small>
+  </div>
+
+  <div style="flex: 0 0 auto; text-align: right; min-width: 50px;">
+    <small style="color: ${game.textColor} !important">%${game.rtp}</small>
+  </div>
+</a>
+      `;
+            $wrapper.append(gameHTML);
+          });
+
+          $wrapper.fadeIn(200);
+        });
+      }
+
+      const randomGames = getRandomGames(rtpsorgu_games, rtpsorgu_games.length);
+
+      randomGames.forEach((game) => {
+        const rtpData = getRandomRTP();
+
+        game.rtp = rtpData.value;
+        game.prevRtp = game.rtp;
+        game.textColor = rtpData.color;
+      });
+
+      function startRtpLoop() {
+        randomGames.forEach((game) => {
+          game.prevRtp = game.rtp;
+          const rtpData = getRandomRTP(game.prevRtp);
+          game.rtp = rtpData.value;
+          game.textColor = rtpData.color;
+        });
+
+        randomGames.sort((a, b) => parseFloat(b.rtp) - parseFloat(a.rtp));
+
+        renderGames(filteredGames || randomGames);
+
+        const nextDelay = Math.floor(Math.random() * (10000 - 2500 + 1)) + 2500;
+        setTimeout(startRtpLoop, nextDelay);
+      }
+
+      $("#btn-rtp-sorgu").click(function () {
+        $("body").addClass("no-scroll");
+        $("#rtp-sorgu-overlay").css("display", "flex");
+
+        setTimeout(function () {
+          $("#rtp-sorgu-bottom-sheet").css("transform", `translateY(0%)`);
+        }, 100);
+      });
+
+      $("#rtp-sorgu-overlay").click(function (e) {
+        if (e.target === this) {
+          $("body").removeClass("no-scroll");
+          $("#rtp-sorgu-bottom-sheet").css("transform", `translateY(100%)`);
+
+          setTimeout(function () {
+            $("#rtp-sorgu-overlay").css("display", "none");
+          }, 100);
+        }
+      });
+
+      $("#rtpsorgu-close-btn").click(function () {
+        $("body").removeClass("no-scroll");
+        $("#rtp-sorgu-bottom-sheet").css("transform", `translateY(100%)`);
+
+        setTimeout(function () {
+          $("#rtp-sorgu-overlay").css("display", "none");
+        }, 100);
+      });
+
+      $("#rtp-game-search").on("keyup", function () {
+        const searchTerm = $(this).val().toLowerCase().trim();
+
+        if (searchTerm === "") filteredGames = null;
+        else
+          filteredGames = randomGames.filter((game) =>
+            game.name.toLowerCase().includes(searchTerm)
+          );
+
+        renderGames(filteredGames || randomGames);
+      });
+
+      startRtpLoop();
+    }
+
+    function rtpSorgu() {
+      if ($("#rtp-sorgu-overlay").length) return;
+
+      const rtpSorguBottomSheet = `
+    <div
+      id="rtp-sorgu-overlay"
+      style="
+        background-color: rgba(0, 0, 0, 0.5);
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100svh;
+        display: none;
+        align-items: end;
+        justify-content: center;
+        z-index: 999999;
+      "
+    >
+      <div
+        id="rtp-sorgu-bottom-sheet"
+        class="bg-black"
+        style="
+          width: 100%;
+          height: 80svh;
+          border: 1px solid #1b1b1b;
+          border-radius: 24px 24px 0 0;
+          transform: translateY(100%);
+          transition: 0.35s all ease;
+          padding: 20px 16px;
+          overflow-y: scroll;
+          position: relative;
+        "
+      >
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          x="0px"
+          y="0px"
+          width="24"
+          height="24"
+          viewBox="0,0,256,256"
+          style="position: absolute; top: 16; right: 16"
+          id="rtpsorgu-close-btn"
+        >
+          <g
+            fill="#ffffff"
+            fill-rule="nonzero"
+            stroke="none"
+            stroke-width="1"
+            stroke-linecap="butt"
+            stroke-linejoin="miter"
+            stroke-miterlimit="10"
+            stroke-dasharray=""
+            stroke-dashoffset="0"
+            font-family="none"
+            font-weight="none"
+            font-size="none"
+            text-anchor="none"
+            style="mix-blend-mode: normal"
+          >
+            <g transform="scale(5.12,5.12)">
+              <path
+                d="M7.71875,6.28125l-1.4375,1.4375l17.28125,17.28125l-17.28125,17.28125l1.4375,1.4375l17.28125,-17.28125l17.28125,17.28125l1.4375,-1.4375l-17.28125,-17.28125l17.28125,-17.28125l-1.4375,-1.4375l-17.28125,17.28125z"
+              ></path>
+            </g>
+          </g>
+        </svg>
+        <div class="d-flex align-items-center justify-content-center">
+          <div
+            style="
+              width: 25%;
+              height: 5px;
+              background: rgba(255, 255, 255, 0.7);
+              border-radius: 360px;
+              margin-bottom: 32px;
+            "
+          ></div>
+        </div>
+        <div
+          class="d-flex align-items-center justify-content-between text-white"
+          style="margin-bottom: 24px"
+        >
+          <h4 style="font-weight: 600; margin-bottom: 0px">
+            ${language === "tr" ? "Canlı RTP" : "Live RTP"}
+          </h4>
+          <a
+            href="https://rtpsorgu.com"
+            target="_blank"
+            style="
+              color: #f82228;
+              text-decoration: none;
+              font-weight: 600;
+            "
+            >${language === "tr" ? "Tümünü Gör" : "See All"}</a
+          >
+        </div>
+        <div style="position: relative; margin-bottom: 32px">
+          <input
+            type="text"
+            name="rtp-game-search"
+            id="rtp-game-search"
+            placeholder="Bir oyun ismi arayın"
+            style="
+              outline: none !important;
+              background: none !important;
+              color: white;
+              border: 1px solid #ffffff40;
+              display: block;
+              width: 100%;
+              padding: 8px 12px;
+              box-shadow: none !important;
+              border-radius: 24px;
+            "
+          />
+          <div
+            style="
+              position: absolute;
+              top: 50%;
+              right: 12px;
+              transform: translateY(-50%);
+            "
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              x="0px"
+              y="0px"
+              width="20"
+              height="20"
+              viewBox="0,0,256,256"
+            >
+              <g
+                fill="#d6d5d5"
+                fill-rule="nonzero"
+                stroke="none"
+                stroke-width="1"
+                stroke-linecap="butt"
+                stroke-linejoin="miter"
+                stroke-miterlimit="10"
+                stroke-dasharray=""
+                stroke-dashoffset="0"
+                font-family="none"
+                font-weight="none"
+                font-size="none"
+                text-anchor="none"
+                style="mix-blend-mode: normal"
+              >
+                <g transform="scale(5.12,5.12)">
+                  <path
+                    d="M21,3c-9.37891,0 -17,7.62109 -17,17c0,9.37891 7.62109,17 17,17c3.71094,0 7.14063,-1.19531 9.9375,-3.21875l13.15625,13.125l2.8125,-2.8125l-13,-13.03125c2.55469,-2.97656 4.09375,-6.83984 4.09375,-11.0625c0,-9.37891 -7.62109,-17 -17,-17zM21,5c8.29688,0 15,6.70313 15,15c0,8.29688 -6.70312,15 -15,15c-8.29687,0 -15,-6.70312 -15,-15c0,-8.29687 6.70313,-15 15,-15z"
+                  ></path>
+                </g>
+              </g>
+            </svg>
+          </div>
+        </div>
+        <div id="rtp-games-wrapper"></div>
+      </div>
+    </div>
+      `;
+
+      $("#body").append(rtpSorguBottomSheet);
+
+      rtpSorguLogic();
+    }
+
     function initialize() {
       removeOriginalMainSlider();
 
@@ -919,6 +1570,8 @@
 
         gameChooser();
 
+        if (is_mobile) rtpSorgu();
+
         // miniGames();
 
         // sportsCard();
@@ -933,7 +1586,7 @@
         otherGames();
       }
 
-      // GENERAL
+      // * GENERAL
 
       insertCustomSidebarLink();
       injectProvidersMarquee();
@@ -2043,7 +2696,7 @@ ${
         <span>${language === "tr" ? "Borsa" : "Trade"}</span>
       </div>
     </a>
-    <a href="https://rtpsorgu.com" rel="nofollow noopener noreferrer" target="_blank" class="col-4">
+    <div id="btn-rtp-sorgu" rel="nofollow noopener noreferrer" target="_blank" class="col-4">
       <div class="box-icon-item" style="background: linear-gradient(135deg, #3a0509, #5a0910, #a31624);">
         <img
           src="https://betrediofficial.github.io/images/mobile-view/graph.png"
@@ -2051,9 +2704,9 @@ ${
           height="48"
           class="d-block mx-auto"
         />
-        <span>${language === "tr" ? "Şanslı Oyunlar" : "Lucky Games"}</span>
+        <span>${language === "tr" ? "Canlı RTP" : "Live RTP"}</span>
       </div>
-    </a>
+    </div>
   </div>
 </div>
     `);
