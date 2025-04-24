@@ -1049,6 +1049,35 @@
           $(document).on("click", "a.no-click", function (e) {
             e.preventDefault();
           });
+
+          $("#btn-rtp-sorgu").click(function () {
+            $("body").addClass("no-scroll");
+            $("#rtp-sorgu-overlay").css("display", "flex");
+
+            setTimeout(function () {
+              $("#rtp-sorgu-bottom-sheet").css("transform", `translateY(0%)`);
+            }, 100);
+          });
+
+          $("#rtp-sorgu-overlay").click(function (e) {
+            if (e.target === this) {
+              $("body").removeClass("no-scroll");
+              $("#rtp-sorgu-bottom-sheet").css("transform", `translateY(100%)`);
+
+              setTimeout(function () {
+                $("#rtp-sorgu-overlay").css("display", "none");
+              }, 100);
+            }
+          });
+
+          $("#rtpsorgu-close-btn").click(function () {
+            $("body").removeClass("no-scroll");
+            $("#rtp-sorgu-bottom-sheet").css("transform", `translateY(100%)`);
+
+            setTimeout(function () {
+              $("#rtp-sorgu-overlay").css("display", "none");
+            }, 100);
+          });
         });
       }
     }, 300);
@@ -1332,35 +1361,6 @@
         setTimeout(startRtpLoop, nextDelay);
       }
 
-      $("#btn-rtp-sorgu").click(function () {
-        $("body").addClass("no-scroll");
-        $("#rtp-sorgu-overlay").css("display", "flex");
-
-        setTimeout(function () {
-          $("#rtp-sorgu-bottom-sheet").css("transform", `translateY(0%)`);
-        }, 100);
-      });
-
-      $("#rtp-sorgu-overlay").click(function (e) {
-        if (e.target === this) {
-          $("body").removeClass("no-scroll");
-          $("#rtp-sorgu-bottom-sheet").css("transform", `translateY(100%)`);
-
-          setTimeout(function () {
-            $("#rtp-sorgu-overlay").css("display", "none");
-          }, 100);
-        }
-      });
-
-      $("#rtpsorgu-close-btn").click(function () {
-        $("body").removeClass("no-scroll");
-        $("#rtp-sorgu-bottom-sheet").css("transform", `translateY(100%)`);
-
-        setTimeout(function () {
-          $("#rtp-sorgu-overlay").css("display", "none");
-        }, 100);
-      });
-
       $("#rtp-game-search").on("keyup", function () {
         const searchTerm = $(this).val().toLowerCase().trim();
 
@@ -1458,9 +1458,9 @@
           class="d-flex align-items-center justify-content-between text-white"
           style="margin-bottom: 24px"
         >
-          <h6 style="font-weight: 600; font-size: 16px; margin-bottom: 0px">
-            Canlı RTP
-          </h6>
+          <h4 style="font-weight: 600; font-size: 16px; margin-bottom: 0px">
+            ${language === "tr" ? "Canlı RTP" : "Live RTP"}
+          </h4>
           <a
             href="https://rtpsorgu.com"
             target="_blank"
@@ -1468,9 +1468,8 @@
               color: #f82228;
               text-decoration: none;
               font-weight: 600;
-              font-size: 14px;
             "
-            >Tümünü Gör</a
+            >${language === "tr" ? "Tümünü Gör" : "See All"}</a
           >
         </div>
         <div style="position: relative; margin-bottom: 32px">
