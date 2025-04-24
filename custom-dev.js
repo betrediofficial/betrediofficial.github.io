@@ -1268,7 +1268,7 @@
       function renderGames(games) {
         const $wrapper = $("#rtp-sorgu-bottom-sheet #rtp-games-wrapper");
 
-        $wrapper.fadeOut(100, function () {
+        $wrapper.fadeOut(200, function () {
           $wrapper.empty();
 
           games.forEach(function (game) {
@@ -1302,7 +1302,7 @@
             $wrapper.append(gameHTML);
           });
 
-          $wrapper.fadeIn(100);
+          $wrapper.fadeIn(200);
         });
       }
 
