@@ -1396,7 +1396,7 @@
         class="bg-black"
         style="
           width: 100%;
-          height: 70svh;
+          height: 80svh;
           border: 1px solid #1b1b1b;
           border-radius: 24px 24px 0 0;
           transform: translateY(100%);
