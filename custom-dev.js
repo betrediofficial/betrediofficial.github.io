@@ -1458,7 +1458,7 @@
           class="d-flex align-items-center justify-content-between text-white"
           style="margin-bottom: 24px"
         >
-          <h4 style="font-weight: 600; font-size: 16px; margin-bottom: 0px">
+          <h4 style="font-weight: 600; margin-bottom: 0px">
             ${language === "tr" ? "Canlı RTP" : "Live RTP"}
           </h4>
           <a
