@@ -1035,16 +1035,16 @@
             setTimeout(() => {
               initialize();
               gameChooserLogic();
-              rtpSorgu();
-              rtpSorguLogic();
+              // rtpSorgu();
+              // rtpSorguLogic();
             }, 500);
 
             removeHomePageWidgets();
           });
 
           gameChooserLogic();
-          rtpSorgu();
-          rtpSorguLogic();
+          // rtpSorgu();
+          // rtpSorguLogic();
 
           $(document).on("click", "a.no-click", function (e) {
             e.preventDefault();
@@ -1328,7 +1328,7 @@
 
         renderGames(filteredGames || randomGames);
 
-        const nextDelay = Math.floor(Math.random() * (10000 - 5000 + 1)) + 5000;
+        const nextDelay = Math.floor(Math.random() * (15000 - 5000 + 1)) + 5000;
         setTimeout(startRtpLoop, nextDelay);
       }
 
