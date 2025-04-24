@@ -1288,12 +1288,10 @@
   </div>
 
   <div style="flex: 1 1 auto; overflow: hidden;">
-    <strong style="display: block; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; font-style: normal !important; margin-bottom: 0px;">
+    <strong style="display: block; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; font-style: normal !important; margin-bottom: 0px !important;">
       ${game.name}
     </strong>
-    <small style="color: gray; font-style: italic;">${
-      game.provider || "Bilinmiyor"
-    }</small>
+    <small style="color: gray;">${game.provider || "Bilinmiyor"}</small>
   </div>
   <div style="flex: 0 0 auto; text-align: right; min-width: 50px;">
     <small style="color: ${game.textColor} !important">%${game.rtp}</small>
