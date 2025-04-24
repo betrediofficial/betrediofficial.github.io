@@ -158,7 +158,7 @@
         "https://vendor-provider.fra1.digitaloceanspaces.com/ebetlab/gXmqkthvbB1521K/games/cC6QIBFZbSziSnHO4S2Vnd6mbqPFz8cyRxFLnTQt.png",
     },
     {
-      src: `https://betredi110.com/${language}/casino/games/pragmaticplay-the-dog-house-megaway`,
+      src: `https://betredi110.com/${language}/casino/games/pragmaticplay-the-dog-house-megaways`,
       image:
         "https://vendor-provider.fra1.digitaloceanspaces.com/ebetlab/gXmqkthvbB1521K/games/p3gbbDfOQNEMLDZsvvZKLJEr611c946Ioa5zdBsF.avif",
     },
