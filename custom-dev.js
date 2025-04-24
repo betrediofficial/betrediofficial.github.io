@@ -1377,7 +1377,7 @@
     }
 
     function rtpSorgu() {
-      if ($("#rtp-sorgu-overlay").length) return;
+      // if ($("#rtp-sorgu-overlay").length) return;
 
       const rtpSorguBottomSheet = `
     <div
