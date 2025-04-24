@@ -1251,47 +1251,6 @@
     function rtpSorguLogic() {
       let filteredGames = null;
 
-      $("#btn-rtp-sorgu").click(function () {
-        $("body").addClass("no-scroll");
-        $("#rtp-sorgu-overlay").css("display", "flex");
-
-        setTimeout(function () {
-          $("#rtp-sorgu-bottom-sheet").css("transform", `translateY(0%)`);
-        }, 100);
-      });
-
-      $("#rtp-sorgu-overlay").click(function (e) {
-        if (e.target === this) {
-          $("body").removeClass("no-scroll");
-          $("#rtp-sorgu-bottom-sheet").css("transform", `translateY(100%)`);
-
-          setTimeout(function () {
-            $("#rtp-sorgu-overlay").css("display", "none");
-          }, 100);
-        }
-      });
-
-      $("#rtpsorgu-close-btn").click(function () {
-        $("body").removeClass("no-scroll");
-        $("#rtp-sorgu-bottom-sheet").css("transform", `translateY(100%)`);
-
-        setTimeout(function () {
-          $("#rtp-sorgu-overlay").css("display", "none");
-        }, 100);
-      });
-
-      $("#rtp-game-search").on("keyup", function () {
-        const searchTerm = $(this).val().toLowerCase().trim();
-
-        if (searchTerm === "") filteredGames = null;
-        else
-          filteredGames = randomGames.filter((game) =>
-            game.name.toLowerCase().includes(searchTerm)
-          );
-
-        renderGames(filteredGames || randomGames);
-      });
-
       function getRandomGames(gamesArray, count) {
         const shuffled = gamesArray.sort(() => 0.5 - Math.random());
         return shuffled.slice(0, count);
@@ -1372,6 +1331,47 @@
         const nextDelay = Math.floor(Math.random() * (10000 - 2500 + 1)) + 2500;
         setTimeout(startRtpLoop, nextDelay);
       }
+
+      $("#btn-rtp-sorgu").click(function () {
+        $("body").addClass("no-scroll");
+        $("#rtp-sorgu-overlay").css("display", "flex");
+
+        setTimeout(function () {
+          $("#rtp-sorgu-bottom-sheet").css("transform", `translateY(0%)`);
+        }, 100);
+      });
+
+      $("#rtp-sorgu-overlay").click(function (e) {
+        if (e.target === this) {
+          $("body").removeClass("no-scroll");
+          $("#rtp-sorgu-bottom-sheet").css("transform", `translateY(100%)`);
+
+          setTimeout(function () {
+            $("#rtp-sorgu-overlay").css("display", "none");
+          }, 100);
+        }
+      });
+
+      $("#rtpsorgu-close-btn").click(function () {
+        $("body").removeClass("no-scroll");
+        $("#rtp-sorgu-bottom-sheet").css("transform", `translateY(100%)`);
+
+        setTimeout(function () {
+          $("#rtp-sorgu-overlay").css("display", "none");
+        }, 100);
+      });
+
+      $("#rtp-game-search").on("keyup", function () {
+        const searchTerm = $(this).val().toLowerCase().trim();
+
+        if (searchTerm === "") filteredGames = null;
+        else
+          filteredGames = randomGames.filter((game) =>
+            game.name.toLowerCase().includes(searchTerm)
+          );
+
+        renderGames(filteredGames || randomGames);
+      });
 
       startRtpLoop();
     }
