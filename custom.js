@@ -1268,7 +1268,7 @@
       function renderGames(games) {
         const $wrapper = $("#rtp-sorgu-bottom-sheet #rtp-games-wrapper");
 
-        $wrapper.fadeOut(300, function () {
+        $wrapper.fadeOut(50, function () {
           $wrapper.empty();
 
           games.forEach(function (game) {
@@ -1288,12 +1288,11 @@
   </div>
 
   <div style="flex: 1 1 auto; overflow: hidden;">
-    <strong style="display: block; white-space: nowrap; overflow: hidden; text-overflow: ellipsis">
+    <strong style="display: block; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; font-style: normal !important;">
       ${game.name}
     </strong>
     <small style="color: gray">${game.provider || "Bilinmiyor"}</small>
   </div>
-
   <div style="flex: 0 0 auto; text-align: right; min-width: 50px;">
     <small style="color: ${game.textColor} !important">%${game.rtp}</small>
   </div>
@@ -1302,7 +1301,7 @@
             $wrapper.append(gameHTML);
           });
 
-          $wrapper.fadeIn(300);
+          $wrapper.fadeIn(50);
         });
       }
 
