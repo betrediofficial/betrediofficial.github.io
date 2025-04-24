@@ -1036,7 +1036,7 @@
               initialize();
               gameChooserLogic();
               rtpSorgu();
-              // rtpSorguLogic();
+              rtpSorguLogic();
             }, 500);
 
             removeHomePageWidgets();
@@ -1044,7 +1044,7 @@
 
           gameChooserLogic();
           rtpSorgu();
-          // rtpSorguLogic();
+          rtpSorguLogic();
 
           $(document).on("click", "a.no-click", function (e) {
             e.preventDefault();
@@ -1341,7 +1341,7 @@
         }, 100);
       });
 
-      $("#rtp-sorgu-overlay").click(function (e) {
+      $(document).on("click", "#rtp-sorgu-overlay", function (e) {
         if (e.target === this) {
           $("body").removeClass("no-scroll");
           $("#rtp-sorgu-bottom-sheet").css("transform", `translateY(100%)`);
@@ -1377,7 +1377,7 @@
     }
 
     function rtpSorgu() {
-      if ($("#rtp-sorgu-overlay").length) return;
+      if ($("#rtp-sorgu-overlay").length) $("#rtp-sorgu-overlay").remove();
 
       const rtpSorguBottomSheet = `
     <div
