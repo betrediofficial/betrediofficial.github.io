@@ -469,350 +469,350 @@
 
   const getRTPGames = () => [
     {
-      src: "https://betredi110.com/${language}/casino/games/pragmaticplay-wisdom-of-athena",
+      src: `https://betredi110.com/${language}/casino/games/pragmaticplay-wisdom-of-athena`,
       image:
         "https://vendor-provider.fra1.digitaloceanspaces.com/ebetlab/gXmqkthvbB1521K/games/QHij6XwNJYI8vtYWthfFj6JxMcOru5CdnnnOFICG.avif",
       name: "Wisdom Of Athena",
       provider: "PragmaticPlay",
     },
     {
-      src: "https://betredi110.com/${language}/casino/games/pragmaticplay-fruit-party-2",
+      src: `https://betredi110.com/${language}/casino/games/pragmaticplay-fruit-party-2`,
       image:
         "https://vendor-provider.fra1.digitaloceanspaces.com/ebetlab/gXmqkthvbB1521K/games/Wji6qPSBMnL9SovdpZXAtIY9p4eWCIjiagrmOxYZ.avif",
       name: "Fruit Party 2",
       provider: "PragmaticPlay",
     },
     {
-      src: "https://betredi110.com/${language}/casino/games/pragmaticplay-starlight-princess-1000",
+      src: `https://betredi110.com/${language}/casino/games/pragmaticplay-starlight-princess-1000`,
       image:
         "https://vendor-provider.fra1.digitaloceanspaces.com/ebetlab/gXmqkthvbB1521K/games/q6Nmy9YDyiOCOdVD1ruYF9EfBloh6LOdx5okrBFz.avif",
       name: "Starlight Princess 1000",
       provider: "PragmaticPlay",
     },
     {
-      src: "https://betredi110.com/${language}/casino/games/pragmaticplay-big-bass-bonanza",
+      src: `https://betredi110.com/${language}/casino/games/pragmaticplay-big-bass-bonanza`,
       image:
         "https://vendor-provider.fra1.digitaloceanspaces.com/ebetlab/gXmqkthvbB1521K/games/ncWysw2TQGFV7JclXSvraBfRuw2IlS3Xc47TaFCt.avif",
       name: "Big Bass Bonanza",
       provider: "PragmaticPlay",
     },
     {
-      src: "https://betredi110.com/${language}/casino/games/hacksaw-wanted-dead-or-a-wild",
+      src: `https://betredi110.com/${language}/casino/games/hacksaw-wanted-dead-or-a-wild`,
       image:
         "https://vendor-provider.fra1.digitaloceanspaces.com/ebetlab/gXmqkthvbB1521K/games/BBYGett6YWkmehO4EfmconeL4bxPVRgczwsV4f0d.png",
       name: "Dead or Wild",
       provider: "PragmaticPlay",
     },
     {
-      src: "https://betredi110.com/${language}/casino/games/pragmaticplay-sweet-bonanza-1000",
+      src: `https://betredi110.com/${language}/casino/games/pragmaticplay-sweet-bonanza-1000`,
       image:
         "https://vendor-provider.fra1.digitaloceanspaces.com/ebetlab/gXmqkthvbB1521K/games/dy3y1exXqAstJkCAgmiNmtCjTOd53fiRR8v5hqeW.avif",
       name: "Sweet Bonanza 1000",
       provider: "PragmaticPlay",
     },
     {
-      src: "https://betredi110.com/${language}/casino/games/egt-interactive-shining-crown",
+      src: `https://betredi110.com/${language}/casino/games/egt-interactive-shining-crown`,
       image:
         "https://vendor-provider.fra1.digitaloceanspaces.com/ebetlab/gXmqkthvbB1521K/games/87k5hgsDuGbjmm3o2tL7bRg1Ubl4twobxXECLlbe.webp",
       name: "Shining Crown",
       provider: "EGT",
     },
     {
-      src: "https://betredi110.com/${language}/casino/games/pragmaticplay-book-of-fallen",
+      src: `https://betredi110.com/${language}/casino/games/pragmaticplay-book-of-fallen`,
       image:
         "https://vendor-provider.fra1.digitaloceanspaces.com/ebetlab/gXmqkthvbB1521K/games/EOt4FUPKzQ47EElaXPjmZCF2FZteqcwIj9tF1v60.avif",
       name: "Book of Fallen",
       provider: "PragmaticPlay",
     },
     {
-      src: "https://betredi110.com/${language}/casino/games/pragmaticplay-curse-of-the-werewolf-megaways",
+      src: `https://betredi110.com/${language}/casino/games/pragmaticplay-curse-of-the-werewolf-megaways`,
       image:
         "https://vendor-provider.fra1.digitaloceanspaces.com/ebetlab/gXmqkthvbB1521K/games/KFkaXzbe7PTssBQcMbDLUoTB7W1G9USQ9YovzOfr.avif",
       name: "Curse of the Werewolf Megaways",
       provider: "PragmaticPlay",
     },
     {
-      src: "https://betredi110.com/${language}/casino/games/pragmaticplay-gates-of-olympus",
+      src: `https://betredi110.com/${language}/casino/games/pragmaticplay-gates-of-olympus`,
       image:
         "https://vendor-provider.fra1.digitaloceanspaces.com/ebetlab/gXmqkthvbB1521K/games/iwGuLBdSCaXGLlqSgZyfczCuBNioR9abnbjL4HpW.avif",
       name: "Gates of Olympus",
       provider: "PragmaticPlay",
     },
     {
-      src: "https://betredi110.com/${language}/casino/games/pragmaticplay-big-bass-christmas-bash",
+      src: `https://betredi110.com/${language}/casino/games/pragmaticplay-big-bass-christmas-bash`,
       image:
         "https://vendor-provider.fra1.digitaloceanspaces.com/ebetlab/gXmqkthvbB1521K/games/dKOrrFhs12ZHg8GrBY4TJKVSxXDelokTwkyQW8nC.avif",
       name: "Big Bass Christmas Bash",
       provider: "PragmaticPlay",
     },
     {
-      src: "https://betredi110.com/${language}/casino/games/pragmaticplay-vampy-party",
+      src: `https://betredi110.com/${language}/casino/games/pragmaticplay-vampy-party`,
       image:
         "https://vendor-provider.fra1.digitaloceanspaces.com/ebetlab/gXmqkthvbB1521K/games/36YYqw8TGOHV342MA6sSM2BxPdJKfhPAspe0o93O.avif",
       name: "Vampy Party",
       provider: "PragmaticPlay",
     },
     {
-      src: "https://betredi110.com/${language}/casino/games/pragmaticplay-big-bass-bonanza-reel-action",
+      src: `https://betredi110.com/${language}/casino/games/pragmaticplay-big-bass-bonanza-reel-action`,
       image:
         "https://vendor-provider.fra1.digitaloceanspaces.com/ebetlab/gXmqkthvbB1521K/games/PCIoP6qtposvrzfNMTLBN9zoWQ1rzEmgaGvQneDy.avif",
       name: "Big Bass Bonanza Reel Action",
       provider: "PragmaticPlay",
     },
     {
-      src: "https://betredi110.com/${language}/casino/games/pragmaticplay-sweet-baklava",
+      src: `https://betredi110.com/${language}/casino/games/pragmaticplay-sweet-baklava`,
       image:
         "https://vendor-provider.fra1.digitaloceanspaces.com/ebetlab/gXmqkthvbB1521K/games/Gg8tuQof12N6yJoh7HIW12yFi9ZwAwOWPLkurfwN.png",
       name: "Sweet Baklava",
       provider: "PragmaticPlay",
     },
     {
-      src: "https://betredi110.com/${language}/casino/games/pragmaticplay-fruity-treats",
+      src: `https://betredi110.com/${language}/casino/games/pragmaticplay-fruity-treats`,
       image:
         "https://vendor-provider.fra1.digitaloceanspaces.com/ebetlab/gXmqkthvbB1521K/games/EyrQKaGBRiOAVZJvtkORFNPVvq7pqHhNYhNKb1xs.avif",
       name: "Fruit Treats",
       provider: "PragmaticPlay",
     },
     {
-      src: "https://betredi110.com/${language}/casino/games/pragmaticplay-good-luck-good-fortune",
+      src: `https://betredi110.com/${language}/casino/games/pragmaticplay-good-luck-good-fortune`,
       image:
         "https://vendor-provider.fra1.digitaloceanspaces.com/ebetlab/gXmqkthvbB1521K/games/KA9ipmrLDF7EXBwejBB8a24gbCfUjbzmNALIvdAK.avif",
       name: "Good Luck Good Fortune",
       provider: "PragmaticPlay",
     },
     {
-      src: "https://betredi110.com/${language}/casino/games/pragmaticplay-gravity-bonanza",
+      src: `https://betredi110.com/${language}/casino/games/pragmaticplay-gravity-bonanza`,
       image:
         "https://vendor-provider.fra1.digitaloceanspaces.com/ebetlab/gXmqkthvbB1521K/games/YfDBzgJSTJJVHHlSpZFkbl6ttQEmXydlH80oUKVk.avif",
       name: "Gravity Bonanza",
       provider: "PragmaticPlay",
     },
     {
-      src: "https://betredi110.com/${language}/casino/games/pragmaticplay-5-frozen-charms-megaways",
+      src: `https://betredi110.com/${language}/casino/games/pragmaticplay-5-frozen-charms-megaways`,
       image:
         "https://vendor-provider.fra1.digitaloceanspaces.com/ebetlab/gXmqkthvbB1521K/games/uHSkFspqwnxSSzeS3DTODWOpE7As8C2tsyio2uPV.avif",
       name: "5 Frozen Charms Megaways",
       provider: "PragmaticPlay",
     },
     {
-      src: "https://betredi110.com/${language}/casino/games/pragmaticplay-medusas-stone",
+      src: `https://betredi110.com/${language}/casino/games/pragmaticplay-medusas-stone`,
       image:
         "https://vendor-provider.fra1.digitaloceanspaces.com/ebetlab/gXmqkthvbB1521K/games/60SnWNHpFFIy4KVbRkTvm8VAE7ALYGWPGCIRTt3h.avif",
       name: "Medusa's Stone",
       provider: "PragmaticPlay",
     },
     {
-      src: "https://betredi110.com/${language}/casino/games/pragmaticplay-heart-of-cleopatra",
+      src: `https://betredi110.com/${language}/casino/games/pragmaticplay-heart-of-cleopatra`,
       image:
         "https://vendor-provider.fra1.digitaloceanspaces.com/ebetlab/gXmqkthvbB1521K/games/LdRa2mDl3vjyO8m5b4Xrx6QGqUf1SwmTzjvabiNk.avif",
       name: "Heart of Cleopatra",
       provider: "PragmaticPlay",
     },
     {
-      src: "https://betredi110.com/${language}/casino/games/pragmaticplay-candy-blitz-bombs",
+      src: `https://betredi110.com/${language}/casino/games/pragmaticplay-candy-blitz-bombs`,
       image:
         "https://vendor-provider.fra1.digitaloceanspaces.com/ebetlab/gXmqkthvbB1521K/games/0CJLPX7nUsSbrFshKq41DUZP1qHZbk077zXaYGr4.avif",
       name: "Candy Blitz Boms",
       provider: "PragmaticPlay",
     },
     {
-      src: "https://betredi110.com/${language}/casino/games/pragmaticplay-wheel-ogold",
+      src: `https://betredi110.com/${language}/casino/games/pragmaticplay-wheel-ogold`,
       image:
         "https://vendor-provider.fra1.digitaloceanspaces.com/ebetlab/gXmqkthvbB1521K/games/abxzbjznV7kgMJ430ebqL6rh9ponyFMe1aCjmcPH.avif",
       name: "Wheel O'Gold",
       provider: "PragmaticPlay",
     },
     {
-      src: "https://betredi110.com/${language}/casino/games/pragmaticplay-big-bass-hold-spinner-megaways",
+      src: `https://betredi110.com/${language}/casino/games/pragmaticplay-big-bass-hold-spinner-megaways`,
       image:
         "https://vendor-provider.fra1.digitaloceanspaces.com/ebetlab/gXmqkthvbB1521K/games/kxPAoHL6weONYPx2AtyYtkhty6mZOcuuGJLqX21s.avif",
       name: "Big Bass Hold Spinner Megaways",
       provider: "PragmaticPlay",
     },
     {
-      src: "https://betredi110.com/${language}/casino/games/pragmaticplay-rise-of-pyramids",
+      src: `https://betredi110.com/${language}/casino/games/pragmaticplay-rise-of-pyramids`,
       image:
         "https://vendor-provider.fra1.digitaloceanspaces.com/ebetlab/gXmqkthvbB1521K/games/aUexJt3UvTkzLsTPP2eqB86pONa54Qk0PVUjvzvj.avif",
       name: "Rise of Pyramids",
       provider: "PragmaticPlay",
     },
     {
-      src: "https://betredi110.com/${language}/casino/games/pragmaticplay-sugar-rush",
+      src: `https://betredi110.com/${language}/casino/games/pragmaticplay-sugar-rush`,
       image:
         "https://vendor-provider.fra1.digitaloceanspaces.com/ebetlab/gXmqkthvbB1521K/games/MojldHUpQY3EzpzYn6Y9H2C6CfoyZsKXRoyRxZJR.avif",
       name: "Sugar Rush",
       provider: "PragmaticPlay",
     },
     {
-      src: "https://betredi110.com/${language}/casino/games/pragmaticplay-fruit-party-2",
+      src: `https://betredi110.com/${language}/casino/games/pragmaticplay-fruit-party-2`,
       image:
         "https://vendor-provider.fra1.digitaloceanspaces.com/ebetlab/gXmqkthvbB1521K/games/Wji6qPSBMnL9SovdpZXAtIY9p4eWCIjiagrmOxYZ.avif",
       name: "Fruit Party 2",
       provider: "PragmaticPlay",
     },
     {
-      src: "https://betredi110.com/${language}/casino/games/pragmaticplay-buffalo-king",
+      src: `https://betredi110.com/${language}/casino/games/pragmaticplay-buffalo-king`,
       image:
         "https://vendor-provider.fra1.digitaloceanspaces.com/ebetlab/gXmqkthvbB1521K/games/1tktqskfVA6jIaRb4IKJhOxp8z65oWmt41A4Ked7.avif",
       name: "Buffalo King",
       provider: "PragmaticPlay",
     },
     {
-      src: "https://betredi110.com/${language}/casino/games/nolimitcity-san-quentin-xways",
+      src: `https://betredi110.com/${language}/casino/games/nolimitcity-san-quentin-xways`,
       image:
         "https://vendor-provider.fra1.digitaloceanspaces.com/ebetlab/gXmqkthvbB1521K/games/968crLUtx1i741Ux5UQaB6USoeIX2OSF0DDNSG5a.png",
       name: "San Quentin xWays",
       provider: "Nolimitcity",
     },
     {
-      src: "https://betredi110.com/${language}/casino/games/hacksaw-chaos-crew",
+      src: `https://betredi110.com/${language}/casino/games/hacksaw-chaos-crew`,
       image:
         "https://vendor-provider.fra1.digitaloceanspaces.com/ebetlab/gXmqkthvbB1521K/games/cC6QIBFZbSziSnHO4S2Vnd6mbqPFz8cyRxFLnTQt.png",
       name: "Chaos Crew",
       provider: "Hacksaw Gaming",
     },
     {
-      src: "https://betredi110.com/${language}/casino/games/pragmaticplay-the-dog-house-megaways",
+      src: `https://betredi110.com/${language}/casino/games/pragmaticplay-the-dog-house-megaways`,
       image:
         "https://vendor-provider.fra1.digitaloceanspaces.com/ebetlab/gXmqkthvbB1521K/games/p3gbbDfOQNEMLDZsvvZKLJEr611c946Ioa5zdBsF.avif",
       name: "The Dog House Megaways",
       provider: "PragmaticPlay",
     },
     {
-      src: "https://betredi110.com/${language}/casino/games/hacksaw-dork-unit",
+      src: `https://betredi110.com/${language}/casino/games/hacksaw-dork-unit`,
       image:
         "https://vendor-provider.fra1.digitaloceanspaces.com/ebetlab/gXmqkthvbB1521K/games/QfMGwjSZRE7gkU29bfnbxRtwc88UY0UiMZ7SOyYX.png",
       name: "Dork Unit",
       provider: "Hacksaw Gaming",
     },
     {
-      src: "https://betredi110.com/${language}/casino/games/nolimitcity-tombstone-rip",
+      src: `https://betredi110.com/${language}/casino/games/nolimitcity-tombstone-rip`,
       image:
         "https://vendor-provider.fra1.digitaloceanspaces.com/ebetlab/gXmqkthvbB1521K/games/vi7Wi4ksAo0Q1SWKdWbb2JQN3UD1hCGYTTtHayFm.png",
       name: "Tombstone RIP",
       provider: "Nolimitcity",
     },
     {
-      src: "https://betredi110.com/${language}/casino/games/pragmaticplay-revenge-of-loki-megaways",
+      src: `https://betredi110.com/${language}/casino/games/pragmaticplay-revenge-of-loki-megaways`,
       image:
         "https://vendor-provider.fra1.digitaloceanspaces.com/ebetlab/gXmqkthvbB1521K/games/c47Mu0Tu8itijzJY51XPjE0YthcsturxPVufmh5w.avif",
       name: "Revenge of Loki Megaways",
       provider: "PragmaticPlay",
     },
     {
-      src: "https://betredi110.com/${language}/casino/games/pragmaticplay-wildies",
+      src: `https://betredi110.com/${language}/casino/games/pragmaticplay-wildies`,
       image:
         "https://vendor-provider.fra1.digitaloceanspaces.com/ebetlab/gXmqkthvbB1521K/games/wJyYx8KZs4ijlDeTJHlWm7gaKcn7F4aMwnczIBWC.avif",
       name: "Wildies",
       provider: "PragmaticPlay",
     },
     {
-      src: "https://betredi110.com/${language}/casino/games/pragmaticplay-devilicious",
+      src: `https://betredi110.com/${language}/casino/games/pragmaticplay-devilicious`,
       image:
         "https://vendor-provider.fra1.digitaloceanspaces.com/ebetlab/gXmqkthvbB1521K/games/cUJdSD7vhLuTqZY7azlJ4coXybjZq212TwGB4Cbj.avif",
       name: "Devilicious",
       provider: "PragmaticPlay",
     },
     {
-      src: "https://betredi110.com/${language}/casino/games/pragmaticplay-big-bass-mission-fishin",
+      src: `https://betredi110.com/${language}/casino/games/pragmaticplay-big-bass-mission-fishin`,
       image:
         "https://vendor-provider.fra1.digitaloceanspaces.com/ebetlab/gXmqkthvbB1521K/games/NtQeNzDe8uyunG15rT5k3H6TKHG6hmTAkqJpwRM9.jpg",
       name: "Big Bass Mission Fishin",
       provider: "PragmaticPlay",
     },
     {
-      src: "https://betredi110.com/${language}/casino/games/pragmaticplay-sweet-kingdom",
+      src: `https://betredi110.com/${language}/casino/games/pragmaticplay-sweet-kingdom`,
       image:
         "https://vendor-provider.fra1.digitaloceanspaces.com/ebetlab/gXmqkthvbB1521K/games/QZJ0NUEGPoPFfo1lXpvso1bZiZylGZviPbf8t6q2.avif",
       name: "Sweet Kingdom",
       provider: "PragmaticPlay",
     },
     {
-      src: "https://betredi110.com/${language}/casino/games/pragmaticplay-samurai-code",
+      src: `https://betredi110.com/${language}/casino/games/pragmaticplay-samurai-code`,
       image:
         "https://vendor-provider.fra1.digitaloceanspaces.com/ebetlab/gXmqkthvbB1521K/games/AdACJ1AcOkMWv5eNa83wX9uzmi43kb9izyF5pYVq.avif",
       name: "Samurai Code",
       provider: "PragmaticPlay",
     },
     {
-      src: "https://betredi110.com/${language}/casino/games/pragmaticplay-dynamite-diggin-doug",
+      src: `https://betredi110.com/${language}/casino/games/pragmaticplay-dynamite-diggin-doug`,
       image:
         "https://vendor-provider.fra1.digitaloceanspaces.com/ebetlab/gXmqkthvbB1521K/games/GE7BHRIUYFwZ12jM0VRZ6tmM6hVqRohOWFBbmEK9.avif",
       name: "Dynamite Diggin Doug",
       provider: "PragmaticPlay",
     },
     {
-      src: "https://betredi110.com/${language}/casino/games/pragmaticplay-jackpot-hunter",
+      src: `https://betredi110.com/${language}/casino/games/pragmaticplay-jackpot-hunter`,
       image:
         "https://vendor-provider.fra1.digitaloceanspaces.com/ebetlab/gXmqkthvbB1521K/games/VIDDc0sIiHmxzpp1OgZ340QjiPYp4NlKN1lxZ9ON.avif",
       name: "Jacpot Hunter",
       provider: "PragmaticPlay",
     },
     {
-      src: "https://betredi110.com/${language}/casino/games/pragmaticplay-hot-to-burn-7-deadly-free-spins",
+      src: `https://betredi110.com/${language}/casino/games/pragmaticplay-hot-to-burn-7-deadly-free-spins`,
       image:
         "https://vendor-provider.fra1.digitaloceanspaces.com/ebetlab/gXmqkthvbB1521K/games/JT8ZShXESmfjcV0jNcJ1tJx8Fpp09gSgg2BhVKoD.avif",
       name: "Hot to Burn 7 Deadly Free Spins",
       provider: "PragmaticPlay",
     },
     {
-      src: "https://betredi110.com/${language}/casino/games/pragmaticplay-mustang-gold-megaways",
+      src: `https://betredi110.com/${language}/casino/games/pragmaticplay-mustang-gold-megaways`,
       image:
         "https://vendor-provider.fra1.digitaloceanspaces.com/ebetlab/gXmqkthvbB1521K/games/EqigmGLZZ6SJRkbMa4vz0JbL4dWPRm9fP8CbTXuV.avif",
       name: "Mustang Gold Megaways",
       provider: "PragmaticPlay",
     },
     {
-      src: "https://betredi110.com/${language}/casino/games/pragmaticplay-gem-elevator",
+      src: `https://betredi110.com/${language}/casino/games/pragmaticplay-gem-elevator`,
       image:
         "https://vendor-provider.fra1.digitaloceanspaces.com/ebetlab/gXmqkthvbB1521K/games/oNcvAofsaKby58E1cX7iQBCHNKr5RD2VPul794EN.avif",
       name: "Gem Elevator",
       provider: "PragmaticPlay",
     },
     {
-      src: "https://betredi110.com/${language}/casino/games/pragmaticplay-bow-of-artemis",
+      src: `https://betredi110.com/${language}/casino/games/pragmaticplay-bow-of-artemis`,
       image:
         "https://vendor-provider.fra1.digitaloceanspaces.com/ebetlab/gXmqkthvbB1521K/games/DUbFurGJ9nhhTIxUnxKX8JuqH36i6fuwIuDCTAzC.avif",
       name: "Bow of Artemis",
       provider: "PragmaticPlay",
     },
     {
-      src: "https://betredi110.com/${language}/casino/games/pragmaticplay-dragon-gold-88",
+      src: `https://betredi110.com/${language}/casino/games/pragmaticplay-dragon-gold-88`,
       image:
         "https://vendor-provider.fra1.digitaloceanspaces.com/ebetlab/gXmqkthvbB1521K/games/32cYtcN32UOxfO4mgWTet4pPvVqIF8izFHNYc5OF.avif",
       name: "Dragon Gold 88",
       provider: "PragmaticPlay",
     },
     {
-      src: "https://betredi110.com/${language}/casino/games/netent-space-wars",
+      src: `https://betredi110.com/${language}/casino/games/netent-space-wars`,
       image:
         "https://vendor-provider.fra1.digitaloceanspaces.com/ebetlab/gXmqkthvbB1521K/games/6MStcLvijjhuXuP7VN0HiFFMELI525e14eEY41IC.png",
       name: "Space Wars",
       provider: "Netent",
     },
     {
-      src: "https://betredi110.com/${language}/casino/games/netent-dead-or-alive-2",
+      src: `https://betredi110.com/${language}/casino/games/netent-dead-or-alive-2`,
       image:
         "https://vendor-provider.fra1.digitaloceanspaces.com/ebetlab/gXmqkthvbB1521K/games/rZH47pzEDr4OzB3mi4N2cyW7VbowpjKI9ngg0r2V.png",
       name: "Dead Or Alive 2",
       provider: "Netent",
     },
     {
-      src: "https://betredi110.com/${language}/casino/games/hacksaw-chaos-crew-ii",
+      src: `https://betredi110.com/${language}/casino/games/hacksaw-chaos-crew-ii`,
       image:
         "https://vendor-provider.fra1.digitaloceanspaces.com/ebetlab/gXmqkthvbB1521K/games/WBLMhsYevzT8MI1nMCygt8ecrlaAgayFgLZ6TeKh.png",
       name: "Chaos Crew 2",
       provider: "Hacksaw Gaming",
     },
     {
-      src: "https://betredi110.com/${language}/casino/games/hacksaw-temple-of-torment",
+      src: `https://betredi110.com/${language}/casino/games/hacksaw-temple-of-torment`,
       image:
         "https://vendor-provider.fra1.digitaloceanspaces.com/ebetlab/gXmqkthvbB1521K/games/XypCtoZrLGpXzg4JGRY7n5Ctc7wM1yICxmnOekT9.png",
       name: "Temple of Torment",
       provider: "Hacksaw Gaming",
     },
     {
-      src: "https://betredi110.com/${language}/casino/games/hacksaw-mayan-stackways",
+      src: `https://betredi110.com/${language}/casino/games/hacksaw-mayan-stackways`,
       image:
         "https://vendor-provider.fra1.digitaloceanspaces.com/ebetlab/gXmqkthvbB1521K/games/ouMNJ0ll0ji34AD78kTB09rCXhab07VdHcTi5tcW.png",
       name: "Mayan Stackways",
@@ -1250,6 +1250,7 @@
       let filteredGames = null;
 
       $("#btn-rtp-sorgu").click(function () {
+        $("#body").addClass("no-scroll");
         $("#rtp-sorgu-overlay").css("display", "flex");
 
         setTimeout(function () {
@@ -1259,7 +1260,9 @@
 
       $("#rtp-sorgu-overlay").click(function (e) {
         if (e.target === this) {
+          $("body").removeClass("no-scroll");
           $("#rtp-sorgu-bottom-sheet").css("transform", `translateY(100%)`);
+
           setTimeout(function () {
             $("#rtp-sorgu-overlay").css("display", "none");
           }, 100);
@@ -1279,7 +1282,9 @@
       });
 
       $("#rtpsorgu-close-btn").click(function () {
+        $("body").removeClass("no-scroll");
         $("#rtp-sorgu-bottom-sheet").css("transform", `translateY(100%)`);
+
         setTimeout(function () {
           $("#rtp-sorgu-overlay").css("display", "none");
         }, 100);
