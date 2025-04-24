@@ -1328,7 +1328,7 @@
 
         renderGames(filteredGames || randomGames);
 
-        const nextDelay = Math.floor(Math.random() * (10000 - 2500 + 1)) + 2500;
+        const nextDelay = Math.floor(Math.random() * (10000 - 5000 + 1)) + 5000;
         setTimeout(startRtpLoop, nextDelay);
       }
 
