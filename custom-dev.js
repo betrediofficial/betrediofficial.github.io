@@ -1049,35 +1049,6 @@
           $(document).on("click", "a.no-click", function (e) {
             e.preventDefault();
           });
-
-          $("#btn-rtp-sorgu").click(function () {
-            $("body").addClass("no-scroll");
-            $("#rtp-sorgu-overlay").css("display", "flex");
-
-            setTimeout(function () {
-              $("#rtp-sorgu-bottom-sheet").css("transform", `translateY(0%)`);
-            }, 100);
-          });
-
-          $("#rtp-sorgu-overlay").click(function (e) {
-            if (e.target === this) {
-              $("body").removeClass("no-scroll");
-              $("#rtp-sorgu-bottom-sheet").css("transform", `translateY(100%)`);
-
-              setTimeout(function () {
-                $("#rtp-sorgu-overlay").css("display", "none");
-              }, 100);
-            }
-          });
-
-          $("#rtpsorgu-close-btn").click(function () {
-            $("body").removeClass("no-scroll");
-            $("#rtp-sorgu-bottom-sheet").css("transform", `translateY(100%)`);
-
-            setTimeout(function () {
-              $("#rtp-sorgu-overlay").css("display", "none");
-            }, 100);
-          });
         });
       }
     }, 300);
@@ -1361,6 +1332,35 @@
         setTimeout(startRtpLoop, nextDelay);
       }
 
+      $("#btn-rtp-sorgu").click(function () {
+        $("body").addClass("no-scroll");
+        $("#rtp-sorgu-overlay").css("display", "flex");
+
+        setTimeout(function () {
+          $("#rtp-sorgu-bottom-sheet").css("transform", `translateY(0%)`);
+        }, 100);
+      });
+
+      $("#rtp-sorgu-overlay").click(function (e) {
+        if (e.target === this) {
+          $("body").removeClass("no-scroll");
+          $("#rtp-sorgu-bottom-sheet").css("transform", `translateY(100%)`);
+
+          setTimeout(function () {
+            $("#rtp-sorgu-overlay").css("display", "none");
+          }, 100);
+        }
+      });
+
+      $("#rtpsorgu-close-btn").click(function () {
+        $("body").removeClass("no-scroll");
+        $("#rtp-sorgu-bottom-sheet").css("transform", `translateY(100%)`);
+
+        setTimeout(function () {
+          $("#rtp-sorgu-overlay").css("display", "none");
+        }, 100);
+      });
+
       $("#rtp-game-search").on("keyup", function () {
         const searchTerm = $(this).val().toLowerCase().trim();
 
@@ -1377,7 +1377,7 @@
     }
 
     function rtpSorgu() {
-      // if ($("#rtp-sorgu-overlay").length) return;
+      if ($("#rtp-sorgu-overlay").length) return;
 
       const rtpSorguBottomSheet = `
     <div
