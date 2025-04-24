@@ -1035,7 +1035,7 @@
             setTimeout(() => {
               initialize();
               gameChooserLogic();
-              // rtpSorguLogic();
+              rtpSorguLogic();
             }, 500);
 
             removeHomePageWidgets();
@@ -1046,7 +1046,7 @@
           });
 
           gameChooserLogic();
-          // rtpSorguLogic();
+          rtpSorguLogic();
         });
       }
     }, 300);
