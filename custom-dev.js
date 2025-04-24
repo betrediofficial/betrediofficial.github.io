@@ -1282,16 +1282,14 @@
   margin-bottom: 24px;
 ">
   <div style="flex: 0 0 auto;">
-    <img src="${
-      game.image
-    }" width="42" height="42" style="border-radius: 360px" />
+    <img src="${game.image}" width="42" height="42" style="border-radius: 360px" />
   </div>
 
   <div style="flex: 1 1 auto; overflow: hidden;">
-    <strong style="display: block; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; font-style: normal !important; margin-bottom: 0px !important;">
+    <strong style="display: block; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; font-style: normal !important; margin: 0px !important; padding: 0px !important;">
       ${game.name}
     </strong>
-    <small style="color: gray;">${game.provider || "Bilinmiyor"}</small>
+    <small style="color: gray; margin: 0px !important; padding: 0px !important;">${game.provider}</small>
   </div>
   <div style="flex: 0 0 auto; text-align: right; min-width: 50px;">
     <small style="color: ${game.textColor} !important">%${game.rtp}</small>
