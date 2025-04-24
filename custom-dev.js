@@ -1250,7 +1250,7 @@
       let filteredGames = null;
 
       $("#btn-rtp-sorgu").click(function () {
-        $("#body").addClass("no-scroll");
+        $("body").addClass("no-scroll");
         $("#rtp-sorgu-overlay").css("display", "flex");
 
         setTimeout(function () {
@@ -1269,6 +1269,15 @@
         }
       });
 
+      $("#rtpsorgu-close-btn").click(function () {
+        $("body").removeClass("no-scroll");
+        $("#rtp-sorgu-bottom-sheet").css("transform", `translateY(100%)`);
+
+        setTimeout(function () {
+          $("#rtp-sorgu-overlay").css("display", "none");
+        }, 100);
+      });
+
       $("#rtp-game-search").on("keyup", function () {
         const searchTerm = $(this).val().toLowerCase().trim();
 
@@ -1279,15 +1288,6 @@
           );
 
         renderGames(filteredGames || randomGames);
-      });
-
-      $("#rtpsorgu-close-btn").click(function () {
-        $("body").removeClass("no-scroll");
-        $("#rtp-sorgu-bottom-sheet").css("transform", `translateY(100%)`);
-
-        setTimeout(function () {
-          $("#rtp-sorgu-overlay").css("display", "none");
-        }, 100);
       });
 
       function getRandomGames(gamesArray, count) {
