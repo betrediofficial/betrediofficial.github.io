@@ -1268,7 +1268,7 @@
       function renderGames(games) {
         const $wrapper = $("#rtp-sorgu-bottom-sheet #rtp-games-wrapper");
 
-        $wrapper.fadeOut(200, function () {
+        $wrapper.fadeOut(300, function () {
           $wrapper.empty();
 
           games.forEach(function (game) {
@@ -1302,7 +1302,7 @@
             $wrapper.append(gameHTML);
           });
 
-          $wrapper.fadeIn(200);
+          $wrapper.fadeIn(300);
         });
       }
 
@@ -1328,7 +1328,7 @@
 
         renderGames(filteredGames || randomGames);
 
-        const nextDelay = Math.floor(Math.random() * (15000 - 5000 + 1)) + 5000;
+        const nextDelay = Math.floor(Math.random() * (8500 - 2500 + 1)) + 2500;
         setTimeout(startRtpLoop, nextDelay);
       }
 
