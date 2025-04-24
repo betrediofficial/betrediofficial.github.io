@@ -1036,7 +1036,7 @@
               initialize();
               gameChooserLogic();
               rtpSorgu();
-              rtpSorguLogic();
+              // rtpSorguLogic();
             }, 500);
 
             removeHomePageWidgets();
@@ -1044,7 +1044,7 @@
 
           gameChooserLogic();
           rtpSorgu();
-          rtpSorguLogic();
+          // rtpSorguLogic();
 
           $(document).on("click", "a.no-click", function (e) {
             e.preventDefault();
@@ -1268,7 +1268,7 @@
       function renderGames(games) {
         const $wrapper = $("#rtp-sorgu-bottom-sheet #rtp-games-wrapper");
 
-        $wrapper.fadeOut(200, function () {
+        $wrapper.fadeOut(100, function () {
           $wrapper.empty();
 
           games.forEach(function (game) {
@@ -1302,7 +1302,7 @@
             $wrapper.append(gameHTML);
           });
 
-          $wrapper.fadeIn(200);
+          $wrapper.fadeIn(100);
         });
       }
 
@@ -1332,7 +1332,7 @@
         setTimeout(startRtpLoop, nextDelay);
       }
 
-      $("#btn-rtp-sorgu").click(function () {
+      $(document).on("click", "#btn-rtp-sorgu", function () {
         $("body").addClass("no-scroll");
         $("#rtp-sorgu-overlay").css("display", "flex");
 
@@ -1352,7 +1352,7 @@
         }
       });
 
-      $("#rtpsorgu-close-btn").click(function () {
+      $(document).on("click", "#rtpsorgu-close-btn", function () {
         $("body").removeClass("no-scroll");
         $("#rtp-sorgu-bottom-sheet").css("transform", `translateY(100%)`);
 
