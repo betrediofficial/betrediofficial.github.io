@@ -1035,18 +1035,20 @@
             setTimeout(() => {
               initialize();
               gameChooserLogic();
+              rtpSorgu();
               rtpSorguLogic();
             }, 500);
 
             removeHomePageWidgets();
           });
 
+          gameChooserLogic();
+          rtpSorgu();
+          rtpSorguLogic();
+
           $(document).on("click", "a.no-click", function (e) {
             e.preventDefault();
           });
-
-          gameChooserLogic();
-          rtpSorguLogic();
         });
       }
     }, 300);
@@ -1375,6 +1377,8 @@
     }
 
     function rtpSorgu() {
+      if ($("#rtp-sorgu-overlay").length) return;
+
       const rtpSorguBottomSheet = `
     <div
       id="rtp-sorgu-overlay"
