@@ -1248,6 +1248,131 @@
       });
     }
 
+    //     function rtpSorguLogic() {
+    //       let filteredGames = null;
+
+    //       function getRandomGames(gamesArray, count) {
+    //         const shuffled = gamesArray.sort(() => 0.5 - Math.random());
+    //         return shuffled.slice(0, count);
+    //       }
+
+    //       function getRandomRTP(oldRTP) {
+    //         const newRTP = (Math.random() * (99.95 - 96.0) + 96.0).toFixed(2);
+
+    //         return {
+    //           value: newRTP,
+    //           color: Number(oldRTP) > Number(newRTP) ? "#f82228" : "#008000",
+    //         };
+    //       }
+
+    //       function renderGames(games) {
+    //         const $wrapper = $("#rtp-sorgu-bottom-sheet #rtp-games-wrapper");
+
+    //         $wrapper.fadeOut(150, function () {
+    //           $wrapper.empty();
+
+    //           games.forEach(function (game) {
+    //             const gameHTML = `
+    // <a href=${game.src} target="_blank" class="text-white" style="
+    //   display: flex;
+    //   align-items: center;
+    //   justify-content: space-between;
+    //   gap: 10px;
+    //   text-decoration: none;
+    //   margin-bottom: 24px;
+    // ">
+    //   <div style="flex: 0 0 auto;">
+    //     <img src="${game.image}" width="42" height="42" style="border-radius: 360px" />
+    //   </div>
+
+    //   <div style="flex: 1 1 auto; overflow: hidden;">
+    //     <strong style="display: block; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; font-style: normal !important; margin: 0px !important; padding: 0px !important;">
+    //       ${game.name}
+    //     </strong>
+    //     <small style="color: gray; margin: 0px !important; padding: 0px !important;">${game.provider}</small>
+    //   </div>
+    //   <div style="flex: 0 0 auto; text-align: right; min-width: 50px;">
+    //     <small style="color: ${game.textColor} !important">%${game.rtp}</small>
+    //   </div>
+    // </a>
+    //       `;
+    //             $wrapper.append(gameHTML);
+    //           });
+
+    //           $wrapper.fadeIn(150);
+    //         });
+    //       }
+
+    //       const randomGames = getRandomGames(rtpsorgu_games, rtpsorgu_games.length);
+
+    //       randomGames.forEach((game) => {
+    //         const rtpData = getRandomRTP();
+
+    //         game.rtp = rtpData.value;
+    //         game.prevRtp = game.rtp;
+    //         game.textColor = rtpData.color;
+    //       });
+
+    //       function startRtpLoop() {
+    //         randomGames.forEach((game) => {
+    //           game.prevRtp = game.rtp;
+    //           const rtpData = getRandomRTP(game.prevRtp);
+    //           game.rtp = rtpData.value;
+    //           game.textColor = rtpData.color;
+    //         });
+
+    //         randomGames.sort((a, b) => parseFloat(b.rtp) - parseFloat(a.rtp));
+
+    //         renderGames(filteredGames || randomGames);
+
+    //         const nextDelay = Math.floor(Math.random() * (5000 - 2000 + 1)) + 2000;
+    //         setTimeout(startRtpLoop, nextDelay);
+    //       }
+
+    //       $(document).on("click", "#btn-rtp-sorgu", function () {
+    //         $("body").addClass("no-scroll");
+    //         $("#rtp-sorgu-overlay").css("display", "flex");
+
+    //         setTimeout(function () {
+    //           $("#rtp-sorgu-bottom-sheet").css("transform", `translateY(0%)`);
+    //         }, 100);
+    //       });
+
+    //       $(document).on("click", "#rtp-sorgu-overlay", function (e) {
+    //         if (e.target === this) {
+    //           $("body").removeClass("no-scroll");
+    //           $("#rtp-sorgu-bottom-sheet").css("transform", `translateY(100%)`);
+
+    //           setTimeout(function () {
+    //             $("#rtp-sorgu-overlay").css("display", "none");
+    //           }, 100);
+    //         }
+    //       });
+
+    //       $(document).on("click", "#rtpsorgu-close-btn", function () {
+    //         $("body").removeClass("no-scroll");
+    //         $("#rtp-sorgu-bottom-sheet").css("transform", `translateY(100%)`);
+
+    //         setTimeout(function () {
+    //           $("#rtp-sorgu-overlay").css("display", "none");
+    //         }, 100);
+    //       });
+
+    //       $("#rtp-game-search").on("keyup", function () {
+    //         const searchTerm = $(this).val().toLowerCase().trim();
+
+    //         if (searchTerm === "") filteredGames = null;
+    //         else
+    //           filteredGames = randomGames.filter((game) =>
+    //             game.name.toLowerCase().includes(searchTerm)
+    //           );
+
+    //         renderGames(filteredGames || randomGames);
+    //       });
+
+    //       startRtpLoop();
+    //     }
+
     function rtpSorguLogic() {
       let filteredGames = null;
 
@@ -1267,13 +1392,11 @@
 
       function renderGames(games) {
         const $wrapper = $("#rtp-sorgu-bottom-sheet #rtp-games-wrapper");
+        $wrapper.empty();
 
-        $wrapper.fadeOut(150, function () {
-          $wrapper.empty();
-
-          games.forEach(function (game) {
-            const gameHTML = `
-<a href=${game.src} target="_blank" class="text-white" style="
+        games.forEach(function (game, index) {
+          const gameHTML = `
+<a href=${game.src} data-id="${index}" target="_blank" class="text-white" style="
   display: flex; 
   align-items: center; 
   justify-content: space-between; 
@@ -1292,14 +1415,11 @@
     <small style="color: gray; margin: 0px !important; padding: 0px !important;">${game.provider}</small>
   </div>
   <div style="flex: 0 0 auto; text-align: right; min-width: 50px;">
-    <small style="color: ${game.textColor} !important">%${game.rtp}</small>
+    <small class="rtp-value" style="color: ${game.textColor} !important">%${game.rtp}</small>
   </div>
 </a>
       `;
-            $wrapper.append(gameHTML);
-          });
-
-          $wrapper.fadeIn(150);
+          $wrapper.append(gameHTML);
         });
       }
 
@@ -1307,23 +1427,27 @@
 
       randomGames.forEach((game) => {
         const rtpData = getRandomRTP();
-
         game.rtp = rtpData.value;
         game.prevRtp = game.rtp;
         game.textColor = rtpData.color;
       });
 
       function startRtpLoop() {
-        randomGames.forEach((game) => {
+        randomGames.forEach((game, index) => {
           game.prevRtp = game.rtp;
           const rtpData = getRandomRTP(game.prevRtp);
           game.rtp = rtpData.value;
           game.textColor = rtpData.color;
+
+          // Sadece RTP değerini ve rengini güncelle
+          const $gameElement = $(
+            `#rtp-sorgu-bottom-sheet #rtp-games-wrapper a[data-id="${index}"]`
+          );
+          $gameElement
+            .find(".rtp-value")
+            .text(`%${game.rtp}`)
+            .css("color", game.textColor);
         });
-
-        randomGames.sort((a, b) => parseFloat(b.rtp) - parseFloat(a.rtp));
-
-        renderGames(filteredGames || randomGames);
 
         const nextDelay = Math.floor(Math.random() * (5000 - 2000 + 1)) + 2000;
         setTimeout(startRtpLoop, nextDelay);
@@ -1370,6 +1494,7 @@
         renderGames(filteredGames || randomGames);
       });
 
+      renderGames(randomGames); // Listeyi ilk açılışta bir kere basıyoruz
       startRtpLoop();
     }
 
@@ -1414,7 +1539,7 @@
           width="24"
           height="24"
           viewBox="0,0,256,256"
-          style="position: absolute; top: 16; right: 16"
+          style="position: absolute; top: 16px !important; right: 16px !important;"
           id="rtpsorgu-close-btn"
         >
           <g
@@ -2689,7 +2814,7 @@ ${
     </a>
     <a href="https://betredi110.com/${language}/trade" target="_blank" class="col-4" style="background: #040404;">
       <div class="box-icon-item">
-        <svg class="svg-icon"><use href="/static/media/sprite.4e4e22b3c670750ab1e58c7c8bc8a3c8.svg#chart" xlink:href="/static/media/sprite.4e4e22b3c670750ab1e58c7c8bc8a3c8.svg#chart"></use></svg>
+      <svg class="svg-icon" style="margin: 4px auto !important; width: 26px !important; height: 26px !important;"><use href="/static/media/sprite.4e4e22b3c670750ab1e58c7c8bc8a3c8.svg#chart" xlink:href="/static/media/sprite.4e4e22b3c670750ab1e58c7c8bc8a3c8.svg#chart"></use></svg>
         <span>${language === "tr" ? "Borsa" : "Trade"}</span>
       </div>
     </a>
@@ -2701,7 +2826,7 @@ ${
           height="48"
           class="d-block mx-auto"
         />
-        <span>${language === "tr" ? "Canlı RTP" : "Live RTP"}</span>
+        <span>${language === "tr" ? "Şanlı Oyunlar" : "Lucky Games"}</span>
       </div>
     </div>
   </div>
