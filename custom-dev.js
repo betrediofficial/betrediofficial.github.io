@@ -937,6 +937,15 @@
       return array;
     };
 
+    function shuffleRTPGames(array) {
+      const newArray = array.map((game) => ({ ...game })); // Deep copy
+      for (let i = newArray.length - 1; i > 0; i--) {
+        const j = Math.floor(Math.random() * (i + 1));
+        [newArray[i], newArray[j]] = [newArray[j], newArray[i]];
+      }
+      return newArray;
+    }
+
     function gameChooserLogic() {
       let prevSlotCount = -1;
       let prevCasinoCount = -1;
@@ -1427,8 +1436,7 @@
         });
       }
 
-      // const randomGames = getRandomGames(rtpsorgu_games, rtpsorgu_games.length);
-      const randomGames = shuffleArray([...rtpsorgu_games]);
+      const randomGames = shuffleRTPGames(rtpsorgu_games);
 
       randomGames.forEach((game) => {
         const rtpData = getRandomRTP();
@@ -1499,7 +1507,7 @@
         renderGames(filteredGames || randomGames);
       });
 
-      renderGames(randomGames); // Listeyi ilk açılışta bir kere basıyoruz
+      renderGames(randomGames);
       startRtpLoop();
     }
 
