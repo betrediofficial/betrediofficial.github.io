@@ -140,7 +140,7 @@
         "https://vendor-provider.fra1.digitaloceanspaces.com/ebetlab/gXmqkthvbB1521K/games/MojldHUpQY3EzpzYn6Y9H2C6CfoyZsKXRoyRxZJR.avif",
     },
     {
-      src: `https://betredi110.com/${language}/casino/games/pragmaticplay-fruit-party-2"`,
+      src: `https://betredi110.com/${language}/casino/games/pragmaticplay-fruit-party-2`,
       image:
         "https://vendor-provider.fra1.digitaloceanspaces.com/ebetlab/gXmqkthvbB1521K/games/Wji6qPSBMnL9SovdpZXAtIY9p4eWCIjiagrmOxYZ.avif",
     },
