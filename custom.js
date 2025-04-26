@@ -1414,7 +1414,7 @@
           width="24"
           height="24"
           viewBox="0,0,256,256"
-          style="position: absolute; top: 16; right: 16"
+          style="position: absolute; top: 16 !important; right: 16 !important;"
           id="rtpsorgu-close-btn"
         >
           <g
