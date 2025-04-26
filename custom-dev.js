@@ -1,4 +1,6 @@
 (function () {
+  let randomGames = null;
+
   var language = window.location.pathname.split("/")[1];
 
   var isLoggedIn = false;
@@ -1385,18 +1387,8 @@
     function rtpSorguLogic() {
       let filteredGames = null;
 
-      // function getRandomGames(gamesArray, count) {
-      //   const arrayCopy = [...gamesArray.map((game) => ({ ...game }))]; // Deep Copy (gerçekten bağımsız)
-      //   for (let i = arrayCopy.length - 1; i > 0; i--) {
-      //     const j = Math.floor(Math.random() * (i + 1));
-      //     [arrayCopy[i], arrayCopy[j]] = [arrayCopy[j], arrayCopy[i]];
-      //   }
-      //   return arrayCopy.slice(0, count);
-      // }
-
       function getRandomRTP(oldRTP) {
         const newRTP = (Math.random() * (99.95 - 96.0) + 96.0).toFixed(2);
-
         return {
           value: newRTP,
           color: Number(oldRTP) > Number(newRTP) ? "#f82228" : "#008000",
@@ -1410,11 +1402,11 @@
         games.forEach(function (game, index) {
           const gameHTML = `
 <a href=${game.src} data-id="${index}" target="_blank" class="text-white" style="
-  display: flex; 
-  align-items: center; 
-  justify-content: space-between; 
-  gap: 10px; 
-  text-decoration: none; 
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+  text-decoration: none;
   margin-bottom: 24px;
 ">
   <div style="flex: 0 0 auto;">
@@ -1422,10 +1414,10 @@
   </div>
 
   <div style="flex: 1 1 auto; overflow: hidden;">
-    <strong style="display: block; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; font-style: normal !important; margin: 0px !important; padding: 0px !important;">
+    <strong style="display: block; white-space: nowrap; overflow: hidden; text-overflow: ellipsis;">
       ${game.name}
     </strong>
-    <small style="color: gray; margin: 0px !important; padding: 0px !important;">${game.provider}</small>
+    <small style="color: gray;">${game.provider}</small>
   </div>
   <div style="flex: 0 0 auto; text-align: right; min-width: 50px;">
     <small class="rtp-value" style="color: ${game.textColor} !important">%${game.rtp}</small>
@@ -1436,14 +1428,16 @@
         });
       }
 
-      const randomGames = shuffleRTPGames(rtpsorgu_games);
+      if (!randomGames) {
+        randomGames = shuffleRTPGames(rtpsorgu_games);
 
-      randomGames.forEach((game) => {
-        const rtpData = getRandomRTP();
-        game.rtp = rtpData.value;
-        game.prevRtp = game.rtp;
-        game.textColor = rtpData.color;
-      });
+        randomGames.forEach((game) => {
+          const rtpData = getRandomRTP();
+          game.rtp = rtpData.value;
+          game.prevRtp = game.rtp;
+          game.textColor = rtpData.color;
+        });
+      }
 
       function startRtpLoop() {
         randomGames.forEach((game, index) => {
@@ -1494,18 +1488,6 @@
           $("#rtp-sorgu-overlay").css("display", "none");
         }, 100);
       });
-
-      // $("#rtp-game-search").on("keyup", function () {
-      //   const searchTerm = $(this).val().toLowerCase().trim();
-
-      //   if (searchTerm === "") filteredGames = null;
-      //   else
-      //     filteredGames = randomGames.filter((game) =>
-      //       game.name.toLowerCase().includes(searchTerm)
-      //     );
-
-      //   renderGames(filteredGames || randomGames);
-      // });
 
       $("#rtp-game-search").on("keyup", function () {
         const searchTerm = $(this).val().toLowerCase().trim();
