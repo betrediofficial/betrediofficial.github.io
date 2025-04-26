@@ -20,7 +20,7 @@
         "https://vendor-provider.fra1.digitaloceanspaces.com/ebetlab/gXmqkthvbB1521K/games/QHij6XwNJYI8vtYWthfFj6JxMcOru5CdnnnOFICG.avif",
     },
     {
-      src: `"https://betredi110.com/${language}/casino/games/pragmaticplay-fruit-party-2`,
+      src: `https://betredi110.com/${language}/casino/games/pragmaticplay-fruit-party-2`,
       image:
         "https://vendor-provider.fra1.digitaloceanspaces.com/ebetlab/gXmqkthvbB1521K/games/Wji6qPSBMnL9SovdpZXAtIY9p4eWCIjiagrmOxYZ.avif",
     },
@@ -120,7 +120,7 @@
         "https://vendor-provider.fra1.digitaloceanspaces.com/ebetlab/gXmqkthvbB1521K/games/0CJLPX7nUsSbrFshKq41DUZP1qHZbk077zXaYGr4.avif",
     },
     {
-      src: `https://betredi110.com/${language}/casino/games/pragmaticplay-wheel-ogold"`,
+      src: `https://betredi110.com/${language}/casino/games/pragmaticplay-wheel-ogold`,
       image:
         "https://vendor-provider.fra1.digitaloceanspaces.com/ebetlab/gXmqkthvbB1521K/games/abxzbjznV7kgMJ430ebqL6rh9ponyFMe1aCjmcPH.avif",
     },
