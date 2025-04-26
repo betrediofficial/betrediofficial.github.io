@@ -1414,7 +1414,7 @@
   </div>
 
   <div style="flex: 1 1 auto; overflow: hidden;">
-    <strong style="display: block; white-space: nowrap; overflow: hidden; text-overflow: ellipsis;">
+    <strong style="display: block; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; font-style: normal !important;">
       ${game.name}
     </strong>
     <small style="color: gray;">${game.provider}</small>
