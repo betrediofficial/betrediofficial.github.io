@@ -1385,14 +1385,14 @@
     function rtpSorguLogic() {
       let filteredGames = null;
 
-      function getRandomGames(gamesArray, count) {
-        const arrayCopy = [...gamesArray.map((game) => ({ ...game }))]; // Deep Copy (gerçekten bağımsız)
-        for (let i = arrayCopy.length - 1; i > 0; i--) {
-          const j = Math.floor(Math.random() * (i + 1));
-          [arrayCopy[i], arrayCopy[j]] = [arrayCopy[j], arrayCopy[i]];
-        }
-        return arrayCopy.slice(0, count);
-      }
+      // function getRandomGames(gamesArray, count) {
+      //   const arrayCopy = [...gamesArray.map((game) => ({ ...game }))]; // Deep Copy (gerçekten bağımsız)
+      //   for (let i = arrayCopy.length - 1; i > 0; i--) {
+      //     const j = Math.floor(Math.random() * (i + 1));
+      //     [arrayCopy[i], arrayCopy[j]] = [arrayCopy[j], arrayCopy[i]];
+      //   }
+      //   return arrayCopy.slice(0, count);
+      // }
 
       function getRandomRTP(oldRTP) {
         const newRTP = (Math.random() * (99.95 - 96.0) + 96.0).toFixed(2);
@@ -1495,16 +1495,29 @@
         }, 100);
       });
 
+      // $("#rtp-game-search").on("keyup", function () {
+      //   const searchTerm = $(this).val().toLowerCase().trim();
+
+      //   if (searchTerm === "") filteredGames = null;
+      //   else
+      //     filteredGames = randomGames.filter((game) =>
+      //       game.name.toLowerCase().includes(searchTerm)
+      //     );
+
+      //   renderGames(filteredGames || randomGames);
+      // });
+
       $("#rtp-game-search").on("keyup", function () {
         const searchTerm = $(this).val().toLowerCase().trim();
 
-        if (searchTerm === "") filteredGames = null;
-        else
-          filteredGames = randomGames.filter((game) =>
-            game.name.toLowerCase().includes(searchTerm)
-          );
-
-        renderGames(filteredGames || randomGames);
+        $("#rtp-sorgu-bottom-sheet #rtp-games-wrapper a").each(function () {
+          const gameName = $(this).find("strong").text().toLowerCase();
+          if (gameName.includes(searchTerm)) {
+            $(this).show();
+          } else {
+            $(this).hide();
+          }
+        });
       });
 
       renderGames(randomGames);
@@ -2827,7 +2840,7 @@ ${
     </a>
     <a href="https://betredi110.com/${language}/trade" target="_blank" class="col-4" style="background: #040404;">
       <div class="box-icon-item">
-      <svg class="svg-icon" style="margin: 4px auto !important; width: 26px !important; height: 26px !important;"><use href="/static/media/sprite.4e4e22b3c670750ab1e58c7c8bc8a3c8.svg#chart" xlink:href="/static/media/sprite.4e4e22b3c670750ab1e58c7c8bc8a3c8.svg#chart"></use></svg>
+      <svg class="svg-icon" style="margin: 2px auto !important; width: 26px !important; height: 26px !important;"><use href="/static/media/sprite.4e4e22b3c670750ab1e58c7c8bc8a3c8.svg#chart" xlink:href="/static/media/sprite.4e4e22b3c670750ab1e58c7c8bc8a3c8.svg#chart"></use></svg>
         <span>${language === "tr" ? "Borsa" : "Trade"}</span>
       </div>
     </a>
