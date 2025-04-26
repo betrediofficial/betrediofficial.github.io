@@ -1187,7 +1187,7 @@
         <div class="col-12">
           <h2 class="section__title">
             <svg class="svg-icon">
-              <use href="/static/media/sprite.94622980f40d877c6d27eb5b2474fa5a.svg#mini-games" xlink:href="/static/media/sprite.94622980f40d877c6d27eb5b2474fa5a.svg#mini-games">
+              <use href="/static/media/sprite.4e4e22b3c670750ab1e58c7c8bc8a3c8.svg#mini-games" xlink:href="/static/media/sprite.4e4e22b3c670750ab1e58c7c8bc8a3c8.svg#mini-games">
               </use>
             </svg>
             Mini Oyunlar
@@ -1459,7 +1459,7 @@
           });
         });
 
-        const nextDelay = Math.floor(Math.random() * (5000 - 2000 + 1)) + 2000;
+        const nextDelay = Math.floor(Math.random() * (4000 - 1500 + 1)) + 1500;
         setTimeout(startRtpLoop, nextDelay);
       }
 
