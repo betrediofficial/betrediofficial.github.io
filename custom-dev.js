@@ -1268,7 +1268,7 @@
       function renderGames(games) {
         const $wrapper = $("#rtp-sorgu-bottom-sheet #rtp-games-wrapper");
 
-        $wrapper.fadeOut(50, function () {
+        $wrapper.fadeOut(150, function () {
           $wrapper.empty();
 
           games.forEach(function (game) {
@@ -1299,7 +1299,7 @@
             $wrapper.append(gameHTML);
           });
 
-          $wrapper.fadeIn(50);
+          $wrapper.fadeIn(150);
         });
       }
 
@@ -1325,7 +1325,7 @@
 
         renderGames(filteredGames || randomGames);
 
-        const nextDelay = Math.floor(Math.random() * (8500 - 2500 + 1)) + 2500;
+        const nextDelay = Math.floor(Math.random() * (5000 - 2000 + 1)) + 2000;
         setTimeout(startRtpLoop, nextDelay);
       }
 
@@ -2689,7 +2689,7 @@ ${
     </a>
     <a href="https://betredi110.com/${language}/trade" target="_blank" class="col-4" style="background: #040404;">
       <div class="box-icon-item">
-      <svg class="svg-icon" style="margin: 0 auto 4px auto; width: 26px !important; height: 26px !important;" ><use href="/static/media/sprite.94622980f40d877c6d27eb5b2474fa5a.svg#chart" xlink:href="/static/media/sprite.94622980f40d877c6d27eb5b2474fa5a.svg#chart"></use></svg>
+        <svg class="svg-icon"><use href="/static/media/sprite.4e4e22b3c670750ab1e58c7c8bc8a3c8.svg#chart" xlink:href="/static/media/sprite.4e4e22b3c670750ab1e58c7c8bc8a3c8.svg#chart"></use></svg>
         <span>${language === "tr" ? "Borsa" : "Trade"}</span>
       </div>
     </a>
