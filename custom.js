@@ -1449,11 +1449,14 @@
           const $gameElement = $(
             `#rtp-sorgu-bottom-sheet #rtp-games-wrapper a[data-id="${index}"]`
           );
+          const $rtpValue = $gameElement.find(".rtp-value");
 
-          $gameElement
-            .find(".rtp-value")
-            .text(`%${game.rtp}`)
-            .css("color", game.textColor);
+          $rtpValue.fadeOut(150, function () {
+            $rtpValue
+              .text(`%${game.rtp}`)
+              .css("color", game.textColor)
+              .fadeIn(150);
+          });
         });
 
         const nextDelay = Math.floor(Math.random() * (5000 - 2000 + 1)) + 2000;
