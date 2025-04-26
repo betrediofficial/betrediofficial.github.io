@@ -2701,7 +2701,7 @@ ${
           height="48"
           class="d-block mx-auto"
         />
-        <span>${language === "tr" ? "Canlı RTP" : "Live RTP"}</span>
+        <span>${language === "tr" ? "Şanlı Oyunlar" : "Lucky Games"}</span>
       </div>
     </div>
   </div>
