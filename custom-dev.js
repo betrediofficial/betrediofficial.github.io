@@ -1427,7 +1427,8 @@
         });
       }
 
-      const randomGames = getRandomGames(rtpsorgu_games, rtpsorgu_games.length);
+      // const randomGames = getRandomGames(rtpsorgu_games, rtpsorgu_games.length);
+      const randomGames = shuffleArray([...rtpsorgu_games]);
 
       randomGames.forEach((game) => {
         const rtpData = getRandomRTP();
