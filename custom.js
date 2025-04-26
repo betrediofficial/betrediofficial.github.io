@@ -1268,10 +1268,11 @@
       function renderGames(games) {
         const $wrapper = $("#rtp-sorgu-bottom-sheet #rtp-games-wrapper");
 
-        $wrapper.empty();
+        $wrapper.fadeOut(150, function () {
+          $wrapper.empty();
 
-        games.forEach(function (game) {
-          const gameHTML = `
+          games.forEach(function (game) {
+            const gameHTML = `
 <a href=${game.src} target="_blank" class="text-white" style="
   display: flex; 
   align-items: center; 
@@ -1291,11 +1292,14 @@
     <small style="color: gray; margin: 0px !important; padding: 0px !important;">${game.provider}</small>
   </div>
   <div style="flex: 0 0 auto; text-align: right; min-width: 50px;">
-    <small class="rtp-value" style="color: ${game.textColor} !important">%${game.rtp}</small>
+    <small style="color: ${game.textColor} !important">%${game.rtp}</small>
   </div>
 </a>
       `;
-          $wrapper.append(gameHTML);
+            $wrapper.append(gameHTML);
+          });
+
+          $wrapper.fadeIn(150);
         });
       }
 
@@ -1317,18 +1321,9 @@
           game.textColor = rtpData.color;
         });
 
-        // randomGames.sort((a, b) => parseFloat(b.rtp) - parseFloat(a.rtp));
+        randomGames.sort((a, b) => parseFloat(b.rtp) - parseFloat(a.rtp));
 
-        // renderGames(filteredGames || randomGames);
-
-        const $gameElement = $(
-          `#rtp-sorgu-bottom-sheet #rtp-games-wrapper a[data-id="${index}"]`
-        );
-
-        $gameElement
-          .find(".rtp-value")
-          .text(`%${game.rtp}`)
-          .css("color", game.textColor);
+        renderGames(filteredGames || randomGames);
 
         const nextDelay = Math.floor(Math.random() * (5000 - 2000 + 1)) + 2000;
         setTimeout(startRtpLoop, nextDelay);
@@ -2694,7 +2689,7 @@ ${
     </a>
     <a href="https://betredi110.com/${language}/trade" target="_blank" class="col-4" style="background: #040404;">
       <div class="box-icon-item">
-      <svg class="svg-icon" style="margin: 4px auto !important; width: 26px !important; height: 26px !important;"><use href="/static/media/sprite.4e4e22b3c670750ab1e58c7c8bc8a3c8.svg#chart" xlink:href="/static/media/sprite.4e4e22b3c670750ab1e58c7c8bc8a3c8.svg#chart"></use></svg>
+      <svg class="svg-icon" style="margin: 4px auto !important; width: 26px !important; height: 26px !important;" ><use href="/static/media/sprite.94622980f40d877c6d27eb5b2474fa5a.svg#chart" xlink:href="/static/media/sprite.94622980f40d877c6d27eb5b2474fa5a.svg#chart"></use></svg>
         <span>${language === "tr" ? "Borsa" : "Trade"}</span>
       </div>
     </a>
