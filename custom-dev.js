@@ -1377,7 +1377,8 @@
       let filteredGames = null;
 
       function getRandomGames(gamesArray, count) {
-        const shuffled = gamesArray.sort(() => 0.5 - Math.random());
+        const arrayCopy = [...gamesArray]; // Orijinali bozmadan kopya oluştur
+        const shuffled = arrayCopy.sort(() => 0.5 - Math.random());
         return shuffled.slice(0, count);
       }
 
@@ -1439,10 +1440,10 @@
           game.rtp = rtpData.value;
           game.textColor = rtpData.color;
 
-          // Sadece RTP değerini ve rengini güncelle
           const $gameElement = $(
             `#rtp-sorgu-bottom-sheet #rtp-games-wrapper a[data-id="${index}"]`
           );
+
           $gameElement
             .find(".rtp-value")
             .text(`%${game.rtp}`)
