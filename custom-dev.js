@@ -1377,9 +1377,12 @@
       let filteredGames = null;
 
       function getRandomGames(gamesArray, count) {
-        const arrayCopy = [...gamesArray]; // Orijinali bozmadan kopya oluştur
-        const shuffled = arrayCopy.sort(() => 0.5 - Math.random());
-        return shuffled.slice(0, count);
+        const arrayCopy = [...gamesArray.map((game) => ({ ...game }))]; // Deep Copy (gerçekten bağımsız)
+        for (let i = arrayCopy.length - 1; i > 0; i--) {
+          const j = Math.floor(Math.random() * (i + 1));
+          [arrayCopy[i], arrayCopy[j]] = [arrayCopy[j], arrayCopy[i]];
+        }
+        return arrayCopy.slice(0, count);
       }
 
       function getRandomRTP(oldRTP) {
