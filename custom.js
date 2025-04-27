@@ -1393,6 +1393,10 @@
         return {
           value: newRTP,
           color: Number(oldRTP) > Number(newRTP) ? "#f82228" : "#008000",
+          icon:
+            Number(oldRTP) > Number(newRTP)
+              ? "https://betrediofficial.github.io/images/rtp/rtp_down.png"
+              : "https://betrediofficial.github.io/images/rtp/rtp_up.png",
         };
       }
 
@@ -1415,12 +1419,13 @@
   </div>
 
   <div style="flex: 1 1 auto; overflow: hidden;">
-    <strong style="display: block; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; font-style: normal !important;">
+    <strong style="display: block; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; font-style: normal !important; margin-bottom: -3px;">
       ${game.name}
     </strong>
     <small style="color: gray;">${game.provider}</small>
   </div>
   <div style="flex: 0 0 auto; text-align: right; min-width: 50px;">
+    <img src="${game.icon}" class="rtp-icon" width="20" height="20" style="margin-right: 3px;" />
     <small class="rtp-value" style="color: ${game.textColor} !important">%${game.rtp}</small>
   </div>
 </a>
@@ -1434,9 +1439,11 @@
 
         randomGames.forEach((game) => {
           const rtpData = getRandomRTP();
+
           game.rtp = rtpData.value;
           game.prevRtp = game.rtp;
           game.textColor = rtpData.color;
+          game.icon = rtpData.icon;
         });
       }
 
@@ -1444,24 +1451,31 @@
         randomGames.forEach((game, index) => {
           game.prevRtp = game.rtp;
           const rtpData = getRandomRTP(game.prevRtp);
+
           game.rtp = rtpData.value;
           game.textColor = rtpData.color;
+          game.icon = rtpData.icon;
 
           const $gameElement = $(
             `#rtp-sorgu-bottom-sheet #rtp-games-wrapper a[data-id="${index}"]`
           );
 
+          const $rtpIcon = $gameElement.find(".rtp-icon");
           const $rtpValue = $gameElement.find(".rtp-value");
 
-          $rtpValue.fadeOut(100, function () {
+          $rtpIcon.fadeOut(10, function () {
+            $rtpIcon.attr("src", game.icon).fadeIn(10);
+          });
+
+          $rtpValue.fadeOut(10, function () {
             $rtpValue
               .text(`%${game.rtp}`)
               .css("color", game.textColor)
-              .fadeIn(100);
+              .fadeIn(10);
           });
         });
 
-        const nextDelay = Math.floor(Math.random() * (4000 - 1500 + 1)) + 1500;
+        const nextDelay = Math.floor(Math.random() * (5000 - 2000 + 1)) + 2000;
         setTimeout(startRtpLoop, nextDelay);
       }
 
@@ -1540,133 +1554,134 @@
           border-radius: 24px 24px 0 0;
           transform: translateY(100%);
           transition: 0.35s all ease;
-          padding: 20px 16px;
           overflow-y: scroll;
           position: relative;
         "
       >
-        <svg
-          xmlns="http://www.w3.org/2000/svg"
-          x="0px"
-          y="0px"
-          width="24"
-          height="24"
-          viewBox="0,0,256,256"
-          style="position: absolute; top: 16px !important; right: 16px !important;"
-          id="rtpsorgu-close-btn"
-        >
-          <g
-            fill="#ffffff"
-            fill-rule="nonzero"
-            stroke="none"
-            stroke-width="1"
-            stroke-linecap="butt"
-            stroke-linejoin="miter"
-            stroke-miterlimit="10"
-            stroke-dasharray=""
-            stroke-dashoffset="0"
-            font-family="none"
-            font-weight="none"
-            font-size="none"
-            text-anchor="none"
-            style="mix-blend-mode: normal"
-          >
-            <g transform="scale(5.12,5.12)">
-              <path
-                d="M7.71875,6.28125l-1.4375,1.4375l17.28125,17.28125l-17.28125,17.28125l1.4375,1.4375l17.28125,-17.28125l17.28125,17.28125l1.4375,-1.4375l-17.28125,-17.28125l17.28125,-17.28125l-1.4375,-1.4375l-17.28125,17.28125z"
-              ></path>
-            </g>
-          </g>
-        </svg>
-        <div class="d-flex align-items-center justify-content-center">
-          <div
-            style="
-              width: 25%;
-              height: 5px;
-              background: rgba(255, 255, 255, 0.7);
-              border-radius: 360px;
-              margin-bottom: 32px;
-            "
-          ></div>
-        </div>
-        <div
-          class="d-flex align-items-center justify-content-between text-white"
-          style="margin-bottom: 24px"
-        >
-          <h4 style="font-weight: 600; margin-bottom: 0px">
-            ${language === "tr" ? "Canlı RTP" : "Live RTP"}
-          </h4>
-          <a
-            href="https://rtpsorgu.com"
-            target="_blank"
-            style="
-              color: #f82228;
-              text-decoration: none;
-              font-weight: 600;
-            "
-            >${language === "tr" ? "Tümünü Gör" : "See All"}</a
-          >
-        </div>
-        <div style="position: relative; margin-bottom: 32px">
-          <input
-            type="text"
-            name="rtp-game-search"
-            id="rtp-game-search"
-            placeholder="Bir oyun ismi arayın"
-            style="
-              outline: none !important;
-              background: none !important;
-              color: white;
-              border: 1px solid #ffffff40;
-              display: block;
-              width: 100%;
-              padding: 8px 12px;
-              box-shadow: none !important;
-              border-radius: 24px;
-            "
-          />
-          <div
-            style="
-              position: absolute;
-              top: 50%;
-              right: 12px;
-              transform: translateY(-50%);
-            "
-          >
+          <div style="position: sticky; top: 0; z-index: 50; background: #000; padding: 20px 16px;">
             <svg
-              xmlns="http://www.w3.org/2000/svg"
-              x="0px"
-              y="0px"
-              width="20"
-              height="20"
-              viewBox="0,0,256,256"
+            xmlns="http://www.w3.org/2000/svg"
+            x="0px"
+            y="0px"
+            width="24"
+            height="24"
+            viewBox="0,0,256,256"
+            style="position: absolute; top: 16px !important; right: 16px !important;"
+            id="rtpsorgu-close-btn"
+          >
+            <g
+              fill="#ffffff"
+              fill-rule="nonzero"
+              stroke="none"
+              stroke-width="1"
+              stroke-linecap="butt"
+              stroke-linejoin="miter"
+              stroke-miterlimit="10"
+              stroke-dasharray=""
+              stroke-dashoffset="0"
+              font-family="none"
+              font-weight="none"
+              font-size="none"
+              text-anchor="none"
+              style="mix-blend-mode: normal"
             >
-              <g
-                fill="#d6d5d5"
-                fill-rule="nonzero"
-                stroke="none"
-                stroke-width="1"
-                stroke-linecap="butt"
-                stroke-linejoin="miter"
-                stroke-miterlimit="10"
-                stroke-dasharray=""
-                stroke-dashoffset="0"
-                font-family="none"
-                font-weight="none"
-                font-size="none"
-                text-anchor="none"
-                style="mix-blend-mode: normal"
-              >
-                <g transform="scale(5.12,5.12)">
-                  <path
-                    d="M21,3c-9.37891,0 -17,7.62109 -17,17c0,9.37891 7.62109,17 17,17c3.71094,0 7.14063,-1.19531 9.9375,-3.21875l13.15625,13.125l2.8125,-2.8125l-13,-13.03125c2.55469,-2.97656 4.09375,-6.83984 4.09375,-11.0625c0,-9.37891 -7.62109,-17 -17,-17zM21,5c8.29688,0 15,6.70313 15,15c0,8.29688 -6.70312,15 -15,15c-8.29687,0 -15,-6.70312 -15,-15c0,-8.29687 6.70313,-15 15,-15z"
-                  ></path>
-                </g>
+              <g transform="scale(5.12,5.12)">
+                <path
+                  d="M7.71875,6.28125l-1.4375,1.4375l17.28125,17.28125l-17.28125,17.28125l1.4375,1.4375l17.28125,-17.28125l17.28125,17.28125l1.4375,-1.4375l-17.28125,-17.28125l17.28125,-17.28125l-1.4375,-1.4375l-17.28125,17.28125z"
+                ></path>
               </g>
-            </svg>
+            </g>
+          </svg>
+          <div class="d-flex align-items-center justify-content-center">
+            <div
+              style="
+                width: 25%;
+                height: 5px;
+                background: rgba(255, 255, 255, 0.7);
+                border-radius: 360px;
+                margin-bottom: 32px;
+              "
+            ></div>
+          </div>
+          <div
+            class="d-flex align-items-center justify-content-between text-white"
+            style="margin-bottom: 24px"
+          >
+            <h4 style="font-weight: 600; margin-bottom: 0px">
+              ${language === "tr" ? "Canlı RTP" : "Live RTP"}
+            </h4>
+            <a
+              href="https://rtpsorgu.com"
+              target="_blank"
+              style="
+                color: #f82228;
+                text-decoration: none;
+                font-weight: 600;
+              "
+              >${language === "tr" ? "Tümünü Gör" : "See All"}</a
+            >
+          </div>
+          <div style="position: relative; margin-bottom: 12px">
+            <input
+              type="text"
+              name="rtp-game-search"
+              id="rtp-game-search"
+              placeholder="Bir oyun ismi arayın"
+              style="
+                outline: none !important;
+                background: none !important;
+                color: white;
+                border: 1px solid #ffffff40;
+                display: block;
+                width: 100%;
+                padding: 8px 12px;
+                box-shadow: none !important;
+                border-radius: 24px;
+              "
+            />
+            <div
+              style="
+                position: absolute;
+                top: 50%;
+                right: 12px;
+                transform: translateY(-50%);
+              "
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                x="0px"
+                y="0px"
+                width="20"
+                height="20"
+                viewBox="0,0,256,256"
+              >
+                <g
+                  fill="#d6d5d5"
+                  fill-rule="nonzero"
+                  stroke="none"
+                  stroke-width="1"
+                  stroke-linecap="butt"
+                  stroke-linejoin="miter"
+                  stroke-miterlimit="10"
+                  stroke-dasharray=""
+                  stroke-dashoffset="0"
+                  font-family="none"
+                  font-weight="none"
+                  font-size="none"
+                  text-anchor="none"
+                  style="mix-blend-mode: normal"
+                >
+                  <g transform="scale(5.12,5.12)">
+                    <path
+                      d="M21,3c-9.37891,0 -17,7.62109 -17,17c0,9.37891 7.62109,17 17,17c3.71094,0 7.14063,-1.19531 9.9375,-3.21875l13.15625,13.125l2.8125,-2.8125l-13,-13.03125c2.55469,-2.97656 4.09375,-6.83984 4.09375,-11.0625c0,-9.37891 -7.62109,-17 -17,-17zM21,5c8.29688,0 15,6.70313 15,15c0,8.29688 -6.70312,15 -15,15c-8.29687,0 -15,-6.70312 -15,-15c0,-8.29687 6.70313,-15 15,-15z"
+                    ></path>
+                  </g>
+                </g>
+              </svg>
+            </div>
           </div>
         </div>
-        <div id="rtp-games-wrapper"></div>
+        <div id="rtp-games-wrapper" style="padding: 0px 16px;"></div>
       </div>
     </div>
       `;

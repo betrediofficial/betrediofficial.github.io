@@ -1621,7 +1621,7 @@
               >${language === "tr" ? "Tümünü Gör" : "See All"}</a
             >
           </div>
-          <div style="position: relative; margin-bottom: 32px">
+          <div style="position: relative; margin-bottom: 12px">
             <input
               type="text"
               name="rtp-game-search"
