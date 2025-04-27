@@ -1389,6 +1389,7 @@
 
       function getRandomRTP(oldRTP) {
         const newRTP = (Math.random() * (99.95 - 96.0) + 96.0).toFixed(2);
+
         return {
           value: newRTP,
           color: Number(oldRTP) > Number(newRTP) ? "#f82228" : "#008000",
@@ -1449,13 +1450,14 @@
           const $gameElement = $(
             `#rtp-sorgu-bottom-sheet #rtp-games-wrapper a[data-id="${index}"]`
           );
+
           const $rtpValue = $gameElement.find(".rtp-value");
 
-          $rtpValue.fadeOut(150, function () {
+          $rtpValue.fadeOut(100, function () {
             $rtpValue
               .text(`%${game.rtp}`)
               .css("color", game.textColor)
-              .fadeIn(150);
+              .fadeIn(100);
           });
         });
 
