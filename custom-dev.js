@@ -1597,7 +1597,6 @@
               style="
                 width: 25%;
                 height: 5px;
-                background: rgba(255, 255, 255, 0.7);
                 border-radius: 360px;
                 margin-bottom: 32px;
               "
