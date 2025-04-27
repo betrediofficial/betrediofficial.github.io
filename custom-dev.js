@@ -1475,7 +1475,7 @@
           });
         });
 
-        const nextDelay = Math.floor(Math.random() * (4000 - 1500 + 1)) + 1500;
+        const nextDelay = Math.floor(Math.random() * (5000 - 2000 + 1)) + 2000;
         setTimeout(startRtpLoop, nextDelay);
       }
 
@@ -1554,12 +1554,11 @@
           border-radius: 24px 24px 0 0;
           transform: translateY(100%);
           transition: 0.35s all ease;
-          padding: 20px 16px;
           overflow-y: scroll;
           position: relative;
         "
       >
-          <div style="position: sticky; top: 0; z-index: 50; background: #000;">
+          <div style="position: sticky; top: 0; z-index: 50; background: #000; padding: 20px 16px;">
             <svg
             xmlns="http://www.w3.org/2000/svg"
             x="0px"
@@ -1682,7 +1681,7 @@
             </div>
           </div>
         </div>
-        <div id="rtp-games-wrapper"></div>
+        <div id="rtp-games-wrapper" style="padding: 0px 16px;"></div>
       </div>
     </div>
       `;
