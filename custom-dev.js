@@ -1388,7 +1388,7 @@
       let filteredGames = null;
 
       function getRandomRTP(oldRTP) {
-        const newRTP = (Math.random() * (99.95 - 96.0) + 96.0).toFixed(2);
+        const newRTP = (Math.random() * (99.98 - 94.0) + 94.0).toFixed(2);
 
         return {
           value: newRTP,
