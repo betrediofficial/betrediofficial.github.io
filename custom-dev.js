@@ -1463,15 +1463,15 @@
           const $rtpIcon = $gameElement.find(".rtp-icon");
           const $rtpValue = $gameElement.find(".rtp-value");
 
-          $rtpIcon.fadeOut(100, function () {
-            $rtpIcon.attr("src", game.icon).fadeIn(100);
+          $rtpIcon.fadeOut(140, function () {
+            $rtpIcon.attr("src", game.icon).fadeIn(140);
           });
 
-          $rtpValue.fadeOut(100, function () {
+          $rtpValue.fadeOut(140, function () {
             $rtpValue
               .text(`%${game.rtp}`)
               .css("color", game.textColor)
-              .fadeIn(100);
+              .fadeIn(140);
           });
         });
 
