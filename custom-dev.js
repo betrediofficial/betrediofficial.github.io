@@ -1187,7 +1187,7 @@
         <div class="col-12">
           <h2 class="section__title">
             <svg class="svg-icon">
-              <use href="/static/media/sprite.94622980f40d877c6d27eb5b2474fa5a.svg#mini-games" xlink:href="/static/media/sprite.94622980f40d877c6d27eb5b2474fa5a.svg#mini-games">
+              <use href="/static/media/sprite.4e4e22b3c670750ab1e58c7c8bc8a3c8.svg#mini-games" xlink:href="/static/media/sprite.4e4e22b3c670750ab1e58c7c8bc8a3c8.svg#mini-games">
               </use>
             </svg>
             Mini Oyunlar
@@ -1389,9 +1389,14 @@
 
       function getRandomRTP(oldRTP) {
         const newRTP = (Math.random() * (99.95 - 96.0) + 96.0).toFixed(2);
+
         return {
           value: newRTP,
           color: Number(oldRTP) > Number(newRTP) ? "#f82228" : "#008000",
+          icon:
+            Number(oldRTP) > Number(newRTP)
+              ? "https://betrediofficial.github.io/images/rtp/rtp_down.png"
+              : "https://betrediofficial.github.io/images/rtp/rtp_up.png",
         };
       }
 
@@ -1414,12 +1419,13 @@
   </div>
 
   <div style="flex: 1 1 auto; overflow: hidden;">
-    <strong style="display: block; white-space: nowrap; overflow: hidden; text-overflow: ellipsis;">
+    <strong style="display: block; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; font-style: normal !important; margin-bottom: -3px;">
       ${game.name}
     </strong>
     <small style="color: gray;">${game.provider}</small>
   </div>
   <div style="flex: 0 0 auto; text-align: right; min-width: 50px;">
+    <img src="${game.icon}" class="rtp-icon" width="20" height="20" style="margin-right: 2px;" />
     <small class="rtp-value" style="color: ${game.textColor} !important">%${game.rtp}</small>
   </div>
 </a>
@@ -1433,9 +1439,11 @@
 
         randomGames.forEach((game) => {
           const rtpData = getRandomRTP();
+
           game.rtp = rtpData.value;
           game.prevRtp = game.rtp;
           game.textColor = rtpData.color;
+          game.icon = rtpData.icon;
         });
       }
 
@@ -1443,20 +1451,31 @@
         randomGames.forEach((game, index) => {
           game.prevRtp = game.rtp;
           const rtpData = getRandomRTP(game.prevRtp);
+
           game.rtp = rtpData.value;
           game.textColor = rtpData.color;
+          game.icon = rtpData.icon;
 
           const $gameElement = $(
             `#rtp-sorgu-bottom-sheet #rtp-games-wrapper a[data-id="${index}"]`
           );
 
-          $gameElement
-            .find(".rtp-value")
-            .text(`%${game.rtp}`)
-            .css("color", game.textColor);
+          const $rtpIcon = $gameElement.find(".rtp-icon");
+          const $rtpValue = $gameElement.find(".rtp-value");
+
+          $rtpIcon.fadeOut(100, function () {
+            $rtpIcon.attr("src", game.icon).fadeIn(100);
+          });
+
+          $rtpValue.fadeOut(100, function () {
+            $rtpValue
+              .text(`%${game.rtp}`)
+              .css("color", game.textColor)
+              .fadeIn(100);
+          });
         });
 
-        const nextDelay = Math.floor(Math.random() * (5000 - 2000 + 1)) + 2000;
+        const nextDelay = Math.floor(Math.random() * (4000 - 1500 + 1)) + 1500;
         setTimeout(startRtpLoop, nextDelay);
       }
 
