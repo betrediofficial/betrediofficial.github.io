@@ -1019,7 +1019,7 @@
       });
     }
 
-    // Wait for DOM and both libraries to be ready
+    // Wait for DOM
     const wait = setInterval(() => {
       if (
         typeof jQuery !== "undefined" &&
@@ -1059,6 +1059,14 @@
 
           $(document).on("click", "a.no-click", function (e) {
             e.preventDefault();
+          });
+
+          $('a[href="/tr/license"]').on("click", function (e) {
+            e.preventDefault();
+            window.open(
+              "https://verification.anjouangaming.org/validate?domain=betredi112.com&seal_id=39b9ad8bcead64861088d3fa347de2584534ea0ec3c91b1ba0dce04299d18b6e1414b438199e37079ba4344f152d63df&stamp=e726f50e436153206f2206995d3f80ba",
+              "_blank"
+            );
           });
         });
       }
@@ -1647,26 +1655,22 @@
           $content.length &&
           $content.find(".modal__sign-img").length === 0
         ) {
-          // Inject the image on the left
           const $signImg = $(`
         <div class="modal__sign-img" style="width: 40%;">
           <img src="${imgUrl}" style="width: 100%; height: 100%;" alt="Betredi Banner" />
         </div>
       `);
 
-          // Grab modal__head and modal__form
           const $head = $content.find(".modal__head");
           const $form = $content.find(".modal__form");
 
-          // Wrap them in a right__col div
           const $rightCol = $(
             '<div class="right__col" style="float: right; width: 58%;"></div>'
           );
           $rightCol.append($head).append($form);
 
-          // Clear content and insert both sides
           $content.prepend($signImg);
-          $signImg.after($rightCol); // add right_col after image
+          $signImg.after($rightCol);
         }
       });
 
@@ -1689,26 +1693,22 @@
           $content.length &&
           $content.find(".modal__sign-img").length === 0
         ) {
-          // Inject the image on the left
           const $signImg = $(`
         <div class="modal__sign-img" style="width: 40%;">
           <img src="${imgUrl}" style="width: 100%; height: 100%;" alt="Betredi Banner" />
         </div>
       `);
 
-          // Grab modal__head and modal__form
           const $head = $content.find(".modal__head");
           const $form = $content.find(".modal__form");
 
-          // Wrap them in a right__col div
           const $rightCol = $(
             '<div class="right__col" style="float: right; width: 58%;"></div>'
           );
           $rightCol.append($head).append($form);
 
-          // Clear content and insert both sides
           $content.prepend($signImg);
-          $signImg.after($rightCol); // add right_col after image
+          $signImg.after($rightCol);
         }
       });
 
@@ -1734,7 +1734,6 @@
             $sidebarLinks.querySelectorAll(".sidebar__link");
           linksToRemove.forEach((link) => link.remove());
 
-          // --casino for hover
           const newLinksHTML = `
           <a class="sidebar__link sidebar__link--casino" href="https://betredi112.com/${language}/casino/slots" style="background: url('https://betrediofficial.github.io/images/aside-links/slot.png') left center / cover no-repeat;"></a>
           <a class="sidebar__link sidebar__link--casino" href="https://betredi112.com/${language}/casino" style="background: url('https://betrediofficial.github.io/images/aside-links/casino.png') left center / cover no-repeat;"></a>
@@ -1764,40 +1763,6 @@
         subtree: true,
       });
     }
-
-    // function insertCustomSidebarLink() {
-    //   const observer = new MutationObserver(() => {
-
-    //     const $sidebarLinks = document.querySelector(
-    //       ".sidebar__big .sidebar__links"
-    //     );
-
-    //     const exists = document.querySelector(".sidebar__links.custom_side");
-
-    //     if ($sidebarLinks && !exists) {
-    //       const customDiv = document.createElement("div");
-    //       customDiv.className = "sidebar__links custom_side";
-    //       customDiv.innerHTML = `
-    //     <a class="sidebar__link sidebar__link--casino w-100" href=${
-    //       language === "tr"
-    //         ? "d/tr/promotions"
-    //         : "d/en/promotions"
-    //     }
-    //        style="height: 46px; background: url('https://betrediofficial.github.io/images/aside-links/promotions.png') center center / cover no-repeat;">
-    //     </a>
-    //   `;
-    //       $sidebarLinks.parentNode.insertBefore(
-    //         customDiv,
-    //         $sidebarLinks.nextSibling
-    //       );
-    //     }
-    //   });
-
-    //   observer.observe(document.body, {
-    //     childList: true,
-    //     subtree: true,
-    //   });
-    // }
 
     function injectProvidersMarquee() {
       const container = document.querySelector("#main-slider > .container");
@@ -2218,13 +2183,6 @@ ${
       `;
 
       swiperElement.insertAdjacentElement("afterend", section);
-
-      // Eğer içinde .marquee-content varsa kopyala
-      // const marquee = section.querySelector(".providers--marquee");
-      // if (marquee) {
-      //   const clone = marquee.cloneNode(true);
-      //   marquee.parentElement.appendChild(clone);
-      // }
     }
 
     function injectExtraText() {
@@ -2386,7 +2344,7 @@ ${
     }
 
     // * BG Image Optimization for all OS
-    // ! Don't touch
+    // ! Don't touch even if it's in comment line
 
     //     #main__content {
     //   position: relative;
@@ -2491,7 +2449,6 @@ ${
     }
 
     // * Game Chooser
-
     function gameChooser() {
       if ($("#game-chooser").length > 0) {
         $("#game-chooser").remove();
