@@ -2339,6 +2339,10 @@ ${
       height: 30vh !important;
     }
 
+    #main-slider .swiper-slide {
+      height: 30vh !important;
+    }
+
     #main-slider .swiper-slide a {
       height: 100% !important;
     }
