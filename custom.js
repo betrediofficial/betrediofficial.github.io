@@ -1736,7 +1736,7 @@
 
           const newLinksHTML = `
           <a class="sidebar__link sidebar__link--casino" href="https://betredi112.com/${language}/casino/slots" style="background: url('https://betrediofficial.github.io/images/aside-links/slot.png') left center / cover no-repeat;"></a>
-          <a class="sidebar__link sidebar__link--casino" href="https://betredi112.com/${language}/casino" style="background: url('https://betrediofficial.github.io/images/aside-links/casino.png') left center / cover no-repeat;"></a>
+          <a class="sidebar__link sidebar__link--casino" href="https://betredi112.com/${language}/live-casino" style="background: url('https://betrediofficial.github.io/images/aside-links/casino.png') left center / cover no-repeat;"></a>
           `;
 
           $sidebarLinks.insertAdjacentHTML("beforeend", newLinksHTML);
@@ -2702,15 +2702,14 @@ ${
     }
 
     function bottomMenuWidget(isMobile) {
-      if ($(".bottomMenuWidgedContainer").length > 0) {
+      if ($(".bottomMenuWidgedContainer").length > 0)
         return $(".bottomMenuWidgedContainer").show();
-      }
 
       var newSection = `
 <div class="manually-added-home-widgets bottomMenuWidgedContainer" id="bottomMenuWidgedContainer" style="margin-bottom: 10px;">
   <div class="bottom-menu-widget" style="flex: 1 1 calc(25% - 10px); text-align: center;">
     <a href="https://betredi112.com/${language}/casino/category/exclusive">
-      <img src="https://betrediofficial.github.io/images/bottom-menu-widget/games.png" alt="games" class="bottomMenuWidgetImage" >
+      <img src="https://betrediofficial.github.io/images/bottom-menu-widget/${language}/games.webp" alt="games" class="bottomMenuWidgetImage" >
     </a>
   </div>
 
@@ -2718,7 +2717,7 @@ ${
     !isMobile
       ? `<div class="bottom-menu-widget" style="flex: 1 1 calc(25% - 10px); text-align: center;">
     <a href="https://betredi112.com/${language}/casino/group/live-casino">
-      <img src="https://betrediofficial.github.io/images/bottom-menu-widget/live_casino.png" alt="livecasino" class="bottomMenuWidgetImage" >
+      <img src="https://betrediofficial.github.io/images/bottom-menu-widget/${language}/live_casino.webp" alt="livecasino" class="bottomMenuWidgetImage" >
     </a>
   </div>`
       : ``
@@ -2726,12 +2725,12 @@ ${
 
   <div class="bottom-menu-widget" style="flex: 1 1 calc(25% - 10px); text-align: center;">
     <a href="https://betredi112.com/${language}/sportsbook">
-      <img src="https://betrediofficial.github.io/images/bottom-menu-widget/sport.png" alt="sporb" class="bottomMenuWidgetImage" >
+      <img src="https://betrediofficial.github.io/images/bottom-menu-widget/${language}/sports.webp" alt="sporb" class="bottomMenuWidgetImage" >
     </a>
   </div>
   <div class="bottom-menu-widget" style="flex: 1 1 calc(25% - 10px); text-align: center;">
     <a href="https://betredi112.com/${language}/casino/slots">
-      <img src="https://betrediofficial.github.io/images/bottom-menu-widget/slot.png" alt="slotcasino" class="bottomMenuWidgetImage" >
+      <img src="https://betrediofficial.github.io/images/bottom-menu-widget/${language}/casino.webp" alt="slotcasino" class="bottomMenuWidgetImage" >
     </a>
   </div>
 </div>
