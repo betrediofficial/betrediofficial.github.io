@@ -1099,29 +1099,11 @@
         <div class="swiper mySwiper">
           <div class="swiper-wrapper">
             <div class="swiper-slide">
-              <a href="https://betredi112.com/${language}/promotion/15-casino-yatirim-bonusu-tr">
+              <a href="https://betredi112.com/${language}/promotion/100-freespin-deneme-bonusu-trrf">
                 ${
                   isMobile()
-                    ? '<img src="https://betrediofficial.github.io/images/mobile-main-slider/15casino.webp" class="slide-image" />'
-                    : '<img src="https://betrediofficial.github.io/images/slider/15Casino.webp" class="slide-image" />'
-                }
-              </a>
-            </div>
-            <div class="swiper-slide">
-              <a href="https://betredi112.com/${language}/promotion/15-spor-yatirim-bonusu-tr">
-                ${
-                  isMobile()
-                    ? '<img src="https://betrediofficial.github.io/images/mobile-main-slider/15spor.webp" class="slide-image" />'
-                    : '<img src="https://betrediofficial.github.io/images/slider/15Spor.webp" class="slide-image" />'
-                }
-              </a>
-            </div>
-            <div class="swiper-slide">
-              <a href="https://betredi112.com/${language}/promotion/30-casino-discount-tr">
-                ${
-                  isMobile()
-                    ? '<img src="https://betrediofficial.github.io/images/mobile-main-slider/30casino.webp" class="slide-image" />'
-                    : '<img src="https://betrediofficial.github.io/images/slider/30Discount.webp" class="slide-image" />'
+                    ? `<img src="https://betrediofficial.github.io/images/mobile-main-slider/${language}/100freespin.webp" class="slide-image" />`
+                    : `<img src="https://betrediofficial.github.io/images/slider/${language}/100freespin.webp" class="slide-image" />`
                 }
               </a>
             </div>
@@ -1129,17 +1111,35 @@
               <a href="https://betredi112.com/${language}/promotion/50-slot-yatirim-bonusu-tr">
                 ${
                   isMobile()
-                    ? '<img src="https://betrediofficial.github.io/images/mobile-main-slider/50slot.webp" class="slide-image" />'
-                    : '<img src="https://betrediofficial.github.io/images/slider/50Slot.webp" class="slide-image" />'
+                    ? `<img src="https://betrediofficial.github.io/images/mobile-main-slider/${language}/50slot.webp class="slide-image" />`
+                    : `<img src="https://betrediofficial.github.io/images/slider/${language}/50slot.webp" class="slide-image" />`
                 }
               </a>
             </div>
             <div class="swiper-slide">
-              <a href="https://betredi112.com/${language}/promotion/100-freespin-deneme-bonusu-trrf">
+              <a href="https://betredi112.com/${language}/promotion/30-casino-discount-tr">
                 ${
                   isMobile()
-                    ? '<img src="https://betrediofficial.github.io/images/mobile-main-slider/100freespin.webp" class="slide-image" />'
-                    : '<img src="https://betrediofficial.github.io/images/slider/100Freespin.webp" class="slide-image" />'
+                    ? `<img src="https://betrediofficial.github.io/images/mobile-main-slider/${language}/30casino.webp" class="slide-image" />`
+                    : `<img src="https://betrediofficial.github.io/images/slider/${language}/30casino.webp" class="slide-image" />`
+                }
+              </a>
+            </div>
+            <div class="swiper-slide">
+              <a href="https://betredi112.com/${language}/promotion/15-casino-yatirim-bonusu-tr">
+                ${
+                  isMobile()
+                    ? `<img src="https://betrediofficial.github.io/images/mobile-main-slider/${language}/15casino.webp" class="slide-image" />`
+                    : `<img src="https://betrediofficial.github.io/images/slider/${language}/15casino.webp" class="slide-image" />`
+                }
+              </a>
+            </div>
+            <div class="swiper-slide">
+              <a href="https://betredi112.com/${language}/promotion/15-spor-yatirim-bonusu-tr">
+                ${
+                  isMobile()
+                    ? `<img src="https://betrediofficial.github.io/images/mobile-main-slider/${language}/15spor.webp" class="slide-image" />`
+                    : `<img src="https://betrediofficial.github.io/images/slider/${language}/15spor.webp" class="slide-image" />`
                 }
               </a>
             </div>
@@ -2332,7 +2332,7 @@ ${
     }
 
     #main-slider .mySwiper {
-      height: 30vh !important;
+      height: 30svh !important;
     }
 
     #main-slider .swiper-slide a {
@@ -2946,7 +2946,6 @@ ${
             <div class="games-content">
               <div class="games-horiz">
                 <div class="games-horiz-scroll">
-                  
                   <div class="casino-game-item-content position-relative" style="overflow: hidden !important;">
                     <div class="casino-game-item" style="border: 3px solid #9b000e !important; overflow: hidden !important;">
                       <div class="hovered-effect" style="opacity: 0; position: absolute; width: 100%; height: 100%; background: rgba(255,255,255,0.2); z-index: 10; pointer-events: none;"></div>
@@ -3054,16 +3053,15 @@ ${
                       </a>
                     </div>
                   </div>
-
-                </div> <!-- games-horiz-scroll -->
-              </div> <!-- games-horiz -->
-            </div> <!-- games-content -->
-          </div> <!-- pb-component-wrapper -->
-        </div> <!-- hm-row-bc -->
-      </div> <!-- col-12 -->
-    </div> <!-- row -->
-  </div> <!-- container -->
-</div> <!-- manually-added-home-widgets -->
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
 `;
 
       $("#tgpromo").after(newSection);
@@ -3072,70 +3070,6 @@ ${
     alert("hata");
     console.log(e);
   }
-
-  //   function sportsCard() {
-  //     if ($("#sportscard").length > 0) return;
-
-  //     var newSection = `
-  //       <div class="container manually-added-home-widgets" style="margin-top: 16px !important; margin-bottom: 16px !important;">
-  //   <div class="row row-cols-3 row-cols-xl-6 g-4 text-center">
-  //     <div class="col">
-  //       <div class="sport-card" style="position: relative; border: 2px solid #9B000E; border-top-right-radius: 24px; border-bottom-left-radius: 24px; overflow: hidden; cursor: pointer;">
-  //         <div class="hovered-effect" style="opacity: 0; position: absolute; width: 100%; height: 100%; background: rgba(255,255,255,0.1); z-index: 10; pointer-events: none;"></div>
-  //         <a href="/sportsbook">
-  //           <img src="https://betrediofficial.github.io/images/sports/futbol_new.png" alt="Futbol" style="width: 100%; aspect-ratio: 3/4; object-fit: cover;">
-  //         </a>
-  //       </div>
-  //     </div>
-  //     <div class="col">
-  //       <div class="sport-card" style="position: relative; border: 2px solid #9B000E; border-top-right-radius: 24px; border-bottom-left-radius: 24px; overflow: hidden; cursor: pointer;">
-  //         <div class="hovered-effect" style="opacity: 0; position: absolute; width: 100%; height: 100%; background: rgba(255,255,255,0.1); z-index: 10; pointer-events: none;"></div>
-  //         <a href="/sportsbook">
-  //           <img src="https://betrediofficial.github.io/images/sports/basketbol_new.png" alt="Basketbol" style="width: 100%; aspect-ratio: 3/4; object-fit: cover;">
-  //         </a>
-  //       </div>
-  //     </div>
-  //     <div class="col">
-  //       <div class="sport-card" style="position: relative; border: 2px solid #9B000E; border-top-right-radius: 24px; border-bottom-left-radius: 24px; overflow: hidden; cursor: pointer;">
-  //         <div class="hovered-effect" style="opacity: 0; position: absolute; width: 100%; height: 100%; background: rgba(255,255,255,0.1); z-index: 10; pointer-events: none;"></div>
-  //         <a href="/sportsbook">
-  //           <img src="https://betrediofficial.github.io/images/sports/voleybol_new.png" alt="Voleybol" style="width: 100%; aspect-ratio: 3/4; object-fit: cover;">
-  //         </a>
-  //       </div>
-  //     </div>
-  //     <div class="col">
-  //       <div class="sport-card" style="position: relative; border: 2px solid #9B000E; border-top-right-radius: 24px; border-bottom-left-radius: 24px; overflow: hidden; cursor: pointer;">
-  //         <div class="hovered-effect" style="opacity: 0; position: absolute; width: 100%; height: 100%; background: rgba(255,255,255,0.1); z-index: 10; pointer-events: none;"></div>
-  //         <a href="/sportsbook">
-  //           <img src="https://betrediofficial.github.io/images/sports/mma_new.png" alt="MMA" style="width: 100%; aspect-ratio: 3/4; object-fit: cover;">
-  //         </a>
-  //       </div>
-  //     </div>
-  //     <div class="col">
-  //       <div class="sport-card" style="position: relative; border: 2px solid #9B000E; border-top-right-radius: 24px; border-bottom-left-radius: 24px; overflow: hidden; cursor: pointer;">
-  //         <div class="hovered-effect" style="opacity: 0; position: absolute; width: 100%; height: 100%; background: rgba(255,255,255,0.1); z-index: 10; pointer-events: none;"></div>
-  //         <a href="/sportsbook">
-  //           <img src="https://betrediofficial.github.io/images/sports/tennis_new.png" alt="Tenis" style="width: 100%; aspect-ratio: 3/4; object-fit: cover;">
-  //         </a>
-  //       </div>
-  //     </div>
-  //     <div class="col">
-  //       <div class="sport-card" style="position: relative; border: 2px solid #9B000E; border-top-right-radius: 24px; border-bottom-left-radius: 24px; overflow: hidden; cursor: pointer;">
-  //         <div class="hovered-effect" style="opacity: 0; position: absolute; width: 100%; height: 100%; background: rgba(255,255,255,0.1); z-index: 10; pointer-events: none;"></div>
-  //         <a href="/sportsbook">
-  //           <img src="https://betrediofficial.github.io/images/sports/cycling_new.png" alt="Cycling" style="width: 100%; aspect-ratio: 3/4; object-fit: cover;">
-  //         </a>
-  //       </div>
-  //     </div>
-  //   </div>
-  // </div>
-
-  // `;
-
-  //     // if ($("#casinooyunlari").length > 0)
-  //     $("#casinooyunlari").after(newSection);
-  //     // else $("#tgpromo").eq(0).after(newSection);
-  //   }
 
   function sportsCard() {
     if ($("#sportscard").length > 0) return $("#sportscard").show();
