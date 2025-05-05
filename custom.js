@@ -1111,7 +1111,7 @@
               <a href="https://betredi112.com/${language}/promotion/50-slot-yatirim-bonusu-tr">
                 ${
                   isMobile()
-                    ? `<img src="https://betrediofficial.github.io/images/mobile-main-slider/${language}/50slot.webp class="slide-image" />`
+                    ? `<img src="https://betrediofficial.github.io/images/mobile-main-slider/${language}/50slot.webp" class="slide-image" />`
                     : `<img src="https://betrediofficial.github.io/images/slider/${language}/50slot.webp" class="slide-image" />`
                 }
               </a>
