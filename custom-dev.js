@@ -2332,7 +2332,15 @@ ${
     }
 
     #main-slider .mySwiper {
-      height: 30svh !important;
+      height: 280px !important;
+    }
+
+    #main-sider .mySwiper .swiper-wrapper {
+      height: 280px !important;
+    }
+
+    #main-slider .swiper-slide {
+      height: 280px !important;
     }
 
     #main-slider .swiper-slide a {
