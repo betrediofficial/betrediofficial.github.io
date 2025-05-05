@@ -2708,7 +2708,7 @@ ${
       var newSection = `
 <div class="manually-added-home-widgets bottomMenuWidgedContainer" id="bottomMenuWidgedContainer" style="margin-bottom: 10px;">
   <div class="bottom-menu-widget" style="flex: 1 1 calc(25% - 10px); text-align: center;">
-    <a href="https://betredi112.com/${language}/casino/category/exclusive">
+    <a href="https://betredi112.com/${language}/casino/games/spribe-aviator">
       <img src="https://betrediofficial.github.io/images/bottom-menu-widget/${language}/games.webp" alt="games" class="bottomMenuWidgetImage" >
     </a>
   </div>
