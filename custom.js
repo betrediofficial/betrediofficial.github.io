@@ -2332,7 +2332,11 @@ ${
     }
 
     #main-slider .mySwiper {
-      height: 30svh !important;
+      height: 30vh !important;
+    }
+
+    #main-sider .mySwiper .swiper-wrapper {
+      height: 30vh !important;
     }
 
     #main-slider .swiper-slide a {
