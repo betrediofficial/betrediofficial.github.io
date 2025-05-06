@@ -3041,7 +3041,7 @@ ${
               height: 64px;
             "
           >
-            <img src="https://betrediofficial.github.io/images/game-chooser-icons/spin.png" width="48" height="48" style="width: 100%; height: 100%; object-fit: cover;" />
+            <img src="https://betrediofficial.github.io/images/game-chooser-icons/spin.png" style="width: 36px; height: 36px; object-fit: cover;" />
           </button>
         </div>
       </div>
