@@ -1445,12 +1445,15 @@
         do {
           slot_count = Math.floor(Math.random() * slot_games.length);
         } while (slot_count === prevSlotCount || Math.abs(slot_count - prevSlotCount) < 15);
+
         prevSlotCount = slot_count;
 
         let casino_count;
+
         do {
           casino_count = Math.floor(Math.random() * casino_games.length);
         } while (casino_count === prevCasinoCount || Math.abs(casino_count - prevCasinoCount) < 15);
+
         prevCasinoCount = casino_count;
 
         $("#slot-game-chooser-section img.slot-game-chooser-item").css(
@@ -1470,7 +1473,7 @@
           $(
             "a.slot-game-item--chooser, a.casino-game-item--chooser"
           ).removeClass("no-click");
-        }, 2000);
+        }, 3500);
       });
     }
 
