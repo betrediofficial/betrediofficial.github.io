@@ -979,6 +979,7 @@
 
       $("#spin-game-btn").click(function () {
         $(this).prop("disabled", true);
+        $(this).css("transform", "rotate(90deg)");
         $(".game-chooser-hovered-effect").css("display", "none");
 
         // * Prevent navigation when slotting
@@ -2286,6 +2287,10 @@ ${
   #slot-game-chooser-section:hover .play-btn,
   #casino-game-chooser-section:hover .play-btn {
     transform: scale(0.75);
+  }
+
+  #spin-game-btn {
+    transition: transform 0.35s ease-out;
   }
 
   #spin-game-btn:hover {
