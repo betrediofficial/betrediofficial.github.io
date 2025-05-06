@@ -1433,7 +1433,7 @@
 
         current_spin_rotate += 180;
 
-        $(this).css("transform", `rotate(-${current_spin_rotate}deg)`);
+        $(this).css("transform", `rotate(${current_spin_rotate}deg)`);
         $(".game-chooser-hovered-effect").css("display", "none");
 
         // * Prevent navigation when slotting
