@@ -1431,7 +1431,7 @@
       $("#spin-game-btn").click(function () {
         $(this).prop("disabled", true);
 
-        current_spin_rotate += 270;
+        current_spin_rotate += 145;
 
         $(this).css("transform", `rotate(${current_spin_rotate}deg)`);
         $(".game-chooser-hovered-effect").css("display", "none");
@@ -1444,7 +1444,7 @@
         let slot_count;
         do {
           slot_count = Math.floor(Math.random() * slot_games.length);
-        } while (slot_count === prevSlotCount || Math.abs(slot_count - prevSlotCount) < 15);
+        } while (slot_count === prevSlotCount || Math.abs(slot_count - prevSlotCount) < 24);
 
         prevSlotCount = slot_count;
 
@@ -1452,7 +1452,7 @@
 
         do {
           casino_count = Math.floor(Math.random() * casino_games.length);
-        } while (casino_count === prevCasinoCount || Math.abs(casino_count - prevCasinoCount) < 15);
+        } while (casino_count === prevCasinoCount || Math.abs(casino_count - prevCasinoCount) < 24);
 
         prevCasinoCount = casino_count;
 
@@ -3041,7 +3041,7 @@ ${
               height: 64px;
             "
           >
-            <img src="https://betrediofficial.github.io/images/game-chooser-icons/spin.png" width="48" height="48" style="width: 100%; height: 100%; object-fit: cover;" />
+            <img src="https://betrediofficial.github.io/images/game-chooser-icons/spin.png" style="width: 36px; height: 36px; object-fit: cover;" />
           </button>
         </div>
       </div>
