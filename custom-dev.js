@@ -2572,17 +2572,14 @@ ${
             style="
               border: 2px solid #e71f25;
               background: #310204;
-              color: #fff;
-              padding: 10px 24px;
-              border-radius: 8px;
-              font-size: 16px;
-              font-weight: 500;
+              padding: 10px;
+              border-radius: 360px;
               transition: 0.3s;
+              width: 32px;
+              height: 32px;
             "
           >
-            <span style="font-weight: 600">${
-              language === "tr" ? "ÇEVİR" : "SPIN"
-            }</span>
+            <img src="https://betrediofficial.github.io/images/game-chooser-icons/spin.png" width="24" height="24" />
           </button>
         </div>
       </div>
