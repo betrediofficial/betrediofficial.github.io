@@ -1433,7 +1433,7 @@
 
         current_spin_rotate += 180;
 
-        $(this).css("transform", `rotate(${current_spin_rotate}deg)`);
+        $(this).css("transform", `rotate(-${current_spin_rotate}deg)`);
         $(".game-chooser-hovered-effect").css("display", "none");
 
         // * Prevent navigation when slotting
@@ -2726,11 +2726,11 @@ ${
 
   #slot-game-chooser-section a img.slot-game-chooser-item,
   #casino-game-chooser-section a img.casino-game-chooser-item {
-    transition: 2s transform ease;
+    transition: 3.5s transform ease;
   }
 
   .game-chooser-hovered-effect {
-    transition: 0.35s all ease-out;
+    transition: 0.5s all ease-out;
   }
 
   #slot-game-chooser-section:hover .game-chooser-hovered-effect,
@@ -2744,7 +2744,7 @@ ${
   }
 
   #spin-game-btn {
-    transition: transform 0.5s ease-out;
+    transition: transform 0.8s ease-out;
   }
 
   #spin-game-btn:hover {
