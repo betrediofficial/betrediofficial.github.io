@@ -1468,7 +1468,7 @@
               text-anchor="none"
               style="mix-blend-mode: normal"
             >
-              <g transform="scale(5.12,5.12)">
+              <g transform="scale(5.12 5.12)">
                 <path
                   d="M7.71875,6.28125l-1.4375,1.4375l17.28125,17.28125l-17.28125,17.28125l1.4375,1.4375l17.28125,-17.28125l17.28125,17.28125l1.4375,-1.4375l-17.28125,-17.28125l17.28125,-17.28125l-1.4375,-1.4375l-17.28125,17.28125z"
                 ></path>
@@ -2575,11 +2575,11 @@ ${
               padding: 10px;
               border-radius: 360px;
               transition: 0.3s;
-              width: 32px;
-              height: 32px;
+              width: 64px;
+              height: 64px;
             "
           >
-            <img src="https://betrediofficial.github.io/images/game-chooser-icons/spin.png" width="24" height="24" />
+            <img src="https://betrediofficial.github.io/images/game-chooser-icons/spin.png" width="48" height="48" style="width: 100%; height: 100%; object-fit: cover;" />
           </button>
         </div>
       </div>
