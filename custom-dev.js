@@ -1431,7 +1431,7 @@
       $("#spin-game-btn").click(function () {
         $(this).prop("disabled", true);
 
-        current_spin_rotate += 360;
+        current_spin_rotate += 180;
 
         $(this).css("transform", `rotate(${current_spin_rotate}deg)`);
         $(".game-chooser-hovered-effect").css("display", "none");
@@ -2744,7 +2744,7 @@ ${
   }
 
   #spin-game-btn {
-    transition: transform 0.35s ease-out;
+    transition: transform 0.5s ease-out;
   }
 
   #spin-game-btn:hover {
