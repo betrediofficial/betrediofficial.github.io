@@ -2809,6 +2809,21 @@ ${
       height: 100% !important;
     }
   }
+
+  @media screen and (min-width: 992px) {
+    /* MODAL AYARARLARI */
+    .modal--sign .modal-content {
+      height: 710px !important;
+    }
+
+    .modal--sign .modal__content {
+      width: 100% !important;
+      height: 710px !important;
+      display: flex !important;
+      flex-direction: column !important;
+      justify-content: center !important;
+    }
+  }
       `;
       document.head.appendChild(style);
     }
