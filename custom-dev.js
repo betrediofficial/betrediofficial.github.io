@@ -2084,8 +2084,8 @@
 
       hideBlogSection();
 
-      customizeSignupModal();
-      customizeSigninModal();
+      // customizeSignupModal();
+      // customizeSigninModal();
 
       injectExtraText();
       // autoplayMiniSlider();
