@@ -2810,15 +2810,14 @@ ${
     }
   }
 
-  @media screen and (min-width: 1200px) {
-    /* MODAL AYARARLARI */
+  @media (min-width: 1200px) {
     .modal--sign .modal-content {
-      height: 710px !important;
+      height: 728px !important;
     }
 
     .modal--sign .modal__content {
       width: 100% !important;
-      height: 710px !important;
+      height: 728px !important;
       display: flex !important;
       flex-direction: column !important;
       justify-content: center !important;
