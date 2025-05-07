@@ -2816,7 +2816,6 @@ ${
     }
 
     .modal--sign .modal__content {
-      width: 100% !important;
       height: 728px !important;
       display: flex !important;
       flex-direction: column !important;
