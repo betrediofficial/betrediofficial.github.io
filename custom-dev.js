@@ -2809,19 +2809,6 @@ ${
       height: 100% !important;
     }
   }
-
-  @media (min-width: 1200px) {
-    .modal--sign .modal-content {
-      height: 728px !important;
-    }
-
-    .modal--sign .modal__content {
-      height: 728px !important;
-      display: flex !important;
-      flex-direction: column !important;
-      justify-content: center !important;
-    }
-  }
       `;
       document.head.appendChild(style);
     }
@@ -2940,7 +2927,7 @@ ${
       const gameChooserSection = `
   <div class="manually-added-home-widgets" id="game-chooser" style="width: 100%; margin: 48px auto">
     <div class="text-white" style="width: 100%; margin: 0 auto;">
-      <div style="padding: 256px 0px; background: url('https://betrediofficial.github.io/images/game-chooser-icons/bg.png');">
+      <div style="padding: 128px 0px; background: url('https://betrediofficial.github.io/images/game-chooser-icons/bg.png');">
         <div style="margin-bottom: 42px">
           <h2 class="text-center" id="game-chooser-title-1" style="font-size: 28px; margin-bottom: 4px">
             ${
