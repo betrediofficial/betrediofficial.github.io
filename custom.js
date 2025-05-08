@@ -3052,6 +3052,7 @@ ${
       gameChooserLogic();
     }
 
+    // *
     function mobileBoxes() {
       // if ($("#mobileboxes").length > 0) return $("#mobileboxes").show();
 
