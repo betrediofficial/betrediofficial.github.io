@@ -1444,7 +1444,7 @@
         let slot_count;
         do {
           slot_count = Math.floor(Math.random() * slot_games.length);
-        } while (slot_count === prevSlotCount || Math.abs(slot_count - prevSlotCount) < 24);
+        } while (slot_count === prevSlotCount || Math.abs(slot_count - prevSlotCount) < 35);
 
         prevSlotCount = slot_count;
 
@@ -1452,7 +1452,7 @@
 
         do {
           casino_count = Math.floor(Math.random() * casino_games.length);
-        } while (casino_count === prevCasinoCount || Math.abs(casino_count - prevCasinoCount) < 24);
+        } while (casino_count === prevCasinoCount || Math.abs(casino_count - prevCasinoCount) < 35);
 
         prevCasinoCount = casino_count;
 
