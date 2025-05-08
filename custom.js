@@ -1436,6 +1436,7 @@
         $(this).css("transform", `rotate(${current_spin_rotate}deg)`);
         $(".game-chooser-hovered-effect").css("display", "none");
 
+        // * Prevent navigation when slotting
         $("a.slot-game-item--chooser, a.casino-game-item--chooser").addClass(
           "no-click"
         );
@@ -2917,6 +2918,7 @@ ${
       $("#game-chooser").after(newSection);
     }
 
+    // * Game Chooser
     function gameChooser() {
       if ($("#game-chooser").length > 0) {
         $("#game-chooser").remove();
@@ -3052,7 +3054,6 @@ ${
       gameChooserLogic();
     }
 
-    // *
     function mobileBoxes() {
       // if ($("#mobileboxes").length > 0) return $("#mobileboxes").show();
 
