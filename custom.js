@@ -2918,6 +2918,7 @@ ${
       $("#game-chooser").after(newSection);
     }
 
+    // * Game Chooser
     function gameChooser() {
       if ($("#game-chooser").length > 0) {
         $("#game-chooser").remove();
