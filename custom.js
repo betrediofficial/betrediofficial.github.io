@@ -1656,7 +1656,7 @@
               <use href="/static/media/sprite.4e4e22b3c670750ab1e58c7c8bc8a3c8.svg#mini-games" xlink:href="/static/media/sprite.4e4e22b3c670750ab1e58c7c8bc8a3c8.svg#mini-games">
               </use>
             </svg>
-            Mini Oyunlar
+            ${language === "tr" ? "MİNİ OYUNLAR" : "MINI GAMES"}
           </h2>
         </div>
         <div class="col-12">
