@@ -1527,7 +1527,9 @@
             );
           });
 
-          $(".promo-post__content .settings__btn").on("click", function () {
+          $(".promo-post__content .settings__btn").on("click", function (e) {
+            e.preventDefault();
+
             $(".lowbar__btn").last().click();
           });
         });
