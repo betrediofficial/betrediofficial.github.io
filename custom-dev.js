@@ -1526,6 +1526,10 @@
               "_blank"
             );
           });
+
+          $(".promo-post__content .settings__btn").on("click", function () {
+            $(".lowbar__btn").last().click();
+          });
         });
       }
     }, 300);
@@ -3140,7 +3144,7 @@ ${
     </a>
     <a href="https://betredi113.com/${language}/trade" target="_blank" class="col-4" style="background: #040404;">
       <div class="box-icon-item">
-      <svg class="svg-icon" style="margin: 2px auto !important; width: 26px !important; height: 26px !important;"><use href="/static/media/sprite.4e4e22b3c670750ab1e58c7c8bc8a3c8.svg#chart" xlink:href="/static/media/sprite.4e4e22b3c670750ab1e58c7c8bc8a3c8.svg#chart"></use></svg>
+      <svg class="svg-icon" style="margin: 2px auto !important; width: 26px !important; height: 26px !important;"><use href="/static/media/sprite.0754e1434721600629d753210eab0647.svg#chart" xlink:href="/static/media/sprite.0754e1434721600629d753210eab0647.svg#chart"></use></svg>
         <span>${language === "tr" ? "Borsa" : "Trade"}</span>
       </div>
     </a>
