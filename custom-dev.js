@@ -1527,7 +1527,7 @@
             );
           });
 
-          $(document).on("click", ".settings__btn span", function (e) {
+          $(document).on("click", ".settings__btn", function (e) {
             e.preventDefault();
 
             var bonusTitle = $(this)
