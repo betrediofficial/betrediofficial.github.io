@@ -1527,11 +1527,13 @@
             );
           });
 
-          $(".promo-post__content .settings__btn").on("click", function (e) {
-            e.preventDefault();
-
-            $(".lowbar__btn").last().click();
-          });
+          $('span:contains("%100 Slot İade Bonusu")')
+            .closest(".promo-post__content")
+            .find(".settings__btn span")
+            .on("click", function (e) {
+              e.preventDefault();
+              $(".lowbar__btn").last().click();
+            });
         });
       }
     }, 300);
