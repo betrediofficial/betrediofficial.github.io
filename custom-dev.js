@@ -1527,24 +1527,23 @@
             );
           });
 
-          $(document).on("click", ".settings__btn", function (e) {
-            e.preventDefault();
+          $(document).on("DOMSubtreeModified", "#bonus-modal", function () {
+            console.log("Modal içerik yüklendi veya güncellendi!");
 
-            if ($(".modal.show").length > 0) {
-              var bonusTitle = $(this)
-                .closest(".promo-post__content")
-                .find(".one-line-ellipsis")
-                .text()
-                .trim();
+            $(".settings__btn").each(function () {
+              if (!$(this).find(".new-bonus-btn").length) {
+                const newButton = $("<button>", {
+                  class: "new-bonus-btn btn btn-primary",
+                  text: "Bonusu Al",
+                  click: function (e) {
+                    e.preventDefault();
+                    $(".lowbar__btn").last().trigger("click");
+                  },
+                });
 
-              if (bonusTitle.includes("%100 Slot İade Bonusu")) {
-                $(".lowbar__btn").last().trigger("click");
-              } else {
-                console.log("Başlık bulunamadı veya uyuşmuyor.");
+                $(this).empty().append(newButton);
               }
-            } else {
-              console.log("Modal henüz açılmadı.");
-            }
+            });
           });
         });
       }
