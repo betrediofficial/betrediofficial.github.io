@@ -1528,8 +1528,6 @@
           });
 
           $(document).on("DOMSubtreeModified", "#bonus-modal", function () {
-            console.log("Modal içerik yüklendi veya güncellendi!");
-
             $(".settings__btn").each(function () {
               if (!$(this).find(".new-bonus-btn").length) {
                 const newButton = $("<button>", {
