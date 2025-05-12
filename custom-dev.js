@@ -1530,13 +1530,20 @@
           $(document).on("click", ".settings__btn", function (e) {
             e.preventDefault();
 
-            var bonusTitle = $(this)
-              .closest(".promo-post__content")
-              .find(".one-line-ellipsis")
-              .text();
+            if ($(".modal.show").length > 0) {
+              var bonusTitle = $(this)
+                .closest(".promo-post__content")
+                .find(".one-line-ellipsis")
+                .text()
+                .trim();
 
-            if (bonusTitle.includes("%100 Slot İade Bonusu")) {
-              $(".lowbar__btn").last().click();
+              if (bonusTitle.includes("%100 Slot İade Bonusu")) {
+                $(".lowbar__btn").last().trigger("click");
+              } else {
+                console.log("Başlık bulunamadı veya uyuşmuyor.");
+              }
+            } else {
+              console.log("Modal henüz açılmadı.");
             }
           });
         });
