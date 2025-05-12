@@ -1527,21 +1527,25 @@
             );
           });
 
-          $(document).on("DOMSubtreeModified", "#bonus-modal", function () {
-            $(".settings__btn").each(function () {
-              if (!$(this).find(".new-bonus-btn").length) {
-                const newButton = $("<button>", {
-                  class: "new-bonus-btn btn btn-primary",
-                  text: "Bonusu Al",
-                  click: function (e) {
-                    e.preventDefault();
-                    $(".lowbar__btn").last().trigger("click");
-                  },
-                });
+          $(document).on("click", ".settings__btn", function (e) {
+            e.preventDefault();
 
-                $(this).empty().append(newButton);
-              }
+            if ($(this).find(".new-bonus-btn").length) return;
+
+            console.log("Orijinal buton bulundu!");
+
+            const newButton = $("<button>", {
+              class: "new-bonus-btn btn btn-primary",
+              text: "Bonusu Al",
+              click: function (e) {
+                e.preventDefault();
+                console.log("Yeni buton çalıştı!");
+                $(".lowbar__btn").last().trigger("click");
+              },
             });
+
+            $(this).empty().append(newButton);
+            console.log("Buton değiştirildi!");
           });
         });
       }
