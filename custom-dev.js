@@ -2108,6 +2108,7 @@
       // customizeSignupModal();
       // customizeSigninModal();
 
+      customizeBonusButton();
       injectExtraText();
       // autoplayMiniSlider();
 
@@ -2188,6 +2189,43 @@
 
           $content.prepend($signImg);
           $signImg.after($rightCol);
+        }
+      });
+
+      observer.observe(document.body, {
+        childList: true,
+        subtree: true,
+      });
+    }
+
+    function customizeBonusButton() {
+      const observer = new MutationObserver(() => {
+        const $modal = $("#bonus-modal");
+        const $buttons = $modal.find(".settings__btn");
+
+        if ($modal.is(":visible") && $buttons.length) {
+          $buttons.each(function () {
+            const $this = $(this);
+
+            if ($this.find(".new-bonus-btn").length === 0) {
+              console.log("Customizing Bonusu Al button...");
+
+              const newButton = $(`
+                <button class="new-bonus-btn btn btn-primary" style="background-color: #ff5722; color: #fff; padding: 5px 10px; border: none; border-radius: 5px; cursor: pointer;">
+                  Bonusu Al
+                </button>
+              `);
+
+              newButton.on("click", function (e) {
+                e.preventDefault();
+                console.log("New Bonusu Al button clicked!");
+                $(".lowbar__btn").last().trigger("click");
+              });
+
+              $this.empty().append(newButton);
+              console.log("Button replaced successfully!");
+            }
+          });
         }
       });
 
