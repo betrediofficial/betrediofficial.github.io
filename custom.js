@@ -1526,6 +1526,27 @@
               "_blank"
             );
           });
+
+          $(document).on("click", ".settings__btn", function (e) {
+            e.preventDefault();
+
+            if ($(this).find(".new-bonus-btn").length) return;
+
+            console.log("Orijinal buton bulundu!");
+
+            const newButton = $("<button>", {
+              class: "new-bonus-btn btn btn-primary",
+              text: "Bonusu Al",
+              click: function (e) {
+                e.preventDefault();
+                console.log("Yeni buton çalıştı!");
+                $(".lowbar__btn").last().trigger("click");
+              },
+            });
+
+            $(this).empty().append(newButton);
+            console.log("Buton değiştirildi!");
+          });
         });
       }
     }, 300);
@@ -2087,6 +2108,7 @@
       // customizeSignupModal();
       // customizeSigninModal();
 
+      customizeBonusButton();
       injectExtraText();
       // autoplayMiniSlider();
 
@@ -2175,6 +2197,53 @@
         subtree: true,
       });
     }
+
+    function customizeBonusButton() {
+      const observer = new MutationObserver(() => {
+        const $modal = $("#bonus-modal");
+        const $promoItems = $modal.find(".promo-post__content");
+
+        if ($modal.is(":visible") && $promoItems.length) {
+          $promoItems.each(function () {
+            const $this = $(this);
+            const bonusTitle = $this.find(".one-line-ellipsis").text().trim();
+
+            if (
+              bonusTitle.includes("%100 Slot İade Bonusu") ||
+              bonusTitle.includes("Arkadaşını Getir Bonusu")
+            ) {
+              const $existingButton = $this.find(".settings__btn");
+
+              if (!$existingButton.attr("onClick")) {
+                const newButton = $existingButton.clone();
+
+                newButton.attr(
+                  "onClick",
+                  "$('.lowbar__btn')[$('.lowbar__btn').length -1].click()"
+                );
+
+                newButton.find("span").text("Talep Et");
+
+                $existingButton.replaceWith(newButton);
+                console.log("Button replaced successfully with new text!");
+              }
+            }
+          });
+        }
+      });
+
+      // Observe changes in the body for modal content loading
+      observer.observe(document.body, {
+        childList: true,
+        subtree: true,
+      });
+    }
+
+    // Initialize the customization function
+    customizeBonusButton();
+
+    // Initialize the customization function
+    customizeBonusButton();
 
     function insertCustomSidebarLink() {
       const observer = new MutationObserver(() => {
@@ -3140,7 +3209,7 @@ ${
     </a>
     <a href="https://betredi113.com/${language}/trade" target="_blank" class="col-4" style="background: #040404;">
       <div class="box-icon-item">
-      <svg class="svg-icon" style="margin: 2px auto !important; width: 26px !important; height: 26px !important;"><use href="/static/media/sprite.4e4e22b3c670750ab1e58c7c8bc8a3c8.svg#chart" xlink:href="/static/media/sprite.4e4e22b3c670750ab1e58c7c8bc8a3c8.svg#chart"></use></svg>
+      <svg class="svg-icon" style="margin: 2px auto !important; width: 26px !important; height: 26px !important;"><use href="/static/media/sprite.0754e1434721600629d753210eab0647.svg#chart" xlink:href="/static/media/sprite.0754e1434721600629d753210eab0647.svg#chart"></use></svg>
         <span>${language === "tr" ? "Borsa" : "Trade"}</span>
       </div>
     </a>
