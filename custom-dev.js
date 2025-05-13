@@ -2203,42 +2203,36 @@
         const $modal = $("#bonus-modal");
         const $promoItems = $modal.find(".promo-post__content");
 
-        // Check if modal is visible and promo items exist
         if ($modal.is(":visible") && $promoItems.length) {
           $promoItems.each(function () {
             const $this = $(this);
             const bonusTitle = $this.find(".one-line-ellipsis").text().trim();
 
-            // Only target the specific bonus title
             if (bonusTitle.includes("%100 Slot İade Bonusu")) {
               console.log("Target bonus found:", bonusTitle);
 
-              // Find the existing "Bonusu Al" button
               const $existingButton = $this.find(".settings__btn");
 
-              // Check if it already has the correct onClick attribute
               if (!$existingButton.attr("onClick")) {
                 console.log("Replacing Bonusu Al button...");
 
-                // Clone the existing button structure
                 const newButton = $existingButton.clone();
 
-                // Update the onClick event
                 newButton.attr(
                   "onClick",
                   "$('.lowbar__btn')[$('.lowbar__btn').length -1].click()"
                 );
 
-                // Replace the old button with the new one
+                newButton.find("span").text("Talep Et");
+
                 $existingButton.replaceWith(newButton);
-                console.log("Button replaced successfully!");
+                console.log("Button replaced successfully with new text!");
               }
             }
           });
         }
       });
 
-      // Observe changes in the body for modal content loading
       observer.observe(document.body, {
         childList: true,
         subtree: true,
