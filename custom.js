@@ -2210,7 +2210,8 @@
 
             if (
               bonusTitle.includes("%100 Slot İade Bonusu") ||
-              bonusTitle.includes("Arkadaşını Getir Bonusu")
+              bonusTitle.includes("Arkadaşını Getir Bonusu") ||
+              bonusTitle.includes("Telegram Bonusu")
             ) {
               const $existingButton = $this.find(".settings__btn");
 
