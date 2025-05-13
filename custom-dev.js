@@ -2208,14 +2208,13 @@
             const $this = $(this);
             const bonusTitle = $this.find(".one-line-ellipsis").text().trim();
 
-            if (bonusTitle.includes("%100 Slot İade Bonusu")) {
-              console.log("Target bonus found:", bonusTitle);
-
+            if (
+              bonusTitle.includes("%100 Slot İade Bonusu") ||
+              bonusTitle.includes("Arkadaşını Getir Bonusu")
+            ) {
               const $existingButton = $this.find(".settings__btn");
 
               if (!$existingButton.attr("onClick")) {
-                console.log("Replacing Bonusu Al button...");
-
                 const newButton = $existingButton.clone();
 
                 newButton.attr(
@@ -2233,11 +2232,15 @@
         }
       });
 
+      // Observe changes in the body for modal content loading
       observer.observe(document.body, {
         childList: true,
         subtree: true,
       });
     }
+
+    // Initialize the customization function
+    customizeBonusButton();
 
     // Initialize the customization function
     customizeBonusButton();
