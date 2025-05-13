@@ -2201,39 +2201,52 @@
     function customizeBonusButton() {
       const observer = new MutationObserver(() => {
         const $modal = $("#bonus-modal");
-        const $buttons = $modal.find(".settings__btn");
+        const $promoItems = $modal.find(".promo-post__content");
 
-        if ($modal.is(":visible") && $buttons.length) {
-          $buttons.each(function () {
+        // Check if modal is visible and promo items exist
+        if ($modal.is(":visible") && $promoItems.length) {
+          $promoItems.each(function () {
             const $this = $(this);
+            const bonusTitle = $this.find(".one-line-ellipsis").text().trim();
 
-            if ($this.find(".new-bonus-btn").length === 0) {
-              console.log("Customizing Bonusu Al button...");
+            // Only target the specific bonus title
+            if (bonusTitle.includes("%100 Slot İade Bonusu")) {
+              console.log("Target bonus found:", bonusTitle);
 
-              const newButton = $(`
-                <button class="new-bonus-btn btn btn-primary" style="background-color: #ff5722; color: #fff; padding: 5px 10px; border: none; border-radius: 5px; cursor: pointer;">
-                  Bonusu Al
-                </button>
-              `);
+              // Find the existing "Bonusu Al" button
+              const $existingButton = $this.find(".settings__btn");
 
-              newButton.on("click", function (e) {
-                e.preventDefault();
-                console.log("New Bonusu Al button clicked!");
-                $(".lowbar__btn").last().trigger("click");
-              });
+              // Check if it already has the correct onClick attribute
+              if (!$existingButton.attr("onClick")) {
+                console.log("Replacing Bonusu Al button...");
 
-              $this.empty().append(newButton);
-              console.log("Button replaced successfully!");
+                // Clone the existing button structure
+                const newButton = $existingButton.clone();
+
+                // Update the onClick event
+                newButton.attr(
+                  "onClick",
+                  "$('.lowbar__btn')[$('.lowbar__btn').length -1].click()"
+                );
+
+                // Replace the old button with the new one
+                $existingButton.replaceWith(newButton);
+                console.log("Button replaced successfully!");
+              }
             }
           });
         }
       });
 
+      // Observe changes in the body for modal content loading
       observer.observe(document.body, {
         childList: true,
         subtree: true,
       });
     }
+
+    // Initialize the customization function
+    customizeBonusButton();
 
     function insertCustomSidebarLink() {
       const observer = new MutationObserver(() => {
