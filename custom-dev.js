@@ -2268,10 +2268,9 @@
           linksToRemove.forEach((link) => link.remove());
 
           const newLinksHTML = `
-          <a class="sidebar__link sidebar__link--casino" href="https://betredi113.com/${language}/casino/slots" style="background: url('https://betrediofficial.github.io/images/aside-links/slot.png') left center / cover no-repeat;"></a>
-          <a class="sidebar__link sidebar__link--casino" href="https://betredi113.com/${language}/live-casino" style="background: url('https://betrediofficial.github.io/images/aside-links/casino.png') left center / cover no-repeat;"></a>
+            <a class="sidebar__link sidebar__link--casino" href="https://betredi113.com/${language}/casino/slots" style="background: url('https://betrediofficial.github.io/images/aside-links/slot.png') left center / cover no-repeat;"></a>
+            <a class="sidebar__link sidebar__link--casino" href="https://betredi113.com/${language}/live-casino" style="background: url('https://betrediofficial.github.io/images/aside-links/casino.png') left center / cover no-repeat;"></a>
           `;
-
           $sidebarLinks.insertAdjacentHTML("beforeend", newLinksHTML);
           $sidebarLinks.classList.add("custom_links_replaced");
         }
@@ -2280,14 +2279,35 @@
           const customDiv = document.createElement("div");
           customDiv.className = "sidebar__links custom_side";
           customDiv.innerHTML = `
-        <a class="sidebar__link sidebar__link--casino w-100" href="https://betredi113.com/${language}/promotions"
-           style="height: 46px; background: url('https://betrediofficial.github.io/images/aside-links/promotions.png') center center / cover no-repeat;">
-        </a>
-      `;
+            <a class="sidebar__link sidebar__link--casino w-100" href="https://betredi113.com/${language}/promotions"
+               style="height: 46px; background: url('https://betrediofficial.github.io/images/aside-links/promotions.png') center center / cover no-repeat;">
+            </a>
+          `;
           $sidebarLinks.parentNode.insertBefore(
             customDiv,
             $sidebarLinks.nextSibling
           );
+        }
+
+        if ($sidebarLinks) {
+          const bonusLink = $sidebarLinks.querySelector(
+            ".sidebar__link.sidebar__link--bonus.w-100"
+          );
+
+          if (bonusLink) {
+            console.log("Replacing Bonus Talep link...");
+
+            const newLink = `
+              <a class="sidebar__link sidebar__link--casino w-100" href="https://betredi113.com/${language}?modal=bonus-request" 
+                style="background: url('https://cdn.ebetlab.com/request-bonus.png') left center / cover no-repeat;">
+                <img src="https://betrediofficial.github.io/images/bonus-request/request.png" 
+                     style="width: 100%; height: 100%; object-fit: cover;">
+              </a>
+            `;
+
+            bonusLink.insertAdjacentHTML("afterend", newLink);
+            bonusLink.remove();
+          }
         }
       });
 
