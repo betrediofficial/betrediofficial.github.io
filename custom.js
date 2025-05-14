@@ -2100,6 +2100,7 @@
       // * GENERAL
 
       insertCustomSidebarLink();
+      customizeBonusButton();
       injectProvidersMarquee();
       is_mobile && mobileBoxes();
 
@@ -2248,9 +2249,6 @@
         subtree: true,
       });
     }
-
-    customizeBonusButton();
-
     function insertCustomSidebarLink() {
       const observer = new MutationObserver(() => {
         const $sidebarLinks = document.querySelector(
@@ -2268,10 +2266,9 @@
           linksToRemove.forEach((link) => link.remove());
 
           const newLinksHTML = `
-          <a class="sidebar__link sidebar__link--casino" href="https://betredi113.com/${language}/casino/slots" style="background: url('https://betrediofficial.github.io/images/aside-links/slot.png') left center / cover no-repeat;"></a>
-          <a class="sidebar__link sidebar__link--casino" href="https://betredi113.com/${language}/live-casino" style="background: url('https://betrediofficial.github.io/images/aside-links/casino.png') left center / cover no-repeat;"></a>
+            <a class="sidebar__link sidebar__link--casino" href="https://betredi113.com/${language}/casino/slots" style="background: url('https://betrediofficial.github.io/images/aside-links/slot.png') left center / cover no-repeat;"></a>
+            <a class="sidebar__link sidebar__link--casino" href="https://betredi113.com/${language}/live-casino" style="background: url('https://betrediofficial.github.io/images/aside-links/casino.png') left center / cover no-repeat;"></a>
           `;
-
           $sidebarLinks.insertAdjacentHTML("beforeend", newLinksHTML);
           $sidebarLinks.classList.add("custom_links_replaced");
         }
@@ -2280,14 +2277,35 @@
           const customDiv = document.createElement("div");
           customDiv.className = "sidebar__links custom_side";
           customDiv.innerHTML = `
-        <a class="sidebar__link sidebar__link--casino w-100" href="https://betredi113.com/${language}/promotions"
-           style="height: 46px; background: url('https://betrediofficial.github.io/images/aside-links/promotions.png') center center / cover no-repeat;">
-        </a>
-      `;
+            <a class="sidebar__link sidebar__link--casino w-100" href="https://betredi113.com/${language}/promotions"
+               style="height: 46px; background: url('https://betrediofficial.github.io/images/aside-links/promotions.png') center center / cover no-repeat;">
+            </a>
+          `;
           $sidebarLinks.parentNode.insertBefore(
             customDiv,
             $sidebarLinks.nextSibling
           );
+        }
+
+        const bonusLink = document.querySelector(
+          ".sidebar__links .sidebar__link.sidebar__link--bonus.w-100"
+        );
+
+        if (bonusLink) {
+          console.log("Replacing Bonus Request link...");
+
+          bonusLink.href = "/tr?modal=bonus-request";
+          bonusLink.style.background =
+            "url('https://betrediofficial.github.io/images/bonus-request/request.png') left center / cover no-repeat";
+          bonusLink.className = "sidebar__link sidebar__link--casino w-100";
+
+          const bonusText = bonusLink.querySelector("span");
+
+          if (bonusText) {
+            bonusText.textContent = "";
+          }
+
+          console.log("Bonus Request link updated successfully!");
         }
       });
 
