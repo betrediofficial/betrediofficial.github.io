@@ -2225,25 +2225,29 @@
 
                 newButton.find("span").text("Talep Et");
 
+                const newIcon = $("<img>", {
+                  src: "https://betrediofficial.github.io/images/bonus-request/live_support.png",
+                  width: 32,
+                  height: 32,
+                  alt: "Live Support",
+                  style: "margin-left: 5px;",
+                });
+
+                newButton.find(".svg-icon").replaceWith(newIcon);
+
                 $existingButton.replaceWith(newButton);
-                console.log("Button replaced successfully with new text!");
               }
             }
           });
         }
       });
 
-      // Observe changes in the body for modal content loading
       observer.observe(document.body, {
         childList: true,
         subtree: true,
       });
     }
 
-    // Initialize the customization function
-    customizeBonusButton();
-
-    // Initialize the customization function
     customizeBonusButton();
 
     function insertCustomSidebarLink() {
