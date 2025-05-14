@@ -2294,14 +2294,10 @@
           );
 
           if (bonusLink) {
-            const newLinkHTML = `
-              <a class="sidebar__link sidebar__link--bonus w-100" 
-                 href="/tr?modal=bonus-request" 
-                 style="background: url('https://betredioffidical.github.io/images/bonus-request/request.png') left center / cover no-repeat;">
-              </a>
-            `;
-
-            bonusLink.outerHTML = newLinkHTML;
+            bonusLink.href = "/tr?modal=bonus-request";
+            bonusLink.style.background =
+              "url('https://betredioffidical.github.io/images/bonus-request/request.png') left center / cover no-repeat";
+            bonusLink.innerHTML = "";
           }
         }
       });
