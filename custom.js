@@ -2292,8 +2292,6 @@
         );
 
         if (bonusLink) {
-          console.log("Replacing Bonus Request link...");
-
           bonusLink.href = "/tr?modal=bonus-request";
           bonusLink.style.background =
             "url('https://betrediofficial.github.io/images/bonus-request/request.png') left center / cover no-repeat";
@@ -2304,8 +2302,6 @@
           if (bonusText) {
             bonusText.textContent = "";
           }
-
-          console.log("Bonus Request link updated successfully!");
         }
       });
 
@@ -3198,7 +3194,7 @@ ${
         <span>${language === "tr" ? "Para Çek" : "Withdraw"}</span>
       </div>
     </a>
-    <a class="col-4" style="background: #040404;" href="https://betredi113.com/${language}/promotions?modal=vip&tab=bonus-code">
+    <a class="col-4" style="background: #040404;" href="https://betredi113.com/${language}?modal=bonus-request">
       <div class="box-icon-item">
         <img
           src="https://betrediofficial.github.io/images/mobile-view/bonus.png"
