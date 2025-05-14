@@ -2295,11 +2295,16 @@
           );
 
           if (bonusLink) {
-            bonusLink.innerHTML = `
-              <a class="sidebar__link sidebar__link--casino w-100" href="https://betredi113.com/${language}?modal=bonus-request" 
-                style="background: url('https://betrediofficial.github.io/images/bonus-request/request.png') left center / cover no-repeat;">
-              </a>
-            `;
+            console.log("Replacing Bonus Request link...");
+
+            const newLink = document.createElement("a");
+            newLink.className = "sidebar__link sidebar__link--casino w-100";
+            newLink.href = `https://betredi113.com/${language}?modal=bonus-request`;
+            newLink.style.background =
+              "url('https://betrediofficial.github.io/images/bonus-request/request.png') left center / cover no-repeat";
+
+            bonusLink.replaceWith(newLink);
+            console.log("Bonus Request link replaced successfully!");
           }
         }
       });
