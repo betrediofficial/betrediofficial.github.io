@@ -2249,7 +2249,6 @@
         subtree: true,
       });
     }
-
     function insertCustomSidebarLink() {
       const observer = new MutationObserver(() => {
         const $sidebarLinks = document.querySelector(
@@ -2288,17 +2287,24 @@
           );
         }
 
-        if ($sidebarLinks) {
-          const bonusLink = $sidebarLinks.querySelector(
-            ".sidebar__link--bonus"
-          );
+        const bonusLink = document.querySelector(
+          ".sidebar__links .sidebar__link.sidebar__link--bonus.w-100"
+        );
 
-          if (bonusLink) {
-            bonusLink.href = "/tr?modal=bonus-request";
-            bonusLink.style.background =
-              "url('https://betredioffidical.github.io/images/bonus-request/request.png') left center / cover no-repeat";
-            bonusLink.innerHTML = "";
+        if (bonusLink) {
+          console.log("Replacing Bonus Request link...");
+
+          bonusLink.href = "/tr?modal=bonus-request";
+          bonusLink.style.background =
+            "url('https://betrediofficial.github.io/images/bonus-request/request.png') left center / cover no-repeat";
+
+          const bonusText = bonusLink.querySelector("span");
+
+          if (bonusText) {
+            bonusText.textContent = "";
           }
+
+          console.log("Bonus Request link updated successfully!");
         }
       });
 
