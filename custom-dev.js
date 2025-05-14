@@ -2100,6 +2100,7 @@
       // * GENERAL
 
       insertCustomSidebarLink();
+      customizeBonusButton();
       injectProvidersMarquee();
       is_mobile && mobileBoxes();
 
@@ -2248,8 +2249,6 @@
         subtree: true,
       });
     }
-
-    customizeBonusButton();
 
     function insertCustomSidebarLink() {
       const observer = new MutationObserver(() => {
