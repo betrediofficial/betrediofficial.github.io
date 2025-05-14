@@ -2225,12 +2225,13 @@
 
                 newButton.find("span").text("Talep Et");
 
-                const newIcon = $("<img width='24' height='24'>", {
+                const newIcon = $("<img>", {
                   src: "https://betrediofficial.github.io/images/bonus-request/live_support.png",
-                  width: 24,
-                  height: 24,
                   alt: "Live Support",
-                  style: "margin-left: 5px;",
+                }).css({
+                  width: "24px",
+                  height: "24px",
+                  marginLeft: "5px",
                 });
 
                 newButton.find(".svg-icon").replaceWith(newIcon);
