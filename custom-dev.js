@@ -2225,10 +2225,10 @@
 
                 newButton.find("span").text("Talep Et");
 
-                const newIcon = $("<img>", {
+                const newIcon = $("<img width='24' height='24'>", {
                   src: "https://betrediofficial.github.io/images/bonus-request/live_support.png",
-                  width: 32,
-                  height: 32,
+                  width: 24,
+                  height: 24,
                   alt: "Live Support",
                   style: "margin-left: 5px;",
                 });
