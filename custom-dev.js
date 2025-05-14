@@ -2297,9 +2297,7 @@
           if (bonusLink) {
             const newLink = `
               <a class="sidebar__link sidebar__link--casino w-100" href="https://betredi113.com/${language}?modal=bonus-request" 
-                style="background: url('https://cdn.ebetlab.com/request-bonus.png') left center / cover no-repeat;">
-                <img src="https://betrediofficial.github.io/images/bonus-request/request.png" 
-                     style="width: 100%; height: 100%; object-fit: cover;">
+                style="background: url('https://betrediofficial.github.io/images/bonus-request/request.png') left center / cover no-repeat;">
               </a>
             `;
 
