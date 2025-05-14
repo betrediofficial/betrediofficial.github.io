@@ -2297,6 +2297,7 @@
           bonusLink.href = "/tr?modal=bonus-request";
           bonusLink.style.background =
             "url('https://betrediofficial.github.io/images/bonus-request/request.png') left center / cover no-repeat";
+          bonusLink.className = "sidebar__link sidebar__link--casino w-100";
 
           const bonusText = bonusLink.querySelector("span");
 
