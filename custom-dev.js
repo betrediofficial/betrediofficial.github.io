@@ -2229,8 +2229,8 @@
                   src: "https://betrediofficial.github.io/images/bonus-request/live_support.png",
                   alt: "Live Support",
                 }).css({
-                  width: "24px",
-                  height: "24px",
+                  width: "22px",
+                  height: "22px",
                   marginLeft: "5px",
                 });
 
