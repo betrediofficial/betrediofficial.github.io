@@ -2289,10 +2289,9 @@
           );
         }
 
-        // Replace the Bonus Request link specifically
         if ($sidebarLinks) {
           const bonusLink = $sidebarLinks.querySelector(
-            ".sidebar__link.sidebar__link--bonus.w-100"
+            ".sidebar__link--bonus"
           );
 
           if (bonusLink) {
@@ -2313,8 +2312,6 @@
         subtree: true,
       });
     }
-
-    insertCustomSidebarLink();
 
     function injectProvidersMarquee() {
       const container = document.querySelector("#main-slider > .container");
