@@ -2289,22 +2289,21 @@
           );
         }
 
+        // Replace the Bonus Request link specifically
         if ($sidebarLinks) {
           const bonusLink = $sidebarLinks.querySelector(
-            ".sidebar__link.sidebar__link--bonus"
+            ".sidebar__link.sidebar__link--bonus.w-100"
           );
 
           if (bonusLink) {
-            console.log("Replacing Bonus Request link...");
+            const newLinkHTML = `
+              <a class="sidebar__link sidebar__link--bonus w-100" 
+                 href="/tr?modal=bonus-request" 
+                 style="background: url('https://betredioffidical.github.io/images/bonus-request/request.png') left center / cover no-repeat;">
+              </a>
+            `;
 
-            const newLink = document.createElement("a");
-            newLink.className = "sidebar__link sidebar__link--casino w-100";
-            newLink.href = `https://betredi113.com/${language}?modal=bonus-request`;
-            newLink.style.background =
-              "url('https://betrediofficial.github.io/images/bonus-request/request.png') left center / cover no-repeat";
-
-            bonusLink.replaceWith(newLink);
-            console.log("Bonus Request link replaced successfully!");
+            bonusLink.outerHTML = newLinkHTML;
           }
         }
       });
