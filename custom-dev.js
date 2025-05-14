@@ -2295,8 +2295,6 @@
           );
 
           if (bonusLink) {
-            console.log("Replacing Bonus Talep link...");
-
             const newLink = `
               <a class="sidebar__link sidebar__link--casino w-100" href="https://betredi113.com/${language}?modal=bonus-request" 
                 style="background: url('https://cdn.ebetlab.com/request-bonus.png') left center / cover no-repeat;">
