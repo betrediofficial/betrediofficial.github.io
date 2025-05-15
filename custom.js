@@ -1667,8 +1667,6 @@
       if ($("#mini-games-wrapper").length > 0)
         return $("#mini-games-wrapper").show();
 
-      // mini games section
-
       var miniGamesSection = `
       <div class="manually-added-home-widgets section" id="mini-games-wrapper" style="margin-top: 16px !important; margin-bottom: 16px !important;">
     <div class="container">
