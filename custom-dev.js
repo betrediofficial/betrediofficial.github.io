@@ -1578,7 +1578,7 @@
         <div class="swiper mySwiper">
           <div class="swiper-wrapper">
             <div class="swiper-slide">
-              <a href="https://betredi113.com/${language}/promotion/100-freespin-deneme-bonusu-trrf">
+              <a href="https://betredi113.com/${language}/promotion/100-freespin-deneme-bonusu-tr">
                 ${
                   isMobile()
                     ? `<img src="https://betrediofficial.github.io/images/mobile-main-slider/${language}/100freespin.webp" class="slide-image" />`
