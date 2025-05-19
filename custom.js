@@ -2246,6 +2246,7 @@
         subtree: true,
       });
     }
+
     function insertCustomSidebarLink() {
       const observer = new MutationObserver(() => {
         const $sidebarLinks = document.querySelector(
@@ -2262,10 +2263,16 @@
             $sidebarLinks.querySelectorAll(".sidebar__link");
           linksToRemove.forEach((link) => link.remove());
 
-          const newLinksHTML = `
-            <a class="sidebar__link sidebar__link--casino" href="https://betredi114.com/${language}/casino/slots" style="background: url('https://betrediofficial.github.io/images/aside-links/slot.png') left center / cover no-repeat;"></a>
-            <a class="sidebar__link sidebar__link--casino" href="https://betredi114.com/${language}/live-casino" style="background: url('https://betrediofficial.github.io/images/aside-links/casino.png') left center / cover no-repeat;"></a>
+          const newLinksHTML = isMobile()
+            ? `
+            <a class="sidebar__link sidebar__link--casino" href="https://betredi114.com/${language}/casino/slots" style="background: url('https://betrediofficial.github.io/images/aside-links/mobile/${language}/casino.png') left center / cover no-repeat;"></a>
+            <a class="sidebar__link sidebar__link--casino" href="https://betredi114.com/${language}/live-casino" style="background: url('https://betrediofficial.github.io/images/aside-links/mobile/${language}/live_casino.png') left center / cover no-repeat;"></a>
+          `
+            : `
+            <a class="sidebar__link sidebar__link--casino" href="https://betredi114.com/${language}/casino/slots" style="background: url('https://betrediofficial.github.io/images/aside-links/desktop/${language}/casino.png') left center / cover no-repeat;"></a>
+            <a class="sidebar__link sidebar__link--casino" href="https://betredi114.com/${language}/live-casino" style="background: url('https://betrediofficial.github.io/images/aside-links/desktop/${language}/live_casino.png') left center / cover no-repeat;"></a>
           `;
+
           $sidebarLinks.insertAdjacentHTML("beforeend", newLinksHTML);
           $sidebarLinks.classList.add("custom_links_replaced");
         }
@@ -2273,9 +2280,15 @@
         if ($sidebarLinks && !exists) {
           const customDiv = document.createElement("div");
           customDiv.className = "sidebar__links custom_side";
-          customDiv.innerHTML = `
+          customDiv.innerHTML = isMobile()
+            ? `
             <a class="sidebar__link sidebar__link--casino w-100" href="https://betredi114.com/${language}/promotions"
-               style="height: 46px; background: url('https://betrediofficial.github.io/images/aside-links/promotions.png') center center / cover no-repeat;">
+               style="height: 46px; background: url('https://betrediofficial.github.io/images/aside-links/mobile/${language}/promotions.png') center center / cover no-repeat;">
+            </a>
+          `
+            : `
+            <a class="sidebar__link sidebar__link--casino w-100" href="https://betredi114.com/${language}/promotions"
+               style="height: 46px; background: url('https://betrediofficial.github.io/images/aside-links/desktop/${language}/promotions.png') center center / cover no-repeat;">
             </a>
           `;
           $sidebarLinks.parentNode.insertBefore(
@@ -2290,8 +2303,9 @@
 
         if (bonusLink) {
           bonusLink.href = "/tr?modal=bonus-request";
-          bonusLink.style.background =
-            "url('https://betrediofficial.github.io/images/bonus-request/request.png') left center / cover no-repeat";
+          bonusLink.style.background = isMobile()
+            ? `url('https://betrediofficial.github.io/images/aside-links/mobile/${language}/bonus_request.png') left center / cover no-repeat`
+            : `url('https://betrediofficial.github.io/images/aside-links/desktop/${language}/bonus_request.png') left center / cover no-repeat`;
           bonusLink.className = "sidebar__link sidebar__link--casino w-100";
 
           const bonusText = bonusLink.querySelector("span");
