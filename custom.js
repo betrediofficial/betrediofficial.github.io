@@ -1673,7 +1673,7 @@
       <div class="row">
         <div class="col-12">
           <h2 class="section__title">
-          <svg class="svg-icon"><use href="/static/media/sprite.0754e1434721600629d753210eab0647.svg#mini-games" xlink:href="/static/media/sprite.0754e1434721600629d753210eab0647.svg#mini-games"></use></svg>
+          <svg class="svg-icon"><use href="/static/media/sprite.196754b15b5e8cca3dede985d285cdc9.svg#mini-games" xlink:href="/static/media/sprite.196754b15b5e8cca3dede985d285cdc9.svg#mini-games"></use></svg>
           ${language === "tr" ? "MİNİ OYUNLAR" : "MINI GAMES"}
           </h2>
         </div>
@@ -2945,12 +2945,11 @@ ${
     <div class="row">
       <div class="col-12">
         <div class="section__title-wrap"><h2 class="section__title"><svg class="svg-icon"><use href="/static/media/sprite.33143bc5180d8cec7f771b3eedc5187c.svg#top-games"></use></svg>
-        EKSTRA OYUNLAR
+        ${language === "tr" ? "EKSTRA OYUNLAR" : "EXTRA GAMES"}
         </h2><a class="section__view section__view--carousel" href="https://betredi114.com/${language}/casino/group/top-games">Tümünü Görüntüle</a></div>
       </div>
 <div class="col-12">
   <div class="otherGamesComponent" style="display: grid; grid-template-columns: repeat(4, 1fr); gap: 12px;">
-    
 <div class="otherGamesComponentLayout extra-game" style="position: relative; cursor: pointer; border: 2px solid #9b000e; overflow: hidden; border-radius: 16px !important;">
   <div class="hovered-effect" style="opacity: 0; position: absolute; width: 100%; height: 100%; background: rgba(255,255,255,0.1); z-index: 10; pointer-events: none;"></div>
   <a href="casino/games/spribe-aviator">
@@ -3240,7 +3239,7 @@ ${
     </a>
     <a href="https://betredi114.com/${language}/trade" target="_blank" class="col-4" style="background: #040404;">
       <div class="box-icon-item">
-      <svg class="svg-icon" style="margin: 2px auto !important; width: 26px !important; height: 26px !important;"><use href="/static/media/sprite.0754e1434721600629d753210eab0647.svg#chart" xlink:href="/static/media/sprite.0754e1434721600629d753210eab0647.svg#chart"></use></svg>
+      <svg class="svg-icon" style="margin: 2px auto !important; width: 26px !important; height: 26px !important;"><use href="/static/media/sprite.196754b15b5e8cca3dede985d285cdc9.svg#chart" xlink:href="/static/media/sprite.196754b15b5e8cca3dede985d285cdc9.svg#chart"></use></svg>
         <span>${language === "tr" ? "Borsa" : "Trade"}</span>
       </div>
     </a>
