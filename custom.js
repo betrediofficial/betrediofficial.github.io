@@ -1,3 +1,5 @@
+// betredi115
+
 (function () {
   let randomGames = null;
   let current_spin_rotate = 0;
