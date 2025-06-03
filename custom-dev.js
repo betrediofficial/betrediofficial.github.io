@@ -1898,7 +1898,7 @@
         top: 0;
         left: 0;
         width: 100%;
-        height: 100svh;
+        height: 100vh;
         display: none;
         align-items: end;
         justify-content: center;
@@ -1910,7 +1910,7 @@
         class="bg-black"
         style="
           width: 100%;
-          height: 80svh;
+          height: 80vh;
           border: 1px solid #1b1b1b;
           border-radius: 24px 24px 0 0;
           transform: translateY(100%);
