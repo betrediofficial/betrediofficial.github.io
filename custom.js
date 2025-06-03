@@ -1919,7 +1919,7 @@
           position: relative;
         "
       >
-          <div id="rtpsorgu-close-btn" style="position: sticky; top: 0; z-index: 50; background: #000; padding: 20px 16px;">
+          <div style="position: sticky; top: 0; z-index: 50; background: #000; padding: 20px 16px;">
             <svg
             xmlns="http://www.w3.org/2000/svg"
             x="0px"
@@ -1928,6 +1928,7 @@
             height="24"
             viewBox="0,0,256,256"
             style="position: absolute; top: 16px !important; right: 16px !important;"
+            id="rtpsorgu-close-btn"
           >
             <g
               fill="#ffffff"
