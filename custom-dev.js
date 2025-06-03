@@ -1675,7 +1675,7 @@
       <div class="row">
         <div class="col-12">
           <h2 class="section__title">
-          <svg class="svg-icon"><use href="/static/media/sprite.196754b15b5e8cca3dede985d285cdc9.svg#mini-games" xlink:href="/static/media/sprite.196754b15b5e8cca3dede985d285cdc9.svg#mini-games"></use></svg>
+          <svg class="svg-icon"><use href="/static/media/sprite.d64cd5a7e72ec533d815de9e520e49b7.svg#mini-games" xlink:href="/static/media/sprite.d64cd5a7e72ec533d815de9e520e49b7.svg#mini-games"></use></svg>
           ${language === "tr" ? "MİNİ OYUNLAR" : "MINI GAMES"}
           </h2>
         </div>
@@ -3241,7 +3241,7 @@ ${
     </a>
     <a href="https://betredi115.com/${language}/trade" target="_blank" class="col-4" style="background: #040404;">
       <div class="box-icon-item">
-      <svg class="svg-icon" style="margin: 2px auto !important; width: 26px !important; height: 26px !important;"><use href="/static/media/sprite.196754b15b5e8cca3dede985d285cdc9.svg#chart" xlink:href="/static/media/sprite.196754b15b5e8cca3dede985d285cdc9.svg#chart"></use></svg>
+      <svg class="svg-icon" style="margin: 2px auto !important; width: 26px !important; height: 26px !important;"><use href="/static/media/sprite.d64cd5a7e72ec533d815de9e520e49b7.svg#chart" xlink:href="/static/media/sprite.d64cd5a7e72ec533d815de9e520e49b7.svg#chart"></use></svg>
         <span>${language === "tr" ? "Borsa" : "Trade"}</span>
       </div>
     </a>
