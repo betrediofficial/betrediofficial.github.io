@@ -1491,6 +1491,82 @@
         $(document).ready(function () {
           initialize();
 
+          if (isHomePageCheck()) {
+            const seoParagraph = `
+              <div class="manually-added-home-widgets">
+                <p style="font-size:14px;line-height:1.6;margin-top:2rem;">
+                  Betredi, güncel giriş adresiyle en yeni kripto casino deneyimini sunar. 
+                  2025 yılı itibariyle betredi115.com adresinden erişebilirsiniz. 
+                  Kullanıcı deneyimi, şeffaflık ve hızlı erişim ile Betredi giriş işlemleri artık çok daha kolay!
+                </p>
+                <p style="font-size:14px;line-height:1.6;">
+                  Betredi güncel giriş, Betredi yeni adres, Betredi kullanıcı yorumları gibi detaylar için bu sayfayı sık kullanılanlara eklemeyi unutmayın. 
+                  Her zaman en hızlı bağlantı burada yer alacaktır.
+                </p>
+              </div>
+            `;
+
+            $("#main__content").prepend(seoParagraph);
+          }
+
+          $("head").append(`
+            <script type="application/ld+json">
+            {
+              "@context": "https://schema.org",
+              "@graph": [
+                {
+                  "@type": "Organization",
+                  "@id": "https://betredi115.com/#organization",
+                  "name": "Betredi",
+                  "url": "https://betredi115.com",
+                  "logo": {
+                    "@type": "ImageObject",
+                    "url": "https://betrediofficial.github.io/images/schema-logo/betredi_new_logo_112.png"
+                  },
+                  "sameAs": [
+                    "https://twitter.com/betredi",
+                    "https://instagram.com/betredi",
+                    "https://www.youtube.com/@betredi",
+                    "https://t.me/betredi"
+                  ]
+                },
+                {
+                  "@type": "WebSite",
+                  "@id": "https://betredi115.com/#website",
+                  "url": "https://betredi115.com",
+                  "name": "Betredi",
+                  "publisher": {
+                    "@id": "https://betredi115.com/#organization"
+                  },
+                  "inLanguage": "tr"
+                },
+                {
+                  "@type": "WebPage",
+                  "@id": "https://betredi115.com/#webpage",
+                  "url": "https://betredi115.com",
+                  "name": "Betredi - Güncel Giriş Adresi 2025",
+                  "description": "Betredi güncel giriş adresi: betredi115.com. Tüm erişim bilgileri, kullanıcı yorumları, ve resmi bağlantılar burada.",
+                  "isPartOf": {
+                    "@id": "https://betredi115.com/#website"
+                  },
+                  "inLanguage": "tr"
+                },
+                {
+                  "@type": "BreadcrumbList",
+                  "itemListElement": [
+                    {
+                      "@type": "ListItem",
+                      "position": 1,
+                      "name": "Anasayfa",
+                      "item": "https://betredi115.com"
+                    }
+                  ]
+                }
+              ]
+            }
+            </script>
+          `);
+
           const originalPushState = history.pushState;
           history.pushState = function (state) {
             originalPushState.apply(history, arguments);
