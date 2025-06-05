@@ -1491,23 +1491,23 @@
         $(document).ready(function () {
           initialize();
 
-          // if (isHomePageCheck()) {
-          //   const seoParagraph = `
-          //     <div class="manually-added-home-widgets">
-          //       <p style="font-size:14px;line-height:1.6;margin-top:2rem;">
-          //         Betredi, güncel giriş adresiyle en yeni kripto casino deneyimini sunar.
-          //         2025 yılı itibariyle betredi115.com adresinden erişebilirsiniz.
-          //         Kullanıcı deneyimi, şeffaflık ve hızlı erişim ile Betredi giriş işlemleri artık çok daha kolay!
-          //       </p>
-          //       <p style="font-size:14px;line-height:1.6;">
-          //         Betredi güncel giriş, Betredi yeni adres, Betredi kullanıcı yorumları gibi detaylar için bu sayfayı sık kullanılanlara eklemeyi unutmayın.
-          //         Her zaman en hızlı bağlantı burada yer alacaktır.
-          //       </p>
-          //     </div>
-          //   `;
+          if (isHomePageCheck()) {
+            const seoParagraph = `
+              <div style="display: none;" class="manually-added-home-widgets">
+                <p style="font-size:14px;line-height:1.6;margin-top:2rem;">
+                  Betredi, güncel giriş adresiyle en yeni kripto casino deneyimini sunar.
+                  2025 yılı itibariyle betredi115.com adresinden erişebilirsiniz.
+                  Kullanıcı deneyimi, şeffaflık ve hızlı erişim ile Betredi giriş işlemleri artık çok daha kolay!
+                </p>
+                <p style="font-size:14px;line-height:1.6;">
+                  Betredi güncel giriş, Betredi yeni adres, Betredi kullanıcı yorumları gibi detaylar için bu sayfayı sık kullanılanlara eklemeyi unutmayın.
+                  Her zaman en hızlı bağlantı burada yer alacaktır.
+                </p>
+              </div>
+            `;
 
-          //   $("#main__content").prepend(seoParagraph);
-          // }
+            $("#main__content").prepend(seoParagraph);
+          }
 
           $("head").append(`
             <script type="application/ld+json">
