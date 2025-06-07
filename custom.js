@@ -1509,63 +1509,63 @@
             $("#main__content").prepend(seoParagraph);
           }
 
-          $("head").append(`
-            <script type="application/ld+json">
-            {
-              "@context": "https://schema.org",
-              "@graph": [
-                {
-                  "@type": "Organization",
-                  "@id": "https://betredi115.com/#organization",
-                  "name": "Betredi",
-                  "url": "https://betredi115.com",
-                  "logo": {
-                    "@type": "ImageObject",
-                    "url": "https://betrediofficial.github.io/images/schema-logo/betredi_new_logo_112.png"
-                  },
-                  "sameAs": [
-                    "https://twitter.com/betredi",
-                    "https://instagram.com/betredi",
-                    "https://www.youtube.com/@betredi",
-                    "https://t.me/betredi"
-                  ]
-                },
-                {
-                  "@type": "WebSite",
-                  "@id": "https://betredi115.com/#website",
-                  "url": "https://betredi115.com",
-                  "name": "Betredi",
-                  "publisher": {
-                    "@id": "https://betredi115.com/#organization"
-                  },
-                  "inLanguage": "tr"
-                },
-                {
-                  "@type": "WebPage",
-                  "@id": "https://betredi115.com/#webpage",
-                  "url": "https://betredi115.com",
-                  "name": "Betredi - Güncel Giriş Adresi 2025",
-                  "description": "Betredi güncel giriş adresi: betredi115.com. Tüm erişim bilgileri, kullanıcı yorumları, ve resmi bağlantılar burada.",
-                  "isPartOf": {
-                    "@id": "https://betredi115.com/#website"
-                  },
-                  "inLanguage": "tr"
-                },
-                {
-                  "@type": "BreadcrumbList",
-                  "itemListElement": [
-                    {
-                      "@type": "ListItem",
-                      "position": 1,
-                      "name": "Anasayfa",
-                      "item": "https://betredi115.com"
-                    }
-                  ]
-                }
-              ]
-            }
-            </script>
-          `);
+          // $("head").append(`
+          //   <script type="application/ld+json">
+          //   {
+          //     "@context": "https://schema.org",
+          //     "@graph": [
+          //       {
+          //         "@type": "Organization",
+          //         "@id": "https://betredi115.com/#organization",
+          //         "name": "Betredi",
+          //         "url": "https://betredi115.com",
+          //         "logo": {
+          //           "@type": "ImageObject",
+          //           "url": "https://betrediofficial.github.io/images/schema-logo/betredi_new_logo_112.png"
+          //         },
+          //         "sameAs": [
+          //           "https://twitter.com/betredi",
+          //           "https://instagram.com/betredi",
+          //           "https://www.youtube.com/@betredi",
+          //           "https://t.me/betredi"
+          //         ]
+          //       },
+          //       {
+          //         "@type": "WebSite",
+          //         "@id": "https://betredi115.com/#website",
+          //         "url": "https://betredi115.com",
+          //         "name": "Betredi",
+          //         "publisher": {
+          //           "@id": "https://betredi115.com/#organization"
+          //         },
+          //         "inLanguage": "tr"
+          //       },
+          //       {
+          //         "@type": "WebPage",
+          //         "@id": "https://betredi115.com/#webpage",
+          //         "url": "https://betredi115.com",
+          //         "name": "Betredi - Güncel Giriş Adresi 2025",
+          //         "description": "Betredi güncel giriş adresi: betredi115.com. Tüm erişim bilgileri, kullanıcı yorumları, ve resmi bağlantılar burada.",
+          //         "isPartOf": {
+          //           "@id": "https://betredi115.com/#website"
+          //         },
+          //         "inLanguage": "tr"
+          //       },
+          //       {
+          //         "@type": "BreadcrumbList",
+          //         "itemListElement": [
+          //           {
+          //             "@type": "ListItem",
+          //             "position": 1,
+          //             "name": "Anasayfa",
+          //             "item": "https://betredi115.com"
+          //           }
+          //         ]
+          //       }
+          //     ]
+          //   }
+          //   </script>
+          // `);
 
           const originalPushState = history.pushState;
           history.pushState = function (state) {
