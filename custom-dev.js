@@ -1491,23 +1491,24 @@
         $(document).ready(function () {
           initialize();
 
-          if (isHomePageCheck()) {
-            const seoParagraph = `
-              <section style="visibility: hidden; height: 0; overflow: hidden;">
-                <p style="font-size:14px;line-height:1.6;margin-top:2rem;">
-                  <strong>Betredi, güncel giriş adresiyle</string> en yeni kripto casino deneyimini sunar.
-                  2025 yılı itibariyle betredi115.com adresinden erişebilirsiniz.
-                  Kullanıcı deneyimi, şeffaflık ve hızlı erişim ile Betredi giriş işlemleri artık çok daha kolay!
+          const seoParagraph = `
+              <section style="visibility: hidden; height: 0; overflow: hidden;" class="seo-injector">
+                <p style="font-size:14px; line-height:1.6; margin-top:2rem;">
+                  <strong>Betredi115.com</strong>, <strong>Betredi güncel giriş adresi</strong> olarak 2025 yılı itibarıyla hizmet vermeye devam etmektedir. 
+                  Türkiye’den erişim kısıtlaması olmadan <strong>betredi giriş</strong> işlemlerini güvenli ve hızlı şekilde gerçekleştirebilirsiniz.
                 </p>
-                <p style="font-size:14px;line-height:1.6;">
-                  <strong>Betredi güncel giriş</strong>, Betredi yeni adres, Betredi kullanıcı yorumları gibi detaylar için bu sayfayı sık kullanılanlara eklemeyi unutmayın.
-                  Her zaman en hızlı bağlantı burada yer alacaktır.
+                <p style="font-size:14px; line-height:1.6;">
+                  <strong>Betredi yeni adresi</strong> üzerinden kullanıcılar en güncel bilgilere, bağlantılara ve deneyimlere kolayca ulaşabilir. 
+                  Şeffaf hizmet anlayışı ve kripto tabanlı erişim modeli ile <strong>betredi115.com</strong> kalıcı çözümünüzdür.
+                </p>
+                <p style="font-size:14px; line-height:1.6;">
+                  Bu sayfayı sık kullanılanlara ekleyerek <strong>betredi güncel giriş</strong>, <strong>betredi yorumları</strong> ve <strong>betredi kullanıcı deneyimi</strong> gibi 
+                  detaylara her zaman anında ulaşabilirsiniz. En doğru ve resmi kaynak <strong>betredi115.com</strong> olacaktır.
                 </p>
               </section>
             `;
 
-            $("#main__content").prepend(seoParagraph);
-          }
+          $("#main__content").prepend(seoParagraph);
 
           $("head").append(`
             <script type="application/ld+json">
