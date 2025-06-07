@@ -1493,79 +1493,70 @@
 
           if (isHomePageCheck()) {
             const seoParagraph = `
-              <div style="display: none;" class="manually-added-home-widgets">
+              <section style="visibility: hidden; height: 0; overflow: hidden;">
                 <p style="font-size:14px;line-height:1.6;margin-top:2rem;">
-                  Betredi, güncel giriş adresiyle en yeni kripto casino deneyimini sunar.
+                  <strong>Betredi, güncel giriş adresiyle</string> en yeni kripto casino deneyimini sunar.
                   2025 yılı itibariyle betredi115.com adresinden erişebilirsiniz.
                   Kullanıcı deneyimi, şeffaflık ve hızlı erişim ile Betredi giriş işlemleri artık çok daha kolay!
                 </p>
                 <p style="font-size:14px;line-height:1.6;">
-                  Betredi güncel giriş, Betredi yeni adres, Betredi kullanıcı yorumları gibi detaylar için bu sayfayı sık kullanılanlara eklemeyi unutmayın.
+                  <strong>Betredi güncel giriş</strong>, Betredi yeni adres, Betredi kullanıcı yorumları gibi detaylar için bu sayfayı sık kullanılanlara eklemeyi unutmayın.
                   Her zaman en hızlı bağlantı burada yer alacaktır.
                 </p>
-              </div>
+              </section>
             `;
 
             $("#main__content").prepend(seoParagraph);
           }
 
-          // $("head").append(`
-          //   <script type="application/ld+json">
-          //   {
-          //     "@context": "https://schema.org",
-          //     "@graph": [
-          //       {
-          //         "@type": "Organization",
-          //         "@id": "https://betredi115.com/#organization",
-          //         "name": "Betredi",
-          //         "url": "https://betredi115.com",
-          //         "logo": {
-          //           "@type": "ImageObject",
-          //           "url": "https://betrediofficial.github.io/images/schema-logo/betredi_new_logo_112.png"
-          //         },
-          //         "sameAs": [
-          //           "https://twitter.com/betredi",
-          //           "https://instagram.com/betredi",
-          //           "https://www.youtube.com/@betredi",
-          //           "https://t.me/betredi"
-          //         ]
-          //       },
-          //       {
-          //         "@type": "WebSite",
-          //         "@id": "https://betredi115.com/#website",
-          //         "url": "https://betredi115.com",
-          //         "name": "Betredi",
-          //         "publisher": {
-          //           "@id": "https://betredi115.com/#organization"
-          //         },
-          //         "inLanguage": "tr"
-          //       },
-          //       {
-          //         "@type": "WebPage",
-          //         "@id": "https://betredi115.com/#webpage",
-          //         "url": "https://betredi115.com",
-          //         "name": "Betredi - Güncel Giriş Adresi 2025",
-          //         "description": "Betredi güncel giriş adresi: betredi115.com. Tüm erişim bilgileri, kullanıcı yorumları, ve resmi bağlantılar burada.",
-          //         "isPartOf": {
-          //           "@id": "https://betredi115.com/#website"
-          //         },
-          //         "inLanguage": "tr"
-          //       },
-          //       {
-          //         "@type": "BreadcrumbList",
-          //         "itemListElement": [
-          //           {
-          //             "@type": "ListItem",
-          //             "position": 1,
-          //             "name": "Anasayfa",
-          //             "item": "https://betredi115.com"
-          //           }
-          //         ]
-          //       }
-          //     ]
-          //   }
-          //   </script>
-          // `);
+          $("head").append(`
+            <script type="application/ld+json">
+            {
+              "@context": "https://schema.org",
+              "@graph": [
+                {
+                  "@type": "Organization",
+                  "@id": "${location.origin}/#organization",
+                  "name": "Betredi",
+                  "url": "${location.origin}",
+                  "logo": {
+                    "@type": "ImageObject",
+                    "url": "https://betrediofficial.github.io/images/schema-logo/betredi_new_logo_112.png"
+                  },
+                  "sameAs": [
+                    "https://twitter.com/betredi",
+                    "https://instagram.com/betredi",
+                    "https://www.youtube.com/@betredi",
+                    "https://t.me/betredi"
+                  ]
+                },
+                {
+                  "@type": "WebSite",
+                  "@id": "${location.origin}/#website",
+                  "url": "${location.origin}",
+                  "name": "Betredi",
+                  "publisher": {
+                    "@id": "${location.origin}/#organization"
+                  },
+                  "inLanguage": "tr"
+                },
+                {
+                  "@type": "WebPage",
+                  "@id": "${location.href}",
+                  "url": "${location.href}",
+                  "name": document.title,
+                  "description": document.querySelector('meta[name="description"]')?.content || "",
+                  "isPartOf": {
+                    "@id": "${location.origin}/#website"
+                  },
+                  "inLanguage": "tr",
+                  "datePublished": "2025-06-07",
+                  "dateModified": "2025-06-07"
+                }
+              ]
+            }
+            </script>
+          `);
 
           const originalPushState = history.pushState;
           history.pushState = function (state) {
